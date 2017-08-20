@@ -1,0 +1,56 @@
+services:
+   - docker:dind
+
+stages:
+   - release
+   - review
+
+release-image:
+  image: docker:latest
+  stage: release
+  script:
+  - export IMAGE_TAG=$(echo -en $CI_COMMIT_REF_NAME | tr -c '[:alnum:]_.-' '-')
+  - docker login -u "gitlab-ci-token" -p "$CI_JOB_TOKEN" $CI_REGISTRY
+  - docker build --pull -t "$CI_REGISTRY_IMAGE:$IMAGE_TAG" .
+  - docker push "$CI_REGISTRY_IMAGE:$IMAGE_TAG"
+
+start-review:
+  image: doomkin/ubuntu-ssh
+  stage: review
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    url: http://$CI_ENVIRONMENT_SLUG.tripledio.rotate-it.be
+    on_stop: stop_review
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - export
+    - export IMAGE_TAG=$(echo -en $CI_COMMIT_REF_NAME | tr -c '[:alnum:]_.-' '-')
+    - ssh $USER@$HOST docker login -u "gitlab-ci-token" -p "$CI_JOB_TOKEN" $CI_REGISTRY
+    - ssh $USER@$HOST docker pull $CI_REGISTRY_IMAGE:$IMAGE_TAG
+    - ssh $USER@$HOST docker stop $CI_ENVIRONMENT_SLUG || true
+    - ssh $USER@$HOST docker rm $CI_ENVIRONMENT_SLUG || true
+    - ssh $USER@$HOST docker run -d --name=$CI_ENVIRONMENT_SLUG -e VIRTUAL_PORT=4000 -e VIRTUAL_HOST=$CI_ENVIRONMENT_SLUG.tripledio.rotate-it.be $CI_REGISTRY_IMAGE:$IMAGE_TAG
+
+stop_review:
+  image: doomkin/ubuntu-ssh
+  stage: review
+  variables:
+    GIT_STRATEGY: none
+  when: manual
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    action: stop
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - export
+    - export IMAGE_TAG=$(echo -en $CI_COMMIT_REF_NAME | tr -c '[:alnum:]_.-' '-')
+    - ssh $USER@$HOST docker stop $CI_ENVIRONMENT_SLUG || true
+    - ssh $USER@$HOST docker rm $CI_ENVIRONMENT_SLUG || true
