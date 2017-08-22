@@ -4,11 +4,19 @@ title: "About"
 description: "About Triple D"
 header-img: "img/about-bg.jpg"
 ---
-**History**
+#Triple D  
+
+Triple D is the company we founded that specializes in *professional software development*. We try to be not your typical IT-consultancy company. In fact we don't try to be a consultancy company at all. Our aim is not to 'sell' as many consultants as possible. Our aim is to deliver the software that fits your need. As fast as possible, with no bugs, and as useful as possible. Now and  in the future.
+
+##History
+
+**Who we are**  
+
+We are a group of *professional software engineers* with each more then a decade of experience in our industry. Over the years ve've worked on all kinds of different projects and teams for all kinds of different companies. In those years we have encountered a lot of the same problems over and over again. In an attempt to do better we've joined forces and founded **Triple D**.
 
 **The problems we see everyday**
 
-+ Poor quality
+###Poor quality
 	 + While we don't dispute the fact that developers are trying to do best by their customers. We often run into situations where short term decisions prevale over long term targets causing more damage then actual good. Or worse, limited by their own experience or knowledge.
 + Demand exceeds the supply **Dangerous- anders verwoorden**
     + The demand for technical skilled people outweighs the supply. This allows for a higher influx of people into the tech industry. Unfortunately this does not guarantee an increase of skilled people. After all, it's an "easy" job. If you have some basic coding skills you can easily get a contract, company car,... without putting in to much effort. Too often employers do not have the technical skill set to differentiate the good from the bad software engineers. Or they do not realize the impact a negligent software engineer can have on a software system. (Hint: it's huge!)
