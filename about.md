@@ -18,12 +18,12 @@ We are a group of *professional software engineers* with each more then a decade
 
 ### The problems we see everyday
 
-#### + Poor quality
+#### Poor quality
 While we don't dispute the fact that developers are trying to do best by their customers. We often run into situations where short term decisions prevale over long term targets causing more damage then actual good. Or worse, limited by their own experience or knowledge.
 
 #### Demand exceeds the supply **Dangerous- anders verwoorden**
 
-     The demand for technical skilled people outweighs the supply. This allows for a higher influx of people into the tech industry. Unfortunately this does not guarantee an increase of skilled people. After all, it's an "easy" job. If you have some basic coding skills you can easily get a contract, company car,... without putting in to much effort. Too often employers do not have the technical skill set to differentiate the good from the bad software engineers. Or they do not realize the impact a negligent software engineer can have on a software system. (Hint: it's huge!)
+   The demand for technical skilled people outweighs the supply. This allows for a higher influx of people into the tech industry. Unfortunately this does not guarantee an increase of skilled people. After all, it's an "easy" job. If you have some basic coding skills you can easily get a contract, company car,... without putting in to much effort. Too often employers do not have the technical skill set to differentiate the good from the bad software engineers. Or they do not realize the impact a negligent software engineer can have on a software system. (Hint: it's huge!)
     
 #### High cost of software projects
 + Cost a lot, lot of time. Could be done better
