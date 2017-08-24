@@ -30,7 +30,7 @@ We are a group of *professional software engineers* with each more then a decade
 #### Poor quality
 The overall quality of software being developed is often poor, it's life expectancy far too low and it's cost way to high. While we don't dispute the fact that software engineers are (often) trying to do their best in delivering valuable software, we unfortunately expierence that this is seldomly achieved. 
 
-#### Demand exceeds the supply **Dangerous- anders verwoorden**
+#### Demand exceeds the supply
 
 The demand for technically skilled people outweighs the supply. This allows for a high influx of people into the tech industry. Unfortunately this does not guarantee an increase of skilled people. After all, it's an "easy" job. If you have some basic coding skills you can easily get a contract, company car,... without putting in to much effort. Too often employers do not have the technical skill set to differentiate the professional from the amateurs. The impact of one negligent software engineer is seldom recognized. The impact on the life cycle of the software, on its maintance cost, ... (Hint: it's huge!) 
     
@@ -38,31 +38,50 @@ The demand for technically skilled people outweighs the supply. This allows for 
 Software is expensive. It costs a lot of money and a lot of time. While we don't want to diminish the complexity and the necessity of this  cost, our experience is that, given the right people, more often then not, it can be done faster and cheaper.
     
 #### A company is not it's people 
-   A classic misconception people have when hiring a company for providing software engineers is assuming that employees of company are interchangable. This created the illusion that when the company providing the software engineers is big enough you are secure in having competent people available.
+   A classic misconception people sometime have when hiring a software company is assuming that employees of that company are inter changeable. This can create the illusion that when the software company is big enough, one is secure in having competent people always available.
     
- of course we know that a company exists out of many different people. The brand that the company wants to carry out is seldom consistently carried out by its people. Every company has good, competent people. Unfortunately companies often also have some under-performers. The larger a company is the easier it is for those under-performers to hide themselves in the crowd. In the end you hire people, not a company. In our experience, the bigger a company, the higher the risk of hiring an under performer.
+ Of course we all know that a company consists out of many different people. The brand that the company wants to carry out is seldom consistently carried out by its people. Every company has good, competent people. Unfortunately companies occasionally also have some under-performers in their ranks. The larger a company is, the easier it is for those under-performers to hide themselves in the crowd. In the end you hire people, not a company. In our experience, the bigger a company, the higher the risk you hire an under performer. Even if you start of by receiving one of their top people at the start of your project. As time passes by, and the contract has been secured, the top people can get replaced by one of its colleague's. Which is not necessarily a bad thing. But rarely the company brand policies is present in all the employees.
+ 
+
+
  
 #### Dysfunctional teams
-   Software engineers are people, getting people to work together, creating an efficient team is not easy. A dysfunctional team can cost you a lot of money. Software engineers that do not talk to each other, aren't able to work with each other won't do proper job. Often the wrong thing will be built and the code base will often look like the monster of frankenstein. Different pieces from different people patched together, not what you wanted or paid for. Obtaining all your external software developers from a single company does not solve this. Worst case is when you need to hire a coach just to get those people to talk to each other.
+   Software engineers are people, and getting people to work well together, creating an efficient team, is not easy. It seldom happens by change. It is a problem all type of organizations face all over the world. 
+   
+   Due to the not so visible nature of software development a dysfunctional team can cost you a lot of money. Software engineers that do not talk to each other, aren't able to work well with each other can not do a proper job. Even if all of the individuals are highly competent.
+   
+   Often the wrong thing will be built, the code base will start looking like the monster of Frankenstein. All different pieces from different people patched together. Not what you wanted or paid for. Due to the nature of software it takes time for the negative effects of this to become visible. While in the mean time a lot of money is being spent, and wasted.
+   
+  Of course good teams do exist. Teams that work well and that can really deliver. This is something that usually takes a lot of time and effort. (And money) But when it is achieved it is hard to maintain. Usually when the project ends, the organization changes orthings get restructured,... people go their separate ways. The team changes, breaks down... And the battle can start again.
+   
+   -- Start To rework --
    
 #### A lot of time and effort in creating good teams
-   A lot of companies recognize the cost of dysfunctional teams. They spend a lot of time and effort trying to create good teams that can deliver your software. Unfortunately this is not that easy if the people in the teams have the wrong mindset. If they put their own or their own teams interests before that of their customer, the customer looses. 
+   A lot of companies recognize the cost of dysfunctional teams. They spend a lot of time and effort trying to create good teams that can deliver your software. Unfortunately this is not easy if the people in the teams have the wrong mindset. If they put their own or their own teams interests before that of their customer, the customer looses. 
 
+-- End To rework --
+  
 ### Team as a service
    
 We started this company because we got tired of battling the same up hill battles year in, year out. Over the years we worked for many different firms with many different software engineers. We encountered a lot of excellent software professionals. Unfortunately they rarely have the chance to work together. With Triple D we hope to change this.
 
 ### Our solutions
 
-#### To "poor quality"
+#### to "poor quality"
 We aim to counter poor software quality by upholding a very high standard. In our software as well as in our colleagues.
 
-#### To "Demand exceeds supply"
+#### to "Demand exceeds supply"
 While of course we can't solve the shortage of technical people, it is our belief that lack of people often isn't the problem. Often you don't need more people. You need the right people. Professionals that can operate as a team. This is what we aim to bring.
 
-#### To "A company is not it's people"
-We don't want to be a big company. Our business model is not in selling as much consultants as possible. This allows us to uphold our high standard. A job interview takes longer then one hour...
+#### to "A company is not it's people"
+We don't want to be a big company. Our business model is not in selling as much consultants as possible. This allows us to uphold our high standard. So that we live up to our values. A job interview takes longer then one hour. Code will be required. People skills are important. 
 
+We prefer to not filling a job vacancy over filling it by someone who isn't suited to represent our brand. 
+
+### to 'Dysfunctional teams'
+
+
+-- Start To rework --
 ## Quality software development
 
 We strive for quality software design. We want to achieve this by
@@ -82,6 +101,8 @@ We strive for quality software design. We want to achieve this by
             
     + discipline: We work methodical and disciplined.         
     + professionalism : we take pride in our work. We take responsibility. We don't cut corners. We don't _ship shit_
+    
+    -- End To rework --
  
 
 
