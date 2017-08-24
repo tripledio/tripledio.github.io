@@ -10,6 +10,8 @@ header-img: "img/about-bg.jpg"
 
 We don't want to be a big company. We want to be a _professional_ company.
 
+
+
 # Our services 
 
 ## Software hive
@@ -17,13 +19,17 @@ Whether you are a young startup or a well established company searching for a pa
 ## Reinforcement
 We can deploy a team of our craftsmen to integrate into an existing team to help them embrace XP practices. This will allow your team to grow and go faster while still delivering new functionality.
 ## Coaching
-Your company has recently gone through an Agile transformation but you realise that you lack technical skills to improve your code quality and predictability. We can help you make sure that your team keeps delivering at the same pace even long after the initial phase of your project.
+Your company has recently gone through an Agile transformation but you realise that you lack technical skills to improve your code quality and predictability. We can help you make sure that your team keeps delivering at the same pace even long after the initial phase of your project. 
+
+
 
 # History
 
 ### Who we are  
 
 We are a group of *professional software engineers* with each more then a decade of experience in our industry. Over the years we've worked on all kinds of different projects and teams for all kinds of different companies. In those years we have encountered a lot of the same problems over and over again. In an attempt to do better we've joined forces and founded **Triple D**.
+
+Over the years we worked for many different firms with many different software engineers. We encountered a lot of excellent software professionals. Unfortunately they rarely have the chance to work together. With Triple D we hope to give ourselves that change. And providing our customers with a team a highly skilled professionals that can work together as a team from the start.
 
 ### The problems we see everyday
 
@@ -52,18 +58,12 @@ Software is expensive. It costs a lot of money and a lot of time. While we don't
    
    Often the wrong thing will be built, the code base will start looking like the monster of Frankenstein. All different pieces from different people patched together. Not what you wanted or paid for. Due to the nature of software it takes time for the negative effects of this to become visible. While in the mean time a lot of money is being spent, and wasted.
    
-  Of course good teams do exist. Teams that work well and that can really deliver. This is something that usually takes a lot of time and effort. (And money) But when it is achieved it is hard to maintain. Usually when the project ends, the organization changes orthings get restructured,... people go their separate ways. The team changes, breaks down... And the battle can start again.
-   
-   -- Start To rework --
-   
-#### A lot of time and effort in creating good teams
-   A lot of companies recognize the cost of dysfunctional teams. They spend a lot of time and effort trying to create good teams that can deliver your software. Unfortunately this is not easy if the people in the teams have the wrong mindset. If they put their own or their own teams interests before that of their customer, the customer looses. 
-
--- End To rework --
+  Of course good teams do exist. Teams that work well and that can really deliver. This is something that usually takes a lot of time and effort. (And money) A lot of companies recognize the cost of dysfunctional teams. That's why they spend a lot of time and effort trying to create good teams. But this is not an easy task.
   
-### Team as a service
-   
-We started this company because we got tired of battling the same up hill battles year in, year out. Over the years we worked for many different firms with many different software engineers. We encountered a lot of excellent software professionals. Unfortunately they rarely have the chance to work together. With Triple D we hope to change this.
+  When it is achieved, it is also hard to maintain. The team culture is something must be consciously defended. So that it can survive organizational changes. In practice we have rarely encountered great teams that last more then a year.
+
+  
+
 
 ### Our solutions
 
@@ -78,10 +78,11 @@ We don't want to be a big company. Our business model is not in selling as much 
 
 We prefer to not filling a job vacancy over filling it by someone who isn't suited to represent our brand. 
 
-### to 'Dysfunctional teams'
-
 
 -- Start To rework --
+### to 'Dysfunctional teams'
+
+referente naar romeinen, eerste professionele leger die leger samen hield. lessons learned were not lost
 ## Quality software development
 
 We strive for quality software design. We want to achieve this by
