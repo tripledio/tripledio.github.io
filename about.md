@@ -10,8 +10,31 @@ header-img: "img/about-bg.jpg"
 
 We don't want to be a big company. We want to be a _professional_ company.
 
+## Triple D goals
 
+Our overall goal is to deliver high quality software. Rock SOLID, well designed software that fits your needs. And that will pay of it's investment for years. In order to achieve this we have the following goals:
 
+### Achieving a partnership with our customer.
+   We value open communication higher then negotiated contracts. The end goal of a successful partnership is that both partners are pleased with the result. We want to build the software you *need* and that will enable you from continuously reaping the benefits from the well designed solution in the *future*. For this open an honest communication is a necessity. How else can we built *your* great software *together*?
+   
+### Upholding a very high quality standard. 
+  A Triple D professional is constantly honing their skills. We want to deliver our best work, all the time. *It is not good enough that it works* 
+  
+  We take pride in our work and take responsibility for it. We don't cut corners. We don't _ship shit_
+  
+  In order to achieve this we need to adherence to certain principles. So that we can work fast and steady when it matters. Because as the saying goes: _We don't rise to the level of our expectations, we fall to the level of our training_.
+  
+  That is why at triple D you are expected to 
+    + constantly learn and keep yourselves up to date
+    + continuously practicing your craft. 
+    + work methodical and disciplined.         
+    + be professional
+     
+ ### Be prepared
+   A big part of software development lies in supporting the actual development. Continuous integration, continuous delivery, an issue tracking system. All of these enable the developers to work at full speed. We don';t want to waste time on the same issues on each project. That is why we come with solutions for many of these problems out of the box. A project setup, a continuous integration and delivery pipeline. A lot of pieces of the puzzle are present, others are designed for the customer or updated and refined as we go. 
+   
+   It's not a cure-all platform, it's a start with rockets strapped to it.
+    
 # Our services 
 
 ## Software hive
@@ -22,8 +45,7 @@ We can deploy a team of our craftsmen to integrate into an existing team to help
 Your company has recently gone through an Agile transformation but you realise that you lack technical skills to improve your code quality and predictability. We can help you make sure that your team keeps delivering at the same pace even long after the initial phase of your project. 
 
 
-
-# History
+# Our History
 
 ### Who we are  
 
@@ -38,7 +60,7 @@ The overall quality of software being developed is often poor, it's life expecta
 
 #### Demand exceeds the supply
 
-The demand for technically skilled people outweighs the supply. This allows for a high influx of people into the tech industry. Unfortunately this does not guarantee an increase of skilled people. After all, it's an "easy" job. If you have some basic coding skills you can easily get a contract, company car,... without putting in to much effort. Too often employers do not have the technical skill set to differentiate the professional from the amateurs. The impact of one negligent software engineer is seldom recognized. The impact on the life cycle of the software, on its maintance cost, ... (Hint: it's huge!) 
+The demand for technically skilled people outweighs the supply. This allows for a high influx of people into the tech industry. Unfortunately this does not guarantee an increase of skilled people. After all, it's an "easy" job. If you have some basic coding skills you can easily get a contract, company car,... without putting in to much effort. Too often employers do not have the technical skill set to differentiate the professional from the amateurs. The impact of one negligent software engineer is seldom recognized. The impact on the life cycle of the software, on its maintenance cost, ... (Hint: it's huge!) 
     
 #### High cost of software projects
 Software is expensive. It costs a lot of money and a lot of time. While we don't want to diminish the complexity and the necessity of this  cost, our experience is that, given the right people, more often then not, it can be done faster and cheaper.
@@ -79,32 +101,11 @@ We don't want to be a big company. Our business model is not in selling as much 
 We prefer to not filling a job vacancy over filling it by someone who isn't suited to represent our brand. 
 
 
--- Start To rework --
 ### to 'Dysfunctional teams'
+We aim to get rid of the waste of an dysfunctional team, of the time and energy put info forming and maintaining a real team. That is why we offer a 'team as a service' solution. Evidently we are all individual professionals but Triple D also aims to be a professional team.
 
-referente naar romeinen, eerste professionele leger die leger samen hield. lessons learned were not lost
-## Quality software development
+Comparable to the Imperial standing army of the romans, which was a professional army instead of an ad hoc formed army, Triple D is a professional software engineering team that keeps its coherence over multiple software assignments. This enables us to keep the lessons learned, the close collaboration gained and allows us to continuously improve not only ourselves but our working as a team as well.
 
-We strive for quality software design. We want to achieve this by
-
-+ achieving a partnership with our customer.
-    + We value open communication higher then negotiated contracts. The end goal of a successful partnership is that both partners are pleased with the result. We want to build the software you *need* and that will enable you from continuously reaping the benefits from the well designed solution in the *future*. For this open an honest communication is a necessity. How else can we built *your* great software *together*?
-+ upholding a very high quality standard. 
-    + Our craftsmen are constantly honing their skills. Reading books, blogs, attending conferences and technical meetups or simply practicing their programming skills through coding kata's.  We want to deliver our best work, all the time. *It is not good enough that it works* 
-+ reap what we have sown
-    + 	Since we pack that experience we come with solutions for many problems out of the box. A project setup, a continous integration and delivery pipeline. A lot of pieces of the puzzle are present, others are designed for the customer or updated and refined as we go. It's not a cure-all platform, it's a start with rockets strapped to it.
-    
-    + expertise: we aim for deep knowledge
-    + constantly learning: we are constantly learning and keeping ourselves up to date
-    + practice: We practice our craft. So that we can work fast and steady when it matters. 
-    
-            We don't rise to the level of our expectations, we fall to the level of our training.
-            
-    + discipline: We work methodical and disciplined.         
-    + professionalism : we take pride in our work. We take responsibility. We don't cut corners. We don't _ship shit_
-    
-    -- End To rework --
- 
 
 
 
