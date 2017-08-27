@@ -105,7 +105,7 @@ We aim to get rid of the waste of an dysfunctional team, of the time and energy 
 
 ## Origin of the name <a name="4.d"/>
 
-We started using the name Triple D as a working title when we started debating the idea of founding our own company. It is on the one hand a reference to the three D's in Domain Driven Design. On the other hand to us, the three founders. When we finally founded the company the name was so engraved in our conversations that another name did not fit the bill. So *Triple D* was born.
+We started using the name *Triple D* as a working title when we started debating the idea of founding our own company. It is on the one hand a reference to the three D's in Domain Driven Design. On the other hand to us, the three founders. When we finally founded the company the name was so engraved in our conversations that another name did not fit the bill. So *Triple D* was born.
 
 _**Table of Contents**_
 
