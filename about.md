@@ -4,63 +4,67 @@ title: "About Triple D"
 description: "Who are we?"
 header-img: "img/laptop-bg.png"
 ---
-# Triple D  
+## Triple D  <a name="1"/> 
 
-**Triple D** is a professional software development company founded by us, a group of professional software engineers. Our hope for Triple D is that it is not a typical IT-consultancy company. In fact we don't want it to be a consultancy company at all. Our goal is not to 'sell' our consultants. Our goal and passion is to deliver the software that fits your need. As fast as possible, with no bugs, and as useful as possible. Now and in the future. 
+*Triple D* is a professional software development company founded by us, a group of professional software engineers. Our hope for *Triple D* is that it is not a typical IT-consultancy company. In fact we don't want it to be a consultancy company at all. Our goal is not to 'sell' our consultants. Our goal and passion is to deliver the software that fits your need. As fast as possible, with no bugs, and as useful as possible. Now and in the future. 
 
-> We don't want to be a big company. We want to be a _professional_ company.
+>We don't want to be a big company. We want to be a _professional_ company.
 
-## Triple D goals
+
+## Our goals  <a name="2"/>
 
 Our overall goal is to deliver high quality software. Rock SOLID, well designed software that fits your needs. And that will pay of it's investment for years. In order to achieve this we have the following goals:
 
-#### 1) Achieving a partnership with our customer.
+#### a) Achieving a partnership with our customer. <a name="2.a"/>
    We value open communication higher then negotiated contracts. The end goal of a successful partnership is that both partners are pleased with the result. We want to build the software you *need* and that will enable you from continuously reaping the benefits from the well designed solution in the *future*. For this open an honest communication is a necessity. How else can we built *your* great software *together*?
    
-#### 2) Upholding a very high quality standard. 
-  A Triple D professional is constantly honing their skills. We want to deliver our best work, all the time. *It is not good enough that it works* We take pride in our work and take responsibility for it. We don't cut corners. We don't *"ship shit"*
+#### b) Upholding a very high quality standard. <a name="2.b"/>
+  A *Triple D* professional is constantly honing their skills. We want to deliver our best work, all the time. *It is not good enough that it works* We take pride in our work and take responsibility for it. We don't cut corners. We don't *"ship shit"*
   
   In order to achieve this we need to adherence to certain principles. So that we can work fast and steady when it matters. 
 
-> _We don't rise to the level of our expectations, we fall to the level of our training_.
+> You don't rise to the level of our expectations, we fall to the level of our training.
   
-That is why at triple D you are expected to 
+That is why at *Triple D* you are expected to 
    + constantly learn and keep yourselves up to date
    + continuously practicing your craft. 
    + work methodical and disciplined.         
    + be professional
      
-#### 3) Best practice solution from the start
+#### c) Best practice solution from the start <a name="2.c"/>
    A big part of software development lies in supporting the actual development. Continuous integration, continuous delivery, an issue tracking system. All of these enable the developers to work at full speed. We don';t want to waste time on the same issues on each project. That is why we come with solutions for many of these problems out of the box. A project setup, a continuous integration and delivery pipeline. A lot of pieces of the puzzle are present, others are designed for the customer or updated and refined as we go. 
    
-> It's not a one size fits-all solution, it's a start with rockets strapped to it.
+> We do not offer a one size fits-all solution, we offer rocket boosted start.
     
-# Our services 
+## Our services <a name="3"/>
 
-## Software hive
-Whether you are a young startup or a well established company searching for a partner to create your next IT success, we at Triple D are ready to guide you to the finish. We offer complete in-house development at your pace.
-## Reinforcement
+### a) Software hive <a name="3.a"/> 
+
+**@domenique Is team as a ervice hier niet beter? Wat does hive mean in this context?**
+
+Whether you are a young startup or a well established company searching for a partner to create your next IT success, we at *Triple D* are ready to guide you to the finish. We offer complete in-house development at your pace. @domenique At their pace? Not at our fast pace? 
+### b) Reinforcement <a name="3.b"/>
 We can deploy a team of our craftsmen to integrate into an existing team to help them embrace XP practices. This will allow your team to grow and go faster while still delivering new functionality.
-## Coaching
+### c) Coaching <a name="3.c"/>
 Your company has recently gone through an Agile transformation but you realise that you lack technical skills to improve your code quality and predictability. We can help you make sure that your team keeps delivering at the same pace even long after the initial phase of your project. 
 
-# Our History
+# Our History <a name="4"/>
 
-## Who we are  
+## Who we are  <a name="4.a"/>
 
-We are a group of *professional software engineers* with each more then a decade of experience in our industry. Over the years we've worked on all kinds of different projects and teams for all kinds of different companies. In those years we have encountered a lot of the same problems over and over again. In an attempt to do better we've joined forces and founded **Triple D**.
+We are a group of *professional software engineers* with each more then a decade of experience in our industry. Over the years we've worked on all kinds of different projects and teams for all kinds of different companies. In those years we have encountered a lot of the same problems over and over again. In an attempt to do better we've joined forces and founded *Triple D*.
 
-Over the years we worked for many different firms with many different software engineers. We encountered a lot of excellent software professionals. Unfortunately they rarely have the chance to work together. With Triple D we hope to give ourselves that change. And providing our customers with a team a highly skilled professionals that can work together as a team from the start.
+Over the years we worked for many different firms with many different software engineers. We encountered a lot of excellent software professionals. Unfortunately they rarely have the chance to work together. With *Triple D* we hope to give ourselves that change. And providing our customers with a team a highly skilled professionals that can work together as a team from the start.
 
-## The problems we see everyday
+## The problems in our industry <a name="4.b"/>
 
-### a) Poor quality
+#### a) Poor quality
 The overall quality of software being developed is unfortunately often poor, it's life expectancy far too low and it's cost way to high. While we don't dispute the fact that software engineers are (often) trying to do their best in delivering valuable software, we unfortunately experience that this is seldomly achieved. 
 
-### b) The demand for software engineers exceeds the supply
+#### b) The demand for software engineers exceeds the supply
 The demand for technically skilled people outweighs the supply. This allows for a high influx of people into the tech industry. Unfortunately this does not guarantee an increase of skilled people. After all, it's an "easy" job. If you have some basic coding skills you can easily get a contract, company car,... without putting in to much effort. Too often employers do not have the technical skill set to differentiate the professional from the amateurs. The impact of one negligent software engineer is seldom recognized. The impact on the life cycle of the software, on its maintenance cost, ... (Hint: it's huge!) 
     
-### c) The high cost of software projects
+#### c) The high cost of software projects
 Software is expensive. It costs a lot of money and a lot of time. While we don't want to diminish the complexity and the necessity of this  cost, our experience is that, given the right people, more often then not, it can be done faster and cheaper.
     
 #### d) You hire people, not a company 
@@ -75,30 +79,45 @@ Software is expensive. It costs a lot of money and a lot of time. While we don't
    
    Often the wrong thing will be built, the code base will start looking like the monster of Frankenstein. All different pieces from different people patched together. Not what you wanted or paid for. Due to the nature of software it takes time for the negative effects of this to become visible. While in the mean time a lot of money is being spent, and wasted.
    
-> 
-   
   Of course good teams do exist. Teams that work well and that can really deliver. This is something that usually takes a lot of time and effort. (And money) A lot of companies recognize the cost of dysfunctional teams. That's why they spend a lot of time and effort trying to create good teams. But this is not an easy task.
   
   When it is achieved, it is also hard to maintain. The team culture is something must be consciously defended. So that it can survive organizational changes. In practice we have rarely encountered great teams that last more then a year.
 
   
-## Our solutions
+## Our solutions <a name="4.c"/>
 
-#### to "poor quality"
+
+#### a) to "poor quality"
 We aim to counter poor software quality by upholding a very high standard. In our software as well as in our colleagues.
 
-#### to "Demand exceeds supply"
+#### b) to "Demand exceeds supply"
 While of course we can't solve the shortage of technical people, it is our belief that lack of people often isn't the problem. Often you don't need more people. You need the right people. Professionals that can operate as a team. This is what we aim to bring.
 
-#### to "A company is not it's people"
+#### c) to "A company is not it's people"
 We don't want to be a big company. Our business model is not in selling as much consultants as possible. This allows us to uphold our high standard. So that we live up to our values. A job interview takes longer then one hour. Code will be required. People skills are important. 
 
-We prefer to not filling a job vacancy over filling it by someone who isn't suited to represent our brand. 
+We prefer to not filling a job vacancy over filling it by someone who isn't a fit to our vision. 
 
-#### to 'Dysfunctional teams'
-We aim to get rid of the waste of an dysfunctional team, of the time and energy put info forming and maintaining a real team. That is why we offer a 'team as a service' solution. Evidently we are all individual professionals but Triple D also aims to be a professional team.
+#### d) to "Dysfunctional teams"
+We aim to get rid of the waste of an dysfunctional team, of the time and energy put info forming and maintaining a real team. That is why we offer a 'team as a service' solution. Evidently we are all individual professionals but *Triple D* also aims to be a professional team.
 
-Comparable to the Imperial standing army of the romans, which was a professional army instead of an ad hoc formed army, Triple D is a professional software engineering team that keeps its coherence over multiple software assignments. This enables us to keep the lessons learned, the close collaboration gained and allows us to continuously improve not only ourselves but our working as a team as well.
+*Triple D* is a professional software engineering team that keeps its coherence over multiple software assignments. Comparable to the romans imperial standing army that was a professional army instead of an ad hoc formed army. Which enabled them to keep the lessons learned and experience gained. Just like them we want to keep our team together, keep building on the lessons learned, profit from the close collaboration gained. This allows us to not only continuously improve  ourselves but our working as a team as well.
+
+_**Table of Contents**_
+
+* _[Triple D](#1)_
+* _[Our goals](#2)_
+  + _[a. Achieving a partnership with our customer](#2.a)_
+  + _[b. Upholding a very high quality standard](#2.b)_
+  + _[c. Best practice solution from the start](#2.c)_
+* _[Our services](#3)_
+  + _[a. Software Hive](#3.a)_
+  + _[a. Reinforcement](#3.b)_
+  + _[a. Coaching](#3.c)_
+* _[Our History](#4)_
+  + _[a. Who we are](#4.a)_
+  + _[b. The problems in our industry](#4.b)_
+  + _[c. Our solutions](#4.c)_
 
 
 
