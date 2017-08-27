@@ -31,10 +31,10 @@ That is why at *Triple D* you are expected to
    + work methodical and disciplined.         
    + be professional
      
-#### c) Best practice solution from the start <a name="2.c"/>
+#### c) Best practice solution, from the start <a name="2.c"/>
    A big part of software development lies in supporting the actual development. Continuous integration, continuous delivery, an issue tracking system. All of these enable the developers to work at full speed. We don';t want to waste time on the same issues on each project. That is why we come with solutions for many of these problems out of the box. A project setup, a continuous integration and delivery pipeline. A lot of pieces of the puzzle are present, others are designed for the customer or updated and refined as we go. 
    
-> We do not offer a one size fits-all solution, we offer rocket boosted start.
+> We do not offer a one size fits-all solution, we offer a rocket boosted start.
     
 ## Our services <a name="3"/>
 
@@ -103,6 +103,10 @@ We aim to get rid of the waste of an dysfunctional team, of the time and energy 
 
 *Triple D* is a professional software engineering team that keeps its coherence over multiple software assignments. Comparable to the romans imperial standing army that was a professional army instead of an ad hoc formed army. Which enabled them to keep the lessons learned and experience gained. Just like them we want to keep our team together, keep building on the lessons learned, profit from the close collaboration gained. This allows us to not only continuously improve  ourselves but our working as a team as well.
 
+## Origin of the name <a name="4.d"/>
+
+We started using the name Triple D as a working title when we started debating the idea of founding our own company. It is on the one hand a reference to the three D's in Domain Driven Design. On the other hand to us, the three founders. When we finally founded the company the name was so engraved in our conversations that another name did not fit the bill. So *Triple D* was born.
+
 _**Table of Contents**_
 
 * _[Triple D](#1)_
@@ -118,6 +122,7 @@ _**Table of Contents**_
   + _[a. Who we are](#4.a)_
   + _[b. The problems in our industry](#4.b)_
   + _[c. Our solutions](#4.c)_
+  + _[d. Origin of the name](#4.d)_
 
 
 
