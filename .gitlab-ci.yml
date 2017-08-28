@@ -27,7 +27,6 @@ start-review:
     - ssh-add <(echo "$SSH_KEY")
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    - export
     - export IMAGE_TAG=$(echo -en $CI_COMMIT_REF_NAME | tr -c '[:alnum:]_.-' '-')
     - ssh $USER@$HOST docker login -u "gitlab-ci-token" -p "$CI_JOB_TOKEN" $CI_REGISTRY
     - ssh $USER@$HOST docker pull $CI_REGISTRY_IMAGE:$IMAGE_TAG
@@ -50,7 +49,6 @@ stop_review:
     - ssh-add <(echo "$SSH_KEY")
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    - export
     - export IMAGE_TAG=$(echo -en $CI_COMMIT_REF_NAME | tr -c '[:alnum:]_.-' '-')
     - ssh $USER@$HOST docker stop $CI_ENVIRONMENT_SLUG || true
     - ssh $USER@$HOST docker rm $CI_ENVIRONMENT_SLUG || true
