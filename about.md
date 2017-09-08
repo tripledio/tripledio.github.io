@@ -12,9 +12,9 @@ header-img: "img/laptop-bg.png"
 
 *Triple D* is a professional software development company founded by a group of veteran software engineers. It's not a consulting company, the goal is not to sell resources. Triple D's goal and passion is to deliver the software that fits your needs. As fast as possible, without bugs, delivering the value you need, now and in the future!
 
-## Our goals  <a name="2"/>
+## Our goal  <a name="2"/>
 
-Our overall goal is to deliver high quality, rock SOLID, well designed software that fits your needs. Which will pay of it's investment for years to come.
+Is to deliver high quality, rock SOLID, well designed software that fits your needs. Which will pay of it's investment for years to come.
 
 In order to achieve this we have the following prerequisites:
 
@@ -35,18 +35,19 @@ That's why all *Triple D* professionals are
    + Continuously practicing their craft;
    + Working methodical and disciplined.
 
-#### c) Best practice solutions, from the start <a name="2.c"/>
-   A big part of software development lies in supporting the actual development. Continuous integration and delivery, a feature and bug tracking system. All of these enable the team to work at full speed. That's why we come with solutions for many of these problems out of the box. A project setup, a continuous integration and delivery pipeline. A lot of pieces of the puzzle are present, others are designed for the customer or updated and refined as we go.
-
-> We do not offer a one size fits-all solution, we offer a rocket boosted start.
+#### c) Direct communication with all stakeholders <a name="2.d"/>
+We don't believe in long communication chains and huge documents. We talk to the business, we build software for them, they should be the ones giving us feedback.
 
 
+#### d) Immediate short feedback loops <a name="2.d"/>
+   Continuous integration and delivery enable the team to work at full speed. The delivery pipeline allows the customer to see and use the features within minutes after finishing a development iteration. By quickly gathering feedback the delivered product will maximize business value. 
+   
+   
 
 
-
-
-
-
+| We do not offer a one size fits-all solution, we offer a rocket boosted start.|
+| :-------------|
+||
 
 
 
