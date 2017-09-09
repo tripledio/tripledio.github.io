@@ -16,51 +16,61 @@ header-img: "img/laptop-bg.png"
 
 Is to deliver high quality, rock SOLID, well designed software that fits your needs. Which will pay of it's investment for years to come.
 
-In order to achieve this we have the following prerequisites:
 
-#### a) Achieving a partnership with our customer. <a name="2.a"/>
-   We value open communication more then negotiated contracts. The end goal of a successful partnership is that both partners are pleased with the result. We want to build the software you *need*. Enabling you to continuously reap the benefits from a well designed solution both now and in the *future*. For this open and honest communication is necessary. How else can we built *your* great software *together*?
+## Our people <a name="3"/>
 
-#### b) Upholding a very high quality standard. <a name="2.b"/>
-  *Triple D* professionals are constantly honing their skills. They want to deliver their best work, all the time. *It is not good enough that it works* They take pride in their work and take responsibility for it.
+#### Practice
 
-  They don't cut corners. They don't *"ship shit"*
+ Our people are constantly honing their skills. They want to deliver their best work, all the time. *It is not good enough that it works* They take pride in their work and take responsibility for it.
 
+  > We don't cut corners. We don't *"ship shit"*
+  
+ 
   In order to achieve this high standard, they need to adhere to a set of principles. So that they can work fast and steady when it matters.
 
-> You don't rise to the level of your expectations, you fall to the level of your training.
 
 That's why all *Triple D* professionals are
-   + Constantly learning and keeping themselves up to date;
-   + Continuously practicing their craft;
-   + Working methodical and disciplined.
 
-#### c) Direct communication with all stakeholders <a name="2.d"/>
+   + Constantly learning and keeping themselves up to date
+   + Continuously practicing their craft
+   + Working methodical and disciplined
+   
+> You don't rise to the level of your expectations, you fall to the level of your training.
+
+#### More then code
+
+In order to create successful software systems a great diversity of skills is needed. A lot of them are non technical. Gathering the requirements, fostering collaboration, good design, searching for new insights, working together ... All of these are part of the skill set we are constantly working on.
+   
+## Prerequisites  <a name="3"/>
+
+In order to achieve our ambitious goal we believe that we need the following prerequisites:
+
+#### a) A close and honest partnership with our customer. <a name="2.a"/>
+   We value open communication more then negotiated contracts. The end goal of a successful partnership is that both partners are pleased with the result. We want to build the software you *need*. Enabling you to continuously reap the benefits from a well designed solution both now and in the *future*. For this open and honest communication is necessary. How else can we built *your* great software *together*?
+
+
+#### b) Ownership of the development process <a name="2.b"/>
+When you hire Triple D, you hire people who have spent a lot of their time in getting proficient in their job. Which is so much more then writing code. Let us own to whole development process. So that we can really deliver.
+
+> We do not offer a one size fits-all solution, we offer a rocket boosted start.
+
+#### c) Direct communication with all stakeholders <a name="2.c"/>
 We don't believe in long communication chains and huge documents. We talk to the business, we build software for them, they should be the ones giving us feedback.
 
 
 #### d) Immediate short feedback loops <a name="2.d"/>
    Continuous integration and delivery enable the team to work at full speed. The delivery pipeline allows the customer to see and use the features within minutes after finishing a development iteration. By quickly gathering feedback the delivered product will maximize business value. 
    
-   
 
+## Our services <a name="4"/>
 
-| We do not offer a one size fits-all solution, we offer a rocket boosted start.|
-| :-------------|
-||
-
-
-
-
-## Our services <a name="3"/>
-
-### a) Team as a service <a name="3.a"/>
+### a) Team as a service <a name="4.a"/>
 *Triple D* is a professional software engineering *team* that keeps its coherence over multiple software assignments. Comparable to the romans imperial standing army that was a professional army instead of an ad hoc formed army. This enabled them to keep the lessons learned and experience gained. Just like them we want to keep our team together, keep building on the lessons learned, profit from the close collaboration gained. This allows us to not only continuously improve ourselves but our working as a team as well.
 
-### b) Reinforcement <a name="3.b"/>
+### b) Reinforcement <a name="4.b"/>
 Our professionals can work together with your existing teams, introducing industry best practices. Allowing your team to evolve and eventually going faster while still delivering new functionality.
 
-### c) Trainings and workshops <a name="3.c"/>
+### c) Trainings and workshops <a name="4.c"/>
 Whether you
 Your company has recently gone through an Agile transformation but you realize that you lack technical skills to improve your code quality and predictability. We can help you make sure that your team keeps delivering at the same pace even long after the initial phase of your project.
 
