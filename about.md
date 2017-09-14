@@ -6,9 +6,7 @@ header-img: "img/laptop-bg.png"
 ---
 ## Triple D  <a name="1"/>
 
-| We don't want to be a big company We want to be a _professional_ company.|
-| :-------------|
-||
+###### We don't want to be a big company. We want to be a _professional_ company.
 
 *Triple D* is a belgian software development company that was founded by a group of veteran software engineers. It's *not* a consulting company, the goal is *not* to sell resources. Triple D's passion is to deliver the software that fits your needs. As fast as possible, without bugs.  Delivering the value you need, now and in the future!
 
@@ -27,14 +25,17 @@ The one and only part of our company is it's people. That's why we want to be gr
 
   > We don't cut corners. We don't *"ship shit"*
   
-   In order to achieve this high standard, We abide to a set of principles. So that we are able to work fast and steady when it matters.
+   In order to achieve this high standard, We abide to a set of principles. 
 
 
 That's why all *Triple D* professionals are
-
+```markdown
    + Constantly learning and keeping themselves up to date
    + Continuously practicing their craft
    + Working methodical and disciplined
+```
+
+This enables us to work fast and steady when it matters. While still delivering quality work.
    
 > You don't rise to the level of your expectations, you fall to the level of your training.
 

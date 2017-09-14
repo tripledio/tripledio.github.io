@@ -4,14 +4,6 @@ title: "History"
 description: "Why did we founded Triple D?"
 header-img: "img/laptop-bg.png"
 ---
-## make up
-
-| We don't want to be a big company We want to be a _professional_ company.|
-| :-------------|
-||
-{{ page.title | smartify }}
-
-Length {{ page.content | number_of_words }} words
 
 # Our History <a name="4"/>
 
