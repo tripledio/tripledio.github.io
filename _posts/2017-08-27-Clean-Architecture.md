@@ -37,9 +37,167 @@ Although Uncle Bob provides 2 drawings, his "circles in circles" is a bit confus
 
 ### A practical Java example
 
-TODO java callstack, rest -> app-api -> app-impl(ResolveTask) -> repo(get) -> domain(task.resolve()) -> repo(save)
+Let's start with the most important part, the `use case`. A formal declaration of a piece of functionality of your application. This declaration is an `api` that allows you to invert the dependency. How does it look?
 
-TODO color coded version with arrow to drawing
+ <div style="background-color:rgba(250, 218, 187, 0.8);">
+```java
+package io.tripled.architecture.usecases;
+
+import io.tripled.architecture.core.TaskId;
+
+public interface CancelTask {
+	final class CancelTaskRequest {
+		private final TaskId taskId;
+		private final String reason;
+
+		public CancelTaskRequest(TaskId taskId, String reason) {
+			this.taskId = taskId;
+			this.reason = reason;
+		}
+
+		public TaskId getTaskId() {
+			return taskId;
+		}
+
+		public String getReason() {
+			return reason;
+		}
+	}
+
+	void cancelTask(CancelTaskRequest request);
+}
+```
+<div>
+
+The request to the `use case` inlined, since it's tightly coupled anyway. Potentially there is also a Response, or a Presenter interface.
+
+An implementation might look like this:
+ <div style="background-color:rgba(241, 137, 157, 0.8);">
+```java
+package io.tripled.architecture.usecases;
+
+import io.tripled.architecture.domain.Task;
+import io.tripled.architecture.domain.TaskRepository;
+
+public class CancelTaskUseCase implements CancelTask {
+
+	private final TaskRepository taskRepository;
+
+	public CancelTaskUseCase(TaskRepository taskRepository) {
+		this.taskRepository = taskRepository;
+	}
+
+	@Override
+	public void cancelTask(CancelTaskRequest request) {
+		Task task = taskRepository.get(request.getTaskId());
+
+		task.cancel(request.getReason());
+
+		taskRepository.save(task);
+	}
+}
+```
+</div>
+
+A common scenario in simple usecases is:
+```pseudo
+repository/factory
+call the aggregate
+persist using repository
+```
+
+It's responsabilities are to coordinate actions to domain and domain services.
+
+Although nothing in clean architecture enforces `domain driven design` it's a good match. It would not change much from an architectural point of view, exception the code inside the domain would be more anemic.
+
+ <div style="background-color:rgba(254, 244, 137, 0.8);">
+```java
+package io.tripled.architecture.domain;
+
+import static io.tripled.architecture.domain.Task.TaskStatus.*;
+import static java.time.LocalDateTime.now;
+
+import java.time.LocalDateTime;
+
+public class Task {
+	private TaskStatus status;
+	private LocalDateTime creation;
+	private String cancellationReason;
+
+	public Task() {
+		this.status = CREATED;
+		creation = now();
+	}
+
+   ... ommitted for brevity ...
+
+	public void cancel(String reason) {
+		assertCancellable();
+		this.cancellationReason = reason;
+		this.status = CANCELLED;
+	}
+	
+   ... ommitted for brevity ...
+
+	private void assertCancellable() {
+		if (status == COMPLETED){
+			throw new DomainException("task.status.cancel.notforcompletedtask");
+		}
+	}
+
+	enum TaskStatus {
+		CREATED, ASSIGNED, IN_PROGRESS, ON_HOLD, CANCELLED, COMPLETED
+	}
+}
+```
+</div>
+
+Your domain gets the chance to protect it's invariants. in this case that a completed task cannot be cancelled anymore.
+
+If you stuck with me this far, we've covered **all the important bits**. It was all functional, it was what the user would expect from your application, and it had **zero** frameworks required to write this code. It would be a terrible smell if you need frameworks to solve your business problems inside the application or domain, it would be quite strange.
+
+If we're talking types, we're talking vocabulary, like (joda)Money, they are used to help you express your domain (problems). They can be spoken throughout all the layers. That dependency only gets dependen *on* and does not depend on **anything else in your application**.
+
+#### Details
+##### The road
+So the usecases need to get called. This is the road that needs to be travelled, this is we're we get to see frameworks. JMS, Soap, Rest, etc. Whatever protocol, framework, you use, it should ultimatly allow you to call a usecase.
+
+ <div style="background-color:rgba(219, 253, 219, 0.8);">
+```java
+package io.tripled.architecture.infra.rest;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.tripled.architecture.core.TaskId;
+import io.tripled.architecture.usecases.CancelTask;
+
+@RestController("task")
+public class TaskController {
+
+	private final CancelTask cancelTask;
+
+	public TaskController(CancelTask cancelTask) {
+		this.cancelTask = cancelTask;
+	}
+
+	@PostMapping("/{taskId}/cancellation")
+	public ResponseEntity cancel(@PathVariable("taskId") TaskId taskId,
+								 @RequestBody String reason){
+		cancelTask.cancelTask(new CancelTask.CancelTaskRequest(taskId, reason));
+		return ResponseEntity.accepted().build();
+	}
+}
+```
+</div>
+
+##### The warehouse
+Then another common component is the repository. This is where we can box up the state of the aggregate to keep it until it is needed again. This is also where we can use frameworks and infrastructure. JPA, MongoDB or an abstraction like spring data etc.
+
+TODO add example with spring data.
 
 ### Why?
 ##### Safety
