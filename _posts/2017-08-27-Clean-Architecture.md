@@ -67,7 +67,7 @@ public interface CancelTask {
 	void cancelTask(CancelTaskRequest request);
 }
 ```
-<div>
+</div>
 
 The request to the `use case` inlined, since it's tightly coupled anyway. Potentially there is also a Response, or a Presenter interface.
 
