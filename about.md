@@ -75,7 +75,6 @@ We don't believe in long communication chains and huge documents. We talk to the
 Our professionals can work together with your existing teams, introducing industry best practices. Allowing your team to evolve and eventually going faster while still delivering new functionality.
 
 ### c) Trainings and workshops <a name="5.c"/>
-Whether you
 Your company has recently gone through an Agile transformation but you realize that you lack technical skills to improve your code quality and predictability. We can help you make sure that your team keeps delivering at the same pace even long after the initial phase of your project.
 
 _**Table of Contents**_
