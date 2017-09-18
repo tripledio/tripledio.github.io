@@ -6,9 +6,7 @@ header-img: "img/laptop-bg.png"
 ---
 ## Triple D  <a name="1"/>
 
-*Triple D* is a belgian software development company that was founded by us, a group of passionate veteran software engineers.
- 
- Our passion is delivering software that really fits your needs. We aim to do have a lasting positive impact on your codebase and your organisation.
+*Triple D* is a belgian software development company that was founded by us, a group of passionate veteran software engineers. We founded Triple D from our passion for software development.  We aim to do have a lasting positive impact on your codebase and your organisation.
 
 ## What drives us?  <a name="2"/>
 
@@ -80,7 +78,7 @@ We can help you elevating your software delivery process by facilitating trainin
 _**Table of Contents**_
 
 * _[Triple D](#1)_
-* _[Our company goal](#2)_
+* _[What drives us?](#2)_
 * _[Our People](#3)_
 * _[Prerequisites](#4)_
   + _[Achieving a partnership with our customer](#4.a)_
