@@ -39,7 +39,8 @@ Although Uncle Bob provides 2 drawings, his "circles in circles" is a bit confus
 
 Let's start with the most important part, the `use case`. A formal declaration of a piece of functionality of your application. This declaration is an `api` that allows you to invert the dependency. How does it look?
 
- <div style="background-color:rgba(250, 218, 187, 0.8);">
+<div style="background-color:rgba(250, 218, 187, 0.8); padding: 20px;" markdown="1">
+#### Use Case Contract
 ```java
 package io.tripled.architecture.usecases;
 
@@ -72,7 +73,8 @@ public interface CancelTask {
 The request to the `use case` inlined, since it's tightly coupled anyway. Potentially there is also a Response, or a Presenter interface.
 
 An implementation might look like this:
- <div style="background-color:rgba(241, 137, 157, 0.8);">
+<div style="background-color:rgba(241, 137, 157, 0.8); padding: 20px;" markdown="1">
+#### Use Case Implementation
 ```java
 package io.tripled.architecture.usecases;
 
@@ -110,7 +112,8 @@ It's responsabilities are to coordinate actions to domain and domain services.
 
 Although nothing in clean architecture enforces `domain driven design` it's a good match. It would not change much from an architectural point of view, exception the code inside the domain would be more anemic.
 
- <div style="background-color:rgba(254, 244, 137, 0.8);">
+<div style="background-color:rgba(254, 244, 137, 0.8); padding: 20px;" markdown="1">
+#### Domain Aggregate
 ```java
 package io.tripled.architecture.domain;
 
@@ -129,7 +132,7 @@ public class Task {
 		creation = now();
 	}
 
-   ... ommitted for brevity ...
+//   ... ommitted for brevity ...
 
 	public void cancel(String reason) {
 		assertCancellable();
@@ -137,7 +140,7 @@ public class Task {
 		this.status = CANCELLED;
 	}
 	
-   ... ommitted for brevity ...
+//   ... ommitted for brevity ...
 
 	private void assertCancellable() {
 		if (status == COMPLETED){
@@ -162,7 +165,8 @@ If we're talking types, we're talking vocabulary, like (joda)Money, they are use
 ##### The road
 So the usecases need to get called. This is the road that needs to be travelled, this is we're we get to see frameworks. JMS, Soap, Rest, etc. Whatever protocol, framework, you use, it should ultimatly allow you to call a usecase.
 
- <div style="background-color:rgba(219, 253, 219, 0.8);">
+ <div style="background-color:rgba(219, 253, 219, 0.8); padding: 20px;" markdown="1">
+#### Rest Controller
 ```java
 package io.tripled.architecture.infra.rest;
 
