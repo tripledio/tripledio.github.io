@@ -6,16 +6,16 @@ header-img: "img/laptop-bg.png"
 ---
 ## Triple D  <a name="1"/>
 
-*Triple D* is a belgian software development company that was founded by us, a group of passionate veteran software engineers. We founded Triple D from our passion for software development.  We aim to do have a lasting positive impact on your codebase and your organisation.
+*Triple D* is a belgian software development company that was founded by us, a group of passionate veteran software engineers. We founded Triple D from our passion for software development.  We aim to have a lasting positive impact on your codebase and your organisation.
 
 ## What drives us?  <a name="2"/>
 
-Our main motivation is delivering high quality, rock SOLID and well designed software. We want to create products that will fit your needs and that will pay of their investments for years to come. A challenging job well done, that is what we aim for.
+Our main motivation is delivering high quality, rock SOLID and well designed software. We want to create products that will fit your needs and that will pay of your investments for years to come. A challenging job well done, that is what we aim for.
 
 
 ## Our people <a name="3"/>
 
-The main asset of our company is of course it's people. That's why we strive to be great, all-round software engineers. We aim to have a wealth of experience in the wide variety of skills that make up software development. 
+The main asset of our company is of course it's people. That's why we strive to be great, all-round software engineers. We have a wealth of experience in a wide variety of skills that make up software development. And we aim to keep expanding those skills.
 
 #### Practice
 
@@ -44,7 +44,7 @@ When you hire Triple D, you hire a professional who is well versed in a wide ran
 In order to achieve our ambitious goal we believe that there are certain prerequisites in order to make this possible.
 
 #### A close and honest partnership with our customer. <a name="4.a"/>
-   We value open communication more then negotiated contracts. The end goal of a successful partnership is that both partners are pleased with the result. We want to build the software you *need*. Enabling you to continuously reap the benefits from a well designed solution both now and in the *future*. For this open and honest communication is necessary. How else can we built *your* great software *together*?
+   We value open communication more then negotiated contracts. The end goal of a successful partnership is that both partners are pleased with the result. We want to build the software you *need*. Enabling you to continuously reap the benefits from a well designed solution both now and in the *future*. Therefore open and honest communication is necessary. How else can we built *your* great software *together*?
 
 
 #### Ownership of the development process <a name="4.b"/>
@@ -65,15 +65,15 @@ We don't believe in long communication chains and huge documents. We talk to the
 #### Team as a service <a name="5.a"/>
 *Triple D* is a professional software engineering *team* that keeps its coherence over multiple software assignments. We belief that this is how we can have the greatest impact. 
 
-This is comparable to the roman imperial standing army, Which was a professional army instead of an ad hoc formed army. This enabled the romans to keep the hard fought lessons learned and experience gained. 
+This is comparable to the roman imperial standing army, which was a professional army instead of an ad hoc formed army. This enabled the romans to keep the hard fought lessons learned and experience gained. 
 
-In the same spirit Triple D wants to keep his team together as much as possible. So that we can keep building on the lessons learned and profit from the close collaboration gained. This allows not only the individual team members to continuously improve but our overall working as a team keeps getting better as well. Like a well oiled machine.
+In the same spirit Triple D wants to keep its team together as much as possible. So that we can keep building on the lessons learned and profit from the close collaboration gained. This allows not only the individual team members to continuously improve but our overall working as a team keeps getting better as well. Like a well oiled machine.
 
 #### Reinforcement <a name="5.b"/>
-Our people can work together with your existing teams, introducing industry best practices. This will allow your team to evolve and grow. Your team will eventually deliver faster *at a sustainable pace*. 
+Triple D can be brought in as a reinforcement. Working closely together with existing teams allows us to introduce industry best practices. This will not only help in delivering in the short term but it will allow the existing teams to learn, to evolve and to grow. So even after Triple D has gone, your teams should deliver faster, quality software. At a *sustainable pace*. 
 
 #### Trainings and workshops <a name="5.c"/>
-We can help you elevating your software delivery process by facilitating training an workshops on request. Assisting you in taking your team to the next level and making sure that the software keeps delivering long after the initial phase or deadline has passed.
+We can help you to elevate your software delivery process by facilitating training an workshops on request. Assisting you in taking your team to the next level and making sure that the software keeps delivering long after the initial phase or deadline has passed.
 
 _**Table of Contents**_
 
