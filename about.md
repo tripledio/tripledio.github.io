@@ -75,17 +75,3 @@ Triple D can be brought in as a reinforcement. Working closely together with exi
 #### Trainings and workshops <a name="5.c"/>
 We can help you to elevate your software delivery process by facilitating training an workshops on request. Assisting you in taking your team to the next level and making sure that the software keeps delivering long after the initial phase or deadline has passed.
 
-_**Table of Contents**_
-
-* _[Triple D](#1)_
-* _[What drives us?](#2)_
-* _[Our People](#3)_
-* _[Prerequisites](#4)_
-  + _[Achieving a partnership with our customer](#4.a)_
-  + _[Ownership of the development process](#4.b)_
-  + _[Direct communication with all stakeholders](#4.c)_
-  + _[Immediate short feedback loops ](#4.d)_
-* _[Our services](#5)_
-  + _[Team as a service](#5.a)_
-  + _[Reinforcement](#5.b)_
-  + _[Trainings and workshops](#5.c)_
