@@ -72,5 +72,5 @@ In the same spirit Triple D wants to keep its team together as much as possible.
 Triple D can be brought in as a reinforcement. Working closely together with existing teams allows us to introduce industry best practices. This will not only help in delivering in the short term but it will allow the existing teams to learn, to evolve and to grow. So even after Triple D has left, your teams should deliver faster, quality software. At a *sustainable pace*. 
 
 #### Trainings and workshops <a name="5.c"/>
-We can help you to elevate your software delivery process by facilitating training an workshops on request. Assisting you in taking your team to the next level and making sure that the software keeps delivering long after the initial phase or deadline has passed.
+We can help you to elevate your software delivery process by facilitating training and workshops on request. Assisting you in taking your team to the next level and making sure that the software keeps delivering long after the initial phase or deadline has passed.
 
