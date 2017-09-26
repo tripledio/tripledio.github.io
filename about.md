@@ -2,23 +2,25 @@
 layout: page
 title: "About Triple D"
 description: "Who are we?"
-header-img: "img/laptop-bg.png"
+header-img: "img/laptop-bg.jpg"
 ---
 ## Triple D  <a name="1"/>
 
-*Triple D* is a belgian software development company that was founded by us, a group of passionate veteran software engineers. We founded Triple D from our passion for software development.  We aim to have a lasting positive impact on your codebase and your organisation.
+*Triple D* is a belgian software development company that was founded by us, a group of veteran software engineers. We founded Triple D from our passion for software development with the aim of having a lasting positive impact on your codebase and your organisation.
 
 ## What drives us?  <a name="2"/>
 
-Our main motivation is delivering high quality, rock SOLID and well designed software. We want to create products that will fit your needs and that will pay of your investments for years to come. A challenging job well done, that is what we aim for.
+Our main motivation is delivering high quality, rock SOLID and well designed software. We want to create products that will fit your needs and that will pay off your investments for years to come. *A challenging job well done, that is what we aim for.*
 
 ## Our people <a name="3"/>
 
-The main asset of our company is of course it's people. That's why we strive to be great, all-round software engineers. We have a wealth of experience in a wide variety of skills that make up software development. And we aim to keep expanding those skills.
+The most important assets of a software engineering company are of course the people. That is why we strive to be great, all-round software engineers. We have a wealth of experience in a wide variety of skills that make up software development. And we aim to keep expanding those skills.
 
 #### Practice
 
-At Triple D we are constantly honing our skills. Seriously. We want to deliver our best work, all the time. *It is not good enough that it works* We take pride in our work and take responsibility for it.
+At Triple D we are constantly honing our skills. Seriously. 
+
+We want to deliver our best work, all the time. *It is not good enough that it works* We take pride in our work and take responsibility for it.
 
   > We don't cut corners. We **don't** *"ship shit"*
   
@@ -47,7 +49,7 @@ We value open communication more then negotiated contracts. The end goal of a su
 
 
 #### Ownership of the development process <a name="4.b"/>
-When you hire Triple D, you hire people who have spent a lot of their time in getting proficient in their job. Which is so much more than writing code. Let us own the whole development process. So that we can really deliver.
+When you hire Triple D, you hire people who have spent a lot of their time in getting proficient in their job. A job that is so much more than writing code. So let us own the whole development process. That way we can really deliver.
 
 > We do not offer a one size fits-all solution, we offer a rocket boosted start.
 
@@ -56,7 +58,7 @@ We don't believe in long communication chains and huge documents. We talk to the
 
 
 #### Immediate short feedback loops <a name="4.d"/>
-Continuous integration and delivery enables the team to work at full speed. The delivery pipeline allows the customer to see and use the features within minutes after finishing a development iteration. By quickly gathering feedback the delivered product will maximize business value. 
+Continuous integration and continuous delivery enables the team to work at full speed. A good delivery pipeline also allows the customer to see and use the features within minutes after finishing a development iteration.  This enables the team to quickly gather feedback on the delivered product, pivot if necessary and constantly go for maximum business value. 
    
 
 ## Our services <a name="5"/>
