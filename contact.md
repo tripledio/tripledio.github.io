@@ -6,10 +6,9 @@ header-img: "img/contact-bg.jpg"
 ---
 ## Region
 
-Our area of operation in Belgium normally is the triangle Ghent, Antwerp, Brussels. But we are open to interesting proposals of course.
+Our area of operation in Belgium normally is the triangle Ghent, Antwerp, Brussels. But we are open to any interesting proposals.
 
-## Contact info
+## Contact us!
 
-**email** : *info@tripled.io*
-
-[![Twitter](fonts/twitter.png)](https://twitter.com/tripled_io)
++ **email** : *info@tripled.io*
++ **twitter** : *@tripled_io*
