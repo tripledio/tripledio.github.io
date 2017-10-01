@@ -42,7 +42,7 @@ In order to create successful software systems a great diversity of skills is ne
 
 Our definition of done does not end with writing code. We take you to production, we give you the inside view in your application. Performance metrics, but also functional metrics. We know how and what they are doing. You wouldn't get a car without a dashboard.
 
-And full transparency from start to finish.
+Providing full transparency from start to finish.
    
 ## Prerequisites  <a name="4"/>
 
