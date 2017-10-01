@@ -24,7 +24,7 @@ We want to deliver our best work, all the time. *It is not good enough that it w
 
   > We don't cut corners. We **don't** *"ship shit"*
   
-   In order to achieve this high standard, We abide to a set of principles. 
+   In order to achieve this high standard, We abide by a set of principles. 
 
    + Constantly learning and keeping ourselves up to date
    + Continuously practicing our craft
@@ -36,9 +36,13 @@ This enables us to work fast and steady when it matters. While still delivering 
 
 #### More than code
 
-In order to create successful software systems a great diversity of skills is needed. *A lot of them are non technical*. Gathering the requirements, fostering collaboration, good design, searching for new insights, working together ... 
+Triple D professionals spend a lot of time getting well versed in a wide range of topics.
 
-When you hire Triple D, you hire professionals that are well versed in a wide range of topics.
+In order to create successful software systems a great diversity of skills is needed. *A lot of them are non technical*. Gathering the requirements, fostering collaboration, good design, searching for new insights, working together, determining minimal scope to gather quick feedback, ...
+
+Our definition of done does not end with writing code. We take you to production, we give you the inside view in your application. Performance metrics, but also functional metrics. We know how and what they are doing. You wouldn't get a car without a dashboard.
+
+And full transparency from start to finish.
    
 ## Prerequisites  <a name="4"/>
 
