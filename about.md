@@ -40,9 +40,9 @@ Triple D professionals spend a lot of time getting well versed in a wide range o
 
 In order to create successful software systems a great diversity of skills is needed. *A lot of them are non technical*. Gathering the requirements, fostering collaboration, good design, searching for new insights, working together, determining minimal scope to gather quick feedback, ...
 
-Our definition of done does not end with writing code. We take you to production, we give you the inside view in your application. Performance metrics, but also functional metrics. We know how and what they are doing. You wouldn't get a car without a dashboard.
-
-Providing full transparency from start to finish.
+Our definition of done does not end with writing code. We take you to production, we give you the inside view in your application. Performance metrics, but also functional metrics. We know how and what your applications are doing. Just like you wouldn't get a car without a dashboard, we do not deliver applications without full transparency.
+ 
+We deliver reliable, robust software. From start to finish. And beyond.
    
 ## Prerequisites  <a name="4"/>
 
