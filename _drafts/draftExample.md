@@ -10,3 +10,14 @@ To preview your site with drafts, simply run jekyll serve or jekyll build with t
 
 
 https://jekyllrb.com/docs/drafts/
+
+## Make up, layout examples
+
+| We don't want to be a big company We want to be a _professional_ company.|
+| :-------------|
+||
+
+:e-mail: info@tripled.io
+{{ page.title | smartify }}
+
+Length {{ page.content | number_of_words }} words
