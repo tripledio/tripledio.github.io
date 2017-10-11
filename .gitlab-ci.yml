@@ -2,17 +2,35 @@ services:
    - docker:dind
 
 stages:
+   - sync
    - release
    - review
+
+sync-to-github:
+  image: ceregousa/ubuntu-git
+  stage: sync
+  script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$GITHUB_SSH_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - git branch -avv
+    - git checkout $CI_COMMIT_REF_NAME
+    - git pull --all
+    - git remote rm origin
+    - git remote add origin git@github.com:tripledio/tripledio.github.io.git
+    - git push origin '*:*'
+    - git push origin --all -u
+    - git branch -avv
 
 release-image:
   image: docker:latest
   stage: release
   script:
-  - export IMAGE_TAG=$(echo -en $CI_COMMIT_REF_NAME | tr -c '[:alnum:]_.-' '-')
-  - docker login -u "gitlab-ci-token" -p "$CI_JOB_TOKEN" $CI_REGISTRY
-  - docker build --pull -t "$CI_REGISTRY_IMAGE:$IMAGE_TAG" .
-  - docker push "$CI_REGISTRY_IMAGE:$IMAGE_TAG"
+    - export IMAGE_TAG=$(echo -en $CI_COMMIT_REF_NAME | tr -c '[:alnum:]_.-' '-')
+    - docker login -u "gitlab-ci-token" -p "$CI_JOB_TOKEN" $CI_REGISTRY
+    - docker build --pull -t "$CI_REGISTRY_IMAGE:$IMAGE_TAG" .
+    - docker push "$CI_REGISTRY_IMAGE:$IMAGE_TAG"
 
 start-review:
   image: doomkin/ubuntu-ssh
