@@ -11,7 +11,7 @@ sync-to-github:
   stage: sync
   script:
     - eval $(ssh-agent -s)
-    - ssh-add <(echo "$GIT_SSH_KEY")
+    - ssh-add <(echo "$GITHUB_SSH_KEY")
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     - git remote rm origin
