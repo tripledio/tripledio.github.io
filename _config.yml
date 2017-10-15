@@ -27,3 +27,7 @@ authors:
       bio: "Old cranky software craftsmen"
       location: "Belgium"
       image: "/img/guido.jpg"
+  gert:
+      username: "gert"
+      name: "Gert Vilain"
+      location: "Belgium"
