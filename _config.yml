@@ -3,9 +3,14 @@ title: Triple D
 header-img: img/home-bg.jpg
 email: blog@tripled.io
 copyright_name: Triple D
-description: "TripleD blog"
+description: "Triple D blog"
+url: http://www.tripled.io
 disqus: "TripleD"
 google_tracking_id: "UA-86097038-1"
+twitter:
+  username: tripled_io
+logo: /assets/triple_d-logo.jpg
+
 
 # Build settings
 markdown: kramdown
@@ -27,3 +32,5 @@ authors:
       bio: "Old cranky software craftsmen"
       location: "Belgium"
       image: "/img/guido.jpg"
+plugins:
+  - jekyll-seo-tag

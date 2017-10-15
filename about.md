@@ -3,6 +3,7 @@ layout: page
 title: "About Triple D"
 description: "Who are we?"
 header-img: "img/laptop-bg.jpg"
+tags: software development, java, professionalism, "triple D"
 ---
 ## Triple D  <a name="1"/>
 

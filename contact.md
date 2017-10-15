@@ -12,4 +12,4 @@ Our area of operation in Belgium normally is the triangle Ghent, Antwerp, Brusse
 
 + **email** : *[info@tripled.io](mailto:info@tripled.io)*
 + **twitter** : *[@tripled_io](https://twitter.com/tripled_io)*
-+ **Goodreads** : *[Triple D](https://www.goodreads.com/user/show/72348319-triple-d)*
++ **Goodreads** : *[Triple D](https://www.goodreahttps://gitlab.rotate-it.be/tripled/tripledio.github.io.gitds.com/user/show/72348319-triple-d)*
