@@ -10,7 +10,7 @@ google_tracking_id: "UA-86097038-1"
 # Build settings
 markdown: kramdown
 paginate: 5
-gems: [jekyll-paginate,jekyll-feed]
+plugins: [jekyll-paginate,jekyll-feed]
 
 # authors
 authors:
