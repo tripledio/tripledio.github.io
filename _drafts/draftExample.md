@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Example"
 author: guido
 header-img: "img/about-bg.jpg"
 ---
