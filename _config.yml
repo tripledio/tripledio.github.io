@@ -15,7 +15,7 @@ logo: /assets/triple_d-logo.jpg
 # Build settings
 markdown: kramdown
 paginate: 5
-gems: [jekyll-paginate,jekyll-feed]
+plugins: [jekyll-paginate,jekyll-feed,jekyll-seo-tag]
 
 # authors
 authors:
