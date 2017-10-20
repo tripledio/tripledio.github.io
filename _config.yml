@@ -6,11 +6,12 @@ copyright_name: Triple D
 description: "TripleD blog"
 disqus: "TripleD"
 google_tracking_id: "UA-86097038-1"
+permalink: /:day/:month/:year/:title/
 
 # Build settings
 markdown: kramdown
 paginate: 5
-gems: [jekyll-paginate,jekyll-feed]
+plugins: [jekyll-paginate,jekyll-feed]
 
 # authors
 authors:
