@@ -7,6 +7,7 @@ description: "TripleD blog"
 disqus: "TripleD"
 google_tracking_id: "UA-86097038-1"
 permalink: /:day/:month/:year/:title/
+url: //www.tripled.io
 
 # Build settings
 markdown: kramdown
