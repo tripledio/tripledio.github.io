@@ -35,7 +35,7 @@ layout: default
                     {% if author.image %}
                     <figure class="author-image">
                         <a class="img" href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}"
-                           style="background-image: url({{ site.github.url }}{{ author.image }})"><span class="hidden">{{ author.name }}'s Picture</span></a>
+                           style="background-image: url({{ site.github.url | replace: 'http://', '//' }}{{ author.image }})"><span class="hidden">{{ author.name }}'s Picture</span></a>
                     </figure>
                     {% endif %}
 
