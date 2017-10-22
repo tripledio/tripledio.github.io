@@ -4,7 +4,7 @@ layout: default
 {% assign author = site.authors[page.author] %}
 <!-- Post Header -->
 <header class="intro-header"
-        style="background-image: url('{{ site.github.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+        style="background-image: url('{{ site.github.url | replace: 'http://', '//' }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -34,18 +34,18 @@ layout: default
 
                     {% if author.image %}
                     <figure class="author-image">
-                        <a class="img" href="{{ site.github.url }}author/{{ author.username }}"
+                        <a class="img" href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}"
                            style="background-image: url({{ site.github.url }}{{ author.image }})"><span class="hidden">{{ author.name }}'s Picture</span></a>
                     </figure>
                     {% endif %}
 
                     <section class="author">
-                        <h4><a href="{{ site.github.url }}author/{{ author.username }}">{{ author.name }}</a></h4>
+                        <h4><a href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}">{{ author.name }}</a></h4>
 
                         {% if author.bio %}
                         <p> {{ author.bio }}</p>
                         {% else %}
-                        <p>Read <a href="{{ site.github.url }}author/{{ author.nickname }}">more posts</a> by this author.
+                        <p>Read <a href="{{ site.github.url | replace: 'http://', '//'  }}author/{{ author.nickname }}">more posts</a> by this author.
                         </p>
                         {% endif %}
                         <div class="author-meta">
