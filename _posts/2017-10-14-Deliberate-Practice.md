@@ -24,6 +24,11 @@ There is another thing you could call continuous practice which you can by examp
 #### Ways to do it <a id="1.b"/>
 
 ##### Meetups
+A kind of special form of deliberate practice is attending Meetups, I call it special because it is not something you will do alone.
+On the meetup you will always be with a group of hopefully likeminded people that have the same goal as you.
+Learn something new or get some new insights. A great meetup I always try to go to is the Socrates BE meetup. This meetup uses the open space format.
+Even though an open space is kind of self organizing... A lot of location planning goes into it. So for that  huge shout out to the meetup organizers.
+You guys are awesome!
 ##### Katas
 ##### Reading
 ##### Lightning talks
