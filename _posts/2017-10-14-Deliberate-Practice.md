@@ -18,7 +18,7 @@ my first blog post that you started reading. It will be the same subject as my f
 
 #### What is it? <a id="1.a"/>
 
-Deliberate practice is the act of doing something specifically, putting your full attention to improve yourself in a skill. 
+Deliberate practice is the act of doing something on purpose, putting your full attention to improve yourself in a skill. 
 There is another thing you could call continuous practice which you can by example get doing your day to day job.
 
 #### Ways to do it <a id="1.b"/>
