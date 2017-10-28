@@ -12,9 +12,16 @@ In this post i would like to address another one of these overused words: **Mode
 
 ## What's in a name?
 
-A model is a structure with certain properties that is created to solve a specific problem. A model serves a purpose. A relational database model structures the data in such a way that we can access and query it and perform relational operations on it. A maquette is a representation of a real building that intends to give us an idea how the real one would actually look like. Its properties are that the size are in proportion so that it can perform its function.
+A model is a representation of something that was created to serve a certain purpose. 
 
-//Here
++ **A relational database model** structures the data in such a way that we can access and query it and perform relational operations on it. The data was modelled in a certain way for a given purpose. 
+
++ **A maquette** is a representation of a real building that intends to give us an idea how the real one would actually look like. Its properties are that the width and height are in proportion so that humans can use it to reason about it, make comparisons. That is it function.
+
++ **A world map** is typical example of a model. The world can be modelled in a variety of different ways. Depending on what function needs to fulfilled.
+
+This may seem obvious but it is important to realize that we can have many different models for the same problem to solve. Just as we can have different models working together because there are different problems to solve.
+
 
 ## Classic types of model
 
@@ -26,11 +33,14 @@ Some examples of models used in the software industry:
 + Command model
 + Read model
 
-These are all different models that perform a different function and have a different responsibility. It is the first word that matters and that defines the model. 
+These are all different models that perform a different function and have a different responsibility. It is the first word that matters and that defines the purpose of the model. 
 
-Multiple of these models can live together in the same application. Depending on the architecture of the application.
+Depending on the architecture of an application multiple of these models can live together in the same application. 
 
-## One model
+![Models in a layered architecture](/img/models-layers.png)
+
+## One model to rule them all
+//here
 
 A practice that i often encounter is the use of a single model for everything. The data model is used for the domain model, for the api model. To me this only is a viable option is the application is very, very small and lightweight. And everything can still fit in my head. If there are clearly different responsibilities, different problems to be solved, different things to be modelled i don't use the same model. I don't eat my soup with a fork.
 
