@@ -33,16 +33,23 @@ Some examples of models used in the software industry:
 + Command model
 + Read model
 
-These are all different models that perform a different function and have a different responsibility. It is the first word that matters and that defines the purpose of the model. 
+All of these different models that perform a different function and have a different responsibility. It is the first word that matters and that defines the purpose of the model. 
 
-Depending on the architecture of an application multiple of these models can live together in the same application. 
+Depending on the architecture of an application multiple of these models can live together in the same application. In a layered architecture a type of model is typically associated with a certain layer.
 
 ![Models in a layered architecture](/img/models-layers.png)
+
+These different types of models also relate to each other. A domain model can have different view models, a data model can be used by different domain models, a command model typically has different read models. Again it depends on which problem the model is trying to solve.
+
 
 ## One model to rule them all
 //here
 
-A practice that i often encounter is the use of a single model for everything. The data model is used for the domain model, for the api model. To me this only is a viable option is the application is very, very small and lightweight. And everything can still fit in my head. If there are clearly different responsibilities, different problems to be solved, different things to be modelled i don't use the same model. I don't eat my soup with a fork.
+A practice that often encountered *inside* an application is the use of a single model for everything. The data model is used for the domain model, for the api model. regardless of the problem that needs to solved. 
+
+For me this is only a viable approach when the application is very, very small and lightweight. When everything can still fit in my head. When the complexity is so low, the functionality so simple and straightforward that anyone can grasp it immediately. Which means is so simple that it is very easy to change without the risk of introducing any unwanted side effects.
+
+When the above conditions are not met, when there *are* clearly different responsibilities, different problems to be solved, different things to be modelled then i don't use the same model. Then i use a different model for each different layer.
 
 By using different models inside an application i aim to 
 
