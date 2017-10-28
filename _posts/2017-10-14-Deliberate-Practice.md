@@ -31,6 +31,8 @@ Even though an open space is kind of self organizing... A lot of location planni
 You guys are awesome!
 ##### Katas
 ##### Reading
+Ah yes reading... it's another great way to be engaged with our profession. There is only one problem... there is so much to read
+it's hard to know where to start. 
 ##### Lightning talks
 ##### Videos
 Visiting a lot of conferences can get expensive really fast. Thankfully most conferences put their talks online on youtube.
