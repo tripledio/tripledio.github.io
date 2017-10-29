@@ -51,7 +51,7 @@ This one is simple. People call it their domain model but what they really mean 
 
 They serve different purposes. When the data model is called domain model, then where did the domain model go? To often into an anemic MVC architecture.
 
-## a) One model to rule them all
+## b) One model to rule them all
 
 ### The pattern
 
@@ -94,42 +94,63 @@ When i clean the dishwasher it is easier to just throw everything in the same cl
  Unfortunately only developers look into code. Because if our mothers would, i'm willing to bet most code bases would look a whole lot better.
 
 
-## b) The M in MVC
+## c) The M in MVC
 
-One of the most widely 'known' patterns MVC (model view controller) also contains my word of the day. Model. And here the meaning of the model in MVC isn't clear either. In fact the whole meaning of MVC is unfortunately not always clear.
+### Model, View, Controller. But which model?
+
+One of the most widely 'known' patterns MVC (model view controller) also contains my word of the day. Model. And here the meaning of the model in MVC isn't clear either. Which model do me mean? In fact the whole meaning of MVC is unfortunately not always clear.
 
 > "The widest quoted pattern in UI development is Model View Controller (MVC) - it's also one of the most misquoted." - *Martin fowler*  [^1]
 
-For me a lot of the confusion lies in which model people put in their MVC. Data model? View model? Domain model? And when they say domain model, do they really mean their domain model? 
+For me a lot of the confusion lies in which model people put in their MVC. Data model? View model? Domain model? And when they say domain model, do they *really* mean their domain model? 
 
-The meaning of MVC has changed over the years in such MVC that it can be seen as a macro or micro pattern. This changed was caused for a great deal by the rise of a lot MVC frameworks. 
+### The meaning of MVC 
 
-In my view the frameworks, combined with the classical three tier view, the data model for domain model and the single model 'pattern' gave rise to MVC as an architecture pattern. Which often goes hand in hand with the [anemic domain model](/25/08/2016/The-anemic-domain-model/) pattern. Oh, its all connected. Which can only help the model confusion. 
+The meaning of MVC has changed over the years in such that MVC moved from a micro to a macro pattern.
 
-## The MVC architecture 
-
-Everyone knows the three classic layers: 
-
- + UI Layer
- + Business Layer
- + Data Layer
+//TODO reference to meaning according to UB
  
- They have the same goal in common as the MVC pattern. Namely separation of concerns. And since both of them consist out of three elements they have to mean the same thing right?
- 
- Layer|MVC component|
- -----|--------------|
- UI Layer| V : The view|
- Business Layer| C : The controller| 
- Data Layer| M : The model. (But which one?)|
- 
- //HERE 
-## The anemic domain model 'architecture'
+Most software developers that i encounter or interview have a different view on what MVC is then the one UB professes. I think the common view i encounter was caused for a great deal by the rise of a lot MVC frameworks. These frameworks where/are very useful to get a simple application up and running very fast. But they also helped in transforming  
 
+In my view the common changed meaning of MVC is a result of the combination of
+
++ the MVC frameworks 
++ the classical three tier architecture
++ the mistaken identity of the data model for domain model
++ the single model 'pattern' 
+
+I think this combination gave rise to MVC as an architecture pattern. Which often goes hand in hand with the [anemic domain model](/25/08/2016/The-anemic-domain-model/) pattern [^3].
+
+### The MVC architecture 
+
+Everyone developer knows the architecture with three classic layers: 
+ 
+  Layer|Responsibility|
+  -----|--------------|
+  UI Layer|  All visualization to the user|
+  Business Layer|  All business logic|
+  Data Layer|The persisted data |
+ 
+This architecture has the same goal as the MVC pattern. Namely *separation of concerns*. And since both of them consist out of three elements it is just a small step to think they are the same thing.
+ 
+ Layer|MVC |Component|Responsibility|
+ -----|----|----------|--------------|
+ UI Layer| V | The view| All visualization|
+ Business Layer| C | The controller| All business logic|
+ Data Layer| M | The model|The persisted data |
+ 
+When MVC is seen as an implementation of the classic three tier architecture then the model is the data model, the controllers contain the business logic, and all view related responsibilities belong in the view. This gives rise to the *anemic domain model* [^3].
+  
+  
+  //HERE
+If a developer equates the model with the data layer, and thus the model with the data model
+
+ often resulting in huge fat controllers. 
  Logic in services (services again). The data in the 'domain model' which is nothing more then the data model that is mapped by the orm (th M from mapping one model into another)
  
  Three classic layers - UI, Logic, data => View, Controller, Model
 
-, which where very useful to get a simple application up and running very fast  
+
 
 
 
@@ -146,3 +167,5 @@ For me, the M in MVC should **NOT** be the domain model.
 [^1]: _[GUI architectures](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
 
 [^2]: _[MVC delivery mechanism](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
+
+[^3]: [The anemic domain model](/25/08/2016/The-anemic-domain-model/) pattern
