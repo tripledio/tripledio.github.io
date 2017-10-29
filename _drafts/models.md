@@ -108,7 +108,7 @@ For me a lot of the confusion lies in which model people put in their MVC. Data 
 
 The meaning of MVC has changed over the years in such that MVC moved from a micro to a macro pattern. [^2]
 
-//TODO reference to meaning according to UB
+> //TODO reference to meaning according to UB
  
 Most software developers that i encounter or interview have a different view on what MVC is then the one UB professes. I think the common view i encounter was caused for a great deal by the rise of a lot MVC frameworks. These frameworks where/are very useful to get a simple application up and running very fast. But they also helped in transforming  
 
@@ -147,7 +147,7 @@ My theory is that we often end up with anemic domain models because in a 'MVC ar
 
 For me, the M in MVC should **NOT** be the domain model.
 
-//TODO image placing MVC in frontend infrastructure layer. Controller invoking use cases (or application services) and working on data structures it retrieved. The Model**S** that MVC used is then a presentation model residing on the front end and completly decoupled from the domain model or the data model.
+> //TODO image placing MVC in frontend infrastructure layer. Controller invoking use cases (or application services) and working on data structures it retrieved. The Model**S** that MVC used is then a presentation model residing on the front end and completly decoupled from the domain model or the data model.
 
 
 
@@ -158,4 +158,4 @@ For me, the M in MVC should **NOT** be the domain model.
 
 [^2]: _[MVC delivery mechanism](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
 
-[^3]: [The anemic domain model](/25/08/2016/The-anemic-domain-model/) pattern
+[^3]: _[The anemic domain model](/25/08/2016/The-anemic-domain-model/)_
