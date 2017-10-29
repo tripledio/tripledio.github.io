@@ -139,25 +139,15 @@ This architecture has the same goal as the MVC pattern. Namely *separation of co
  Business Layer| C | The controller| All business logic|
  Data Layer| M | The model|The persisted data |
  
-When MVC is seen as an implementation of the classic three tier architecture then the model is the data model, the controllers contain the business logic, and all view related responsibilities belong in the view. This gives rise to the *anemic domain model* [^3].
+When MVC is seen as an implementation of the classic three tier architecture then the model represents the data, the controllers contain the business logic, and all view related responsibilities belong in the view. This then often gives rise to the *anemic domain model* [^3].
   
-  
-  //HERE
-If a developer equates the model with the data layer, and thus the model with the data model
-
- often resulting in huge fat controllers. 
- Logic in services (services again). The data in the 'domain model' which is nothing more then the data model that is mapped by the orm (th M from mapping one model into another)
+My theory is that we often end up with anemic domain models because in a 'MVC architecture' the model from MVC is equated with the data model. Although its often called the domain model. With the business logic placed outside of the model this often results in huge fat controllers or in a lot of *services*. Containing all the logic. There are some who call that a service oriented architecture. But lets focus on the ambiguity of one overloaded term at a time.
  
- Three classic layers - UI, Logic, data => View, Controller, Model
-
-
-
-
-
-Rant coming...
+### The proper home of MVC
 
 For me, the M in MVC should **NOT** be the domain model.
 
+//TODO image placing MVC in frontend infrastructure layer. Controller invoking use cases (or application services) and working on data structures it retrieved. The Model**S** that MVC used is then a presentation model residing on the front end and completly decoupled from the domain model or the data model.
 
 
 
