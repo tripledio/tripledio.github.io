@@ -106,7 +106,7 @@ For me a lot of the confusion lies in which model people put in their MVC. Data 
 
 ### The meaning of MVC 
 
-The meaning of MVC has changed over the years in such that MVC moved from a micro to a macro pattern.
+The meaning of MVC has changed over the years in such that MVC moved from a micro to a macro pattern. [^2]
 
 //TODO reference to meaning according to UB
  
