@@ -41,29 +41,47 @@ Depending on the architecture of an application multiple of these models can liv
 
 These different types of models also relate to each other. A domain model can have different view models, a data model can be used by different domain models, a command model typically has different read models. Again it depends on which problem the model is trying to solve.
 
+# The problem(s)
+
+Ok, that's all nothing new.  Where is the 'misuse'? And what exactly is my problem with that misuse?
 
 ## One model to rule them all
-//here
 
-A practice that often encountered *inside* an application is the use of a single model for everything. The data model is used for the domain model, for the api model. regardless of the problem that needs to solved. 
+### The pattern
 
-For me this is only a viable approach when the application is very, very small and lightweight. When everything can still fit in my head. When the complexity is so low, the functionality so simple and straightforward that anyone can grasp it immediately. Which means is so simple that it is very easy to change without the risk of introducing any unwanted side effects.
+A practice that is often encountered *inside* an application is the use of a single model for *everything*. The data model is used for the domain model, for the api model... Regardless of the problem that needs to solved. One model for everything.
 
-When the above conditions are not met, when there *are* clearly different responsibilities, different problems to be solved, different things to be modelled then i don't use the same model. Then i use a different model for each different layer.
+### When is a single model viable ?
+
+For me the single model approach is only a viable approach when the application is very, very small and lightweight. So small that everything can still fit in my head. When it has a complexity that is so low, a functionality so simple and straightforward that anyone can grasp it immediately. Which means that the application is so simple that it is very easy to change without running the risk of introducing any unwanted side effects.
+
+### Using multiple models
+
+When the above conditions are *not* met, when there *are* clearly different responsibilities, different problems to be solved, different things to be modelled then i don't use the same model. Then i use a different model for each different layer.
 
 By using different models inside an application i aim to 
 
 + decouple the different solution for the different problems
 + create a clear and simple solution for each problem
-+ minimizing the impact of potential problems
++ minimize the impact of potential problems
+
+### The argument against multiple models
 
 The main argument from developers against using multiple models is that they need to provide mapping from one model to another. BooF##Hoo Mapping in itself is a very simple straightforward process in which your IDE does most of the work for you. Granted it is a boring task. But that is because it is so simple. The cost in development time of doing some boring mapping pales in comparison with the time spent on looking for bugs, staring at an entangled big ball of mud where all the different responsibilities are intertwined.
 
-When i clean the dishwasher it is easier to just throw everything in the same closet and be done with it. But i know it pays of to put the cups together near the coffee machine, to put the boards together close to the table, put the casseroles near the cooking furniture and put the cutlery in the drawer. They all serve a different purpose. I place then where they logically belong and are the most convenient. And yes that means that i need to do a little bit of work to keep them in order.
+### Why are multiple models useful?
+
+When i clean the dishwasher it is easier to just throw everything in the same closet and be done with it. But i know it pays of to put the cups *together* near the coffee machine, to put the boards *together* close to the table, put the casseroles *together* near the cooking furniture and place the cutlery *together* in the drawer.
+ 
+ They all serve a different purpose. I group the objects with a shared function *together* and place them where they logically belong and are the most convenient. And yes that means that i need to do a little bit of work to keep them in order.
+ 
+ In the same way i group together what belongs together in order of the problem it solves. At the same time separating it from objects that solve a different problem. Keeping things nice and tidy. And yes at the cost of some simple boring work. But the time and quality i gain by keeping things clean and separated is enormous.
+ 
+ Unfortunately only developers look into code. Because if our mothers would, i'm willing to bet most code bases would look a whole lot better.
 
 
 ## The M in MVC
-
+//HERE 
 Rant coming...
 
 
