@@ -149,13 +149,14 @@ For me, the M in MVC should **NOT** be the domain model.
 
 > //TODO image placing MVC in frontend infrastructure layer. Controller invoking use cases (or application services) and working on data structures it retrieved. The Model**S** that MVC used is then a presentation model residing on the front end and completly decoupled from the domain model or the data model.
 
+# Conclusion
 
-
+> Feedback appreciated
 
 **Footnotes**
 
-[^1]: _[GUI architectures](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
+[^1]: _[GUI architectures by Martin Fowler](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
 
-[^2]: _[MVC delivery mechanism](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
+[^2]: _[MVC delivery mechanism by Sandro Mancuso](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
 
-[^3]: _[The anemic domain model](/25/08/2016/The-anemic-domain-model/)_
+[^3]: _[The anemic domain model by me](/25/08/2016/The-anemic-domain-model/)_
