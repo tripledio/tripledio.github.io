@@ -39,3 +39,4 @@ it's hard to know where to start.
 Visiting a lot of conferences can get expensive really fast. Thankfully most conferences put their talks online on youtube.
 This enables everyone to watch them on their own time and use this as a tool to learn new stuff. I try to balance the amaount of netflix
 I watch with the amount of technical videos. Although I have to be honest... This isn't that easy.
+#### Blog posts
