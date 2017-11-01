@@ -37,11 +37,25 @@ All of these different models that perform a different function and have a diffe
 
 ## Models and layers
 
-Depending on the architecture of an application multiple of these models can live together in the same application. In a layered architecture a type of model is typically associated with a certain layer.
+Inside an application we typically will have different layers. There is a relation between the type of layer and the type of models. Lets take for example the very high level three tier architecture that every developer knows.
 
-![Models in a layered architecture](/img/models-layers.png)
 
-These different types of models also relate to each other. A domain model can have different view models, a data model can be used by different domain models, a command model typically has different read models. Again it depends on which problem the model is trying to solve.
+![Classic layers](/img/classic-layers.png)
+
+ 
+  Layer|Responsibility|
+  -----|--------------|
+  UI Layer|  All visualization to the user|
+  Business Layer|  All business logic|
+  Data Layer|The persisted data |
+  
+ Depending on the architecture of an application, multiple models can live together in the same application. In a layered architecture a type of model is typically associated with a certain layer. Because the have the same responsibility and are tackling the same problem. A layer is nothing more then a separation of code where a certain sub problem is being solved. 
+
+![Models in a layered architecture](/img/classic-models-layers.png)
+
+These different types of models also relate to each other. A domain model can be used by different view models, a data model can be used by different domain models, a command model typically has different read models. Again it depends on which problem the model is trying to solve. Although we want to avoid that de models intermingle and depend directly with each other.  
+
+( An application can exist out of multiple separate deployable parts but lets keep it simple for know and assume that one application equals one deployable.)  
 
 # The problem(s)
 
@@ -136,15 +150,13 @@ I think this combination gave rise to MVC as an architecture pattern. Which ofte
 
 ### The MVC architecture 
 
-Everyone developer knows the architecture with three classic layers: 
+
+  
+
  
-  Layer|Responsibility|
-  -----|--------------|
-  UI Layer|  All visualization to the user|
-  Business Layer|  All business logic|
-  Data Layer|The persisted data |
- 
-This architecture has the same goal as the MVC pattern. Namely *separation of concerns*. And since both of them consist out of three elements it is just a small step to think they are the same thing.
+This architecture has the same goal as the MVC pattern. Namely *separation of concerns*. And since both of them consist out of three elements it is just a small step to think they are the same thing. Which give rise to a much encountered view, what i call the MVC - architecture
+
+![Classic layers](/img/mvc-architecture.png)
  
  Layer|MVC |Component|Responsibility|
  -----|----|----------|--------------|
@@ -154,7 +166,9 @@ This architecture has the same goal as the MVC pattern. Namely *separation of co
  
 When MVC is seen as an implementation of the classic three tier architecture then the model represents the data, the controllers contain the business logic, and all view related responsibilities belong in the view. This then often gives rise to the *anemic domain model* [^3].
   
-My theory is that we often end up with anemic domain models because in a 'MVC architecture' the model from MVC is equated with the data model. Although its often called the domain model. With the business logic placed outside of the model this often results in huge fat controllers or in a lot of *services*. Containing all the logic. There are some who call that a service oriented architecture. But lets focus on the ambiguity of one overloaded term at a time.
+My theory is that we often end up with anemic domain models because in a 'MVC architecture' the model from MVC is equated with the data model. Although its often called the domain model. With the business logic placed outside of the model this often results in huge fat controllers or in a lot of *services*. Containing all the logic.
+ 
+There are some who call that a service oriented architecture. But lets focus on the ambiguity of one overloaded term at a time. 
  
 ### The proper home of MVC
 
