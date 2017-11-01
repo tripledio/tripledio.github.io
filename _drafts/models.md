@@ -33,7 +33,9 @@ Some examples of models used in the software industry:
 + Command model
 + Read model
 
-All of these different models that perform a different function and have a different responsibility. It is the first word that matters and that defines the purpose of the model. 
+All of these different models that perform a different function and have a different responsibility. It is the first word that matters and that defines the purpose of the model.  One of the root cause of model ambiguity is not asking the question: *"A model of what?"* Without knowing that we are comparing apples and oranges.
+
+## Models and layers
 
 Depending on the architecture of an application multiple of these models can live together in the same application. In a layered architecture a type of model is typically associated with a certain layer.
 
@@ -47,9 +49,9 @@ Ok, that's all nothing new.  Where is the misuse? And what exactly is my problem
 
 ## a) Data model as domain model
 
-This one is simple. People call it their domain model but what they really mean is their data model represented in code. Preferably with an ORM to perform the translation. **But a domain model is not a data model.**
+This one is simple. People call it their domain model but what they really mean is their data model represented in code. Preferably with an ORM to perform the translation. **But a domain model is not a data model.** when people talk about their domain model, i have obtained teh reflex of probing what kind of model they are actually talking about. *Because a data model does not become a domain model because we start calling it that.*
 
-They serve different purposes. When the data model is called domain model, then where did the domain model go? To often into an anemic MVC architecture.
+Models serve different purposes. When the data model is called domain model, then where did the domain model go? To often into an anemic MVC architecture.
 
 ## b) One model to rule them all
 
@@ -57,15 +59,26 @@ They serve different purposes. When the data model is called domain model, then 
 
 A practice that is often encountered *inside* an application is the use of a single model for *everything*. The data model is used for the domain model, for the api model... Regardless of the problem that needs to solved. One model for everything.
 
+To me this anti-pattern is one of the main drives behind failing, late over budget software projects.
+
 ### When is a single model viable ?
 
-For me the single model approach is only a viable approach when the application is very, very small and lightweight. So small that everything can still fit in my head. When it has a complexity that is so low, a functionality so simple and straightforward that anyone can grasp it immediately. Which means that the application is so simple that it is very easy to change without running the risk of introducing any unwanted side effects.
+For me the single model approach is only a viable approach in very rare cases. When the application is very, very small and lightweight. So small that everything can still fit in my head. When it has a complexity that is so low, a functionality so simple and straightforward that anyone can grasp it immediately. Which means that the application is so simple that it is very easy to change without running the risk of introducing any unwanted side effects.
 
-If the application is a very simple crud application or just a simple data transformation, then different models have no use. There is just ne problem that is being solved (transforming some data) or they are extremely simple (basic CRUD with very few logic).
+If the application is a very simple crud application or just a simple data transformation, then different models have no use. There is just one problem that is being solved (transforming some data) or they are extremely simple (basic CRUD with very few logic).
+
+As a rule of thumb: 
+
+> If you are wondering if you can get away with just one model, **you can't.**  
+
+Because it should not be debatable that an extra model is not worth the effort. *In case of any doubt, there is no doubt* 
+
 
 ### Using multiple models
 
 When the above conditions are *not* met, when there *are* clearly different responsibilities, different problems to be solved, different things to be modelled then i don't use the same model. Then i use a different model for each different layer.
+
+
 
 By using different models inside an application i aim to 
 
@@ -75,7 +88,7 @@ By using different models inside an application i aim to
 
 ### The argument against multiple models
 
-The main argument people give against using multiple models is that they need to provide mapping from one model to another. Well boo F#&ng hoo. 
+The main argument people give against using multiple models is that they need to provide mapping from one model to another. *Well boo F#&ng hoo.* 
 
 Mapping in itself is a very simple straightforward process in which your IDE does most of the work for you. Granted it is a boring task. But that is because it is so simple. The cost in development time of doing some boring mapping pales in comparison with the time spent on looking for bugs, staring at an entangled big ball of mud where all the different responsibilities are intertwined.
 
