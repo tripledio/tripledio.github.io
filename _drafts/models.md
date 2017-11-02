@@ -49,7 +49,7 @@ Inside an application we typically will have different layers. There is a relati
   Business Layer|  All business logic|
   Data Layer|The persisted data |
   
- Depending on the architecture of an application, multiple models can live together in the same application. In a layered architecture a type of model is typically associated with a certain layer. Because the have the same responsibility and are tackling the same problem. A layer is nothing more then a separation of code where a certain sub problem is being solved. 
+ Depending on the architecture of an application, multiple models can live together in the same application. In a layered architecture a type of model is typically associated with a certain layer. Because they have the same responsibility and are tackling the same problem. A layer is nothing more then a separation of code where a certain sub problem is being solved. 
 
 ![Models in a layered architecture](/img/classic-models-layers.png)
 
@@ -57,23 +57,25 @@ These different types of models also relate to each other. A domain model can be
 
 ( An application can exist out of multiple separate deployable parts but lets keep it simple for know and assume that one application equals one deployable.)  
 
-# The problem(s)
+# The anti-patterns *(aka Please don't do this)*
 
-Ok, that's all nothing new.  Where is the misuse? And what exactly is my problem with that misuse?
+Ok, that's all nothing new.  Where is the ambiguity? And what are its consequences?
 
 ## a) Data model as domain model
 
-This one is simple. People call it their domain model but what they really mean is their data model represented in code. Preferably with an ORM to perform the translation. **But a domain model is not a data model.** when people talk about their domain model, I have obtained teh reflex of probing what kind of model they are actually talking about. *Because a data model does not become a domain model because we start calling it that.*
+This one is simple. People call it their domain model but what they really mean is their data model represented in code. Preferably with an ORM to perform the translation. **But a domain model is not a data model.** when people talk about their domain model, I have obtained the reflex of probing what kind of model they are actually talking about. *Because a data model does not become a domain model because we start calling it that.*
 
-Models serve different purposes. When the data model is called domain model, then where did the domain model go? To often into an anemic MVC architecture.
+Models serve different purposes. When the data model is called domain model, then where did the domain model go? Is it even there? In practice I usually see it dissolving into an anemic MVC architecture.
 
 ## b) One model to rule them all
 
 ### The pattern
 
-A practice that is often encountered *inside* an application is the use of a single model for *everything*. The data model is used for the domain model, for the api model... Regardless of the problem that needs to solved. One model for everything.
+A practice that is often encountered *inside* an application is the use of a single model for *everything*. The data model is used for the domain model, for the api model... Regardless of the problem that needs to solved. One model for everything. 
 
-To me this anti-pattern is one of the main drivers behind failing, late, over-budget software projects. The amount of money wasted by this pattern is infuriating.
+Obviously this goes hand in hand with the previous anti-pattern. If we have just one model, it is usualy the data model. Because we all know the data(base) is king.
+
+To me this anti-pattern is one of the main drivers behind failing, late, over-budget software projects. The larger the software project, the larger the impact. The amount of time and money i've seen wasted by this pattern is infuriating.
 
 ### When is a single model viable ?
 
@@ -91,8 +93,6 @@ Because it should not be debatable that an extra model is not worth the effort. 
 ### Using multiple models
 
 When the above conditions are *not* met, when there *are* clearly different responsibilities, different problems to be solved, different things to be modelled then I don't use the same model. Then I use a different model for each different layer.
-
-
 
 By using different models inside an application I aim to 
 
