@@ -73,25 +73,25 @@ Models serve different purposes. When the data model is called domain model, the
 
 A practice that is often encountered *inside* an application is the use of a single model for *everything*. The data model is used for the domain model, for the api model... Regardless of the problem that needs to solved. One model for everything. 
 
-Obviously this goes hand in hand with the previous anti-pattern. If we have just one model, it is usualy the data model. Because we all know the data(base) is king.
+Obviously this goes hand in hand with the previous anti-pattern. If we have just one model, it is usually the data model. Because we all know the data(base) is king.
 
 To me this anti-pattern is one of the main drivers behind failing, late, over-budget software projects. The larger the software project, the larger the impact. The amount of time and money i've seen wasted by this pattern is infuriating.
 
 ### When is a single model viable ?
 
-For me the single model approach is only a viable approach in very rare cases. When the application is very, very small and lightweight. So small that everything can still fit in my head. When it has a complexity that is so low, a functionality so simple and straightforward that anyone can grasp it immediately. Which means that the application is so simple that it is very easy to change without running the risk of introducing any unwanted side effects.
+For me the single model approach is only a viable approach in very, very rare cases. When the application is very, very small and lightweight. So small that everything can still fit in my head. When it has a complexity that is so low, a functionality so simple and straightforward that anyone can grasp it immediately. Which means that the application is so simple that it is very easy to change without running the risk of introducing any unwanted side effects.
 
-If the application is a very simple crud application or just a simple data transformation, then different models have no use. There is just one problem that is being solved (transforming some data) or they are extremely simple (basic CRUD with very few logic).
+If the application is a very simple crud application or just a simple data transformation, then different models might have no use. if there is just one problem that is being solved (transforming some data) or the problems solved are extremely simple (basic CRUD with very few logic). However we all know that software is supposed to change and grow. Little by little the code base grows and complexity increases. Only just this one little extra feature/extension. Which makes it never worthwhile to split up the models, bring some structure into the application. Until it is too late.
 
-As a rule of thumb: 
+When you are debating with yourself or with your team members whether introducing a separation of models is worth the effort, remember: 
+
+> *In case of any doubt, there is no doubt* - Robert de Niro [^r] 
+
+Bring in the structure early. It is the most important attribute of software, but never deemed urgent. If the structure/architecture comes last, it comes to late. So as a simple rule of thumb: 
 
 ```markdown
  If you are wondering if you can get away with just one model, **you can't.**  
 ```
-Because it should not be debatable that an extra model is not worth the effort.
-
-> *In case of any doubt, there is no doubt* - Robert de Niro [^r] 
-
 
 
 ### Using multiple models
@@ -210,11 +210,13 @@ When the UI can access the domain model and uses it directly for its model UI co
 
 By decoupling the UI from the domain model, the MVC pattern can not access the domain model. Because for me the Model in MVC should **NOT** be the domain model. While the controllers will indirectly invoke the use cases api from the application, they shouldn't have a direct dependency on the domain model. They can and will have their own models to work with and will use the response data structures that the use cases provide them. So i share Uncle Bob [^3] view on this. It fits perfectly within the hexagonal architecture. It is just a clean separation of responsibilities. Which is exactly the same thing that MVC tries to achieve.
 
-Avoid using the domain model for generating your views directly. While this is technically possible  (isn't everything?) it often leads to
+Avoid using the domain model for generating your views directly. While this is technically possible, isn't everything?, it often leads to
 + UI concerns in the domain model
 + one model to rule them all
 + an anemic domain model 
 + an entangled, unstructured mess 
+
+So my advice is to keep your domain model separated from any MVC patterns, frameworks you may have.
 
 # Conclusion
 
@@ -224,6 +226,7 @@ Avoid using the domain model for generating your views directly. While this is t
 + The MVC patterns belongs in the front end infrastructure. It shouldn't depend on the domain model directly. It needs its own model created for the views that are necessary.
 
 > Feedback appreciated
+> Is the blog too long? Should IU split it up?
 
 **Footnotes**
 
