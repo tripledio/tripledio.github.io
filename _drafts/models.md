@@ -73,7 +73,7 @@ Models serve different purposes. When the data model is called domain model, the
 
 A practice that is often encountered *inside* an application is the use of a single model for *everything*. The data model is used for the domain model, for the api model... Regardless of the problem that needs to solved. One model for everything.
 
-To me this anti-pattern is one of the main drives behind failing, late over budget software projects.
+To me this anti-pattern is one of the main drivers behind failing, late, over-budget software projects. The amount of money wasted by this pattern is infuriating.
 
 ### When is a single model viable ?
 
@@ -127,52 +127,68 @@ When I clean the dishwasher it is easier to just throw everything in the same cl
 
 One of the most widely 'known' patterns MVC (model view controller) also contains my word of the day. Model. And here the meaning of the model in MVC isn't clear either. Which model do me mean? In fact the whole meaning of MVC is unfortunately not always clear.
 
-> "The widest quoted pattern in UI development is Model View Controller (MVC) - it's also one of the most misquoted." - *Martin fowler*  [^1]
+> The widest quoted pattern in UI development is Model View Controller (MVC) - it's also one of the most misquoted. - *Martin fowler*  [^1]
 
-For me a lot of the confusion lies in which model people put in their MVC. Data model? View model? Domain model? And when they say domain model, do they *really* mean their domain model? 
+If you google MVC you'll find a lot of explanations. ( Most of which i don't agree with. ) Going back to an appeal to authority does not always clarify things. 
 
+> MVC splits *user interface* interaction into three distinct roles.
+> 
+> + the model is an object that *represents* some information about the domain. In its pure form the model is an object within a domain model
+> + the view represents the display of the model. It is only about display information.
+> + the controller takes user input, manipulates the domain model, updates the view
+>
+> MVC is about separating presentation from the domain model. - *Martin Fowler* [^2]
+
+Martin clearly aims to separate the model from presentation logic. But according to his description, the model *is* the domain model.
+
+One outspoken voice on where the MVC patterns belongs is Uncle Bob. Bringing the relation between models and layers into the mix he places the MVC pattern clearly in the UI layer. The model for him is just a bunch of data structures that the use case, or application services, from the application exposes.
+
+> It is this layer (the UI), that will wholly contain the MVC architecture of a GUI. The Presenters, Views, and Controllers all belong in here. **The models are likely just data structures** that are passed from the controllers to the use cases, and then back from the use cases to the presenters and views. - *Robert C. Martin* [^3]
+
+I included the above quotes to illustrate the ambiguity between models even in a pattern so well known as MVC. My question again is this: when we say model, what model are we talking about? What does the M in MVC stand for? Data model? View model? Domain model? And when people say domain model, do they *really* mean their domain model?  Or an anemic representation of one?
+ 
 ### The meaning of MVC 
 
-The meaning of MVC has changed over the years in such that MVC moved from a micro to a macro pattern. [^2]
-
-> //TODO reference to meaning according to UB
+The meaning of MVC has changed over the years in such that MVC moved from a micro to a macro pattern. [^4]  
  
-Most software developers that I encounter or interview have a different view on what MVC is then the one UB professes. I think the common view I encounter was caused for a great deal by the rise of a lot MVC frameworks. These frameworks where/are very useful to get a simple application up and running very fast. But they also helped in transforming  
+Most software developers that I encounter or interview have a different view on what MVC is then the original one and the one Robert Martin professes. I think the most common view was caused for a great deal by the rise of a lot MVC frameworks. These frameworks where/are very useful to get a simple application up and running very fast. But they also helped in transforming the meaning of MVC by labelling frameworks MVC when they don't really match the original definition. 
 
-In my view the common changed meaning of MVC is a result of the combination of
+So in my view the common changed meaning of MVC is a result of the combination of
 
 + the MVC frameworks 
 + the classical three tier architecture
 + the mistaken identity of the data model for domain model
 + the single model 'pattern' 
 
-I think this combination gave rise to MVC as an architecture pattern. Which often goes hand in hand with the [anemic domain model](/25/08/2016/The-anemic-domain-model/) pattern [^3].
+I think this combination gave rise to MVC as an architecture pattern. Which often goes hand in hand with the [anemic domain model](/25/08/2016/The-anemic-domain-model/) pattern [^5].
 
 ### The MVC architecture 
 
-
-  
-
- 
-This architecture has the same goal as the MVC pattern. Namely *separation of concerns*. And since both of them consist out of three elements it is just a small step to think they are the same thing. Which give rise to a much encountered view, what I call the MVC - architecture
+Earlier we talked about the classic three tier architecture. This architecture has the same goal as the MVC pattern, namely *separation of concerns*. Since both of them consist out of three elements, it is just a small step to think they are related. Which give rise to a much encountered view, what I call the MVC - architecture.
 
 ![Classic layers](/img/mvc-architecture.png)
 
 
- 
  Layer|MVC |Component|Responsibility|
  -----|----|----------|--------------|
  UI Layer| V | The view| All visualization|
  Business Layer| C | The controller| All business logic|
  Data Layer| M | The model|The persisted data |
  
-When MVC is seen as an implementation of the classic three tier architecture then the model represents the data, the controllers contain the business logic, and all view related responsibilities belong in the view. This then often gives rise to the *anemic domain model* [^3].
-  
-My theory is that we often end up with anemic domain models because in a 'MVC architecture' the model from MVC is equated with the data model. Although its often called the domain model. With the business logic placed outside of the model this often results in huge fat controllers or in a lot of *services*. Containing all the logic.
+When MVC is seen as an implementation of the classic three tier architecture then the model represents the data, the controllers contain the business logic, and all view related responsibilities belong in the view. This then often gives rise to the *anemic domain model* [^5].
+
+This is clearly **not** what any of the definitions of MVC refer to. The controllers are **not** where the business logic belongs.
+
+>  An application controller is a very different beast then an MVC controller - Martin Fowler [^2] 
+
+My theory is that we often end up with anemic domain models because in a 'MVC architecture' the model from MVC is equated with the data model, although its  called the domain model. When the business logic is placed outside of the model this often results in huge fat controllers, or a lot of *services*, that contain all the logic.
  
-There are some who call that a service oriented architecture. But lets focus on the ambiguity of one overloaded term at a time. 
+There are some who call that a service oriented architecture. *It is not.* But lets focus on the ambiguity of one overloaded term at a time. 
  
 ### The proper home of MVC
+
+So now what? Is it possible to reconcile Martin Fowler and Uncle Bob statements to a consistent whole? What does the M in MVC stand for? And where does the mvc pattern belong?
+ 
 
 For me, the M in MVC should **NOT** be the domain model.
 
@@ -185,7 +201,8 @@ For me, the M in MVC should **NOT** be the domain model.
 **Footnotes**
 
 [^1]: _[GUI architectures by Martin Fowler](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
+[^2]: _[Model View Controller in "Patterns of enterprise application" by Martin Fowler](https://www.martinfowler.com/eaaCatalog/modelViewController.html)_
+[^3]: _[The clean architecture by Robert C. Martin](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)_
+[^4]: _[MVC delivery mechanism by Sandro Mancuso](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
+[^5]: _[The anemic domain model by me](/25/08/2016/The-anemic-domain-model/)_
 
-[^2]: _[MVC delivery mechanism by Sandro Mancuso](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
-
-[^3]: _[The anemic domain model by me](/25/08/2016/The-anemic-domain-model/)_
