@@ -6,7 +6,7 @@ header-img: "img/old_train_model.jpg"
 ---
 # About models...
 
-In IT the software industry we have several overused words. Words that are used so often, that without proper context, they can cause a lot of confusion. An obvious example of this is the term *service*. A valid term, more so when compared to the word *manager*, *controller* or *util* (Shivers). The word service actually has meaning. But the context must provided. Is it an application service? domain service? micro service? Or a "I contain all the logic that really should be in my objects" service (a.k.a. anemic domain service). These are all different things.
+In IT the software industry we have several overused words. Words that are used so often, that without proper context, they can cause a lot of confusion. An obvious example of this is the term *service*. A valid term, more so when compared to the word *manager*, *controller* or *util* (Shivers). The word service has no meaning without the proper context. Is it an application service? domain service? micro service? Or a "I contain all the logic that really should be in my objects" service (a.k.a. anemic domain service). These are all different things. So the word service on its own is usually just noise.
 
 In this post I would like to address another one of these overused words: **Models** Because the meaning of the word model is also very context dependent. Too often one is wrongly used and thus wrongly implemented. Which has real consequences. It is not just about the semantics.
 
@@ -109,6 +109,10 @@ By using different models inside an application I aim to
 The main argument people give against using multiple models is that they need to provide mapping from one model to another. *Well boo F#&ng hoo.* 
 
 Mapping in itself is a very simple straightforward process in which your IDE does most of the work for you. Granted it is a boring task. But that is because it is so simple. The cost in development time of doing some boring mapping pales in comparison with the time spent on looking for bugs, staring at an entangled big ball of mud where all the different responsibilities are intertwined.
+
+Another argument against mapping i often hear is that mapping results in a lot more bugs because things get mapped wrong. ins't that why you have tests? And if it is just a wrong mapping it is very easy to find and fix. Because everything is kept simple.
+
+When you have multiple modles with different responsibilities they very rarely map 1:1 on each other. If it is just copying state from structure A to an identical structure B, something is wrong.  
 
 ### Why are multiple models useful?
 
