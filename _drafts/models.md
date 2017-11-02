@@ -6,7 +6,7 @@ header-img: "img/old_train_model.jpg"
 ---
 # About models...
 
-In IT the software industry we have several overused words. Words that are used so often, that without proper context, they can cause a lot of confusion. An obvious example of this is the term *service*. A valid term, more so when compared to the word *manager*, *controller* or *util* (Shivers). The word service has no meaning without the proper context. Is it an application service? domain service? micro service? Or a "I contain all the logic that really should be in my objects" service (a.k.a. anemic domain service). These are all different things. So the word service on its own is usually just noise.
+In the software industry we have several overused words. Words that are used so often, that without proper context, they can cause a lot of confusion. An obvious example of this is the term *service*. A valid term, more so when compared to the word *manager*, *controller* or *util* (Shivers). The word service has no meaning without the proper context. Is it an application service? domain service? micro service? Or a "I contain all the logic that really should be in my objects" service (a.k.a. anemic domain service). These are all different things. So the word service on its own is usually just noise.
 
 In this post I would like to address another one of these overused words: **Models** Because the meaning of the word model is also very context dependent. Too often one is wrongly used and thus wrongly implemented. Which has real consequences. It is not just about the semantics.
 
