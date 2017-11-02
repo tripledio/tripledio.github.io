@@ -16,7 +16,7 @@ A model is a representation of something that was created to serve a certain pur
 
 + **A relational database model** structures the data in such a way that we can access and query it and perform relational operations on it. The data was modelled in a certain way for a given purpose. 
 
-+ **A maquette** is a representation of a real building that intends to give us an idea how the real one would actually look like. Its properties are that the width and height are in proportion so that humans can use it to reason about it, make comparisons. That is it function.
++ **A maquette** is a representation of a real building that intends to give us an idea how the real one would actually look like. Its properties are that the width and height are in proportion so that humans can use it to reason about it, make comparisons. That is its function.
 
 + **A world map** is typical example of a model. The world can be modelled in a variety of different ways. Depending on what function needs to fulfilled.
 
@@ -33,11 +33,11 @@ Some examples of models used in the software industry:
 + Command model
 + Read model
 
-All of these different models that perform a different function and have a different responsibility. It is the first word that matters and that defines the purpose of the model.  One of the root cause of model ambiguity is not asking the question: *"A model of what?"* Without knowing that we are comparing apples and oranges.
+All of these different models perform a different function and have a different responsibility. It is the first word that matters and that defines the purpose of the model.  One of the root cause of model ambiguity is not asking the question: *"A model of what?"* Without knowing that we are comparing apples to oranges.
 
 ## Models and layers
 
-Inside an application we typically will have different layers. There is a relation between the type of layer and the type of models. Lets take for example the very high level three tier architecture that every developer knows.
+Inside an application we typically have different layers. There is a relation between the type of layer and the type of model. Let's take for example the very high level three tier architecture that every developer knows.
 
 
 ![Classic layers](/img/classic-layers.png){:height="50%" width="50%":class="img-responsive"}
@@ -49,21 +49,21 @@ Inside an application we typically will have different layers. There is a relati
   Business Layer|  All business logic|
   Data Layer|The persisted data |
   
- Depending on the architecture of an application, multiple models can live together in the same application. In a layered architecture a type of model is typically associated with a certain layer. Because they have the same responsibility and are tackling the same problem. A layer is nothing more then a separation of code where a certain sub problem is being solved. 
+ Depending on the architecture of an application, multiple models can live together in the same application. In a layered architecture a type of model is typically associated with a certain layer. Because they have the same responsibility and are tackling the same problem. A layer is nothing more than a separation of code where a certain sub problem is being solved. 
 
 ![Models in a layered architecture](/img/classic-models-layers.png){:height="100%" width="100%":class="img-responsive"}
 
-These different types of models also relate to each other. A domain model can be used by different view models, a data model can be used by different domain models, a command model typically has different read models. Again it depends on which problem the model is trying to solve. Although we want to avoid that de models intermingle and depend directly with each other.  
+These different types of models also relate to each other. A domain model can be used by different view models, a data model can be used by different domain models, a command model typically has different read models. It depends on which problem the model is trying to solve. Although we want to avoid that de models intermingle and depend directly with each other.  
 
-( An application can exist out of multiple separate deployable parts but lets keep it simple for know and assume that one application equals one deployable.)  
+( An application can exist out of multiple separate deployable parts but let's keep it simple for now and assume that one application equals one deployable.)  
 
 # The anti-patterns 
 
-*a.k.a. things i wish people would stop doing*
+*a.k.a. things I wish people would stop doing*
 
 ## a) Data model as domain model
 
-This one is simple. People call it their domain model but what they really mean is their data model represented in code. Preferably with an ORM to perform the translation. **But a domain model is not a data model.** when people talk about their domain model, I have obtained the reflex of probing what kind of model they are actually talking about. *Because a data model does not become a domain model because we start calling it that.*
+This one is simple. People call it their domain model but what they really mean is their data model represented in code. Preferably with an ORM to perform the translation. **But a domain model is not a data model.** When people talk about their domain model, I have obtained the reflex of probing what kind of model they are actually talking about. *Because a data model does not become a domain model because we start calling it that.*
 
 Models serve different purposes. When the data model is called domain model, then where did the domain model go? Is it even there? In practice I usually see it dissolving into an anemic MVC architecture.
 
@@ -75,13 +75,13 @@ A practice that is often encountered *inside* an application is the use of a sin
 
 Obviously this goes hand in hand with the previous anti-pattern. If we have just one model, it is usually the data model. Because we all know the data(base) is king.
 
-To me this anti-pattern is one of the main drivers behind failing, late, over-budget software projects. The larger the software project, the larger the impact. The amount of time and money i've seen wasted by this pattern is infuriating.
+To me this anti-pattern is one of the main drivers behind failing, late, over-budget software projects. The larger the software project, the larger the impact. The amount of time and money I've seen wasted by this pattern is infuriating.
 
 ### When is a single model viable ?
 
 For me the single model approach is only a viable approach in very, very rare cases. When the application is very, very small and lightweight. So small that everything can still fit in my head. When it has a complexity that is so low, a functionality so simple and straightforward that anyone can grasp it immediately. Which means that the application is so simple that it is very easy to change without running the risk of introducing any unwanted side effects.
 
-If the application is a very simple crud application or just a simple data transformation, then different models might have no use. if there is just one problem that is being solved (transforming some data) or the problems solved are extremely simple (basic CRUD with very few logic). However we all know that software is supposed to change and grow. Little by little the code base grows and complexity increases. Only just this one little extra feature/extension. Which makes it never worthwhile to split up the models, bring some structure into the application. Until it is too late.
+If the application is a very simple crud application or just a simple data transformation, then different models might have no use. If there is just one problem that is being solved (transforming some data) or the problems solved are extremely simple (basic CRUD with very few logic). However we all know that software is supposed to change and grow. Little by little the code base grows and complexity increases. Only just this one little extra feature/extension. Which makes it never worthwhile to split up the models, bring some structure into the application. Until it is too late.
 
 When you are debating with yourself or with your team members whether introducing a separation of models is worth the effort, remember: 
 
@@ -110,23 +110,23 @@ The main argument people give against using multiple models is that they need to
 
 Mapping in itself is a very simple straightforward process in which your IDE does most of the work for you. Granted it is a boring task. But that is because it is so simple. The cost in development time of doing some boring mapping pales in comparison with the time spent on looking for bugs, staring at an entangled big ball of mud where all the different responsibilities are intertwined.
 
-Another argument against mapping i often hear is that mapping results in a lot more bugs because things get mapped wrong. ins't that why you have tests? And if it is just a wrong mapping it is very easy to find and fix. Because everything is kept simple.
+Another argument against mapping I often hear is that mapping results in a lot more bugs because things get mapped wrong. isn't that why you have tests? And if it is just a wrong mapping it is very easy to find and fix. Because everything is kept simple.
 
-When you have multiple modles with different responsibilities they very rarely map 1:1 on each other. If it is just copying state from structure A to an identical structure B, something is wrong.  
+When you have multiple models with different responsibilities they very rarely map 1:1 on each other. If it is just copying state from structure A to an identical structure B, something is wrong.  
 
 ### Why are multiple models useful?
 
-When I clean the dishwasher it is easier to just throw everything in the same closet and be done with it. But I know it pays of to put the cups *together* near the coffee machine, to put the boards *together* close to the table, put the casseroles *together* near the cooking furniture and place the cutlery *together* in the drawer.
+When I empty the dishwasher it is easier to just throw everything in the same closet and be done with it. But I know it pays of to put the cups *together* near the coffee machine, to put the boards *together* close to the table, put the casseroles *together* near the cooking furniture and place the cutlery *together* in the drawer.
  
  They all serve a different purpose. I group the dishes with a shared function *together* and place them where they logically belong and are the most convenient when I need to cook diner. And yes that means that I need to do a little bit of work each time I empty the dishwasher.
  
- When i'm writing software the same principle applies. I group together in a model what belongs together in order of the problem the model needs to solve. Separating the different models by their responsibilities. That way I am keeping things nice and tidy at the cost of some simple boring work. 
+ When I'm writing software the same principle applies. I group together in a model what belongs together in order of the problem the model needs to solve. Separating the different models by their responsibilities. That way I am keeping things nice and tidy at the cost of some simple boring work. 
  
  However the time and quality *gained* by keeping things clean and separated is enormous. The investment of the simple boring work pays off dividends in stability, maintainability, speed of development (oh yes), extensibility. 
  
- While those who threw their dishes onto one big pile are still looking for their frying pan, i'm already serving my steak to my guests.
+ While those who threw their dishes onto one big pile are still looking for their frying pan, I'm already serving my steak to my guests.
  
- Unfortunately only developers look into code. Because if our mothers would, i'm willing to bet most code bases would look a whole lot better.
+ Unfortunately only developers look into code. Because if our mothers would, I'm willing to bet most code bases would look a whole lot better.
 
 
 ## c) The M in MVC
