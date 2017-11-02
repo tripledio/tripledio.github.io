@@ -40,7 +40,7 @@ All of these different models that perform a different function and have a diffe
 Inside an application we typically will have different layers. There is a relation between the type of layer and the type of models. Lets take for example the very high level three tier architecture that every developer knows.
 
 
-![Classic layers](/img/classic-layers.png)
+![Classic layers](/img/classic-layers.png){:height="50%" width="50%":class="img-responsive"}
 
  
   Layer|Responsibility|
@@ -51,7 +51,7 @@ Inside an application we typically will have different layers. There is a relati
   
  Depending on the architecture of an application, multiple models can live together in the same application. In a layered architecture a type of model is typically associated with a certain layer. Because they have the same responsibility and are tackling the same problem. A layer is nothing more then a separation of code where a certain sub problem is being solved. 
 
-![Models in a layered architecture](/img/classic-models-layers.png)
+![Models in a layered architecture](/img/classic-models-layers.png){:height="100%" width="100%":class="img-responsive"}
 
 These different types of models also relate to each other. A domain model can be used by different view models, a data model can be used by different domain models, a command model typically has different read models. Again it depends on which problem the model is trying to solve. Although we want to avoid that de models intermingle and depend directly with each other.  
 
@@ -175,7 +175,7 @@ I think this combination gave rise to MVC as an architecture pattern. Which ofte
 
 Earlier we talked about the classic three tier architecture. This architecture has the same goal as the MVC pattern, namely *separation of concerns*. Since both of them consist out of three elements, it is just a small step to think they are related. Which give rise to a much encountered view, what I call the MVC - architecture.
 
-![Classic layers](/img/mvc-architecture.png)
+![Classic layers](/img/mvc-architecture.png){:height="100%" width="100%":class="img-responsive"}
 
 
  Layer|MVC |Component|Responsibility|
@@ -200,7 +200,7 @@ So now what? Is it possible to reconcile Martin Fowler and Uncle Bob statements 
 
 To answer this i go back to the original responsibility of MVC: A design pattern that splits the *user interface* interaction into three distinct roles. It is a pattern all about the user interface. So it belongs in the user interface layer. Yes, even the model. Except when i'm in the very rare case of having just a single model, like we discussed before, the model for the view layer will be different and independent from any UI implementation details. MVC for me is an implementation detail of the UI. 
  
-![MVC is a pattern for the front end](/img/mvc-frontend.png)
+![MVC is a pattern for the front end](/img/mvc-frontend.png){:height="80%" width="80%":class="img-responsive"}
 
 Here the UI layer has changed into a front end infrastructure layer, Supporting more than just the ui. The UI is an adapter like the rest api is. They both use the application use cases api. They both are just clients. 
 
