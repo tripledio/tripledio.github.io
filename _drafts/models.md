@@ -8,7 +8,7 @@ header-img: "img/old_train_model.jpg"
 
 In IT the software industry we have several overused words. Words that are used so often, that without proper context, they can cause a lot of confusion. An obvious example of this is the term *service*. A valid term, more so when compared to the word *manager*, *controller* or *util* (Shivers). The word service actually has meaning. But the context must provided. Is it an application service? domain service? micro service? Or a "I contain all the logic that really should be in my objects" service (a.k.a. anemic domain service). These are all different things.
 
-In this post i would like to address another one of these overused words: **Models** Because the meaning of the word model is also very context dependent. Too often one is wrongly used and thus wrongly implemented. Which has real consequences. It is not just about the semantics.
+In this post I would like to address another one of these overused words: **Models** Because the meaning of the word model is also very context dependent. Too often one is wrongly used and thus wrongly implemented. Which has real consequences. It is not just about the semantics.
 
 ## What's in a name?
 
@@ -63,7 +63,7 @@ Ok, that's all nothing new.  Where is the misuse? And what exactly is my problem
 
 ## a) Data model as domain model
 
-This one is simple. People call it their domain model but what they really mean is their data model represented in code. Preferably with an ORM to perform the translation. **But a domain model is not a data model.** when people talk about their domain model, i have obtained teh reflex of probing what kind of model they are actually talking about. *Because a data model does not become a domain model because we start calling it that.*
+This one is simple. People call it their domain model but what they really mean is their data model represented in code. Preferably with an ORM to perform the translation. **But a domain model is not a data model.** when people talk about their domain model, I have obtained teh reflex of probing what kind of model they are actually talking about. *Because a data model does not become a domain model because we start calling it that.*
 
 Models serve different purposes. When the data model is called domain model, then where did the domain model go? To often into an anemic MVC architecture.
 
@@ -90,11 +90,11 @@ Because it should not be debatable that an extra model is not worth the effort. 
 
 ### Using multiple models
 
-When the above conditions are *not* met, when there *are* clearly different responsibilities, different problems to be solved, different things to be modelled then i don't use the same model. Then i use a different model for each different layer.
+When the above conditions are *not* met, when there *are* clearly different responsibilities, different problems to be solved, different things to be modelled then I don't use the same model. Then I use a different model for each different layer.
 
 
 
-By using different models inside an application i aim to 
+By using different models inside an application I aim to 
 
 + decouple the different solution for the different problems
 + create a clear and simple solution for each problem
@@ -108,11 +108,11 @@ Mapping in itself is a very simple straightforward process in which your IDE doe
 
 ### Why are multiple models useful?
 
-When i clean the dishwasher it is easier to just throw everything in the same closet and be done with it. But i know it pays of to put the cups *together* near the coffee machine, to put the boards *together* close to the table, put the casseroles *together* near the cooking furniture and place the cutlery *together* in the drawer.
+When I clean the dishwasher it is easier to just throw everything in the same closet and be done with it. But I know it pays of to put the cups *together* near the coffee machine, to put the boards *together* close to the table, put the casseroles *together* near the cooking furniture and place the cutlery *together* in the drawer.
  
- They all serve a different purpose. I group the dishes with a shared function *together* and place them where they logically belong and are the most convenient when i need to cook diner. And yes that means that i need to do a little bit of work each time i empty the dishwasher.
+ They all serve a different purpose. I group the dishes with a shared function *together* and place them where they logically belong and are the most convenient when I need to cook diner. And yes that means that I need to do a little bit of work each time I empty the dishwasher.
  
- When i'm writing software the same principle applies. I group together in a model what belongs together in order of the problem the model needs to solve. Separating the different models by their responsibilities. That way i am keeping things nice and tidy at the cost of some simple boring work. 
+ When i'm writing software the same principle applies. I group together in a model what belongs together in order of the problem the model needs to solve. Separating the different models by their responsibilities. That way I am keeping things nice and tidy at the cost of some simple boring work. 
  
  However the time and quality *gained* by keeping things clean and separated is enormous. The investment of the simple boring work pays off dividends in stability, maintainability, speed of development (oh yes), extensibility. 
  
@@ -137,7 +137,7 @@ The meaning of MVC has changed over the years in such that MVC moved from a micr
 
 > //TODO reference to meaning according to UB
  
-Most software developers that i encounter or interview have a different view on what MVC is then the one UB professes. I think the common view i encounter was caused for a great deal by the rise of a lot MVC frameworks. These frameworks where/are very useful to get a simple application up and running very fast. But they also helped in transforming  
+Most software developers that I encounter or interview have a different view on what MVC is then the one UB professes. I think the common view I encounter was caused for a great deal by the rise of a lot MVC frameworks. These frameworks where/are very useful to get a simple application up and running very fast. But they also helped in transforming  
 
 In my view the common changed meaning of MVC is a result of the combination of
 
@@ -154,9 +154,11 @@ I think this combination gave rise to MVC as an architecture pattern. Which ofte
   
 
  
-This architecture has the same goal as the MVC pattern. Namely *separation of concerns*. And since both of them consist out of three elements it is just a small step to think they are the same thing. Which give rise to a much encountered view, what i call the MVC - architecture
+This architecture has the same goal as the MVC pattern. Namely *separation of concerns*. And since both of them consist out of three elements it is just a small step to think they are the same thing. Which give rise to a much encountered view, what I call the MVC - architecture
 
 ![Classic layers](/img/mvc-architecture.png)
+
+
  
  Layer|MVC |Component|Responsibility|
  -----|----|----------|--------------|
