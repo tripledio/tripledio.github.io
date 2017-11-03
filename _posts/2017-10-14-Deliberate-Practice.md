@@ -28,17 +28,22 @@ A kind of special form of deliberate practice is attending Meetups, I call it sp
 On the meetup you will always be with a group of hopefully likeminded people that have the same goal as you.
 Learn something new or get some new insights. A great meetup I always try to go to is the Socrates BE meetup. This meetup uses the open space format.
 Even though an open space is kind of self organizing... A lot of location planning goes into it. 
-So for that a huge shout out to the meetup organizers ([@koenmetsu](https://twitter.com/koenmetsu),[@selketjah](https://twitter.com/selketjah),[@talboomerik](https://twitter.com/talboomerik),[@tcoopman](https://twitter.com/tcoopman),[@michelgrootjans](https://twitter.com/michelgrootjans)).
+So a huge shout out to the meetup organizers ([@koenmetsu](https://twitter.com/koenmetsu),[@selketjah](https://twitter.com/selketjah),[@talboomerik](https://twitter.com/talboomerik),[@tcoopman](https://twitter.com/tcoopman),[@michelgrootjans](https://twitter.com/michelgrootjans)).
 You guys are awesome!
 ##### Katas
 ##### Reading
 Ah yes reading... it's another great way to be engaged with our profession. There is only one problem... there is so much to read
-it's hard to know where to start. 
+it's hard to know where to start. [Goodreads](https://goodreads.com) is a great way to keep track of what you are reading or what you want to read. It also enables you to view what your friends are reading.
 ##### Lightning talks, Blog Posts
 I have grouped lightning talks and blog posts together because generally one can be turned into the other.
 Both should be a short summary of something you know. Since you are explaining something to a group of people it means that you need to have a general idea of what you are talking about.
 So you should have done some research in advance or it could be about something you read or viewed. 
 ##### Videos
 Visiting a lot of conferences can get expensive really fast. Thankfully most conferences put their talks online on youtube.
-This enables everyone to watch them on their own time and use this as a tool to learn new stuff. I try to balance the amaount of netflix
-I watch with the amount of technical videos. Although I have to be honest... This isn't that easy.
+This enables everyone to watch them in their own time and use this as a tool to learn new stuff. I try to balance the amount of netflix
+I watch with the amount of technical videos. Although I have to be honest... This isn't easy.
+
+
+#### Don't forget
+
+Even though it's important to constantly hone your skills it is also important to give your brain some time to relax. If you don't allow yourself to take breaks you will burn yourself out rather quickly.
