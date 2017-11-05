@@ -5,8 +5,13 @@ description: "Expert Belgian Software Development"
 # Triple D
 
 *Triple D* is a **belgian** software development company founded by and consisting entirely out of **veteran software engineers**. It is a small, completely independent company with very highly skilled, experienced and opinionated software engineers with a clear vision how to develop software successfully.
+
+> “If you trust in yourself. . .and believe in your dreams. . .and follow your star. . . you'll still get beaten by people who spent their time working hard and learning things and weren't so lazy.” 
+  ― Terry Pratchett
  
-### About us <a name="1"/>
+***
+ 
+## About us <a name="1"/>
 
 We founded Triple D from our passion for software development.  "We" are a group of veteran software engineers with the aim of having a *larger, positive impact* on the belgian software industry. 
 
@@ -46,6 +51,8 @@ Our definition of done does not end with writing code. We take you to production
  
 We deliver reliable, robust software. From start to finish. And beyond.
    
+***
+
 ## Prerequisites  <a name="4"/>
 
 In order to achieve our ambitious goal we believe that there are certain prerequisites in order to make this possible.
@@ -66,6 +73,7 @@ We don't believe in long communication chains and huge documents. We talk to the
 #### Immediate short feedback loops <a name="4.d"/>
 Continuous integration and continuous delivery enables the team to work at full speed. A good delivery pipeline also allows the customer to see and use the features within minutes after finishing a development iteration.  This enables the team to quickly gather feedback on the delivered product, pivot if necessary and constantly go for maximum business value. 
    
+***
 
 ## Our services <a name="5"/>
 
