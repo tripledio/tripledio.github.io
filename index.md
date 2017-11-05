@@ -2,15 +2,19 @@
 layout: page
 description: "Expert Belgian Software Development"
 ---
-## Triple D  <a name="1"/>
+# Triple D
 
-*Triple D* is a belgian software development company that was founded by us, a group of veteran software engineers. We founded Triple D from our passion for software development with the aim of having a lasting positive impact on your codebase and your organisation.
+*Triple D* is a **belgian** software development company founded by and consisting entirely out of **veteran software engineers**. It is a small, completely independent company with very highly skilled, experienced and opinionated software engineers with a clear vision how to develop software successfully.
+ 
+### About us <a name="1"/>
 
-## What drives us?  <a name="2"/>
+We founded Triple D from our passion for software development.  "We" are a group of veteran software engineers with the aim of having a *larger, positive impact* on the belgian software industry. 
+
+### What drives us?  <a name="2"/>
 
 Our main motivation is delivering high quality, rock SOLID and well designed software. We want to create products that will fit your needs and that will pay off your investments for years to come. *A challenging job well done, that is what we aim for.*
 
-## Our people <a name="3"/>
+### Our people <a name="3"/>
 
 The most important assets of a software engineering company are of course the people. That is why we strive to be great, all-round software engineers. We have a wealth of experience in a wide variety of skills that make up software development. And we aim to keep expanding those skills.
 
