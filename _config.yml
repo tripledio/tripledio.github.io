@@ -12,6 +12,7 @@ url: //www.tripled.io
 # Build settings
 markdown: kramdown
 paginate: 5
+paginate_path: "/blog/page:num/"
 plugins: [jekyll-paginate,jekyll-feed]
 
 # authors
@@ -26,6 +27,6 @@ authors:
   guido:
       username: "guido"
       name: "Guido Dechamps"
-      bio: "Old cranky software craftsmen"
+      bio: "Old cranky software craftsman"
       location: "Belgium"
       image: "/img/guido.jpg"

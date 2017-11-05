@@ -1,8 +1,6 @@
 ---
 layout: page
-title: "About Triple D"
-description: "Who are we?"
-header-img: "img/laptop-bg.jpg"
+description: "Expert Belgian Software Development"
 ---
 ## Triple D  <a name="1"/>
 
