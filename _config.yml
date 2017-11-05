@@ -8,6 +8,7 @@ disqus: "TripleD"
 google_tracking_id: "UA-86097038-1"
 permalink: /:day/:month/:year/:title/
 url: //www.tripled.io
+twitter_username: tripled_io
 
 # Build settings
 markdown: kramdown
