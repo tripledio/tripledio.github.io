@@ -8,7 +8,7 @@ excerpt: A blog post about what deliberate practice is and how I do it
 ---
 
 A while ago I did my first lightning talk during a SoCraTes BE meetup. Today I thought it was time for another first...
-my first blog post that you started reading. It will be the same subject as my first lightning talk: Deliberate Practice.
+My first blog post that you are now reading. It will be the same subject as my first lightning talk: Deliberate Practice.
 
 ---
 
@@ -21,16 +21,24 @@ my first blog post that you started reading. It will be the same subject as my f
 Deliberate practice is the act of doing something on purpose, putting your full attention to improve yourself in a skill. 
 There is another thing you could call continuous practice which you can by example get doing your day to day job.
 
-#### Ways to do it <a id="1.b"/>
+#### Ways I do it <a id="1.b"/>
+
+##### Daily practice
+There's a saying: an apple a day keeps the doctor away. I've turned this into "A commit a day..." I try to commit at daily to one of my pet projects.
+This can be blog posts, small refactor, katas, ... Even if it's a small commit I know that I have put my mind to deliberate practice every day. 
 
 ##### Meetups
 A kind of special form of deliberate practice is attending Meetups, I call it special because it is not something you will do alone.
-On the meetup you will always be with a group of hopefully likeminded people that have the same goal as you.
+On the meetup you will always be with a group of hopefully like minded people that have the same goal as you.
 Learn something new or get some new insights. A great meetup I always try to go to is the Socrates BE meetup. This meetup uses the open space format.
-Even though an open space is kind of self organizing... A lot of location planning goes into it. 
-So a huge shout out to the meetup organizers ([@koenmetsu](https://twitter.com/koenmetsu),[@selketjah](https://twitter.com/selketjah),[@talboomerik](https://twitter.com/talboomerik),[@tcoopman](https://twitter.com/tcoopman),[@michelgrootjans](https://twitter.com/michelgrootjans)).
-You guys are awesome!
-##### Katas
+Even though an open space is kind of self organizing... There still needs to be a location. 
+So a huge shout out to the meetup organizers ([@koenmetsu](https://twitter.com/koenmetsu), [@selketjah](https://twitter.com/selketjah), [@talboomerik](https://twitter.com/talboomerik), [@tcoopman](https://twitter.com/tcoopman), [@michelgrootjans](https://twitter.com/michelgrootjans)).
+You are awesome!
+
+##### Kata's
+A Kata is a term borrowed from the martial arts, it means to practice something. In our case it would be making an programming exercise (bank, social network, ...).
+A kata can be used for multiple things, you can use it to learn a new language but you can also use it to improve yourself in TDD or other skills. An even better way to use this is to make the exercise with multiple people separately  
+
 ##### Reading
 Ah yes reading... it's another great way to be engaged with our profession. There is only one problem... there is so much to read
 it's hard to know where to start. [Goodreads](https://goodreads.com) is a great way to keep track of what you are reading or what you want to read. It also enables you to view what your friends are reading.
@@ -46,4 +54,4 @@ I watch with the amount of technical videos. Although I have to be honest... Thi
 
 #### Don't forget
 
-Even though it's important to constantly hone your skills it is also important to give your brain some time to relax. If you don't allow yourself to take breaks you will burn yourself out rather quickly.
+Even though it's important to constantly hone your skills it is also important to give your brain some time to relax. If you don't allow yourself to take breaks you will burn yourself out.
