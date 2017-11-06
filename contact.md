@@ -12,5 +12,7 @@ If you could use our help, let us know. Our normal base of operation in Belgium 
 + **email** : *[info@tripled.io](mailto:info@tripled.io)*
 + **twitter** : *[@tripled_io](https://twitter.com/tripled_io)*
 
-*Dear recruiters, please refrain from contacting us. We aim for a direct collaboration with our customers, without middlemen.*
+***
+
+*Dear recruiters, unless you share our values, please refrain from contacting us.*
 
