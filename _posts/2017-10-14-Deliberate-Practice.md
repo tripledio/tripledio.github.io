@@ -8,7 +8,7 @@ excerpt: A blog post about what deliberate practice is and how I do it
 ---
 
 A while ago I did my first lightning talk during a SoCraTes BE meetup. Today I thought it was time for another first...
-My first blog post that you are now reading. It will be the same subject as my first lightning talk: Deliberate Practice.
+My first blog post. It will be the same subject as my lightning talk: Deliberate Practice.
 
 ---
 
@@ -18,8 +18,9 @@ My first blog post that you are now reading. It will be the same subject as my f
 
 #### What is it? <a id="1.a"/>
 
-Deliberate practice is the act of doing something on purpose, putting your full attention to improve yourself in a skill. 
-There is another thing you could call continuous practice which you can by example get doing your day to day job.
+Deliberate practice is the act of practicing on purpose hence calling it deliberate. Putting your full attention to improve yourself in a skill. 
+There is another thing you could call continuous practice which you get by doing your job. However most of the time we are constrained at work, it's not as easy to experiment with new things.
+This is because we can't just play around there. We've got businesses to satisfy. Therefore deliberate practice can be needed sometimes.
 
 #### Ways I do it <a id="1.b"/>
 
