@@ -6,7 +6,7 @@ description: "Expert Belgian Software Development"
 
 *Triple D* is a *belgian* software development company founded by and consisting entirely out of *veteran software engineers*. It is a small, completely independent company with very highly skilled, experienced and opinionated software engineers with a clear vision how to develop software successfully.
 
-> “If you trust in yourself. . .and believe in your dreams. . .and follow your star. . . you'll still get beaten by people who spent their time working hard and learning things and weren't so lazy.” 
+> “If you trust in yourself. . . and believe in your dreams. . . and follow your star. . . you'll still get beaten by people who spent their time working hard and learning things and weren't so lazy.” 
   ― Terry Pratchett
  
 ***
