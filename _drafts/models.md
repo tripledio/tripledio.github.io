@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "About models..."
+title: "Model anti-patterns"
 author: guido
 header-img: "img/old_train_model.jpg"
 ---
-# About models...
-//TODO rename to model anti-patterns?
+# Model anti-patterns
 
 In the software industry we have several overused words. Words that are used so often, that without proper context, they can cause a lot of confusion. An obvious example of this is the term *service*. A valid term, more so when compared to the word *manager*, *controller* or *util* (shivers..). The word service has no meaning without the proper context. Is it an application service? domain service? micro service? Or a "I contain all the logic that really should be in my objects" service (a.k.a. anemic domain service). These are all different things. So the word service on its own is usually just noise.
 
@@ -13,9 +12,13 @@ In this post I would like to address another one of these overused words: **Mode
 
 ## What's in a name?
 
-```
-A model is a representation of something that was created to serve a certain purpose. 
-```
+Before we get to the meat, let's start by a definition
+
+<pre><code>
+ A model is a <b>representation</b> of something that was created to serve a certain <b>purpose</b>.
+</code></pre>
+
+For example:
 
 + **A relational database model** structures the data in such a way that we can access and query it and perform relational operations on it. The data was modelled in a certain way for a given purpose. 
 
@@ -23,10 +26,12 @@ A model is a representation of something that was created to serve a certain pur
 
 + **A world map** is typical example of a model. The world can be modelled in a variety of different ways. Depending on what function needs to fulfilled.
 
-This may seem obvious but it is important to realize that we can have many different models for the same problem to solve. Just as we can have different models working together because there are different problems to solve.
+From the above definition it also follows that 
++ for solving a *single* problem, there are many *different models possible*  
++ several *different models* can work *together*, each solving a different problem
 
 
-## Classic types of model
+## Classic types of software models
 
 Some examples of models used in the software industry:
 
@@ -72,9 +77,11 @@ Models serve different purposes. When the data model is called domain model, the
 
 In practice I usually see the whole application dissolving into an **anemic MVC architecture** [^mvc] where the data model has become an anemic domain model, the business logic got spread out and duplicated all over the code base in all kinds of 'services'. When the data and the logic are decoupled, every 'service' has access to the unencapsulated data and can modify it. This makes it very easy to execute business logic in the wrong sequence or bypass certain logic completely. *Resulting in a very fragile, buggy application.*
 
-Unfortunately the above is the state that i encounter most of the Object oriented codebases to be in. In all sorts of different companies. In fact this ant-pattern is so prevalent in our industry that the a lot of developers have come to think of it as normal. That's how you do it. Since this is the only thing they've encountered in the real world... 
+Unfortunately the above is the state that i encounter most of the Object oriented codebases to be in. In all sorts of different companies. In fact this ant-pattern is so prevalent in our industry that the most of the developers i encounter have come to think of it as the normal. That it is the normal way that you do it. Because this is the only thing they've encountered in the real world... 
 
-I fear that most software engineers have never seen a good quality code base. Or experienced the benefits from it. Which makes this such a hard anti-pattern to fight. But lets hope that i'm wrong.
+<pre><code>Most developers have never <i>seen</i> an <b>actual</b> domain model.</code></pre>
+
+I fear that a lot of software engineers have never seen an actual domain model. Or experienced the benefits from it. Which makes this such a hard anti-pattern to fight. But lets hope that i'm wrong...
 
 ## b) One model to rule them all
 
