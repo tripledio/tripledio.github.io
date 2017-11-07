@@ -43,14 +43,16 @@ A kata can be used for multiple things, you can use it to learn a new language b
 ##### Reading
 Ah yes reading... it's another great way to be engaged with our profession. There is only one problem... there is so much to read
 it's hard to know where to start. [Goodreads](https://goodreads.com) is a great way to keep track of what you are reading or what you want to read. It also enables you to view what your friends are reading.
-##### Lightning talks, Blog Posts
-I have grouped lightning talks and blog posts together because generally one can be turned into the other.
-Both should be a short summary of something you know. Since you are explaining something to a group of people it means that you need to have a general idea of what you are talking about.
-So you should have done some research in advance or it could be about something you read or viewed. 
+
 ##### Videos
 Visiting a lot of conferences can get expensive really fast. Thankfully most conferences put their talks online on youtube.
 This enables everyone to watch them in their own time and use this as a tool to learn new stuff. I try to balance the amount of netflix
 I watch with the amount of technical videos. Although I have to be honest... This isn't easy.
+
+##### Lightning talks, Blog Posts
+I have grouped lightning talks and blog posts together because generally one can be turned into the other.
+Both should be a short summary of something you know. Since you are explaining something to a group of people it means that you need to have a general idea of what you are talking about.
+So you should have done some research in advance or it could be about something you read or viewed. 
 
 
 #### Don't forget
