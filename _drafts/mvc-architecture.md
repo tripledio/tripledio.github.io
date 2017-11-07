@@ -1,20 +1,22 @@
 ---
 layout: post
-title: "MVC-architecture"
+title: "The MVC-architecture"
 author: guido
 header-img: "img/old_train_model.jpg"
 ---
-# The M in MVC
+# The MVC Architecture
 
-In a [previous](/07/11/2017/model-anti-patterns/)  [^m-a-p] post i ranted a bit about the ambiguous use of the model in the software industry. In this post i would like to  address another model, namely the model from MVC.
+## The M in MVC
+
+In a [previous](/07/11/2017/model-anti-patterns/)  [^map] post i ranted a bit about the ambiguous use of the term model in the software industry. In this post i would like to  address another famous model, namely the model from MVC.
  
 ## MVC : Model, View, Controller.... But which model?
 
-One of the most widely 'known' patterns MVC (model view controller) also contains my word of the day. Model. And here the meaning of the model in MVC isn't clear either. Which model do me mean? In fact the whole meaning of MVC is unfortunately not always clear.
+Related to my previous post the meaning of the model in MVC isn't very clear either. Which model do me mean? In fact the whole meaning of MVC is unfortunately not always so clear.
 
 > The widest quoted pattern in UI development is Model View Controller (MVC) - it's also one of the most misquoted. - *Martin fowler*  [^1]
 
-If you google MVC you'll find a lot of explanations. ( Most of which i don't agree with. ) Going back to an appeal to authority does not always clarify things. 
+If you google MVC you'll find a lot of different explanations. Going back to an appeal to authority does not always clarify things. 
 
 > MVC splits *user interface* interaction into three distinct roles.
 > 
@@ -36,7 +38,7 @@ I included the above quotes to illustrate the ambiguity between models even in a
 
 The meaning of MVC has changed over the years in such that MVC moved from a micro to a macro pattern. [^4]  
  
-Most software developers that I encounter or interview have a different view on what MVC is then the original one and the one Robert Martin professes. I think the most common view was caused for a great deal by the rise of a lot MVC frameworks. These frameworks where/are very useful to get a simple application up and running very fast. But they also helped in transforming the meaning of MVC by labelling frameworks MVC when they don't really match the original definition. 
+Most software developers that I encounter or interview have a different view on what MVC is then the original pattern, which is the view Robert Martin professes. The current most common view was probablycaused for a great deal by the rise of a lot MVC frameworks. These frameworks where/are very useful to get a simple application up and running very fast. But they also helped in transforming the meaning of MVC by labelling frameworks MVC when they don't really match the original definition. 
 
 So in my view the common changed meaning of MVC is a result of the combination of
 
@@ -48,18 +50,22 @@ So in my view the common changed meaning of MVC is a result of the combination o
 
 I think this combination gave rise to MVC as an architecture pattern. Which often goes hand in hand with the [anemic domain model](/25/08/2016/The-anemic-domain-model/) pattern [^anemic].
 
-# The MVC "architecture" 
+## Layered MVC 
 
-## MVC in layers
-*a.k.a. a bad idea imo*
-
-In my earlier post [^m-a-p] i talked about the classic three tier architecture. 
+In my earlier post [^map] i talked about the classic three tier architecture. 
 
 ![Classic layers](/img/classic-layers.png){:height="50%" width="50%":class="img-responsive"}
 
+ 
+  Layer|Responsibility|
+  -----|--------------|
+  UI Layer|  All visualization to the user|
+  Business Layer|  All business logic|
+  Data Layer|The persisted data |
+
 This generic architecture has the same goal as the MVC pattern, namely *separation of concerns*. Since both of them consist out of three elements, it is just a small step to think that they are related. Which, in my eyes, gives rise to a much encountered view that I call the MVC - architecture.
 
-![Classic layers](/img/mvc-architecture.png){:height="100%" width="100%":class="img-responsive"}
+![MVC-architecture](/img/mvc-architecture.png){:height="100%" width="100%":class="img-responsive"}
 
 
  Layer|MVC |Component|Responsibility|
@@ -77,7 +83,7 @@ This is clearly **not** what any of the definitions of MVC refer to. The control
 My theory is that we often end up with anemic domain models because in a 'MVC architecture' the model from MVC is equated with the data model, although its  called the domain model. When the business logic is placed outside of the model this often results in huge fat controllers, or a lot of *services*, that contain all the logic.
  
 
-## The proper home of MVC
+## Take MVC home
 
 So now what? Is it possible to reconcile Martin Fowler and Uncle Bob statements to a consistent whole? What does the M in MVC stand for? And where does the mvc pattern belong? 
 
@@ -101,17 +107,16 @@ Avoid using the domain model for generating your views directly. While this is t
 
 So my advice is to keep your domain model separated from any MVC patterns, frameworks you may have.
 
-# Conclusion
+## Conclusion
 
 The MVC patterns belongs in the front end infrastructure. It shouldn't depend on the domain model directly. It needs its own model created for the specifc views. Do not connect your presentation directly to the domain model. The domain model should not concern itself with presentation details.
 
 **Footnotes**
 
-[^r]: _[Robert De Niro in Ronin](http://www.imdb.com/title/tt0122690/quotes/qt0248369)_
 [^1]: _[GUI architectures by Martin Fowler](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
 [^2]: _[Model View Controller in "Patterns of enterprise application" by Martin Fowler](https://www.martinfowler.com/eaaCatalog/modelViewController.html)_
 [^3]: _[The clean architecture by Robert C. Martin](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)_
 [^4]: _[MVC delivery mechanism by Sandro Mancuso](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
 [^anemic]: _[The anemic domain model by me](/25/08/2016/The-anemic-domain-model/)_
-[^m-a-p] [Model anti patterns](/07/11/2017/model-anti-patterns/)_ 
+[^map]: _[Model anti patterns](/07/11/2017/model-anti-patterns/)_ 
 
