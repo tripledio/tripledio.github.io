@@ -128,7 +128,7 @@ The main argument people give against using multiple models is that they need to
 
 Mapping in itself is a very simple straightforward process in which your IDE does most of the work for you. Granted it is a boring task. But that is because it is so simple. The cost in development time of doing some boring mapping pales in comparison with the time spent on looking for bugs, staring at an entangled big ball of mud where all the different responsibilities are intertwined.
 
-> Do not be afraid to create your own mappers. ... The advantage of writing our own mappers is that we do not need to couple our APIs or databases to anything. Changes are localised and easy to change. On top of that, we can easily test-drive our mappers and move API tests to the unit level instead of doing it at Acceptance level. - Sandro Mancuso [^4]
+> Do not be afraid to create your own mappers. ... The advantage of writing our own mappers is that we do not need to couple our APIs or databases to anything. Changes are localised and easy to change. ... we can easily test-drive our mappers and move API tests to the unit level instead of doing it at Acceptance level. - Sandro Mancuso [^4]
 
 Another argument against mapping I often hear is that mapping results in a lot more bugs because things get mapped wrong. isn't that why you have tests? And if it is just a wrong mapping it is very easy to find and fix. Because everything is kept simple.
 
