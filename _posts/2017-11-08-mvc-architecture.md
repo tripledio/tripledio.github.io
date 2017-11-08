@@ -2,7 +2,7 @@
 layout: post
 title: "The MVC-architecture"
 author: guido
-header-img: "img/old_train_model.jpg"
+header-img: "img/mvc-books.png"
 ---
 # The MVC Architecture
 
