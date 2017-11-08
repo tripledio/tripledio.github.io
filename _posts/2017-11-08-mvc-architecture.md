@@ -36,7 +36,7 @@ I included the above quotes to illustrate the ambiguity between models even in a
  
 ## The meaning of MVC 
 
-The meaning of MVC has changed over the years in such that MVC moved from a micro to a macro pattern. [^4]  
+The meaning of MVC has changed over the years in such that MVC moved from a micro to a macro pattern. [^sandro]  
  
 Most software developers that I encounter or interview have a different view on what MVC is then the original pattern, which is the view Robert Martin professes. The current most common view was probablycaused for a great deal by the rise of a lot MVC frameworks. These frameworks where/are very useful to get a simple application up and running very fast. But they also helped in transforming the meaning of MVC by labelling frameworks MVC when they don't really match the original definition. 
 
@@ -80,43 +80,81 @@ This is clearly **not** what any of the definitions of MVC refer to. The control
 
 >  An application controller is a very different beast then an MVC controller - Martin Fowler [^2] 
 
+( So i could probably make a comparable argument for the controller as i'm making for the model. But lets stay focused.)
+
 My theory is that we often end up with anemic domain models because in a 'MVC architecture' the model from MVC is equated with the data model, although its  called the domain model. When the business logic is placed outside of the model this often results in huge fat controllers, or a lot of *services*, that contain all the logic.
  
 
 ## Take MVC home
 
-So now what? Is it possible to reconcile Martin Fowler and Uncle Bob statements to a consistent whole? What does the M in MVC stand for? And where does the mvc pattern belong? 
+So now what? Is it possible to reconcile Martin Fowler and Uncle Bob statements to a consistent whole? What does the M in MVC stand for? And where does the MVC pattern belong? 
 
-To answer this i go back to the original responsibility of MVC: A design pattern that splits the *user interface* interaction into three distinct roles. It is a pattern all about the user interface. So it belongs in the user interface layer. Yes, even the model. Except when i'm in the very rare case of having just a single model, like we discussed before, the model for the view layer will be different and independent from any UI implementation details. MVC for me is an implementation detail of the UI. 
- 
+To answer this i go back to the original responsibility of MVC: 
+
+<pre><code>MVC is a design pattern that splits the <i>user interface</i> interaction into three distinct roles.</code></pre> 
+
+It is a patternthat is all about the user interface. So it belongs in the user interface layer. Yes, even the model... 
+
+Take note i am disagreeing here with Sandro Mancuso [^sandro] as well. Well, at least on the domain model part.
+
+> When it comes to MVC frameworks, they should be restricted to the View and Controller layers, never the Model. - Sandro Mancuso [^sandro]
+
+I do **not** use my domain model as the model for MVC. The model for the view layer will be different from my domain model. The domain model is completely independent from any UI implementation details. MVC for me is an implementation detail of the UI. 
+
+## Home sweet home
+
+So how does this look like? Lets put some more detail in our simple three tier architecture, moving into a hexagonal architecture. 
+
 ![MVC is a pattern for the front end](/img/mvc-frontend.png){:height="80%" width="80%":class="img-responsive"}
 
 Here the UI layer has changed into a front end infrastructure layer, Supporting more than just the ui. The UI is an adapter like the rest api is. They both use the application use cases api. They both are just clients. 
 
 The usage of an use case api, or application services, hides the implementation detail of the use cases. The use cases could be implemented using a domain model. Or by a transaction script. For the users of the application this is hidden. At the same time the use case api has of course no dependency on the adapters. **The infrastructure details do not dictate the use cases!** Any UI, rest or other front end infrastructure concerns do not trickle through into the domain. For more detail on this see the hexagonal architecture.
 
-When the UI can access the domain model and uses it directly for its model UI concerns will seep into the domain model. Even though the view lies elsewhere. The domain model needed to solve use cases is different then the model needed to provide the UI with appropriate data to build views for the user. **These are different concerns.**  
+Also if the controllers access the domain model directly, then where did the use cases go? Into the controllers? 
 
-By decoupling the UI from the domain model, the MVC pattern can not access the domain model. Because for me the Model in MVC should **NOT** be the domain model. While the controllers will indirectly invoke the use cases api from the application, they shouldn't have a direct dependency on the domain model. They can and will have their own models to work with and will use the response data structures that the use cases provide them. So i share Uncle Bob [^3] view on this. It fits perfectly within the hexagonal architecture. It is just a clean separation of responsibilities. Which is exactly the same thing that MVC tries to achieve.
 
-Avoid using the domain model for generating your views directly. While this is technically possible, isn't everything?, it often leads to
+When the UI can access the domain model and uses it directly for its model UI concerns will seep into the domain model. Because now the domain model serves multiple purposes. 
+
+The domain model we need to solve use cases is different then the view model we need to provide the UI with appropriate data to build views for the user. **These are different concerns.**  You can have an MVC without a domain model. Or domain model without a UI. Or a domain model with an UI that does not use MVC. 
+
+<pre><code>Different problems => Different solutions</code></pre>
+
+By decoupling the UI from the domain model, the MVC pattern can not access the domain model. Because, for me, the Model in MVC should **NOT** be the domain model.
+ 
+ While the controllers will indirectly invoke the use cases api from the application, they shouldn't have a direct dependency on the domain model. They can and will have their own models to work with. They will use the response data structures that the use cases provide them. So I share Uncle Bob [^3] view on this. It fits perfectly within the hexagonal architecture. It is just a clean separation of responsibilities. Which is exactly the same thing that MVC tries to achieve.
+
+Avoid using the domain model for generating your views directly. While this is of course technically possible it often leads to
 + UI concerns in the domain model
 + one model to rule them all
 + an anemic domain model 
 + an entangled, unstructured mess 
 
-So my advice is to keep your domain model separated from any MVC patterns, frameworks you may have.
+So my advice is to keep your domain model separated from any MVC patterns, or frameworks, you may have.
 
 ## Conclusion
 
-The MVC patterns belongs in the front end infrastructure. It shouldn't depend on the domain model directly. It needs its own model created for the specifc views. Do not connect your presentation directly to the domain model. The domain model should not concern itself with presentation details.
+In conclusion, for me: 
+
++ The MVC patterns belongs in the front end infrastructure
++ It should not depend on the domain model directly. 
++ The model from MVC is its own model created for the specifc views. 
++ Do not connect your presentation directly to the domain model. The domain model should not concern itself with presentation details. 
+
+And 
+
+### Don't use MVC as an excuse for an anemic domain model!
+
+*(Please don't)* 
+
+***
 
 **Footnotes**
 
 [^1]: _[GUI architectures by Martin Fowler](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
 [^2]: _[Model View Controller in "Patterns of enterprise application" by Martin Fowler](https://www.martinfowler.com/eaaCatalog/modelViewController.html)_
 [^3]: _[The clean architecture by Robert C. Martin](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)_
-[^4]: _[MVC delivery mechanism by Sandro Mancuso](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
+[^sandro]: _[MVC delivery mechanism by Sandro Mancuso](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
 [^anemic]: _[The anemic domain model by me](/25/08/2016/The-anemic-domain-model/)_
 [^map]: _[Model anti patterns](/07/11/2017/model-anti-patterns/)_ 
 
