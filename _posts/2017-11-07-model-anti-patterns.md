@@ -70,11 +70,11 @@ Models serve different purposes. When the data model is called domain model, the
 
 In practice I usually see the whole application dissolving into an **anemic MVC architecture** [^mvc] where the data model has become an anemic domain model, the business logic got spread out and duplicated all over the code base in all kinds of 'services'. When the data and the logic are decoupled, every 'service' has access to the unencapsulated data and can modify it. This makes it very easy to execute business logic in the wrong sequence or bypass certain logic completely. *Resulting in a very fragile, buggy application.*
 
-Unfortunately the above is the state that i encounter most of the Object oriented codebases to be in. In all sorts of different companies. In fact this ant-pattern is so prevalent in our industry that the most of the developers i encounter have come to think of it as the normal. That it is the normal way that you do it. Because this is the only thing they've encountered in the real world... 
+Unfortunately the above is the state that I encounter most of the Object oriented codebases to be in. In all sorts of different companies. In fact this ant-pattern is so prevalent in our industry that the most of the developers I encounter have come to think of it as the normal. That it is the normal way that you do it. Because this is the only thing they've encountered in the real world... 
 
 <pre><code>Most developers have never <i>seen</i> an <b>actual</b> domain model.</code></pre>
 
-I fear that a lot of software engineers have never seen an actual domain model. Or experienced the benefits from it. Which makes this such a hard anti-pattern to fight. But lets hope that i'm wrong...
+I fear that a lot of software engineers have never seen an actual domain model. Or experienced the benefits from it. Which makes this such a hard anti-pattern to fight. But lets hope that I'm wrong...
 
 ## b) One model to rule them all
 
@@ -90,9 +90,9 @@ To me this anti-pattern is one of the main drivers behind failing, late, over-bu
 
 For me the single model approach is only a viable approach in very, very rare cases. When the application is very, very small and lightweight. When it has a complexity that is so low, a functionality so simple and straightforward that anyone can grasp it immediately. An application so simple that it is very easy to change without running the risk of introducing any unwanted side effects.
 
-If the application is a very simple crud application or just a simple data transformation, then you often hear the argument that different models have no use. If there is just one problem that is being solved (transforming some data) or the problems solved are extremely simple (basic CRUD with very few logic) this may be the case. However we all know that software is supposed to change and grow. Little by little the code base grows and its complexity increases. It's obvious that the architecture should change and evolve as well.  
+If the application is a very simple CRUD application or just a simple data transformation, then you often hear the argument that different models have no use. If there is just one problem that is being solved (transforming some data) or the problems solved are extremely simple (basic CRUD with very few logic) this may be the case. However we all know that software is supposed to change and grow. Little by little the code base grows and its complexity increases. It's obvious that the architecture should change and evolve as well.  
 
-But i've rarely have seen that happen. usually the reasoning goes as follows:
+But I've rarely have seen that happen. usually the reasoning goes as follows:
 
 + We are only just adding this one little extra feature/extension. 
 + It is not worthwhile to split the application up into different models, to bring some structure into the application just now. 
@@ -130,7 +130,7 @@ Mapping in itself is a very simple straightforward process in which your IDE doe
 
 > Do not be afraid to create your own mappers. ... The advantage of writing our own mappers is that we do not need to couple our APIs or databases to anything. Changes are localised and easy to change. ... we can easily test-drive our mappers and move API tests to the unit level instead of doing it at Acceptance level. - Sandro Mancuso [^4]
 
-Another argument against mapping I often hear is that mapping results in a lot more bugs because things get mapped wrong. isn't that why you have tests? And if it is just a wrong mapping it is very easy to find and fix. Because everything is kept simple.
+Another argument against mapping I often hear is that mapping results in a lot more bugs because things get mapped wrong. Isn't that why you have tests? And if it is just a wrong mapping it is very easy to find and fix. Because everything is kept simple.
 
 When you have multiple models with different responsibilities they very rarely map 1:1 on each other. If it is just copying state from structure A to an identical structure B, something is wrong.  
 
@@ -153,7 +153,7 @@ When I empty the dishwasher it is easier to just throw everything in the same cl
 
 + Beware of the ambiguous meaning of model. Be clear on which model you are working on and what its responsibilities are.
 + A domain model is so much more then the data. It is about behaviour. Don't use a data model for domain model.
-+ Do not try to solve all the different problems with just one model. Yes, i know it is a bit more work at first. So is doing the dishes.
++ Do not try to solve all the different problems with just one model. Yes, I know it is a bit more work at first. So is doing the dishes.
 
 **Footnotes**
 
