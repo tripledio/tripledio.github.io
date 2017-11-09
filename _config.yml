@@ -28,6 +28,6 @@ authors:
   guido:
       username: "guido"
       name: "Guido Dechamps"
-      bio: "Old cranky software craftsman"
-      location: "Lokeren, Belgium"
+      bio: "Old cranky software craftsmen. All opinions are my own."
+      location: "Belgium"
       image: "/img/guido.jpg"
