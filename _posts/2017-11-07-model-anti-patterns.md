@@ -163,5 +163,5 @@ When I empty the dishwasher it is easier to just throw everything in the same cl
 [^3]: _[The clean architecture by Robert C. Martin](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)_
 [^4]: _[MVC delivery mechanism by Sandro Mancuso](https://codurance.com/2017/09/20/mvc-delievery-mechanism-dm/)_
 [^anemic]: _[The anemic domain model by me](/25/08/2016/The-anemic-domain-model/)_
-[^mvc]: _[The MVC architecture](TODO)_
+[^mvc]: _[The MVC architecture](/08/11/2017/mvc-architecture/)_
 

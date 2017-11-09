@@ -10,7 +10,7 @@ header-img: "img/mvc-books.png"
 
 In a [previous](/07/11/2017/model-anti-patterns/)  [^map] post I ranted a bit about the ambiguous use of the term model in the software industry. In this post i would like to  address another famous model, namely the model from MVC.
  
-## MVC : Model, View, Controller.... But which model?
+## Model, View, Controller... But which model?
 
 Related to my previous post the meaning of the model in MVC isn't very clear either. Which model do we mean? In fact the whole meaning of MVC is, unfortunately, not always so clear.
 
@@ -95,7 +95,7 @@ To answer this I go back to the original responsibility of MVC:
 
 It is a pattern that is all about the user interface. So it belongs in the user interface layer. Yes, even the model... 
 
-Take note I am disagreeing here with Sandro Mancuso [^sandro] as well. Well, at least on the domain model part.
+Take note I am disagreeing here with Sandro Mancuso [^sandro] as well. At least on the domain model part.
 
 > When it comes to MVC frameworks, they should be restricted to the View and Controller layers, never the Model. - Sandro Mancuso [^sandro]
 
