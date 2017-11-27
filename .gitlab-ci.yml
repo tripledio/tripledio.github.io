@@ -37,7 +37,6 @@ variables:
 
 stages:
   - build
-  - test
   - review
   - staging
   - canary
@@ -56,33 +55,6 @@ build:
     - build
   only:
     - branches
-
-test:
-  services:
-    - postgres:latest
-  variables:
-    POSTGRES_DB: test
-  stage: test
-  image: gliderlabs/herokuish:latest
-  script:
-    - setup_test_db
-    - cp -R . /tmp/app
-    - /bin/herokuish buildpack test
-  only:
-    - branches
-
-codequality:
-  image: docker:latest
-  variables:
-    DOCKER_DRIVER: overlay2
-  allow_failure: true
-  services:
-    - docker:dind
-  script:
-    - setup_docker
-    - codeclimate
-  artifacts:
-    paths: [codeclimate.json]
 
 review:
   stage: review
