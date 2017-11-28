@@ -59,7 +59,7 @@ build:
 review:
   stage: review
   script:
-    - 
+    - echo ~/.kube/config | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
@@ -157,7 +157,6 @@ stop_review:
 production:
   stage: production
   script:
-    - echo ~/.kube/config | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
