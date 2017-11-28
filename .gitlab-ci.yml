@@ -60,7 +60,7 @@ review:
   stage: review
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG} | base64 -d > ~/.kube/config
+    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
