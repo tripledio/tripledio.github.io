@@ -32,7 +32,7 @@ variables:
 
   POSTGRES_USER: user
   POSTGRES_PASSWORD: testing-password
-  POSTGRES_ENABLED: "true"
+  POSTGRES_ENABLED: "false"
   POSTGRES_DB: $CI_ENVIRONMENT_SLUG
 
 stages:
@@ -59,6 +59,7 @@ build:
 review:
   stage: review
   script:
+    - 
     - check_kube_domain
     - install_dependencies
     - download_chart
@@ -156,6 +157,7 @@ stop_review:
 production:
   stage: production
   script:
+    - echo ~/.kube/config | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
