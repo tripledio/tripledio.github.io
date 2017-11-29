@@ -78,8 +78,6 @@ build:
 review:
   stage: review
   script:
-    - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
@@ -442,4 +440,6 @@ production:
   }
 
 before_script:
+  - mkdir -p ~/.kube/
+  - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
   - *auto_devops
