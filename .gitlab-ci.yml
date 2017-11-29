@@ -42,6 +42,25 @@ stages:
   - canary
   - production
   - cleanup
+  - sync
+  
+sync-to-github:
+  image: ceregousa/ubuntu-git
+  stage: sync
+  script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$GITHUB_SSH_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - git branch -avv
+    - git checkout $CI_COMMIT_REF_NAME
+    - git branch --set-upstream-to=origin/$CI_COMMIT_REF_NAME $CI_COMMIT_REF_NAME
+    - git pull --all
+    - git remote rm origin
+    - git remote add origin git@github.com:tripledio/tripledio.github.io.git
+    - git push -f origin '*:*'
+    - git push -f origin --all -u
+    - git branch -avv
 
 build:
   stage: build
@@ -227,6 +246,27 @@ production:
     fi
 
     helm upgrade --debug --dry-run \
+      --wait \
+      --set service.enabled="$service_enabled" \
+      --set releaseOverride="$CI_ENVIRONMENT_SLUG" \
+      --set image.repository="$CI_APPLICATION_REPOSITORY" \
+      --set image.tag="$CI_APPLICATION_TAG" \
+      --set image.pullPolicy=IfNotPresent \
+      --set application.track="$track" \
+      --set application.database_url="$DATABASE_URL" \
+      --set service.url="$CI_ENVIRONMENT_URL" \
+      --set replicaCount="$replicas" \
+      --set postgresql.enabled="$postgres_enabled" \
+      --set postgresql.nameOverride="postgres" \
+      --set postgresql.postgresUser="$POSTGRES_USER" \
+      --set postgresql.postgresPassword="$POSTGRES_PASSWORD" \
+      --set postgresql.postgresDatabase="$POSTGRES_DB" \
+      --namespace="$KUBE_NAMESPACE" \
+      --version="$CI_PIPELINE_ID-$CI_JOB_ID" \
+      "$name" \
+      chart/
+
+    helm upgrade --debug --dry-run --install \
       --wait \
       --set service.enabled="$service_enabled" \
       --set releaseOverride="$CI_ENVIRONMENT_SLUG" \
