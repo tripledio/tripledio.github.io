@@ -7,8 +7,8 @@ tags: deliberate-practice, Software development
 excerpt: A blog post about what deliberate practice is and how I do it
 ---
 
-A while ago I did my first lightning talk during a SoCraTes BE meetup. Today I thought it was time for another first...
-My first blog post. It will be the same subject as my lightning talk: Deliberate Practice.
+A few months ago I did my first lightning talk during a SoCraTes BE meetup. Today I thought it was time for another first...
+My first blog post. I will be writing about the same thing I talked about during the lightning talk...
 
 ---
 
@@ -18,15 +18,16 @@ My first blog post. It will be the same subject as my lightning talk: Deliberate
 
 #### What is it? <a id="1.a"/>
 
-Deliberate practice is the act of practicing on purpose hence calling it deliberate. Putting your full attention to improve yourself in a skill. 
-There is another thing you could call continuous practice which you get by doing your job. However most of the time we are constrained at work, it's not as easy to experiment with new things.
-This is because we can't just play around there. We've got businesses to satisfy. Therefore deliberate practice can be needed sometimes.
+Deliberate practice is the act of practicing on consciously hence calling it deliberate. Putting your full attention to improve yourself in a skill. 
+There is another thing you could call continuous practice which you get doing your job. However most of the time we are constrained at work, it's not as easy to experiment with new things.
+This is because we can't just play around there. We've got businesses to satisfy. Therefore deliberate practice is needed sometimes.
 
 #### Ways I do it <a id="1.b"/>
 
 ##### Daily practice
-There's a saying: an apple a day keeps the doctor away. I've turned this into "A commit a day..." I try to commit at daily to one of my pet projects.
-This can be blog posts, small refactor, katas, ... Even if it's a small commit I know that I have put my mind to deliberate practice every day. 
+There's a saying: an apple a day keeps the doctor away. I've turned this into "A commit a day...", this should not be taken literally. 
+What I mean by it is that I try to commit myself at least once a day to one of the deliberate practice methods I discuss further on in this blog post.
+However I don't beat myself up if I don't do it. We all know we can't be working constantly sometimes... we just need to sit back and relax.
 
 ##### Meetups
 A kind of special form of deliberate practice is attending Meetups, I call it special because it is not something you will do alone.
@@ -38,7 +39,7 @@ You are awesome!
 
 ##### Kata's
 A Kata is a term borrowed from the martial arts, it means to practice something. In our case it would be making an programming exercise (bank, social network, ...).
-A kata can be used for multiple things, you can use it to learn a new language but you can also use it to improve yourself in TDD or other skills. An even better way to use this is to make the exercise with multiple people separately  
+A kata can be used for multiple things, you can use it to learn a new language but you can also use it to improve yourself in TDD or other skills. An even better way to use this is to make the exercise with multiple people separately, (talk about tripled and advantages of making it with multiple people)
 
 ##### Reading
 Ah yes reading... it's another great way to be engaged with our profession. There is only one problem... there is so much to read
@@ -47,7 +48,7 @@ it's hard to know where to start. [Goodreads](https://goodreads.com) is a great 
 ##### Videos
 Visiting a lot of conferences can get expensive really fast. Thankfully most conferences put their talks online on youtube.
 This enables everyone to watch them in their own time and use this as a tool to learn new stuff. I try to balance the amount of netflix
-I watch with the amount of technical videos. Although I have to be honest... This isn't easy.
+I watch with the amount of technical videos. Although I have to be honest... This isn't easy. (maybe mention clean code videos or devoxx/youtube)
 
 ##### Lightning talks, Blog Posts
 I have grouped lightning talks and blog posts together because generally one can be turned into the other.
@@ -57,4 +58,4 @@ So you should have done some research in advance or it could be about something 
 
 #### Don't forget
 
-Even though it's important to constantly hone your skills it is also important to give your brain some time to relax. If you don't allow yourself to take breaks you will burn yourself out.
+Even though it's important to constantly hone your skills it is also important to give your brain some time to relax. If you don't allow yourself to take breaks you will tire yourself out.
