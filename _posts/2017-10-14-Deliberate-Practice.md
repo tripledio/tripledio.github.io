@@ -39,7 +39,9 @@ You are awesome!
 
 ##### Kata's
 A Kata is a term borrowed from the martial arts, it means to practice something. In our case it would be making an programming exercise (bank, social network, ...).
-A kata can be used for multiple things, you can use it to learn a new language but you can also use it to improve yourself in TDD or other skills. An even better way to use this is to make the exercise with multiple people separately, (talk about tripled and advantages of making it with multiple people)
+A kata can be used for multiple things, you can use it to learn a new language but you can also use it to improve yourself in TDD or other skills. An even better way to use this is to make the exercise with multiple people separately, 
+This way everyone is talking about the same problems and people can compare their solutions. We've been trying it here at Triple D and it has been working out so far.
+
 
 ##### Reading
 Ah yes reading... it's another great way to be engaged with our profession. There is only one problem... there is so much to read
@@ -48,12 +50,12 @@ it's hard to know where to start. [Goodreads](https://goodreads.com) is a great 
 ##### Videos
 Visiting a lot of conferences can get expensive really fast. Thankfully most conferences put their talks online on youtube.
 This enables everyone to watch them in their own time and use this as a tool to learn new stuff. I try to balance the amount of netflix
-I watch with the amount of technical videos. Although I have to be honest... This isn't easy. (maybe mention clean code videos or devoxx/youtube)
+I watch with the amount of technical videos. Although I have to be honest... This isn't easy. Great resources for example are the Clean Code videos made by Uncle Bob (Robert Martin).
+If you want to learn about new Java technologies Devoxx posts all their talks online.
 
 ##### Lightning talks, Blog Posts
-I have grouped lightning talks and blog posts together because generally one can be turned into the other.
-Both should be a short summary of something you know. Since you are explaining something to a group of people it means that you need to have a general idea of what you are talking about.
-So you should have done some research in advance or it could be about something you read or viewed. 
+Everything I have talked about in the past paragraphs can be used to as an inspiration to create lightning talks or blog posts. This is a great way to share new insights you've gained.
+Since you're going to talk about it in front of a group of people you need to push yourself just that little bit more to know enough about something.
 
 
 #### Don't forget
