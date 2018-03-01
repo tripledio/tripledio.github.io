@@ -7,7 +7,7 @@ header-img: "img/k8s-reverse-proxy/k8sbanner.png"
 # k8s, setting up a reverse proxy
 
 ## Context
-You might have switched to kubernetes lately, it's the hip thing to do. In order to avoid big bang migrations this can be a usefull technique to integrate your legacy infrastructure into a k8s cluster. A website is just an example, it's not limited to http and it migt as well be your database server, or an existing microservice. In this post I will demonstrate how you can reverse proxy existing services using ingress.
+You might have switched to kubernetes lately, it's the hip thing to do. In order to avoid big bang migrations this can be a usefull technique to integrate your legacy infrastructure into your new k8s cluster. A website is just an example, it's not limited to http and it might as well be your database server, or an existing microservice. In this post I will demonstrate how you can reverse proxy existing services using ingress.
 
 ## Setup
 K8s has some really nice concepts based on software development. People familiar with uncle Bob (Robert C. Martin) will know: "high level policy, low level details". K8s allows to define high level policy through their api and abstract it away from it's implementation.
