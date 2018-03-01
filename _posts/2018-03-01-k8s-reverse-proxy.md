@@ -13,7 +13,7 @@ You might have switched to kubernetes lately, it's the hip thing to do. In order
 K8s has some really nice concepts based on software development. People familiar with uncle Bob (Robert C. Martin) will know: "high level policy, low level details". K8s allows to define high level policy through their api and abstract it away from it's implementation.
 
 ### No abstractions: Straightforward proxying in nginx
-Just getting down and dirty in this bare nginx exampte, the solution would look like this:
+Just getting down and dirty in this bare nginx example, the solution would look like this:
 
 ```
 http {
@@ -31,7 +31,7 @@ http {
 }
 ```
 
-This creates a http server, listening on port 80 and routing us to a page with a Triple D and kubernetes logo. This works, but it's tightly coupled to nginx. Also, if you're on k8s you would just like to be able to find "tripled" when using service discovery. So we'Il use the api objects to define these concepts inside the cluster.
+This creates an http server, listening on port 80 and proxies a page with a Triple D and kubernetes logo. This works, but it's tightly coupled to nginx. Also, if you're on k8s you would just like to be able to find "tripled" when using service discovery. So we'Il use the api objects to define these concepts inside the cluster.
 
 ## In practice
 ### Prerequisites
@@ -94,6 +94,8 @@ spec:
           servicePort: 80
         path: /
 ```
+
+The yaml snippets can be put in any file, demo.yaml, and then `kubectl apply -f demo.yaml` and it should deploy to your cluster.
 
 We're using the xip.io service as it's the easiest way to get a dns pointing to the minikube ip.
 
