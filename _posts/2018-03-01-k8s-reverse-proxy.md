@@ -7,7 +7,7 @@ header-img: "img/k8s-reverse-proxy/k8sbanner.png"
 # k8s, setting up a reverse proxy
 
 ## Context
-You might have switched to kubernetes lately, it's the hip thing to do. In order to avoid big bang migrations this can be a usefull technique to integrate your legacy infrastructure into your new k8s cluster. A website is just an example, it's not limited to http and it might as well be your database server, or an existing microservice. In this post I will demonstrate how you can reverse proxy existing services using ingress.
+You might have switched to kubernetes lately, it's the hip thing to do. In order to avoid big bang migrations this can be a useful technique to integrate your legacy infrastructure into your new k8s cluster. A website is just an example, it's not limited to http and it might as well be your database server, or an existing microservice. In this post I will demonstrate how you can reverse proxy existing services using ingress.
 
 ## Setup
 K8s has some really nice concepts based on software development. People familiar with uncle Bob (Robert C. Martin) will know: "high level policy, low level details". K8s allows to define high level policy through their api and abstract it away from it's implementation.
@@ -57,7 +57,7 @@ Note that this should theoretically work with any ingress implementation, traefi
 ### Service
 A service is usually backed by a pod. That's the common case where k8s is managing your dockerized application. But it doesn't need to be. It can also be something outside your cluster, like an existing database. But nonetheless it can still be defined inside your cluster.
 
-In thise case we're going to define an external ip as a service inside our cluster. The Magic is in the concept of the externalName, creating a DNS entry on our kubernetes hosts.
+In thise case we're going to define an external ip as a service inside our cluster. The Magic is in the concept of the externalName, creating a dns entry for our kubernetes hosts.
 ```
 apiVersion: v1
 kind: Service
@@ -103,4 +103,4 @@ Now point your browser to: [tripled.192.168.99.100.xip.io](http://tripled.192.16
 
 ![Final result](/img/k8s-reverse-proxy/proxyresult.png)
 
-I hope you find this technique interesting and usefull in your kubernetes migrations.
+I hope you find this technique interesting and useful in your kubernetes migrations.
