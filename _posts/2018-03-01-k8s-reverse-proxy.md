@@ -1,23 +1,37 @@
 ---
 layout: post
-title: "Bridging legacy and k8s"
+title: "Connecting external applications with kubernetes"
 author: kris
 header-img: "img/k8s-reverse-proxy/k8sbanner.png"
 ---
-# Bridging legacy and k8s
+# Connecting external applications with kubernetes
 
 ## Context
-Recently you may have started using Kubernetes to deploy and manage some your applications. After all, next to being the hip thing to do, it is a great way to abstract away a lot of operational requirements. 
+In this blog post I'll demonstrate how to make applications that are external to a [Kubernetes](https://kubernetes.io) (K8s) [^1] cluster available to the applications that are managed by K8s. This is useful for when we have started using Kubernetes to deploy and manage some your applications but not everything is managed at once. 
 
-But unless we want to end up with a big *BANG* we typically want to avoid a big bang migration from the old landscape to the new K8s orchestrated landscape. That is why in this post I will demonstrate a possible technique to gradually migrate from the old into the new by allowing the new k8s managed applications to connect with the old non-orchestrated applications.
+Because unless you want to end up with a big *BANG*, you typically want to avoid a big bang. So doing a steady migration from the old landscape to the new K8s orchestrated landscape is often the prudent approach. That is why in this post I will demonstrate a  technique to gradually migrate from the old into the new by allowing the new k8s managed applications to connect with the old non-orchestrated applications.
 
-K8s has some really nice concepts that map great to other software engineering concepts. People familiar with uncle Bob (Robert C. Martin) will know: "high level policy, low level details". K8s allows us to define a high level policy through their api and abstract it away from it's implementation.
+In this post i'll not delve into what K8s is and how to get it up and running. There is plenty of information about that out there. But you should be able to follow without an in depth K8s knowledge. And who knows, after this post you might want to give it a closer look.
 
-It's this service abstraction that we will use to integrate our legacy component. Although a service usually represents a deployment where containers are managed by k8s, we will just use an `ExternalName` to reference an existing component rather than a pod or a daemonset.
+### The goal: Mixed infrastructure
 
-### Mixed infrastructure
+So what we are trying to achieve is a mixed infrastructure. Let K8s managed services use external applications, databases... without the managed services being impacted by this.
+ 
+The reason that all of this is possible with K8s is why we at Triple D think that K8s is a useful technology to have mastered. Besides being the hip thing to do at the moment(2017-2018), it is also a great way to abstract away a lot of operational requirements.
+
+People familiar with uncle Bob (Robert C. Martin) will know his mantra: "high level policy, low level details". K8s allows us to define a high level policy through their api that abstracts away the low level implementation details.
+
+It's precisely this K8s service abstraction capability that i will use to integrate our external 'legacy' application. Although in K8s a service usually represents a deployment where containers are managed by k8s. In K8s i will just use an `ExternalName` to reference an existing unorchestrated external component rather than a K8s pod or daemonset.
+
+ 
+Below is a simple example of how this will look.
+
 ![Mixed infrastructure](/img/k8s-reverse-proxy/integration.png)
 
+Here we have MyFancyService that runs inside our K8s cluster. MyFancyService uses the K8s managed service DBService and CurrencyExchangeService. It has no idea were these two services exists, nor should it. That's K8s job. It just asks for a link the these services. In K8s these two services are registered but they refer to two applications/services outside of the K8s cluster. MyFancyService doesn't need to know about this at all. If somewhere in the future we would decide to bring one of these external applications inside K8s as a managed service we are free to do so with minimal effort. MyFancyService is not impacted by this at all.
+
+No let me demonstrate how can we achieve this.
+  
 ## A practical example: ingress route to an external service
 ### Low level proxying using nginx
 Our example would look like this if we would just use a native nginx configuration file.
@@ -111,3 +125,7 @@ Now point your browser to: [tripled.192.168.99.100.xip.io](http://tripled.192.16
 ![Final result](/img/k8s-reverse-proxy/proxyresult.png)
 
 I hope you find this technique interesting and useful in your kubernetes migrations. And while this might be a pretty synthetical example, you could easily use something like [fixer.io](http://fixer.io/) and use it as your local currency exchange microservice. Allowing you to easily replace it by your own implementation later on.
+
+_**Footnotes**_
+
+[^1] Kubernetes https://kubernetes.io
