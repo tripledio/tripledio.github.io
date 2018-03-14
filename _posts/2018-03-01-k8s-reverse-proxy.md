@@ -32,8 +32,19 @@ Here we have MyFancyService that runs inside our K8s cluster. MyFancyService use
 
 No let me demonstrate how can we achieve this.
   
-## A practical example: ingress route to an external service
-### Low level proxying using nginx
+## A practical example: ingress route to an external service //move me
+
+## The usecase
+
+As an example of an external service we will take a simple http server serving a page with the Triple D and kubernetes logo. This external service runs on 81.82.200.36 and we would like to be able to access it as if it was a locally deployed application.
+
+## Non K8s solution
+
+As a non K8s solution we can choose to do a low level proxying of the external service using nginx. To do this our local native nginx configuration file would look like this:
+
+### Low level proxying using nginx [^nginx]
+
+
 Our example would look like this if we would just use a native nginx configuration file.
 ```
 http {
@@ -51,18 +62,27 @@ http {
 }
 ```
 
-This creates an http server, listens on port 80 and proxies a page with a Triple D and kubernetes logo. This works, but it's tightly coupled to nginx. Also, if you're on k8s you would just like to be able to find "tripled" when using service discovery. So we'Il use the api objects to define these concepts inside the cluster.
+This creates an http server, listens on port 80 and proxies a page with a Triple D and Kubernetes logo. we are now able to access an external resource like it was a local resource. However it is a 'solution' that is tightly coupled to nginx. The local proxy doesn't have the advantages that come with K8s. Our k8s managed services are still unable to find the service. You would just like to be able to find "tripled" when using service discovery inside K8s cluster. 
 
-### 1. Recreating this using k8s api's
-#### Prerequisites
-A running kubernetes cluster, for demo purposes I'm using a [minikube](https://github.com/kubernetes/minikube). 
+## Connecting the external service to K8s
+
+We will now make the external Http server available to k8s by using the K8s api objects to define these concepts inside the K8s cluster.
+
+### 1. Setup minikube
+
+For the demo to work we require a running kubernetes cluster. For demo purposes I'm using a [minikube](https://github.com/kubernetes/minikube)[^2] . 
 
 `minikube start --cpus 2 --memory 4096`
 
 Run `minikube dashboard` to get to the kubernetes dashboard. It should be empty.
 
 ### 2. Ingress
-[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) provides load balancing, SSL termination and name-based virtual hosting. In this step we will install Nginx as our Ingress implementation by using [helm](https://helm.sh/), a package manager.
+
+One of the K8s API's is [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)[^3]. It  provides load balancing, SSL termination and name-based virtual hosting. Ingress is an API where we can specify a collection of rules that allow inbound connections to reach the cluster services.  
+
+In this step we will install Nginx as our Ingress implementation. But we could have chosen any one of the ingress implementation like haproxy, traefik, caddy,...
+
+We will install nginx as ingress impl in K8s by by using [helm](https://helm.sh/)[^4] , a K8s package manager.
 
 ```
 helm init
@@ -76,10 +96,11 @@ The result should look something like this:
 Browsing to [192.168.99.100](http://192.168.99.100) shows a 404. 
 ![Browsing to the ip should show a 404](/img/k8s-reverse-proxy/norule.png)
 
-As Ingress is an API where we can specify a collection of rules that allow inbound connections to reach the cluster services. The solution should work with any ingress implementation like haproxy, traefik, caddy,...
 
 ### 3. ExternalName Service declaration
-Using the externalName in our service declaration will create a dns entry in the cluster dns service.
+
+Now we will declare a new service tripled-svc in K8s. K8s will use the externalName in our service declaration to create a dns entry in the cluster dns service.
+
 ```
 apiVersion: v1
 kind: Service
@@ -93,9 +114,12 @@ spec:
   - name: http
     port: 80
  ```
+ 
+Basically we have defined a new service inside K8s that knows it exists external.
 
-### 4. Ingress Route: connecting the proxy to the service
-We'Il create an incoming ingress that routes to our service, which is external to our cluster. 
+### 4. Define the Ingress Route: connecting the proxy to the service
+
+We'Il create an incoming ingress in K8s that routes to our K8s service, which is external to our cluster. This will make the service available from K8s. Upon which K8s will then redirect it through the proxy to the external service.
 
 We'Il use a hostname `tripled.192.168.99.100.xip.io` that resolves to the ip of our minikube. And then tell it to take us to the `tripled-svc` service.
 
@@ -126,6 +150,14 @@ Now point your browser to: [tripled.192.168.99.100.xip.io](http://tripled.192.16
 
 I hope you find this technique interesting and useful in your kubernetes migrations. And while this might be a pretty synthetical example, you could easily use something like [fixer.io](http://fixer.io/) and use it as your local currency exchange microservice. Allowing you to easily replace it by your own implementation later on.
 
-_**Footnotes**_
+_**References**_
 
-[^1] Kubernetes https://kubernetes.io
+[^1] [Kubernetes](https://kubernetes.io): an open-source system for automating deployment, scaling, and management of containerized applications
+
+[^nginx] [NGINX](https://www.nginx.com)NGINX is a free, open-source, high-performance HTTP server and reverse proxy
+
+[^2] [minikube](https://github.com/kubernetes/minikube): a tool that makes it easy to run Kubernetes locally.
+
+[^3] [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/): A K8s API for a collection of rules that allow inbound connections to reach the cluster services. 
+ 
+[^4] [helm](https://helm.sh/): A K8s package manager
