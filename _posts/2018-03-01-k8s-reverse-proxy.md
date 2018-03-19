@@ -9,7 +9,7 @@ excerpt: How to connected external applications to Kubernetes cluster.
 # Connecting external applications with kubernetes
 
 ## Context
-In this blog post I'll demonstrate how to make applications that are external to a [Kubernetes](https://kubernetes.io) (K8s) [^1] cluster available to the applications that are managed by K8s. This is useful for when we have started using Kubernetes to deploy and manage some your applications but not everything is managed at once. 
+In this blog post I'll demonstrate how to make applications that are external to a [Kubernetes](https://kubernetes.io)  [^1] (K8s) cluster available to the applications that are managed by K8s. This is useful for when we have started using Kubernetes to deploy and manage some your applications but not everything is managed at once. 
 
 Because unless you want to end up with a big *BANG*, you typically want to avoid a big bang. So doing a steady migration from the old landscape to the new K8s orchestrated landscape is often the prudent approach. That is why in this post I will demonstrate a  technique to gradually migrate from the old into the new by allowing the new k8s managed applications to connect with the old non-orchestrated applications.
 
@@ -157,14 +157,16 @@ I hope you find this technique interesting and useful in your kubernetes migrati
 
 **References**
 
-[^1] _[Kubernetes](https://kubernetes.io): an open-source system for automating deployment, scaling, and management of containerized applications_
+[^1]: _[Kubernetes](https://kubernetes.io): an open-source system for automating deployment, scaling, and management of containerized applications_
 
-[^2] _[NGINX](https://www.nginx.com)NGINX is a free, open-source, high-performance HTTP server and reverse proxy_
+[^2]: _[NGINX](https://www.nginx.com)NGINX is a free, open-source, high-performance HTTP server and reverse proxy_
 
-[^3] _[minikube](https://github.com/kubernetes/minikube)_: a tool that makes it easy to run Kubernetes locally.
+[^3]: _[minikube](https://github.com/kubernetes/minikube)_ : a tool that makes it easy to run Kubernetes locally.
 
-[^4] _[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)_: A K8s API for a collection of rules that allow inbound connections to reach the cluster services. 
+[^4]: _[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)_ : A K8s API for a collection of rules that allow inbound connections to reach the cluster services. 
  
-[^5] _[helm](https://helm.sh/)_: A K8s package manager
+[^5]: _[helm](https://helm.sh/)_  A K8s package manager
 
-[^6] _[xip.io](http://xip.io)_
+[^6]: _[xip.io](http://xip.io)_ xip.io is a magic domain name providing wildcard DNS for any IP address
+
+[^7] [fixer.io](http://fixer.io/)
