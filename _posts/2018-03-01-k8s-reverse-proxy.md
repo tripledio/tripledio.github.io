@@ -159,14 +159,14 @@ I hope you find this technique interesting and useful in your kubernetes migrati
 
 [^1]: _[Kubernetes](https://kubernetes.io): an open-source system for automating deployment, scaling, and management of containerized applications_
 
-[^2]: _[NGINX](https://www.nginx.com)NGINX is a free, open-source, high-performance HTTP server and reverse proxy_
+[^2]: _[NGINX](https://www.nginx.com) is a free, open-source, high-performance HTTP server and reverse proxy_
 
-[^3]: _[minikube](https://github.com/kubernetes/minikube)_ : a tool that makes it easy to run Kubernetes locally.
+[^3]: _[minikube](https://github.com/kubernetes/minikube)_  a tool that makes it easy to run Kubernetes locally.
 
-[^4]: _[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)_ : A K8s API for a collection of rules that allow inbound connections to reach the cluster services. 
+[^4]: _[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)_ is  a K8s API for a collection of rules that allow inbound connections to reach the cluster services. 
  
-[^5]: _[helm](https://helm.sh/)_  A K8s package manager
+[^5]: _[helm](https://helm.sh/)_  is a K8s package manager
 
-[^6]: _[xip.io](http://xip.io)_ xip.io is a magic domain name providing wildcard DNS for any IP address
+[^6]: _[xip.io](http://xip.io)_  is a ervice that provides wildcard DNS for any IP address
 
-[^7] [fixer.io](http://fixer.io/)
+[^7]: [fixer.io](http://fixer.io/) api for currency exchange
