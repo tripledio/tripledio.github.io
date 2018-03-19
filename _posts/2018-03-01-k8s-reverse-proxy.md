@@ -37,11 +37,11 @@ Here we have MyFancyService that runs inside our K8s cluster. MyFancyService use
 ## The usecase
 
 
-I will now demonstrate how can we achieve our mixed infrastructure goal. As an example of an external service we will take a simple http server serving a page with the Triple D and kubernetes logo. This external service runs on 81.82.200.36 and we would like to be able to access it as if it was a locally deployed application.
+I will now demonstrate how we can achieve our mixed infrastructure goal. As an example of an external service we will take a simple http server serving a page with the Triple D and kubernetes logo. This external service runs on 81.82.200.36 and we would like to be able to access it as if it was a locally deployed application.
 
 ## Non K8s solution
 
-As a non K8s solution we can choose to do a low level proxying of the external service using nginx. To do this our local native nginx configuration file would look like this:
+As a non K8s solution we can choose to do a low level proxying of the external service using nginx as the k8s ingress controller. 
 
 ### Low level proxying using nginx [^2]
 
@@ -63,7 +63,7 @@ http {
 }
 ```
 
-This creates an http server, listens on port 80 and proxies a page with a Triple D and Kubernetes logo. we are now able to access an external resource like it was a local resource. However it is a 'solution' that is tightly coupled to nginx. The local proxy doesn't have the advantages that come with K8s. Our k8s managed services are still unable to find the service. You would just like to be able to find "tripled" when using service discovery inside K8s cluster. 
+This creates an http server, listens on port 80 and proxies a page with a Triple D and Kubernetes logo. We are now able to access an external resource like it was a local resource. However it is a 'solution' that is tightly coupled to nginx. The local proxy doesn't have the advantages that come with K8s. Our k8s managed services are still unable to find the service. You would just like to be able to find "tripled" when using service discovery inside K8s cluster. 
 
 ## Connecting the external service to K8s
 
@@ -144,7 +144,7 @@ spec:
 The yaml snippets can be put in any file, we'll use demo.yaml, and then run 
 ```kubectl apply -f demo.yaml``` 
 
-which deploys it to your cluster. This will trigger a rewrite and reload of your ingress implementations configuration file.
+which deploys it to your cluster. This will trigger a rewrite and reload of your ingress controller's configuration file.
 
 We're using the [xip.io](http://xip.io) [^6] service to provide us with a DNS entry as it's the easiest way to get a public dns lookup pointing to the minikube ip.
 
