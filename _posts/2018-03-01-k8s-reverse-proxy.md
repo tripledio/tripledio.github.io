@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Connecting external applications with kubernetes"
+title: "Connecting legacy to kubernetes"
 author: kris
+tags: Kubernetes, DevOps
 header-img: "img/k8s-reverse-proxy/k8sbanner.png"
+excerpt: How to connected external applications to Kubernetes cluster.
 ---
 # Connecting external applications with kubernetes
 
@@ -42,7 +44,7 @@ As an example of an external service we will take a simple http server serving a
 
 As a non K8s solution we can choose to do a low level proxying of the external service using nginx. To do this our local native nginx configuration file would look like this:
 
-### Low level proxying using nginx [^nginx]
+### Low level proxying using nginx [^2]
 
 
 Our example would look like this if we would just use a native nginx configuration file.
@@ -70,7 +72,7 @@ We will now make the external Http server available to k8s by using the K8s api 
 
 ### 1. Setup minikube
 
-For the demo to work we require a running kubernetes cluster. For demo purposes I'm using a [minikube](https://github.com/kubernetes/minikube) [^2] . 
+For the demo to work we require a running kubernetes cluster. For demo purposes I'm using a [minikube](https://github.com/kubernetes/minikube) [^3] . 
 
 `minikube start --cpus 2 --memory 4096`
 
@@ -78,11 +80,11 @@ Run `minikube dashboard` to get to the kubernetes dashboard. It should be empty.
 
 ### 2. Install Ingress implementation
 
-One of the K8s API's is [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) [^3]. It  provides load balancing, SSL termination and name-based virtual hosting. Ingress is an API where we can specify a collection of rules that allow inbound connections to reach the cluster services.  
+One of the K8s API's is [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) [^4]. It  provides load balancing, SSL termination and name-based virtual hosting. Ingress is an API where we can specify a collection of rules that allow inbound connections to reach the cluster services.  
 
 In this step we will install Nginx as our Ingress implementation. But we could have chosen any one of the ingress implementation like haproxy, traefik, caddy,...
 
-We will install nginx as ingress impl in K8s by by using [helm](https://helm.sh/) [^4] , a K8s package manager.
+We will install nginx as ingress impl in K8s by by using [helm](https://helm.sh/) [^5] , a K8s package manager.
 
 ```
 helm init
@@ -145,7 +147,7 @@ The yaml snippets can be put in any file, we'll use demo.yaml, and then run
 
 which deploys it to your cluster. This will trigger a rewrite and reload of your ingress implementations configuration file.
 
-We're using the [xip.io](http://xip.io) [^xip] service to provide us with a DNS entry as it's the easiest way to get a public dns lookup pointing to the minikube ip.
+We're using the [xip.io](http://xip.io) [^6] service to provide us with a DNS entry as it's the easiest way to get a public dns lookup pointing to the minikube ip.
 
 Now point your browser to: [tripled.192.168.99.100.xip.io](http://tripled.192.168.99.100.xip.io/) and you should see a page with a triple D and kubernetes logo.
 
@@ -157,12 +159,12 @@ I hope you find this technique interesting and useful in your kubernetes migrati
 
 [^1] _[Kubernetes](https://kubernetes.io): an open-source system for automating deployment, scaling, and management of containerized applications_
 
-[^nginx] _[NGINX](https://www.nginx.com)NGINX is a free, open-source, high-performance HTTP server and reverse proxy_
+[^2] _[NGINX](https://www.nginx.com)NGINX is a free, open-source, high-performance HTTP server and reverse proxy_
 
-[^2] _[minikube](https://github.com/kubernetes/minikube)_: a tool that makes it easy to run Kubernetes locally.
+[^3] _[minikube](https://github.com/kubernetes/minikube)_: a tool that makes it easy to run Kubernetes locally.
 
-[^3] _[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)_: A K8s API for a collection of rules that allow inbound connections to reach the cluster services. 
+[^4] _[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)_: A K8s API for a collection of rules that allow inbound connections to reach the cluster services. 
  
-[^4] _[helm](https://helm.sh/)_: A K8s package manager
+[^5] _[helm](https://helm.sh/)_: A K8s package manager
 
-[^xip] _[xip.io](http://xip.io)_
+[^6] _[xip.io](http://xip.io)_
