@@ -31,14 +31,13 @@ Below is a simple example of how this will look.
 ![Mixed infrastructure](/img/k8s-reverse-proxy/integration.png)
 
 Here we have MyFancyService that runs inside our K8s cluster. MyFancyService uses the K8s managed service DBService and CurrencyExchangeService. It has no idea were these two services exists, nor should it. That's K8s job. It just asks for a link the these services. In K8s these two services are registered but they refer to two applications/services outside of the K8s cluster. MyFancyService doesn't need to know about this at all. If somewhere in the future we would decide to bring one of these external applications inside K8s as a managed service we are free to do so with minimal effort. MyFancyService is not impacted by this at all.
-
-No let me demonstrate how can we achieve this.
   
-## A practical example: ingress route to an external service //move me
+
 
 ## The usecase
 
-As an example of an external service we will take a simple http server serving a page with the Triple D and kubernetes logo. This external service runs on 81.82.200.36 and we would like to be able to access it as if it was a locally deployed application.
+
+I will now demonstrate how can we achieve our mixed infrastructure goal. As an example of an external service we will take a simple http server serving a page with the Triple D and kubernetes logo. This external service runs on 81.82.200.36 and we would like to be able to access it as if it was a locally deployed application.
 
 ## Non K8s solution
 
@@ -68,7 +67,7 @@ This creates an http server, listens on port 80 and proxies a page with a Triple
 
 ## Connecting the external service to K8s
 
-We will now make the external Http server available to k8s by using the K8s api objects to define these concepts inside the K8s cluster.
+We will now make the external Http server available to k8s by using the K8s api objects to define these concepts inside the K8s cluster. 
 
 ### 1. Setup minikube
 
