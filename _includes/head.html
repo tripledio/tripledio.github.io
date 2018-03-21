@@ -9,18 +9,19 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url | replace: 'http://', '//' }}">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.github.url | replace: 'http://', '//'  }}">
+    <link rel="stylesheet" href="{{ " /css/bootstrap.min.css " | prepend: site.github.url | replace: 'http://', '//'  }}">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/clean-blog.css" | prepend: site.github.url | replace: 'http://', '//'  }}">
+    <link rel="stylesheet" href="{{ " /css/clean-blog.css " | prepend: site.github.url | replace: 'http://', '//'  }}">
 
     <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.github.url | replace: 'http://', '//'  }}">
+    <link rel="stylesheet" href="{{ " /css/syntax.css " | prepend: site.github.url | replace: 'http://', '//'  }}">
 
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,4 +32,39 @@
 
     {% feed_meta %}
 
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "name": "Triple D",
+            "brand": "Triple D",
+            "@type": "Organization",
+            "url": "https://www.tripled.io",
+            "logo": "https://www.tripled.io/img/logo.png",
+            "telephone": "+32495123456",
+            "email": "info@tripled.io",
+            "vatID": "BE0677.461.559",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Moerbeke-Waas",
+                "postalCode": "9180",
+                "streetAddress": "Melkerijstraat 27, 9180 Moerbeke-Waas"
+            },
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+32495123456",
+                "name": "Guido Dechamps",
+                "contactType": "customer service"
+            }, {
+                "@type": "ContactPoint",
+                "telephone": "+32495123456",
+                "name": "Kris Hofmans",
+                "contactType": "customer service"
+            }, {
+                "@type": "ContactPoint",
+                "telephone": "+32495123456",
+                "name": "Doménique Tilleuil",
+                "contactType": "customer service"
+            }]
+        }
+    </script>
 </head>
