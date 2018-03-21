@@ -26,7 +26,8 @@ As an example for the anemic domain model we will use the paperboy example. The 
 
 We will get into more detail on this example but for now here is the UML diagram of the domain model.
 
-![Paper boy uml](http://tripled.io/content/images/2016/08/paperboyUml.png)
+![Paper boy uml](/img/paperboy-uml.png)
+
 From this model you can deduce what the problem domain is for this application. Obviously it's about paperboys and their customers. Both have exactly one wallets and both have zero or one paper. So the intent of the domain is most likely for the paperboy to sell papers to its customers upon which money should be transferred from the customer to the paperboy wallet. All this seems obvious by the class diagram itself but as we will see, it is but a pale, anemic reflection of a real domain model.
 ### b. The paperboy use cases <a name="2.b"/>
 The simplest acceptance test for the paperboy example describes the required functionality. More acceptance tests can be found in the code example.
