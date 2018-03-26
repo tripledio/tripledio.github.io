@@ -1,13 +1,15 @@
 ---
 layout: page
-description: "Expert Belgian Software Development"
 
 spotlight:
-  imgDir: home
+  imgDir: img/spotlight/home
+  imgAlt: "Triple D : Design, Develop, Deploy"
   logoAnimation: true
+  video: false
+  videoFile: files/electric.mp4
 
 intro:
-  Triple D is a belgian software development company founded by and consisting entirely out of veteran software engineers. It is a small, completely independent company with very highly skilled, experienced and opinionated software engineers with a clear vision how to develop software successfully.
+  text: Triple D is a belgian software development company founded by and consisting entirely out of veteran software engineers. It is a small, completely independent company with very highly skilled, experienced and opinionated software engineers with a clear vision how to develop software successfully.
 
 services:
   - name: Team as a service
@@ -23,7 +25,7 @@ services:
     imgAlt: Training
     color: blue
     
-aboutus:
+about-us:
   column1Title: Who are we
   column1Text: We founded Triple D from our passion for software development. "We" are a group of veteran software engineers with the aim of having a *larger, positive impact* on the belgian software industry.
   column2Title: What drives us
@@ -35,6 +37,10 @@ testimonials:
   - quote: quote2
     person: person2
   - quote: quote3
+  - quote: quote4
+    person: person4
+  - quote: quote5
+    person: person5
   
 footer:
   If you could use our help, let us know. Our normal base of operation in Belgium is Ghent, Antwerp, Brussels triangle. <br>But we are open to any interesting proposals. Contact us!
