@@ -1,27 +1,44 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="{{ site.description }}">
 
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Triple D">
+    <meta name="application-name" content="Triple D">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="author" content="Triple D" />
+    <meta name="robots" content="index,follow">
+    <meta name="revisit-after" content="1 days" />
+
+    <meta property="og:title" content="Triple D" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tripled.io" />
+    <meta property="og:image" content="https://www.tripled.io/img/logo.jpg" />
+
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.title" content="Triple D">
+    <meta name="DC.identifier" content="https://www.tripled.io">
+    <meta name="DC.description" content="Triple D">
+    <meta name="DC.subject" content="Triple D">
+    <meta name="DC.language" scheme="ISO639-1" content="nl">
+    <meta name="DC.creator" content="https://www.tripled.io">
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url | replace: 'http://', '//' }}">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ " /css/bootstrap.min.css " | prepend: site.github.url | replace: 'http://', '//'  }}">
-
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ " /css/clean-blog.css " | prepend: site.github.url | replace: 'http://', '//'  }}">
-
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="{{ " /css/syntax.css " | prepend: site.github.url | replace: 'http://', '//'  }}">
-
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ " /css/style.css " | prepend: site.github.url | replace: 'http://', '//'  }}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +56,7 @@
             "brand": "Triple D",
             "@type": "Organization",
             "url": "https://www.tripled.io",
-            "logo": "https://www.tripled.io/img/logo.png",
+            "logo": "https://www.tripled.io/img/logo.jpg",
             "telephone": "+32495123456",
             "email": "info@tripled.io",
             "vatID": "BE0677.461.559",

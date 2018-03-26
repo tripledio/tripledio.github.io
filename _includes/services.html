@@ -1,0 +1,28 @@
+<section id="services" class="pb-0 pb-md-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="h3 mb-2 text-uppercase">Our services</h2>
+            </div>
+        </div>
+    </div>
+    <div class="partial-bg primary alt pb-md-0">
+        <div class="container">
+            <div class="row">
+                {% for service in page.services %}
+                <div class="col-12 col-md-4 text-center">
+                    <div class="icon {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %} flex-center-hv py-5">
+                        <img src="{{ service.imgPath }}" alt="{{ service.imgAlt }}">
+                    </div>
+                    <h3 class="mb-4"><span class="bg-{{ service.color }}">{{ service.name }}</span></h3>
+                    {% if service.description %}
+                    <div class="px-0 px-md-0 px-lg-4">
+                        <p>{{ service.description }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
