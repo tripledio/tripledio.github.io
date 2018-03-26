@@ -1,0 +1,50 @@
+/* FORMS */
+
+form {
+  .form-group {
+    position: relative;
+  }
+
+  label {
+    display: none;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  input[type='number'],
+  textarea {
+    background: $color-gray-5;
+    color: $color-gray-90;
+    display: block;
+    appearance: none;
+    border: none;
+    width: 100%;
+    padding: 1.8rem 4.4rem 1.8rem 1.8rem;
+    transition: background-color 0.3s;
+
+    &:required:valid,
+    &:required:invalid {
+      background-repeat: no-repeat;
+      background-position: center right 1.2rem;
+      background-size: 2.52rem 2.52rem;
+    }
+
+    &:required:valid {
+      background-image: url('data:image/svg+xml;utf-8,<svg fill="'+$color-black+'" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>');
+    }
+
+    &:focus {
+      color: $color-black;
+      background: $color-gray-10;
+
+      &::placeholder {
+        color: $color-black;
+      }
+
+      &:required:valid {
+        background-image: url('data:image/svg+xml;utf-8,<svg fill="'+$color-teal+'" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>');
+      }
+    }
+  }
+}

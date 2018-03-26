@@ -1,0 +1,183 @@
+/* COLORS */
+
+$color-primary: #21314c;
+$color-secondary: #666666;
+$color-black: #212121;
+$color-void: #000000;
+$color-white: #ffffff;
+$color-gray: #666666;
+$color-yellow: #ffc107;
+$color-red: #ed1c24;
+$color-teal: #009588;
+$color-orange: #ff5722;
+$color-lime: #00e676;
+$color-blue: #00abf5;
+$color-green: #8ac742;
+
+$color-facebook: #4267b2;
+$color-twitter: #1da1f2;
+$color-linkedin: #0077b5;
+$color-ml: #dc483c;
+
+$color-gray-5: lighten($color-black, 80%);
+$color-gray-10: lighten($color-black, 75%);
+$color-gray-20: lighten($color-black, 70%);
+$color-gray-30: lighten($color-black, 65%);
+$color-gray-40: lighten($color-black, 60%);
+$color-gray-50: lighten($color-black, 55%);
+$color-gray-60: lighten($color-black, 50%);
+$color-gray-70: lighten($color-black, 45%);
+$color-gray-80: lighten($color-black, 40%);
+$color-gray-90: lighten($color-black, 35%);
+
+/* BACKGROUNDS */
+
+.bg-primary {
+  background-color: $color-primary !important;
+}
+
+.bg-secondary {
+  background-color: $color-secondary !important;
+}
+
+.bg-black {
+  background-color: $color-black !important;
+}
+
+.bg-blue {
+  background-color: $color-blue !important;
+}
+
+.bg-red {
+  background-color: $color-red !important;
+}
+
+.bg-green {
+  background-color: $color-green !important;
+}
+
+.bg-white {
+  background-color: $color-white !important;
+}
+
+.bg-lime {
+  background-color: $color-lime !important;
+}
+
+.bg-fb {
+  background-color: $color-facebook !important;
+}
+
+.bg-tw {
+  background-color: $color-twitter !important;
+}
+
+.bg-ln {
+  background-color: $color-linkedin !important;
+}
+
+.bg-ml {
+  background-color: $color-ml !important;
+}
+
+.bg-gray-5 {
+  background-color: $color-gray-5 !important;
+}
+
+.bg-gray-10 {
+  background-color: $color-gray-10 !important;
+}
+
+.bg-gray-20 {
+  background-color: $color-gray-20 !important;
+}
+
+.bg-gray-30 {
+  background-color: $color-gray-30 !important;
+}
+
+.bg-gray-40 {
+  background-color: $color-gray-40 !important;
+}
+
+.bg-gray-50 {
+  background-color: $color-gray-50 !important;
+}
+
+.bg-text-gray-60 {
+  background-color: $color-gray-60 !important;
+}
+
+.bg-gray-70 {
+  background-color: $color-gray-70 !important;
+}
+
+.bg-gray-80 {
+  background-color: $color-gray-80 !important;
+}
+
+.bg-gray-90 {
+  background-color: $color-gray-90 !important;
+}
+
+/* TEXT */
+
+.text-lime {
+  color: $color-lime !important;
+}
+
+.text-white {
+  color: $color-white !important;
+}
+
+.text-black {
+  color: $color-black !important;
+}
+
+.text-primary {
+  color: $color-primary !important;
+}
+
+.text-secondary {
+  color: $color-secondary !important;
+}
+
+.text-gray {
+  color: $color-gray !important;
+}
+
+.text-gray-10 {
+  color: $color-gray-10 !important;
+}
+
+.text-gray-20 {
+  color: $color-gray-20 !important;
+}
+
+.text-gray-30 {
+  color: $color-gray-30 !important;
+}
+
+.text-gray-40 {
+  color: $color-gray-40 !important;
+}
+
+.text-gray-50 {
+  color: $color-gray-50 !important;
+}
+
+.text-text-gray-60 {
+  color: $color-gray-60 !important;
+}
+
+.text-gray-70 {
+  color: $color-gray-70 !important;
+}
+
+.text-gray-80 {
+  color: $color-gray-80 !important;
+}
+
+.text-gray-90 {
+  color: $color-gray-90 !important;
+}
