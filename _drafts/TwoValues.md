@@ -38,7 +38,24 @@ By now it is probably obvious where I'm going with this. Because in the software
 
 ## Behavior vs Structure
 
-Clean architecture chapter two: A tale of two values
+In [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?ie=UTF8&qid=1522254141&sr=8-1&keywords=clean+architecture)[^CleanArch]
+ chapter two, "A tale of two values", Uncle Bob discusses this exact conflict. 
+ 
+ He states that every software system has two different values for the stakeholders:
+ * behavior - a.k.a. functionality
+ * structure - a.k.a. architecture
+ 
+### Behavior
+
+A software system should do what it is supposed to do. That is why software engineers are hired. Make something that can do X. That is the first value of the system, it's behavior. Unfortunately many developers think that this the entirety of their job.
+ 
+### Structure
+
+Software should be easy to change, it needs to be able to grow. That is why it's structure is of great value. When software is no longer 'soft', if its structure prevents it from change, then it is not durable. Even though it may have the correct behavior now. 
+
+### Greater Value 
+
+
 
 ## Why do we do this? Arguments against this
 
@@ -71,6 +88,7 @@ The functional value can be obtained. But that doesn't mean that the structural 
 
 [^article]: [The article](http://www.standaard.be/cnt/dmf20170616_02928477)
 [^CleanCode]: [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+[^CleanArch]: [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?ie=UTF8&qid=1522254141&sr=8-1&keywords=clean+architecture)
 
 
 
