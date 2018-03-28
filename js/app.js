@@ -8,6 +8,12 @@ var clickEvent = (function() {
     }
 })();
 
+setTimeout(function () {
+    document.querySelector('#logo-animated .picto #d--red').style.animation = "letter";
+    document.querySelector('#logo-animated .picto #d--green').style.animation = "letter";
+    document.querySelector('#logo-animated .picto #d--blue').style.animation = "letter";
+}, 3500);
+
 /* NAVIGATION */
 
 try {

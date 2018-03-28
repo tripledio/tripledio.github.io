@@ -467,9 +467,21 @@
   stroke-dasharray: 560;
   stroke-dashoffset: 0;
   animation: letter 3s ease forwards;
-  transition: 0.1s all;
+  transition: 0.1s all, 5s letter;
   transform-origin: -25%;
   transform: scale(1);
+
+  #d--red {
+    animation: letter--red 3s ease forwards;
+  }
+
+  #d--green {
+    animation: letter--green 3s ease forwards;
+  }
+
+  #d--blue {
+    animation: letter--blue 3s ease forwards;
+  }
 }
 
 #logo-animated .slogan {
@@ -497,6 +509,69 @@
   100% {
     fill: $color-white;
     stroke: rgba($color-white, 0);
+    transform: scale(1);
+  }
+}
+
+@keyframes letter--red {
+  0% {
+    stroke: $color-red;
+    fill: transparent;
+    stroke-dashoffset: 560;
+    transform: scale(1.1);
+  }
+
+  50% {
+    fill: transparent;
+    stroke: rgba($color-red, 1);
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: $color-red;
+    stroke: rgba($color-red, 0);
+    transform: scale(1);
+  }
+}
+
+@keyframes letter--green {
+  0% {
+    stroke: $color-green;
+    fill: transparent;
+    stroke-dashoffset: 560;
+    transform: scale(1.1);
+  }
+
+  50% {
+    fill: transparent;
+    stroke: rgba($color-green, 1);
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: $color-green;
+    stroke: rgba($color-green, 0);
+    transform: scale(1);
+  }
+}
+
+@keyframes letter--blue {
+  0% {
+    stroke: $color-blue;
+    fill: transparent;
+    stroke-dashoffset: 560;
+    transform: scale(1.1);
+  }
+
+  50% {
+    fill: transparent;
+    stroke: rgba($color-blue, 1);
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: $color-blue;
+    stroke: rgba($color-blue, 0);
     transform: scale(1);
   }
 }

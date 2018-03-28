@@ -5198,9 +5198,15 @@ form textarea {
   stroke-dasharray: 560;
   stroke-dashoffset: 0;
   animation: letter 3s ease forwards;
-  transition: 0.1s all;
+  transition: 0.1s all, 5s;
   transform-origin: -25%;
   transform: scale(1); }
+  #logo-animated .picto #d--red {
+    animation: letter--red 3s ease forwards; }
+  #logo-animated .picto #d--green {
+    animation: letter--green 3s ease forwards; }
+  #logo-animated .picto #d--blue {
+    animation: letter--blue 3s ease forwards; }
 
 #logo-animated .slogan {
   stroke: transparent;
@@ -5222,6 +5228,48 @@ form textarea {
   100% {
     fill: #ffffff;
     stroke: rgba(255, 255, 255, 0);
+    transform: scale(1); } }
+@keyframes letter--red {
+  0% {
+    stroke: #ed1c24;
+    fill: transparent;
+    stroke-dashoffset: 560;
+    transform: scale(1.1); }
+  50% {
+    fill: transparent;
+    stroke: #ed1c24;
+    stroke-dashoffset: 0; }
+  100% {
+    fill: #ed1c24;
+    stroke: rgba(237, 28, 36, 0);
+    transform: scale(1); } }
+@keyframes letter--green {
+  0% {
+    stroke: #8ac742;
+    fill: transparent;
+    stroke-dashoffset: 560;
+    transform: scale(1.1); }
+  50% {
+    fill: transparent;
+    stroke: #8ac742;
+    stroke-dashoffset: 0; }
+  100% {
+    fill: #8ac742;
+    stroke: rgba(138, 199, 66, 0);
+    transform: scale(1); } }
+@keyframes letter--blue {
+  0% {
+    stroke: #00abf5;
+    fill: transparent;
+    stroke-dashoffset: 560;
+    transform: scale(1.1); }
+  50% {
+    fill: transparent;
+    stroke: #00abf5;
+    stroke-dashoffset: 0; }
+  100% {
+    fill: #00abf5;
+    stroke: rgba(0, 171, 245, 0);
     transform: scale(1); } }
 @keyframes icon {
   0% {
