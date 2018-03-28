@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "But it works..."
-author: Guido
+author: guido
 header-img: "img/about-bg.jpg"
 tags: architecture, software
 excerpt: A tale of two values of software. Functionality and Architecture. 
