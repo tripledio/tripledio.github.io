@@ -55,13 +55,9 @@ Software should be easy to change, it needs to be able to grow. That is why it's
 
 ### Greater Value 
 
+So which one has the greater value? It is typically argued that behavior comes first. It has to work above all else. Otherwise it is useless right? But if something is wel structured and easy to change, it is easy to modify it so that it does work. The reverse is not true. If you get something that is badly structured, and somehow managed to get it to work properly, it has a very low life expectancy since it is so hard to chance. 
 
-
-## Why do we do this? Arguments against this
-
-"How it is done is as important as getting it done."
-
-How it is done is MORE important
+> The longer you want your software to be useful, the greater the value of a proper structure is.
 
 ## The conflict in disguise
 
@@ -80,11 +76,15 @@ As Uncle Bob stated in his classic book [Clean Code](https://www.amazon.com/Clea
 The functional value can be obtained. But that doesn't mean that the structural value has been obtained.
 
  
+## Why do we do this? Arguments against this
+
+"How it is done is as important as getting it done."
+
+How it is done is MORE important
 
 
 
-
-*References**
+**References**
 
 [^article]: [The article](http://www.standaard.be/cnt/dmf20170616_02928477)
 [^CleanCode]: [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
