@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "But it works..."
+title: "A construction tale"
 author: guido
-header-img: "img/about-bg.jpg"
+header-img: "img/posts/constructionTale/buildings.jpg"
 tags: architecture, software
-excerpt: A tale of two values of software. Functionality and Architecture. 
+excerpt: A construction tale. A tale of two values of software. Functionality and Architecture. 
 ---
 # Intro
 
-The metaphor that is probably most used for explaining, comparing software issues is the construction of buildings. It is also all too often that the metaphor falls short and doesn't really address the problem sufficiently. So when recently there was an item in the news concerning problems with the constructed government buildings in Brussel, it stayed with me. Because that real life issue seemed to me to be an excellent example of one of the well known problems that plagues software development. So bare with me for yet another construction metaphor.
+In the software industry, the metaphor that is probably most used for explaining things is the construction of buildings. A lot of our terminology also relates to it. Building, architect, architecture, design, engineer. Unfortunately it is also all too often that the metaphor falls short and doesn't really address the problem sufficiently. But recently there was an story in the news concerning problems with some of the recent constructed buildings in Brussel, it stayed with me. It sounded very familiar. Because that real life story seemed to me to be an excellent example of one of the well known problems that plagues software development. So bare with me for yet another construction tale.
 
-# A real life construction story
+# A real life construction tale
 
 ## Throw away real estate
 
@@ -71,18 +71,26 @@ The 'argument' that unfortunately too many developers give when they receive fee
 
 Well i sure hope so. This is the minimum requirement. When something is _finished_ we expect it to work. 
 
-As Uncle Bob stated in his classic book [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)[^CleanCode]  : __"it is not enough for code to work"__.  
+But as Uncle Bob stated in his classic book [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)[^CleanCode]  : __"it is not enough for code to work"__.  
 
 The functional value can be obtained. But that doesn't mean that the structural value has been obtained.
 
  
-## Why do we do this? Arguments against this
+## It's agile
 
-"How it is done is as important as getting it done."
+Under the argument that one should not overdesign and build too much up front, it is argued that one only builds the bare minimum. We're being agile. But that seems like a straw man argument to me.
 
-How it is done is MORE important
+No one said that you should over design, or do work not needed. But the whole idea of being agile is that we are still able to adapt in the future. Being agile means being able to adapt. Neglecting the structure of the software prevents this. Design software well means designing for future change. It does not mean design for every eventuality. 
 
+> The software should be open for extension
 
+If his is not the case, then we're not being very agile. In fact by accumulating technical debt, making each modification harder to do we're being rigid. 
+
+So please don't use agile as an excuse for writing rigid software. Agile has enough troubles as it is.
+
+# Conclusion
+
+The struggle between the function and the structure is not limited to our industry. 
 
 **References**
 
