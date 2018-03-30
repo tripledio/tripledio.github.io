@@ -90,7 +90,11 @@ So please don't use agile as an excuse for writing rigid software. Agile has eno
 
 # Conclusion
 
-The struggle between the function and the structure is not limited to our industry. 
+The struggle between the function and the structure is not limited to our industry. When somethings needs to change in the future then the structure needs to be able to support this. Since this is something that lies further in the future than the functional it is often neglected. 
+
+> If we want to build something that lasts, we need to pay careful attention to the structure
+
+Of course this will always be a struggle. The functional deadline from the project versus the long term survival of the product. But this is exactly our responsibility as professional software engineers. To make sure that next to the functional requirements, we also need to implement the often not outspoken quality attributes. Of which maintainability is probably the most important one. 
 
 **References**
 
