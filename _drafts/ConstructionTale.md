@@ -8,7 +8,7 @@ excerpt: A construction tale. A tale of two values of software. Functionality an
 ---
 # Intro
 
-In the software industry, the metaphor that is probably most used for explaining things is the construction of buildings. A lot of our terminology also relates to it. Building, architect, architecture, design, engineer. Unfortunately it is also all too often that the metaphor falls short and doesn't really address the problem sufficiently. But recently there was an story in the news concerning problems with some of the recent constructed buildings in Brussel, it stayed with me. It sounded very familiar. Because that real life story seemed to me to be an excellent example of one of the well known problems that plagues software development. So bare with me for yet another construction tale.
+In the software industry, the metaphor that is probably used the most for explaining things is the construction of buildings. A lot of our terminology also relates to it. Building, architect, architecture, design, engineer. Unfortunately it is also all too often that the metaphor falls short and doesn't really address the problem sufficiently. But recently there was an story in the news concerning problems with some of the recent constructed buildings in Brussel, it stayed with me. It sounded very familiar. Because that real life story seemed to me to be an excellent example of one of the well known problems that plagues software development. So bare with me for yet another construction tale.
 
 # A real life construction tale
 
@@ -90,7 +90,7 @@ So please don't use agile as an excuse for writing rigid software. Agile has eno
 
 # Conclusion
 
-The struggle between the function and the structure is not limited to our industry. When somethings needs to change in the future then the structure needs to be able to support this. Since this is something that lies further in the future than the functional it is often neglected. 
+The struggle between the function and the structure is not limited to our industry. When somethings needs to change in the future then the structure needs to be able to support this. Since this is something that lies further in the future than the functionality the structure is often neglected. 
 
 > If we want to build something that lasts, we need to pay careful attention to the structure
 
