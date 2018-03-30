@@ -38,7 +38,7 @@ By now it is probably obvious where I'm going with this. Because in the software
 
 ## Behavior vs Structure
 
-In [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?ie=UTF8&qid=1522254141&sr=8-1&keywords=clean+architecture)[^CleanArch]
+In [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?ie=UTF8&qid=1522254141&sr=8-1&keywords=clean+architecture) [^CleanArch]
  chapter two, "A tale of two values", Uncle Bob discusses this exact conflict. 
  
  He states that every software system has two different values for the stakeholders:
@@ -71,7 +71,7 @@ The 'argument' that unfortunately too many developers give when they receive fee
 
 Well i sure hope so. This is the minimum requirement. When something is _finished_ we expect it to work. 
 
-But as Uncle Bob stated in his classic book [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)[^CleanCode]  : __"it is not enough for code to work"__.  
+But as Uncle Bob stated in his classic book [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) [^CleanCode]  : __"it is not enough for code to work"__.  
 
 The functional value can be obtained. But that doesn't mean that the structural value has been obtained.
 
