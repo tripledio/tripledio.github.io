@@ -31,7 +31,7 @@ layout: default
                 <footer class="post-footer">
                     <!-- Everything inside the #author tags pulls data from the author -->
                     <!-- #author-->
-
+                    {% if author %}
                     {% if author.image %}
                     <figure class="author-image">
                         <a class="img" href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}"
@@ -40,12 +40,12 @@ layout: default
                     {% endif %}
 
                     <section class="author">
-                        <h4><a href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}">{{ author.name }}</a></h4>
+                        <h4><a href="{{ site.github.url | replace: 'http://', '//' }}/author/{{ author.username }}">{{ author.name }}</a></h4>
 
                         {% if author.bio %}
                         <p> {{ author.bio }}</p>
                         {% else %}
-                        <p>Read <a href="{{ site.github.url | replace: 'http://', '//'  }}author/{{ author.nickname }}">more posts</a> by this author.
+                        <p>Read <a href="{{ site.github.url | replace: 'http://', '//'  }}/author/{{ author.nickname }}">more posts</a> by this author.
                         </p>
                         {% endif %}
                         <div class="author-meta">
@@ -56,8 +56,9 @@ layout: default
                         </div>
                     </section>
 
-                    <!-- /author  -->
+                    {% endif %}
 
+                    <!-- /author  -->
                     <section class="share">
                         <h4>Share this post</h4>
                         <a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url}}"
