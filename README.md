@@ -11,9 +11,10 @@ You can run the site locally using docker after which you can browse to http://l
 First run will create and start the container "triple-D-blog"
 
  ```docker
- docker run --name=triple-D-blog -v "$PWD":/usr/src/app -p 4000:4000 starefossen/github-pages
+ docker run --name=triple-D-blog -v "$PWD":/usr/src/app -v "$PWD"/_site:/_site -p 4000:4000 starefossen/github-pages
  ```
  
+The web site will be generated under the _site folder. That is the folder which is then hosted. 
 Afterwards you can simply restart the container with the case sensitive container name
  
 ```docker
@@ -30,13 +31,9 @@ To let jekyll generate the site with the drafts included, we must specify the dr
 Create and start *triple-D-blog-with-drafts* container
 
  ```docker
- docker run --name=triple-D-blog-with-drafts -v "$PWD":/usr/src/app -p 4000:4000 starefossen/github-pages jekyll serve -d /_site --watch --force_polling -H 0.0.0.0 -P 4000 --drafts
+ docker run --name=triple-D-blog-with-drafts -v "$PWD":/usr/src/app -v "$PWD"/_site:/_site -p 4000:4000 starefossen/github-pages jekyll serve -d /_site --watch --force_polling -H 0.0.0.0 -P 4000 --drafts
  ```
+ The web site will be generated under the _site folder. That is the folder which is then hosted. 
  
- Afterwards you can simply restart the container with the case sensitive container name
-  
- ```docker
- docker start triple-D-blog-with-drafts
- 
- ``` 
+ Afterwards you can simply restart the container with the case sensitive container name. 
  
