@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: post--new
 title: "The MVC-architecture"
 author: guido
+hideLogo: true
 header-img: "img/mvc-books.png"
 ---
 # The MVC Architecture
@@ -54,7 +55,7 @@ I think this combination gave rise to MVC as an architecture pattern. Which ofte
 
 In my earlier post [^map] I talked about the classic three tier architecture. 
 
-![Classic layers](/img/classic-layers.png){:height="50%" width="50%":class="img-responsive"}
+![Classic layers](/img/classic-layers.png){:height="100%" width="100%":class="img-responsive"}
 
  
   Layer|Responsibility|

@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post--new
 title: "Connecting legacy to kubernetes"
 author: kris
 tags: Kubernetes, DevOps
+hideLogo: true
 header-img: "img/k8s-reverse-proxy/k8sbanner.png"
 excerpt: How to connected external applications to Kubernetes cluster.
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post--new
 title: "Model anti-patterns"
 author: guido
 header-img: "img/old_train_model.jpg"

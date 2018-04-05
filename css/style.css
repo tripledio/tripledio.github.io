@@ -4891,6 +4891,9 @@ form textarea {
     .spotlight .light .content {
       color: #ffffff; }
 
+.blog-post .spotlight .spot .content img {
+  min-width: 100vw; }
+
 /* ELEMENTS */
 .fancy-bar {
   display: flex;
@@ -5329,6 +5332,28 @@ form textarea {
     transition: all 0.3s ease; }
   .effects-img-scale:hover img {
     transform: scale(1.5); } }
+.blog-post h1,
+.blog-post h2,
+.blog-post h3,
+.blog-post h4,
+.blog-post h5,
+.blog-post h6 {
+  width: 100%; }
+.blog-post img {
+  max-width: 100%;
+  height: auto; }
+.blog-post table {
+  min-height: .01%;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem; }
+.blog-post tbody > tr > td, .blog-post tbody > tr > th, .blog-post tfoot > tr > td, .blog-post tfoot > tr > th, .blog-post thead > tr > td, .blog-post thead > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: thin solid #ededed; }
+
 /* HELPERS */
 .mw-100 {
   max-width: 100% !important; }
@@ -7566,11 +7591,11 @@ form textarea {
 .o-hidden {
   overflow: hidden; }
 
-.img-fluid {
+.img-fluid, .img-responsive {
   max-width: 100%;
   height: auto; }
   @media screen and (max-width: 576px) {
-    .img-fluid.img {
+    .img-fluid.img, .img-responsive.img {
       width: 100%; } }
 
 .rounded {

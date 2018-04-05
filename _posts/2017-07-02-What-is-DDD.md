@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post--new
 author: guido
 title: What is domain driven design?
 header-img: "img/DDD-books.jpg"

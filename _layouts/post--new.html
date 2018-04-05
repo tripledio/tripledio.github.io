@@ -1,0 +1,100 @@
+{% assign author = site.authors[page.author] %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body class="blog-post">
+
+    {% include nav.html %}
+
+    {% include spotlight.html %}
+
+    <!-- Post Content -->
+    <article class="blog-post">
+        <div class="container">
+            <div class="row mt-5">
+
+                {{ content }}
+
+                <footer class="post-footer">
+                    <!-- Everything inside the #author tags pulls data from the author -->
+                    <!-- #author-->
+
+                    {% if author.image %}
+                    <figure class="author-image">
+                        <a class="img" href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}"
+                           style="background-image: url({{ site.github.url | replace: 'http://', '//' }}{{ author.image }})"><span class="hidden">{{ author.name }}'s Picture</span></a>
+                    </figure>
+                    {% endif %}
+
+                    <section class="author">
+                        <h4><a href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}">{{ author.name }}</a></h4>
+
+                        {% if author.bio %}
+                        <p> {{ author.bio }}</p>
+                        {% else %}
+                        <p>Read <a href="{{ site.github.url | replace: 'http://', '//'  }}author/{{ author.nickname }}">more posts</a> by this author.
+                        </p>
+                        {% endif %}
+                        <div class="author-meta">
+                            {% if author.location %}<span
+                                class="author-location icon-location"> {{ author.location }}</span>{% endif %}
+                            {% if author.url %}<span class="author-link icon-link"><a href="{{ author.url }}"> {{ author.url }}</a></span>{%
+                            endif %}
+                        </div>
+                    </section>
+
+                    <!-- /author  -->
+
+                    <section class="share">
+                        <h4>Share this post</h4>
+                        <a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url}}"
+                           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                            <i class="fa fa-twitter  "></i>
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url}}"
+                           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                            <i class="fa fa-facebook "></i>
+                        </a>
+                        <a href="https://plus.google.com/share?url={{ site.github.url }}{{ page.url}}"
+                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                            <i class="fa fa-google-plus  "></i>
+                        </a>
+                    </section>
+                </footer>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col-lg-6 previous text-left">
+                    {% if page.previous.url %}
+                    <a href="{{ page.previous.url |  replace: 'http://', '//' }}" class="btn btn-primary">&larr; Newer Posts</a>
+                    {% endif %}
+                </div>
+                <div class="col-lg-6 next text-right">
+                    {% if page.next.url %}
+                    <a href="{{ page.next.url |  replace: 'http://', '//' }}" class="btn btn-primary">Older Posts &rarr;</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                {% if page.disqus %}
+                {% include disqus.html %}
+                {% endif %}
+            </div>
+        </div>
+    </article>
+
+    {% include footer.html %}
+
+    {% include ga.html %}
+
+</body>
+
+</html>
