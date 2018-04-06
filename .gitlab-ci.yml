@@ -75,21 +75,12 @@ build:
   only:
     - branches
 
-linkChecker:
-  stage: review
-  image:
-    name: linkchecker/linkchecker
-    entrypoint: [""]
-  script:
-    - ls -a /_site
-    - linkchecker /_site
-  only:
-    - branches
-
 review:
   stage: review
-  services:
-  -
+  # changing the image to linkchecker. Just to be able to run the link checker. Doesnt seem like the way to go. but lets see if it works.
+  image:
+      name: linkchecker/linkchecker
+      entrypoint: [""]
   script:
     - mkdir -p ~/.kube/
     - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
@@ -100,6 +91,7 @@ review:
     - install_tiller
     - create_secret
     - deploy
+    - linkchecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
