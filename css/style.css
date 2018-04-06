@@ -5337,7 +5337,8 @@ form textarea {
 .blog-post h3,
 .blog-post h4,
 .blog-post h5,
-.blog-post h6 {
+.blog-post h6,
+.blog-post p, .blog-post .footnotes, .blog-post .post-footer {
   width: 100%; }
 .blog-post img {
   max-width: 100%;
@@ -5353,6 +5354,21 @@ form textarea {
   line-height: 1.42857143;
   vertical-align: top;
   border-top: thin solid #ededed; }
+.blog-post .author-image {
+  display: inline-block;
+  margin: 1.6rem; }
+  .blog-post .author-image .img {
+    background-size: contain;
+    border-radius: 100%;
+    display: block;
+    height: 7.5rem;
+    margin: 0 auto;
+    width: 7.5rem; }
+.blog-post .author {
+  display: inline-block;
+  margin: 3rem 0; }
+.blog-post .share {
+  margin: 3rem 1.6rem; }
 
 /* HELPERS */
 .mw-100 {
