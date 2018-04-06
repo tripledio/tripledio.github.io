@@ -37,3 +37,9 @@ Create and start *triple-D-blog-with-drafts* container
  
  Afterwards you can simply restart the container with the case sensitive container name. 
  
+## Run gitlab build locally
+
+```docker
+docker run gitlab/gitlab-runner:latest
+``` 
+ 
