@@ -88,8 +88,6 @@ linkChecker:
 
 review:
   stage: review
-  services:
-  -
   script:
     - mkdir -p ~/.kube/
     - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
