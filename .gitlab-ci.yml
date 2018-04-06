@@ -77,9 +77,8 @@ build:
 
 review:
   stage: review
-  # changing the image to linkchecker. Just to be able to run the link checker. Doesnt seem like the way to go. but lets see if it works.
   image:
-      name: linkchecker/linkchecker
+      name: jare/linkchecker
       entrypoint: [""]
   script:
     - mkdir -p ~/.kube/
@@ -91,7 +90,8 @@ review:
     - install_tiller
     - create_secret
     - deploy
-    - linkchecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
+    - echo http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
+    - linkchecker https://tripled.io
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
