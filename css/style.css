@@ -4871,7 +4871,7 @@ form textarea {
       align-items: center;
       justify-content: center; }
     .spotlight .spot .content video {
-      max-height: 480px;
+      min-width: 100vw;
       margin: 0 auto;
       display: block; }
     .spotlight .spot .content img {
@@ -4881,7 +4881,8 @@ form textarea {
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
-      vertical-align: bottom; }
+      vertical-align: bottom;
+      min-width: 100vw; }
   .spotlight .light {
     position: absolute;
     top: 0;
@@ -5366,7 +5367,7 @@ form textarea {
   border-top: thin solid #ededed; }
 .blog-post .author-image {
   display: inline-block;
-  margin: 1.6rem; }
+  margin: 1rem 1.6rem; }
   .blog-post .author-image .img {
     background-size: contain;
     border-radius: 100%;
@@ -5379,6 +5380,8 @@ form textarea {
 .blog-post .author {
   display: inline-block;
   margin: 3rem 0; }
+  .blog-post .author h4 a {
+    color: #21314c; }
 .blog-post .share {
   margin: 3rem 1.6rem; }
   .blog-post .share h4 {
@@ -5388,6 +5391,9 @@ form textarea {
 .blog-post .socicon {
   background: #21314c;
   color: #ffffff; }
+.blog-post #disqus_thread {
+  min-height: .01px;
+  width: 100%; }
 
 /* HELPERS */
 .mw-100 {

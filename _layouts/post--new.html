@@ -9,7 +9,11 @@
 
     {% include nav.html %}
 
-    {% include spotlight.html %}
+    {% if page.hideLogo %}
+        {% include spotlight--no-logo.html %}
+    {% else %}
+        {% include spotlight.html %}
+    {% endif %}
 
     <!-- Post Content -->
     <article class="blog-post">
@@ -24,25 +28,19 @@
 
                     {% if author.image %}
                     <figure class="author-image">
-                        <a class="img" href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}"
-                           style="background-image: url({{ site.github.url | replace: 'http://', '//' }}{{ author.image }})"><span class="hidden">{{ author.name }}'s Picture</span></a>
+                        <a class="img" href="/{{ site.github.url | replace: 'http://', '//' }}team" style="background-image: url({{ site.github.url | replace: 'http://', '//' }}{{ author.image }})"><span class="hidden">{{ author.name }}'s Picture</span></a>
                     </figure>
                     {% endif %}
 
                     <section class="author">
-                        <h4><a href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}">{{ author.name }}</a></h4>
+                        <h4><a href="/{{ site.github.url | replace: 'http://', '//' }}team">{{ author.name }}</a></h4>
 
                         {% if author.bio %}
-                        <p> {{ author.bio }}</p>
-                        {% else %}
-                        <p>Read <a href="{{ site.github.url | replace: 'http://', '//'  }}author/{{ author.nickname }}">more posts</a> by this author.
-                        </p>
+                        <p class="mb-1"> {{ author.bio }}</p>
                         {% endif %}
                         <div class="author-meta">
-                            {% if author.location %}<span
-                                class="author-location map-marker-alt"> {{ author.location }}</span>{% endif %}
-                            {% if author.url %}<span class="author-link icon-link"><a href="{{ author.url }}"> {{ author.url }}</a></span>{%
-                            endif %}
+                            {% if author.location %}<span class="author-location map-marker-alt"> {{ author.location }}</span>{% endif %}
+                            {% if author.url %}<span class="author-link icon-link"><a href="{{ author.url }}"> {{ author.url }}</a></span>{% endif %}
                         </div>
                     </section>
 

@@ -38,7 +38,7 @@ $author-img-size: 7.5rem;
 
   .author-image {
     display: inline-block;
-    margin: 1.6rem;
+    margin: 1rem 1.6rem;
 
     .img {
       background-size: contain;
@@ -57,6 +57,10 @@ $author-img-size: 7.5rem;
   .author {
     display: inline-block;
     margin: 3rem 0;
+
+    h4 a {
+      color: $color-primary;
+    }
   }
 
   .share {
@@ -72,5 +76,10 @@ $author-img-size: 7.5rem;
   .socicon {
     background: $color-primary;
     color: $color-white;
+  }
+
+  #disqus_thread {
+    min-height: .01px;
+    width: 100%;
   }
 }
