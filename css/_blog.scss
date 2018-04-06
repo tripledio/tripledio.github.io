@@ -11,6 +11,11 @@ $author-img-size: 7.5rem;
     width: 100%;
   }
 
+  .row {
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+
   img {
     max-width: 100%;
     height: auto;
@@ -45,6 +50,10 @@ $author-img-size: 7.5rem;
     }
   }
 
+  .author-location {
+    padding-left: 2rem;
+  }
+
   .author {
     display: inline-block;
     margin: 3rem 0;
@@ -52,5 +61,16 @@ $author-img-size: 7.5rem;
 
   .share {
     margin: 3rem 1.6rem;
+
+    h4 {
+      display: inline-block;
+      margin-right: 2.5rem;
+      width: inherit;
+    }
+  }
+
+  .socicon {
+    background: $color-primary;
+    color: $color-white;
   }
 }
