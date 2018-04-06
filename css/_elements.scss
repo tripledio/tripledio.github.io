@@ -112,35 +112,42 @@
   &.rss {
     &:hover {
       background-color: $color-orange;
-      color: white;
+      color: $color-white;
     }
   }
 
   &.fb {
     &:hover {
       background-color: $color-facebook;
-      color: white;
+      color: $color-white;
     }
   }
 
   &.tw {
     &:hover {
       background-color: $color-twitter;
-      color: white;
+      color: $color-white;
+    }
+  }
+
+  &.gplus {
+    &:hover {
+      background-color: $color-gplus;
+      color: $color-white;
     }
   }
 
   &.ln {
     &:hover {
       background-color: $color-linkedin;
-      color: white;
+      color: $color-white;
     }
   }
 
   &.ml {
     &:hover {
       background-color: $color-ml;
-      color: white;
+      color: $color-white;
     }
   }
 }
@@ -209,7 +216,7 @@
   right: 2rem;
   background: $color-red;
   box-shadow: 0 3px 7px rgba($color-red, 0.5);
-  color: white;
+  color: $color-white;
   width: 6rem;
   height: 6rem;
   cursor: pointer;

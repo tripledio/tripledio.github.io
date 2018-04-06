@@ -29,15 +29,11 @@
 }
 
 @mixin headings($font-size: 6rem, $decrease-by: 1rem) {
-
   @for $i from 1 through 6 {
-
     h#{$i},
     .h#{$i} {
       font-size: ( $font-size + $decrease-by ) - $i * $decrease-by;
       line-height: (( $font-size + $decrease-by ) - $i * $decrease-by) * 1.2;
     }
-
   }
-
 }

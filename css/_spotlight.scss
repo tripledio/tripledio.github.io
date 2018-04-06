@@ -20,7 +20,7 @@
       }
 
       video {
-        max-height: 480px;
+        min-width: 100vw;
         margin: 0 auto;
         display: block;
       }
@@ -33,6 +33,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         vertical-align: bottom;
+        min-width: 100vw;
       }
     }
   }

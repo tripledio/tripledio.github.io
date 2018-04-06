@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post--new
 title: "Example of a draft"
 author: guido
 header-img: "img/about-bg.jpg"
