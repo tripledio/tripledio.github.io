@@ -75,6 +75,14 @@ build:
   only:
     - branches
 
+linkChecker:
+   stage: review
+   image:
+      name: jare/linkchecker
+      entrypoint: [""]
+   script:
+        - loopLinckChecker
+
 review:
   stage: review
   image:
@@ -324,6 +332,17 @@ production:
         export DOCKER_HOST='tcp://localhost:2375'
       fi
     fi
+  }
+
+  function loopLinckChecker() {
+    for i in 1 2 3 4 5
+    do
+      echo "start" $result
+      echo "Looping ... number $i"
+      result=( linkchecker https://tripled.io )
+      echo "hier geraak ik nooit " $?
+      echo "result:" $result
+    done
   }
 
   function setup_test_db() {
