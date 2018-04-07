@@ -75,6 +75,14 @@ build:
   only:
     - branches
 
+linkChecker:
+   stage: review
+   image:
+      name: linkchecker/linkchecker
+      entrypoint: [""]
+   script:
+        - loopLinckChecker
+
 review:
   stage: review
   image:
@@ -324,6 +332,18 @@ production:
         export DOCKER_HOST='tcp://localhost:2375'
       fi
     fi
+  }
+
+  function loopLinckChecker() {
+    for i in 1 2 3 4 5
+    do
+      echo "Looping ... number $i"
+      result=$(echo "biep"; exit 1;)
+      echo "-----------END----------"
+      exitResult=$?
+      echo "hier geraak ik nooit " $exitResult
+      echo "linkchecker result " $result
+    done
   }
 
   function setup_test_db() {

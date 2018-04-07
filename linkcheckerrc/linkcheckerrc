@@ -10,17 +10,17 @@
 # enable debug messages; see 'linkchecker -h' for valid debug names
 #debug=all
 # print status output
-status=1
+status=0
 # change the logging type
 log=xml
 # turn on/off --verbose
 verbose=1
 # turn on/off --warnings
-warnings=1
+warnings=0
 # turn on/off --quiet
-#quiet=1
+quiet=1
 # additional file output
-#fileoutput = text, html, gml, sql
+fileoutput = text
 
 
 ##################### logger configuration ##########################
@@ -45,7 +45,7 @@ warnings=1
 
 # standard text logger
 [text]
-#filename=linkchecker-out.txt
+filename=linkchecker-out.txt
 #parts=all
 # colors for the various parts, syntax is &lt;color&gt; or &lt;type&gt;;&lt;color&gt;
 # type can be bold, light, blink, invert
@@ -129,7 +129,7 @@ warnings=1
 # number of threads
 #threads=10
 # connection timeout in seconds
-#timeout=60
+timeout=60
 # Time to wait for checks to finish after the user aborts the first time
 # (with Ctrl-C or the abort button).
 #aborttimeout=300
