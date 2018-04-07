@@ -40,14 +40,11 @@ layout: default
                     {% endif %}
 
                     <section class="author">
-                        <h4><a href="{{ site.github.url | replace: 'http://', '//' }}/author/{{ author.username }}">{{ author.name }}</a></h4>
+                        <h4>{{ author.name }}</h4>
 
                         {% if author.bio %}
                         <p> {{ author.bio }}</p>
-                        {% else %}
-                        <p>Read <a href="{{ site.github.url | replace: 'http://', '//'  }}/author/{{ author.nickname }}">more posts</a> by this author.
-                        </p>
-                        {% endif %}
+                        endif %}
                         <div class="author-meta">
                             {% if author.location %}<span
                                 class="author-location icon-location"> {{ author.location }}</span>{% endif %}
