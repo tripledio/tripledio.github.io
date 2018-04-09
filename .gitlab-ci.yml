@@ -81,7 +81,7 @@ linkChecker:
       name: linkchecker/linkchecker
       entrypoint: [""]
    script:
-        - loopLinckChecker
+      - loopLinckChecker
 
 review:
   stage: review
@@ -335,14 +335,16 @@ production:
   }
 
   function loopLinckChecker() {
-    for i in 1 2 3 4 5
+    for i in 1 2
     do
       echo "Looping ... number $i"
-      result=$(echo "biep"; exit 1;)
-      echo "-----------END----------"
+      # If running with set -o pipefail, a failure at any stage in a shell pipeline will cause the entire pipeline to be considered failed.
+      #In order to avoid this we explicitly ignore a single failure: { linkchecker xx || :; }
+      result=$( (linkchecker https://tripled.io) ||:)
       exitResult=$?
       echo "hier geraak ik nooit " $exitResult
       echo "linkchecker result " $result
+      echo "-----------Loop END----------"
     done
   }
 
