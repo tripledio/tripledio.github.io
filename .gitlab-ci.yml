@@ -1,4 +1,4 @@
-# This file is a template, and might need editing before it works on your project.
+  # This file is a template, and might need editing before it works on your project.
 # Auto DevOps
 # This CI/CD configuration provides a standard pipeline for
 # * building a Docker image (using a buildpack if necessary),
@@ -81,7 +81,7 @@ linkChecker:
       name: linkchecker/linkchecker
       entrypoint: [""]
    script:
-      - loopLinckChecker
+      - loopLinckChecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
 
 review:
   stage: review
@@ -98,9 +98,7 @@ review:
     - install_tiller
     - create_secret
     - deploy
-    #God i hate sleeps...
-    - sleep 30s
-    - linkchecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
+    - loopLinckChecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
@@ -334,19 +332,6 @@ production:
     fi
   }
 
-  function loopLinckChecker() {
-    for i in 1 2
-    do
-      echo "Looping ... number $i"
-      # If running with set -o pipefail, a failure at any stage in a shell pipeline will cause the entire pipeline to be considered failed.
-      #In order to avoid this we explicitly ignore a single failure: { linkchecker xx || :; }
-      result=$( (linkchecker https://tripled.io) ||:)
-      exitResult=$?
-      echo "hier geraak ik nooit " $exitResult
-      echo "linkchecker result " $result
-      echo "-----------Loop END----------"
-    done
-  }
 
   function setup_test_db() {
     if [ -z ${KUBERNETES_PORT+x} ]; then
@@ -455,6 +440,56 @@ production:
 
     helm delete "$name" || true
   }
+
+
+   function loopLinckChecker() {
+      urlToCheck=$1
+      oneError="That's it. 1 link in 1 URL checked. 0 warnings found. 1 error found.";
+      four404Error="Error: 404 Not Found";
+      for i in 1 2 3 4 5
+      do
+        echo "Looping ... number $i"
+
+        doLinkCheck $urlToCheck
+
+        #debug info
+        ls -a
+        cat linkchecker-out.txt
+        echo "********printed output file*******************"
+          #end debug info
+
+        countOneErrorMesssages=$(grep -c "$oneError" linkchecker-out.txt)||:
+        count404ErrorMesssages=$(grep -c "$four404Error" linkchecker-out.txt)||:
+
+        echo $countOneErrorMesssages
+        echo $count404ErrorMesssages
+
+
+         if [ $countOneErrorMesssages -eq 1 -a $count404ErrorMesssages -eq 1 ]
+         then
+           echo "The site is not up yet! Wait for it..."
+           sleep 5
+           echo "Lets try again."
+         else
+           #debug info
+           echo "***************************"
+           echo "We got a result!"
+           echo $(grep  "^That's it.*found\." linkchecker-out.txt)
+           echo $(grep  "^That's it.*0 error found\." linkchecker-out.txt)
+           #end debug info
+           exit $(grep  "^That's it.*0 error found\." linkchecker-out.txt)
+         fi
+        echo "-----------Loop END----------"
+      done
+    }
+
+    function doLinkCheck(){
+        urlToCheck=$1
+        # If running with set -o pipefail, a failure at any stage in a shell pipeline will cause the entire pipeline to be considered failed.
+        #In order to avoid this we explicitly ignore a single failure: { linkchecker xx || :; }
+        result=$( (linkchecker --config=linkcheckerrc/linkcheckerrc $urlToCheck) ||:)
+        echo "*********Checker done******************"
+    }
 
 before_script:
   - *auto_devops
