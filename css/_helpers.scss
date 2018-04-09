@@ -2616,3 +2616,7 @@
   }
 }
 @include font-size();
+
+.text-small {
+  font-size: 85%;
+}
