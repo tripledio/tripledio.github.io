@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Contact"
-weight: 100
+title: "Contact us"
+exclude: true
 
 spotlight:
   imgDir: /img/spotlight/contact
@@ -23,6 +23,13 @@ testimonials:
   - quote: quote5
     person: person5
 ---
+
+<div class="col-12 col-md-10 col-lg-8 offset-0 offset-md-1 offset-lg-2 pb-2">
+    <p class="bg-green text-white p-2">
+        Thank you. Your message has been sent.<br />
+        We will contact you as soon as possible.
+    </p>
+</div>
 
 <div class="col-12 col-md-10 col-lg-8 offset-0 offset-md-1 offset-lg-2 pb-4 pb-md-10">
     <form class="row" _lpchecked="1" action="https://formspree.io/info@tripled.io" method="POST">
