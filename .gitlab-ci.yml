@@ -38,6 +38,7 @@ variables:
 stages:
   - build
   - review
+  - check
   - staging
   - canary
   - production
@@ -75,16 +76,6 @@ build:
   only:
     - branches
 
-linkChecker:
-   stage: review
-   image:
-      name: linkchecker/linkchecker
-      entrypoint: [""]
-   script:
-      - loopLinckChecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
-   environment:
-          name: review/$CI_COMMIT_REF_NAME
-
 review:
   stage: review
   script:
@@ -107,6 +98,14 @@ review:
     kubernetes: active
   except:
     - master
+
+linkChecker:
+   stage: check
+   image:
+      name: linkchecker/linkchecker
+      entrypoint: [""]
+   script:
+      - loopLinckChecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
 
 stop_review:
   stage: cleanup
@@ -444,9 +443,6 @@ production:
       nrOfRetries=100
       urlToCheck=$1
       oneError="That's it. 1 link in 1 URL checked. 0 warnings found. 1 error found.";
-      four404Error="Error: 404 Not Found";
-
-      sleep 5s
 
       for i in 1 2 3 .. $nrOfRetries
       do
@@ -457,23 +453,12 @@ production:
         countOneErrorMesssages=$(grep -c "$oneError" linkchecker-out.txt)||:
         count404ErrorMesssages=$(grep -c "$four404Error" linkchecker-out.txt)||:
 
-        echo $countOneErrorMesssages
-        echo $count404ErrorMesssages
-
-
          if [ $countOneErrorMesssages -eq 1 -a $count404ErrorMesssages -eq 1 ]
          then
            echo "The site is not up yet! Wait for it..."
            sleep 5
            echo "Lets try again."
          else
-           #debug info
-           echo "***************************"
-           echo "We got a result!"
-           echo $(grep  "^That's it.*found\." linkchecker-out.txt)
-           echo $(grep  "^That's it.*0 error found\." linkchecker-out.txt)
-           #end debug info
-
            cat linkchecker-out.txt
            exit $(grep  "^That's it.*0 error found\." linkchecker-out.txt)
          fi
