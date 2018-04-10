@@ -443,10 +443,11 @@ production:
 
 
    function loopLinckChecker() {
+      nrOfRetries=10
       urlToCheck=$1
       oneError="That's it. 1 link in 1 URL checked. 0 warnings found. 1 error found.";
       four404Error="Error: 404 Not Found";
-      for i in 1 2 3 4 5
+      for i in 1 2 3 .. $nrOfRetries
       do
         echo "Looping ... number $i"
 
@@ -481,6 +482,9 @@ production:
          fi
         echo "-----------Loop END----------"
       done
+
+      echo "Site $urlToCheck not available after $nrOfRetries retries"
+      exit 1
     }
 
     function doLinkCheck(){
