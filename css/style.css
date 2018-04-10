@@ -5348,6 +5348,10 @@ form textarea {
 .blog-post h6,
 .blog-post p, .blog-post .footnotes, .blog-post .post-footer {
   width: 100%; }
+.blog-post h2 {
+  font-size: 3rem; }
+.blog-post h3 {
+  font-size: 2rem; }
 .blog-post .row {
   margin-left: inherit;
   margin-right: inherit; }
