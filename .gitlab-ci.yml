@@ -445,6 +445,9 @@ production:
       urlToCheck=$1
       oneError="That's it. 1 link in 1 URL checked. 0 warnings found. 1 error found.";
       four404Error="Error: 404 Not Found";
+
+      sleep 5s
+
       for i in 1 2 3 .. $nrOfRetries
       do
         echo "--------- Start Loop ... number $i ------"
@@ -470,11 +473,12 @@ production:
            echo $(grep  "^That's it.*found\." linkchecker-out.txt)
            echo $(grep  "^That's it.*0 error found\." linkchecker-out.txt)
            #end debug info
+
+           cat linkchecker-out.txt
            exit $(grep  "^That's it.*0 error found\." linkchecker-out.txt)
          fi
         echo "-----------Loop $i END----------"
       done
-
       echo "Site $urlToCheck not available after $nrOfRetries retries"
       exit 404
     }
