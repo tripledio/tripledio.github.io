@@ -1,5 +1,5 @@
 ---
-layout: post--new
+layout: post
 title: "The MVC-architecture"
 author: guido
 hideLogo: true

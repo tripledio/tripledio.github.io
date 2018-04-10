@@ -1,5 +1,5 @@
 ---
-layout: post--new
+layout: post
 author: domenique
 header-img: "img/levelsofabstraction.jpg"
 disqus: true

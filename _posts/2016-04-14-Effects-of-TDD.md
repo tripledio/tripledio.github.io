@@ -1,5 +1,5 @@
 ---
-layout: post--new
+layout: post
 author: domenique
 ---
 The last couple of years I've noticed a shift in peoples viewpoint towards testing and in particular unit testing.

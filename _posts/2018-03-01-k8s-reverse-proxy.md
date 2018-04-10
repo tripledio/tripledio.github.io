@@ -1,5 +1,5 @@
 ---
-layout: post--new
+layout: post
 title: "Connecting legacy to kubernetes"
 author: kris
 tags: Kubernetes, DevOps

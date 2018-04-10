@@ -1,5 +1,5 @@
 ---
-layout: post--new
+layout: post
 author: guido
 title: The anemic domain model
 header-img: "img/anemicDomainModel.jpg"
