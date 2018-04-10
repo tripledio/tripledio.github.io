@@ -18,14 +18,17 @@ services:
     imgPath: img/team.svg
     imgAlt: Team
     color: red
+    url: /team
   - name: Reinforcement
     imgPath: img/reinforcement.svg
     imgAlt: Reinforcement
     color: green
+    url: "#!"
   - name: Trainings and workshops
     imgPath: img/training.svg
     imgAlt: Training
     color: blue
+    url: "#!"
     
 about-us:
   column1Title: Who are we
