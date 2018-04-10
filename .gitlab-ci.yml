@@ -82,6 +82,8 @@ linkChecker:
       entrypoint: [""]
    script:
       - loopLinckChecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
+   environment:
+          name: review/$CI_COMMIT_REF_NAME
 
 review:
   stage: review
