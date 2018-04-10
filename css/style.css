@@ -5391,6 +5391,12 @@ form textarea {
 .blog-post .socicon {
   background: #21314c;
   color: #ffffff; }
+  .blog-post .socicon.tw {
+    background: #1da1f2; }
+  .blog-post .socicon.fb {
+    background: #4267b2; }
+  .blog-post .socicon.gplus {
+    background: #d34836; }
 .blog-post #disqus_thread {
   min-height: .01px;
   width: 100%; }

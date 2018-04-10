@@ -76,6 +76,18 @@ $author-img-size: 7.5rem;
   .socicon {
     background: $color-primary;
     color: $color-white;
+
+    &.tw {
+      background: $color-twitter;
+    }
+
+    &.fb {
+      background: $color-facebook;
+    }
+
+    &.gplus {
+      background: $color-gplus;
+    }
   }
 
   #disqus_thread {
