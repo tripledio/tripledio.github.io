@@ -21,6 +21,7 @@ $author-img-size: 7.5rem;
 
   ol, ul {
     color: $color-gray;
+    @extend .font-size-5;
   }
 
   .row {

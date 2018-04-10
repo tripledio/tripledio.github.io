@@ -7886,7 +7886,7 @@ form textarea {
   line-height: 2.24rem; }
 
 .font-size-5, p,
-.p {
+.p, .blog-post ol, .blog-post ul {
   font-size: 1.8rem;
   line-height: 2.52rem; }
 
