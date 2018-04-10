@@ -5148,7 +5148,7 @@ form textarea {
   align-items: center;
   justify-content: center;
   height: 56px; }
-  #services h3 span {
+  #services h3 a {
     display: inline-block;
     line-height: 1.9rem;
     text-align: center;
@@ -5352,6 +5352,8 @@ form textarea {
   font-size: 3rem; }
 .blog-post h3 {
   font-size: 2rem; }
+.blog-post ol, .blog-post ul {
+  color: #666666; }
 .blog-post .row {
   margin-left: inherit;
   margin-right: inherit; }
@@ -5364,6 +5366,8 @@ form textarea {
   width: 100%;
   max-width: 100%;
   margin-bottom: 2rem; }
+.blog-post div[class*=" highlighter-"] {
+  width: 100%; }
 .blog-post tbody > tr > td, .blog-post tbody > tr > th, .blog-post tfoot > tr > td, .blog-post tfoot > tr > th, .blog-post thead > tr > td, .blog-post thead > tr > th {
   padding: 8px;
   line-height: 1.42857143;

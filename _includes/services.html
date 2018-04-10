@@ -14,7 +14,7 @@
                     <div class="icon {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %} flex-center-hv py-5">
                         <img src="{{ service.imgPath }}" alt="{{ service.imgAlt }}">
                     </div>
-                    <h3 class="mb-4"><span class="bg-{{ service.color }}">{{ service.name }}</span></h3>
+                    <h3 class="mb-4"><a class="bg-{{ service.color }}" href="{{ service.url }}">{{ service.name }}</a></h3>
                     {% if service.description %}
                     <div class="px-0 px-md-0 px-lg-4">
                         <p>{{ service.description }}</p>
