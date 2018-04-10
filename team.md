@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Team"
-active: team
+weight: 10
 
 spotlight:
   imgDir: /img/spotlight/team

@@ -1,5 +1,7 @@
 ---
 layout: page
+title: "Home"
+weight: 0
 
 spotlight:
   imgDir: img/spotlight/home

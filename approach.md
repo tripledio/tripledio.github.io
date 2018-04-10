@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Our approach"
+weight: 20
 
 spotlight:
   imgDir: /img/spotlight/approach 

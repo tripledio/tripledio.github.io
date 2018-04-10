@@ -15,7 +15,7 @@ try {
         navBtn = document.querySelector(".nav-btn"),
         navOverlay = document.querySelector(".nav-overlay"),
         navIcon = navBtn.querySelector(".nav-btn .icon"),
-        activeMenuItem = document.querySelectorAll("a[href='"+window.location.pathname+"']")[0];
+        activeMenuItem = document.querySelectorAll("#main-nav nav .nav-list ul li a[href='"+window.location.pathname+"']")[0];
 
     // Add active class
     (activeMenuItem) ? activeMenuItem.classList.add('active') : '';
