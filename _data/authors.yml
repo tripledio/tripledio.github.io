@@ -1,27 +1,25 @@
-# authors
-authors:
-  domenique:
-    username: "domenique"
-    name: "Domenique Tilleuil"
-    bio: "Software craftsman journeyman. Professional java code juggler. Avid fan of DDD and XP practices"
-    location: "Zoersel, Belgium"
-    image: "/img/authors/domenique.png"
-  guido:
-      username: "guido"
-      name: "Guido Dechamps"
-      bio: "Old cranky 'veteran' software engineer. All opinions are my own."
-      location: "Belgium"
-      image: "/img/authors/guido.jpg"
-      web: https://twitter.com/dechampsgu
-  kris:
-      username: "kris"
-      name: "Kris Hofmans"
-      bio: "Finds Software Development interesting, especially the ways people find to mess it up. Gets things deployed."
-      location: "Belgium"
-      image: "/img/authors/kris.jpg"
-  gert:
-      username: "gert"
-      name: "Gert Villain"
-      bio: ""
-      location: "Belgium"
-      image: "/img/authors/gert.jpg"
+domenique:
+  username: "domenique"
+  name: "Domenique Tilleuil"
+  bio: "Software craftsman journeyman. Professional java code juggler. Avid fan of DDD and XP practices"
+  location: "Zoersel, Belgium"
+  image: "/img/authors/domenique.png"
+guido:
+    username: "guido"
+    name: "Guido Dechamps"
+    bio: "Old cranky 'veteran' software engineer. All opinions are my own."
+    location: "Belgium"
+    image: "/img/authors/guido.jpg"
+    web: https://twitter.com/dechampsgu
+kris:
+    username: "kris"
+    name: "Kris Hofmans"
+    bio: "Finds Software Development interesting, especially the ways people find to mess it up. Gets things deployed."
+    location: "Belgium"
+    image: "/img/authors/kris.jpg"
+gert:
+    username: "gert"
+    name: "Gert Villain"
+    bio: ""
+    location: "Belgium"
+    image: "/img/authors/gert.jpg"

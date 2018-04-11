@@ -26,81 +26,80 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-                {{ content }}
+            {{ content }}
 
-                <footer class="post-footer">
-                    <!-- Everything inside the #author tags pulls data from the author -->
-                    <!-- #author-->
-                    {% if author %}
-
-                        {% if author.image %}
-                        <figure class="author-image">
-                            <a class="img" href="{{ site.github.url | replace: 'http://', '//' }}author/{{ author.username }}"
-                               style="background-image: url({{ site.github.url | replace: 'http://', '//' }}{{ author.image }})"><span class="hidden">{{ author.name }}'s Picture</span></a>
-                        </figure>
-                        {% endif %}
-
-                        <section class="author">
-                            <h4>{{ author.name }}</h4>
-                            {% if author.bio %}
-                                <p> {{ author.bio }}</p>
-                            {% endif %}
-
-                            <div class="author-meta">
-                                {% if author.location %}
-                                    <span class="author-location icon-location"> {{ author.location }}</span>
-                                {% endif %}
-                                {% if author.url %}
-                                    <span class="author-link icon-link"><a href="{{ author.url }}"> {{ author.url }}</a></span>
-                                {% endif %}
-                            </div>
-                        </section>
-
-                    {% endif %}
-
-                    <!-- /author  -->
-                    <section class="share">
-                        <h4>Share this post</h4>
-                        <a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url}}"
-                           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                            <i class="fa fa-twitter  "></i>
-                        </a>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url}}"
-                           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                            <i class="fa fa-facebook "></i>
-                        </a>
-                        <a href="https://plus.google.com/share?url={{ site.github.url }}{{ page.url}}"
-                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                            <i class="fa fa-google-plus  "></i>
-                        </a>
-                    </section>
-                </footer>
-
-                <hr/>
-
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | replace: '//', '/' }}"
-                           data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous
-                            Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url |  replace: '//', '/' }}" data-toggle="tooltip"
-                           data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-                <hr/>
-
-                {% if page.disqus %}
-                {% include disqus.html %}
+            <footer class="post-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                {% if author %}
+                {% if author.image %}
+                <figure class="author-image">
+                    <img class="img" src="{{ author.image }}">
+                    <span class="hidden">{{ author.name }}'s Picture</span>
+                    </img>
+                </figure>
                 {% endif %}
-            </div>
+
+                <section class="author">
+                    <h4>{{ author.name }}</h4>
+                    {% if author.bio %}
+                    <p> {{ author.bio }}</p>
+                    {% endif %}
+
+                    <div class="author-meta">
+                        {% if author.location %}
+                        <span class="author-location icon-location"> {{ author.location }}</span>
+                        {% endif %}
+                        {% if author.url %}
+                        <span class="author-link icon-link"><a href="{{ author.url }}"> {{ author.url }}</a></span>
+                        {% endif %}
+                    </div>
+                </section>
+                {% endif %}
+                <!-- /author  -->
+
+                <section class="share">
+                    <h4>Share this post</h4>
+                    <a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url}}"
+                       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <i class="fa fa-twitter  "></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url}}"
+                       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <i class="fa fa-facebook "></i>
+                    </a>
+                    <a href="https://plus.google.com/share?url={{ site.github.url }}{{ page.url}}"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <i class="fa fa-google-plus  "></i>
+                    </a>
+                </section>
+            </footer>
+
+            <hr/>
+
+            <ul class="pager">
+                {% if page.previous.url %}
+                <li class="previous">
+                    <a href="{{ page.previous.url | replace: '//', '/' }}"
+                       data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous
+                        Post</a>
+                </li>
+                {% endif %}
+                {% if page.next.url %}
+                <li class="next">
+                    <a href="{{ page.next.url |  replace: '//', '/' }}" data-toggle="tooltip"
+                       data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                </li>
+                {% endif %}
+            </ul>
+
+            <hr/>
+
+            {% if page.disqus %}
+            {% include disqus.html %}
+            {% endif %}
         </div>
+    </div>
     </div>
 </article>
 <hr>
