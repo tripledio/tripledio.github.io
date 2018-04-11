@@ -108,7 +108,7 @@ linkChecker:
       - loopLinckChecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
    #This is merely an indicator for gitlab so the necessary variables are passed on to this job
    environment:
-          name: review/$CI_COMMIT_REF_NAME
+      name: review/$CI_COMMIT_REF_NAME
 
 stop_review:
   stage: cleanup
@@ -456,13 +456,18 @@ production:
         countOneErrorMesssages=$(grep -c "$oneError" linkchecker-out.txt)||:
         count404ErrorMesssages=$(grep -c "$four404Error" linkchecker-out.txt)||:
 
-         if [ $countOneErrorMesssages -eq 1 -a $count404ErrorMesssages -eq 1 ]
+        if [ $countOneErrorMesssages -eq 1 -a $count404ErrorMesssages -gt 0 ];
          then
            echo "The site is not up yet! Wait for it..."
            sleep 5
            echo "Lets try again."
          else
+           echo "Errors detected, exiting"
+
+           echo "**********Linkchecker output******************"
            cat linkchecker-out.txt
+           echo "***************************************"
+
            exit $(grep  "^That's it.*0 error found\." linkchecker-out.txt)
          fi
         echo "-----------Loop $i END----------"
