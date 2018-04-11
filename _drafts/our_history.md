@@ -2,7 +2,7 @@
 layout: page
 title: "History"
 description: "Why did we founded Triple D?"
-header-img: "img/laptop-bg.png"
+header-img: "img/about-bg.jpg"
 ---
 
 # Our History <a name="4"/>

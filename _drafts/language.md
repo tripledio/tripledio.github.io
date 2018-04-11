@@ -1,9 +1,9 @@
 ---
 layout: post
 author: guido
-header-img: "TODO"
+header-img: "img/about-bg.jpg"
 ---
-# The imprtance language
+# The importance language
 
 ubiquitupus not just everyone understands
 discover concepts

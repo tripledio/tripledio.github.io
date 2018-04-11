@@ -1,3 +1,9 @@
+---
+layout: post
+author: guido
+header-img: "img/about-bg.jpg"
+---
+
 ### Introduction
 
 When Eric Evans introduced DDD he gave a name to a lot of concepts professionals where using and crystalized their meaning. We now have a common dictionary when trying to apply DDD. Since the renewed interest in DDD a lot of the DDD concepts are now 'known' to most of the people working in the software industry. Knwon by name but not necessary by meaning. In day to day discussions i often encounter some confusion on the exact meaning of some of the classic well known DDD concepts. Confusion on what they mean exactly, how they relate to each other and what is their practical use. 
