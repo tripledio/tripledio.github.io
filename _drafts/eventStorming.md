@@ -1,7 +1,7 @@
 ---
 layout: post
 author: guido
-header-img: "img/event-storming.jpg"
+header-img: "img/about-bg.jpg"
 ---
 #Working with drafts
 
