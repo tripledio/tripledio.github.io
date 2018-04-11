@@ -14,7 +14,7 @@ status=0
 # change the logging type
 log=xml
 # turn on/off --verbose
-verbose=1
+verbose=0
 # turn on/off --warnings
 warnings=0
 # turn on/off --quiet
