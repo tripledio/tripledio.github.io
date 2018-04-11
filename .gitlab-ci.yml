@@ -447,9 +447,10 @@ production:
       urlToCheck=$1
       oneError="That's it. 1 link in 1 URL checked. 0 warnings found. 1 error found.";
 
-      for i in 1 2 3 .. $nrOfRetries
+      counter=0
+      while [ $counter -lt $nrOfRetries ]
       do
-        echo "--------- Start Loop ... number $i ------"
+        echo "--------- Start Loop ... number $counter ------"
 
         doLinkCheck $urlToCheck
 
@@ -459,18 +460,18 @@ production:
         if [ $countOneErrorMesssages -eq 1 -a $count404ErrorMesssages -gt 0 ];
          then
            echo "The site is not up yet! Wait for it..."
-           sleep 5
+           sleep 5s
+           counter=`expr $counter + 1`
            echo "Lets try again."
          else
            echo "Errors detected, exiting"
-
            echo "**********Linkchecker output******************"
            cat linkchecker-out.txt
            echo "***************************************"
 
            exit $(grep  "^That's it.*0 error found\." linkchecker-out.txt)
          fi
-        echo "-----------Loop $i END----------"
+        echo "-----------Loop $counter END----------"
       done
       echo "Site $urlToCheck not available after $nrOfRetries retries"
       exit 404
