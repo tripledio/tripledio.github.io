@@ -151,8 +151,8 @@ An **application** contains typically one **domain model**. Although it can cont
 
 Below you can find an overview of different combinations and relations between domain, bounded context and models.
 
-#![](/content/images/2017/02/Domain-BC-Applications.png)
 TODO
+
 ## Tackling the problem
 
 Below i wrote a very simplistic and naive list in which order the patterns described above could be applied to tackle a problem. The actions that need to be taken or highly dependent on the actual problem at hand. But my goal is to illustrate the difference and the relationship between the different strategic design patterns and how they can be used together.
