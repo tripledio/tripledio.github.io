@@ -443,13 +443,14 @@ production:
 
 
    function loopLinckChecker() {
-      nrOfRetries=100
+      nrOfRetries=10
       urlToCheck=$1
       oneError="That's it. 1 link in 1 URL checked. 0 warnings found. 1 error found.";
 
       counter=0
       while [ $counter -lt $nrOfRetries ]
       do
+        counter=`expr $counter + 1`
         echo "--------- Start Loop ... number $counter ------"
 
         doLinkCheck $urlToCheck
@@ -461,7 +462,6 @@ production:
          then
            echo "The site is not up yet! Wait for it..."
            sleep 5s
-           counter=`expr $counter + 1`
            echo "Lets try again."
          else
            echo "Errors detected, exiting"
