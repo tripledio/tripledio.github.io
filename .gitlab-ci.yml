@@ -469,7 +469,7 @@ production:
            cat linkchecker-out.txt
            echo "***************************************"
 
-           exit $(grep  "^That's it.*0 error found\." linkchecker-out.txt)
+           exit $(grep  "^That's it.*0 errors found\." linkchecker-out.txt)
          fi
         echo "-----------Loop $counter END----------"
       done
