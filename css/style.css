@@ -1,6 +1,7 @@
 /* STYLES FOR TRIPLE D */
 /* RESET */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 *,
 *::before,
 *::after {
@@ -4354,10 +4355,10 @@ template {
 
 /* TYPOGRAPHY */
 .font-family-normal {
-  font-family: "Chalet London", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .font-family-bold {
-  font-family: "Chalet New York", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 html {
   font-size: 10px;
@@ -4406,14 +4407,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Chalet London", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   color: #21314c;
   text-transform: uppercase; }
 
 p,
 .p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0;
   margin: 0 0 3rem;
   color: #666666; }
@@ -4439,7 +4440,7 @@ p,
   p strong,
   .p b,
   .p strong {
-    font-family: "Chalet New York", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: normal; }
 
 ul,
@@ -4449,7 +4450,7 @@ ol {
   ul strong,
   ol b,
   ol strong {
-    font-family: "Chalet London", sans-serif; }
+    font-family: "Roboto", sans-serif; }
 
 blockquote {
   position: relative;
@@ -4667,7 +4668,7 @@ form textarea {
           #main-nav nav .nav-list ul li a {
             color: #212121;
             text-transform: uppercase;
-            font-family: "Chalet London", sans-serif;
+            font-family: "Roboto", sans-serif;
             font-size: 1.8rem;
             font-weight: normal;
             text-decoration: none;
@@ -4772,7 +4773,7 @@ form textarea {
               display: inline-block;
               padding: 3rem 2rem;
               text-decoration: none;
-              font-family: "Chalet New York", sans-serif;
+              font-family: "Raleway", sans-serif;
               font-weight: normal;
               font-size: 4.1rem;
               color: #ffffff; }
@@ -5154,7 +5155,7 @@ form textarea {
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
-    font-family: "Chalet New York", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.8rem;
     font-style: normal;
     padding: 1.8rem 2rem;

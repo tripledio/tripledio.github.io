@@ -1,10 +1,12 @@
 /* TYPOGRAPHY */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-$font-normal: 'Chalet London', sans-serif;
+$font-normal: 'Roboto', sans-serif;
 $font-roboto: 'Roboto', sans-serif;
-$font-bold: 'Chalet New York', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+$font-bold: 'Raleway', sans-serif;
 
 .font-family-normal {
   font-family: $font-normal;
@@ -46,7 +48,7 @@ h6 {
 
 p,
 .p {
-  font-family: $font-roboto;
+  font-family: $font-raleway;
   @extend .font-size-5;
   letter-spacing: 0;
   margin: 0 0 3rem;
