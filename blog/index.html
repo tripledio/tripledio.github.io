@@ -27,6 +27,9 @@ spotlight:
     <p class="post-meta">
         Posted by {% if post.author %}{{ site.authors[post.author].name }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
+    <p>
+      {{ post.content | markdownify | strip_html | truncatewords: 50 }}
+    </p>
 </div>
 <hr class="slab left mt-1 mb-2 {% if forloop.last %}hidden{% endif %}">
 {% endfor %}
