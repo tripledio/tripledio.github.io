@@ -124,8 +124,18 @@
   }
 
   .effects-img-scale {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+
     img {
       position: relative;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
       transform: scale(1);
       transition: all 0.3s ease;
     }
