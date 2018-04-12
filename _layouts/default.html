@@ -19,12 +19,12 @@
 
     {{ content }}
 
-    {% if page.services %}
-        {% include services.html %}
-    {% endif %}
-
     {% if page.about-us %}
         {% include about-us.html %}
+    {% endif %}
+
+    {% if page.services %}
+        {% include services.html %}
     {% endif %}
 
     {% if page.testimonials %}
