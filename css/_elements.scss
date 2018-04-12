@@ -523,3 +523,8 @@
     opacity: 1;
   }
 }
+
+#footer p,
+#copyright p {
+  font-family: $font-roboto;
+}

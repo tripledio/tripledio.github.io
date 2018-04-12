@@ -4227,18 +4227,6 @@ template {
   background-repeat: no-repeat; }
 
 /* FONTS */
-@font-face {
-  font-family: 'Chalet London';
-  src: url("../fonts/chaletlondonnineteensixty-webfont.eot");
-  src: url("../fonts/chaletlondonnineteensixty-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/chaletlondonnineteensixty-webfont.woff2") format("woff2"), url("../fonts/chaletlondonnineteensixty-webfont.woff") format("woff"), url("../fonts/chaletlondonnineteensixty-webfont.ttf") format("truetype"), url("../fonts/chaletlondonnineteensixty-webfont.svg#chaletmedium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Chalet New York';
-  src: url("../fonts/chaletnewyorknineteensixty-webfont.eot");
-  src: url("../fonts/chaletnewyorknineteensixty-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/chaletnewyorknineteensixty-webfont.woff2") format("woff2"), url("../fonts/chaletnewyorknineteensixty-webfont.woff") format("woff"), url("../fonts/chaletnewyorknineteensixty-webfont.ttf") format("truetype"), url("../fonts/chaletnewyorknineteensixty-webfont.svg#chaletmedium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 /* COLORS */
 /* BACKGROUNDS */
 .bg-primary {
@@ -4621,7 +4609,8 @@ form textarea {
 /* NAVIGATION */
 #main-nav {
   background: #ffffff;
-  height: 10rem; }
+  height: 13rem;
+  padding-top: 3rem; }
   @media screen and (max-width: 767px) {
     #main-nav {
       padding-top: 0;
@@ -5244,6 +5233,10 @@ form textarea {
   100% {
     fill: #ffffff;
     opacity: 1; } }
+#footer p,
+#copyright p {
+  font-family: "Roboto", sans-serif; }
+
 /* EFFECTS */
 @media screen and (min-width: 767px) {
   .effects-overlay {
