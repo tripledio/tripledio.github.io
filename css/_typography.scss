@@ -1,6 +1,7 @@
 /* TYPOGRAPHY */
 
 $font-normal: 'Chalet London', sans-serif;
+$font-sansserif: Sans-Serif;
 $font-bold: 'Chalet New York', sans-serif;
 
 .font-family-normal {
@@ -43,7 +44,7 @@ h6 {
 
 p,
 .p {
-  font-family: $font-normal;
+  font-family: $font-sansserif;
   @extend .font-size-5;
   letter-spacing: 0;
   margin: 0 0 3rem;
