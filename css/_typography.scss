@@ -1,7 +1,9 @@
 /* TYPOGRAPHY */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 $font-normal: 'Chalet London', sans-serif;
-$font-sansserif: Sans-Serif;
+$font-roboto: 'Roboto', sans-serif;
 $font-bold: 'Chalet New York', sans-serif;
 
 .font-family-normal {
@@ -44,7 +46,7 @@ h6 {
 
 p,
 .p {
-  font-family: $font-sansserif;
+  font-family: $font-roboto;
   @extend .font-size-5;
   letter-spacing: 0;
   margin: 0 0 3rem;
