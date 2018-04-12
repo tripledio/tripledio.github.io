@@ -2,7 +2,8 @@
 
 #main-nav {
   background: $color-white;
-  height: 10rem;
+  height: 13rem;
+  padding-top: 3rem;
 
   @media screen and (max-width: $breakpoint-md) {
     padding-top: 0;
