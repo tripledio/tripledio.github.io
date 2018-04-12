@@ -5180,7 +5180,7 @@ form textarea {
         background-color: #ffffff;
         top: auto;
         height: 68px;
-        bottom: 0;
+        bottom: -1px;
         z-index: 0; } }
 
 #testimonials {

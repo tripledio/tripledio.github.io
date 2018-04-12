@@ -2,6 +2,7 @@
 layout: page
 title: "Home"
 weight: 0
+servicesWithoutDescription: true
 
 spotlight:
   imgDir: img/spotlight/home
@@ -29,7 +30,7 @@ services:
     imgAlt: Training
     color: blue
     url: "#!"
-    
+
 about-us:
   column1Title: Who are we
   column1Text: We founded Triple D from our passion for software development. "We" are a group of veteran software engineers with the aim of having a *larger, positive impact* on the belgian software industry.
@@ -46,7 +47,7 @@ testimonials:
     person: person4
   - quote: quote5
     person: person5
-  
+
 footer:
   If you could use our help, let us know. Our normal base of operation in Belgium is Ghent, Antwerp, Brussels triangle. <br>But we are open to any interesting proposals. Contact us!
 ---
