@@ -2,7 +2,6 @@
 layout: page
 title: "Home"
 weight: 0
-servicesWithoutDescription: true
 
 spotlight:
   imgDir: img/spotlight/home
