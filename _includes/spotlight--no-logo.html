@@ -1,0 +1,30 @@
+<section id="spotlight">
+    <div class="container-fluid">
+        <div class="spotlight">
+            <div class="spot">
+                <div class="content">
+                    {% if page.spotlight.video %}
+                    <video autoplay muted loop id="myVideo" poster="/img/spotlight-home.jpg">
+                        <source src="{{ page.spotlight.videoFile }}" type="video/mp4">
+                    </video>
+                    {% else %}
+                    <figure>
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="{% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-desktop_1x.jpg 1x, {% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-desktop_2x.jpg 2x, {% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-desktop_3x.jpg 3x">
+                            <source media="(max-width: 768px)" srcset="{% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-mobile_1x.jpg 1x, {% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-mobile_2x.jpg 2x, {% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-mobile_3x.jpg 3x">
+                            <source media="(min-width: 768px)" srcset="{% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-tablet_1x.jpg 1x, {% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-tablet_2x.jpg 2x, {% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-tablet_3x.jpg 3x">
+                            <source srcset="{% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-desktop_1x.jpg 1x, {% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-desktop_2x.jpg 2x, {% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-desktop_3x.jpg 3x">
+                            <img src="{% if page.spotlight.imgDir %}{{ page.spotlight.imgDir }}{% else %}/{{ page.header-img }}{% endif %}/spotlight-desktop.jpg" alt="sp">
+                        </picture>
+                    </figure>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fancy-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</section>

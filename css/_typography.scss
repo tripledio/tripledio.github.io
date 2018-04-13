@@ -1,0 +1,142 @@
+/* TYPOGRAPHY */
+
+$font-normal: 'Roboto', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+$font-bold: 'Raleway', sans-serif;
+
+.font-family-normal {
+  font-family: $font-normal;
+}
+
+.font-family-bold {
+  font-family: $font-bold;
+}
+
+$link: $color-teal;
+$link-hover: $color-red;
+
+html {
+  font-size: 10px;
+  line-height: 1.15;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+@include headings(4.8rem, 0.6rem);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-normal;
+  font-weight: normal;
+  color: $color-primary;
+  text-transform: uppercase;
+}
+
+p,
+.p {
+  font-family: $font-raleway;
+  @extend .font-size-5;
+  letter-spacing: 0;
+  margin: 0 0 3rem;
+  color: $color-gray;
+
+  a {
+    color: $link;
+    text-decoration: underline;
+
+    &:hover {
+      color: $link-hover;
+      text-decoration: none;
+    }
+  }
+
+  mark {
+    display: inline-block;
+    color: $color-black;
+    background: $color-yellow;
+    font-weight: 700;
+    padding: 0.3rem 0.6rem;
+  }
+
+  small {
+    font-size: 1.2rem;
+  }
+
+  b,
+  strong {
+    font-family: $font-bold;
+    font-weight: normal;
+  }
+}
+
+ul,
+ol {
+  margin-bottom: 3rem;
+
+  b,
+  strong {
+    font-family: $font-normal;
+  }
+}
+
+blockquote {
+  position: relative;
+  padding-left: 6rem;
+  margin: 0 0 3rem 0;
+  font-style: italic;
+
+  p {
+    position: relative;
+
+    &::before {
+      content: '\201C';
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 10rem;
+      position: absolute;
+      left: -6rem;
+      top: 4rem;
+      line-height: 0;
+      color: $color-lime;
+    }
+  }
+
+  footer {
+    font-style: normal;
+
+    &::before {
+      content:  '\2013';
+    }
+  }
+
+  &.quote-top {
+    padding-left: 0;
+
+    p {
+      &::before {
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &.quote-none {
+    padding-left: 0;
+
+    p {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

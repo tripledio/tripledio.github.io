@@ -1,4 +1,5 @@
 # Site settings available under site.*
+encoding: utf-8
 title: Triple D
 header-img: img/home-bg.jpg
 email: blog@tripled.io

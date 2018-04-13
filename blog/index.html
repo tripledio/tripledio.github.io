@@ -2,13 +2,19 @@
 layout: page
 title: "Blog"
 description: "Triple D - blog posts"
-header-img: "img/laptop-bg.jpg"
+active: blog
+weight: 30
+
+spotlight:
+  imgDir: /img/spotlight/home
+  imgAlt: "Triple D : Design, Develop, Deploy"
+  logoAnimation: false
 ---
 
 {% for post in paginator.posts %}
-<div class="post-preview">
+<div class="post-preview col-lg-12 {% if forloop.first %}pt-4{% endif %} {% if forloop.last %}pb-4{% endif %}">
     <a href="{{ post.url | prepend: site.github.url | replace: 'http://', '//'  }}">
-        <h2 class="post-title">
+        <h2 class="post-title h4 mt-3 pt-2">
             {{ post.title }}
         </h2>
 
@@ -18,24 +24,37 @@ header-img: "img/laptop-bg.jpg"
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ site.authors[post.author].name }}{% else %}{{ site.title }}{%
-        endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ site.authors[post.author].name }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+    {% if post.excerpt %}
+    <p>
+      {{ post.excerpt }}
+    </p>
+    {% else %}
+    <p>
+      {{ post.content | markdownify | strip_html | truncatewords: 50 }}
+    </p>
+    {% endif %}
 </div>
-<hr>
+
+<hr class="slab left mt-1 mb-2 {% if forloop.last %}hidden{% endif %}">
 {% endfor %}
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path |  replace: 'http://', '//' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path |  replace: 'http://', '//' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
+<div class="container">
+    <div class="row pb-4">
+        <div class="col-lg-6 previous text-left">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path |  replace: 'http://', '//' }}" class="btn btn-primary">&larr; Newer Posts</a>
+            {% endif %}
+        </div>
+        <div class="col-lg-6 next text-right">
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path |  replace: 'http://', '//' }}" class="btn btn-primary">Older Posts &rarr;</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
 {% endif %}

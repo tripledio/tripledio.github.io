@@ -1,0 +1,124 @@
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.2rem;
+  text-align: center;
+  text-transform: lowercase;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 1.2rem 1.8rem;
+  font-size: 1.8rem;
+  font-style: italic;
+  border-radius: 1.8rem / 1.6rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  position: relative;
+
+  color: $color-black;
+  background-color: $color-white;
+
+  margin-bottom: 1rem;
+
+  &.big {
+    padding: 2rem 5rem;
+    font-size: 1.8rem;
+  }
+
+  &:hover {
+    background-color: darken($color-white, 5%);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: darken($color-white, 10%);
+  }
+
+  &.btn-alt {
+    &:hover {
+      color: $color-black;
+      background-color: $color-yellow;
+    }
+  }
+
+  &.btn-primary {
+    color: $color-white;
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: lighten($color-primary, 5%);
+    }
+
+    &:active {
+      background-color: darken($color-primary, 5%);
+    }
+  }
+
+  &.btn-secondary {
+    color: $color-white;
+    background-color: $color-secondary;
+    box-shadow: 0 3px 7px rgba($color-secondary, 0.5);
+
+    &:hover {
+      background-color: lighten($color-secondary, 5%);
+    }
+
+    &:active {
+      background-color: darken($color-secondary, 5%);
+    }
+  }
+
+  &.btn-switch {
+    padding: 0;
+    text-align: center;
+    width: 46px;
+    height: 46px;
+
+    color: $color-white;
+    background-color: lighten($color-gray, 25%);
+    box-shadow: none;
+
+    &.active {
+      color: $color-white;
+      background-color: $color-secondary;
+    }
+  }
+
+  &.btn-black {
+    color: $color-white;
+    background-color: $color-black;
+
+    &:hover,
+    &:active {
+      color: $color-black;
+      background-color: $color-yellow;
+      box-shadow: 0 3px 7px rgba(darken($color-yellow, 25%), 0.5);
+    }
+  }
+
+  &.btn-red {
+    color: $color-white;
+    background-color: $color-red;
+
+    &:hover {
+      background-color: lighten($color-red, 5%);
+    }
+
+    &:active {
+      background-color: darken($color-red, 5%);
+    }
+  }
+
+  .material-icons {
+    line-height: 0;
+    vertical-align: middle;
+  }
+}
