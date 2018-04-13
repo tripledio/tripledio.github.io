@@ -13,15 +13,16 @@ intro:
   text: If you could use our help, let us know. Our normal base of operation in Belgium is Ghent, Antwerp, Brussels triangle. But we are open to any interesting proposals.
 
 testimonials:
-  - quote: quote1
-    person: person1
-  - quote: quote2
-    person: person2
-  - quote: quote3
-  - quote: quote4
-    person: person4
-  - quote: quote5
-    person: person5
+  - quote: "Programs must be written for people to read, and only incidentally for machines to execute."
+    person: "Abelson and Sussman"
+  - quote: "A document shouldn’t try to do what the code already does well."
+    person: "Eric Evans"
+  - quote: "Well, you either learn or you fail."
+    person: "Vaughn Vernon"
+  - quote: "If you think good architecture is expensive, try bad architecture."
+    person: "Brian Foote and Joseph Yoder in Big Ball of Mud"
+  - quote: "The quickest methods aren't always the fastest methods"
+    person: "Gordon Beeming"
 ---
 
 <div class="col-12 col-md-10 col-lg-8 offset-0 offset-md-1 offset-lg-2 pb-4 pb-md-10">
