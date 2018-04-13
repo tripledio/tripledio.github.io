@@ -16,19 +16,19 @@ team:
   - photo: /img/domenique.png
     name: Domenique Tilleuil
     description: Software craftsmen journeyman. Professional java code juggler. Avid fan of DDD and XP practices
-    email: example@mail.com
+    contactLink: https://twitter.com/domeniquetill
   - photo: /img/kris.jpg
     name: Kris Hofmans
     description: Finds Software Development interesting, especially the ways people find to mess it up. Gets things deployed.
-    email: example@mail.com
+    contactLink: https://twitter.com/khofmans
   - photo: /img/guido.jpg
     name: Guido Dechamps
     description: Old cranky software craftsmen. All opinions are my own.
-    email: example@mail.com
+    contactLink: https://twitter.com/Dechampsgu
   - photo: /img/gert.jpg
     name: Gert Vilain
     description: some nice words about Gert.
-    email: example@mail.com
+    contactLink: https://twitter.com/GertVil
 
 testimonials:
   - quote: quote1
