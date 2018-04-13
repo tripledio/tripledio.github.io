@@ -2,6 +2,7 @@
 layout: page
 title: "Sample video"
 exclude: true
+servicesWithoutDescription: true
 
 spotlight:
   imgDir: /img/spotlight/home

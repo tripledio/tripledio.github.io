@@ -12,25 +12,7 @@ intro:
   title: Our approach
   text: In order to achieve our ambitious goal we believe that there are certain prerequisites in order to make this possible.
 
-services:
-  - name: Team as a service
-    imgPath: /img/team.svg
-    imgAlt: Team
-    color: red
-    url: /team
-    description: Triple D is a professional software engineering team that keeps its coherence over multiple software assignments. We belief that this is how we can have the greatest impact.<br /><br />This is comparable to the roman imperial standing army, which was a professional army instead of an ad hoc formed army. This enabled the romans to keep the hard fought lessons learned and experience gained.
-  - name: Reinforcement
-    imgPath: /img/reinforcement.svg
-    imgAlt: Reinforcement
-    color: green
-    url: "#!"
-    description: Triple D can be brought in as a reinforcement. Working closely together with existing teams allows us to introduce industry best practices. This will not only help in delivering in the short term but it will allow the existing teams to learn, to evolve and to grow. So even after Triple D has left, your teams should deliver faster, quality software. At a sustainable pace.
-  - name: Trainings and workshops
-    imgPath: /img/training.svg
-    imgAlt: Training
-    color: blue
-    url: "#!"
-    description: We can help you to elevate your software delivery process by facilitating training and workshops on request. Assisting you in taking your team to the next level and making sure that the software keeps delivering long after the initial phase or deadline has passed.
+
 testimonials:
   - quote: quote1
     person: person1

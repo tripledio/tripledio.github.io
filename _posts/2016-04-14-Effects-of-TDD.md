@@ -1,6 +1,10 @@
 ---
 layout: post
 author: domenique
+excerpt: "The last couple of years I've noticed a shift in peoples viewpoint towards testing and in particular unit testing.
+5 years ago, I was doing projects and no one even mentioned the word unit testing. Nowadays,
+everyone wants to do unit testing in some form. Some projects in which I was involved required 100% code coverage,
+other's put the mark at 80%. I've never been that enthusiastic about any number, but the point is that we are doing some form of testing, be it TDD or testing after the facts."
 ---
 The last couple of years I've noticed a shift in peoples viewpoint towards testing and in particular unit testing.
 5 years ago, I was doing projects and no one even mentioned the word unit testing. Nowadays,
