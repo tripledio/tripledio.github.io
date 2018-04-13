@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "History"
 description: "Why did we founded Triple D?"
 header-img: "img/laptop-bg.png"
