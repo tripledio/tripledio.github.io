@@ -27,7 +27,7 @@ team:
     contactLink: https://twitter.com/Dechampsgu
   - photo: /img/gert.jpg
     name: Gert Vilain
-    description: Aspiring software craftsman, motto: Automate all the things!
+    description: "Aspiring software craftsman, motto: Automate all the things!"
     contactLink: https://twitter.com/GertVil
 
 testimonials:
