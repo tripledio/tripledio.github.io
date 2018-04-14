@@ -1,9 +1,12 @@
 ---
-layout: page
+layout: post
 title: "History"
 description: "Why did we founded Triple D?"
 header-img: "img/about-bg.jpg"
+excerpt: This is just an example of a draft post.
 ---
+
+# Our History
 
 # Our History <a name="4"/>
 
