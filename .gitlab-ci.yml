@@ -109,6 +109,9 @@ linkChecker:
    #This is merely an indicator for gitlab so the necessary variables are passed on to this job
    environment:
       name: review/$CI_COMMIT_REF_NAME
+   only:
+    - branches
+
 
 stop_review:
   stage: cleanup
