@@ -25,7 +25,7 @@ spotlight:
         {% endif %}
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ site.authors[post.author].name }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        Posted by {% if post.author %}{{ site.data.authors[post.author].name }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
     {% if post.excerpt %}
     <p>
