@@ -100,17 +100,21 @@ review:
     - master
 
 linkChecker:
-   stage: check
-   image:
+  stage: check
+  image:
       name: linkchecker/linkchecker
       entrypoint: [""]
-   script:
+  script:
       - loopLinckChecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
    #This is merely an indicator for gitlab so the necessary variables are passed on to this job
-   environment:
+  environment:
       name: review/$CI_COMMIT_REF_NAME
-   only:
-    - branches
+  only:
+    refs:
+      - branches
+    kubernetes: active
+  except:
+    - master
 
 
 stop_review:
