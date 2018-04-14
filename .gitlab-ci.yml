@@ -1,4 +1,4 @@
-# This file is a template, and might need editing before it works on your project.
+  # This file is a template, and might need editing before it works on your project.
 # Auto DevOps
 # This CI/CD configuration provides a standard pipeline for
 # * building a Docker image (using a buildpack if necessary),
@@ -38,6 +38,7 @@ variables:
 stages:
   - build
   - review
+  - check
   - staging
   - canary
   - production
@@ -97,6 +98,17 @@ review:
     kubernetes: active
   except:
     - master
+
+linkChecker:
+   stage: check
+   image:
+      name: linkchecker/linkchecker
+      entrypoint: [""]
+   script:
+      - loopLinckChecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
+   #This is merely an indicator for gitlab so the necessary variables are passed on to this job
+   environment:
+      name: review/$CI_COMMIT_REF_NAME
 
 stop_review:
   stage: cleanup
@@ -320,6 +332,7 @@ production:
     fi
   }
 
+
   function setup_test_db() {
     if [ -z ${KUBERNETES_PORT+x} ]; then
       DB_HOST=postgres
@@ -427,6 +440,56 @@ production:
 
     helm delete "$name" || true
   }
+
+
+   function loopLinckChecker() {
+      nrOfRetries=10
+      urlToCheck=$1
+      oneError="That's it. 1 link in 1 URL checked. 0 warnings found. 1 error found.";
+
+      counter=0
+      while [ $counter -lt $nrOfRetries ]
+      do
+        counter=`expr $counter + 1`
+        echo "--------- Start Loop ... number $counter ------"
+
+        doLinkCheck $urlToCheck
+
+        countOneErrorMesssages=$(grep -c "$oneError" linkchecker-out.txt)||:
+        count404ErrorMesssages=$(grep -c "$four404Error" linkchecker-out.txt)||:
+
+        if [ $countOneErrorMesssages -eq 1 -a $count404ErrorMesssages -gt 0 ];
+         then
+           echo "The site is not up yet! Wait for it..."
+           sleep 5s
+           echo "Lets try again."
+         else
+           echo "Links were checked"
+           echo "**********Linkchecker output******************"
+           cat linkchecker-out.txt
+           echo "***************************************"
+           succes=$(grep -c "^That's it.*0 errors found\." linkchecker-out.txt)
+
+           if [ $succes -eq 1 ];
+           then
+              exit 0
+           else
+             exit 1
+           fi
+         fi
+        echo "-----------Loop $counter END----------"
+      done
+      echo "Site $urlToCheck not available after $nrOfRetries retries"
+      exit 404
+    }
+
+    function doLinkCheck(){
+        urlToCheck=$1
+        # If running with set -o pipefail, a failure at any stage in a shell pipeline will cause the entire pipeline to be considered failed.
+        #In order to avoid this we explicitly ignore a single failure: { linkchecker xx || :; }
+        result=$( (linkchecker --config=linkcheckerrc/linkcheckerrc $urlToCheck) ||:)
+        echo "*********Checker done******************"
+    }
 
 before_script:
   - *auto_devops

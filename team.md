@@ -13,19 +13,19 @@ intro:
   text: Triple D is a belgian software development company founded by and consisting entirely out of veteran software engineers. It is a small, completely independent company with very highly skilled, experienced and opinionated software engineers with a clear vision how to develop software successfully.
 
 team:
-  - photo: /img/domenique.png
+  - photo: /img/authors/domenique.png
     name: Domenique Tilleuil
-    description: Software craftsmen journeyman. Professional java code juggler. Avid fan of DDD and XP practices
+    description: Software craftsman journeyman. Professional java code juggler. Avid fan of DDD and XP practices
     contactLink: https://twitter.com/domeniquetill
-  - photo: /img/kris.jpg
+  - photo: /img/authors/kris.jpg
     name: Kris Hofmans
     description: Finds Software Development interesting, especially the ways people find to mess it up. Gets things deployed.
     contactLink: https://twitter.com/khofmans
-  - photo: /img/guido.jpg
+  - photo: /img/authors/guido.jpg
     name: Guido Dechamps
-    description: Old cranky software craftsmen. All opinions are my own.
+    description: Old cranky software craftsman. All opinions are my own. 
     contactLink: https://twitter.com/Dechampsgu
-  - photo: /img/gert.jpg
+  - photo: /img/authors/gert.jpg
     name: Gert Vilain
     description: "Aspiring software craftsman, motto: Automate all the things!"
     contactLink: https://twitter.com/GertVil
