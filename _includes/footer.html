@@ -1,78 +1,58 @@
 <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="{{ "/feed.xml" | prepend: site.github.url | replace: 'http://', '//'  }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
+<section id="footer" class="bg-primary text-white">
+    <div class="fancy-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="container pt-4">
+        <div class="row flex-center-v">
+            <div class="col-sm-12 col-md-12 col-lg-3 mb-4 mb-sm-4 mb-lg-0 text-center text-lg-left text-md-center">
+                <img src="/img/logo-alt.svg" alt="logo" height="66">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mb-4 mb-md-0 text-md-left text-center text-lg-center">
+                {% if page.footer %}
+                    <p class="m-0 text-white ">{{ page.footer }}</p>
+                {% else %}
+                    <p class="m-0 text-white">If you could use our help, let us know. Our normal base of operation in Belgium is Ghent, Antwerp, Brussels triangle. <br>But we are open to any interesting proposals. Contact us!</p>
+                {% endif %}
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 text-lg-right text-md-right text-center">
+                <h2 class="h6 text-white font-weight-normal mb-2 text-uppercase">Contact us</h2>
+                <div class="pb-2">
+                    <a href="{{ "/feed.xml" | prepend: site.github.url | replace: 'http://', '//'  }}" class="socicon rss">
+                        <i class="socicon-rss"></i>
+                    </a>
                     {% if site.twitter_username %}
-                    <li>
-                        <a href="https://twitter.com/{{ site.twitter_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
+                    <a href="https://twitter.com/{{ site.twitter_username }}" class="socicon tw">
+                        <i class="socicon-twitter"></i>
+                    </a>
                     {% endif %}
-                    <!--{% if site.facebook_username %}-->
-                    <!--<li>-->
-                        <!--<a href="https://www.facebook.com/{{ site.facebook_username }}">-->
-                            <!--<span class="fa-stack fa-lg">-->
-                                <!--<i class="fa fa-circle fa-stack-2x"></i>-->
-                                <!--<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>-->
-                            <!--</span>-->
-                        <!--</a>-->
-                    <!--</li>-->
-                    <!--{% endif %}-->
-                    <!--{% if site.github_username %}-->
-                    <!--<li>-->
-                        <!--<a href="https://github.com/{{ site.github_username }}">-->
-                            <!--<span class="fa-stack fa-lg">-->
-                                <!--<i class="fa fa-circle fa-stack-2x"></i>-->
-                                <!--<i class="fa fa-github fa-stack-1x fa-inverse"></i>-->
-                            <!--</span>-->
-                        <!--</a>-->
-                    <!--</li>-->
-                    <!--{% endif %}-->
+                    {% if site.linkedin_username %}
+                    <a href="https://linkedin.com/{{ site.linkedin_username }}" class="socicon ln">
+                        <i class="socicon-linkedin"></i>
+                    </a>
+                    {% endif %}
                     {% if site.email_username %}
-                    <li>
-                        <a href="mailto:{{ site.email_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
+                    <a href="mailto:{{ site.email_username }}" class="socicon ml">
+                        <i class="socicon-mail"></i>
+                    </a>
                     {% endif %}
-                    <li>
-                        <a href="https://www.goodreads.com/user/show/72348319-triple-d">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-book fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</p>
+                </div>
             </div>
         </div>
     </div>
-</footer>
+</section>
 
-<!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.github.url | replace: 'http://', '//'  }}"></script>
+<section id="copyright" class="bg-primary text-white">
+    <div class="container py-4">
+        <div class="row flex-center-v text-center">
+            <p class="text-white col-12 mb-0 text-small">
+                &copy; {{ site.time | date: '%Y' }} {{ site.title}} - Design by <a href="https://wiven.be" target="_blank" class="text-white">WiVen&nbsp;Web&nbsp;Solutions</a>
+            </p>
+        </div>
+    </div>
+</section>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.github.url | replace: 'http://', '//'  }}"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="{{ "/js/clean-blog.min.js " | prepend: site.github.url | replace: 'http://', '//'  }}"></script>
+<!-- Scripts -->
+<script src="{{ "/js/app.js " | prepend: site.github.url | replace: 'http://', '//'  }}"></script>

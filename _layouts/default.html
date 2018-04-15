@@ -7,14 +7,29 @@
 
     {% include nav.html %}
 
-    <!--<div class="row-fluid">-->
-        <!--<div class="span8">-->
-            {{ content }}
-        <!--</div>-->
-        <!--<div class="span4">-->
-            <!--{% include sidebar.html %}-->
-        <!--</div>-->
-    <!--</div>-->
+    {% include spotlight.html %}
+
+    {% if page.intro %}
+        {% include intro.html %}
+    {% endif %}
+
+    {% if page.team %}
+        {% include team.html %}
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.about-us %}
+        {% include about-us.html %}
+    {% endif %}
+
+    {% if page.services %}
+        {% include services.html %}
+    {% endif %}
+
+    {% if page.testimonials %}
+        {% include testimonials.html %}
+    {% endif %}
 
     {% include footer.html %}
 

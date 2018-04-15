@@ -1,36 +1,48 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ site.github.url }}/">{{ site.title }}</a>
-        </div>
+{% assign pages = site.pages | sort: 'weight' %}
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="{{ site.github.url | replace: 'http://', '//' }}/">Home</a>
-                </li>
-                {% for page in site.pages %}{% if page.title %}
-				{% if page.url != '/404.html' %}
-                <!-- Don't generate navigtion for each generate page -->
-                {% unless page.url contains '/page' %}
-                <li>
-                    <a href="{{ page.url | prepend: site.github.url | replace: 'http://', '//'  }}">{{ page.title }}</a>
-                </li>
-				{% endunless  %}
-				{% endif %}
-                {% endif %}{% endfor %}
-            </ul>
+<!-- Navigation -->
+<section id="main-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="logo">
+                    <a href="{{ site.github.url | replace: 'http://', '//' }}/">
+                        <img src="/img/logo.svg" alt="{{ site.title }}" height="66">
+                        <h1 class="d-none">{{ site.title }}</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-10">
+                <nav>
+                    <div class="nav-list">
+                        <ul>
+                            {% for page in pages %}
+                                {% unless page.exclude %}
+                                    {% if page.title %}
+                                        {% if page.url != '/404.html' %}
+                                        <!-- Don't generate navigation for each generate page -->
+                                            {% unless page.url contains '/page' %}
+                                            <li>
+                                                <a href="{{ page.url | prepend: site.github.url | replace: 'http://', '//'  }}" {% if page.title == page.active %} class="active" {% endif %}>{{ page.title }}</a>
+                                            </li>
+                                            {% endunless  %}
+                                        {% endif %}
+                                    {% endif %}
+                                {% endunless %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="nav-btn">
+                        <div class="icon icon-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="nav-overlay"></div>
+                </nav>
+            </div>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
-</nav>
+</section>

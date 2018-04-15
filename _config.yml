@@ -1,4 +1,5 @@
 # Site settings available under site.*
+encoding: utf-8
 title: Triple D
 header-img: img/home-bg.jpg
 email: blog@tripled.io
@@ -17,23 +18,3 @@ paginate: 5
 paginate_path: "/blog/page:num/"
 plugins: [jekyll-paginate,jekyll-feed]
 
-# authors
-authors:
-  domenique:
-    username: "domenique"
-    name: "Domenique Tilleuil"
-    bio: "Software craftsmen journeyman. Professional java code juggler. Avid fan of DDD and XP practices"
-    location: "Zoersel, Belgium"
-    image: "/img/domenique.png"
-  guido:
-      username: "guido"
-      name: "Guido Dechamps"
-      bio: "Old cranky software craftsmen. All opinions are my own."
-      location: "Belgium"
-      image: "/img/guido.jpg"
-  kris:
-      username: "kris"
-      name: "Kris Hofmans"
-      bio: "Finds Software Development interesting, especially the ways people find to mess it up. Gets things deployed."
-      location: "Belgium"
-      image: "/img/kris.jpg"

@@ -4,7 +4,7 @@ author: guido
 title: The anemic domain model
 header-img: "img/anemicDomainModel.jpg"
 tags: DDD, Software development
-excerpt: An exploration of the anemic domain model pattern in the context of an object oriented language.
+excerpt: In this blog post i will discuss the anemic domain model pattern in the context of an object oriented language. I'll explain what the anemic domain model is, what it isn't, how i view it. I'll make use of a code example written in java and tested with cucumber.
 ---
 
 In this blog post i will discuss the anemic domain model pattern in the context of an object oriented language. I'll explain what the anemic domain model is, what it isn't, how i view it. I'll make use of a code example written in java and tested with cucumber.
@@ -608,5 +608,5 @@ _**Table of Contents**_
 [^6]: _[Udi Dahan on anemic domain model](https://twitter.com/udidahan/status/724869999270223873)_
 [^7]: _[Greg Young on anemic domain model](http://codebetter.com/gregyoung/2009/07/15/the-anemic-domain-model-pattern/)_
 [^8]: _[Transaction script](http://martinfowler.com/eaaCatalog/transactionScript.html)_
-[^9]: _[fragile code](https://zeroturnaround.com/rebellabs/object-oriented-design-principles-and-the-5-ways-of-creating-solid-applications/)_ 
+[^9]: _[fragile code](https://zeroturnaround.com/rebellabs/object-oriented-design-principles-and-the-5-ways-of-creating-solid-applications/)_
 [^10]: _[P.O.O.P.](https://www.allacronyms.com/POOP/Procedural_Object_Oriented_Programming)_
