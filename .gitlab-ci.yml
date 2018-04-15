@@ -43,7 +43,6 @@ review:
   script:
     - mkdir -p ~/.kube/
     - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
-    - check_kube_domain
     - install_dependencies
     - init_helm
     - ensure_namespace
@@ -100,37 +99,6 @@ stop_review:
   except:
     - master
 
-# Keys that start with a dot (.) will not be processed by GitLab CI.
-# Staging and canary jobs are disabled by default, to enable them
-# remove the dot (.) before the job name.
-# https://docs.gitlab.com/ee/ci/yaml/README.html#hidden-keys
-
-# Staging deploys are disabled by default since
-# continuous deployment to production is enabled by default
-# If you prefer to automatically deploy to staging and
-# only manually promote to production, enable this job by removing the dot (.),
-# and uncomment the `when: manual` line in the `production` job.
-
-.staging:
-  stage: staging
-  script:
-    - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
-    - check_kube_domain
-    - install_dependencies
-    - init_helm
-    - ensure_namespace
-    - install_tiller
-    - create_secret
-    - deploy
-  environment:
-    name: staging
-    url: http://$CI_PROJECT_PATH_SLUG-staging.$AUTO_DEVOPS_DOMAIN
-  only:
-    refs:
-      - master
-    kubernetes: active
-
 # This job continuously deploys to production on every push to `master`.
 # To make this a manual process, either because you're enabling `staging`
 # or `canary` deploys, or you simply want more control over when you deploy
@@ -141,7 +109,6 @@ production:
   script:
     - mkdir -p ~/.kube/
     - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
-    - check_kube_domain
     - install_dependencies
     - init_helm
     - ensure_namespace
