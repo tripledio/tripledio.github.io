@@ -42,7 +42,6 @@ review:
   stage: review
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - install_dependencies
     - init_helm
     - ensure_namespace
@@ -84,7 +83,6 @@ stop_review:
     GIT_STRATEGY: none
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - install_dependencies
     - delete
   environment:
@@ -108,7 +106,6 @@ production:
   stage: production
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - install_dependencies
     - init_helm
     - ensure_namespace
