@@ -8,6 +8,11 @@ excerpt: This is just an example of a draft post. This is the excerpt. Don't pla
 ---
 # The blog post main title
 
++ __Behavior__
++ _Behavior_
++ **Behavior**
++ *Behavior*
+
 ## Working with drafts
 
 Drafts are posts without a date.  They’re [posts][^key] you’re still working on and don’t want to publish yet. To get up and running with drafts, create a _drafts folder in your site’s root (as described in the site structure section) and create your first draft:

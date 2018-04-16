@@ -156,7 +156,8 @@ When I empty the dishwasher it is easier to just throw everything in the same cl
 + A domain model is so much more then the data. It is about behaviour. Don't use a data model for domain model.
 + Do not try to solve all the different problems with just one model. Yes, I know it is a bit more work at first. So is doing the dishes.
 
-**References**
+---
+_**References**_
 
 [^r]: _[Robert De Niro in Ronin](http://www.imdb.com/title/tt0122690/quotes/qt0248369)_
 [^1]: _[GUI architectures by Martin Fowler](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_

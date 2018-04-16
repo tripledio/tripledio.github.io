@@ -76,3 +76,4 @@ really slow resulting in bigger feedback loops.
 ## Conclusion
 I can honestly say that the quality of my test code has improved drastically. I love the fact that I can refactor code without breaking my test suite and if I did brake it,
 I'm sure that I've done something wrong, which is reassuring and gives me the confidence to play around with the code.
+---

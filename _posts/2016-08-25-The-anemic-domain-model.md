@@ -561,7 +561,7 @@ public class WalletTest {
 
 After this long explanation of the anemic domain model i hopefully have convinced you that it is not something you should strive for in an object oriented language. It really deserves the acronym **[POOP](https://www.allacronyms.com/POOP/Procedural_Object_Oriented_Programming)** [^10]. Where a proper Object Oriented implementation offers so much more...
 
-
+---
 **References**
 
 [^1]: _[The law of demeter](http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf)_

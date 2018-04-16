@@ -149,9 +149,8 @@ And
 
 *(Please don't)*
 
-***
-
-**Footnotes**
+---
+_**References**_
 
 [^1]: _[GUI architectures by Martin Fowler](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
 [^2]: _[Model View Controller in "Patterns of enterprise application" by Martin Fowler](https://www.martinfowler.com/eaaCatalog/modelViewController.html)_
