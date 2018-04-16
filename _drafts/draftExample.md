@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Example of a draft"
+title: "Draft Example"
 author: guido
 header-img: "img/about-bg.jpg"
 tags: java, software
-excerpt: This is just an example of a draft post. This is the exceprt> Don't place layout or markup here> Don't make it too long.
+excerpt: This is just an example of a draft post. This is the excerpt. Don't place layout or markup here> Don't make it too long.
 ---
 # The blog post main title
 

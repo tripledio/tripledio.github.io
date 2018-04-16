@@ -60,11 +60,11 @@ These different types of models also relate to each other. A domain model can be
 
 ( An application can exist out of multiple separate deployable parts but let's keep it simple for now and assume that one application equals one deployable.)  
 
-# The anti-patterns
+## The anti-patterns
 
 *a.k.a. things I wish people would stop doing*
 
-## a) Data model as domain model
+### a) Data model as domain model
 
 This one is simple. People call it their domain model but what they really mean is their data model represented in code. Preferably with an ORM to perform the translation. **But a domain model is not a data model.** When people talk about their domain model, I have obtained the reflex of probing what kind of model they are actually talking about. *Because a data model does not become a domain model because we start calling it that.* How the persisted data is modelled should not dictate how the domain is modelled. It is perfectly possible to have multiple domain models build upon the same data model. By which in *no way i am advocating sharing databases between applications.*
 
@@ -78,9 +78,9 @@ Unfortunately the above is the state that I encounter most of the Object oriente
 
 I fear that a lot of software engineers have never seen an actual domain model. Or experienced the benefits from it. Which makes this such a hard anti-pattern to fight. But lets hope that I'm wrong...
 
-## b) One model to rule them all
+### b) One model to rule them all
 
-### The pattern
+#### The pattern
 
 A practice that is often encountered *inside* an application is the use of a single model for *everything*. The data model is used for the domain model, for the api model... Regardless of the problem that needs to solved. One model for everything.
 
@@ -88,7 +88,7 @@ Obviously this goes hand in hand with the previous anti-pattern. If we have just
 
 To me this anti-pattern is one of the main drivers behind failing, late, over-budget software projects. The larger the software project, the larger the impact. The amount of time and money I've seen wasted by this pattern is infuriating.
 
-### When is a single model viable ?
+#### When is a single model viable ?
 
 For me the single model approach is only a viable approach in very, very rare cases. When the application is very, very small and lightweight. When it has a complexity that is so low, a functionality so simple and straightforward that anyone can grasp it immediately. An application so simple that it is very easy to change without running the risk of introducing any unwanted side effects.
 
@@ -114,7 +114,7 @@ Bring in the structure early. It is the most important attribute of software, bu
 </code></pre>
 
 
-### Using multiple models
+#### Using multiple models
 
 When the above conditions are *not* met, when there *are* clearly different responsibilities, different problems to be solved, different things to be modelled then I don't use the same model. Then I use a different model for each different layer.
 
@@ -124,7 +124,7 @@ By using different models inside an application I aim to
 + create a clear and simple solution for each problem
 + minimize the impact of potential problems
 
-### The argument against multiple models
+#### The argument against multiple models
 
 The main argument people give against using multiple models is that they need to provide mapping from one model to another. *Well boo F#&ng hoo.*
 
@@ -136,7 +136,7 @@ Another argument against mapping I often hear is that mapping results in a lot m
 
 When you have multiple models with different responsibilities they very rarely map 1:1 on each other. If it is just copying state from structure A to an identical structure B, something is wrong.  
 
-### Why are multiple models useful?
+#### Why are multiple models useful?
 
 When I empty the dishwasher it is easier to just throw everything in the same closet and be done with it. But I know it pays of to put the cups *together* near the coffee machine, to put the boards *together* close to the table, put the casseroles *together* near the cooking furniture and place the cutlery *together* in the drawer.
 
@@ -150,14 +150,13 @@ When I empty the dishwasher it is easier to just throw everything in the same cl
 
  In the software industry we can get away with sloppiness that we wouldn't be able to get away with in real life. Because unfortunately only developers look into code. If our mothers or spouses could see what we are doing in there, I'm willing to bet most code bases would look a whole lot better.
 
-
-# Conclusion
+## Conclusion
 
 + Beware of the ambiguous meaning of model. Be clear on which model you are working on and what its responsibilities are.
 + A domain model is so much more then the data. It is about behaviour. Don't use a data model for domain model.
 + Do not try to solve all the different problems with just one model. Yes, I know it is a bit more work at first. So is doing the dishes.
 
-**Footnotes**
+**References**
 
 [^r]: _[Robert De Niro in Ronin](http://www.imdb.com/title/tt0122690/quotes/qt0248369)_
 [^1]: _[GUI architectures by Martin Fowler](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
