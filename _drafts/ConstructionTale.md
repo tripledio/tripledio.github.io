@@ -63,7 +63,7 @@ So which one has the greater value? It is typically argued that behavior comes f
 
 In our day to day software development life the conflict between the two software values often comes in disguise. Allow me to list some of the ones i hear the most.
 
-### It works
+### The 'It works' argument
 
 The 'argument' that unfortunately too many developers give when they receive feedback or remarks on a delivered solution. 
 
@@ -96,6 +96,7 @@ The struggle between the function and the structure is not limited to our indust
 
 Of course this will always be a struggle. The functional deadline from the project versus the long term survival of the product. But this is exactly our responsibility as professional software engineers. To make sure that next to the functional requirements, we also need to implement the often not outspoken quality attributes. Of which maintainability is probably the most important one. 
 
+***
 _**References**_
 
 [^article]: [The article](http://www.standaard.be/cnt/dmf20170616_02928477)

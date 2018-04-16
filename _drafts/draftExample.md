@@ -8,10 +8,12 @@ excerpt: This is just an example of a draft post. This is the excerpt. Don't pla
 ---
 # The blog post main title
 
++ Behavior
 + __Behavior__
 + _Behavior_
 + **Behavior**
 + *Behavior*
+
 
 ## Working with drafts
 
@@ -25,6 +27,7 @@ To preview your site with drafts, simply run jekyll serve or jekyll build with t
 
 > We don't want to be a big company We want to be a _professional_ company.
 
+***
 **References**
 
 [^key]: _[DisplayValue](http://www.url.be)_
