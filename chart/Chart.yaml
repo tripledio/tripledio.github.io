@@ -1,0 +1,4 @@
+apiVersion: v1
+description: TripleD website
+name: tripled-website
+version: 1.0.0
