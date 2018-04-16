@@ -7,21 +7,19 @@ tags: DDD, Software development
 excerpt: In this blog post i will discuss the anemic domain model pattern in the context of an object oriented language. I'll explain what the anemic domain model is, what it isn't, how i view it. I'll make use of a code example written in java and tested with cucumber.
 ---
 
-In this blog post i will discuss the anemic domain model pattern in the context of an object oriented language. I'll explain what the anemic domain model is, what it isn't, how i view it. I'll make use of a code example written in java and tested with cucumber.
+# The anemic domain model
 
----
-
-## 1. Anemic domain model <a name="1"/>
-###  a. What is the anemic domain model <a name="1.a"/>
+## Anemic domain model
+###  What is the anemic domain model?
 The anemic domain model is a pattern for structuring a domain model. It separates the objects in the domain model into service objects and data objects. As a result the data objects class diagram looks like a model with all the necessary relationships, however they contain only the data and getters and setters methods. The logic that operates on that data is not present in the data object but resides in the service objects. The service objects are thus the opposite and complementary to the data objects. Obviously service objects contain no data but they operate on the data stored in the data objects. They contain all the logic and behaviour of the model. It is often linked to Domain Driven Design due to domain model in its name. But it is not necessary linked to DDD.
-### b. Where does the name come from? <a name="1.b"/>
+### Where does the name come from?
 It is called an anemic (pale, weak) domain model because it looks like an actual domain model but it's not. An actual domain model is a conceptual model of the problem domain that incorporates both behavior and data. By creating data objects and service objects but no real objects with behaviour there is no real model. Hence the term anemic domain model. The classes are there, it looks like they have meaningful relations. But it is a pale imitation of the real thing.
-### c. Is it bad? <a name="1.c"/>
+### Is it bad? 
 If we look at the definition of an object then it clearly states that an object contains encapsulated data and procedures grouped together. Since the anemic domain model pattern separates data and behaviour this conflicts with the original intent of OO. Thats why it is considered by many to be an Anti-pattern.
 
-## 2. The paperboy example <a name="2"/>
+## The paperboy example
 
-### a. Description <a name="2.a"/>
+### Paperboy description
 As an example for the anemic domain model we will use the paperboy example. The paperboy is an example that is often used to illustrate [the law of demeter](http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf). [^1] We have created a small code base implementation of the paperboy that can serve as an illustration of what an anemic domain model is. We will use it to illustrate what the disadvantages of the anemic domain model are and how can it be made into a real domain model. For those in a hurry, you can always look directly to the [code base](https://github.com/GuidoDechamps/Paperboy).  [^2]
 
 We will get into more detail on this example but for now here is the UML diagram of the domain model.
@@ -29,7 +27,7 @@ We will get into more detail on this example but for now here is the UML diagram
 ![Paper boy uml](/img/paperboy-uml.png)
 
 From this model you can deduce what the problem domain is for this application. Obviously it's about paperboys and their customers. Both have exactly one wallets and both have zero or one paper. So the intent of the domain is most likely for the paperboy to sell papers to its customers upon which money should be transferred from the customer to the paperboy wallet. All this seems obvious by the class diagram itself but as we will see, it is but a pale, anemic reflection of a real domain model.
-### b. The paperboy use cases <a name="2.b"/>
+### The paperboy use cases
 The simplest acceptance test for the paperboy example describes the required functionality. More acceptance tests can be found in the code example.
 
 __Scenario Outline__:
@@ -56,8 +54,8 @@ __Examples__
 
 
 For those unfamiliar with [Gherkin](https://cucumber.io/docs/reference)[^3] a short explanation of the above scenario. Each row of the table contains the values for the variables in the scenario. For the given scenario 6 tests, corresponding to the 6 rows in the table, are run.
-## 3. The paper boy as an anemic model <a name="3"/>
-### a. Model code <a name="3.a"/>
+## The paper boy as an anemic model
+### Anemic model code
 Below you will find the paperboy anemic model. The complete code can be found in the online [code base](https://github.com/GuidoDechamps/Paperboy). The dependencies for the code has been kept to a minimum. The production code only has a dependency on guava for its handy collection utilities. So just plain old java code from here on out.
 ```java
 
@@ -124,7 +122,7 @@ public class Wallet {
     }
 }
 ```
-### b. Code for delivery logic <a name="3.b"/>
+### Anemic model delivery logic code
 ```java
 public class PaperBoyRoundService {
 
@@ -153,9 +151,9 @@ public class PaperBoyRoundService {
 }
 ```
 
-## 4. Evaluation of the anemic domain model <a name="4"/>
-### a. Rules violated <a name="4.a"/>
-#### I. Tell don't ask <a name="4.a.i"/>
+## Evaluation of the anemic domain model
+### Rules violated in the anemic domain model
+#### I. Tell don't ask 
 Tell objects what you want them to do, don't take their state and make the decisions for them. It is clear that in the deliverPaper method the objects are asked for their state and we make a decision for them. This breaks encapsulation. This is inherent to the anemic domain model pattern. A service object will always ask an object for it's state and then act on it, rather then telling an object to do something.
 
 Martin Fowler:
@@ -166,21 +164,21 @@ Alec Sharp (Pragmatic programmers)
 >Procedural code gets information then makes decisions. Object-oriented code tells objects to do things.
 
 
-#### II. Law of Demeter <a name="4.a.ii"/>
+#### II. Law of Demeter 
 Simply put the law of Demeter boils down to objects only requiring limited knowledge about other units. They should only communicate with their immediate friends. Where the PaperBoyRoundService should just say "paperboy do your rounds". The deliverPaper method should just say "paperboy deliver to this customer". We see in the deliverPaper method that the service needs to know about the customer's wallet and that the wallet should contain the money for the paper. The service also needs to know all the internals of the PaperBoy class in order to it's work. The weird thing about this implementation is that we need to give the customers wallet to the paperboy who will then take out the required money from the wallet. Think of this example next time you are at a grocery store.
 
-#### III. Single responsibility principle <a name="4.a.iii"/>
+#### III. Single responsibility principle
 A class should have only one reason to change, a single responsibility. The single responsibility principle aims to achieve loosely coupled and highly cohesive classes. The logic concerning paperboy and customer is scattered. Apart from the fact that the PaperBoyRoundService shouldn't even exist (See later code), delivering a paper may be one responsibility in the current simple code. But we can easily add a milkman and a DeliverMilkService. The fact that a paperboy delivers paper, the milkman delivers milk and the customer buys something are three different responsibilities. If tomorrow the customer no longer has a wallet but uses his old socks to store his money, we need to change a lot of services. There are many reasons to change the DeliverService, the code is highly coupled since all the internals are exposed.
 
-### b. Code smells <a name="4.b"/>
+### Code smells in the anemic domain model
 A lot of the classic code smells can be found in an anemic domain model.
 
-#### I. Feature envy  <a name="4.b.i"/>
+#### I. Feature envy  
 When a method accesses most of another object’s data to do it’s job.
 ```java
 customer.getWallet().getMoney()
 ```
-#### II. Message chains or Train wrecks   <a name="4.b.ii"/>
+#### II. Message chains or Train wrecks 
 Long chained methods that make it hard to comprehend what happens. The fun realy starts when you have a nullpointer on that line.
 ```java
  customer.getWallet().setMoney(customer.getWallet().getMoney().subtract(unitPriceOfPaper));
@@ -215,16 +213,16 @@ public class PaperBoyRoundService {
 }
 ```
 
-#### III. Hybrids  <a name="4.b.iii"/>
+#### III. Hybrids 
 In Clean Code uncle Bob discusses train wrecks and hybrids as code smells. He also makes the clear distinction between two types of classes.
 >Objects expose behaviour and hide data. Data structures expose data and have no significant behaviour
 
 Using one for the other results in one of his code smells. See Clean code, Chapter 6: Objects and data structures
 
-#### IV. Mutable state  <a name="4.b.iv"/>
+#### IV. Mutable state
 Exposing the mutable data of your 'model' makes code very fragile, It is for example very vulnerable to null pointers. I for one do not want my application to crash. A null pointer to me is the result of a developer being lazy. By allowing other entities to mutate your state the code will be full with null checks. If something can never become null, you don't need to check it every time.
 
-#### V. No invariants  <a name="4.b.v"/>
+#### V. No invariants 
 By exposing all our data a class can not maintain an invariant over its content. If we look at our example an invariant for a customer would be that he may have lost money without obtaining a paper. For the paperboy it is the opposite. He may have lost a paper without having received money. These two invariants are maintained in the paperboyService.
 
 ```java
@@ -245,7 +243,7 @@ public class PaperBoyRoundService {
     }
 }
 ```
-### c. Appeal to authority <a name="4.c"/>
+### Appeal to authority against the anemic domain model
 Hopefully I made my case that the anemic domain model has several bad properties. But let's continue the argument *against* the anemic domain model by making an appeal to authority.
 
 [Fowler](http://www.martinfowler.com/bliki/AnemicDomainModel.html)  [^4]
@@ -263,7 +261,7 @@ Hopefully I made my case that the anemic domain model has several bad properties
 To be fair i quoted Greg rather selectively here. Because in the blog post he makes the case for when the anemic domain model is actually good. But i will address that in the next topic.
 
 
-### d. Advantages <a name="4.d"/>
+### Advantages of the anemic domain model
 So far i have given several disadvantages of the anemic domain model. But is it all bad? As with everything, the correct answer is: it depends.
 
 Let me refer back to [Greg Young's blog post](http://codebetter.com/gregyoung/2009/07/15/the-anemic-domain-model-pattern/) where he mentions the disadvantages of the anemic domain model. The topic of the blog post however was not against but for the anemic domain model. Greg was making the case when it can be appropriate to choose for the anemic domain model.
@@ -283,12 +281,12 @@ Imagine that in the paperboy example we add our milkman, garbage man, paperboy c
 
 Can you guarantee that when the domain starts to become more complex, you can still move away from the anemic domain model? Of will you end up with the classic bug ball of mud?
 
-#### E. My opinion <a name="4.e"/>
+#### My opinion 
 
 After creating the paperboy code i really want to publicly state my firm dislike of the anemic domain model. The amount of bugs and null pointers i encountered trying to make the simple paperboy anemic domain model pass the acceptance tests was just frustrating. All the things that can, and eventually always will, go wrong when everything is mutable and the logic is spread out is frustrating. The basic paperboy example only contains a single service. Consider adding the milk man, garbage man, paper boy limited capacity... Adding this extra functionality to the example would increase the likelihood for bugs even more. All the time that is lost on debugging, in getting it to work... Time you could have spent doing interesting things. And then once it finally works, you are afraid to touch it because it is so [fragile](https://zeroturnaround.com/rebellabs/object-oriented-design-principles-and-the-5-ways-of-creating-solid-applications/).  [^9] Thats why i made sure to have the acceptance test. So that i can safely refactor it into a proper domain model. So lets do that next.
 
-## 5. A real domain model <a name="5"/>
-### a. Refactor to model with behaviour <a name="5.a"/>
+## A real domain model 
+### Refactor towards a model with behaviour
 Now of course that is all fine and dandy but to Quote Linus: "Talk is cheap. Show me the code."  So lets refactor the original code from Paper boy anemic domain example. Since the code is of course covered by tests this is something i'm not afraid to do. Without tests i never would attempt to rewrite an anemic domain model. It would be a nullpointer slugfest. In order to refactor the anemic domain model i took the following steps:
 
 * removed the setters of all model objects.
@@ -296,7 +294,7 @@ Now of course that is all fine and dandy but to Quote Linus: "Talk is cheap. Sho
 * move the logic inside the objects.
 
 Here you can find the complete [code base](https://github.com/GuidoDechamps/Paperboy) for the example. It contains two branches. __master__ contains the anemic domain model, __real-model__ contains the refactorred model.
-### b. Advantages of the real model <a name="5.b"/>
+### Advantages of a real model 
 The advantages of this refactoring to a real domain model with behaviour are
 
 * **The removal of the PaperBoyRoundService and the LoadPaperService.** The logic now resides where it belongs. Inside the domain objects.
@@ -308,7 +306,7 @@ The advantages of this refactoring to a real domain model with behaviour are
 * **The domain object can be tested in isolation**
 
 Since these invariants/ business rules are now enforced it is easy to now write unit tests for the Customer, PaperBoy and Wallet. Of course we could have had unit test before before but since there was no behaviour it was rather pointless. Why would you want to test getters and setters?
-### c. The code of the real domain model <a name="5.c"/>
+### The code of the real domain model
 
 Below you can find the code of the real domain model that now enforces the invariants
 
@@ -473,7 +471,7 @@ public class Wallet {
 }
 ```
 
-### d. The domain model unit tests <a name="5.d"/>
+### The domain model unit tests
 Below you can find an simplified version of the unit tests for the real domain model. In the anemic domain model these were simply **not present** since there was no logic to be tested. In the real model there is real behaviour to be tested.
 
 __The Customer unit test__
@@ -559,46 +557,12 @@ public class WalletTest {
 ```
 
 
-Conclusion
----
+## Conclusion
 
 After this long explanation of the anemic domain model i hopefully have convinced you that it is not something you should strive for in an object oriented language. It really deserves the acronym **[POOP](https://www.allacronyms.com/POOP/Procedural_Object_Oriented_Programming)** [^10]. Where a proper Object Oriented implementation offers so much more...
 
-----------
 
-_**Table of Contents**_
-
-1. _[Anemic domain model](#1)_
-  + _[a. What is it](#1.a)_
-  + _[b. Where does the name come from](#1.b)_
-  + _[c. Is it bad](#1.c)_
-1. _[The paperboy example](#2)_
-  + _[a. Description](#2.a)_
-  + _[b. The paperboy use cases](#2.b)_
-1. _[The paper boy as an anemic model](#3)_
-  + _[a. Model code](#3.a)_
-  + _[b. Code for delivery logic](#3.b)_
-1. _[Evaluation of the anemic domain model](#4)_
-  + _[a. Rules violated](#4.a)_
-       + _[a.I Tell, don't ask](#4.a.i)_
-       + _[a.II Law of demeter](#4.a.ii)_
-       + _[a.III Single responsibility principle](#4.a.iii)_
-  + _[b. Code smells](#4.b)_
-       + _[b.I Feature envy](#4.b.i)_
-       + _[b.II Train wrecks](#4.b.ii)_
-       + _[b.III Hybrids](#4.b.iii)_
-       + _[b.IV Mutable state](#4.b.iv)_
-       + _[b.V No enforced invariants](#4.b.v)_
-  + _[c. Appeal to authority](#4.c)_
-  + _[d. Advantages](#4.d)_
-  + _[e. My opinion](#4.e)_
-1. _[A real domain model](#5)_
-  + _[a. Refactor](#5.a)_
-  + _[b. Advantages](#5.b)_
-  + _[c. Code of the real domain model](#5.c)_
-  + _[d. Unit tests](#5.d)_
-
-**Footnotes**
+**References**
 
 [^1]: _[The law of demeter](http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf)_
 [^2]: _[Paperboy example code base](https://github.com/GuidoDechamps/Paperboy)_
