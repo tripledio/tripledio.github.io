@@ -9,10 +9,14 @@
 
     {% include nav.html %}
 
-    {% if page.hideLogo %}
-        {% include post--spotlight-no-logo.html %}
+    {% if page.header-img %}
+        {% if page.hideLogo %}
+            {% include post--spotlight-no-logo.html %}
+        {% else %}
+            {% include post--spotlight.html %}
+        {% endif %}
     {% else %}
-        {% include post--spotlight.html %}
+        {% include post--spotlight-default.html %}
     {% endif %}
 
     <!-- Post Content -->
