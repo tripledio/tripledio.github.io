@@ -23,7 +23,7 @@
                                         <!-- Don't generate navigation for each generate page -->
                                             {% unless page.url contains '/page' %}
                                             <li>
-                                                <a href="{{ page.url | prepend: site.github.url | replace: 'http://', '//'  }}" {% if page.title == page.active %} class="active" {% endif %}>{{ page.title }}</a>
+                                                <a href="{{ page.url }}" {% if page.title == page.active %} class="active" {% endif %}>{{ page.title }}</a>
                                             </li>
                                             {% endunless  %}
                                         {% endif %}
