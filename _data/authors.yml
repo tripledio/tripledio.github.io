@@ -14,7 +14,7 @@ guido:
 kris:
     username: "kris"
     name: "Kris Hofmans"
-    bio: "Finds Software Development interesting, especially the ways people find to mess it up. Gets things deployed."
+    bio: "Finds Software Development interesting, especially the ways people find to mess it up. I awe of true craftsmanship and quality software. Things are only done when they are deployed, which should be quick, yes, even to production."
     location: "Belgium"
     image: "/img/authors/kris.jpg"
 gert:
