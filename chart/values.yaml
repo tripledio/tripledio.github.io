@@ -7,7 +7,6 @@ deployment:
     maxUnavailable: 50%
     maxSurge: 50%
 image:
-  repository: gitlab.example.com/group/project
   tag: stable
   pullPolicy: Always
   secrets:
@@ -16,10 +15,6 @@ application:
   track: stable
   tier: web
 service:
-  enabled: true
-  name: web
-  type: ClusterIP
-  url: http://my.host.com/
   externalPort: 5000
   internalPort: 5000
 resources:
