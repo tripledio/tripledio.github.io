@@ -4,7 +4,7 @@ author: guido
 title: What is domain driven design?
 header-img: "img/DDD-books.jpg"
 tags: DDD, Software development
-excerpt: Domain driven design, or DDD in short, is a term that was coined by Eric Evans in his of the same title. With the rise of the microservices architecture domain driven design has come back into the spotlights. It can easily be one of the buzz words that they throw at you during a job interview. Or a requirement for a certain job. But what is DDD exactly?
+excerpt: Ignoring the techniques and patterns, what is DDD exactly?
 ---
 # What is Domain Driven Design (DDD)?
 
@@ -18,9 +18,9 @@ According to the [ddd community](http://dddcommunity.org/learning-ddd/what_is_dd
 
 While the above is true, it sounds a bit to abstract and complex to my ears. So lets break it down.
 
-+ *Domain* : A business domain is an area of the business where certain problems are being addressed. It has a certain expertise associated with it. A business domain has goals and problems associated with it.
-+ *Driven* : Indicating the relation between the domain and the design. The domain is the driving force.
-+ *Design* : The **D** stands for design, not development. This may seem trivial but it is not. We want to intentionally *design* our software.
++ **Domain** : A business domain is an area of the business where certain problems are being addressed. It has a certain expertise associated with it. A business domain has goals and problems associated with it.
++ **Driven** : Indicating the relation between the domain and the design. The domain is the driving force.
++ **Design** : The **D** stands for design, not development. This may seem trivial but it is not. We want to intentionally *design* our software.
 
 ## My definition of DDD 
 
