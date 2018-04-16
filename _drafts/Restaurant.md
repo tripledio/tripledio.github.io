@@ -1,4 +1,10 @@
-
+---
+layout: post
+author: guido
+title: Draft Restaurant
+header-img: "img/about-bg.jpg"
+excerpt: Musings on Software explained by a restaurant metaphor
+---
 ##Explaining software
 ####.. to your grandma
 Software development is hard. It's a complex undertaking with lots of people, there is always more to learn, making it hard to keep up. And it's also hard to explain to non technical people what we are doing and why it is taking so long :)

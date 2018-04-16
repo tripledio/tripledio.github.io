@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "History"
+title: "Draft History"
 description: "Why did we founded Triple D?"
 header-img: "img/about-bg.jpg"
-excerpt: This is just an example of a draft post.
+excerpt: The history fo Triple D.
 ---
 
 # Our History

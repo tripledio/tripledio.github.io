@@ -6,13 +6,13 @@ header-img: "img/posts/constructionTale/buildings.jpg"
 tags: architecture, software
 excerpt: A construction tale. A tale of two values of software. Functionality and Architecture. 
 ---
-# Intro
+# A construction tale
 
 In the software industry, the metaphor that is probably used the most for explaining things is the construction of buildings. A lot of our terminology also relates to it. Building, architect, architecture, design, engineer. Unfortunately it is also all too often that the metaphor falls short and doesn't really address the problem sufficiently. But recently there was an story in the news concerning problems with some of the recent constructed buildings in Brussel, it stayed with me. It sounded very familiar. Because that real life story seemed to me to be an excellent example of one of the well known problems that plagues software development. So bare with me for yet another construction tale.
 
-# A real life construction tale
+## A real life construction tale
 
-## Throw away real estate
+### Throw away real estate
 
 The article [^article] that stuck with me reported on the fact that buildings that were merely 20 years old needed to be demolished again. Apparently in Brussels there were plenty of throw-away buildings. A lot of then payed for by the government. 
 
@@ -24,7 +24,7 @@ A lot of architects and European civil servants realize that this needs to chang
 
 The article remarks that it is the job of the architect to "build for eternity". To take into account that the original purpose can and will change. A good architecture makes it possible to easily perform modifications in the future. The components used in building could even possible be reused if they aren't glued (literally) together.
 
-## The lesson 
+### The lesson 
 
 What is the lessons that we can take away form that news story? Let's break it down.
  
@@ -32,11 +32,11 @@ The buildings that where constructed did what they were supposed to do. They wer
 
 There is a conflict between what is functional required on the short term and what is durable in the long term.
  
-# Software Industry
+## Software Industry
  
 By now it is probably obvious where I'm going with this. Because in the software industry we are constantly fighting the same fight. The paragraph from the article that describes the role of an architect could just as well apply to a software architect, whatever that may be ;). The conflict between the functional and the durable is also one that is very well known. 
 
-## Behavior vs Structure
+### Behavior vs Structure
 
 In [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?ie=UTF8&qid=1522254141&sr=8-1&keywords=clean+architecture) [^CleanArch]
  chapter two, "A tale of two values", Uncle Bob discusses this exact conflict. 
@@ -45,25 +45,25 @@ In [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Sof
  * behavior - a.k.a. functionality
  * structure - a.k.a. architecture
  
-### Behavior
+#### Behavior
 
 A software system should do what it is supposed to do. That is why software engineers are hired. Make something that can do X. That is the first value of the system, it's behavior. Unfortunately many developers think that this the entirety of their job.
  
-### Structure
+#### Structure
 
 Software should be easy to change, it needs to be able to grow. That is why it's structure is of great value. When software is no longer 'soft', if its structure prevents it from change, then it is not durable. Even though it may have the correct behavior now. 
 
-### Greater Value 
+#### Greater Value 
 
 So which one has the greater value? It is typically argued that behavior comes first. It has to work above all else. Otherwise it is useless right? But if something is wel structured and easy to change, it is easy to modify it so that it does work. The reverse is not true. If you get something that is badly structured, and somehow managed to get it to work properly, it has a very low life expectancy since it is so hard to chance. 
 
 > The longer you want your software to be useful, the greater the value of a proper structure is.
 
-## The conflict in disguise
+### The conflict in disguise
 
 In our day to day software development life the conflict between the two software values often comes in disguise. Allow me to list some of the ones i hear the most.
 
-## It works
+### It works
 
 The 'argument' that unfortunately too many developers give when they receive feedback or remarks on a delivered solution. 
 
@@ -76,7 +76,7 @@ But as Uncle Bob stated in his classic book [Clean Code](https://www.amazon.com/
 The functional value can be obtained. But that doesn't mean that the structural value has been obtained.
 
  
-## It's agile
+### It's agile
 
 Under the argument that one should not overdesign and build too much up front, it is argued that one only builds the bare minimum. We're being agile. But that seems like a straw man argument to me.
 
@@ -88,7 +88,7 @@ If his is not the case, then we're not being very agile. In fact by accumulating
 
 So please don't use agile as an excuse for writing rigid software. Agile has enough troubles as it is.
 
-# Conclusion
+## Conclusion
 
 The struggle between the function and the structure is not limited to our industry. When somethings needs to change in the future then the structure needs to be able to support this. Since this is something that lies further in the future than the functionality the structure is often neglected. 
 

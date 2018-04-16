@@ -2,7 +2,10 @@
 layout: post
 author: guido
 header-img: "img/about-bg.jpg"
+title: Draft DDD for everyone
+excerpt: The usefullnes of DDD
 ---
+
 Why Domain Driven Design?
 ------------------
 Domain driven design is an approach for **designing** _quality software_ where the **domain** is the **driving** force. It enables us to solve complex business problems in an elegant and sustainable manner. 

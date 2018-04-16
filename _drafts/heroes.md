@@ -1,13 +1,15 @@
 ---
 layout: post
 author: guido
+title: "Draft heroes"
 header-img: "img/posts/wildwest/ww.jpg"
+excerpt: In this post I would like to talk about a certain type of developer a lot of us probably aspire to be at one point in our career. A type of developer that is often well respected and revered by his peers. And one that is often well known by whatever management there is in place. 
 ---
-# Intro
+# Heroes
 
 In this post I would like to talk about a certain type of developer a lot of us probably aspire to be at one point in our career. A type of developer that is often well respected and revered by his peers. And one that is often well known by whatever management there is in place. 
 
-# Heroes
+# The hero developer
 
 Something I noticed in almost every company I worked at is that there are always one or more **hero** developers. These hero developers are developers that are known for
 
