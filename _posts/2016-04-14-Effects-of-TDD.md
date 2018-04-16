@@ -74,6 +74,5 @@ they should be used to mock out infrastructural parts of your applications, or p
 really slow resulting in bigger feedback loops.
 
 ## Conclusion
-Although I don't have that much experience with TDD, I can honestly say that the quality of my test code has
-improved drastically. I love the fact that I can refactor code without breaking my test suite. If I did brake it,
+I can honestly say that the quality of my test code has improved drastically. I love the fact that I can refactor code without breaking my test suite and if I did brake it,
 I'm sure that I've done something wrong, which is reassuring and gives me the confidence to play around with the code.
