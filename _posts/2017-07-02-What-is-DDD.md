@@ -26,7 +26,9 @@ While the above is true, it sounds a bit to abstract and complex to my ears. So 
 
 So given the above definitions i will give you my 'own' definition of DDD.
 
-**Domain driven design is the _goal_ of _designing_ tailor made solutions for problems that are specific to given business _domains_.**
+```text
+Domain driven design is the _goal_ of _designing_ tailor made solutions for problems that are specific to given business _domains_.**
+```
 
 To me DDD is about striving to **design** _quality software_ where the **driving** force is a specific **domain**. I see DDD as a goal. Something we want to achieve. While there are many different techniques to achieve this goal, the techniques in itself aren't the goal. Nor does a technique in itself guarantee that the goal will be reached.
 
@@ -52,7 +54,7 @@ The goal is to have quality software _where it matters the most_. DDD contains t
 
 ## Conclusion
 
-I hope to have elaborated in this short post what DDD is for me. I intentionally did not dive into the many different concepts and techniques that exist within the DDD community. I thought it was important to first make the clear distinction between the goal (DDD) and the means to achieve that goal.
+I hope to have elaborated in this short post what DDD is for me. A goal. Not a technique. I intentionally did not dive into the many different concepts and techniques that exist within the DDD community. I thought it was important to make the clear distinction between the goal (DDD) and the means to achieve that goal.
 
 _**References**_
 
