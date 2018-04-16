@@ -73,12 +73,12 @@
             <div class="row pb-4">
                 <div class="col-6 previous text-left">
                     {% if page.previous.url %}
-                    <a href="{{ page.previous.url |  replace: 'http://', '//' }}" class="btn btn-primary">&larr; Newer Posts</a>
+                    <a href="{{ page.previous.url |  replace: 'http://', '//' }}" class="btn btn-primary">&larr; Previous Post</a>
                     {% endif %}
                 </div>
                 <div class="col-6 next text-right">
                     {% if page.next.url %}
-                    <a href="{{ page.next.url |  replace: 'http://', '//' }}" class="btn btn-primary">Older Posts &rarr;</a>
+                    <a href="{{ page.next.url |  replace: 'http://', '//' }}" class="btn btn-primary">Next Post &rarr;</a>
                     {% endif %}
                 </div>
             </div>

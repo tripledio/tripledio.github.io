@@ -1,11 +1,13 @@
 ---
 layout: post
 author: domenique
+header-img: "img/spotlight-home.jpg"
 excerpt: "The last couple of years I've noticed a shift in peoples viewpoint towards testing and in particular unit testing.
 5 years ago, I was doing projects and no one even mentioned the word unit testing. Nowadays,
 everyone wants to do unit testing in some form. Some projects in which I was involved required 100% code coverage,
 other's put the mark at 80%. I've never been that enthusiastic about any number, but the point is that we are doing some form of testing, be it TDD or testing after the facts."
 ---
+# Effects of TDD
 The last couple of years I've noticed a shift in peoples viewpoint towards testing and in particular unit testing.
 5 years ago, I was doing projects and no one even mentioned the word unit testing. Nowadays,
 everyone wants to do unit testing in some form. Some projects in which I was involved required 100% code coverage,
@@ -18,7 +20,7 @@ either the test suite is too slow, or the tests are testing such a small part of
 that it does not give me the confidence that the application as a whole is working as it was intended.
 Furthermore, most test suites I've come across seem to lack one more thing: **describing the behaviour of the code in an expressive way**.
 
-# Some of the testing strategies and their implications
+## Some of the testing strategies and their implications
 Most often, I see people employing the **one-test-method-per-public-method** strategy.
 I guess that the reason that this strategy is seen the most is because most IDE's propose you to create
 the skeleton for this automatically given that you already implemented the code. Usually,
@@ -51,7 +53,7 @@ out of one of those methods, you are in for a painful afternoon. If you're out o
 big and has a lot of branches, you are set to adapt 10, 20 tests, and guess what, you didn't even change anything on a functional level.
 The main reason for this is because your tests are highly coupled to your implementation.
 
-# Blackbox vs Whitebox testing
+## Blackbox vs Whitebox testing
 **Blackbox** testing implies that you test the output of a piece of functionality by giving it some
 input **without knowing anything about the internal workings** of functionality.
 **Whitebox** testing is the inverse, it's like **pouring concrete over your implementation**, it makes sure
@@ -71,7 +73,7 @@ frameworks. While they serve their purpose in some circumstances, they are usual
 they should be used to mock out infrastructural parts of your applications, or pieces of functionality which tend to be
 really slow resulting in bigger feedback loops.
 
-# Conclusion
+## Conclusion
 Although I don't have that much experience with TDD, I can honestly say that the quality of my test code has
 improved drastically. I love the fact that I can refactor code without breaking my test suite. If I did brake it,
 I'm sure that I've done something wrong, which is reassuring and gives me the confidence to play around with the code.

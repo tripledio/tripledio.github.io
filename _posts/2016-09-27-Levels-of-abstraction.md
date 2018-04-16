@@ -2,9 +2,9 @@
 layout: post
 author: domenique
 header-img: "img/levelsofabstraction.jpg"
-disqus: true
 excerpt: Writing code is all about abstractions, they help us grasp the complexity of the code by hiding low level details from high level concepts. The key to readable code lies in grouping the right level of abstraction in the same unit of code.
 ---
+# Levels of abstraction
 Writing code is all about abstractions, they help us grasp the complexity
 of the code by hiding low level details from high level concepts.
 The key to readable code lies in grouping the right level of abstraction in the same unit of code.
