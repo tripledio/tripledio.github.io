@@ -45,15 +45,15 @@ In [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Sof
  * behavior - a.k.a. functionality
  * structure - a.k.a. architecture
  
-#### Behavior
+**Behavior**
 
 A software system should do what it is supposed to do. That is why software engineers are hired. Make something that can do X. That is the first value of the system, it's behavior. Unfortunately many developers think that this the entirety of their job.
  
-#### Structure
+**Structure**
 
 Software should be easy to change, it needs to be able to grow. That is why it's structure is of great value. When software is no longer 'soft', if its structure prevents it from change, then it is not durable. Even though it may have the correct behavior now. 
 
-#### Greater Value 
+**Greater Value**
 
 So which one has the greater value? It is typically argued that behavior comes first. It has to work above all else. Otherwise it is useless right? But if something is wel structured and easy to change, it is easy to modify it so that it does work. The reverse is not true. If you get something that is badly structured, and somehow managed to get it to work properly, it has a very low life expectancy since it is so hard to chance. 
 
@@ -96,7 +96,7 @@ The struggle between the function and the structure is not limited to our indust
 
 Of course this will always be a struggle. The functional deadline from the project versus the long term survival of the product. But this is exactly our responsibility as professional software engineers. To make sure that next to the functional requirements, we also need to implement the often not outspoken quality attributes. Of which maintainability is probably the most important one. 
 
-**References**
+_**References**_
 
 [^article]: [The article](http://www.standaard.be/cnt/dmf20170616_02928477)
 [^CleanCode]: [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
