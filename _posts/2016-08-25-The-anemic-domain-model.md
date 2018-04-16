@@ -153,7 +153,7 @@ public class PaperBoyRoundService {
 
 ## Evaluation of the anemic domain model
 ### Rules violated in the anemic domain model
-#### Tell don't ask 
+#### I. Tell don't ask 
 Tell objects what you want them to do, don't take their state and make the decisions for them. It is clear that in the deliverPaper method the objects are asked for their state and we make a decision for them. This breaks encapsulation. This is inherent to the anemic domain model pattern. A service object will always ask an object for it's state and then act on it, rather then telling an object to do something.
 
 Martin Fowler:
@@ -164,10 +164,10 @@ Alec Sharp (Pragmatic programmers)
 >Procedural code gets information then makes decisions. Object-oriented code tells objects to do things.
 
 
-#### Law of Demeter 
+#### II. Law of Demeter 
 Simply put the law of Demeter boils down to objects only requiring limited knowledge about other units. They should only communicate with their immediate friends. Where the PaperBoyRoundService should just say "paperboy do your rounds". The deliverPaper method should just say "paperboy deliver to this customer". We see in the deliverPaper method that the service needs to know about the customer's wallet and that the wallet should contain the money for the paper. The service also needs to know all the internals of the PaperBoy class in order to it's work. The weird thing about this implementation is that we need to give the customers wallet to the paperboy who will then take out the required money from the wallet. Think of this example next time you are at a grocery store.
 
-#### Single responsibility principle
+#### III. Single responsibility principle
 A class should have only one reason to change, a single responsibility. The single responsibility principle aims to achieve loosely coupled and highly cohesive classes. The logic concerning paperboy and customer is scattered. Apart from the fact that the PaperBoyRoundService shouldn't even exist (See later code), delivering a paper may be one responsibility in the current simple code. But we can easily add a milkman and a DeliverMilkService. The fact that a paperboy delivers paper, the milkman delivers milk and the customer buys something are three different responsibilities. If tomorrow the customer no longer has a wallet but uses his old socks to store his money, we need to change a lot of services. There are many reasons to change the DeliverService, the code is highly coupled since all the internals are exposed.
 
 ### Code smells in the anemic domain model
