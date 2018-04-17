@@ -2,6 +2,7 @@
 layout: post
 title: "A construction tale"
 author: guido
+hideLogo: true
 header-img: "img/posts/constructionTale/buildings.jpg"
 tags: architecture, software
 excerpt: "A tale of the two values of software: Functionality and Architecture."
