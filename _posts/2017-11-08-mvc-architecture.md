@@ -4,13 +4,13 @@ title: "The MVC-architecture"
 author: guido
 hideLogo: true
 header-img: "img/mvc-books.png"
-excerpt: In a previous post I ranted a bit about the ambiguous use of the term model in the software industry. In this post i would like to  address another famous model, namely the model from MVC.
+excerpt: A discussing about MVC, the model from MVC and the MVC - architecture.
 ---
 # The MVC Architecture
 
 ## The M in MVC
 
-In a [previous](/07/11/2017/model-anti-patterns/)  [^map] post I ranted a bit about the ambiguous use of the term model in the software industry. In this post i would like to  address another famous model, namely the model from MVC.
+In the [model-anti-patterns](/07/11/2017/model-anti-patterns/)  [^map] post I ranted a bit about the ambiguous use of the term model in the software industry. In this post i would like to  address another famous model, namely the model from MVC.
 
 ## Model, View, Controller... But which model?
 
@@ -56,7 +56,7 @@ I think this combination gave rise to MVC as an architecture pattern. Which ofte
 
 In my earlier post [^map] I talked about the classic three tier architecture.
 
-![Classic layers](/img/classic-layers.png){:height="100%" width="100%":class="img-responsive"}
+![Classic layers](/img/classic-layers.png)
 
 
   Layer|Responsibility|
@@ -67,7 +67,7 @@ In my earlier post [^map] I talked about the classic three tier architecture.
 
 This generic architecture has the same goal as the MVC pattern, namely *separation of concerns*. Since both of them consist out of three elements, it is just a small step to think that they are related. Which, in my eyes, gives rise to a much encountered view that I call the MVC - architecture.
 
-![MVC-architecture](/img/mvc-architecture.png){:height="100%" width="100%":class="img-responsive"}
+![MVC-architecture](/img/mvc-architecture.png)
 
 
  Layer|MVC |Component|Responsibility|
@@ -107,7 +107,7 @@ I do **not** use my domain model as the model for MVC. The model for the view la
 
 So what does this look like? Let's put some more detail in our simple three tier architecture, moving into a hexagonal architecture.
 
-![MVC is a pattern for the front end](/img/mvc-frontend.png){:height="80%" width="80%":class="img-responsive"}
+![MVC is a pattern for the front end](/img/mvc-frontend.png)
 
 Here the UI layer has changed into a front end infrastructure layer, Supporting more than just the UI. The UI is an adapter like the rest api is. They both use the application use cases api. They both are just clients.
 
@@ -149,9 +149,8 @@ And
 
 *(Please don't)*
 
-***
-
-**Footnotes**
+---
+_**References**_
 
 [^1]: _[GUI architectures by Martin Fowler](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
 [^2]: _[Model View Controller in "Patterns of enterprise application" by Martin Fowler](https://www.martinfowler.com/eaaCatalog/modelViewController.html)_

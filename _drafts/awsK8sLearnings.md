@@ -1,14 +1,9 @@
 ---
 layout: post
-title: "Example of a draft"
+title: "Draft AWS - K8s"
 author: guido
 header-img: "img/about-bg.jpg"
 tags: java, software
-excerpt: This is just an example of a draft post.
+excerpt: Learning AWS.
 ---
-
-
-:e-mail: info@tripled.io
-{{ page.title | smartify }}
-
-Length {{ page.content | number_of_words }} words
+# Learning AWS - K8s

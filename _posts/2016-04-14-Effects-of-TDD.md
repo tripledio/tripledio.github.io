@@ -1,11 +1,9 @@
 ---
 layout: post
+title: The effects of TDD
 author: domenique
 header-img: "img/spotlight-home.jpg"
-excerpt: "The last couple of years I've noticed a shift in peoples viewpoint towards testing and in particular unit testing.
-5 years ago, I was doing projects and no one even mentioned the word unit testing. Nowadays,
-everyone wants to do unit testing in some form. Some projects in which I was involved required 100% code coverage,
-other's put the mark at 80%. I've never been that enthusiastic about any number, but the point is that we are doing some form of testing, be it TDD or testing after the facts."
+excerpt: "What are the effects of TDD?"
 ---
 # Effects of TDD
 The last couple of years I've noticed a shift in peoples viewpoint towards testing and in particular unit testing.
@@ -76,3 +74,4 @@ really slow resulting in bigger feedback loops.
 ## Conclusion
 I can honestly say that the quality of my test code has improved drastically. I love the fact that I can refactor code without breaking my test suite and if I did brake it,
 I'm sure that I've done something wrong, which is reassuring and gives me the confidence to play around with the code.
+---

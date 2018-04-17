@@ -1,7 +1,9 @@
 ---
 layout: post
 author: guido
+title: "Draft Divide and conquor"
 header-img: "img/about-bg.jpg"
+excerpt: Applying DDd on a strategic level
 ---
 
 ### Introduction
