@@ -3,7 +3,7 @@ layout: post
 title: "Model anti-patterns"
 author: guido
 header-img: "img/old_train_model.jpg"
-excerpt: "A post about model patterns" 
+excerpt: "About model patterns and anti-patterns" 
 ---
 # Model anti-patterns
 

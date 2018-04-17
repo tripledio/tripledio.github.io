@@ -23,7 +23,7 @@ docker start triple-D-blog
 ``` 
 ### Generate site with drafts
  
-If you like to start writing posts as a draft, avoiding the risk that they are rendered as post before they are finished, you simply start your post n the _drafts folder. 
+If you like to start writing posts as a draft, avoiding the risk that they are rendered as post before they are finished, you simply start your post in the _drafts folder. 
 
 To let jekyll generate the site with the drafts included, we must specify the drafts option. For this we need to override the docker run command so that the site is generated with drafts.
 

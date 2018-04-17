@@ -4,7 +4,7 @@ author: guido
 title: The anemic domain model
 header-img: "img/anemicDomainModel.jpg"
 tags: DDD, Software development
-excerpt: In this blog post i will discuss the anemic domain model pattern in the context of an object oriented language. I'll explain what the anemic domain model is, what it isn't, how i view it. I'll make use of a code example written in java and tested with cucumber.
+excerpt: A discussion about the anemic domain model pattern in the context of an object oriented language. 
 ---
 
 # The anemic domain model
@@ -561,7 +561,7 @@ public class WalletTest {
 
 After this long explanation of the anemic domain model i hopefully have convinced you that it is not something you should strive for in an object oriented language. It really deserves the acronym **[POOP](https://www.allacronyms.com/POOP/Procedural_Object_Oriented_Programming)** [^10]. Where a proper Object Oriented implementation offers so much more...
 
----
+******
 **References**
 
 [^1]: _[The law of demeter](http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf)_

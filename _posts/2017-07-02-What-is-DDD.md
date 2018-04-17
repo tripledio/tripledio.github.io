@@ -4,7 +4,7 @@ author: guido
 title: What is domain driven design?
 header-img: "img/DDD-books.jpg"
 tags: DDD, Software development
-excerpt: Ignoring the techniques and patterns, what is DDD exactly?
+excerpt: Tackling complexity in the heart of software. But what is DDD exactly?
 ---
 # What is Domain Driven Design (DDD)?
 

@@ -4,7 +4,7 @@ title: "The MVC-architecture"
 author: guido
 hideLogo: true
 header-img: "img/mvc-books.png"
-excerpt: In this post i would like to address a famous model, namely the model from MVC.
+excerpt: A discussing about MVC, the model from MVC and the MVC - architecture.
 ---
 # The MVC Architecture
 
