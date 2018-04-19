@@ -2,7 +2,7 @@
 layout: post
 title: "A construction tale"
 author: guido
-hideLogo: true
+hideLogo: false
 header-img: "img/posts/constructionTale/buildings.jpg"
 tags: architecture, software
 excerpt: "A tale of the two values of software: Functionality and Architecture."
@@ -61,13 +61,13 @@ So which one has the greater value? It is typically argued that behaviour comes 
 
 > The longer you want your software to be useful, the greater the value of a proper structure is.
 
-So it depends on what you are building and with which goal. Also take in mind on which value people are evaluated. A project manager is typically evaluated on getting 'it' done within time and budget. which is of course the functional requirement. The other requirement are often sacrificed because they are not visible and there is no reward for them.
+So it depends on what you are building and with which goal. Also take in mind on which value people are evaluated. A project manager is typically evaluated on getting 'it' done within time and budget. Which is of course the functional requirement. The other requirements are often sacrificed because they are not visible and there is no reward for them.
 
 ### The conflict in disguise
 
 This conflict may seem abstract but it is one that you'll encounter again and again every day in software development albeit in disguise. Allow me to list some of the arguments that I hear the most, which are basically the same conflict but rephrased.
 
-* __The 'It works' argument__
+* __a) The *'It works'* argument__
 
     The 'argument' that unfortunately too many developers give when they receive feedback or remarks on a delivered solution.
 
@@ -75,7 +75,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
 
     Well i sure hope so. This is the minimum requirement. When something is _finished_ we expect it to work. But as Uncle Bob stated in his classic book [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) [^CleanCode]  : __"It is not enough for code to work"__.  The functional value can be obtained. But that doesn't mean that the structural value has been obtained.
 
-* __The 'It's agile' argument__
+* __b) The *'It's agile'* argument__
 
     Under the argument that one should not over-design and build too much up front, it is argued that one only builds the bare minimum. We're being agile. But that seems like a straw man argument to me. No one said that you should over design, or do work not needed. But the whole idea of being agile is that we are still able to adapt in the future. Being agile means being able to adapt. Neglecting the structure of the software prevents this. Designing software well means designing it for future change. It does not mean designing it for every eventuality.
 
@@ -85,12 +85,55 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
 
     So please don't use agile as an excuse for writing rigid software. Agile has enough troubles as it is.
 
-### TODO: any ideas for other arguments we hear a lot?
+* __c) The *'We'll fix it later'* argument__
 
-_DOMI_: The 'P' word? let's be pragmatic about this?
-We'll fix it in v2 ?
-This is only a temporary solution.
+    This one comes in many forms. Often under the pretence of temporary postponing correcting the structure the functionality gets priority. Of course we all know that later never comes. It can not be that by adding new functionality we have endangered future modifications. No one wants to cripple themselves.
+    
+    That is not to say that you can not consciously give one value higher priority over another. But it should be a very clear, well documented decision that the team is aware of. The structural defect should be clearly logged as technical debt and fixed a.s.a.p. _It should be the exception!_  
+    
+    Placing the technical debt as a separate story on the back log is not acceptable. Because it is not a story in itself. You may not separate the functional form the structural, a story is a whole. When the investors ordered the construction of the building, they expected it to last for a whole lot longer then 20 years. The initial functional value was delivered. But they got sc##d on the structural, long lasting value.
+        
 
+* __d) The *'Let's be pragmatic'* argument__
+
+    Ach, the P argument. I have heard this one so many times that now whenever i hear the 'pragmatic' argument, i automatically translate it to: *"Let's just hack it together so we can make our deadline and go home."* Because so often that is exactly what was meant. It is used to imply that paying attention to the structural value is overdesign. That you don't need it yet. Under the disguise of being 'pragmatic', calm and reasonable it is implied that we shouldn't worry about it yet and focus on the functionality and deadline instead. Claiming that the functional has higher value then the structural.    
+   
+    
+* __e) The *'overdesign' argument.__
+
+    This one comes in several forms. 
+    * We aren't Google!
+    * Too many modules.
+    * Too many layers.
+    * Too many classes.
+    * Too complex!
+    * ...
+    
+     Since there is of course something to say about overdesign, let's address it here. Obviously you should not overdesign. Of course not. You are overdesigning when you are using patterns for patterns sake, abstracting things that will never need to be abstracted in the future. So it is context dependent. Who knows what the future will bring? But the whole point of paying attention to the structure is that there can be a future. A future to which we can easily adapt. If we have made things overly complex, if we have overdesigned, then we have also endangered the structural value.
+     
+     But more classes, modules, layers does not automatically mean more complex. On the contrary, we introduce those boundaries (classes, modules, layers) to make things more simpler. By not throwing everything together in one big ball of mud we are making the software easier to change. It is not the number of classes, modules, layers,... that matters. It is their responsibilities.
+     
+     To me this argument often just is a strawman attack. It all to often comes down to the "too much work" argument.     
+  
+
+* __f) The *'business wants it now!'* argument__
+
+    Of course they do. We all would like to have what we want as fast as possible and as cheap as possible. But what is it that the customer want exactly? The functionality and the deadline being met. Sure. And how long to they want to use the delivered software? Is it ok if the usefulness of the delivered software comes to a grinding halt in the veyr near future? Making it very expensive to use and maintain? Look beyond the deadline. What are they willing to give up to make the deadline? And by 'they' i mean the paying customer who is paying for it and will be using it. Not some manager in between who will no longer be there and/or will not bare the consequences of what is delivered. Like i said before it is only natural that those managers are focused on the deadlines. That is what they are evaluated on. But it is your name in the code.
+    
+      Please also note that having proper structure is not that much additional work. It will even let you go faster. But it does require some thought of course.
+   
+* __g) The *'too much work'* argument.
+
+    This argument is saddening but at least it is honest. When you drill down on the previous arguments you often end up here. Doing a proper job does require some work. Coming up with a good architecture, a good design does require some thought. Typing the code is never the bottleneck. You should be glad when you hear this 'argument'. Because it is a mindset that is finally made clear. At least then you know what is going on and how the software is being written. Other then looking at the code. 
+    
+    Fear the code where this mindset is present. If this sentiment rules the developers mind you will end up with software that is hard to maintain, difficult to adapt and that will need to be rewritten soon as a result of changing requirements.
+     
+    No matter how much planning, design is done, in the end the truth lies in the code. If no attention is payed to the structure of the code *at development time* you'll end up with very expensive, unmaintainable software. No amount of documents, meetings can prevent this. It is completely in the hands of the engineers that are actually writing the code.
+    
+    Unfortunately I am afraid that this mentality is all too common in the IT world. Since all to often it is only the developers that actually see the code where the actual truth lies about the structure of the code. That is why I fear that the design of a software system is primarily determined by the convenience of software engineers at development time. Being able to deliver value for the customers in the future has a much lower priority than moving a ticket to 'done' now. The functional value is what they are being payed for. The customer doesn't see or understand the lacking structure of the software.
+    
+    So in many cases it is the same story as with project managers. Software engineers are evaluated on getting the job done. Delivering functionality on time. The structure is invisible for non technical people. Nor do they care. Until the shit hits the fan. But then we can of course blame all our predecessors....
+    
 ## Conclusion
 
 The struggle between the function and the structure is not limited to our industry. When some things needs to change in the future then the structure needs to be able to support this. Since this is something that lies further in the future than the functionality,  it is often neglected.
@@ -98,6 +141,8 @@ The struggle between the function and the structure is not limited to our indust
 > If we want to build something that lasts, we need to pay careful attention to the structure
 
 Of course this will always be a struggle. The functional deadline from the project versus the long term survival of the product. But this is exactly our responsibility as professional software engineers. To make sure that next to the functional requirements, we also need to implement the often not outspoken quality attributes. Of which maintainability is probably the most important one.
+
+Unfortunately I would dare to say that most people do not care about the structure of the code. The quality attributes are often subservient to some deadline someone cooked up. The problem is that software doesn't collapse immediately. It sometimes takes years before it explodes. But when it inevitably does..
 
 ***
 _**References**_
