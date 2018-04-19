@@ -73,7 +73,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
 
     > _"But it works!"_.
 
-    Well i sure hope so. This is the minimum requirement. When something is _finished_ we expect it to work. But as Uncle Bob stated in his classic book [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) [^CleanCode]  : __"It is not enough for code to work"__.  The functional value can be obtained. But that doesn't mean that the structural value has been obtained.
+    Well I sure hope so. This is the minimum requirement. When something is _finished_ we expect it to work. But as Uncle Bob stated in his classic book [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) [^CleanCode]  : __"It is not enough for code to work"__.  The functional value can be obtained. But that doesn't mean that the structural value has been obtained.
 
 * __b) The *'It's agile'* argument__
 
@@ -96,7 +96,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
 
 * __d) The *'Let's be pragmatic'* argument__
 
-    Ach, the P argument. I have heard this one so many times that now whenever i hear the 'pragmatic' argument, i automatically translate it to: *"Let's just hack it together so we can make our deadline and go home."* Because so often that is exactly what was meant. It is used to imply that paying attention to the structural value is overdesign. That you don't need it yet. Under the disguise of being 'pragmatic', calm and reasonable it is implied that we shouldn't worry about it yet and focus on the functionality and deadline instead. Claiming that the functional has higher value then the structural.    
+    Ach, the P argument. I have heard this one so many times that now whenever I hear the 'pragmatic' argument, I automatically translate it to: *"Let's just hack it together so we can make our deadline and go home."* Because so often that is exactly what was meant. It is used to imply that paying attention to the structural value is overdesign. That you don't need it yet. Under the disguise of being 'pragmatic', calm and reasonable it is implied that we shouldn't worry about it yet and focus on the functionality and deadline instead. Claiming that the functional has higher value then the structural.    
    
     
 * __e) The *'overdesign'* argument.__
@@ -109,7 +109,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
     * Too complex!
     * ...
     
-     Since there is of course something to say about overdesign, let's address it here. Obviously you should not overdesign. Of course not. You are overdesigning when you are using patterns for patterns sake, abstracting things that will never need to be abstracted in the future. So it is context dependent. Who knows what the future will bring? But the whole point of paying attention to the structure is that there can be a future. A future to which we can easily adapt. If we have made things overly complex, if we have overdesigned, then we have also endangered the structural value.
+     Since there is of course something to say about overdesign, let's address it here. Obviously you should not overdesign. Of course not. You are overdesigning when you are using patterns for patterns sake, abstracting things that will never need to be abstracted in the future. So it is context dependent. Who knows what the future will bring? But the whole point of paying attention to the structure is that there *can* be a future. A future to which we can easily adapt. If we have made things overly complex, if we have overdesigned, then we have also endangered the structural value.
      
      But more classes, modules, layers does not automatically mean more complex. On the contrary, we introduce those boundaries (classes, modules, layers) to make things more simpler. By not throwing everything together in one big ball of mud we are making the software easier to change. It is not the number of classes, modules, layers,... that matters. It is their responsibilities.
      
@@ -118,7 +118,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
 
 * __f) The *'business wants it now!'* argument__
 
-    Of course they do. We all would like to have what we want as fast as possible and as cheap as possible. But what is it that the customer want exactly? The functionality and the deadline being met. Sure. And how long to they want to use the delivered software? Is it ok if the usefulness of the delivered software comes to a grinding halt in the veyr near future? Making it very expensive to use and maintain? Look beyond the deadline. What are they willing to give up to make the deadline? And by 'they' i mean the paying customer who is paying for it and will be using it. Not some manager in between who will no longer be there and/or will not bare the consequences of what is delivered. Like i said before it is only natural that those managers are focused on the deadlines. That is what they are evaluated on. But it is your name in the code.
+    Of course they do. We all would like to have what we want as fast as possible and as cheap as possible. But what is it that the customer want exactly? The functionality and the deadline being met. Sure. And how long to they want to use the delivered software? Is it ok if the usefulness of the delivered software comes to a grinding halt in the very near future? Making it very expensive to use and maintain? Look beyond the deadline. What are they willing to give up to make the deadline? And by 'they' I mean the paying customer who is paying for it and will be using it. Not some manager in between who will no longer be there and/or will not bare the consequences of what is delivered. Like I said before it is only natural that those managers are focused on the deadlines. That is what they are evaluated on. But it is your name in the code.
     
     Please also note that having proper structure is not that much additional work. It will even let you go faster. But it does require some thought of course.
    
