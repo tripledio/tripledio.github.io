@@ -17,11 +17,11 @@ But recently there was a story in the news concerning problems with some of the 
 
 ### Throw away real estate
 
-The article [^article] that stuck with me reported on the fact that buildings that were merely 20 years old needed to be demolished again. Apparently in Brussels there were plenty of throw-away buildings like this and a lot of them where payed by the government.
+The article [^article] that stuck with me reported on the fact that buildings that were merely 20 years old needed to be demolished again. Apparently in Brussels there were plenty of throw-away buildings like this and a lot of them where paid by the government.
 
 For example the buildings around the north station in Brussels. These were put down for just one purpose: office space. According to the the article this was done in order to maximise profit. They fulfilled their original purpose, but nothing more.
 
-The needs of a city change overtime and once they do, it is impossible to give them another purpose. Because they were not build with modification in mind. Their structure is so rigid that the only option left is to demolish them and build new buildings that can fulfil the new functionality. Which is a terrible waste of time, money and resources. The only ones that gain from this is are the construction firms that get to rebuild buildings on a frequent base.
+The needs of a city change over time and once they do, it is impossible to give them another purpose. Because they were not build with modification in mind. Their structure is so rigid that the only option left is to demolish them and build new buildings that can fulfil the new functionality. Which is a terrible waste of time, money and resources. The only ones that gain from this is are the construction firms that get to rebuild buildings on a frequent basis.
 
 A lot of architects and European civil servants realise that this needs to change. Together they want to aim for purpose-free buildings. Buildings that can serve different purposes. Buildings that can be modified and repurposed.
 
@@ -124,13 +124,13 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
    
 * __g) The *'too much work'* argument.__
 
-    This argument is saddening but at least it is honest. When you drill down on the previous arguments you often end up here. Doing a proper job does require some work. Coming up with a good architecture, a good design does require some thought. Typing the code is never the bottleneck. You should be glad when you hear this 'argument'. Because it is a mindset that is finally made clear. At least then you know what is going on and how the software is being written. Other then looking at the code. 
+    This argument is saddening but at least it is honest. When you drill down on the previous arguments you often end up here. Doing a proper job does require some work. Coming up with a good architecture, a good design does require some thought. Typing the code is never the bottleneck. You should be glad when you hear this 'argument'. Because it is a mindset that is finally made clear. At least then you know what is going on and how the software is being written. Other than looking at the code. 
     
     Fear the code where this mindset is present. If this sentiment rules the developers mind you will end up with software that is hard to maintain, difficult to adapt and that will need to be rewritten soon as a result of changing requirements.
      
-    No matter how much planning, design is done, in the end the truth lies in the code. If no attention is payed to the structure of the code *at development time* you'll end up with very expensive, unmaintainable software. No amount of documents, meetings can prevent this. It is completely in the hands of the engineers that are actually writing the code.
+    No matter how much planning, design is done, in the end the truth lies in the code. If no attention is paid to the structure of the code *at development time* you'll end up with very expensive, unmaintainable software. No amount of documents, meetings can prevent this. It is completely in the hands of the engineers that are actually writing the code.
     
-    Unfortunately I am afraid that this mentality is all too common in the IT world. Since all to often it is only the developers that actually see the code where the actual truth lies about the structure of the code. That is why I fear that the design of a software system is primarily determined by the convenience of software engineers at development time. Being able to deliver value for the customers in the future has a much lower priority than moving a ticket to 'done' now. The functional value is what they are being payed for. The customer doesn't see or understand the lacking structure of the software.
+    Unfortunately I am afraid that this mentality is all too common in the IT world. Since all to often it is only the developers that actually see the code where the actual truth lies about the structure of the code. That is why I fear that the design of a software system is primarily determined by the convenience of software engineers at development time. Being able to deliver value for the customers in the future has a much lower priority than moving a ticket to 'done' now. The functional value is what they are being paid for. The customer doesn't see or understand the lacking structure of the software.
     
     So in many cases it is the same story as with project managers. Software engineers are evaluated on getting the job done. Delivering functionality on time. The structure is invisible for non technical people. Nor do they care. Until the shit hits the fan. But then we can of course blame all our predecessors....
     
