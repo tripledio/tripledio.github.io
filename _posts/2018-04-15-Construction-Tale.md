@@ -101,7 +101,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
     
 * __e) The *'overdesign'* argument.__
 
-    This one comes in several forms. 
+    This argument comes in several forms. 
     * We aren't Google!
     * Too many modules.
     * Too many layers.
@@ -120,7 +120,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
 
     Of course they do. We all would like to have what we want as fast as possible and as cheap as possible. But what is it that the customer want exactly? The functionality and the deadline being met. Sure. And how long to they want to use the delivered software? Is it ok if the usefulness of the delivered software comes to a grinding halt in the veyr near future? Making it very expensive to use and maintain? Look beyond the deadline. What are they willing to give up to make the deadline? And by 'they' i mean the paying customer who is paying for it and will be using it. Not some manager in between who will no longer be there and/or will not bare the consequences of what is delivered. Like i said before it is only natural that those managers are focused on the deadlines. That is what they are evaluated on. But it is your name in the code.
     
-      Please also note that having proper structure is not that much additional work. It will even let you go faster. But it does require some thought of course.
+    Please also note that having proper structure is not that much additional work. It will even let you go faster. But it does require some thought of course.
    
 * __g) The *'too much work'* argument.__
 
