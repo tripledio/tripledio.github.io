@@ -113,7 +113,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
      
      But more classes, modules, layers does not automatically mean more complex. On the contrary, we introduce those boundaries (classes, modules, layers) to make things more simpler. By not throwing everything together in one big ball of mud we are making the software easier to change. It is not the number of classes, modules, layers,... that matters. It is their responsibilities.
      
-     To me this argument often just is a strawman attack. It all to often comes down to the "too much work" argument.     
+     To me this argument often just is a strawman attack. It all too often comes down to the "too much work" argument.     
   
 
 * __f) The *'business wants it now!'* argument__
@@ -130,7 +130,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
      
     No matter how much planning, design is done, in the end the truth lies in the code. If no attention is paid to the structure of the code *at development time* you'll end up with very expensive, unmaintainable software. No amount of documents, meetings can prevent this. It is completely in the hands of the engineers that are actually writing the code.
     
-    Unfortunately I am afraid that this mentality is all too common in the IT world. Since all to often it is only the developers that actually see the code where the actual truth lies about the structure of the code. That is why I fear that the design of a software system is primarily determined by the convenience of software engineers at development time. Being able to deliver value for the customers in the future has a much lower priority than moving a ticket to 'done' now. The functional value is what they are being paid for. The customer doesn't see or understand the lacking structure of the software.
+    Unfortunately I am afraid that this mentality is all too common in the IT world. Since all too often it is only the developers that actually see the code where the actual truth lies about the structure of the code. That is why I fear that the design of a software system is primarily determined by the convenience of software engineers at development time. Being able to deliver value for the customers in the future has a much lower priority than moving a ticket to 'done' now. The functional value is what they are being paid for. The customer doesn't see or understand the lacking structure of the software.
     
     So in many cases it is the same story as with project managers. Software engineers are evaluated on getting the job done. Delivering functionality on time. The structure is invisible for non technical people. Nor do they care. Until the shit hits the fan. But then we can of course blame all our predecessors....
     
