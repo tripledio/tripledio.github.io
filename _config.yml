@@ -8,7 +8,7 @@ description: "TripleD blog"
 disqus: "TripleD"
 google_tracking_id: "UA-115161766-1"
 permalink: /:day/:month/:year/:title/
-url: //www.tripled.io
+url: https://www.tripled.io
 twitter_username: tripled_io
 email_username: info@tripled.io
 
