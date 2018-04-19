@@ -99,7 +99,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
     Ach, the P argument. I have heard this one so many times that now whenever i hear the 'pragmatic' argument, i automatically translate it to: *"Let's just hack it together so we can make our deadline and go home."* Because so often that is exactly what was meant. It is used to imply that paying attention to the structural value is overdesign. That you don't need it yet. Under the disguise of being 'pragmatic', calm and reasonable it is implied that we shouldn't worry about it yet and focus on the functionality and deadline instead. Claiming that the functional has higher value then the structural.    
    
     
-* __e) The *'overdesign' argument.__
+* __e) The *'overdesign'* argument.__
 
     This one comes in several forms. 
     * We aren't Google!
@@ -122,7 +122,7 @@ This conflict may seem abstract but it is one that you'll encounter again and ag
     
       Please also note that having proper structure is not that much additional work. It will even let you go faster. But it does require some thought of course.
    
-* __g) The *'too much work'* argument.
+* __g) The *'too much work'* argument.__
 
     This argument is saddening but at least it is honest. When you drill down on the previous arguments you often end up here. Doing a proper job does require some work. Coming up with a good architecture, a good design does require some thought. Typing the code is never the bottleneck. You should be glad when you hear this 'argument'. Because it is a mindset that is finally made clear. At least then you know what is going on and how the software is being written. Other then looking at the code. 
     
