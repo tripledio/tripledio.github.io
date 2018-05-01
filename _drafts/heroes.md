@@ -51,7 +51,7 @@ Then of course there are the environmental why's:
 + Why are there constant deadlines to begin with?  
 + Why is it so hard to deliver steadily new features? 
 
-Of course each situation is different and there are many different factors. I am in no way trying to blame someone because they work hard en fix the customers problem. But over the years I have seen many different types of the these heroes. At one time I myself was a certain type of 'hero'. I've seen such heroes burn themselves out, bring teams and projects down. Often with very good intentions. So let me delve into this a bit.
+Of course each situation is different and there are many different factors. I am in no way trying to blame someone because they work hard en fix the customers problem. But over the years I have seen many different types of these heroes. At one time I myself was a certain type of 'hero'. The naive kind ;) I've seen such heroes burn themselves out, bring teams and projects down. Often with very good intentions. So I think it is worth looking into.
 
 ## Wild west
 
@@ -81,25 +81,12 @@ Like is said before, who doesn't want to be a hero? Just like in the wild west s
 
 ## Types of heroes
 
-It is of course impossible to categorize people and their variety of behaviors in a simple post. But I have made an attempt to note down the different types of heroes that I have encountered. So far ;) Note that these heroes don't necessarily have to be experts or very competent. they can be. But it is more about how they view themselves, are viewed by their peers and are viewed by the customers that I use to categorize them. 
+It is of course impossible to categorize people and their variety of behaviors in a simple post. But I have made an attempt to note down the different types of heroes that I myself have encountered over the years. Note that these heroes don't necessarily have to be experts or very competent. They can be. But it is more about how they view themselves, are viewed by their peers and are viewed by the customers that I use to categorize them. 
 
-|Type of hero | Area of impact | Characteristics                             |
-|-------------|----------------|---------------------------------------------|
-|Young buck   | Development    | Long hours and weekend work                 |
-|             |                | In the midst of deadlines                   |
-|Lone ranger  | Production     | The only one who can fix the issues         |
-|Delta force  | Production     | Team constant in operational support mode   |
-|Dictator     | Development    | Rules by intimidation                       |
-|             |                | His will be done                            |
-|             |                | Kills initiative                            |
-|             |                | Drives away good people                     |
-|The genius   | Development    | Worshipped by team                          |
-|             |                | A bottleneck for decisions                  |
-|             |                | No responsibility or ownership by team      |
-|             |                | Drives away good people                     |
+Heroes by deeds
+Heroes by reputation
 
-
-### The young buck
+### The young buck - __viewed as hero by themselves__
 
 This type of 'hero' is for me typically the young naive buck. The young gunslinger full of high ideals, with a simplistic sense of justice, who is doing all the fighting and taking all the risks. But often gets played for a fool and lets someone else reaps the benefit. He might even get scorned and chased away by the very people he was fighting for. 
  
@@ -113,40 +100,24 @@ The young buck hero was for me what Sandro Mancuso discussed in a very recogniza
 
 Often the only one who benefits form these heroics is the young bucks boss. Who get's paid by the customer for the work and overtime. Of course often a bone will be thrown towards the ones doing the actual work. But it isn't the boss that is sitting there in the weekends, pulling an all nighter...
 
-Even if the deadline is met the customer is often left with very poorly written software which a high maintenance cost. Did I mention Obama care[^obama-cbs] ? I could of course mention a lot of belgian projects, companies as well.
-
-|Party|Problem|
-|------------------|----------|
-|Young buck | Being exploited high cost on social life |
-| | High cost on social life |
-| | A job not well done |
-| | Not improving their craft|
-|Team member| If they do not take part in the heroics, they can be looked upon with disdain. |
-||If they do take part, they are part of the problem |
-|The boss|If there is a party between the customer and the developers, they are the ones that 'gain' something form this. At the risk of loosing their reputation. 
-||If the boss and the paying customer are one and the same. Then it is just a sad story...|
-|Paying customer| Left with crapy software and false promises. |
-|Delivered solution|Unmaintable, untested software |
-
-    
-### The lone ranger 
+Even if the deadline is met the customer is often left with very poorly written software which a high maintenance cost. Did I mention Obama care[^obama-cbs] ? I could of course mention a lot of belgian projects as well.
+  
+### The lone ranger - __viewed as hero by customer,themselves__
  
-Another type of heroes is a person who is more of loner. They get the job done by themselves, the work long hours, deadlines by themselves. Always on call, always there when the shits hit the fan. They are the lone ranger that always saves the day. But no one really knows what is going on. This is one I have come across on several occasions as well. It was almost always the case the hero was barely keeping everything a float. Due to a lack of knowledge, discipline, or ability to say no, things have gotten out of control. The lone ranger often runs the risk for a burnout Which is especially dangerous since he can't be missed.
-   
-### Delta Force    
-    
-This is essentially the same this as the lone ranger. But now in a team context. When you have a team that is constantly 'fixing' things. Things that no one else knows about. If most of the teams time is spent on operational problems.
-    
-    --- production heroics --
-    First let me make it clear that these 'heroes' are not professionals. Not even if they make the deadline. Because it is more important _how_ a job was done, than that the job was done. Heroics shouldn't come into play, heroes should not be necessary, the day should not _need_ saving. While it may be a heroic thing to do, it would have been better if it never was necessary. That it was just boring steadiness. No heroic battles...
-     
-    > If you need constant saving by heroes, you might consider hiring some professionals
-      
-    Of course sometimes things can still go wrong in production. An urgent intervention can be needed. But this should really be an exceptional case. And when it does happen, it should be dealt with swiftly. With a thorough post morten so that we learn how to avoid this in the future, making sure _it does not happen again_. Because we don't want to let the exceptional become the normal.
-    
-### The Deity 
+Another type of heroes is a person who is more of loner. They get the job done by themselves, the work long hours, deadlines by themselves. Always on call, always there when the shits hit the fan. They are the lone ranger that always saves the day. But no one really knows what is going on. This is one I have come across on several occasions as well. It was almost always the case the hero was barely keeping everything a float. 
 
-When people rely on someone, give much weight to their opinions, delegate their judgement to them, placing them onto a pedestal, this runs the risk of the heroes to lose objectivity themselves. Even if the heroes have the best of intentions, and not all heroes necessarily do, it is hard to not get too full of yourselves. It will not only stifle the heroes own growth because they are not being challenged but it also runs the risk of making grave errors. The heroes can get lazily in their thinking, get to used to 'being right'. The ego gets inflated. And no matter how good they are, they become less valuable...
+> Due to a lack of knowledge, discipline, or ability to say no, things have gotten out of control. 
+
+The lone ranger often runs the risk for a burnout. Which is especially dangerous since they can't be missed. They are often revered by the customer, since they are the ones saving the day.
+   
+### Delta Force - __viewed as hero by customer,themselves__    
+This is essentially the same this as the lone ranger. But now in a team context. When you have a team that is constantly 'fixing' things. Things that no one else knows about. If most of the teams time is spent on operational problems, then there is a serious problem. A problem that should be addressed asap. before it makes the evening news...
+ 
+If the delta force team consists out of the same people that developed the systems in the first place then the problem is even bigger. Because then you are paying in the outlaws to maintain the order in town... 
+   
+### The Deity - __viewed as hero by team, peers__
+
+When people rely on someone, give much weight to their opinions, delegate their judgement to them, placing them onto a pedestal, this runs the risk of the heroes to lose objectivity themselves. Even if the heroes have the best of intentions, and not all heroes necessarily do, it is hard to not get too full of ourselves. It will not only stifle the heroes own growth because they are not being challenged but it also runs the risk of making grave errors. The heroes can get lazily in their thinking, get to used to 'being right'. The ego gets inflated. And no matter how good they are, they become less valuable...
 
 A little mental check that I often do with people is checking if I ever heard someone admitting that they where wrong. If I saw them changed their minds by someones else argument. If someone can never admit a mistake or change their mind by someone else arguments... I automatically place little value on their opinion. 
 
@@ -154,8 +125,14 @@ A little mental check that I often do with people is checking if I ever heard so
 
 It is normal that people argue and defend their points of view. To a certain point. We all have this to some degree. But if someone is truly incapable to decouple their ego from their solution then it is impossible to have a meaningful conversation. Their ego does not permit them to admit that they are not omniscient. So there is really no point in debating them. Unfortunately depending on their hero status in a group, this may be unavoidable. If the deity hero has a hero cult around them, then you even got a bigger problem: [The hero cult](#hero-cult). 
 
-
 ### Why you should avoid working together with heroes
+
+    --- production heroics --
+    First let me make it clear that these 'heroes' are not professionals. Not even if they make the deadline. Because it is more important _how_ a job was done, than that the job was done. Heroics shouldn't come into play, heroes should not be necessary, the day should not _need_ saving. While it may be a heroic thing to do, it would have been better if it never was necessary. That it was just boring steadiness. No heroic battles...
+     
+    > If you need constant saving by heroes, you might consider hiring some professionals
+      
+    Of course sometimes things can still go wrong in production. An urgent intervention can be needed. But this should really be an exceptional case. And when it does happen, it should be dealt with swiftly. With a thorough post morten so that we learn how to avoid this in the future, making sure _it does not happen again_. Because we don't want to let the exceptional become the normal.
     
 + In the heroes we trust - people
     Having heroes in your teams runs the additional risk that after a while the hero is no longer questioned. Because the heroes know best, we shouldn't question them. Just follow the leader of the pack. But we are all humans.
@@ -215,12 +192,53 @@ Heroes are more visible, get all the glory
 [^obama-cbs]: [Obamacare poor design](https://www.cbsnews.com/news/experts-obamacare-website-stymied-by-its-poor-design/)
 
 
+https://listverse.com/2015/03/12/10-wild-lawmen-of-the-old-west/
+
 ***
 
-+ The deity - team places on pedestal - ego - expert
-+ The tyrant - team dislikes - bullies - ego - expert
-+ Lone ranger - production issues 
-+ The sucker - consultancy - thinks they are doing great stuff. Deliver crap.
++ The deity 
+    + What: team places on pedestal - ego - expert
+    + Claimed hero by : 
+        + team 
+        + customer
+    + Dangerous for: 
+        + Organization: additional political force 
+        + software dev: blocking factor, one opinion
+        + hero: not challenged 
+        + team: sheep, lazy
++ The tyrant
+    + What : my way or highway, bully
+    + claimed hero by 
+        + team (original)
+        + themselves 
+        + customer 
+        + knowledge (dungeon master)
+    + Dangerous for :
+        + team dislikes
+        + stuns growth bullies - ego - expert
+        + organization : people leave
+        + software : one opinion, solution determined by ego
++ Lone ranger 
+    + What- production issues 
+    + Claimed hero by:
+        + themselves
+        + customer
+    + Dangerous for:
+        + Organization: single point failure
+        + Software: Could be crap. Why is it needed?
+        + Hero: Burn out, learning? From zero to hero
+        
++ The young buck
+    + What : consultancy - thinks they are doing great stuff. that hero== professional. testosteron. Deliver crap.
+    + Claimed hero by:
+            + themselves
+            + customer if they are lucky
+    + Dangerous for:
+            + Organization: big projects doomed to failure, investment lost
+            + Software: Will be crap.
+            + Hero: Burn out, learning? From zero to hero, exploited
+            
+    
     
 
 ## The problems with heroes
@@ -239,4 +257,54 @@ So what is exactly the problem? Well, just like I see several types of heroes I 
 |Delivered solution|none |
 
 
-### Why you shouldn't aim to be a hero
+## Summary
+
+
+|Type of hero | viewed by | Area of impact | Characteristics                             |
+|-------------|-----------|----------------|---------------------------------------------|
+|Young buck   | themselves| Development    | Long hours and weekend work                 |
+|             |           |                | In the midst of deadlines                   |
+|Lone ranger  | customer  | Production     | The only one who can fix the issues         |
+|             |           |                | Bottleneck                                  |
+|Delta force  | customer  | Production     | Team constant in operational support mode   |
+|             |           |                | New development is hard                     |
+|-------------|-----------|----------------|---------------------------------------------|
+|Dictator     | Team      | Development    | Rules by intimidation                       |
+|             |           |                | His will be done                            |
+|             |           |                | Kills initiative                            |
+|             |           |                | Drives away good people                     |
+|The genius   | Team      | Development    | Worshipped by team                          |
+|             |           |                | A bottleneck for decisions                  |
+|             |           |                | No responsibility or ownership by team      |
+|             |           |                | Drives away good people                     |
+
+__Consequences young buck__
+
+|Party             |  Problem |
+|------------------|----------|
+|Young buck        | Being exploited|   
+|                  | High cost on social life |
+|                  | A job not well done |
+|                  | Not improving their craft|
+|Team member       | If they do not take part in the heroics, they can be looked upon with disdain. |
+|                  |If they do take part, they are part of the problem |
+| The boss         |If there is a party between the customer and the developers, they are the ones that 'gain' something form this. At the risk of loosing their reputation. 
+|                  |If the boss and the paying customer are one and the same. Then it is just a sad story...|
+|Paying customer   | Left with crapy software and false promises. |
+|Delivered solution| Unmaintainable, untested software |
+
+__Consequences lone ranger__
+
+|Party             |  Problem |
+|------------------|----------|
+| Lone ranger      | Highly stressed|   
+|                  | Cost on social life |
+|                  | A job not well done |
+| Team member      | - |
+| The boss         | If there is a party between the customer and the developers, they are the ones that 'gain' something form this. 
+|                  | Their 'expert' is invaluable
+|                  | If the boss and the paying customer are one and the same. Then it is just a sad story...|
+|Paying customer   | Runs a very high risk that one day, the lone ranger won't be able to save them. |
+|Paying customer   |Dependent on the lone ranger |
+|Delivered solution| The software is crying out that there is a problem and requires serious attention. But it is simple being patched up again. |
+
