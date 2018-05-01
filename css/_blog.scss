@@ -11,17 +11,7 @@ $author-img-size: 7.5rem;
     width: 100%;
   }
 
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.75rem;
-  }
+  @include headings(4rem, 0.6rem);
 
   ol, ul {
     color: $color-gray;
