@@ -62,12 +62,15 @@ In the case of hero developers I often think of them as the cowboy gunslingers f
 
 The residents of the town in the wild west are happy when they are saved by this hero. The danger has been averted, evil doers slain. Oh happy days! The gunslinger is loved and admired. Perhaps even worshipped. After a while there can even form a little group centered around the hero gunslinger. The hero that everyone relies on and tries to imitate. Whom is loved by all... 
 
-----8<----8<----8<----8<----8<----8<----8<END
+
 
 However what the residents of the town really need is the wild west to be tamed. In the wild west they need to rely on the heroes but they would much prefer it if the heroes were no longer necessary. So that they can continue to steadily work, expand, grow their city. Go about their business and improve their lives. They desire a future where violent episodes never occur again and they can reliably predict the future without needing to live in constant fear.  What they really need, even if they sometimes don't realize it themselves, is a _professional_ reliable law enforcement. One that nips all trouble in the but, well before it occurs. From whom you don't even know that they are there. It is just safe...
 
+
+
 Since the software industry is still such a young industry that is frequently revolutionized by the next new thing you could compare it with the wild west. The tech savy experts feel safe there but for others it can be a scary place. In my little wild west comparison the residents of the town are of course the customers that need to rely on the developers. Where they hope for steady predictability and robustness in delivered solutions by professionals, they often need to rely on hero gunslingers. Often they do not know that there is another way..
- 
+
+----8<----8<----8<----8<----8<----8<----8<END 
 ![gun](/img/posts/heroes/gun.jpg)
 
 ## Who does not want to be a hero?
