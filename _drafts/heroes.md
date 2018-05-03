@@ -153,7 +153,7 @@ It is normal that people argue and defend their points of view. To a certain poi
 
     When there are heroes around, people often don't take ownership themselves. They feel secure in the presence of heroes. Or intimidated. They run the risk of becoming complacent, just following along, not challenging the leader but also not challenging themselves, no responsibility needs to be taken. People run the risk of not living up to their own full potential. This way, heroes often block the team members from using the full potential. Which is not only a waste but also dangerous.
      
-     Decisions can get postponed until they get approval by a hero. Because people don't want to make the decision, take the responsibility themselves. Or a decision taken when the hero was absent can be immediately overturned when the hero returns. Making sure that no decision will be taken next time. This not only starts resembling a dictatorship but it turns the hero into a bottleneck. 
+     Decisions can get postponed until they get approval by a hero. Because people don't want to make the decision, take the responsibility themselves. Or a decision taken when the hero was absent can` be immediately overturned when the hero returns. Making sure that no decision will be taken next time. This not only starts resembling a dictatorship but it turns the hero into a bottleneck. 
      
      Because even if you should have some infallible IT-heroes, they can not be everywhere at the same time. The team needs to ready and competent to handle everything without the heroes being around.
      
@@ -273,6 +273,9 @@ https://twitter.com/sarah_edo/status/991421712989208576
 
 "Someone was recently telling me they were a "Code Ninja". I don't want to work with a Ninja, they leave a bloody mess. I want to work with a "Code Janitor". Comes in the middle of the night, cleans things up, you only know they were there because everything is organized and tidy."
 
+
+https://twitter.com/yegor256/status/991971700857335808
+http://sunnyday.mit.edu/16.355/bach-process.pdf
 
 Be humble!
 
