@@ -6,7 +6,7 @@ header-img: "img/posts/heroes/ww.jpg"
 excerpt: In this post I would like to talk about a certain type of software developer a lot of us probably aspire to be at one point in our career. A type of developer that is often well respected and revered by his peers. And one that is often well known by whatever management there is in place. 
 ---
 # Heroes
-
+----8<----8<----8<----8<----8<----8<----8<START
 In this post I would like to talk about a certain type of developer a lot of us probably aspire to be at one point in our career. A type of developer that is often well respected and revered by his peers. And one that is often well known by whatever management there is in place. 
 
 ## The hero developer
@@ -24,7 +24,7 @@ To their fellow software developers they are often known
 + Being experts
 
 What would we do without them?
-
+----8<----8<----8<----8<----8<----8<----8<END
 ## A couple of questions
 
 Now allow me to play the devils advocate again and ask some questions. In doing so I will be  making some generalizations and simplifications. But over the years I have obtained some reservations with these heroes. Because there is a huge difference between *working as a team to fix a very rare occurrence (deadline, production issue)* and between *having need of hero developers to constantly step in to solve problems*.
@@ -53,6 +53,7 @@ Then of course there are the environmental why's:
 
 Of course each situation is different and there are many different factors. I am in no way trying to blame someone because they work hard en fix the customers problem. But over the years I have seen many different types of these heroes. At one time I myself was a certain type of 'hero'. The naive kind ;) I've seen such heroes burn themselves out, bring teams and projects down. Often with very good intentions. So I think it is worth looking into.
 
+----8<----8<----8<----8<----8<----8<----8<START
 ## Wild west
 
 ![Gunslingers](/img/posts/heroes/gunslingers.png)
@@ -60,6 +61,8 @@ Of course each situation is different and there are many different factors. I am
 In the case of hero developers I often think of them as the cowboy gunslingers from the wild west. You know, the classic cowboys that draw fast and shoot straight. Who ride in to town, save the day in an epic gun fight. And then ride of in the sunset. As a kid, who did not aspire to be such a hero?
 
 The residents of the town in the wild west are happy when they are saved by this hero. The danger has been averted, evil doers slain. Oh happy days! The gunslinger is loved and admired. Perhaps even worshipped. After a while there can even form a little group centered around the hero gunslinger. The hero that everyone relies on and tries to imitate. Whom is loved by all... 
+
+----8<----8<----8<----8<----8<----8<----8<END
 
 However what the residents of the town really need is the wild west to be tamed. In the wild west they need to rely on the heroes but they would much prefer it if the heroes were no longer necessary. So that they can continue to steadily work, expand, grow their city. Go about their business and improve their lives. They desire a future where violent episodes never occur again and they can reliably predict the future without needing to live in constant fear.  What they really need, even if they sometimes don't realize it themselves, is a _professional_ reliable law enforcement. One that nips all trouble in the but, well before it occurs. From whom you don't even know that they are there. It is just safe...
 
@@ -79,16 +82,21 @@ Like is said before, who doesn't want to be a hero? Just like in the wild west s
     + From the customer/manager side who, like the citizens, are grateful that the hero cam to their rescue. 
     + From the developer side heroes get relied upon too much. Sometimes a little cult can even form around one person.
 
+----8<----8<----8<----8<----8<----8<----8<START
 ## Types of heroes
 
 It is of course impossible to categorize people and their variety of behaviors in a simple post. But I have made an attempt to note down the different types of heroes that I myself have encountered over the years. Note that these heroes don't necessarily have to be experts or very competent. They can be. But it is more about how they view themselves, are viewed by their peers and are viewed by the customers that I use to categorize them. 
 
 Heroes by deeds
 Heroes by reputation
+----8<----8<----8<----8<----8<----8<----8<END
 
+----8<----8<----8<----8<----8<----8<----8<START
 ### The young buck - __viewed as hero by themselves__
 
 This type of 'hero' is for me typically the young naive buck. The young gunslinger full of high ideals, with a simplistic sense of justice, who is doing all the fighting and taking all the risks. But often gets played for a fool and lets someone else reaps the benefit. He might even get scorned and chased away by the very people he was fighting for. 
+
+----8<----8<----8<----8<----8<----8<----8<END
  
 In the software world I have seen these 'young buck' hero typically in a consulting context. The young developers, with little experience, starting with a consultancy firm. They are the ones te most easy to convince that they need to put in the time, work hard, pull late nighters, work in the weekends, to make that big deadline. Often of some fixed-prize waterfall project that was bound to fail from the start. Yes, people still do big waterfall projects. Remember Obama care? [^obama-cio]
 
@@ -259,6 +267,16 @@ So what is exactly the problem? Well, just like I see several types of heroes I 
 
 ## Summary
 
+twwet ninja
+
+https://twitter.com/sarah_edo/status/991421712989208576
+
+"Someone was recently telling me they were a "Code Ninja". I don't want to work with a Ninja, they leave a bloody mess. I want to work with a "Code Janitor". Comes in the middle of the night, cleans things up, you only know they were there because everything is organized and tidy."
+
+
+Be humble!
+
+pair programing.
 
 |Type of hero | viewed by | Area of impact | Characteristics                             |
 |-------------|-----------|----------------|---------------------------------------------|
