@@ -373,6 +373,7 @@ production:
   }
 
   function ensure_namespace() {
+    echo "shizzle"
     #kubectl describe namespace "$KUBE_NAMESPACE" || kubectl create namespace "$KUBE_NAMESPACE"
   }
 
