@@ -228,8 +228,8 @@ production:
   export CI_APPLICATION_REPOSITORY=$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG
   export CI_APPLICATION_TAG=$CI_COMMIT_SHA
   export CI_CONTAINER_NAME=ci_job_build_${CI_JOB_ID}
-  export TILLER_NAMESPACE=tripled
-  export KUBE_NAMESPACE=tripled
+  export TILLER_NAMESPACE=default
+  export KUBE_NAMESPACE=default
 
   function codeclimate() {
     cc_opts="--env CODECLIMATE_CODE="$PWD" \
