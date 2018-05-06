@@ -1,4 +1,4 @@
-  # This file is a template, and might need editing before it works on your project.
+# This file is a template, and might need editing before it works on your project.
 # Auto DevOps
 # This CI/CD configuration provides a standard pipeline for
 # * building a Docker image (using a buildpack if necessary),
@@ -417,7 +417,7 @@ production:
 
   function install_tiller() {
     echo "Checking Tiller..."
-    helm init --upgrade
+    helm init --upgrade --service-account kubeconfig-user-zl7wq
     kubectl rollout status -n "$TILLER_NAMESPACE" -w "deployment/tiller-deploy"
     if ! helm version --debug; then
       echo "Failed to init Tiller."
