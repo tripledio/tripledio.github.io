@@ -228,7 +228,7 @@ production:
   export CI_APPLICATION_REPOSITORY=$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG
   export CI_APPLICATION_TAG=$CI_COMMIT_SHA
   export CI_CONTAINER_NAME=ci_job_build_${CI_JOB_ID}
-  export TILLER_NAMESPACE=default
+  export TILLER_NAMESPACE=kube-system
   export KUBE_NAMESPACE=default
 
   function codeclimate() {
@@ -417,7 +417,7 @@ production:
 
   function install_tiller() {
     echo "Checking Tiller..."
-    helm init --upgrade --service-account kubeconfig-user-zl7wq
+    helm init --upgrade
     kubectl rollout status -n "$TILLER_NAMESPACE" -w "deployment/tiller-deploy"
     if ! helm version --debug; then
       echo "Failed to init Tiller."
