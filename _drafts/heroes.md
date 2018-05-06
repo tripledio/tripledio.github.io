@@ -92,15 +92,11 @@ It is of course impossible to categorize people and their variety of behaviors i
 
 Heroes by deeds
 Heroes by reputation
-----8<----8<----8<----8<----8<----8<----8<END
 
-----8<----8<----8<----8<----8<----8<----8<START
 ### The young buck - __viewed as hero by themselves__
 
 This type of 'hero' is for me typically the young naive buck. The young gunslinger full of high ideals, with a simplistic sense of justice, who is doing all the fighting and taking all the risks. But often gets played for a fool and lets someone else reaps the benefit. He might even get scorned and chased away by the very people he was fighting for. 
 
-----8<----8<----8<----8<----8<----8<----8<END
- 
 In the software world I have seen these 'young buck' hero typically in a consulting context. The young developers, with little experience, starting with a consultancy firm. They are the ones te most easy to convince that they need to put in the time, work hard, pull late nighters, work in the weekends, to make that big deadline. Often of some fixed-prize waterfall project that was bound to fail from the start. Yes, people still do big waterfall projects. Remember Obama care? [^obama-cio]
 
 The developers that are doing this hard work, rushing from deadline to deadline, often do this from a misplaced sense of pride. Perhaps even a sense of professionalism. Look at us working hard, getting things done. Our company and customer will be so proud... 
@@ -112,7 +108,8 @@ The young buck hero was for me what Sandro Mancuso discussed in a very recogniza
 Often the only one who benefits form these heroics is the young bucks boss. Who get's paid by the customer for the work and overtime. Of course often a bone will be thrown towards the ones doing the actual work. But it isn't the boss that is sitting there in the weekends, pulling an all nighter...
 
 Even if the deadline is met the customer is often left with very poorly written software which a high maintenance cost. Did I mention Obama care[^obama-cbs] ? I could of course mention a lot of belgian projects as well.
-  
+
+
 ### The lone ranger - __viewed as hero by customer,themselves__
  
 Another type of heroes is a person who is more of loner. They get the job done by themselves, the work long hours, deadlines by themselves. Always on call, always there when the shits hit the fan. They are the lone ranger that always saves the day. But no one really knows what is going on. This is one I have come across on several occasions as well. It was almost always the case the hero was barely keeping everything a float. 
@@ -121,11 +118,13 @@ Another type of heroes is a person who is more of loner. They get the job done b
 
 The lone ranger often runs the risk for a burnout. Which is especially dangerous since they can't be missed. They are often revered by the customer, since they are the ones saving the day.
    
-### Delta Force - __viewed as hero by customer,themselves__    
+### Posse - __viewed as hero by customer,themselves__    
 This is essentially the same this as the lone ranger. But now in a team context. When you have a team that is constantly 'fixing' things. Things that no one else knows about. If most of the teams time is spent on operational problems, then there is a serious problem. A problem that should be addressed asap. before it makes the evening news...
  
 If the delta force team consists out of the same people that developed the systems in the first place then the problem is even bigger. Because then you are paying in the outlaws to maintain the order in town... 
    
+----8<----8<----8<----8<----8<----8<----8<END
+     
 ### The Deity - __viewed as hero by team, peers__
 
 When people rely on someone, give much weight to their opinions, delegate their judgement to them, placing them onto a pedestal, this runs the risk of the heroes to lose objectivity themselves. Even if the heroes have the best of intentions, and not all heroes necessarily do, it is hard to not get too full of ourselves. It will not only stifle the heroes own growth because they are not being challenged but it also runs the risk of making grave errors. The heroes can get lazily in their thinking, get to used to 'being right'. The ego gets inflated. And no matter how good they are, they become less valuable...
