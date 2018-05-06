@@ -269,7 +269,7 @@ production:
     if [[ -n "$new_replicas" ]]; then
       replicas="$new_replicas"
     fi
-
+    echo "shizzle deploy $KUBE_NAMESPACE"
     helm upgrade --debug --dry-run --install \
       --wait \
       --set service.enabled="$service_enabled" \
@@ -371,7 +371,7 @@ production:
   }
 
   function ensure_namespace() {
-    echo "shizzle"
+    echo "shizzle ensure namespace $KUBE_NAMESPACE"
     #kubectl describe namespace "$KUBE_NAMESPACE" || kubectl create namespace "$KUBE_NAMESPACE"
   }
 
