@@ -122,7 +122,6 @@ stop_review:
     GIT_STRATEGY: none
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - install_dependencies
     - delete
   environment:
@@ -175,7 +174,6 @@ stop_review:
   stage: canary
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
