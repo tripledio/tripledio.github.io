@@ -123,7 +123,7 @@ This is essentially the same this as the lone ranger. But now in a team context.
  
 If the delta force team consists out of the same people that developed the systems in the first place then the problem is even bigger. Because then you are paying in the outlaws to maintain the order in town... 
    
-----8<----8<----8<----8<----8<----8<----8<END
+
      
 ### The Deity - __viewed as hero by team, peers__
 
@@ -135,6 +135,7 @@ A little mental check that I often do with people is checking if I ever heard so
 
 It is normal that people argue and defend their points of view. To a certain point. We all have this to some degree. But if someone is truly incapable to decouple their ego from their solution then it is impossible to have a meaningful conversation. Their ego does not permit them to admit that they are not omniscient. So there is really no point in debating them. Unfortunately depending on their hero status in a group, this may be unavoidable. If the deity hero has a hero cult around them, then you even got a bigger problem: [The hero cult](#hero-cult). 
 
+----8<----8<----8<----8<----8<----8<----8<END
 ### Why you should avoid working together with heroes
 
     --- production heroics --
