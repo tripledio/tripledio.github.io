@@ -1,4 +1,4 @@
-  # This file is a template, and might need editing before it works on your project.
+# This file is a template, and might need editing before it works on your project.
 # Auto DevOps
 # This CI/CD configuration provides a standard pipeline for
 # * building a Docker image (using a buildpack if necessary),
@@ -80,7 +80,6 @@ review:
   stage: review
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
@@ -123,7 +122,6 @@ stop_review:
     GIT_STRATEGY: none
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - install_dependencies
     - delete
   environment:
@@ -153,7 +151,6 @@ stop_review:
   stage: staging
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
@@ -177,7 +174,6 @@ stop_review:
   stage: canary
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
@@ -203,7 +199,6 @@ production:
   stage: production
   script:
     - mkdir -p ~/.kube/
-    - echo ${KUBECONFIG_CONTENT} | base64 -d > ${KUBECONFIG}
     - check_kube_domain
     - install_dependencies
     - download_chart
@@ -231,7 +226,7 @@ production:
   export CI_APPLICATION_REPOSITORY=$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG
   export CI_APPLICATION_TAG=$CI_COMMIT_SHA
   export CI_CONTAINER_NAME=ci_job_build_${CI_JOB_ID}
-  export TILLER_NAMESPACE=$KUBE_NAMESPACE
+  export TILLER_NAMESPACE=kube-system
 
   function codeclimate() {
     cc_opts="--env CODECLIMATE_CODE="$PWD" \
@@ -271,7 +266,7 @@ production:
     if [[ -n "$new_replicas" ]]; then
       replicas="$new_replicas"
     fi
-
+    echo "shizzle deploy $KUBE_NAMESPACE"
     helm upgrade --debug --dry-run --install \
       --wait \
       --set service.enabled="$service_enabled" \
@@ -322,11 +317,11 @@ production:
     apk add glibc-2.23-r3.apk
     rm glibc-2.23-r3.apk
 
-    curl https://kubernetes-helm.storage.googleapis.com/helm-v2.6.1-linux-amd64.tar.gz | tar zx
+    curl https://kubernetes-helm.storage.googleapis.com/helm-v2.8.2-linux-amd64.tar.gz | tar zx
     mv linux-amd64/helm /usr/bin/
     helm version --client
 
-    curl -L -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/linux/amd64/kubectl
+    curl -L -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v1.10.2/bin/linux/amd64/kubectl
     chmod +x /usr/bin/kubectl
     kubectl version --client
   }
@@ -373,7 +368,8 @@ production:
   }
 
   function ensure_namespace() {
-    kubectl describe namespace "$KUBE_NAMESPACE" || kubectl create namespace "$KUBE_NAMESPACE"
+    echo "shizzle ensure namespace $KUBE_NAMESPACE"
+    #kubectl describe namespace "$KUBE_NAMESPACE" || kubectl create namespace "$KUBE_NAMESPACE"
   }
 
   function check_kube_domain() {
