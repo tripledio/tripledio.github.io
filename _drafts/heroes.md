@@ -163,16 +163,17 @@ Like is said before, who doesn't want to be a hero? Just like in the wild west s
          
          Because even if you should have some infallible IT-heroes, they can not be everywhere at the same time. The team needs to ready and competent to handle everything without the heroes being around.
      
-----8<----8<----8<----8<----8<----8<----8<END
-    
-+ Hero Cult - people political [hero-cult]
 
-    Heroes also can complicate the political landscape. It can happen that a little cult of followers starts forming around one person. That is a dangerous thing politically. It adds the additional political complexity that next to the existing organizational silo's often present in a organisation, there is an additional political group that can possibly run across organizational boundaries. In this case the leader of the hero cult may gain more power than the organization/ customer is willing to give to them. For 
     
- 
-
-+ Professional will leave
-    
+        + Hero Cult - people political [hero-cult]
+        
+            Heroes also can complicate the political landscape. It can happen that a little cult of followers starts forming around one person. That is a dangerous thing politically. It adds the additional political complexity that next to the existing organizational silo's often present in a organisation, there is an additional political group that can possibly run across organizational boundaries. In this case the leader of the hero cult may gain more power than the organization/ customer is willing to give to them. For 
+            
+         
+        
+        + Professional will leave
+       
+----8<----8<----8<----8<----8<----8<----8<END     
     
 ## What we should strive for
     
