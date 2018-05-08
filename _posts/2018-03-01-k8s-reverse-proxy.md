@@ -155,10 +155,7 @@ Now point your browser to: [tripled.192.168.99.100.xip.io](http://tripled.192.16
 
 I hope you find this technique interesting and useful in your kubernetes migrations. And while this might be a pretty synthetical example, you could easily use something like [fixer.io](http://fixer.io/) [^7] and use it as your local currency exchange microservice. Allowing you to easily replace it by your own implementation later on.
 
----
-_**References**_
-
-
+***
 [^1]: _[Kubernetes](https://kubernetes.io): an open-source system for automating deployment, scaling, and management of containerized applications_
 
 [^2]: _[NGINX](https://www.nginx.com) is a free, open-source, high-performance HTTP server and reverse proxy_

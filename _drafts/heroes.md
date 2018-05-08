@@ -72,6 +72,6 @@ The smartest people I know:
 7. Realize life isn't black & white
 8. Fear bias & arrogance
 
-**References**
+***
 
 [^sandroBook]: [The Software Craftsman](https://www.amazon.com/Software-Craftsman-Professionalism-Pragmatism-Robert/dp/0134052501/ref=sr_1_1?s=books&ie=UTF8&qid=1522832866&sr=1-1&keywords=sandro+mancuso)
