@@ -150,8 +150,7 @@ Of course this will always be a struggle. The functional deadline from the proje
 
 Unfortunately I would dare to say that most people do not care about the structure of the code. The quality attributes are often subservient to some deadline someone cooked up. The problem is that software doesn't collapse immediately. It sometimes takes years before it explodes. But when it inevitably does..
 
-***
-_**References**_
+**References**
 
 [^article]: [The article on the buildings in Brussel](http://www.standaard.be/cnt/dmf20170616_02928477)
 [^CleanCode]: [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
