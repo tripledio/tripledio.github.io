@@ -44,9 +44,13 @@ h6 {
 }
 
 hr {
-  background-color: $color-secondary;
-  border: 0;
+  background: $color-primary;
+  border: none;
+  border-radius: 5rem;
+  display: block;
   height: 1px;
+  line-height: 0;
+  text-align: center;
   width: 100%;
 }
 

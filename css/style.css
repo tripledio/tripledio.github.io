@@ -4401,9 +4401,15 @@ h6 {
   text-transform: uppercase; }
 
 hr {
-  background-color: #666666;
-  border: 0;
+  background: #21314c;
+  border: none;
+  border-radius: 5rem;
+  display: block;
   height: 1px;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   width: 100%; }
 
 p,
