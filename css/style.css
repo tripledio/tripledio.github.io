@@ -4400,6 +4400,12 @@ h6 {
   color: #21314c;
   text-transform: uppercase; }
 
+hr {
+  background-color: #666666;
+  border: 0;
+  height: 1px;
+  width: 100%; }
+
 p,
 .p {
   font-family: "Raleway", sans-serif;
