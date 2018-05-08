@@ -1,7 +1,7 @@
 /* STYLES FOR TRIPLE D */
 /* RESET */
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
 *,
 *::before,
 *::after {
@@ -4429,7 +4429,7 @@ p,
   .p b,
   .p strong {
     font-family: "Raleway", sans-serif;
-    font-weight: normal; }
+    font-weight: 900; }
 
 ul,
 ol {
