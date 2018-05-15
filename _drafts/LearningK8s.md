@@ -42,6 +42,66 @@ A production process that describes how to produce something. We want to be very
 _Represents : The executable software that we want to be able to run anywhere in a variable amount of instances_ 
 
 
+## Encountered Terminology
+
+|K8Term|Meaning|Metaphore|
+|---|---|---|
+|Node|K8 abstraction for physical or virtual server. A node is where we are allowed to run pods| Factory|
+|Pod|K8 entity that contains containers adapter |production unit, where we produce something|
+|KubeCTL| api adapter for communicating with K8||
+|NodePort| Service that reserves the same port on all its nodes and forward incoming connections to the pods that are part of the service|
+|Services| Exposes functionality outside of K8 | The customer facing desk where request from outside our firm are received and dispatched to the appropriate production unit |
+
+IN K8 UI
+
+|K8Term|Meaning|Metaphore|
+|---|---|---|
+|Service|exposed to outside|
+|Deployments|production process that are run 'somdwhere'|Goods that we produce|
+|Pods||production units|
+|Replica-sets||
+
+
+Node contains multiple Pods
+Pod can contain multiple containers. But generally shouldn'y
+
+K8 kubectl commands
+
+|Command| Description|Metaphore|
+|---|---|---|
+|run| Run an image in the cluster| Start producing following the given production proces|
+|expose| Create service to expose pod externally| Allow production unit to receive commands from outside|
+
+
+
+K8 deployment
+
+|K8Term|Meaning|
+|Kubeadm|Secure installation of K8 nodes, a common set of building blocks for all Kubernetes deployments|
+
+Questions
+---------------
+Docker port mapping
+The Pause container is responsible for defining the network for the Pod. Pause container standard  container inside Pod?
+Load balancer service: standard service in K8 for distributing between differe t pods with given process.
+
+Definitions
+--------------
+
+|Name|Description|
+|---|---|
+| Master node|  Node that hosts the Kubernetes Control Plane that controls and manages the whole Kubernetes system
+| Worker nodes| The machines that run the deployed containerized applications| 
+| Control Plane| Group of components that controls the cluster. Consists of multiple components. Can run on a single master node or be split across multiple nodes.|
+| Kubernetes API Server| Master node component that serves API and registry which all Control Plane components communicate with |
+| Scheduler| Master node component which schedules your apps (assigns a worker node to each deployable component of your application)
+| Controller Manager| Master node component that performs cluster level functions. Consist out of several independent controllers|
+| etcd| Master node component, a reliable distributed data store that persistently stores the cluster configuration|
+| Container runtime|  Worker node component which runs your containers|
+| Kubelet| Worker node component which talks to the API server and manages containers on its node|
+| Kubernetes Service Proxy (kube-proxy)|  Worker node component which load-balances network traffic between application components|
+| Service |A Kubernetes service is a named load balancer that proxies traffic to one or more containers. The proxy works even if the containers are on different nodes.|
+
 
 **References**
 
