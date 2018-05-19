@@ -51,21 +51,33 @@ _Represents : The executable software that we want to be able to run anywhere in
 |KubeCTL| api adapter for communicating with K8||
 |NodePort| Service that reserves the same port on all its nodes and forward incoming connections to the pods that are part of the service|
 |Services| Exposes functionality outside of K8 | The customer facing desk where request from outside our firm are received and dispatched to the appropriate production unit |
+|Replication Controller| Controller responsible fro deployment replication | The manager in the control center that makes sure that the requested nr of prodcutionunits of a certain proces are always up and running somewhere. |
+|Replica-sets| Replication controllers V2|
+|Daemon Sets | No replica count, run one pod on all nodes or selected|
+|Liveness probe| runs in pod, Kubelet in pod restarts container if probe fails||
+|readiness probe|||
 
-IN K8 UI
+
+K8 UI
+-----
 
 |K8Term|Meaning|Metaphore|
 |---|---|---|
 |Service|exposed to outside|
 |Deployments|production process that are run 'somdwhere'|Goods that we produce|
 |Pods||production units|
-|Replica-sets||
+|Replica-sets| Replication controllers V2,|
+
 
 
 Node contains multiple Pods
-Pod can contain multiple containers. But generally shouldn'y
+Pod can contain multiple containers. But generally shouldn't
+Pods can be launched directly via kubectl. But better via replication controller. If node fails, pod will not be relaunched.
+Self created pods only maanged by kubelet
 
-K8 kubectl commands
+
+kubectl commands
+----------------------
 
 |Command| Description|Metaphore|
 |---|---|---|
@@ -75,6 +87,7 @@ K8 kubectl commands
 
 
 K8 deployment
+--------------
 
 |K8Term|Meaning|
 |Kubeadm|Secure installation of K8 nodes, a common set of building blocks for all Kubernetes deployments|
@@ -101,6 +114,8 @@ Definitions
 | Kubelet| Worker node component which talks to the API server and manages containers on its node|
 | Kubernetes Service Proxy (kube-proxy)|  Worker node component which load-balances network traffic between application components|
 | Service |A Kubernetes service is a named load balancer that proxies traffic to one or more containers. The proxy works even if the containers are on different nodes.|
+| Ingress | Ingress (noun)—The act of going in or entering; the right to enter; a means or place of entering; entryway.” Deployed as replication controller, combines software loadbalancer with K8 integration|
+| Ingress rules| Object type of K8|
 
 
 **References**
