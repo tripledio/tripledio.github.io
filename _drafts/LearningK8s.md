@@ -8,19 +8,24 @@ excerpt: Learning K8s.
 ---
 # Learning K8s
 
-Since i finally got around to looking seriously into Kubernetes I thought it might be interesting to take some notes on my learnings, thoughts when doing so. Even if only for helping me to focus.
+Since i finally got around to looking seriously into Kubernetes I thought it might be interesting to take some notes during my learnings.  Even if only for helping me to focus he  jumping form theory to practice and remembering what i learned yesterday ;)
 
-Why Kubernetes? because it's the new shiny object of course ;-). No seriously, as a professional software engineer our job consists out of so much more then knowing how to write good maintanable code. The code in itself does not deliver any value to the customer. It is delivering value when it is up and running. So we want to make sure that we can keep our software up and running 24/7. 
+## Why learn Kubernetes?
 
-That is why as a company you want your software to be able to run in a variable number of instances, the number depending on the ever changing requirements determined by usage. If everyone wants to buy you wnat to be able to handle the load. if no one is buying you do not want to waste resources on unused instances. It should be very easy to spun up a new instance of any application. (AWs lambda's and FAAs come into play here.) But regardless of the elasticity of our running software instances we still want all those different applications to be able to work together. Without really needing to know or care where the applications that they are depending on are running. Or how much instances that are running. It should also be possible to have multiple instances of multiple versions of any software running at the same time. Allowing for a graceful transition of our services in any direction we want to go.
+Why look into Kubernetes? Because it's the new shiny object of course ;-). No seriously, as a professional software engineer our job consists out of so much more then knowing how to write good maintainable code. Even that is a great challenge on its own. Great code in itself does not deliver any value to the customer. It needs to be up and running, easily to roll out new versions, easy to have multiple versions rolled out at the same time and so on... As waterfall has such a bad name in our industry we can't treat the deployment and running in production as 'someone else' job. With us throwing our great code over the wall and placing the responsibility of getting it to work, keeping it up, maintainable to some other poor sod. I for one want to take ownership of the entire process. Not be statisied when 'my job' is done. As long as no value has been delivered, the job isn't done.
 
-So after have look at some video's, reads some blogs, played on [kata code](https://www.katacoda.com/courses/kubernetes)[^kataCoda] I decided for a systematic approach to make sure i got the basics right and could build up mu knowledge in a structured manner. So i bought the book [Kubernetes in action](https://www.manning.com/books/kubernetes-in-action) and flipped to chapter 1.
+So after I have looked at some video's, reads some blogs,  glanced over some official documentation I decided for a systematic approach to make sure I got the basics right and could build up my knowledge in a structured manner. So I bought the book [Kubernetes in action](https://www.manning.com/books/kubernetes-in-action) [^kubeBook] and flipped to chapter 1.
+
+played on [kata code](https://www.katacoda.com/courses/kubernetes)[^kataCoda]
 
 ## My model
 
-Reading through chapter 1 of the book [^kubeBool] I felt myself quickly establishing a mental model. A metaphor by which it all makes sense to me. Sorry that is just how my mind works :P 
+Reading through chapter 1 of the book [^kubeBook] I felt myself quickly establishing a mental model. A metaphor by which it all makes sense to me. Sorry that is just how my mind works :P But I think it could be useful a s a genera overview what Kubernetes is and what it does without loosing ourselves immediately in technical detailed solutions.
 
-Image you are a wealthy industrial. You own several factories that all produce different things. Some of those factories produce an end product for a customer. Some of these factories produce resources that are in turn used by other factories. As an entrepreneur you would of course like to be able to quickly match the markets demand. One doesn't want to be stuck producing video tapes when dvd's are all the rage. (I know, I'm old ;) ) 
+Image you are a wealthy industrial. You own several **factories** that all produce different things. Some of those factories produce an end product for a customer. Some of them produce resources that are in turn used by other factories. The **process** of how and what these factories produce is determined in the research laboratory. of which you of course aslo own several. 
+
+
+As an entrepreneur you would of course like to be able to quickly match the markets demand. One doesn't want to be stuck producing video tapes when dvd's are all the rage. (I know, I'm old ;) ) 
 
 
 That is why you want to be able to use all your factories to produce many different things. It would be nice if you could just send a new or updated production process to any factory and in a very short time that factory is able to follow that process and produce different things. If your factories would be able to do that it would also be easy, depending on the size and resources available to a specific factory, to let a factory produce several completely unrelated things. This will also avoid that the production of some good can get stuck when there is a problem at one of the factories.  When demands for a certain product plummets or sky rockets you want to be able to quickly. You want to be able o quickly move production to another factory.  
@@ -42,7 +47,23 @@ A production process that describes how to produce something. We want to be very
 _Represents : The executable software that we want to be able to run anywhere in a variable amount of instances_ 
 
 
+## Advantages 
+
+That is why as a company you want your software to be able to run in a variable number of instances, the number depending on the ever changing requirements determined by usage. If everyone wants to buy you want to be able to handle the load. if no one is buying you do not want to waste resources on unused instances. It should be very easy to spun up a new instance of any application. (AWs lambda's and FAAs come into play here.) But regardless of the elasticity of our running software instances we still want all those different applications to be able to work together. Without really needing to know or care where the applications that they are depending on are running. Or how much instances that are running. It should also be possible to have multiple instances of multiple versions of any software running at the same time. Allowing for a graceful transition of our services in any direction we want to go.
+
+Scaling microservices.
+Move to microservices from monolith
+replacable autonomuous parts
+deploying multiple versions
+consistent environment
+isolating components
+
 ## Encountered Terminology
+
+Kubernetes is Greek for pilot or helmsman (the person holding the ship’s steering wheel
+
+
+
 
 |K8Term|Meaning|Metaphore|
 |---|---|---|
