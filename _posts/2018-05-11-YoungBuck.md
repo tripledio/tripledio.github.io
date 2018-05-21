@@ -8,7 +8,7 @@ excerpt: A post about the Young buck hero pattern in software development. The y
 ---
 # The young buck
 
-This post belongs to small series of posts. The main post is [Wild west heroes](/10/05/2018/heroes/). In this post I'll go into a bit more detail what I identify as the Young Buck "hero" pattern.
+This post belongs to small series of posts. The main post is [Wild west heroes](/10/05/2018/Heroes/). In this post I'll go into a bit more detail what I identify as the Young Buck "hero" pattern.
 
 With *the young buck* if refer to the young gunslingers full of high ideals, with a simplistic sense of justice, who do all the fighting and take all the risks. Unfortunately they often get played for a fool and someone else reaps the benefit from their efforts. The result of their struggles might not be what they wanted, the townspeople might not be so pleased with the result. As a result they often get scorned and chased away by the very people they were fighting for. 
 

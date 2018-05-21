@@ -8,7 +8,7 @@ excerpt: A post about the lone ranger hero pattern in software development.
 ---
 # The lone ranger
 
-*This post belongs to small series of posts. The main post is [Wild west heroes](/10/05/2018/heroes/).*
+*This post belongs to small series of posts. The main post is [Wild west heroes](/10/05/2018/Heroes/).*
  
 Here I'll go into a bit more detail what I identify as the **Lone ranger** "hero" pattern.  As the name suggest the lone ranger is someone who mostly operates alone. Lone rangers get the job done by themselves and are always there to save the day. The day, of course, needs constant saving. Some rangers take pride in their heroic actions, others would very much like to put an end to the necessity of it and live a quiet happy life. If they only could.
 
