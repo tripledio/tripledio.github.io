@@ -22,7 +22,8 @@ played on [kata code](https://www.katacoda.com/courses/kubernetes)[^kataCoda]
 
 Reading through chapter 1 of the book [^kubeBook] I felt myself quickly establishing a mental model. A metaphor by which it all makes sense to me. Sorry that is just how my mind works :P But I think it could be useful a s a genera overview what Kubernetes is and what it does without loosing ourselves immediately in technical detailed solutions.
 
-Image you are a wealthy industrial. You own several **factories** that all produce different things. Some of those factories produce an end product for a customer. Some of them produce resources that are in turn used by other factories. The **process** of how and what these factories produce is determined in the research laboratory. of which you of course aslo own several. 
+Image you are a wealthy industrial. You own several **factories** that all produce different things. Some of those factories produce an end product for a customer. Some of them produce resources that are in turn used by other factories. The **process** of how and what these factories produce is determined in the research laboratory. of which you of course aslo own several.
+ 
 
 
 As an entrepreneur you would of course like to be able to quickly match the markets demand. One doesn't want to be stuck producing video tapes when dvd's are all the rage. (I know, I'm old ;) ) 
