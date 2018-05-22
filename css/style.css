@@ -4441,7 +4441,7 @@ p,
   .p b,
   .p strong {
     font-family: "Raleway", sans-serif;
-    font-weight: 900; }
+    font-weight: bold; }
 
 ul,
 ol {
@@ -4450,7 +4450,8 @@ ol {
   ul strong,
   ol b,
   ol strong {
-    font-family: "Roboto", sans-serif; }
+    font-family: "Raleway", sans-serif;
+    font-weight: bold; }
 
 blockquote {
   position: relative;
