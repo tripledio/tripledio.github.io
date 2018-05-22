@@ -8,8 +8,6 @@ excerpt: A post about the Local Hero pattern in software development.
 ---
 # The Local hero
 
-__considered heroic by peers/customer , expert/guru , cult, stiffle growth, political__
-
 *This post belongs to small series of posts. The main post is [Wild west heroes](/20/05/2018/Heroes/).*
  
 In this post I'll go into a bit more detail what I identify as the Local "hero" pattern. In my main metaphor of the wild west, the fastest gunslingers are often the hero of the pack. Their actions have given them a reputation as saviors, those you can rely on, the ones who know best. Their reputations have risen to legendary. Tales of their heroic exploits have bolstered their reputation far outside the realm of their immediate environment.
