@@ -81,7 +81,7 @@ As an employer having your own local heroes may seem comforting and reassuring. 
 
 A little tip to my fellow heroic super intelligent software engineers out there: Be humble!
  
-Seriously. Everyone wants to be special. But no one knows everything and everyone makes mistakes. Even if it is so much cooler to be a ninja than a janitor. A [janitor](https://twitter.com/sarah_edo/status/991421712989208576) is useful. Constantly learning and improving yourself is definitely an admirable trait. Just don't turn into a [Bully](/14/05/2018/Bully/). 
+Seriously. Everyone wants to be special. But no one knows everything and everyone makes mistakes. Even if it is so much cooler to be a ninja than a janitor. A [janitor](https://twitter.com/sarah_edo/status/991421712989208576) is useful. Constantly learning and improving yourself is definitely an admirable trait. Just don't turn into a [Bully](/20/05/2018/Bully/). 
 
 When I am looking for people to work with I am looking to their mentality first. No matter how competent or genius you are, the 'mission' comes first. We are all smart people. But can we work together?
 
