@@ -58,7 +58,7 @@ As someone at the start of their career, finally playing with the big boys, work
 
 ### Conclusion
 
-For a **young buck** this may feel like doing the right thing. Working hard, making deadlines, saving the day. But seen from a distance it is just another software mess under construction. Delivering low quality software and potentially causing a lot of damage to the firm. Luckily just like with young cowboys, if they survive the battles after a while they become experienced gunslingers who won't fight a needless fight or get played for a fool. 
+For a **young buck** it may seem that working hard, making deadlines, saving the day is doing the right thing. But seen from a distance it is just another software mess under construction. Delivering low quality software and potentially causing a lot of damage to the firm. Luckily just like with young cowboys, if they survive the battles after a while they become experienced gunslingers who won't fight a needless fight or get played for a fool. 
 
 **References**
 
