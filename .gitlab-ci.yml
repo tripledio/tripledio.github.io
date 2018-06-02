@@ -89,7 +89,7 @@ review:
     - deploy
   environment:
     name: review/$CI_COMMIT_REF_NAME
-    url: http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
+    url: https://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
     on_stop: stop_review
   only:
     refs:
@@ -104,7 +104,7 @@ linkChecker:
       name: linkchecker/linkchecker
       entrypoint: [""]
   script:
-      - loopLinckChecker http://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
+      - loopLinckChecker https://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
    #This is merely an indicator for gitlab so the necessary variables are passed on to this job
   environment:
       name: review/$CI_COMMIT_REF_NAME
@@ -160,7 +160,7 @@ stop_review:
     - deploy
   environment:
     name: staging
-    url: http://$CI_PROJECT_PATH_SLUG-staging.$AUTO_DEVOPS_DOMAIN
+    url: https://$CI_PROJECT_PATH_SLUG-staging.$AUTO_DEVOPS_DOMAIN
   only:
     refs:
       - master
@@ -183,7 +183,7 @@ stop_review:
     - deploy canary
   environment:
     name: production
-    url: http://$CI_PROJECT_PATH_SLUG.$AUTO_DEVOPS_DOMAIN
+    url: https://$CI_PROJECT_PATH_SLUG.$AUTO_DEVOPS_DOMAIN
   when: manual
   only:
     refs:
@@ -209,7 +209,7 @@ production:
     - delete canary
   environment:
     name: production
-    url: http://$CI_PROJECT_PATH_SLUG.$AUTO_DEVOPS_DOMAIN
+    url: https://$CI_PROJECT_PATH_SLUG.$AUTO_DEVOPS_DOMAIN
 #  when: manual
   only:
     refs:
