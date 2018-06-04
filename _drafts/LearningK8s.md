@@ -120,7 +120,7 @@ Docker port mapping
 The Pause container is responsible for defining the network for the Pod. Pause container standard  container inside Pod?
 Load balancer service: standard service in K8 for distributing between differe t pods with given process.
 
-Definitions
+K8S Definitions
 --------------
 
 |Name|Description|
@@ -138,6 +138,17 @@ Definitions
 | Service |A Kubernetes service is a named load balancer that proxies traffic to one or more containers. The proxy works even if the containers are on different nodes.|
 | Ingress | Ingress (noun)—The act of going in or entering; the right to enter; a means or place of entering; entryway.” Deployed as replication controller, combines software loadbalancer with K8 integration|
 | Ingress rules| Object type of K8|
+
+Related Definitions
+--------------
+
+|Name|Description|
+|---|---|
+|Rancher|Open source framework for manages your clusters. Used to deploy. manage, secure clusters regardless of where the cluster run|
+|Helm|Package manager that streamlines installing and managing K8s applications. Like apt/yum/homebrew|
+|Helm Chart|Description of predefined Kubernetes resources, allowing it to be deployed on K8 |
+|Tiller| The server part of helm that runs inside your cluster|
+|Helm (client)| The client part of helm that runs anywhere and executes the charts|
 
 
 **References**
