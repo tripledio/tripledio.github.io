@@ -38,10 +38,7 @@ Often the only one who benefits form these heroics is the Young Bucks boss. The 
 
 Once sufficient deadlines have passed and the software goes into maintenance mode this is even more beneficial for the boss. The customer is still in need of software engineers to maintain and possibly extend the software. Which takes more time than it should due to the numerous shortcuts that where taken. The Young Bucks are left maintaining the software and hopefully cleaning up a bit of the large technical debt they created themselves.
 
-There is a benefit to all of this for the Young Bucks. It is called **experience**. If they were paying attention they learn how *not* to run a software project. Why best practices of software design are considered best practices. It will allow them to learn and to avoid being exploited in the future.
-
-For some Young Bucks it will even cause something far better, some of them, will try to raise up to the opportunity and gain a bigger voice in the project. If they are given the chance they might even be able to do some great things with their short experience.
-But this is not something that will happen with every Young Buck, it requires the willpower to stand up to people around them, take more responsibility. But they will try to improve the situation they are in.
+There is a benefit to all of this for the Young Bucks. It is called **experience**. If they were paying attention they learn how *not* to run a software project. Why best practices of software design are considered best practices. It will allow them to learn and to avoid being exploited in the future. In some cases, there are Young Bucks that will try to raise up to the opportunity and use their gained experience to obtain a bigger voice in the project. When they are given the chance they might even be able to do some great things with the short but intense experience they have gained. But this is not something that will happen with every Young Buck, it requires that they were paying attention, that they were learning. After which they need the willpower to 'stand up' to people around them, to take on more responsibility. If a Young Buck takes ownership, they will try to improve their situation. Which will benefit the software and project as well. The circumstances need to allow it though. 
 
 ### Professionalism
 
