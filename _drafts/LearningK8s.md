@@ -135,7 +135,8 @@ K8S Definitions
 | Container runtime|  Worker node component which runs your containers|
 | Kubelet| Worker node component which talks to the API server and manages containers on its node|
 | Kubernetes Service Proxy (kube-proxy)|  Worker node component which load-balances network traffic between application components|
-| Service |A Kubernetes service is a named load balancer that proxies traffic to one or more containers. The proxy works even if the containers are on different nodes.|
+| Services| The stable dispath resource, how internal or external containers find and talk to each other | The dispatch office that keeps track of where all the different production units are and what they produce. When a request comes in for a given produnit, the loadbalance it.  |
+| Endpoints|A K8 resource that is a list of ip addresses | List of production units of certain type, needs constant update|
 | Ingress | Ingress (noun)—The act of going in or entering; the right to enter; a means or place of entering; entryway.” Deployed as replication controller, combines software loadbalancer with K8 integration|
 | Ingress rules| Object type of K8|
 
