@@ -148,9 +148,10 @@ The struggle between the function and the structure is not limited to our indust
 
 Of course this will always be a struggle. The functional deadline from the project versus the long term survival of the product. But this is exactly our responsibility as professional software engineers. To make sure that next to the functional requirements, we also need to implement the often not outspoken quality attributes. Of which maintainability is probably the most important one.
 
-Unfortunately I would dare to say that most people do not care about the structure of the code. The quality attributes are often subservient to some deadline someone cooked up. The problem is that software doesn't collapse immediately. It sometimes takes years before it explodes. But when it inevitably does...
+Unfortunately I would dare to say that most people do not care about the structure of the code. The quality attributes are often subservient to some deadline someone cooked up. The problem is that software doesn't collapse immediately. It sometimes takes years before it explodes. But when it inevitably does..
 
-**References**
+***
+_**References**_
 
 [^article]: [The article on the buildings in Brussel](http://www.standaard.be/cnt/dmf20170616_02928477)
 [^CleanCode]: [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
