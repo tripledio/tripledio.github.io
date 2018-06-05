@@ -15,7 +15,7 @@ The anemic domain model is a pattern for structuring a domain model. It separate
 ### Where does the name come from?
 It is called an anemic (pale, weak) domain model because it looks like an actual domain model but it's not. An actual domain model is a conceptual model of the problem domain that incorporates both behavior and data. By creating data objects and service objects but no real objects with behaviour there is no real model. Hence the term anemic domain model. The classes are there, it looks like they have meaningful relations. But it is a pale imitation of the real thing.
 ### Is it bad? 
-If we look at the definition of an object then it clearly states that an object contains encapsulated data and procedures grouped together. Since the anemic domain model pattern separates data and behaviour this conflicts with the original intent of OO. That's why it is considered by many to be an Anti-pattern.
+If we look at the definition of an object then it clearly states that an object contains encapsulated data and procedures grouped together. Since the anemic domain model pattern separates data and behaviour this conflicts with the original intent of OO. Thats why it is considered by many to be an Anti-pattern.
 
 ## The paperboy example
 
@@ -561,6 +561,7 @@ public class WalletTest {
 
 After this long explanation of the anemic domain model i hopefully have convinced you that it is not something you should strive for in an object oriented language. It really deserves the acronym **[POOP](https://www.allacronyms.com/POOP/Procedural_Object_Oriented_Programming)** [^10]. Where a proper Object Oriented implementation offers so much more...
 
+******
 **References**
 
 [^1]: _[The law of demeter](http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf)_
