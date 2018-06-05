@@ -59,9 +59,8 @@ levels of abstractions in its own. Aggregate root entities exhibit a higher leve
 The infrastructure layer consists of the lowest level of abstraction, it deals with the nitty-gritty details
 such as database persistence, networking protocols and other details needed by the domain layer to persist
 data or communicate with other systems.
-
-***
-
+---
+_**References**_
 [^1]: *Smalltalk best practice patterns* by **Kent Beck**, isbn 9780132852098.
 [^2]: *The productive programmer* by **Neil Ford**, isbn 9780596519780.
 [^3]: *Clean code* by **Robert C. Martin**, isbn 9780136083238.

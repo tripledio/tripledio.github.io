@@ -55,7 +55,8 @@ The goal is to have quality software _where it matters the most_. DDD contains t
 
 I hope to have elaborated in this short post what DDD is for me. A goal. Not a technique. I intentionally did not dive into the many different concepts and techniques that exist within the DDD community. I thought it was important to make the clear distinction between the goal (DDD) and the means to achieve that goal.
 
-**References**
+---
+_**References**_
 
 [^1]: _[Domain Driven design book](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&s=books&qid=1238687848&sr=8-1)_
 [^2]: _[ddd community](http://dddcommunity.org/learning-ddd/what_is_ddd/)_
