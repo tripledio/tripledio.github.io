@@ -14,23 +14,25 @@ In this post I'll elaborate on what I identify as the Young Buck pattern. With m
 
 Young Bucks see themselves as a hero, or they aspire to be one. Their eagerness to make it in the Wild West, to become a hero, can make them vulnerable to being used and doing someone else dirty work. A third party with a get-rich-quick scheme might misuse their sense of heroics for their own gain. Even without a third party encouraging them into heroics, their eagerness to become a hero, combined with a simplistic view of the world, might lead them down a violent path. They don't realize yet that violence isn't always the answer and should be a last resort. The townspeople might get some heroes, but run the risk that their town get's destroyed.
 
-### Young consultants
+### Software consultants
 
-Now how does this Young Buck metaphor relate to software development? In the software world I have seen these 'Young Buck' hero typically in a consulting context. The young developers, with little to no experience, first job in a consultancy firm. They are the ones that are the easiest to convince by management that they need to put in time, work hard, stay late, work in the weekends, in order to make that big deadline. I've mostly seen this happen on  fixed-prize waterfall project, that was bound to fail from the start.  Yes, 2018 and people still do big waterfall projects. Remember Obama care? [^obama-cio] )
-
-The developers that are doing this hard work, rushing from deadline to deadline, generally do this from a misplaced sense of pride. Perhaps even a sense of professionalism. **Look at us working hard, getting things done.** Our company and customer will be so proud of us. We're playing with the big boys now.. 
-
-Now of course you don't have to be young to be a Young Buck. But it certainly helps ;)
+Now how does this Young Buck metaphor relate to software development? In the software world I have started labeling this 'Young Buck' pattern in a consulting context. It seems to be the business models of some large firms. Grap the young developers, with little to no experience, first job in a consultancy firm, company car included. They are the ones that are the easiest to convince by management that they need to put in extra time, work hard, stay late, work in the weekends, ... All in order to make that big deadline. Personally I've seen this happen the most on  fixed-prize waterfall projects, that were bound to fail from the start.  Yes, people still do big waterfall projects. Remember Obama care? [^obama-cio] )
 
 ### Pride
 
-Besides a fear of saying no to their manager when they are asked to work late, there is sometimes also a sense of pride. It is precisely that sense of taking pride in doing 'heroic' deeds that categorizes them as the Young Buck. Other then being someone who is simply being exploited.
+Besides a fear of saying no to their manager when they are asked to work late/fast, there is frequently also a sense of misplaced pride that drives the Young Bucks. They are doing this hard work, rushing from deadline to deadline,  **Look at us working hard, getting things done.** Our company and customer will be so proud of us. We're playing with the big boys now.. 
 
-The Young Buck hero was for me what Sandro Mancuso discussed in a very recognizable way in chapter 5 of his book [The Software Craftsman](https://www.amazon.com/Software-Craftsman-Professionalism-Pragmatism-Robert/dp/0134052501/) [^sandroBook]. Being a hero may make you feel good about yourself, give you the sense that you are saving the day, that you are one of the hard workers, one of the professionals...
+It is precisely that sense of taking pride in doing 'heroic' deeds that categorizes them as the Young Buck. Other then being someone who is simply being exploited. They can even have a sense of professionalism that drives them. Going the extra mile. The goal justifies the means.
+
+The Young Buck hero was for me what Sandro Mancuso discussed in a very recognizable way in chapter 5 of his book [The Software Craftsman](https://www.amazon.com/Software-Craftsman-Professionalism-Pragmatism-Robert/dp/0134052501/) [^sandroBook]. Even though he doesn't call it that. Because being a hero may make you feel good about yourself, give you the sense that you are saving the day, that you are one of the hard workers, one of the **professionals**...
  
-Of course I've  seen many older software developer participate on yet another project with crazy arbitrary, deadlines. It is not really age related. Although I would hope that having seen the results of all those crazy deadlines one starts to realize that perhaps this isn't in the best interest of the customer and the software. Then again if everyone around you act like this is normal and that is the way we've always done it. It can be hard to get rid of the heroic aspirations. 
+### Age does not matter
 
-There are of course also plenty of experienced developers that have long lost the pride aspect or any illusion that they are being professionals. They are doing it because it pays the bills or advances their career. There is then no heroism involved anymore. Or passion.
+Now of course you don't have to be young to be a Young Buck. But it certainly helps ;) I've also seen many 'older' software developers participate on yet another project with crazy arbitrary, deadlines. The Young Buck pattern is not really age related. Although I would hope that having seen the results of all those crazy deadlines one starts to realize that perhaps this isn't in the best interest of the customer and the software. Then again if everyone around you act like this is normal and that is the way we've always done it. It can be hard to get rid of the heroic aspirations. 
+
+> The 7 most expensive words in business are: “We have always done it that way!”’ -- Catherine DeVrye
+
+There are of course also plenty of experienced developers that have no longer are motivated by the pride aspect. They are doing it because it pays the bills or advances their career. There is then no heroism involved anymore. Or passion for that matter.
     
 
 ### The software
@@ -74,3 +76,4 @@ For a **Young Buck** it may seem that working hard, making deadlines, saving the
 [^obama-cio]: [Software problems Obamacare](https://www.cio.com/article/2380827/developer/developer-6-software-development-lessons-from-healthcare-gov-s-failed-launch.html)
 [^obama-cbs]: [Obamacare poor design](https://www.cbsnews.com/news/experts-obamacare-website-stymied-by-its-poor-design/)
 [^constructionTale]: [Construction tale](/15/04/2018/Construction-Tale/) 
+[^seven]: [7 Expensive words](http://www.greatmotivation.com/media/pdf/The-seven.pdf)
