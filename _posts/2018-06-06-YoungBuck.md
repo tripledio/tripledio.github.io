@@ -10,23 +10,28 @@ excerpt: A post about the Young buck hero pattern in software development. The y
 
 *This post belongs to small series of posts. The main post is [Wild west heroes](/31/05/2018/Heroes/).* 
 
-In this post I'll elaborate on what I identify as the Young Buck "hero" pattern. With the *Young Buck* I refer to the image of the young gunslingers just leaving home and stepping out into the big world. Usually they are full of high ideals and have a simplistic sense of justice. Unfortunately they get played for a fool most of the time and end up doing all the fighting and take all the risks while someone else reaps the benefit from their effort. The end result of their struggles might not be what they had hoped for. The townspeople might not be so pleased with the carnage lying in their wake. They often end up getting scorned and chased away by the very people they were fighting for. 
+In this post I'll elaborate on what I identify as the Young Buck pattern. With my Wild West metaphor in mind, with the *Young Buck* I refer to the image of the young gunslingers that are just leaving home, stepping out into the big world. Usually they are still full of high ideals and have a simplistic sense of justice. Unfortunately their lack of real world experience sometimes let's them get played for a fool. If they aren't careful they might end up doing all the fighting and taking all the risks while someone else reaps the benefit from their efforts. Their simplistic, direct world view could result in an ending which isn't what they had in mind or hoped for. The townspeople might not be so pleased with the wreckage and carnage lying in the young bucks wake. The results of their hard battles may very well be that they end up getting scorned and even chased away by the very people they were fighting for. 
 
-Mainly, the Young Bucks see themselves as a hero, or they aspire to be one. Their eagerness to make it in the wild west often makes them vulnerable to being used as canon fodder and doing someone else dirty work. A third party might misuse their sense of heroics for their own gain, exploiting that they don't know any better yet. 
+Young Bucks see themselves as a hero, or they aspire to be one. Their eagerness to make it in the Wild West, to become a hero, can make them vulnerable to being used and doing someone else dirty work. A third party with a get-rich-quick scheme might misuse their sense of heroics for their own gain. Even without a third party encouraging them into heroics, their eagerness to become a hero, combined with a simplistic view of the world, might lead them down a violent path. They don't realize yet that violence isn't always the answer and should be a last resort. The townspeople might get some heroes, but run the risk that their town get's destroyed.
 
 ### Young consultants
 
-In the software world I have seen these 'Young Buck' hero typically in a consulting context. The young developers, with little to no experience, first job in a consultancy firm. They are the ones that are the easiest to convince that they need to put in time, work hard, stay late, work in the weekends, in order to make that big deadline. This often happens on some fixed-prize waterfall project that was bound to fail from the start.  ( Yes, people still do big waterfall projects. Remember Obama care? [^obama-cio] )
+Now how does this Young Buck metaphor relate to software development? In the software world I have seen these 'Young Buck' hero typically in a consulting context. The young developers, with little to no experience, first job in a consultancy firm. They are the ones that are the easiest to convince by management that they need to put in time, work hard, stay late, work in the weekends, in order to make that big deadline. I've mostly seen this happen on  fixed-prize waterfall project, that was bound to fail from the start.  Yes, 2018 and people still do big waterfall projects. Remember Obama care? [^obama-cio] )
 
-The developers that are doing this hard work, rushing from deadline to deadline, generally do this from a misplaced sense of pride. Perhaps even a sense of professionalism. **Look at us working hard, getting things done.** Our company and customer will be so proud... 
+The developers that are doing this hard work, rushing from deadline to deadline, generally do this from a misplaced sense of pride. Perhaps even a sense of professionalism. **Look at us working hard, getting things done.** Our company and customer will be so proud of us. We're playing with the big boys now.. 
 
 Now of course you don't have to be young to be a Young Buck. But it certainly helps ;)
 
 ### Pride
 
-It is precisely that sense of taking pride in doing 'heroic' deeds that categorizes them as the Young Buck. Of course I've  seen many older consultants participate on yet another project with crazy arbitrary, deadlines. But usually they have long lost the pride aspect or any illusion that they are being professional. They are doing it because it pays the bills or advances their career with the boss. They do it consciously, knowing full well that what they are doing and where it leads to. 
-    
+Besides a fear of saying no to their manager when they are asked to work late, there is sometimes also a sense of pride. It is precisely that sense of taking pride in doing 'heroic' deeds that categorizes them as the Young Buck. Other then being someone who is simply being exploited.
+
 The Young Buck hero was for me what Sandro Mancuso discussed in a very recognizable way in chapter 5 of his book [The Software Craftsman](https://www.amazon.com/Software-Craftsman-Professionalism-Pragmatism-Robert/dp/0134052501/) [^sandroBook]. Being a hero may make you feel good about yourself, give you the sense that you are saving the day, that you are one of the hard workers, one of the professionals...
+ 
+Of course I've  seen many older software developer participate on yet another project with crazy arbitrary, deadlines. It is not really age related. Although I would hope that having seen the results of all those crazy deadlines one starts to realize that perhaps this isn't in the best interest of the customer and the software. Then again if everyone around you act like this is normal and that is the way we've always done it. It can be hard to get rid of the heroic aspirations. 
+
+There are of course also plenty of experienced developers that have long lost the pride aspect or any illusion that they are being professionals. They are doing it because it pays the bills or advances their career. There is then no heroism involved anymore. Or passion.
+    
 
 ### The software
 
