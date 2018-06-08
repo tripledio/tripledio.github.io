@@ -58,7 +58,7 @@ This has a much lower probability of occurring if the rate of Young Bucks is low
 
 > Pressure + Heroics + Requirements = Expensive Bad software
 
-## The boss
+### The boss
 
 Often the only one who benefits form these heroics is the Young Bucks boss. The boss is the one that gets paid by the customer for the work and overtime. Of course a bone will be thrown occasionally towards the ones doing the actual work. But it isn't the boss that is working in the weekends, pulling an all nighter, sacrificing their social lives.
 
@@ -66,25 +66,27 @@ Once sufficient deadlines have passed and the software goes into maintenance mod
 
 The boss get richer.
 
-### Professionalism
+## Professionalism
 
-To those Young Bucks out there, who are in their first rodeo, Let me make it clear that working hard no matter what does not make you a professional. Not even if you 'reach' the deadline by working 16 hours a day. 
+To those Young Bucks out there, who are in their first rodeo, Let me make it clear that working hard, no matter what, does not make you a professional. Not even if you 'reach' the deadline by working 16 hours a day. 
 
 > Heroics shouldn't come into play, heroes should not be necessary, the day should not _need_ saving. 
 
-Don't kid yourself. Don't allow others to give you a sense of guilt because you aren't there working with them on that crazy deadline.  While it may be a heroic thing to do, it is also a stupid thing to do. As 'heroics' things often are. It would have been much better if the heroics were never necessary. That the job was just predictable steadiness, without any heroic battles... 
+As someone at the start of their career, finally playing with the big boys, working on real big and important projects, it may seem perfectly reasonable to work hard from deadline to deadline. No more time for academic discussions. The customer wants it now! This is the real world!
+
+Don't kid yourself. Don't allow others to give you a sense of guilt because you aren't there working with them on that crazy deadline.  While it look like a heroic thing to do, it is actually a stupid thing to do. As '[heroic](/31/05/2018/Heroes/).' things often are.  It would have been much better if the heroics were never necessary. That the job was just predictable steadiness, without any heroic battles... 
    
 ### The time for heroics
      
-Of course sometimes things can still go wrong in production, an urgent intervention can be needed. But this should be an exceptional case. When it does happen, it should be dealt with swiftly. With a thorough post morten so we can learn how to avoid it in the future, making sure _this does not happen again_. Because we don't want to let the exceptional become the normal.
+Of course sometimes things can still go wrong in production or an urgent intervention can be needed. But this should be an exceptional case. When it does happen, it should be dealt with swiftly. With a thorough post morten so we can learn how to avoid it in the future, making sure _this does not happen again_. Because we don't want to let the exceptional become the normal.
 
-Deadlines are prevalent in our industry. But while a real deadline can exist (one of the business requirements, GDPR for example, not an arbitrary deadline a manager cooked up to impress someone) the scope should be changeable. If something can't be done, it can't be done. Sleep and time off is a required attribute for quality software. The time that a given deadline scared or impressed me is long gone. It should still be business as usual. If you can't make a deadline with proper, disciplined work, then you don't want to 'make it' with chaotic, sleep deprived work. 
-
-As someone at the start of their career, finally playing with the big boys, working on real big and important projects, it may seem perfectly reasonable to work hard from deadline to deadline. No more time for academic discussions. The customer wants it now! This is the real world!
+Deadlines are prevalent in our industry. But while a real deadline can exist (one of the business requirements, GDPR for example, not an arbitrary deadline a manager cooked up to impress someone) the scope should be changeable. **If something can't be done, it can't be done.** Sleep and time off is a required attribute for quality software. The time that a given deadline scared or impressed me personally is long gone. It should still be business as usual.
+ 
+ If you can't make a deadline with proper, disciplined work, then you don't want to 'make it' with chaotic, sleep deprived work. 
 
 ### Conclusion
 
-For a **Young Buck** it may seem that working hard, making deadlines, saving the day is doing the right thing. But seen from a distance it is just another software mess under construction. Delivering low quality software and potentially causing a lot of damage to the firm. Luckily just like with young cowboys, if they survive the battles after a while they might become experienced gunslingers who won't fight a needless fight or get played for a fool. Others will be stuck in the same pattern for a long time.
+For a **Young Buck** it may seem that working hard, making deadlines, saving the day is doing the right thing. But seen from a distance it is just another software mess under construction. Delivering low quality software and potentially causing a lot of damage to the firm. Luckily just like with young cowboys, if Young Bucks survive the battles then after a while they might become experienced gunslingers who won't fight a needless fight, don't get played for a fool. They might become reliable professionals.
 
 **References**
 
