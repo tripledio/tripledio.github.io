@@ -30,25 +30,41 @@ The Young Buck hero was for me what Sandro Mancuso discussed in a very recogniza
 
 Now of course you don't have to be young to be a Young Buck. But it certainly helps ;) I've also seen many 'older' software developers participate on yet another project with crazy arbitrary, deadlines. The Young Buck pattern is not really age related. Although I would hope that having seen the results of all those crazy deadlines one starts to realize that perhaps this isn't in the best interest of the customer and the software. Then again if everyone around you act like this is normal and that is the way we've always done it. It can be hard to get rid of the heroic aspirations. 
 
-> The 7 most expensive words in business are: “We have always done it that way!”’ -- Catherine DeVrye
+> The 7 most expensive words in business are: “We have always done it that way!”’ -- Catherine DeVrye [^seven]
 
-There are of course also plenty of experienced developers that have no longer are motivated by the pride aspect. They are doing it because it pays the bills or advances their career. There is then no heroism involved anymore. Or passion for that matter.
-    
+There are of course also plenty of experienced developers that are no longer motivated by the pride aspect. They are doing it because it pays the bills or because it advances their career. There is then no heroism involved anymore. Or passion for that matter.
+
+## Consequence of Young Bucks at work    
+
+### The Young Buck
+
+The impact of these heroics for the Young Bucks, besides the possible negative impact on their social life, is the risk of a burn out. Combined with the risk of becoming disillusioned with the software industry all together. Which I must admit is, even when the young part has long faded into oblivion, hard not to sucumb to. But that is a different story all together. 
+
+There is a benefit to all of this for the Young Bucks. It is called **experience**. If they were paying attention they will learn how *not* to run a software project. Why best practices of software design are considered best practices. This experience is worth a lot. But it is unfortunate that it goes at the expense of the software and the customer.
+
+Some Young Bucks won't need to wait until the projects are done to reap the benefits of their experience. If circumstances allow it, and they rise to the occasion, some Young Bucks can grasp an opportunity to gain a bigger voice in the project. If they are given the chance they might even be able to do some great things with their short experience. Avoiding the negative backlash from yet another low quality of even failed project, helping to turn the ship around in time. They are able to cash in on their experience quickly. Which will benefit the Young Buck, customer and software. But this is not always easy. It requires the willpower to stand up to people, make oneself be heard, to take more responsibility. The Young Buck will try to improve the situation they are in. And in effect no longer be a Young Buck but evolve into a reliable professional. Regardless of their age.
 
 ### The software
 
-Even if the deadline is met the customer is probably left with very poorly written software with a high maintenance cost. As I mentioned earlier,,, Obama care[^obama-cbs]. I could of course mention a lot of Belgian projects as well. The Young Bucks may feel like heroes while they are rushing for the deadline, doing quick fixes, patch job after path job in production but in the long run it is the software that suffers and the customer that will overpay for a low quality product. Because it is more important _how_ a job was done, than that the job was done. Because as we all know, software always changes, and is never 'done'. And that is a good thing. There should be life _possible_ for the software after a deadline.[^constructionTale] 
+Even if the deadline is met the customer is probably left with very poorly written software with a high maintenance cost. I mentioned Obama care[^obama-cbs] earlier, but I could of course mention a lot of Belgian projects as well. The Young Bucks may feel like heroes while they are rushing for the deadline, doing quick fixes, patch job after path job in production but in the long run it is the software that suffers and the customer that will overpay for a low quality product. Because it is more important _how_ a job was done, than that the job was done. Because as we all know, software always changes, and is never 'done'. And that is a good thing. 
 
-## Who benefits?
+> There should be life _possible_ for the software after a deadline.[^constructionTale] 
 
-Often the only one who benefits form these heroics is the Young Bucks boss. The boss is the one that gets paid by the customer for the work and overtime. Of course often a bone will be thrown towards the ones doing the actual work. But it isn't the boss that is working in the weekends, pulling an all nighter, sacrificing their social lives.
+### The customer
 
-Once sufficient deadlines have passed and the software goes into maintenance mode this is even more beneficial for the boss. The customer is still in need of software engineers to maintain and possibly extend the software. Which takes more time than it should due to the numerous shortcuts that where taken. The Young Bucks are left maintaining the software and hopefully cleaning up a bit of the large technical debt they created themselves.
+Often it is the customer who is the cause of the pressure. When combined with the idealism of the Young Bucks and lack of competent management this will result in very low quality software. Which the customer has payed for. They paid for a ferrari and received a bicycle edge in stone. 
 
-There is a benefit to all of this for the Young Bucks. It is called **experience**. If they were paying attention they learn how *not* to run a software project. Why best practices of software design are considered best practices. It will allow them to learn and to avoid being exploited in the future.
+This has a much lower probability of occurring if the rate of Young Bucks is low. Because when the developers working on the project are concerned with the long time value of the software instead of the short term fame of making a deadline then the customer benefits. Leave yur pride out of it and communicate honestly.
 
-For some Young Bucks it will even cause something far better, some of them, will try to raise up to the opportunity and gain a bigger voice in the project. If they are given the chance they might even be able to do some great things with their short experience.
-But this is not something that will happen with every Young Buck, it requires the willpower to stand up to people around them, take more responsibility. But they will try to improve the situation they are in.
+> Pressure + Heroics + Requirements = Expensive Bad software
+
+## The boss
+
+Often the only one who benefits form these heroics is the Young Bucks boss. The boss is the one that gets paid by the customer for the work and overtime. Of course a bone will be thrown occasionally towards the ones doing the actual work. But it isn't the boss that is working in the weekends, pulling an all nighter, sacrificing their social lives.
+
+Once sufficient deadlines have passed and the software goes into maintenance mode this is even more beneficial for the boss. The customer is still in need of software engineers to maintain and possibly extend the delivered software. Which takes more time than it should due to the numerous shortcuts that where taken. The Young Bucks are left maintaining the software and hopefully cleaning up a bit of the large technical debt they created themselves.
+
+The boss get richer.
 
 ### Professionalism
 
