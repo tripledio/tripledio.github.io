@@ -38,7 +38,7 @@ There are of course also plenty of experienced developers that are no longer mot
 
 **Start-up culture**
 
-The software consultant world is where I have personally experienced and have been a Young buck. But the heroics driver can of course manifest itself elsewhere as well. Start ups come to mind for example. Being the hero, making it happen, is a feeling that is defintely present there as well. 
+The software consultant world is where I have personally experienced and have been a Young buck myself. But the heroic driver can of course manifest itself everywhere. Start ups come to mind for example. Being the hero, making it happen, is a feeling that is defintely present there as well.  
 
 ### Consequences of Young Bucks   
 
@@ -82,7 +82,7 @@ To those Young Bucks out there, who are in their first rodeo, Let me make it cle
 
 As someone at the start of their career, finally playing with the big boys, working on really big and important projects, it may seem perfectly reasonable to work hard from deadline to deadline. No more time for academic discussions. The customer wants it now! This is the real world!
 
-Don't kid yourself. Don't allow others to give you a sense of guilt because you aren't there working with them on that crazy deadline.  While it looks like a heroic thing to do, it is actually a stupid thing to do. As '[heroic](/31/05/2018/Heroes/).' things often are.  It would have been much better if the heroics were never necessary. That the job was just predictable steadiness, without any heroic battles... 
+Don't kid yourself. Don't allow others to give you a sense of guilt because you aren't there working with them on that crazy deadline.  While it looks like a heroic thing to do, it is actually a stupid thing to do. As '[heroic](/31/05/2018/Heroes/)' things often are.  It would have been much better if the heroics were never necessary. That the job was just predictable steadiness, without any heroic battles... 
 
 Being a Young Buck is in itself not ideal, it is not something you want to remain for the rest of your career. But it is also not a disaster. It is in fact normal when you don't have  much experience yet. The danger lies in being exploited, or mistake your sense of heroics for professionalism. The ideal situation would be that Young Bucks finds themselves under the safe, constructive mentoring of the more experienced software engineers. So that their desire to work hard and do a good job get's channeled into the right direction. For this one needs to have a deal of luck to end up in such an environment. Because it is still the Wild West out there in the software world.
    
