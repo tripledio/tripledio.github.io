@@ -3,7 +3,7 @@ layout: post
 author: guido
 title: "The lone ranger"
 hideLogo: true
-header-img: "img/posts/heroes/ww.jpg"
+header-img: "img/posts/heroes/LoneRanger.jpg"
 excerpt: A post about the lone ranger hero pattern in software development.
 ---
 
