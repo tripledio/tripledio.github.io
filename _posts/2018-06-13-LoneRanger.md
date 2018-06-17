@@ -3,7 +3,7 @@ layout: post
 author: guido
 title: "The lone ranger"
 hideLogo: true
-header-img: "img/posts/heroes/LoneRanger.jpg"
+header-img: "img/posts/heroes/town.jpeg"
 excerpt: A post about the lone ranger hero pattern in software development.
 ---
 
@@ -39,7 +39,7 @@ No doubt there are other potential breeding grounds for Lone Rangers. But being 
 
 ### Danger of rangers
 
-**Bus factor**
+**Bus factor** [^bus]
 
 The main dangers from Lone ranger come of course from the fact that they operate alone. Apart from them, there is almost no one else that really knows what is going on. Which makes the rangers indispensable. A bus factor [^bus] of one. This is not a healthy situation. 
 
