@@ -33,7 +33,7 @@ So how does one 'evolve' into a Lone Ranger? I've seen it happen for a variety o
 
 But even when one has great technical expertise one could evolve into a lone ranger. When there is sufficient pressure but simply too much work for one person then one needs to start applying "quick fixes". People start taking shortcuts that end up hurting the software and increase the number of 'exceptions' that one needs to be aware of. When you don't have the time to do it right you do the equivalent of wrapping it up with some duck-tape. Hoping to fix it "later". Later, of course, means never and over time layers of ducktape start covering each other. This is what makes the lone rangers and their knowledge indispensable. Even if they would rather not be. But they are the only ones that know why the ducktape is there and what lies beneath it. of course, having 'no time' is no excuse. But it is not always easy to so no to the boss or client.
 
-> Due to a lack of knowledge, discipline, or ability to say no, things have gotten out of control.
+> Due to a lack of knowledge, discipline, or inability to say no, things have gotten out of control.
 
 No doubt there are other potential breeding grounds for Lone Rangers. But being sent out as 'the expert' that will fix everything is a very good starting point.
 
@@ -41,7 +41,7 @@ No doubt there are other potential breeding grounds for Lone Rangers. But being 
 
 **Bus factor**
 
-The main dangers from Lone ranger come of course from the fact that they operate alone. Apart from them, there is almost no one else that really knows what is going on. Which makes the rangers indispensable. A bus factor of one. This is not a healthy situation. 
+The main dangers from Lone ranger come of course from the fact that they operate alone. Apart from them, there is almost no one else that really knows what is going on. Which makes the rangers indispensable. A bus factor [^bus] of one. This is not a healthy situation. 
 
 **False sense of security**
 
@@ -63,6 +63,10 @@ The **lone rangers** may look like they have everything under control. But thing
 
  If roaming lone rangers are not on our radar we very well could make the evening news on some idle Thursday. So make sure we know what is going one. Exceptional interventions should be very exceptional. **Chaos should not be the norm!** Everyone should be replaceable.
 
+
+**References**
+
+[^bus]: [The bus factor](https://en.wikipedia.org/wiki/Bus_factor)
 
 
 
