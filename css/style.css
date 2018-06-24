@@ -4400,6 +4400,18 @@ h6 {
   color: #21314c;
   text-transform: uppercase; }
 
+hr {
+  background: #21314c;
+  border: none;
+  border-radius: 5rem;
+  display: block;
+  height: 1px;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%; }
+
 p,
 .p {
   font-family: "Raleway", sans-serif;

@@ -143,14 +143,13 @@ In conclusion, for me:
 + The model from MVC is its own model created for the specifc views.
 + Do not connect your presentation directly to the domain model. The domain model should not concern itself with presentation details.
 
-And
+But especially:
 
-### Don't use MVC as an excuse for an anemic domain model!
+**Don't use MVC as an excuse for an anemic domain model!**
 
 *(Please don't)*
 
----
-_**References**_
+**References**
 
 [^1]: _[GUI architectures by Martin Fowler](https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController)_
 [^2]: _[Model View Controller in "Patterns of enterprise application" by Martin Fowler](https://www.martinfowler.com/eaaCatalog/modelViewController.html)_
