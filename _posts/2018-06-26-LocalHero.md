@@ -4,7 +4,7 @@ author: guido
 title: "The local hero"
 hideLogo: true
 header-img: "img/posts/heroes/hero.jpg"
-excerpt: A post about the Local Hero pattern in software development.
+excerpt: A post about the local hero pattern in software development.
 ---
 # The Local hero
 
