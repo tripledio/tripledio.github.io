@@ -22,9 +22,9 @@ So lets discuss some of the dangers that lurk in having Heroes around.
 
 #### Ego <a name="ego"/>
 
-When people are constantly relying on someone, give much weight to their opinions, delegate their judgement to them, basically placing them onto a pedestal they run the risk that the object of their 'worship' will start losing objectivity. Even when the heroes have the best of intentions, and not all heroes necessarily do, it is hard to not get too full of yourselves when everyone considers you exceptional. That's why I deem these 'local heroes' dangerous because they often come with a huge ego. If not now then later. 
+When people are constantly relying on someone, give much weight to their opinions, delegate their judgement to them, basically placing them onto a pedestal they run the risk that the object of their 'worship' will start losing objectivity. Even when the heroes have the best of intentions - and not all heroes necessarily do - it is hard to not get too full of yourselves when everyone considers you exceptional. That's why I deem these 'local heroes' dangerous because they often come with a huge ego. If not now then later. 
 
-Now as software developers, we often tend to couple our ego to our knowledge and intelligence. I think it is our equivalent of quick-draws. Showing who's bests. But allow me to quote this little tweet:
+Now as software developers, we often tend to couple our ego to our knowledge and intelligence. I think it is our equivalent of quick-draws. Showing who's best. But allow me to quote this little tweet:
 
 > The smartest people I know:
 >
@@ -33,11 +33,11 @@ Now as software developers, we often tend to couple our ego to our knowledge and
 > 3. Encourage intellectual debate
 > 4. Have strong opinions, loosely held
 > 5. Are comfortable being wrong
-> 6. Surrounded by best people
+> 6. Surround themselves with great people
 > 7. Realize life isn't black & white
 > 8. Fear bias & arrogance
 
-If one really feels the need to, there are better ways of demonstrating one's intelligence then always wanting to be right. Which is pretty self-evident, we all know this in our day to day life. But at the workplace, this is apparently more easily forgotten.
+If one really feels the need to, there are better ways of demonstrating one's intelligence then always wanting to be right. Which is pretty self-evident, we all know this in our day to day life. But in the workplace, this is apparently more easily forgotten.
 
 A little mental check that I do is keeping track if I ever heard someone admit that they were wrong or saw them change their minds by someones else argument. When someone can never admit a mistake I try to avoid getting into an argument with them altogether. Personally, I start placing little value on their opinion or 'arguments'. Because they aren't being honest.
 
@@ -45,7 +45,7 @@ A little mental check that I do is keeping track if I ever heard someone admit t
 
 Of course, it is normal that people argue and defend their points of view. To a certain point. We all have this to some degree. But if someone is truly incapable of decoupling their ego from their solution then it is impossible to have a meaningful conversation. Because their ego does not permit them to admit that they are not omniscient. So there is really no point in debating them. You are just wasting time and money.
 
-Unfortunately, depending on their hero status in a group, getting involved with them may be unavoidable. If the local hero has a loyal following, then that can produce even an organizational risk and you'll need to deal with their minions as well.
+Unfortunately, depending on their hero status in a group, getting involved with them may be unavoidable. If the local hero has a loyal following, then that can even produce an organizational risk and you'll need to deal with their minions as well.
 
 *For more on loyality and heroics see [the Posse](/20/06/2018/Posse/)*
 
