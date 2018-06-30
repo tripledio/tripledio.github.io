@@ -10,7 +10,7 @@ excerpt: A post about the local hero pattern in software development.
 
 _This post belongs to small series of posts. The main post is [Wild west heroes](/31/05/2018/Heroes/)._
  
-My main metaphor throughout these posts on heroic behaviour has been the wild west. There, the fastest gunslingers usually are the hero of the pack. Their heroic actions have given them a reputation as saviours, those you can rely on, the ones who know best. Their reputations have sometimes risen to legendary. Tales of their heroic exploits have bolstered their reputation far outside the realm of their immediate environment. To most of the locals, they are Heroes.
+My main metaphor throughout these posts on heroic behaviour has been the wild west. There, the fastest gunslingers usually are the leader of the pack. Their heroic actions have given them a reputation as saviours, those you can rely on, the ones who know best. Their reputations have sometimes risen to legendary. Tales of their heroic exploits have bolstered their reputation far outside the realm of their immediate environment. To most of the locals, they are Heroes.
 
 These gunslingers are mostly placed on a pedestal by their peers. Sometimes the heroes even get worshipped by some of their peers. The more people that place the hero on a pedestal, the more their reputation grows, the more people potentially turn to them and start *following* them. 
 
@@ -22,9 +22,9 @@ So lets discuss some of the dangers that lurk in having Heroes around.
 
 #### Ego <a name="ego"/>
 
-When people are constantly relying on someone, give much weight to their opinions, delegate their judgement to them, basically placing them onto a pedestal they run the risk that the object of their 'worship' will start losing objectivity. Even when the heroes have the best of intentions - and not all heroes necessarily do - it is hard to not get too full of yourselves when everyone considers you exceptional. That's why I deem these 'local heroes' dangerous because they come with a huge ego. If they don't have it now, they will get it eventually. 
+When people are constantly relying on someone, give much weight to their opinions, delegate their judgement to them, basically placing them onto a pedestal they run the risk that the object of their 'worship' will start losing objectivity. Even when the heroes have the best of intentions - and not all heroes necessarily do - it is hard to not get too full of yourselves when everyone considers you exceptional. That's why I deem these 'local heroes' dangerous because they frequently come with a huge ego. If they don't have it now, they will get it eventually. 
 
-Now as software developers, we tend to couple our ego to our knowledge and intelligence. I think it is our equivalent of quick-draws. Showing who's best. But allow me to quote this little tweet:
+Now as software developers, we typically tend to couple our ego to our knowledge and intelligence. I think it is our equivalent of quick-draws. Showing who's best. But allow me to quote this little tweet:
 
 > The smartest people I know:
 >
@@ -87,7 +87,7 @@ A little tip to my fellow heroic super intelligent software engineers out there:
  
 Seriously. Everyone wants to be special. But no one knows everything and everyone makes mistakes. Even if it is so much cooler to be a ninja than a janitor. A [janitor](https://twitter.com/sarah_edo/status/991421712989208576) is useful. Constantly learning and improving yourself is definitely an admirable trait. Just don't turn into a Bully. 
 
-When I am looking for people to work with I look at their mentality first. No matter how competent or genius you are, the 'mission' comes first. We are all smart people. But can we work together?
+When I am looking for people to work with, I look at their mentality first. No matter how competent or genius you are, the 'mission' comes first. We are all smart people. But can we work together?
 
 **References**
 
