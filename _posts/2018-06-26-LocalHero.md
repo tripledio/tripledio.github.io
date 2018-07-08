@@ -10,15 +10,21 @@ excerpt: A post about the local hero pattern in software development.
 
 _This post belongs to small series of posts. The main post is [Wild west heroes](/31/05/2018/Heroes/)._
  
-My main metaphor throughout these posts on heroic behaviour has been the wild west. There, the fastest gunslingers usually are the leader of the pack. Their heroic actions have given them a reputation as saviours, those you can rely on, the ones who know best. Their reputations have sometimes risen to legendary. Tales of their heroic exploits have bolstered their reputation far outside the realm of their immediate environment. To most of the locals, they are Heroes.
+My main metaphor throughout these posts on heroic behaviour has been the wild west. In this post I'll address the equivalent of the fast hero gunslinger.
 
-These gunslingers are mostly placed on a pedestal by their peers. Sometimes the heroes even get worshipped by some of their peers. The more people that place the hero on a pedestal, the more their reputation grows, the more people potentially turn to them and start *following* them. 
+### Wild West heroes
+
+In the Wild West the fastest gunslingers usually are the leader of the pack. Their heroic actions have given them a reputation as saviours, of those one can rely on, of the ones that know best what to do when push comes to shove. Tales of their heroic exploits have bolstered their reputation far outside the realm of their immediate environment. To most of the locals[^famous], they are Heroes.
+
+These local gunslingers are mostly placed on a pedestal by their peers. Sometimes the heroes even get worshipped by some of their peers. The more people that place the hero on a pedestal, the more their reputation starts to grow, the more people potentially turn to them and start *following* them. 
 
 ### Software Heroes
 
-Now how does this relate to software development? In the software world the heroes in a company are those software developers that carry a lot of weight with their peers, most of the time with management as well. Through whatever actions they did in the past they have earned a good reputation and are considered to be very valuable, almost indispensable. 
+Now how does this all relate to software development? In the software world the equivalent of heroes in a company are those software developers that carry a lot of weight with their peers, most of the time with management as well. Through whatever actions they have done in the past, they have earned a good reputation and are considered to be very valuable, almost indispensable. All good things you might say.
 
-So lets discuss some of the dangers that lurk in having Heroes around.
+So lets discuss some of the dangers that lurk in having Local Heroes around.
+
+### Danger of Local Heroes
 
 #### Ego <a name="ego"/>
 
@@ -51,7 +57,7 @@ Unfortunately, depending on their hero status in a group, getting involved with 
 
 Even when someone is capable of keeping their ego in check, being 'worshipped' is still not a good thing. Even though somewhere deep down, we all like to be the object of adoration. Worship runs the risk of stifling the heroes own growth because they are no longer being properly challenged. The heroes can get lazily in their thinking, get too used to 'being right'. The ego gets inflated, losing touch with reality. And no matter how good they are, they become less valuable.
 
-#### No ownership
+#### Lack of ownership
 
 For the team, the heroes peers, having heroes around isn't without risk as well. The danger of having a Local Hero is that the team gets lazy, that they stifle their own growth. Because after a while the hero is no longer questioned. Just follow the leader of the pack, be safe, take it easy. 
 
@@ -77,11 +83,13 @@ The group of minions also can lead to a certain tribalism, a certain group press
 
 *This is closely related to [the Posse](/20/06/2018/Posse/)*
 
-### Conclusion
+## Conclusion
 
-The danger of the heroes lies not so much with the heroes themselves. But more with the impact, they have on their peers. More specifically, the impact their peers allow them to have. The heroes need to take care that they don't become **bullies**, that they keep their ego in check. [^jocko] But they aren't responsible for any passive, worshipping attitude that their peers may have. 
+The danger of the heroes lies not so much with the heroes themselves. But more with the impact that they have on their peers. More specifically, the impact their peers *allow* them to have. Heroes need to take care that they don't become **bullies**, that they keep their ego in check. [^jocko] But they themselves aren't responsible for any passive, worshipping attitude that their peers might develop. 
 
 As an employer having your own local heroes may seem comforting and reassuring. Everyone speaks so highly of them, we should treasure them. Just make sure that even the legends can take a vacation or, heaven forbids, change jobs. No one sticks around forever. Everyone must do their part. It is a good thing that the business can place their trust in their software engineers. But this should be the logical consequence of the team doing a consistently good job. No worshipping should come into play.
+
+**Pro-Tip**
 
 A little tip to my fellow heroic super intelligent software engineers out there: Be humble!
  
@@ -92,6 +100,7 @@ When I am looking for people to work with, I look at their mentality first. No m
 **References**
 
 [^jocko]: A book on leadership and people. Chapter 4 deals specifically with the ego. [Extereme ownership](https://www.amazon.com/Extreme-Ownership-U-S-Navy-SEALs-ebook/dp/B00VE4Y0Z2)
+[^famous]: I make the distinction between Local Heroes, which this post talks about, and between some of the very well known names in our IT world (Kent Beck for instance), which this post doesn't talk about at all. Hence the name 'Local' hero.
 
 
 
