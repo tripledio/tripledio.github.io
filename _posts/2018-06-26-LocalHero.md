@@ -14,7 +14,7 @@ My main metaphor throughout these posts on heroic behaviour has been the wild we
 
 ### Wild West heroes
 
-In the Wild West the fastest gunslingers usually become the natural leader of the pack because of their skills. Using those skills to perform various heroic actions, they can gain a reputation. A reputation of saviors, of someone you can rely on, of knowing what to do when push comes to shove. Tales of their heroic exploits have bolstered their reputation far outside the realm of their immediate environment. To most of the locals[^famous], they have become Heroes.
+In the Wild West the fastest gunslingers usually becomes the natural leader. Using their skills to perform various heroic actions, they can gain a reputation with their peers and the local towns people. The can end up being known as saviors, as someone you can rely on, someone that knows what to do when push comes to shove. Tales of their heroic exploits may spread their reputation far outside the realm of their immediate environment. To most of the locals[^famous], they have become Heroes.
 
 These local heroes are placed on a pedestal by their peers. In some cases the heroes may even end up being 'worshipped' by some of their peers. The more people that place a hero on a pedestal, the more the heroes reputation will grow and the more people will potentially turn to them and start *following* them. 
 
@@ -29,6 +29,8 @@ So let us discuss some of the dangers that lurk in having Local Heroes around.
 #### Ego <a name="ego"/>
 
 Obviously one of the biggest danger for a hero is the ego. Even when the heroes have the best of intentions - and not all heroes necessarily do - it is hard to not get too full of ourselves when everyone considers you exceptional. Because when people are constantly relying on you, give too much weight to your opinion, delegate practically all their judgement to you, then is hard not to start losing objectivity. You may end up believing that you are truly exceptional, and you might very well be God's gift to the software world, but developing a huge ego can easily have a negative impact on your own performance, and almost always has a crippling effect on the team.
+
+Individuals with a huge ego often are their own main liability and downfall. However if an ego receives a hero status from their peers the negative impact becomes something to reckon with. Now obtaining a hero status is not something that is always under our own control. It is mostly determined by the environment one operates in. But we can try to rein in the ego at least.
 
 ##### Ego Battling grounds
  
@@ -45,13 +47,9 @@ Now as software developers, we typically tend to couple our ego to our technical
 > 7. Realize life isn't black & white
 > 8. Fear bias & arrogance
 
-If one really feels the need to, there are better ways of demonstrating one's intelligence then always wanting to be right. Which is pretty self-evident, we all know this in our day to day life. But in the workplace, this is apparently easily forgotten. Because we typically take pride in our skills in our profession. 
-
-**Pro-Tip**
-
-So a little tip to my fellow heroic super intelligent software engineers out there: Be humble!
+If one really feels the need to, there are better ways of demonstrating one's intelligence then always wanting to be right. Which is pretty self-evident, we all know this in our day to day life. But in the workplace, this is apparently easily forgotten. Because we typically take pride in our skills in our profession. So a little **pro-tip** for my fellow heroic super intelligent software engineers out there: *Be humble!*
  
-Seriously. Everyone wants to be special. But no one knows everything and everyone makes mistakes. Even if it is so much cooler to be a ninja than a janitor. A [janitor](https://twitter.com/sarah_edo/status/991421712989208576) is useful. Constantly learning and improving yourself is definitely an admirable trait. Just don't turn into a Bully. 
+Seriously. Everyone wants to be special. But no one knows everything and everyone makes mistakes. Even if it is so much cooler to be a ninja than a janitor. A [janitor](https://twitter.com/sarah_edo/status/991421712989208576) is useful. Constantly learning and improving yourself is definitely an admirable trait. But that doesn't make you Gods' gift to mankind. 
 
 ##### Dealing with ego's 
 
@@ -61,7 +59,7 @@ A little mental check that I do is keeping track if I ever heard someone admit t
 
 Of course, it is normal that people argue and defend their points of view, to a certain point. We all do this to some degree. But if someone is truly incapable of decoupling their ego from their solution then it is impossible to have a meaningful conversation. Because the ego does not permit them to admit that they are not omniscient. So there is really no point in debating them. One is just wasting time and money. That is why, when I am looking for people to work with, I look at their mentality first. No matter how competent or genial you are, the 'mission' comes first. We are all smart people. But can we work together?
 
-A single individual with a huge ego can be avoided. They are often their own main liability and downfall. Unfortunately, if someone with a huge ego has achieved a hero status in a group their much harder to deal with and getting involved with them may be unavoidable. If the local hero has a loyal following, then that can even produce an organizational risk and you'll need to deal with their minions as well.
+The hero status complicates all of this. Because if someone with a huge ego has achieved a hero status in a group they are much harder to deal with. Avoiding them is no longer an option. If the local hero has a loyal following, then that can even produce an organizational risk and you'll need to deal with their minions as well.
 
 *For more on loyality and heroics see [the Posse](/20/06/2018/Posse/)*
 
