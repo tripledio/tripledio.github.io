@@ -10,7 +10,7 @@ excerpt: A post about the local hero pattern in software development.
 
 _This post belongs to small series of posts. The main post is [Wild west heroes](/31/05/2018/Heroes/)._
  
-My main metaphor throughout these posts on heroic behaviour has been the wild west. In this post I'll address the software equivalent of the famous hero gunslinger.
+Throughout these posts of mine on heroic behaviour my main metaphor has been the wild west. One of the well known archetypes there is the famous hero gunslinger. In this post I'll address the software equivalent of this.
 
 ### Wild West heroes
 
@@ -69,7 +69,7 @@ Even when someone is capable of keeping one's ego in check, being 'worshipped' i
 
 #### Lack of ownership
 
-For the software development team, the heroes peers, and the software that is being developed, having heroes around isn't without risk as well. The danger of having a Local Hero is that people get lazy, that they stifle their own growth. Because after a while the hero is no longer questioned. Just follow the leader of the pack, be safe, take it easy. 
+For the software development team, the peers of a hero, and the software that is being developed, having heroes around isn't without risk as well. The danger of having a Local Hero is that people get lazy, that they stifle their own growth. Because after a while the hero is no longer questioned. Just follow the leader of the pack, be safe, take it easy. 
 
 When there are heroes around, people tend not to take ownership themselves. They feel secure in the presence of heroes or intimidated. They run the risk of becoming complacent, just following along, not challenging the leader but also not challenging themselves. No responsibility needs to be taken. They run the risk of not living up to their own full potential. This way, heroes often block the team members from using their full potential, which is not only a waste but also dangerous.
      
@@ -87,15 +87,18 @@ That is why we need everyone to pitch in, using all the brain power available. E
 
 #### Minions  <a name="minions"/>
 
-Dominating heroes also can complicate the political landscape. It can happen that a little cult of followers starts forming around one person. Apart from the ownership issues, this is also a dangerous thing politically. It adds the additional complexity that next to the existing organizational silo's typically present in an organisation, there is an additional group that can possibly run across organizational boundaries and strive for their own political aims. In this case, the leader of the hero cult may gain more power than the organization/ customer is willing to consciously give to them. 
+Even when the heroes have nothing but the best intention, dominating heroes also can complicate the political landscape. It can happen that a little cult of followers starts forming around one person. Even without them actively pursing this. Apart from the ownership issues mentioned earlier, this is also a dangerous thing politically. Because it adds the additional complexity that next to the existing organizational silo's, typically present in an organisation, there is an additional group that runs across organizational boundaries. In this case, the leader of the hero cult may gain more power than the organization/ customer is willing to consciously give to them. 
 
-The group of minions also can lead to a certain tribalism, a certain group pressure. Us vs them. Where they can gang up on someone outside of the group, under the protection of the leader. This can lead to competent people leaving the firm because they aren't willing to play petty politics and are unable to do a proper job. Again, the customer loses.
+The group of minions also can lead to a certain tribalism, a certain group pressure. Us vs them. Where they can gang up on someone outside of the group, under the protection of the reputation of their leader. This can lead to competent people leaving the firm because they aren't willing to play petty politics and are unable to do a proper job. Again, the customer loses.
 
 *This is closely related to [the Posse](/20/06/2018/Posse/)*
 
+Again in the best case the heroes themselves have only the best intentions. When giving too much power, one might end up using it without knowing it. One might not even be aware that it is there. But the heroes are of course just people. They may give in to the temptation of using that power and risk becoming **bullies**.
+
+
 ## Conclusion
 
-The danger of the heroes lies not so much with the heroes themselves. But more with the impact that they have on their peers. More specifically, the impact their peers *allow* them to have. Heroes need to take care that they don't become **bullies**, that they keep their ego in check. [^jocko] But they themselves aren't responsible for any passive, worshipping attitude that their peers might develop. If the team didn't consider them as heroes, their ego would automatically be kept in check. The source of the danger is placing someone on a pedestal.
+The danger of the heroes lies not so much with the heroes themselves. But more with the impact that they have on their peers. More specifically, the impact their peers *allow* them to have. Heroes need to take care that they don't become **bullies**, that they keep their ego in check. [^jocko] But they themselves aren't responsible for any passive, worshipping attitude that their peers might develop. If the team, or management for that matter, didn't consider them as heroes, their ego or at least the impact of it, would automatically be kept in check. The source of the danger is placing someone on a pedestal.
 
 As an employer having your own local heroes may seem comforting and reassuring. Everyone speaks so highly of them, we should treasure them. Just make sure that even the legends can take a vacation or, heaven forbids, change jobs. No one sticks around forever. Everyone must do their part. It is a good thing that the business can place their trust in their software engineers. But this should be the logical consequence of the team doing a consistently good job. No worshipping should come into play.
 
