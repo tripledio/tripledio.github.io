@@ -63,7 +63,7 @@ The hero status complicates all of this. Because if someone with a huge ego has 
 
 *For more on loyalty and heroics see [the Posse](/20/06/2018/Posse/)*
 
-#### Growth or stagnation
+#### Stagnation
 
 Even when someone is capable of keeping one's ego in check, being 'worshipped' is still not a good thing. Even though somewhere deep down, we all like to be the object of adoration, worship runs the risk of stifling the heroes own growth because they are no longer being properly challenged. They can get lazily in their thinking, get too used to 'being right'. People like to be properly challenged and engaged in their job. Once someone is placed on a pedestal when everyone follows their lead all too easily. this not a challenging environment to be working in. The heroes will leave for more challenging grounds where they can further improve their skills and be challenged properly. Or they will stay and stagnate. Becoming the one-eyed king in the land of the blind.
 
@@ -85,7 +85,7 @@ That is why we need everyone to pitch in, using all the brain power available. E
 
 >It is ok that people seek guidance or mentoring. It is not ok if they stop thinking for themselves.
 
-#### Minions  <a name="minions"/>
+#### Emergence of Minions  <a name="minions"/>
 
 Even when the heroes have nothing but the best intention, dominating heroes also can complicate the political landscape. It can happen that a little cult of followers starts forming around one person. Even without them actively pursuing this. Apart from the ownership issues mentioned earlier, this is also a dangerous thing politically. Because it adds the additional complexity that next to the existing organizational silo's, typically present in an organisation, there is an additional group that runs across organizational boundaries. In this case, the leader of the hero cult may gain more power than the organization/ customer is willing to consciously give to them. 
 
@@ -93,7 +93,7 @@ The group of minions also can lead to a certain tribalism, a certain group press
 
 *This is closely related to [the Posse](/20/06/2018/Posse/)*
 
-Again in the best case, the heroes themselves have only the best intentions. When giving too much power, one might end up using it without knowing it. One might not even be aware that it is there. But the heroes are of course just people. They may give in to the temptation of using that power and risk becoming **bullies**.
+Again in the best case, the heroes themselves have only the best intentions. When giving too much power, one might end up using it without knowing it. One might not even be aware that one has power. But the heroes are of course just people. They may give in to the temptation of using that power and risk becoming **bullies**.
 
 
 ## Conclusion
