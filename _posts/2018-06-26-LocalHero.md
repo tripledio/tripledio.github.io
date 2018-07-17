@@ -8,7 +8,7 @@ excerpt: A post about the local hero pattern in software development.
 ---
 # The Local hero
 
-_This post belongs to small series of posts. The main post is [Wild west heroes](/31/05/2018/Heroes/)._
+_This post belongs to small series of posts. The main post is [Heroes](/31/05/2018/Heroes/)._
 
 Throughout these posts of mine on heroic behaviour, my main metaphor has been the wild west. One of the well-known archetypes there is the famous hero gunslinger. In this post, I'll address the software equivalent of this.
 
