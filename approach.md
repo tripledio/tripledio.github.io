@@ -32,7 +32,7 @@ footer:
 
 <div class="col-12 col-md-8 offset-md-2 mb-2 mb-md-4">
     <h3 class="h5 font-family-bold text-black mb-2">A close and honest partnership with our customer</h3>
-    <p>We value open communication more then negotiated contracts. The end goal of a successful partnership is that both partners are pleased with the result. We want to build the software you need. Enabling you to continuously reap the benefits from a well designed solution both now and in the future. Therefore open and honest communication is necessary. How else can we built your great software together?</p>
+    <p>We value open communication more than negotiated contracts. The end goal of a successful partnership is that both partners are pleased with the result. We want to build the software you need. Enabling you to continuously reap the benefits from a well designed solution both now and in the future. Therefore open and honest communication is necessary. How else can we built your great software together?</p>
 </div>
 <div class="col-12 col-md-8 offset-md-2 mb-2 mb-md-4">
     <h3 class="h5 font-family-bold text-black mb-2">Ownership of the development process</h3>
