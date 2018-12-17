@@ -21,11 +21,28 @@ Next to domain events there are also other DDD building blocks that take the sta
 In this blogpost I will try to demonstrate the power and usefulness of these building blocks. Of how knowing them, their meaning and relationship, can really help you tackling problems without the need to get lost early on into technical discussions. But instead focus on the business problem at hand. One does not need to be a software engineer to model things.
  
 
-All these building blocks can be implemented technically, which means that we are also immediately modelling out our software solution. Even if we haven't referred to any technologies yet,  the modelled solution can map one on one with the implemented one. Which is exactly what we want. The domain that drives te design or our solution.     
+All these building blocks can be implemented technically, which means that we are also immediately modelling out our software solution. Even if we haven't referred to any technologies yet,  the modelled solution can map one on one with the implemented one. Which is exactly what we want. The domain that drives the design or our solution.     
 
-## Our restaurant
+## Modelling a restaurant
 
 To demonstrate the use of our DDD building blocks I will apply them to a restaurant, focusing on the business flow between the different actors in the restaurant: the customer, the waiter, the cook... Using the building blocks I will model out the working of a restaurant with the goal of demonstrating two things: the usefulness of the building blocks and their independence of technology.
+
+### A typical story
+
+Alice and Bob want to celebrate their 10 year of marriage with nice dinner at the three star restaurant "Triple D". Bob makes a phone call to "Triple D" for a reservation within two weeks for two persons. The **receptionist** notes down the reservation. Three days before the date of the dinner, the **receptionist** of "Triple D" calls Alice to verify if their reservation is still on. Alice conforms that it is.
+
+At the evening of their wedding anniversary, Alice and Bob arrive by taxi at "Triple D". They enter the restaurant and are immediately greeted by the **receptionist**. They give their names and the **receptionist** looks them up in her reservation book. She finds their entry and their appointed table. She then escorts them to their table and takes their jackets. Once they are seated a **waiter** slowly walks to their table to welcome them. The **waiter** presents them with the menu. 
+
+Alice and Bob make their choice out fo several dishes. They both will go for matching wines since none of them needs to drive. The **waiter** sees that they have made their choice and comes over to take their order.
+
+The waiter brings the aperitif.
+The waiter brings some appetizers
+
+Alic and Bob enjoy their dinner. The dishes come with an appropriate time between the dishes, leaving room for pleasant conversation, without needing to wait to long. The waiter makes sure that the correct wines are served and consistenly refilled while they are enjoying the matching dish. 
+
+
+
+### 
 
 ### Event flow
 
