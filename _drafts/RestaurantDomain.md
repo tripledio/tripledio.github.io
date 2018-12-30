@@ -1,5 +1,5 @@
 ---
-layout: post
+-- layout: post
 title: "The restaurant domain"
 author: guido
 header-img: "img/about-bg.jpg"
@@ -16,7 +16,7 @@ Domain events have the advantage that they steer discussions away from technical
 
 Next to domain events there are also other DDD building blocks that take the stage in Event Storming. These are commands, projections, read models,  policies, systems and external System. These relate to each other as explained in Alberto's Universal picture.
 
-[Picture that explains everything]
+![Picture that explains everything](/img/posts/events-restaurant/components-overview.png)
 
 In this blogpost I will try to demonstrate the power and usefulness of these building blocks. Of how knowing them, their meaning and relationship, can really help you tackling problems without the need to get lost early on into technical discussions. But instead focus on the business problem at hand. One does not need to be a software engineer to model things.
  
@@ -40,9 +40,20 @@ The waiter brings some appetizers
 
 Alic and Bob enjoy their dinner. The dishes come with an appropriate time between the dishes, leaving room for pleasant conversation, without needing to wait to long. The waiter makes sure that the correct wines are served and consistenly refilled while they are enjoying the matching dish. 
 
+## Core concepts
+
+Avoid being specific, not UML, discovery
+ 
++ Event : “something relevant that happens in our business, written on an orange sticky note with the verb at past tense. ” A verb in the past thense. Not specified what caused them, not gtting lost in implementation details. “Choosing Domain Events as a starting points help us to remove a blind spot”
+                                                                                                                                                                                                                                  
++ Command : 
++ projection
++ Read model
++ Policy
++ System
++ External System
 
 
-### 
 
 ### Event flow
 
@@ -101,19 +112,6 @@ After Dish ready
 |Customer| Drink wine | Glass empty |
 |Waiter| Refill glass | Glasses refilled|
 
-
-## Core concepts
-
-Avoid being specific, not UML, discovery
- 
-+ Event : “something relevant that happens in our business, written on an orange sticky note with the verb at past tense. ” A verb in the past thense. Not specified what caused them, not gtting lost in implementation details. “Choosing Domain Events as a starting points help us to remove a blind spot”
-                                                                                                                                                                                                                                  
-+ Command : 
-+ projection
-+ Read model
-+ Policy
-+ System
-+ External System
 
 
 
