@@ -2,7 +2,7 @@
 
 |Name|Type|
 |----|----|
-|Restaurant|External System|
+|Restaurant|External System|?
 |Kitchen|External System|
 |Bar|External System|
 |Customer|The user of the system|
