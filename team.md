@@ -29,7 +29,14 @@ team:
     name: Gert Vilain
     description: "Aspiring software craftsman, motto: Automate all the things!"
     contactLink: https://twitter.com/GertVil
-
+  - photo: /img/authors/sander.png
+    name: Yves Cuyvers
+    description: "<specialist wooniscaliteit - tweelingsbroer van Sander>"
+    contactLink: https://twitter.com/yvescuyvers
+  - photo: /img/authors/sander.png
+    name: Sander Verschuren
+    description: "Kleine en grote verbouwingen"
+    contactLink: https://twitter.com/SanderVE
 testimonials:
   - quote: "Programs must be written for people to read, and only incidentally for machines to execute."
     person: "Abelson and Sussman"
