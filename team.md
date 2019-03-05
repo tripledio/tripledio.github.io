@@ -31,7 +31,7 @@ team:
     contactLink: https://twitter.com/GertVil
   - photo: /img/authors/sander.png
     name: Yves Cuyvers
-    description: "<specialist wooniscaliteit - tweelingsbroer van Sander>"
+    description: "specialist wooniscaliteit - tweelingsbroer van Sander"
     contactLink: https://twitter.com/yvescuyvers
   - photo: /img/authors/sander.png
     name: Sander Verschuren
