@@ -35,7 +35,7 @@ team:
     contactLink: https://twitter.com/yvescuyvers
   - photo: /img/authors/sander.png
     name: Sander Verschuren
-    description: "Kleine en grote verbouwingen"
+    description: Software engineer with a passion for software development.
     contactLink: https://twitter.com/SanderVE
 testimonials:
   - quote: "Programs must be written for people to read, and only incidentally for machines to execute."
