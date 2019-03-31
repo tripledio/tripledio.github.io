@@ -35,11 +35,36 @@ With this little reference story as back ground, it would be interesting to map 
 
 ## Event flow
 
-In the real world, to discover how the restaurants works in practice, we would hold a big picture event storming with all the people working in the restaurant present. The Waiters, Cooks, Dishwashers, Receptionists,... anyone working in the restaurant. This would show all the different flow that are happening, their timing and their inner dependencies.  It would provide everyone with a global overview that no one probably has. And could identify potential bottlenecks, constraints in the flow.
+In the real world, to discover how the restaurants works in practice, we would hold a big picture event storming with all the people working in the restaurant present. The Waiters, Cooks, Dishwashers, Receptionists,... anyone working in the restaurant. This would show all the different flow that are happening, their timing and their inner dependencies. Simply by using the power business events! This would provide everyone with a global overview that most likely no one really has. Using this big picture overview, we could identify potential bottlenecks, constraints in the flow. 
 
-But for this blog post I'm afraid you will have to do with my simplistic event flow for a restaurant, based on my limited understanding and imagination.
+For this blog post, big picture event storming is not the focus. But I would still like to use the big picture, events overview to get a global understanding of our restaurant. We are conquering before we are dividing.  
 
-![Restaurant event overview](/img/posts/events-restaurant/restaurantEvents.png)
+So below you will find my own simplistic event flow for a restaurant, based on my limited under standing and imagination. It is not complete or perfect, having intentionally over simplified many inner workings. But it tells a coherent story and we can already see different 'flows' appearing. 
+
+**The reservation event flow**
+
+Since Triple D is very famous (ahem...), people need to make reservations.
+
+![Reservation events](/img/posts/events-restaurant/reservationEvents.png)
+
+**Customer enters restaurant event flow**
+
+From our restaurant perspective, the business starts once people enter our restaurant.
+
+![Customer entry events](/img/posts/events-restaurant/customerEntryEvents.png)
+
+**Dining Ordering event flow**
+
+Once the waiters sees that a table is ready to order, they take their orders and passes them on to the kitchen. The kitchen prepares the different dishes and makes sure that they are sent out to the table together.
+
+![Dining Order events](/img/posts/events-restaurant/diningOrderEvents.png)
+
+**Courses served event flow**
+
+The customers enjoy all their served dishes. Once a dish is done, the kitchen can serve/prepare the next ones. When they are done, a table requests the bill, pays and leaves the restaurant. After which the tables need to be cleaned for the next customers.  
+
+![Courses served events](/img/posts/events-restaurant/coursesServedEvents.png)
+
 
 ### Event Storming building blocks
 
