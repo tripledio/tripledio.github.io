@@ -1,19 +1,32 @@
 ---
 layout: post
-title: "Modelling a restaurant"
+title: "Modelling out a restaurant"
 author: guido
 header-img: "img/posts/events-restaurant/kenny-luo-640784-unsplash.jpg"
 tags: java, software, DDD
 excerpt: How to model out a restaurant with event storming components?
 ---
-# Modelling the restaurant
+# Modelling out a restaurant
 
-In this blogpost I will try to demonstrate the power and usefulness of [Event Storming](https://www.eventstorming.com) for modelling. I am a big fan of [Event Storming](https://www.eventstorming.com) because of its ability to create clarity where there is confusion. Something that it does really well, despite its chaotic 'storming' nature. Telling a story on a timeline is really how people's brain work. Hence user stories and not "user click actions and resulting data flows". By using some simple, not to strict defined, building blocks, event storming allows us to model out complex systems rapidly. 
+I am a big fan of [Event Storming](https://www.eventstorming.com)[^eventstorming] because of its ability to create clarity where before there is often a lot of confusion. Creatin clarity is something that the technique does really well, despite its chaotic 'storming' nature. Because telling a story, on a timeline, is really how people's brain work. Which is probably why we  have user *stories* and not "user *click actions and resulting data flows*". 
+
+Most people that use event storming use it for gathering the "Big Picture". I see it used much less for modelling out solutions to concrete problems. That's why, in this blogpost, I will try to demonstrate the power and usefulness of Event Storming for modelling out solutions. By using some simple building blocks, event storming allows us to model out complex systems rapidly. Without the need for very strict standardization. No BPMN knowledge required.
  
- That's why I wil focus on the Event Storming building blocks and hope to demonstrate that knowing them, their meaning and their inner relationship, can really help you tackling problems without the need to get lost early on into technical discussions. **One does not need to be a software engineer to model things.**
+By explaining the Event Storming component building blocks and illustrating their use, I hope to demonstrate that knowing them, their meaning and their inner relationship, can really help you tackling complex problems. Without the need to get lost early on into technical discussions. **One does not need to be a software engineer to model things.**
+ 
+My ambition with this blog post is to demonstrate two things: 
++ the power of the Event Storming building blocks 
++ early, in depth technical discussions aren't needed 
 
-## Our restaurant story
+## The problem case
 
+As a problem case, I thought that it would be interesting to model out the workings of a restaurant. Because it is something we all can easily relate to. Also, it avoids technology! We can illustrate and reason about it without the need for any technology getting dragged into it. On more than one occasion I've seen technical details dragging a design discussion down into an endless technical debate where people are already fuzzing about the technical *details* before the process is properly understood, modelled out. So I intentionally try to avoid this here.   
+
+### Welcome to our restaurant 
+
+So let's start with a little background story that illustrates the problems we are trying to solve.
+
+```text
 Alice and Bob want to celebrate their 10 year of marriage with nice dinner at the three star restaurant "Triple D". Bob makes a phone call to "Triple D" for a reservation within two weeks for two persons. The **receptionist** notes down the reservation. Three days before the date of the dinner, the **receptionist** of "Triple D" calls Alice to verify if their reservation is still on. Alice conforms that it is.
 
 At the evening of their wedding anniversary, Alice and Bob arrive by taxi at "Triple D". They enter the restaurant and are immediately greeted by the **receptionist**. They give their names and the **receptionist** looks them up in her reservation book. She finds their entry and their appointed table. She then escorts them to their table and takes their jackets. Once they are seated a **waiter** slowly walks to their table to welcome them. The **waiter** presents them with the menu. 
@@ -27,17 +40,16 @@ After a couple of minutes Alice and Bob have made their choice out of several di
 After a couple of minutes the waiter brings them some appetizers while they enjoy their aperitif and while they wait for the first dish to be served.
 
 The rest of the evening continues smoothly. Alic and Bob enjoy their dinner. The dishes come with an appropriate time between the dishes, leaving room for pleasant conversation, without them needing to wait too long. The waiter makes sure that the correct wines are served and that their glasses consistently refilled while they are enjoying the matching dish.
+```
 
-## Modelling the restaurant
-
-With this little reference story as back ground, it would be interesting to map out how a restaurant should operate to support the above scenario. Because there are more actors in the restaurant than the ones Alice and Bob came in contact with. The inner workings of the kitchen, how the bill was composed, to name a few. On top of that, Alice and Bob where not the only customers. So we need scenario's that illustrate the fact that multiple customers can be served simultaneously, independent of each other. 
+With this little reference story as back ground, we are going to map out how a restaurant should operate in order to support the above scenario. There are many different actors in the restaurant. More than the ones Alice and Bob came in contact with. The inner workings of the kitchen, how the bill was composed, to name a few. We also need to remember that Alice and Bob where hopefully not the only customers inside the restaurants. So we need sa solution that scales, in which we can serve multiple customers, independent of each other. 
 
 
-## Event flow
+### The restaurant event flow
 
-In the real world, to discover how the restaurants works in practice, we would hold a big picture event storming with all the people working in the restaurant present. The Waiters, Cooks, Dishwashers, Receptionists,... anyone working in the restaurant. This would show all the different flow that are happening, their timing and their inner dependencies. Simply by using the power business events! This would provide everyone with a global overview that most likely no one really has. Using this big picture overview, we could identify potential bottlenecks, constraints in the flow. 
+In the real world, to discover how the restaurants really works, we would hold a big picture event storming to with all the people working in the restaurant would be present. The Waiters, Cooks, Dishwashers, Receptionists,... This would show all the different flows that are happening, their timing, inner dependencies and potential bottlenecks. Providing everyone with a global overview that most likely no one really has. All of this simply by using *the power of business events!* 
 
-For this blog post, big picture event storming is not the focus. But I would still like to use the big picture, events overview to get a global understanding of our restaurant. We are conquering before we are dividing.  
+For this blog post, big picture event storming is not the focus. But I would still like to use it to get a global understanding of our restaurant,we are conquering before we are dividing.  At the same time I like to demonstrate the power of *business events*. Because it is something that bears repeating. 
 
 So below you will find my own simplistic event flow for a restaurant, based on my limited under standing and imagination. It is not complete or perfect, having intentionally over simplified many inner workings. But it tells a coherent story and we can already see different 'flows' appearing. 
 
@@ -66,7 +78,7 @@ The customers enjoy all their served dishes. Once a dish is done, the kitchen ca
 ![Courses served events](/img/posts/events-restaurant/coursesServedEvents.png)
 
 
-### Event Storming building blocks
+## Event Storming modelling components
 
 The core building block of event storming are of course the **domain** events. 
 
@@ -92,15 +104,12 @@ All these components relate to each other as explained in Alberto's Universal pi
 
 These building blocks **can** be implemented technically. This means that when we are modelling out a solution through Event Storming process flow, we are also immediately modelling out different potential software solution. Even if we haven't referred or included any technologies yet, the modelled solution can map one on one with the implemented one. Which is exactly what we want. The domain should drive the design of our solution, **not** the technologies. Or god forbid, the database...  In a future blog post we will talk about the relation between the modelling components and a hexagonal architecture. But for now, we will remain technology agnostic. 
 
-## Modelling out a restaurant
+## Modelling our restaurant processes
 
-To demonstrate the use of our building blocks we will apply them to a restaurant. We will model out the flow between the different actors in the restaurant: the customer, the waiter, the cook... with the goal of demonstrating two things: 
-+ the usefulness of the Event Storming building blocks 
-+ the lack of need for early in depth technical discussions 
+Armed with the knowledge of our building blocks, we will now model out the flow between the different actors in the restaurant. The customer, the waiter, the cook... I will give a verbose explanation with the first processes. BUt I hope that after a while the model speaks for itself.
 
-### Our modelling components in the real world
 
-The legend used in the following process illustrations matches .
+The legend used in the following process illustrations matches:
 
 ![EventStormComponents](/img/posts/events-restaurant/eventStormComponents.png)
 
@@ -128,8 +137,14 @@ Each day the receptionist need to confirm the reservations made for z days in th
 
 ![Reservation flow](/img/posts/events-restaurant/processFlowReservation.png)
 
-
 Each day, when the day begins, the receptionist need to assign the final tables to the customers. Since they aren't likely to change anymore this can now safely be done. This is again one of the restaurants policies: "When the day starts, then the receptionist must assign tables". The definitive assignments read model is updated. This will allow the receptionist to be able to quickly assign the customers to their assigned tables.
+
+The receptionist policy thus contains the following rules:
+
++ When the date is [Tx - z] then receptionist must confirm the reservations for Tx.
++ When the date is [Tx] then receptionist must assign the definitive tables for to the booked customers for Tx.
+
+
 
 ![Receptionist Proces](/img/posts/events-restaurant/processFlowTableAssignment.png)
 
@@ -152,12 +167,20 @@ When the waiter serves the drinks, that is typically also the time that the dinn
 
 ## On Policies
 
-Notice how lightweight policies are. The behavior of the entire systems can easily be changed by modifying the rules form it. The complexity on how to perform those actions resides in the systems.
+Policies, and process managers as their implementations, are something that are often not modelled out explicitly. But notice how lightweight those policies are. The complexity on how to perform the complex actions, like cooking, resides in the systems. These actiond do not need to change when we modify the logic present int policies. This allows use to easily change the behavior of an entire system.
 
-+ When the date is [Tx - z] then receptionist must confirm the reservations for Tx.
-+ When the date is [Tx] then receptionist must assign the definitive tables for to the booked customers for Tx.
+For instance, when we modify the policy rule from
+
++ When the customer is done eating, then the customer must pay
+
+to 
+
++ When the customer has ordered, then the customer must pay
+
+we radically have changed the way our restaurant functions. We went from a restaurant for dinning, where one pays at the end. To a fast dinning restaurant where you pay up front, allowing for faster change of customers.
 
 ***
 **References**
 
-[^key]: _[DisplayValue](http://www.url.be)_
+[^eventstorming]: _[Event Storming](https://www.eventstorming.com)_ 
+[^book]: _[Event Storming Book](https://www.eventstorming.com)_ 
