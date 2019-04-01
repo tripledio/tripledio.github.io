@@ -38,9 +38,11 @@ The waiter brings the aperitif to their table and serves it to them. They still 
 
 After a couple of minutes, Alice and Bob have made their choice out of several dishes. They both will go for matching wines since none of them needs to drive. The **waiter** sees that they have made their choice and comes over to take their order. 
 
-After a couple of minutes, the waiter brings them some appetizers while they enjoy their aperitif and while they wait for the first dish to be served.
+After a couple of minutes, the **waiter** brings them some appetizers while they enjoy their aperitif and while they wait for the first dish to be served.
 
-The rest of the evening continues smoothly. Alic and Bob enjoy their dinner. The dishes come with an appropriate time between the dishes, leaving room for pleasant conversation, without them needing to wait too long. The waiter makes sure that the correct wines are served and that their glasses consistently refilled while they are enjoying the matching dish.
+The rest of the evening continues smoothly. Alic and Bob enjoy their dinner. The dishes come with an appropriate time between them, leaving room for pleasant conversation, without them needing to wait too long. The waiter makes sure that the correct wines are served and that their glasses consistently refilled while they are enjoying the matching dish.
+
+After dessert, they order a little digestif and request the check. The waiter brings the check and accepts the payment. After they enjoyed digestif Alice and Bob collect their jackets and exit the restaurant. After which a waiter cleans their table.  
 
 
 #### The problem scope
