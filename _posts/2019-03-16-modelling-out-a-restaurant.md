@@ -175,11 +175,7 @@ Policies and process managers as their implementations are something that is oft
 
 For instance, when we modify the policy rule from
 
-*When the customer is done eating, then the customer must pay*
-
-to 
-
-*When the customer has ordered, then the customer must pay*
+*When the customer is done eating, then the customer must pay* to *When the customer has ordered, then the customer must pay*
 
 we radically have changed the way our restaurant functions. We went from a restaurant for dining, where one pays at the end. To a fast dining restaurant where you pay up front, allowing for faster change of customers.
 
