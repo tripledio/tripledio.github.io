@@ -26,7 +26,8 @@ As a problem case, I thought that it would be interesting to model out the worki
 
 So let's start with a little background story that illustrates the problems we are trying to solve.
 
-```text
+#### The wedding anniversary
+
 Alice and Bob want to celebrate their 10 year of marriage with nice dinner at the three star restaurant "Triple D". Bob makes a phone call to "Triple D" for a reservation within two weeks for two persons. The **receptionist** notes down the reservation. Three days before the date of the dinner, the **receptionist** of "Triple D" calls Alice to verify if their reservation is still on. Alice conforms that it is.
 
 At the evening of their wedding anniversary, Alice and Bob arrive by taxi at "Triple D". They enter the restaurant and are immediately greeted by the **receptionist**. They give their names and the **receptionist** looks them up in her reservation book. She finds their entry and their appointed table. She then escorts them to their table and takes their jackets. Once they are seated a **waiter** slowly walks to their table to welcome them. The **waiter** presents them with the menu. 
@@ -40,7 +41,9 @@ After a couple of minutes Alice and Bob have made their choice out of several di
 After a couple of minutes the waiter brings them some appetizers while they enjoy their aperitif and while they wait for the first dish to be served.
 
 The rest of the evening continues smoothly. Alic and Bob enjoy their dinner. The dishes come with an appropriate time between the dishes, leaving room for pleasant conversation, without them needing to wait too long. The waiter makes sure that the correct wines are served and that their glasses consistently refilled while they are enjoying the matching dish.
-```
+
+
+#### The problem scope
 
 With this little reference story as back ground, we are going to map out how a restaurant should operate in order to support the above scenario. There are many different actors in the restaurant. More than the ones Alice and Bob came in contact with. The inner workings of the kitchen, how the bill was composed, to name a few. We also need to remember that Alice and Bob where hopefully not the only customers inside the restaurants. So we need sa solution that scales, in which we can serve multiple customers, independent of each other. 
 
@@ -98,7 +101,7 @@ Apart from domain events there are also other DDD building blocks that can take 
 | external System | Something not under our control that executes commands.|Actionable logic|
 | UI | The typical portal from the real world to the software systems. The way by which the user can read read models and trigger commands in a software world. |Interface to data and actions|
  
-All these components relate to each other as explained in Alberto's Universal picture.
+All these components relate to each other as explained in Alberto's Universal picture.[^book]
 
 ![Picture that explains everything](/img/posts/events-restaurant/components-overview.png)
 
@@ -145,7 +148,6 @@ The receptionist policy thus contains the following rules:
 + When the date is [Tx] then receptionist must assign the definitive tables for to the booked customers for Tx.
 
 
-
 ![Receptionist Proces](/img/posts/events-restaurant/processFlowTableAssignment.png)
 
 #### The dinner processes
@@ -171,16 +173,20 @@ Policies, and process managers as their implementations, are something that are 
 
 For instance, when we modify the policy rule from
 
-+ When the customer is done eating, then the customer must pay
+*When the customer is done eating, then the customer must pay*
 
 to 
 
-+ When the customer has ordered, then the customer must pay
+*When the customer has ordered, then the customer must pay*
 
 we radically have changed the way our restaurant functions. We went from a restaurant for dinning, where one pays at the end. To a fast dinning restaurant where you pay up front, allowing for faster change of customers.
+
+## Conclusion
+
+something clever
 
 ***
 **References**
 
 [^eventstorming]: _[Event Storming](https://www.eventstorming.com)_ 
-[^book]: _[Event Storming Book](https://www.eventstorming.com)_ 
+[^book]: _[Introducing Event Storming](https://leanpub.com/introducing_eventstorming)_ 
