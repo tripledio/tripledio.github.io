@@ -183,11 +183,9 @@ Policies can be simple agreements between people or they can be fully implemente
 
 ## Conclusion
 
-I hope to have demonstrated to you the power of **Event Storming process modelling** as technique that can be used to design solutions, without the need for in depth technical knowledge. Please try them out for yourself. Try to solve an [Architectural Kata](http://nealford.com/katas/)[^architectural_kata] to familiarize yourself with the technique. The more comfortable you are with the components and the technique the easier you will step up and start designing.
+I hope to have demonstrated to you the power of **Event Storming process modelling** as technique that can be used to design solutions, without the need for in depth technical knowledge. Please try them out for yourself. Try to solve an [Architectural Kata](http://nealford.com/katas/)[^architectural_kata] to familiarize yourself with the technique. The more comfortable you are with the components and the technique the easier you will step up and start designing. Start using it, start having the conversations. There is no need to fear the DDD police! Alberto[^alberto] is a really nice guy ;-) 
  
 > Don't be afraid to design! Model things out!
-
-Start using it, start having the conversations. There is no need to fear the DDD police! Alberto[^alberto] is a really nice guy ;-) 
 
 ***
 **References**
