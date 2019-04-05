@@ -8,7 +8,7 @@ excerpt: How to model out a restaurant with event storming components?
 ---
 # Modelling out a restaurant
 
-I am a big fan of [Event Storming](https://www.eventstorming.com)[^eventstorming] because of its ability to create clarity where before there is often a lot of confusion. Creating clarity is something that the technique does really well, despite its chaotic 'storming' nature. Because telling a story, on a timeline, is really how people's brain work. Which is probably why we have user *stories* and not "user *click actions and resulting data flows*". 
+I am a big fan of [Event Storming](https://www.eventstorming.com)[^eventstorming] because of its ability to turn confusion into clarity. Despite its chaotic 'storming' nature, creating clarity is something that the technique does really well. Because telling a story, on a timeline, is really how people's brain work. Which is probably why we have user *stories* and not "user *click actions and resulting data flows*". 
 
 Most people that use event storming use it for gathering the "Big Picture". I see it used much less for modelling out solutions to concrete problems. That's why, in this blog post, I will try to demonstrate the power and usefulness of Event Storming for modelling out solutions. By using some simple building blocks, event storming allows us to model out complex systems rapidly. Without the need for very strict standardization. No BPMN knowledge required.
  
@@ -28,17 +28,17 @@ So let's start with a little background story that illustrates the problems we a
 
 #### The wedding anniversary
 
-Alice and Bob want to celebrate their 10 years of marriage with a nice dinner at the three-star restaurant "Triple D". Bob makes a phone call to "Triple D" for a reservation within two weeks for two persons. The **receptionist** notes down the reservation. Three days before the date of the dinner, the **receptionist** of "Triple D" calls Alice to verify if their reservation is still on. Alice confirms that it is.
+Alice and Bob want to celebrate their 10 years of marriage with a nice dinner at the three-star restaurant "Triple D". Bob makes a phone call to "Triple D" for a reservation within two weeks for two persons. The receptionist notes down the reservation. Three days before the date of the dinner, the receptionist of "Triple D" calls Alice to verify if their reservation is still on. Alice confirms that it is.
 
-At the evening of their wedding anniversary, Alice and Bob arrive by taxi at "Triple D". They enter the restaurant and are immediately greeted by the **receptionist**. They give their names and the **receptionist** looks them up in her reservation book. She finds their entry and their appointed table. She then escorts them to their table and takes their jackets. Once they are seated a **waiter** slowly walks to their table to welcome them. The **waiter** presents them with the menu. 
+At the evening of their wedding anniversary, Alice and Bob arrive by taxi at "Triple D". They enter the restaurant and are immediately greeted by the receptionist. They give their names and the receptionist looks them up in her reservation book. She finds their entry and their appointed table. She then escorts them to their table and takes their jackets. Once they are seated a waiter slowly walks to their table to welcome them. The waiter presents them with the menu. 
 
 Alice and Bob start by ordering an aperitif immediately. The waiter leaves to get their drinks and to give them time to make their choice. Alice and Bob look at the menu and discuss what they will have.
 
 The waiter brings the aperitif to their table and serves it to them. They still aren't ready to order so the waiter leaves again.
 
-After a couple of minutes, Alice and Bob have made their choice out of several dishes. They both will go for matching wines since none of them needs to drive. The **waiter** sees that they have made their choice and comes over to take their order. 
+After a couple of minutes, Alice and Bob have made their choice out of several dishes. They both will go for matching wines since none of them needs to drive. The waiter sees that they have made their choice and comes over to take their order. 
 
-After a couple of minutes, the **waiter** brings them some appetizers while they enjoy their aperitif and while they wait for the first dish to be served.
+After a couple of minutes, the waiter brings them some appetizers while they enjoy their aperitif and while they wait for the first dish to be served.
 
 The rest of the evening continues smoothly. Alic and Bob enjoy their dinner. The dishes come with an appropriate time between them, leaving room for pleasant conversation, without them needing to wait too long. The waiter makes sure that the correct wines are served and that their glasses consistently refilled while they are enjoying the matching dish.
 
