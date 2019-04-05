@@ -171,7 +171,7 @@ When the waiter serves the drinks, that is typically also the time that the dinn
 
 ## On Policies
 
-Policies and process managers as their implementations are something that is often not modelled out explicitly. But notice how lightweight those policies are. The complexity of how to perform complex actions, like cooking, resides in the systems. These actions do not need to change when we modify the logic present int policies. This allows us to easily change the behaviour of an entire system.
+Policies are something that is often not modelled out explicitly. But notice how lightweight those policies are. The complexity of how to perform complex actions, like cooking, resides in the systems. These actions do not need to change when we modify the logic present int policies. This allows us to easily change the behaviour of an entire system.
 
 For instance, when we modify the policy rule from
 
@@ -179,12 +179,21 @@ For instance, when we modify the policy rule from
 
 we radically have changed the way our restaurant functions. We went from a restaurant for dining, where one pays at the end. To a fast dining restaurant where you pay up front, allowing for faster change of customers.
 
+Policies can be simple agreements between people or they can be fully implemented in software. A [process manager](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html) [^proces manager] is a software design pattern that can be used to centralize policies.
+
 ## Conclusion
 
-something clever
+I hope to have demonstrated to you the power of **Event Storming process modelling** as technique that can be used to design solutions, without the need for in depth technical knowledge. Please try them out for yourself. Try to solve an [Architectural Kata](http://nealford.com/katas/)[^architectural_kata] to familiarize yourself with the technique. The more comfortable you are with the components and the technique the easier you will step up and start designing.
+ 
+> Don't be afraid to design! Model things out!
+
+Start using it, start having the conversations. There is no need to fear the DDD police! Alberto[^alberto] is a really nice guy ;-) 
 
 ***
 **References**
 
 [^eventstorming]: _[Event Storming](https://www.eventstorming.com)_ 
 [^book]: _[Introducing Event Storming](https://leanpub.com/introducing_eventstorming)_ 
+[^proces manager]: _[Proces Manager](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html)_ 
+[^architectural_kata]: _[Architectural Kata](http://nealford.com/katas/)_ 
+[^alberto]: _[Alberto](https://leanpub.com/u/ziobrando)_ 
