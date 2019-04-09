@@ -8,7 +8,7 @@ excerpt: How to model out a restaurant with event storming components?
 ---
 # Event Storming a restaurant
 
-I am a big fan of [Event Storming](https://www.eventstorming.com)[^eventstorming], a technique created by [Alberto Brandolini](https://leanpub.com/u/ziobrando)[^alberto]: because of its ability to turn confusion into clarity. Despite its chaotic 'storming' nature, creating clarity is something that the technique does really well. Because telling a story, on a timeline, is really how people's brain work. Which is probably why we have user *stories* and not "user *click actions and resulting data flows*". 
+I am a big fan of [Event Storming](https://www.eventstorming.com)[^eventstorming], a technique that was created by [Alberto Brandolini](https://leanpub.com/u/ziobrando)[^alberto]. Despite its chaotic 'storming' nature, Event Storming has the ability to turn confusion into clarity. Because telling a story, on a timeline, is really how people's brain work. Which is probably why we have user *stories* and not "user *click actions and resulting data flows*". 
 
 Most people that use event storming use it for gathering the "Big Picture". I see it used much less for modelling out solutions to concrete problems. That's why, in this blog post, I will try to demonstrate the power and usefulness of Event Storming for modelling out solutions. By using some simple building blocks, event storming allows us to model out complex systems rapidly. Without the need for very strict standardization. No BPMN knowledge required.
  
