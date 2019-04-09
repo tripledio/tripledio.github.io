@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Modelling out a restaurant"
+title: "Event Storming a restaurant"
 author: guido
 header-img: "img/posts/events-restaurant/kenny-luo-640784-unsplash.jpg"
 tags: java, software, DDD
 excerpt: How to model out a restaurant with event storming components?
 ---
-# Modelling out a restaurant
+# Event Storming a restaurant
 
-I am a big fan of [Event Storming](https://www.eventstorming.com)[^eventstorming] because of its ability to turn confusion into clarity. Despite its chaotic 'storming' nature, creating clarity is something that the technique does really well. Because telling a story, on a timeline, is really how people's brain work. Which is probably why we have user *stories* and not "user *click actions and resulting data flows*". 
+I am a big fan of [Event Storming](https://www.eventstorming.com)[^eventstorming], a technique created by [Alberto Brandolini](https://leanpub.com/u/ziobrando)[^alberto]: because of its ability to turn confusion into clarity. Despite its chaotic 'storming' nature, creating clarity is something that the technique does really well. Because telling a story, on a timeline, is really how people's brain work. Which is probably why we have user *stories* and not "user *click actions and resulting data flows*". 
 
 Most people that use event storming use it for gathering the "Big Picture". I see it used much less for modelling out solutions to concrete problems. That's why, in this blog post, I will try to demonstrate the power and usefulness of Event Storming for modelling out solutions. By using some simple building blocks, event storming allows us to model out complex systems rapidly. Without the need for very strict standardization. No BPMN knowledge required.
  
@@ -40,9 +40,9 @@ After a couple of minutes, Alice and Bob have made their choice out of several d
 
 After a couple of minutes, the waiter brings them some appetizers while they enjoy their aperitif and while they wait for the first dish to be served.
 
-The rest of the evening continues smoothly. Alic and Bob enjoy their dinner. The dishes come with an appropriate time between them, leaving room for pleasant conversation, without them needing to wait too long. The waiter makes sure that the correct wines are served and that their glasses consistently refilled while they are enjoying the matching dish.
+The rest of the evening continues smoothly. Alice and Bob enjoy their dinner. The dishes come with an appropriate time between them, leaving room for pleasant conversation, without them needing to wait too long. The waiter makes sure that the correct wines are served and that their glasses are consistently refilled while they are enjoying the matching dish.
 
-After dessert, they order a little digestif and request the check. The waiter brings the check and accepts the payment. After they enjoyed digestif Alice and Bob collect their jackets and exit the restaurant. After which a waiter cleans their table.  
+After dessert, they order a little digestif and request the check. The waiter brings the check and accepts the payment. After they enjoyed the digestif Alice and Bob collect their jackets and exit the restaurant. After which a waiter cleans their table.  
 
 
 #### The problem scope
@@ -52,7 +52,7 @@ With this little reference story as background, we are going to map out how a re
 
 ### The restaurant event flow
 
-In the real world, to discover how the restaurant really works, we would hold a big picture event storming to with all the people working in the restaurant would be present. The Waiters, Cooks, Dishwashers, Receptionists,... This would show all the different flows that are happening, their timing, inner dependencies and potential bottlenecks. Providing everyone with a global overview that most likely no one really has. All of this simply by using *the power of business events!* 
+In the real world, to discover how the restaurant really works, we would hold a big picture event storming with all the people working in the restaurant present. The Waiters, Cooks, Dishwashers, Receptionists,... This would show all the different flows that are happening, their timing, inner dependencies and potential bottlenecks. Providing everyone with a global overview that most likely no one really has. All of this simply by using *the power of business events!* 
 
 For this blog post, big picture event storming is not the focus. But I would still like to use it to get a global understanding of our restaurant, we are conquering before we are dividing.  At the same time, I like to demonstrate the power of *business events*. Because it is something that bears repeating. 
 
@@ -82,12 +82,17 @@ The customers enjoy all their served dishes. Once a dish is done, the kitchen ca
 
 ![Courses served events](/img/posts/events-restaurant/coursesServedEvents.png)
 
+In the previous example we are able to tell comprehensible stories simply using domain events. We didn't need to use any other components yet. That is the power of events and why they are the central component that which we will tell our story. 
+ 
+## Event Storming components
 
-## Event Storming modelling components
+### The domain Event
 
-The core building block of event storming is, of course, the **domain** events. 
+The core building block of event storming is, of course, the **domain** events.
 
-Domain events have the advantage that they steer discussions away from technical issues, that they focus on what has happened, without spending to much detail on how it happened. When the discussions occur around domain events then database and UI discussion are pushed to the background. Which is a very good thing. We don't want to let debates go depth-first from the start because we could waste a lot of time on something that may later seem to be an unimportant detail. We want to conquer before we divide.
+Domain events have the advantage that they steer discussions away from technical issues, that they focus on what has happened, without spending to much detail on how it happened. When the discussions occur around domain events then database and UI discussion are pushed to the background. Which is a very good thing. We don't want to let debates go depth-first from the start because we could waste a lot of time on something that may later seem to be an unimportant detail. We want to conquer before we divide: we aim to understand the problem, see the whole story, before we start splitting things up and start thinking about possible solutions. 
+
+### All modelling components
 
 Apart from domain events, there are also other DDD building blocks that can take the stage in an Event Storming session. All the building blocks used are: 
 
@@ -99,20 +104,24 @@ Apart from domain events, there are also other DDD building blocks that can take
 | projections | A data transformation that builds a read model from events.|Data Transformation logic| 
 | read models | Information that is presented to a user to make a decision|Data|
 | policies | Global business rules. "When X happens then trigger Y" | Orchestration logic|
-| systems | Something under our control that executes a command|Actionable logic|
+| systems | Something under our control that executes a command. **Can** be an aggregate|Actionable logic|
 | external System | Something not under our control that executes commands.|Actionable logic|
 | UI | The typical portal from the real world to the software systems. The way by which the user can read models and trigger commands in a software world. |Interface to data and actions|
+
+Note that these definitions aren't very formal and precise. This is intentional. One of the powers of the event storming components is that they are not defined to strict. Event Storming aims to be a very lightweight technique, that is easy to learn and remains flexible. We don't want to get stifled by heavy standards.
  
-All these components relate to each other as explained in Alberto's Universal picture.[^book]
+All these components have relations defined between them. As explained in Alberto's Universal picture.[^book]
 
 ![Picture that explains everything](/img/posts/events-restaurant/components-overview.png)
 
+The above components come into play when we move away from trying to understand the problem and we start solving it. The moment we want to model out solutions to the story, that's when we add the other components. In a modelling sessions these components are typically represented by light weight post-its that we can easily move around or replace. We just need to respect their light definitions and their inner relations. This provides us with a fast and cheap modelling technique.
+ 
 These building blocks **can** be implemented technically. This means that when we are modelling out a solution through Event Storming process flow, we are also immediately modelling out a different potential software solution. Even if we haven't referred or included any technologies yet, the modelled solution can map one on one with the implemented one. Which is exactly what we want. The domain should drive the design of our solution, **not** the technologies. Or god forbid, the database...  In a future blog post, we will talk about the relation between the modelling components and a hexagonal architecture. But for now, we will remain technology agnostic. 
+
 
 ## Modelling our restaurant processes
 
 Armed with the knowledge of our building blocks, we will now model out the flow between the different actors in the restaurant. The customer, the waiter, the cook... I will give a verbose explanation with the first processes. But I hope that after a while the model speaks for itself.
-
 
 The legend used in the following process illustrations matches:
 
@@ -130,7 +139,7 @@ With our building blocks at our disposal, we can model out the flow of our resta
 
 ### The processes 
 
-In the big event flow, there are many different processes at work. For clarity, we'll distil them one by one, each time with less explanation. The process diagram should make it clear.
+In the big event flow, there are many different processes at work. For clarity, we'll distill them one by one, each time with less explanation. The process diagram should make it clear.
 
 #### The reservation processes
 
@@ -142,7 +151,7 @@ Each day the receptionist need to confirm the reservations made for z days in th
 
 ![Reservation flow](/img/posts/events-restaurant/processFlowReservation.png)
 
-Each day, when the day begins, the receptionist needs to assign the final tables to the customers. Since they aren't likely to change any more this can now safely be done. This is again one of the restaurant's policies: "When the day starts, then the receptionist must assign tables". The definitive assignments read model is updated. This will allow the receptionist to be able to quickly assign the customers to their assigned tables.
+At the start of each day, the receptionist needs to assign the final tables to the customers. Since they aren't likely to change any more this can now safely be done. This is again one of the restaurant's policies: "When the day starts, then the receptionist must assign tables". The definitive assignments read model is updated. This will allow the receptionist to be able to quickly assign the customers to their assigned tables.
 
 The receptionist policy thus contains the following rules:
 
@@ -160,7 +169,7 @@ It starts of course with the customers entering our restaurant. They will be rec
  
 ![Receptionist Proces](/img/posts/events-restaurant/processFlowReceptionist.png)
 
-Once they are seated, the waiter that is assigned to their table is triggered to bring them their menus, let them order their drinks and dishes. The waiter places the table drink order at the bar and continuous serving other tables. When the drinks are ready the waiter is triggered 
+Once they are seated, the waiter that is assigned to their table is triggered to bring them their menus, let them order their drinks and dishes. The waiter places the table drink order at the bar and continues serving other tables. When the drinks are ready the waiter is triggered 
 
 ![Waiter drinks Proces](/img/posts/events-restaurant/processFlowWaiterDrinks.png)
 
@@ -171,7 +180,7 @@ When the waiter serves the drinks, that is typically also the time that the dinn
 
 ## On Policies
 
-Policies are something that is often not modelled out explicitly. But notice how lightweight those policies are. The complexity of how to perform complex actions, like cooking, resides in the systems. These actions do not need to change when we modify the logic present int policies. This allows us to easily change the behaviour of an entire system.
+Policies are something that is often not modelled out explicitly. But notice how lightweight those policies are. The complexity of how to perform complex actions, like cooking, resides in the systems. These actions do not need to change when we modify the logic present in the policies. This allows us to easily change the behaviour of an entire system.
 
 For instance, when we modify the policy rule from
 
@@ -180,6 +189,10 @@ For instance, when we modify the policy rule from
 we radically have changed the way our restaurant functions. We went from a restaurant for dining, where one pays at the end. To a fast dining restaurant where you pay up front, allowing for faster change of customers.
 
 Policies can be simple agreements between people or they can be fully implemented in software. A [process manager](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html) [^proces manager] is a software design pattern that can be used to centralize policies.
+
+## On Aggregates
+
+The DDD aficionado's will have noticed that I have tried not to mention aggregates. This is intentional. An aggregate has to strict a definition and this might stifle conversation, make it harder for people to explore a model. That is why you can see "Aggregate" between quotes in Alberto universal picture. Remember not to get hung up on formal definitions. In Event Storming, an Aggregate is just a yellow sticky...
 
 ## Conclusion
 
