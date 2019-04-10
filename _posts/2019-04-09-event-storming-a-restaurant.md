@@ -90,7 +90,7 @@ In the previous example we are able to tell comprehensible stories simply using 
 
 The core building block of event storming is, of course, the **domain** events.
 
-Domain events have the advantage that they steer discussions away from technical issues, that they focus on what has happened, without spending to much detail on how it happened. When the discussions occur around domain events then database and UI discussion are pushed to the background. Which is a very good thing. We don't want to let debates go depth-first from the start because we could waste a lot of time on something that may later seem to be an unimportant detail. We want to conquer before we divide: we aim to understand the problem, see the whole story, before we start splitting things up and start thinking about possible solutions. 
+Domain events have the advantage that they steer discussions away from technical issues, that they focus on what has happened, without spending too much detail on how it happened. When the discussions occur around domain events then database and UI discussion are pushed to the background. Which is a very good thing. We don't want to let debates go depth-first from the start because we could waste a lot of time on something that may later seem to be an unimportant detail. We want to conquer before we divide: we aim to understand the problem, see the whole story, before we start splitting things up and start thinking about possible solutions. 
 
 ### All modelling components
 
