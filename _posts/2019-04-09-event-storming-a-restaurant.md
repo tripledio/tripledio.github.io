@@ -47,7 +47,7 @@ After dessert, they order a little digestif and request the check. The waiter br
 
 #### The problem scope
 
-With this little reference story as background, we are going to map out how a restaurant should operate in order to support the above scenario. There are many different actors in the restaurant. More than the one's Alice and Bob came in contact with. The inner workings of the kitchen, how the bill was composed, to name a few. We also need to remember that Alice and Bob where hopefully not the only customers inside the restaurants. So we need a solution that scales, in which we can serve multiple customers, independent of each other. 
+With this little reference story as background, we are going to map out how a restaurant should operate in order to support the above scenario. There are many different actors in the restaurant. More than the one's Alice and Bob came in contact with. The inner workings of the kitchen, how the bill was composed, to name a few. We also need to remember that Alice and Bob were hopefully not the only customers inside the restaurants. So we need a solution that scales, in which we can serve multiple customers, independent of each other. 
 
 
 ### The restaurant event flow
@@ -105,10 +105,10 @@ Apart from domain events, there are also other DDD building blocks that can take
 | read models | Information that is presented to a user to make a decision|Data|
 | policies | Global business rules. "When X happens then trigger Y" | Orchestration logic|
 | systems | Something under our control that executes a command. **Can** be an aggregate|Actionable logic|
-| external System | Something not under our control that executes commands.|Actionable logic|
+| external system | Something not under our control that executes commands.|Actionable logic|
 | UI | The typical portal from the real world to the software systems. The way by which the user can read models and trigger commands in a software world. |Interface to data and actions|
 
-Note that these definitions aren't very formal and precise. This is intentional. One of the powers of the event storming components is that they are not defined to strict. Event Storming aims to be a very lightweight technique, that is easy to learn and remains flexible. We don't want to get stifled by heavy standards.
+Note that these definitions aren't very formal and precise. This is intentional. One of the powers of the event storming components is that they are not defined too strictly. Event Storming aims to be a very lightweight technique, that is easy to learn and remains flexible. We don't want to get stifled by heavy standards.
  
 All these components have relations defined between them. As explained in Alberto's Universal picture.[^book]
 
@@ -169,11 +169,11 @@ It starts of course with the customers entering our restaurant. They will be rec
  
 ![Receptionist Proces](/img/posts/events-restaurant/processFlowReceptionist.png)
 
-Once they are seated, the waiter that is assigned to their table is triggered to bring them their menus, let them order their drinks and dishes. The waiter places the table drink order at the bar and continues serving other tables. When the drinks are ready the waiter is triggered 
+Once they are seated, the waiter that is assigned to their table is triggered to bring them their menus, let them order their drinks and dishes. The waiter places the table's drink order at the bar and continues serving other tables. When the drinks are ready the waiter is triggered. 
 
 ![Waiter drinks Proces](/img/posts/events-restaurant/processFlowWaiterDrinks.png)
 
-When the waiter serves the drinks, that is typically also the time that the dinner order is taken. The waiter will place the order for the table in the kitchen. From the waiter's perspective, the kitchen is an external system. They place their order ins, and the dishes will be coming out in the correct order, grouped by a table. But the kitchen of course also has a highly complex flow 
+When the waiter serves the drinks, it is typically also the time that the dinner order is taken. The waiter will place the order for the table in the kitchen. From the waiter's perspective, the kitchen is an external system. They place their order in, and the dishes will be coming out in the correct order, grouped by a table. But the kitchen of course also has a highly complex flow.
 
 ![Waiter food Proces](/img/posts/events-restaurant/processFlowWaiterFood.png)
 
@@ -192,11 +192,11 @@ Policies can be simple agreements between people or they can be fully implemente
 
 ## On Aggregates
 
-The DDD aficionado's will have noticed that I have tried not to mention aggregates. This is intentional. An aggregate has to strict a definition and this might stifle conversation, make it harder for people to explore a model. That is why you can see "Aggregate" between quotes in Alberto universal picture. Remember not to get hung up on formal definitions. In Event Storming, an Aggregate is just a yellow sticky...
+The DDD aficionado's will have noticed that I have tried not to mention aggregates. This was intentional. An aggregate has a definition that's too strict and this might stifle conversation, make it harder for people to explore a model. That is why you can see "Aggregate" between quotes in Alberto's universal picture. Remember not to get hung up on formal definitions. In Event Storming, an Aggregate is just a yellow sticky...
 
 ## Conclusion
 
-I hope to have demonstrated to you the power of **Event Storming process modelling** as technique that can be used to design solutions, without the need for in depth technical knowledge. Please try them out for yourself. Try to solve an [Architectural Kata](http://nealford.com/katas/)[^architectural_kata] to familiarize yourself with the technique. The more comfortable you are with the components and the technique the easier you will step up and start designing. Start using it, start having the conversations. There is no need to fear the DDD police! Alberto[^alberto] is a really nice guy ;-) 
+I hope to have demonstrated the power of **Event Storming process modelling** to you as a technique that can be used to design solutions, without the need for in depth technical knowledge. Please try them out for yourself. Try to solve an [Architectural Kata](http://nealford.com/katas/)[^architectural_kata] to familiarize yourself with the technique. The more comfortable you are with the components and the technique the easier you will step up and start designing. Start using it, start having the conversations. There is no need to fear the DDD police! Alberto[^alberto] is a really nice guy ;-) .
  
 > Don't be afraid to design! Model things out!
 
