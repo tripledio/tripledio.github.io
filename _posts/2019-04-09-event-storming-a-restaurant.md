@@ -104,7 +104,7 @@ Apart from domain events, there are also other DDD building blocks that can take
 | projections | A data transformation that builds a read model from events.|Data Transformation logic| 
 | read models | Information that is presented to a user to make a decision|Data|
 | policies | Global business rules. "When X happens then trigger Y" | Orchestration logic|
-| systems | Something under our control that executes a command. **Can** be an aggregate|Actionable logic|
+| systems | Something under our control that executes a command. **Can** be an aggregate,actor|Actionable logic|
 | external system | Something not under our control that executes commands.|Actionable logic|
 | UI | The typical portal from the real world to the software systems. The way by which the user can read models and trigger commands in a software world. |Interface to data and actions|
 
@@ -192,7 +192,7 @@ Policies can be simple agreements between people or they can be fully implemente
 
 ## On Aggregates
 
-The DDD aficionado's will have noticed that I have tried not to mention aggregates. This was intentional. An aggregate has a definition that's too strict and this might stifle conversation, make it harder for people to explore a model. That is why you can see "Aggregate" between quotes in Alberto's universal picture. Remember not to get hung up on formal definitions. In Event Storming, an Aggregate is just a yellow sticky...
+The DDD aficionado's will have noticed that I have tried not to mention aggregates. This was intentional. An aggregate has a definition that's too strict and this might stifle conversation, make it harder for people to explore a model. Same goes for Actors. That is why you can see "Aggregate" between quotes in Alberto's universal picture. Remember not to get hung up on formal definitions. In Event Storming, an Aggregate is just a yellow sticky...
 
 ## Conclusion
 
