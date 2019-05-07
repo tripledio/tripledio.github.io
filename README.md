@@ -42,4 +42,8 @@ Create and start *triple-D-blog-with-drafts* container
 ```docker
 docker run gitlab/gitlab-runner:latest
 ``` 
- 
+## Running with the jekyll image instead of github-pages
+I got the impression this is running a lot smoother (ie no hypervisor process going nuts on your mac.)
+```
+docker run --name jekyll --volume="$PWD:/srv/jekyll" -p 3000:4000 -it jekyll/jekyll:3.8 jekyll serve --watch --drafts --incremental
+```

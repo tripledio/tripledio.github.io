@@ -18,7 +18,7 @@ This principle states that the most flexible systems are those in which **source
 
 The relationship between a low level `Repository` and a high level `DomainService` is a good example of this. We do not want the `DomainService` to depend directly on a concrete `Repository`, instead we want to create an abstract interface between the two layers. This abstract interface will protect the high level `DomainService` from any changes to the low level `Repository`. This makes sense: the concrete repository will change for different reasons then the `DomainService` will.
 
-![Introduce an abstraction](/img/posts/dip/introduceInterface.png){:width="800px"}
+![Introduce an abstraction](/img/posts/dip/introduceInterface.png){:width="900px"}
 
 Sadly, this is only part of the problem: What if the interface of this class needs to change? One way to mitigate that problem is to carefully think about the location of the interface.
 
