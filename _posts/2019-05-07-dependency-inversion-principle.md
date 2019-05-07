@@ -33,8 +33,10 @@ Who instantiates an implementation if it’s located in an an other module? If w
 ![Introduce a factory](/img/posts/dip/withFactory.png){:width="500px"}
 
 ## Relationship to ports and adapters architectural styles.
+explain relationship and refer to actual explaination
 
 ## Improved testability by applying DIP
+explain how it's easy to provide stubs for the abstract interface of the domain layer.
 
 ## Conclusion
 The Dependency inversion principle helps to loosely couple your code by ensuring that the high level modules depend upon abstractions rather then concrete implementations of the low level modules. Placing those abstractions on the right side of the boundary makes sure we protect ourselves from changes to the low level modules. Hopefully this post explains the importance of this and helps you to write better code!
