@@ -30,4 +30,4 @@ Who instantiates an implementation if it’s located in an an other module? If w
 ![Introduce a factory](/img/posts/dip/withFactory.png){:width="500px"}
 
 ## Conclusion
-While most of us know the dependency inversion principle because the Spring container provides it, we still tend to forget about the inversion of ownership. In other words, most of the time we put the interfaces on the wrong side of the boundary. Hopefully this post explains the importance of this and helps you to write better code!
+The Dependency inversion principle helps to loosly couple your code by ensuring that the high level modules depend upon abstractions rather then concrete implementations of the low level modules. Placing those abstractions on the right side of the boundary makes sure we protect ourselves from changes to the low level modules. Hopefully this post explains the importance of this and helps you to write better code!
