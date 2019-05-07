@@ -24,8 +24,8 @@ The dependency inversion principle is not just about dependencies, it also deals
 
 ![Move interface](/img/posts/dip/moveInterface.png){:width="800px"}
 
-## How to obtain instances of a low level module 
-Who instantiates an implementation if it’s located in an an other module? If we’re using spring, we could consider creating a singleton bean of the low level module and expose it in the application context. This will allow us to inject the low level details into our high level policy using constructor injection. If we don’t have spring available, we revert back to the Abstract Factory pattern. This factory will be responsible for creating the right instance of the `PersonRepository` and return it so that the upper level modules can make use of it.
+## How to obtain instances of a low level module
+Who instantiates an implementation if it’s located in an an other module? If we're using an IOC container, the IOC container could create the instance of the low level module and inject it where necessary. So an IOC container makes it real easy to inject low level details into our high level modules. With the low level details hidden by a proper abstraction of course. However if we don't use an IOC container we can use the Abstract Factory pattern for this. This pattern, when applied across layers illustrates nicely how high level modules can obtain references to low level instances.
 
 ![Introduce a factory](/img/posts/dip/withFactory.png){:width="500px"}
 
