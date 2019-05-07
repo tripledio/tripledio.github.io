@@ -23,7 +23,7 @@ The relationship between a low level `Repository` and a high level `DomainServic
 Sadly, this is only part of the problem: What if the interface of this class needs to change? One way to mitigate that problem is to carefully think about the location of the interface.
 
 ## Inversion of ownership
-The dependency inversion principle is not just about dependencies, it also deals with ownership: Who owns the interface upon which the high level module depends and why? To answer that question we need to think about the reasons for which the interface would have to change. Clearly the primary reason for a change in the interface would be because the domain layer needs it. This leads to the conclusion that the interface of the `PersonRepository` should be located in the domain layer, rather then the repository (or infrastructure) layer. In essence we’re changing the relationship from a Domain service ‘using’ a repository  to a domain service ‘requiring’ a repository which conforms to specific API. This subtle change allows us to think of the infrastructure layer as a plugin to our application. Which in turn allows us to create an alternate implementation for testing and to delay the implementation of those plugins to the latest sensible moment.
+The dependency inversion principle is not just about dependencies, it also deals with ownership: Who owns the interface upon which the high level module depends and why? To answer that question we need to think about the reasons for which the interface would have to change. Clearly the primary reason for a change in the interface would be because the domain layer needs it. This leads to the conclusion that the interface of the `Repository` should be located in the domain layer, rather then the repository (or infrastructure) layer. In essence we’re changing the relationship from a Domain service ‘using’ a repository  to a domain service ‘requiring’ a repository which conforms to specific API. This subtle change allows us to think of the infrastructure layer as a plugin to our application. Which in turn allows us to create an alternate implementation for testing and to delay the implementation of those plugins to the latest sensible moment.
 
 ![Move interface](/img/posts/dip/moveInterface.png){:width="800px"}
 
@@ -32,5 +32,9 @@ Who instantiates an implementation if it’s located in an an other module? If w
 
 ![Introduce a factory](/img/posts/dip/withFactory.png){:width="500px"}
 
+## Relationship to ports and adapters architectural styles.
+
+## Improved testability by applying DIP
+
 ## Conclusion
-The Dependency inversion principle helps to loosly couple your code by ensuring that the high level modules depend upon abstractions rather then concrete implementations of the low level modules. Placing those abstractions on the right side of the boundary makes sure we protect ourselves from changes to the low level modules. Hopefully this post explains the importance of this and helps you to write better code!
+The Dependency inversion principle helps to loosely couple your code by ensuring that the high level modules depend upon abstractions rather then concrete implementations of the low level modules. Placing those abstractions on the right side of the boundary makes sure we protect ourselves from changes to the low level modules. Hopefully this post explains the importance of this and helps you to write better code!
