@@ -11,7 +11,7 @@ You can run the site locally using docker after which you can browse to http://l
 First run will create and start the container "triple-D-blog"
 
  ```docker
- docker run --name=triple-D-blog -v "$PWD":/usr/src/app -v "$PWD"/_site:/_site -p 4000:4000 starefossen/github-pages
+ docker run --name=triple-D-blog -v "$PWD":/usr/src/app:delegated -v "$PWD"/_site:/_site -p 4000:4000 starefossen/github-pages
  ```
  
 The web site will be generated under the _site folder. That is the folder which is then hosted. 
