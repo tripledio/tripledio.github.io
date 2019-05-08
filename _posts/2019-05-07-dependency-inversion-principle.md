@@ -8,32 +8,34 @@ excerpt: "how to Apply DIP correctly."
 ---
 
 # Dependency inversion principle
-In it’s essence, this pattern dictates the following:
+This pattern dictates the following:
 
-* high level modules should not depend on low level modules, instead, both should depend upon abstractions.
+* high level policy should not depend on low level details, instead, both should depend upon abstractions.
 * Abstractions should not depend upon details. Details should depend upon abstractions.
 
-## Depend upon abstractions
-This principle states that the most flexible systems are those in which **source code dependencies refer only to abstractions, not to concretions**. For a statically typed language like java, this means that import statements should only refer to interfaces or abstract classes. **However, this should not be dogmatized**. Not all classes we depend upon should be abstract interfaces. This only makes sense for classes which tend to change a lot. Think about the `String` class for example, or the `BigDecimal` class, it would not make a lot of sense to create an abstract interface for those since we can safely consider them to be stable classes. The only place where it makes truly sense to treat this rule as a dogma, is when crossing architectural layers inside your application. 
+Simply put, this principle advocates that important things should not depend on details. Which makes sense. It also explains that they should be loosely coupled using meaningful abstractions as the middleman. This principle is at the heart of a lot of software design patterns and even complete architectures. This article will try to connect those dots, and hopefully give you some more insight into this core principle. 
 
-The relationship between a low level `Repository` and a high level `DomainService` is a good example of this. We do not want the `DomainService` to depend directly on a concrete `Repository`, instead we want to create an abstract interface between the two layers. This abstract interface will protect the high level `DomainService` from any changes to the low level `Repository`. This makes sense: the concrete repository will change for different reasons then the `DomainService` will.
+## Inverting dependencies
+Applying the dependency inversion principle starts by **introducing an abstraction between the high level policy and the low level detail**. This abstraction allows the policy to be re-used and removes the direct dependency on the details. By introducing an abstraction, we allow the low level details, which are often far more volatile then the high level policy, to be interchangeable, without requiring changes to the high level policy. However, problems arise when the newly created abstraction itself needs to be changed, because this will trigger a change in the policy as well as the low level details. 
 
+**update drawing!!**
 ![Introduce an abstraction](/img/posts/dip/introduceInterface.png){:width="900px"}
 
-Sadly, this is only part of the problem: What if the interface of this class needs to change? One way to mitigate that problem is to carefully think about the location of the interface.
+## Where to put the abstraction?
+Who owns the abstraction upon which the high level policy depends and why? To answer that question we need to think about the reasons for which the abstraction would have to change. Clearly the primary reason for a change would be because the high level policy somehow needs it. This leads to the conclusion that **the abstraction should be located next to the policy, rather then the detail**. In essence we’re changing the relationship from a high level policy ‘using’ a low level detail to the high level policy ‘requiring’ a detail which provides a certain functionality. This subtle change allows us to think of details as plugins to our policies.
 
-## Inversion of ownership
-The dependency inversion principle is not just about dependencies, it also deals with ownership: Who owns the interface upon which the high level module depends and why? To answer that question we need to think about the reasons for which the interface would have to change. Clearly the primary reason for a change in the interface would be because the domain layer needs it. This leads to the conclusion that the interface of the `Repository` should be located in the domain layer, rather then the repository (or infrastructure) layer. In essence we’re changing the relationship from a Domain service ‘using’ a repository  to a domain service ‘requiring’ a repository which conforms to specific API. This subtle change allows us to think of the infrastructure layer as a plugin to our application. Which in turn allows us to create an alternate implementation for testing and to delay the implementation of those plugins to the latest sensible moment.
-
+**update drawing!!**
 ![Move interface](/img/posts/dip/moveInterface.png){:width="800px"}
 
-## How to obtain instances of a low level module
-Who instantiates an implementation if it’s located in an an other module? If we're using an IOC container, the IOC container could create the instance of the low level module and inject it where necessary. So an IOC container makes it real easy to inject low level details into our high level modules. With the low level details hidden by a proper abstraction of course. However if we don't use an IOC container we can use the Abstract Factory pattern for this. This pattern, when applied across layers illustrates nicely how high level modules can obtain references to low level instances.
+## The repository pattern
+The Repository pattern adheres to the dependency inversion principle by stating that the abstraction should be free of technical details and act as if you're working with an in memory collection. The concrete implementation should be done in the infrastructure layer where a translation will be done to some sort of persistent store. 
 
-![Introduce a factory](/img/posts/dip/withFactory.png){:width="500px"}
+This allows us to focus on the contract and the domain language in the abstraction without thinking about the technical details.
 
-## Relationship to ports and adapters architectural styles.
-explain relationship and refer to actual explaination
+## Ports and adapters architecture.
+When applying the dependency inversion principle on the architectural layers of your application, you're bound to end up at the **ports and adapters architecture**. This architecture has been around for a long time, but has become increasingly popular again due to the work of Uncle bob, who calls it **Clean Architecture**.
+
+This architectural style focuses on making sure all dependencies point into the same direction: The domain layer. This is achieved by creating abstract interfaces for the low level details which sit at the boundary of your system. These interfaces are part of the domain layer.
 
 ## Improved testability by applying DIP
 explain how it's easy to provide stubs for the abstract interface of the domain layer.
