@@ -93,7 +93,7 @@ review:
          curl
          -n
          -X POST https://hooks.slack.com/services/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
-         --data-urlencode 'payload={"channel": "#blog", "text": "Review branch is availabe on '"$CI_ENVIRONMENT_URL"'"}'
+         --data-urlencode 'payload={"channel": "#blog", "text": "Review branch is availabe on '"$CI_ENVIRONMENT_URL"' for branch '"$CI_COMMIT_REF_NAME"'"}'
 
   environment:
     name: review/$CI_COMMIT_REF_NAME
