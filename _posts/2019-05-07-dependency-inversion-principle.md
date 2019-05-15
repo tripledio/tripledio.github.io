@@ -3,46 +3,76 @@ layout: post
 author: domenique
 header-img: "img/posts/dip/spotlight.jpg"
 title: "The dependency inversion principle"
-excerpt: "How to Apply DIP correctly."
+excerpt: "The importance of the Dependency inversion principle"
 
 ---
 
-# Dependency inversion principle
-This pattern dictates the following:
+# The importance of the Dependency inversion principle
 
-> High level policy should not depend on low level details, instead, both should depend upon abstractions. Abstractions should not depend upon details. Details should depend upon abstractions.
+The dependency inversion principle (DIP) is a well known principle and one of the SOLID(insert link) principles. The principle is at the heart of a lot of software design patterns and even complete architectures. This article will try to connect those dots, and hopefully provide some additional insight into this core principle. 
 
-Simply put, this principle advocates that important things should not depend on details. Which makes sense. It also explains that they should be loosely coupled using meaningful abstractions as the middleman. This principle is at the heart of a lot of software design patterns and even complete architectures. This article will try to connect those dots, and hopefully give you some more insight into this core principle. 
+## The principle
 
-## Inverting dependencies
-Applying the dependency inversion principle starts by **introducing an abstraction between the high level policy and the low level detail**. This abstraction allows the policy to be re-used and removes the direct dependency on the details. By introducing an abstraction, we allow the low level details, which are often far more volatile then the high level policy, to be interchangeable, without requiring changes to the high level policy. 
+The DIP principle states the following:
 
-**update drawing!!**
+> *High level* policy should not depend on *low level* details, instead, both should depend upon abstractions. 
+> *Abstractions* should not depend upon *details*. *Details* should depend upon *abstractions*.
+
+In essence the principle advocates two things. First it states that important things should not depend on details. Which makes sense. It also states that these different concerns should be loosely coupled by using meaningful abstractions as the middleman. 
+
+### Inverting dependencies
+Applying the dependency inversion principle starts by **introducing an abstraction between the high level policy and the low level detail**. This abstraction removes the direct dependency on the details, decoupling it and thus allows for easier re-use of the important functionality in the policy. By introducing an abstraction, we allow the low level details, which are often far more volatile then the high level policy, to be interchangeable, without requiring changes to the high level policy. 
+
+The dependency is inverted because the high level policy no longer has a *use* relation on the low level policy but on the introduced abstraction. Where the low level policy now has an *implements* relation on the abstraction.
+
+**update drawing!! Hier een tekening van DIP op zich? Zonder architecturale boundaries? Aantonen wat inversion is?**
 ![Introduce an abstraction](/img/posts/dip/introduceInterface.png){:width="900px"}
 
-## Where to put the abstraction?
-Who owns the abstraction upon which the high level policy depends and why? To answer that question we need to think about the reasons for which the abstraction would have to change. Clearly the primary reason for a change would be because the high level policy somehow needs it. This leads to the conclusion that **the abstraction should be located next to the policy, rather then the detail**. In essence we’re changing the relationship from a high level policy ‘using’ a low level detail to the high level policy ‘requiring’ a detail which provides a certain functionality. This subtle change allows us to think of details as plugins to our policies.
 
+### Where to put the abstraction?
+Who owns the abstraction upon which the high level policy depends and why? Where does the abstraction belong? The answer is actually already given in the definition of DIP. When we are 'inverting' the dependency, we are in essence going from a high level policy that ‘uses’ a low level detail (the dependency)to a situation where the high level policy ‘uses’ an abstraction and the low level policy now has the inverted relation "implements" (the inverted dependency) towards the abstraction. Since our goal was for the high level policy to no longer depend on the low level, the abstraction belongs with the high level policy. 
+
+There is also the cohesive aspect of "reason to change". Why would the abstraction need to change? Because the one that uses it, requires something different from it. It is the high level policy that has the *uses* relation to the abstraction. Therefore they belong together.
+
+**The abstraction should be located next to the high level policy**.
 **update drawing!!**
 ![Move interface](/img/posts/dip/moveInterface.png){:width="800px"}
 
-## How to obtain instances of a low level module
-Who instantiates an implementation if it’s located in an an other module? If we're using an IOC container, the IOC container could create the instance of the low level module and inject it where necessary. So an IOC container makes it real easy to inject low level details into our high level modules. With the low level details hidden by a proper abstraction of course. However if we don't use an IOC container we can use the Abstract Factory pattern for this. This pattern, when applied across layers illustrates nicely how high level modules can obtain references to low level instances.
+The low level policies, the details, are just plugins to our important policies.
+
+### DIP is not DI or IOC
+
+The dependency inversion principle is often confused with dependency injection (DI). But these are two separate things. https://en.wikipedia.org/wiki/Dependency_injection
+
+Dependency injection is a technique whereby one supplies the dependencies to an object. The intent behind dependency injection is to achieve separation of concerns between the construction and the use of objects. It states nothing on the relative importance between those objects or if an abstraction is used.
+
+Dependency injection in itself is a form of the broader technique of inversion of control (IOC). IOC in itself can support DIP. But it is not because we use DI or IOC that we are necessarily applying DIP.
+
+## DIP at work 
+
+### How to obtain instances of a low level module
+Who instantiates an implementation if it’s located in an an other module? If we're using an IOC container, the IOC container could create the instance of the low level module and inject it where necessary. So an IOC container makes it real easy to inject low level details into our high level modules. But as we stated before, we still need to provide the proper abstractions ourselves.
+
+However when we don't use an IOC container, we can use the Abstract Factory pattern for injecting low level details into our high level modules. When applied across layers, the abstract factory illustrates nicely how high level modules can obtain references to low level instances.
 
 ![Introduce a factory](/img/posts/dip/withFactory.png){:width="500px"}
 
-## The repository pattern
-Looking at the repository pattern originally coined by Eric Evans, we can clearly see that it's a fine example of the dependency inversion principle. The pattern states that an abstraction should be created which is free of technical details, and should preferably look a lot like a collection interface. The abstraction should be implemented in the infrastructure layer where all the technicalities of dealing with a persistent store should be hidden. From the domain perspective, we are talking with a collection like interface to store the aggregates.
+### The repository pattern
+Looking at the repository pattern, as originally coined by Eric Evans, we can clearly see that it's a fine example of the dependency inversion principle. The pattern states that an *abstraction* should be created which is free of technical details, and should preferably look a lot like a collection interface. The abstraction should be implemented in the infrastructure layer where all the technicalities of dealing with a persistent store should be hidden. From the domain perspective, we are talking with a collection like interface to store the aggregates.
 
 ** update drawing, repo only.**
 ![Move interface](/img/posts/dip/moveInterface.png){:width="800px"}
 
 Placing this abstraction inside the domain layer, close to its consumers, ensures that the domain layer is guarded from any changes to the low level infrastructure code.
 
-## Ports and adapters architecture.
-When applying the dependency inversion principle on the architectural layers of your application, you're bound to end up with a **ports and adapters architecture**. This architecture has been around for a long time, but has become increasingly popular again due to the work of Uncle bob, who calls it **Clean Architecture**.
+#### The repository is *not* a data acces object
 
-This architectural style focuses on making sure all dependencies point into the same direction: The domain layer. This is achieved by creating abstract interfaces for the low level details which sit at the boundary of your system. These interfaces are part of the domain layer.
+As a side note, the idea of the repository pattern is to abstract away the persistency details. We obtain domain concepts from a repository. Not low level data where we still need to attach meaning to. If we obtain the aggregate from memory, a relational db, a document db or an eventsourced system, those are low level details.
+
+### Ports and adapters architecture.
+When applying the dependency inversion principle on the architectural layers of your application, you're bound to end up with a **hexagonal architecture** also called **ports and adapters** or as Uncle bob's **Clean Architecture**.
+
+This architectural style focuses on making sure all dependencies point into the same direction: The domain model, the core functionality of the application. This is achieved by creating abstract interfaces for the low level details which sit at the boundary of your system. And as we already know, these interfaces are part of the domain layer.
 
 ## Conclusion
 The Dependency inversion principle helps to loosely couple your code by ensuring that the high level modules depend upon abstractions rather then concrete implementations of the low level modules. Placing those abstractions on the right side of the boundary makes sure we protect ourselves from changes to the low level modules. Applying this principle helps writing testable and maintainable code.
