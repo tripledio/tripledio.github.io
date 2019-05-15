@@ -23,16 +23,21 @@ Kent Beck originally proposed the concept of composed methods. A composed method
 of multiple calls to other private methods, each having a clear name to identify it's responsibility.
 This technique results on smaller methods having only one level of abstraction and by consequence only one responsibility.
 The following code sample illustrates what this would look like.
+
 <script src="https://gist.github.com/domenique/a90553e06fc3c1bff41b297f4a37b24c.js"></script>
+
 As you can see there are at least 2 levels of abstraction in this code. the `makeCoffee()` method exhibits
 a higher level of abstraction then the other methods. It acts as an orchestration layer, enforcing policy on the other methods.
 
 ## Code smells
+
 ### Loop bodies
 Often the body of a loop can be extracted resulting in a separate private method. Loops should ideally contain
 a single statement (usually a method call). Sometimes this is not achievable without other drawbacks but certainly
 large loop bodies can be considered a smell.
+
 <script src="https://gist.github.com/domenique/2b5ff037de296cf6f7be6a127360c025.js"></script>
+
 The example above is a factory responsible to convert our `Car` entity to a data transfer object.
 Look carefully at the `create` method. First there is the loop which acts on the whole result set,
 secondly there is the loop body which converts a single `Car` Entity to a `CarDto`. The body of the
