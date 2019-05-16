@@ -25,18 +25,14 @@ Applying the dependency inversion principle starts by **introducing an abstracti
 
 The dependency is inverted because the high level policy no longer has a *use* relation on the low level policy but on the introduced abstraction. Where the low level policy now has an *implements* relation on the abstraction.
 
-**update drawing!! Hier een tekening van DIP op zich? Zonder architecturale boundaries? Aantonen wat inversion is?**
-![Introduce an abstraction](/img/posts/dip/introduceInterface.png){:width="900px"}
-
+![Introduce an abstraction](/img/posts/dip/introduceInterface.png){:width="600px"}
 
 ### Where to put the abstraction?
 Who owns the abstraction upon which the high level policy depends and why? Where does the abstraction belong? The answer is actually already given in the definition of DIP. When we are 'inverting' the dependency, we are in essence going from a high level policy that ‘uses’ a low level detail (the dependency)to a situation where the high level policy ‘uses’ an abstraction and the low level policy now has the inverted relation "implements" (the inverted dependency) towards the abstraction. Since our goal was for the high level policy to no longer depend on the low level, the abstraction belongs with the high level policy. 
 
 There is also the cohesive aspect of "reason to change". Why would the abstraction need to change? Because the one that uses it, requires something different from it. It is the high level policy that has the *uses* relation to the abstraction. Therefore they belong together.
 
-**The abstraction should be located next to the high level policy**.
-**update drawing!!**
-![Move interface](/img/posts/dip/moveInterface.png){:width="800px"}
+![Move interface](/img/posts/dip/moveInterface.png){:width="600px"}
 
 The low level policies, the details, are just plugins to our important policies.
 
@@ -60,8 +56,7 @@ However when we don't use an IOC container, we can use the Abstract Factory patt
 ### The repository pattern
 Looking at the repository pattern, as originally coined by Eric Evans, we can clearly see that it's a fine example of the dependency inversion principle. The pattern states that an *abstraction* should be created which is free of technical details, and should preferably look a lot like a collection interface. The abstraction should be implemented in the infrastructure layer where all the technicalities of dealing with a persistent store should be hidden. From the domain perspective, we are talking with a collection like interface to store the aggregates.
 
-** update drawing, repo only.**
-![Move interface](/img/posts/dip/moveInterface.png){:width="800px"}
+![Move interface](/img/posts/dip/repoPattern.png){:width="500px"}
 
 Placing this abstraction inside the domain layer, close to its consumers, ensures that the domain layer is guarded from any changes to the low level infrastructure code.
 
