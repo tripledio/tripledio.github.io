@@ -3,13 +3,13 @@ layout: post
 author: domenique
 header-img: "img/posts/dip/spotlight.jpg"
 title: "The importance of the dependency inversion principle"
-excerpt: "The dependency inversion principle (DIP) is a well known principle and one of the SOLID principles. The principle is at the heart of a lot of software design patterns and even complete architectures. This article will try to connect those dots, and hopefully provide some additional insight into this core principle."
+excerpt: "A blog about the importance and proper useage of the dependency inversion principle."
 
 ---
 
 # The importance of the dependency inversion principle
 
-The dependency inversion principle (DIP) is a well known principle and one of the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles. The principle is at the heart of a lot of software design patterns and even complete architectures. This article will try to connect those dots, and hopefully provide some additional insight into this core principle. 
+The dependency inversion principle (DIP) is a well known principle and one of the five [SOLID](https://en.wikipedia.org/wiki/SOLID) principles. It is at the heart of a lot of software design patterns, frameworks and architectures. This article will try to connect some dots and hopes to provide some additional insight into the application of this core principle. 
 
 ## The principle
 
@@ -17,16 +17,20 @@ The DIP principle states the following:
 
 > **High level** policy should not depend on **low level** details, instead, both should depend upon abstractions. **Abstractions** should not depend upon **details**. **Details** should depend upon **abstractions**.
 
-In essence the principle advocates two things. First it states that important things should not depend on details. Which makes sense. It also states that these different concerns should be loosely coupled by using meaningful abstractions as the middleman. 
+In essence the principle advocates two things. First it states that important things should not depend on details. Which hopefully makes a lot of sense. It also states that these concerns of different importance should be loosely coupled from each other. This should be done by using meaningful abstractions as the middleman. 
 
-### Inverting dependencies
-Applying the dependency inversion principle starts by **introducing an abstraction between the high level policy and the low level detail**. This abstraction removes the direct dependency on the details, decoupling it and thus allows for easier re-use of the important functionality in the policy. By introducing an abstraction, we allow the low level details, which are often far more volatile then the high level policy, to be interchangeable, without requiring changes to the high level policy. 
+This may sound simple in theory but it is often difficult to distinguish the important things from the unimportant ones. Also it requires discipline and insight to separate the two properly. 
 
-The dependency is inverted because the high level policy no longer has a **use** relation on the low level policy but on the introduced abstraction. Where the low level policy now has an **implements** relation on the abstraction.
+#### Inverting dependencies
+Applying the dependency inversion principle starts by **introducing an abstraction between the high level policy and the low level detail**. This abstraction removes the direct dependency on the details, decoupling it and thus allows for easier re-use of the important functionality in the policy. By introducing an abstraction, we allow the low level details, which are typically far more volatile then the high level policy, to be interchangeable, without requiring changes to the high level policy. 
+
+We call this *dependency inversion* because the high level policy no longer has a **use** relation on the low level policy but the low level policy now has an **implements** relation on the abstraction. 
 
 ![Introduce an abstraction](/img/posts/dip/introduceInterface.png){:width="600px"}
 
-### Where to put the abstraction?
+This implies that the high level policy and the abstraction reside on the same level. Which brings us to our next topic.
+
+#### Where to put the abstraction?
 Who owns the abstraction upon which the high level policy depends and why? Where does the abstraction belong? The answer is actually already given in the definition of DIP. When we are 'inverting' the dependency, we are in essence going from a high level policy that ‘uses’ a low level detail (the dependency) to a situation where the high level policy ‘uses’ an abstraction and the low level policy now has the inverted relation "implements" (the inverted dependency) towards the abstraction. Since our goal was for the high level policy to no longer depend on the low level, the abstraction belongs with the high level policy. 
 
 There is also the cohesive aspect of "reason to change". Why would the abstraction need to change? Because the one that uses it, requires something different from it. It is the high level policy that has the **uses** relation to the abstraction. Therefore they belong together.
@@ -35,7 +39,7 @@ There is also the cohesive aspect of "reason to change". Why would the abstracti
 
 The low level policies, the details, are just plugins to our important policies.
 
-### DIP is not DI or IOC
+#### DIP is not DI or IOC
 
 The dependency inversion principle is often confused with [dependency injection (DI)](https://en.wikipedia.org/wiki/Dependency_injection). But these are two separate things. Dependency injection is a technique whereby one supplies the dependencies to an object. The intent behind dependency injection is to achieve separation of concerns between the construction and the use of objects. It states nothing on the relative importance between those objects or if an abstraction is used.
 
