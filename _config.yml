@@ -8,7 +8,7 @@ google_tracking_id: "UA-115161766-1"
 permalink: /:day/:month/:year/:title/
 url: https://www.tripled.io
 email: info@tripled.io
-logo: https://www.tripled.io/img/logo.jpg
+logo: https://www.tripled.io/img/logo-alt.png
 twitter:
     username: tripled_io
     card: summary
@@ -21,4 +21,3 @@ highlighter: rouge
 paginate: 5
 paginate_path: "/blog/page:num/"
 plugins: [jekyll-paginate,jekyll-feed,jekyll-seo-tag,jekyll-sitemap]
-

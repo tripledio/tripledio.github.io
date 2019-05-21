@@ -4,6 +4,7 @@ domenique:
     bio: "Software craftsman journeyman. Professional java code juggler. Avid fan of DDD and XP practices"
     location: "Zoersel, Belgium"
     image: "/img/authors/domenique.jpg"
+    twitter: "@domeniquetill"
 guido:
     username: "guido"
     name: "Guido Dechamps"
