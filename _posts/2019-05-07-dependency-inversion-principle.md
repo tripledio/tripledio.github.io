@@ -45,30 +45,38 @@ Many developers confuse the dependency inversion principle with [dependency inje
 
 Dependency injection in itself is a form of the broader technique of inversion of control (IOC). IOC in itself *can* support DIP. But it is not because we use DI or IOC that we are necessarily applying DIP. No framework can help us determining what is high level and what is low level. Nor with defining the proper abstraction to separate the two.
 
-## DIP at work 
+## The principle applied 
 
-### How to obtain instances of a low level module
-Who instantiates an implementation if it’s located in an an other module? If we're using an IOC container, the IOC container could create the instance of the low level module and inject it where necessary. So **an IOC container makes it really easy to inject low level details into our high level modules**. But as we stated before, we still need to provide the proper abstractions ourselves.
+#### How to obtain instances of a low level module
+When trying to apply DIP inside our codebase, we can ask ourselves: "Who instantiates the low level implementation of the abstraction if it’s located in an an other module? If we're using an IOC container, the IOC container could create the instance of the low level module and inject it where necessary. So **an IOC container makes it really easy to inject low level details into our high level modules**. But we still need to provide the proper abstractions ourselves. And place them in their correct location. With the high level policy.
 
-However when we don't use an IOC container, we can use the **Abstract Factory pattern for injecting low level details into our high level modules**. When applied across layers, the abstract factory illustrates nicely how high level modules can obtain references to low level instances.
+So is an IOC container required when one wants to apply DIP? Of course not. There are many different ways to do this. A classic approach woud be the use of the **[Abstract Factory pattern](https://refactoring.guru/design-patterns/abstract-factory)** for injecting low level details into our high level modules. When applied across layers, the abstract factory illustrates nicely how high level modules can obtain references to low level instances.
 
 ![Introduce a factory](/img/posts/dip/withFactory.png){:width="500px"}
 
-### The repository pattern
-Looking at the repository pattern, as originally coined by Eric Evans, we can clearly see that it's a fine example of the dependency inversion principle. The pattern states that an *abstraction* should be created which is free of technical details, and should preferably look a lot like a collection interface. The abstraction should be implemented in the infrastructure layer where all the technicalities of dealing with a persistent store should be hidden. From the domain perspective, we are talking with a collection like interface to store the aggregates.
+**Question:  Wie instantieert de abstract factory instance dan in de usecase?**
+
+#### The repository pattern
+Looking at the repository pattern, as originally coined by Eric Evans, we can clearly see that it's a fine example of the dependency inversion principle. The pattern states that an *abstraction* should be created which is free of technical details, and should preferably look a lot like a collection interface. The abstraction should be implemented in the infrastructure layer where all the technicalities of dealing with a persistent store should be hidden. From the domain perspective, we are talking with a collection-like interface to store the aggregates.
 
 ![Move interface](/img/posts/dip/repoPattern.png){:width="500px"}
 
-Placing this abstraction inside the domain layer, close to its consumers, ensures that the domain layer is guarded from any changes to the low level infrastructure code.
+Placing this abstraction inside the domain layer, close to its consumers, ensures that the domain layer is guarded from any changes to the low level infrastructure code. It also makes perfect sense from a usability standpoint since the repository is defined in the domain language. The repository abstraction should be clean, no technical details should leak through the api. 
 
-#### The repository is *not* a data acces object
+As a side note, the idea of the repository pattern is to abstract away the persistency details. We obtain domain concepts from a repository. *Not* low level data where we still need to attach meaning to. If we obtain the aggregate from memory, a relational db, a document db or an eventsourced system, those are low level details. A repository is not just a DAO.
 
-As a side note, the idea of the repository pattern is to abstract away the persistency details. We obtain domain concepts from a repository. Not low level data where we still need to attach meaning to. If we obtain the aggregate from memory, a relational db, a document db or an eventsourced system, those are low level details.
+ >A repository is *not* a data acces object
 
-### Ports and adapters architecture.
-When applying the dependency inversion principle on the architectural layers of your application, you're bound to end up with a [hexagonal architecture](http://wiki.c2.com/?HexagonalArchitecture) also called [ports and adapters](https://herbertograca.com/2017/09/14/ports-adapters-architecture/ ) or as Uncle bob calls it: [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
+#### Ports and adapters architecture.
+When applying the dependency inversion principle on the architectural layers of your application, we're bound to end up with a [hexagonal architecture](http://wiki.c2.com/?HexagonalArchitecture) also called [ports and adapters](https://herbertograca.com/2017/09/14/ports-adapters-architecture/ ) or as Uncle bob calls it: [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
 
-This architectural style focuses on making sure all dependencies point into the same direction: The domain model, the core functionality of the application. This is achieved by creating abstract interfaces for the low level details which sit at the boundary of your system. And as we already know, these interfaces are part of the domain layer.
+This architectural style lays DIP as an additional restriction on the multiple layers of an application. As a result all dependencies point towards the centre where, as a result of DIP, the high policy logic should reside. The centre is thus where we hope to find the domain model, the core functionality of the application. Achieving DIP in a layered architecture is achieved by creating abstract interfaces for the low level details. These low level details are typically called the adapters and sit at the boundary of your system. The abstractions, the interfaces are called the ports and are part of the domain layer.
+
+![Hexagonal Architecture example](/img/posts/dip/hexagonal-architecture.png){:width="500px"}
+
+#### DIP in Kubernetes TODO review
+
+In the Container Orchestrator Kubernetes we encounter [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) which is an API object that manages external access to the *services* in a cluster. So an Ingress is an abstraction that provices a functionality to services. In Kubernetes, (services)[https://kubernetes.io/docs/concepts/services-networking/service/] are an abstraction themselves that represents a logical set of pods. So on both sides of the spectrum we have abstractions communication with each other. These abstractions decouple the details of pods and external access. Allowing the high level policies from K8 to work without being hindered by the details.
 
 ## Conclusion
-The Dependency inversion principle helps to loosely couple your code by ensuring that the high level modules depend upon abstractions rather then concrete implementations of the low level modules. Placing those abstractions on the right side of the boundary makes sure we protect ourselves from changes to the low level modules. Applying this principle helps writing testable and maintainable code.
+The Dependency inversion principle is an important principle that helps us to decouple our code and protects us from a ripple effect from changes inside low level modules. By neatly separating different concerns and allowing the important concerns to take centre stage our software can easily be adapted and understood. But it enables the core of the software, the important stuff, to endure and survive the frequent changes in the more volatile lower level modules. It is however not an easy principle to apply. It requires thought and discipline to apply it correctly and consistently. But the benefits far outweight the effort required.
