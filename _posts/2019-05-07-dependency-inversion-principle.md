@@ -3,7 +3,7 @@ layout: post
 author: domenique
 header-img: "img/posts/dip/spotlight.jpg"
 title: "The importance of the dependency inversion principle"
-excerpt: "A blog about the importance and proper useage of the dependency inversion principle."
+excerpt: "The importance and proper useage of the dependency inversion principle."
 
 ---
 
@@ -39,11 +39,11 @@ There is also the cohesive aspect of "reason to change". Why would the abstracti
 
 The low level policies, the details, are just plugins to our important policies.
 
-#### DIP is not DI or IOC
+#### "Dependency inversion" is not "Dependency injection"
 
-The dependency inversion principle is often confused with [dependency injection (DI)](https://en.wikipedia.org/wiki/Dependency_injection). But these are two separate things. Dependency injection is a technique whereby one supplies the dependencies to an object. The intent behind dependency injection is to achieve separation of concerns between the construction and the use of objects. It states nothing on the relative importance between those objects or if an abstraction is used.
+Many developers confuse the dependency inversion principle with [dependency injection (DI)](https://en.wikipedia.org/wiki/Dependency_injection). But these are two separate things. Dependency injection is a technique whereby one supplies the dependencies to an object. The intent behind dependency injection is to achieve separation of concerns between the construction and the use of objects. It states nothing on the relative importance between those objects or if an abstraction is used.
 
-Dependency injection in itself is a form of the broader technique of inversion of control (IOC). IOC in itself can support DIP. But it is not because we use DI or IOC that we are necessarily applying DIP.
+Dependency injection in itself is a form of the broader technique of inversion of control (IOC). IOC in itself *can* support DIP. But it is not because we use DI or IOC that we are necessarily applying DIP. No framework can help us determining what is high level and what is low level. Nor with defining the proper abstraction to separate the two.
 
 ## DIP at work 
 
