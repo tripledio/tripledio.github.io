@@ -24,9 +24,33 @@ of multiple calls to other private methods, each having a clear name to identify
 This technique results on smaller methods having only one level of abstraction and by consequence only one responsibility.
 The following code sample illustrates what this would look like.
 
-<script src="https://gist.github.com/domenique/a90553e06fc3c1bff41b297f4a37b24c.js"></script>
+{% highlight java%}
+{% raw %}
+public class CoffeeMaker {
+  public void makeCoffee() {
+    grindBeans();
 
-As you can see there are at least 2 levels of abstraction in this code. the `makeCoffee()` method exhibits
+    boilWater();
+
+    pourWater();
+  }
+
+  private void grindBeans() {
+    // ...
+  }
+
+  private void boilWater() {
+    // ...
+  }
+
+  private void pourWater() {
+    // ...
+  }
+}
+{% endraw %}
+{% endhighlight %}
+
+As you can see there are at least 2 levels of abstraction in this code. the {% ihighlight java%}makeCoffee(){% endihighlight %} method exhibits
 a higher level of abstraction then the other methods. It acts as an orchestration layer, enforcing policy on the other methods.
 
 ## Code smells
@@ -36,11 +60,43 @@ Often the body of a loop can be extracted resulting in a separate private method
 a single statement (usually a method call). Sometimes this is not achievable without other drawbacks but certainly
 large loop bodies can be considered a smell.
 
-<script src="https://gist.github.com/domenique/2b5ff037de296cf6f7be6a127360c025.js"></script>
+{% highlight java%}
+{% raw %}
+public class CarDtoFactory {
 
-The example above is a factory responsible to convert our `Car` entity to a data transfer object.
-Look carefully at the `create` method. First there is the loop which acts on the whole result set,
-secondly there is the loop body which converts a single `Car` Entity to a `CarDto`. The body of the
+  public List<CarDto> create(List<Car> cars) {
+    return cars.stream()
+        .map(car -> {
+          CarDto carDto = new CarDto();
+          carDto.setHorsePower(car.calculateHorsePower());
+          return carDto;
+        })
+        .collect(Collectors.toList());
+  }
+
+  private class Car {
+
+    int calculateHorsePower() {
+      return 200;
+    }
+  }
+
+  private class CarDto {
+
+    int horsePower;
+
+    void setHorsePower(int hp) {
+      this.horsePower = hp;
+    }
+
+  }
+}
+{% endraw %}
+{% endhighlight %}
+
+The example above is a factory responsible to convert our {% ihighlight java%}Car{% endihighlight %} entity to a data transfer object.
+Look carefully at the {% ihighlight java%}create(){% endihighlight %} method. First there is the loop which acts on the whole result set,
+secondly there is the loop body which converts a single {% ihighlight java%}Car{% endihighlight %} Entity to a {% ihighlight java%}CarDto{% endihighlight %}. The body of the
 loop could easily be extracted, avoiding mixing the level of abstraction.
 
 ### Abstractions and layering
