@@ -18,21 +18,15 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="author" content="Triple D" />
     <meta name="robots" content="index,follow">
     <meta name="revisit-after" content="1 days" />
-
-    <meta property="og:title" content="Triple D" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.tripled.io" />
-    <meta property="og:image" content="https://www.tripled.io/img/logo.jpg" />
 
     <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
     <meta name="DC.title" content="Triple D">
     <meta name="DC.identifier" content="https://www.tripled.io">
     <meta name="DC.description" content="Triple D">
     <meta name="DC.subject" content="Triple D">
-    <meta name="DC.language" scheme="ISO639-1" content="nl">
+    <meta name="DC.language" scheme="ISO639-1" content="en">
     <meta name="DC.creator" content="https://www.tripled.io">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url | replace: 'http://', '//' }}">
@@ -50,39 +44,5 @@
 
     {% feed_meta %}
 
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "name": "Triple D",
-            "brand": "Triple D",
-            "@type": "Organization",
-            "url": "https://www.tripled.io",
-            "logo": "https://www.tripled.io/img/logo.jpg",
-            "telephone": "+32495123456",
-            "email": "info@tripled.io",
-            "vatID": "BE0677.461.559",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Moerbeke-Waas",
-                "postalCode": "9180",
-                "streetAddress": "Melkerijstraat 27, 9180 Moerbeke-Waas"
-            },
-            "contactPoint": [{
-                "@type": "ContactPoint",
-                "telephone": "+32495123456",
-                "name": "Guido Dechamps",
-                "contactType": "customer service"
-            }, {
-                "@type": "ContactPoint",
-                "telephone": "+32495123456",
-                "name": "Kris Hofmans",
-                "contactType": "customer service"
-            }, {
-                "@type": "ContactPoint",
-                "telephone": "+32495123456",
-                "name": "Doménique Tilleuil",
-                "contactType": "customer service"
-            }]
-        }
-    </script>
+    {% seo %}
 </head>

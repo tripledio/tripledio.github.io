@@ -23,18 +23,18 @@
                     <a href="{{ "/feed.xml" | prepend: site.github.url | replace: 'http://', '//'  }}" class="socicon rss">
                         <i class="socicon-rss"></i>
                     </a>
-                    {% if site.twitter_username %}
-                    <a href="https://twitter.com/{{ site.twitter_username }}" class="socicon tw">
+                    {% if site.twitter.username %}
+                    <a href="https://twitter.com/{{ site.twitter.username }}" class="socicon tw">
                         <i class="socicon-twitter"></i>
                     </a>
                     {% endif %}
-                    {% if site.linkedin_username %}
-                    <a href="https://linkedin.com/{{ site.linkedin_username }}" class="socicon ln">
+                    {% if site.linkedin.username %}
+                    <a href="https://linkedin.com/company/{{ site.linkedin.username }}" class="socicon ln">
                         <i class="socicon-linkedin"></i>
                     </a>
                     {% endif %}
-                    {% if site.email_username %}
-                    <a href="mailto:{{ site.email_username }}" class="socicon ml">
+                    {% if site.email %}
+                    <a href="mailto:{{ site.email }}" class="socicon ml">
                         <i class="socicon-mail"></i>
                     </a>
                     {% endif %}
