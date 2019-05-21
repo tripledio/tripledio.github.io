@@ -2,19 +2,23 @@
 encoding: utf-8
 title: Triple D
 header-img: img/home-bg.jpg
-email: blog@tripled.io
 copyright_name: Triple D
 description: "TripleD blog"
 disqus: "TripleD"
 google_tracking_id: "UA-115161766-1"
 permalink: /:day/:month/:year/:title/
 url: https://www.tripled.io
-twitter_username: tripled_io
-email_username: info@tripled.io
+email: info@tripled.io
+logo: https://www.tripled.io/img/logo.jpg
+twitter:
+    username: tripled_io
+    card: summary
+linkedin:
+    username: triple-d-io
 
 # Build settings
 markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num/"
-plugins: [jekyll-paginate,jekyll-feed,jekyll-sitemap]
+plugins: [jekyll-paginate,jekyll-feed,jekyll-seo-tag]
 
