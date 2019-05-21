@@ -1,7 +1,7 @@
 ---
 layout: post
 author: domenique
-header-img: "img/levelsofabstraction.jpg"
+header-img: "img/posts/levels-of-abstraction/levelsofabstraction.jpg"
 excerpt: Writing code is all about abstractions, they help us grasp the complexity of the code by hiding low level details from high level concepts. The key to readable code lies in grouping the right level of abstraction in the same unit of code.
 ---
 # Levels of abstraction
@@ -49,17 +49,20 @@ application should also adhere to the same level of abstraction across the appli
 In a typically layered application, we are supposed to find specific levels of abstraction
 in each of the layers. Meaning that when you look at the application from the boundaries inwards,
 our code should get more specific when passing through each layer. Failing to do so, results in code which is hard to read.
+
 #### The application layer
 A typically layered application consists of an application layer, or a service layer which acts as a facade
 in front of the domain model, this layer contains use cases or command handlers. It contains high level
 policy which can be understood by a business stakeholder by looking at the name of the class and its content.
 This layer should not contain any business logic, it merely orchestrates the domain layer, as a result,
 the code should be concise and easy to read.
+
 #### The domain layer
 The domain layer is a lower level of abstraction, it contains detailed business logic which is accessed from the application layer.
 The code in this layer will be a lot more complex then the application layer. If you want more details about specific business rules,
 how they relate to domain entities or aggregates then this is the right place to look. The domain layer will typically have different
 levels of abstractions in its own. Aggregate root entities exhibit a higher level of abstraction then entities.
+
 #### The infrastructure layer
 The infrastructure layer consists of the lowest level of abstraction, it deals with the nitty-gritty details
 such as database persistence, networking protocols and other details needed by the domain layer to persist

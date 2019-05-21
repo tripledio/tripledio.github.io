@@ -1,0 +1,22 @@
+[
+  {
+    "quote": "Programs must be written for people to read, and only incidentally for machines to execute.",
+    "person": "Abelson and Sussman"
+  },
+  {
+    "quote": "A document shouldn’t try to do what the code already does well.",
+    "person": "Eric Evans"
+  },
+  {
+    "quote": "Well, you either learn or you fail.",
+    "person": "Vaughn Vernon"
+  },
+  {
+    "quote": "If you think good architecture is expensive, try bad architecture.",
+    "person": "Brian Foote and Joseph Yoder in Big Ball of Mud"
+  },
+  {
+    "quote": "The quickest methods aren't always the fastest methods",
+    "person": "Gordon Beeming"
+  }
+]

@@ -4,7 +4,7 @@ title: "Connecting legacy to kubernetes"
 author: kris
 tags: Kubernetes, DevOps
 hideLogo: true
-header-img: "img/k8s-reverse-proxy/k8sbanner.png"
+header-img: "img/posts/k8s-reverse-proxy/k8sbanner.png"
 excerpt: In this blog post I'll demonstrate how to make applications that are external to a Kubernetes cluster available to the applications that are managed by K8s. This is useful for when we have started using Kubernetes to deploy and manage some your applications but not everything is managed at once.
 ---
 # Connecting external applications with kubernetes
@@ -29,7 +29,7 @@ It's precisely this K8s service abstraction capability that i will use to integr
 
 Below is a simple example of how this will look.
 
-![Mixed infrastructure](/img/k8s-reverse-proxy/integration.png)
+![Mixed infrastructure](/img/posts/k8s-reverse-proxy/integration.png)
 
 Here we have MyFancyService that runs inside our K8s cluster. MyFancyService uses the K8s managed service DBService and CurrencyExchangeService. It has no idea were these two services exists, nor should it. That's K8s job. It just asks for a link the these services. In K8s these two services are registered but they refer to two applications/services outside of the K8s cluster. MyFancyService doesn't need to know about this at all. If somewhere in the future we would decide to bring one of these external applications inside K8s as a managed service we are free to do so with minimal effort. MyFancyService is not impacted by this at all.
 
@@ -48,7 +48,8 @@ As a non K8s solution we can choose to do a low level proxying of the external s
 
 
 Our example would look like this if we would just use a native nginx configuration file.
-```
+{% highlight shell%}
+{% raw %}
 http {
     upstream tripled {
         server 81.82.200.36;
@@ -62,7 +63,8 @@ http {
         }
     }
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 This creates an http server, listens on port 80 and proxies a page with a Triple D and Kubernetes logo. We are now able to access an external resource like it was a local resource. However it is a 'solution' that is tightly coupled to nginx. The local proxy doesn't have the advantages that come with K8s. Our k8s managed services are still unable to find the service. You would just like to be able to find "tripled" when using service discovery inside K8s cluster.
 
@@ -74,9 +76,13 @@ We will now make the external Http server available to k8s by using the K8s api 
 
 For the demo to work we require a running kubernetes cluster. For demo purposes I'm using a [minikube](https://github.com/kubernetes/minikube) [^3] .
 
-`minikube start --cpus 2 --memory 4096`
+{% highlight shell%}
+{% raw %}
+minikube start --cpus 2 --memory 4096
+{% endraw %}
+{% endhighlight %}
 
-Run `minikube dashboard` to get to the kubernetes dashboard. It should be empty.
+Run {% ihighlight shell %}minikube dashboard{% endihighlight %} to get to the kubernetes dashboard. It should be empty.
 
 ### 2. Install Ingress implementation
 
@@ -86,24 +92,27 @@ In this step we will install Nginx as our Ingress implementation. But we could h
 
 We will install nginx as ingress impl in K8s by by using [helm](https://helm.sh/) [^5] , a K8s package manager.
 
-```
+{% highlight shell%}
+{% raw %}
 helm init
 helm install stable/nginx-ingress
-```
+{% endraw %}
+{% endhighlight %}
 
 The result should look something like this:
-![Helm installation output](/img/k8s-reverse-proxy/ingress.png)
-![Dashboard after installation](/img/k8s-reverse-proxy/dashboard.png)
+![Helm installation output](/img/posts/k8s-reverse-proxy/ingress.png)
+![Dashboard after installation](/img/posts/k8s-reverse-proxy/dashboard.png)
 
 Browsing to [192.168.99.100](http://192.168.99.100) shows a 404.
-![Browsing to the ip should show a 404](/img/k8s-reverse-proxy/norule.png)
+![Browsing to the ip should show a 404](/img/posts/k8s-reverse-proxy/norule.png)
 
 
 ### 3. Declare Service through ExternalName
 
 Now we will declare a new service tripled-svc in K8s. K8s will use the externalName in our service declaration to create a dns entry in the cluster dns service.
 
-```
+{% highlight yaml%}
+{% raw %}
 apiVersion: v1
 kind: Service
 metadata:
@@ -115,7 +124,8 @@ spec:
   ports:
   - name: http
     port: 80
- ```
+{% endraw %}
+{% endhighlight %}
 
 Basically we have defined a new service inside K8s that knows it exists external.
 
@@ -125,7 +135,8 @@ We'Il create an incoming ingress in K8s that routes to our newly created K8s ser
 
 We'Il use a hostname `tripled.192.168.99.100.xip.io` that resolves to the ip of our minikube. And then tell it to take us to the `tripled-svc` service.
 
-```
+{% highlight yaml%}
+{% raw %}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -140,10 +151,15 @@ spec:
           serviceName: tripled-svc
           servicePort: 80
         path: /
-```
+{% endraw %}
+{% endhighlight %}
 
 The yaml snippets can be put in any file, we'll use demo.yaml, and then run
-```kubectl apply -f demo.yaml```
+{% highlight shell%}
+{% raw %}
+kubectl apply -f demo.yaml
+{% endraw %}
+{% endhighlight %}
 
 which deploys it to your cluster. This will trigger a rewrite and reload of your ingress controller's configuration file.
 
@@ -151,7 +167,7 @@ We're using the [xip.io](http://xip.io) [^6] service to provide us with a DNS en
 
 Now point your browser to: [tripled.192.168.99.100.xip.io](http://tripled.192.168.99.100.xip.io/) and you should see a page with a triple D and kubernetes logo.
 
-![Final result](/img/k8s-reverse-proxy/proxyresult.png)
+![Final result](/img/posts/k8s-reverse-proxy/proxyresult.png)
 
 I hope you find this technique interesting and useful in your kubernetes migrations. And while this might be a pretty synthetical example, you could easily use something like [fixer.io](http://fixer.io/) [^7] and use it as your local currency exchange microservice. Allowing you to easily replace it by your own implementation later on.
 

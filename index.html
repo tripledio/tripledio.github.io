@@ -1,0 +1,69 @@
+---
+layout: default
+title: "Home"
+weight: 0
+
+spotlight:
+  imgDir: /img/spotlight/home
+  imgAlt: "Triple D : Design, Develop, Deploy"
+  logoAnimation: true
+  video: false
+  videoFile: files/electric.mp4
+qotd:
+  enabled: true
+---
+
+<section id="intro" class="py-4 py-md-10 bg-white text-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-center">
+				<p>{{ 'Triple D is a belgian software development company founded by and consisting entirely out of veteran software engineers. It is a small, completely independent company with very highly skilled, experienced and opinionated software engineers with a clear vision how to develop software successfully.' | markdownify }}</p>
+				<hr class="slab center w-25">
+			</div>
+		</div>
+	</div>
+</section>
+<section id="aboutus" class="pt-2 pt-md-8 pb-md-10 pb-2 bg-white text-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 px-md-2 px-lg-8 mb-4">
+				<h2 class="h3 text-uppercase text-center">Who are we</h2>
+				<hr class="slab center w-10 mt-2 mb-3">
+				<p>{{ 'We founded Triple D from our passion for software development. "We" are a group of veteran software engineers with the aim of having a *larger, positive impact* on the belgian software industry.' | markdownify }}</p>
+			</div>
+			<div class="col-12 col-md-6 px-md-2 px-lg-8">
+				<h2 class="h3 text-uppercase text-center">What drives us</h2>
+				<hr class="slab center w-10 mt-2 mb-3">
+				<p>{{ 'Our main motivation is delivering high quality, rock SOLID and well designed software. We want to create products that will fit your needs and that will pay off your investments for years to come. *A challenging job well done, that is what we aim for.*' | markdownify }}</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="services" class="pb-0 pb-md-6">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2 class="h3 mb-2 text-uppercase">Our services</h2>
+			</div>
+		</div>
+	</div>
+	<div class="partial-bg primary {% if page.servicesWithoutDescription %}alt{% endif %} pb-md-0">
+		<div class="container">
+			<div class="row">
+				{% for service in site.data.services %}
+				<div class="col-12 col-md-4 text-center">
+					<div class="icon {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %} flex-center-hv py-5">
+						<img src="{{ service.imgPath }}" alt="{{ service.imgAlt }}">
+					</div>
+					<h3 class="mb-4"><a class="bg-{{ service.color }}" href="{{ service.url }}">{{ service.name }}</a></h3>
+					{% if service.description %}
+					<div class="px-0 px-md-0 px-lg-4">
+						<p>{{ service.description }}</p>
+					</div>
+					{% endif %}
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>

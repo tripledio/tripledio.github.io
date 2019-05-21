@@ -1,0 +1,48 @@
+---
+layout: default
+title: "Team"
+weight: 10
+
+spotlight:
+  imgDir: /img/spotlight/team
+  imgAlt: "Triple D : Design, Develop, Deploy"
+  logoAnimation: false
+qotd:
+  enabled: true
+---
+<section id="intro" class="py-4 py-md-10 bg-white text-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-center">
+				<p>{{ 'Triple D is a belgian software development company founded by and consisting entirely out of veteran software engineers. It is a small, completely independent company with very highly skilled, experienced and opinionated software engineers with a clear vision how to develop software successfully.' | markdownify }}</p>
+				<hr class="slab center w-25">
+			</div>
+		</div>
+	</div>
+</section>
+<section id="team" class="pt-6 pt-md-2 pb-1 pb-md-10 text-gray">
+	<div class="container">
+		<div class="row">
+			{% for member in site.data.team %}
+			<div class="col-12 col-md-6 col-lg-4 mb-4 px-md-4">
+				<div class="h-100 d-flex flex-column">
+					<div class="mb-3 ml-auto mr-auto rounded w-70 effects-img-scale o-hidden">
+						<img src="{{ member.photo }}" alt="p4" width="238" class="img-fluid rounded">
+					</div>
+					<div class="text-left">
+						<h3 class="h5 text-black font-family-bold">{{ member.name }}</h3>
+						<p class="m-0 text-black font-italic">{{ member.title }}</p>
+						<hr class="slab left mt-1 mb-2 w-25">
+					</div>
+					<div>
+						<p class="font-size-4">{{ member.description }}</p>
+					</div>
+					<div class="pb-2 mt-auto">
+						<a href="{{ member.contactLink }}" class="btn btn-primary">Contact me</a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

@@ -2,9 +2,10 @@
 layout: post
 title: "Model anti-patterns"
 author: guido
-header-img: "img/old_train_model.jpg"
+header-img: "img/posts/model-anti-patterns/old_train_model.jpg"
 excerpt: "About model patterns and anti-patterns" 
 ---
+
 # Model anti-patterns
 
 In the software industry we have a couple of overused words. Words that are used so often, that without proper context, they can cause a lot of confusion. An obvious example of this is the term *service*. A valid term, more so when compared to the word *manager*, *controller* or *util* (shivers..). The word service has no meaning without the proper context. Is it an application service? domain service? micro service? Or a "I contain all the logic that really should be in my objects" service (a.k.a. anemic domain service). These are all different things. So the word service on its own is usually just noise.
@@ -15,9 +16,7 @@ In this post I would like to address another one of these overused words: **Mode
 
 Before we get to the meat, let's start by a definition
 
-<pre><code>
- A model is a <b>representation</b> of something that was created to serve a certain <b>purpose</b>.
-</code></pre>
+<pre><code>A model is a <b>representation</b> of something that was created to serve a certain <b>purpose</b>.</code></pre>
 
 For example:
 
@@ -49,11 +48,11 @@ These are all different models performing a different function with a different 
 Inside an application we'll typically have different layers. There is a relation between the type of layer and the type of model. Let's take for example the very high level three tier architecture that every developer knows.
 
 
-![Classic layers](/img/classic-layers.png){:height="50%" width="50%":class="img-responsive"}
+![Classic layers](/img/posts/model-anti-patterns/classic-layers.png){:max-width="400px"}
 
 Depending on the architecture of an application, multiple models can live together **in the same application.** In a layered architecture a model is typically associated with a certain layer. Because they have the same responsibility and are tackling the same problem. A layer is nothing more than a separation of code where a certain sub problem is being solved.
 
-![Models in a layered architecture](/img/classic-models-layers.png){:height="100%" width="100%":class="img-responsive"}
+![Models in a layered architecture](/img/posts/model-anti-patterns/classic-models-layers.png){:max-width="200px"}
 
 These different types of models also relate to each other. A domain model can be used by different view models, a data model can be used by different domain models, a command model typically has different read models. It depends on which problem the model is trying to solve. Although we want to avoid that de models intermingle and depend directly with each other.  
 
@@ -108,10 +107,7 @@ So when you are debating with yourself or with your team members whether introdu
 
 Bring in the structure early. It is the most important attribute of software, but never deemed urgent. If the structure/architecture comes last, it comes to late. So as a simple rule of thumb:
 
-<pre><code>
- If you are wondering if you can get away with just one model, <b>you can't</b>.
-</code></pre>
-
+<pre><code>If you are wondering if you can get away with just one model, <b>you can't</b>.</code></pre>
 
 #### Using multiple models
 

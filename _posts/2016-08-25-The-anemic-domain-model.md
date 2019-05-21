@@ -2,7 +2,7 @@
 layout: post
 author: guido
 title: The anemic domain model
-header-img: "img/anemicDomainModel.jpg"
+header-img: "img/posts/anemic/anemicDomainModel.jpg"
 tags: DDD, Software development
 excerpt: A discussion about the anemic domain model pattern in the context of an object oriented language. 
 ---
@@ -24,7 +24,7 @@ As an example for the anemic domain model we will use the paperboy example. The 
 
 We will get into more detail on this example but for now here is the UML diagram of the domain model.
 
-![Paper boy uml](/img/paperboy-uml.png)
+![Paper boy uml](/img/posts/anemic/paperboy-uml.png)
 
 From this model you can deduce what the problem domain is for this application. Obviously it's about paperboys and their customers. Both have exactly one wallets and both have zero or one paper. So the intent of the domain is most likely for the paperboy to sell papers to its customers upon which money should be transferred from the customer to the paperboy wallet. All this seems obvious by the class diagram itself but as we will see, it is but a pale, anemic reflection of a real domain model.
 ### The paperboy use cases
@@ -57,8 +57,8 @@ For those unfamiliar with [Gherkin](https://cucumber.io/docs/reference)[^3] a sh
 ## The paper boy as an anemic model
 ### Anemic model code
 Below you will find the paperboy anemic model. The complete code can be found in the online [code base](https://github.com/GuidoDechamps/Paperboy). The dependencies for the code has been kept to a minimum. The production code only has a dependency on guava for its handy collection utilities. So just plain old java code from here on out.
-```java
-
+{% highlight java%}
+{% raw %}
 public class PaperBoy {
     private Wallet wallet;
     private List<Paper> papers;
@@ -121,9 +121,12 @@ public class Wallet {
         this.money = money;
     }
 }
-```
+{% endraw %}
+{% endhighlight %}
 ### Anemic model delivery logic code
-```java
+
+{% highlight java%}
+{% raw %}
 public class PaperBoyRoundService {
 
     public void deliverPapers(PaperBoy paperBoy, Set<Customer> customers) {
@@ -149,7 +152,8 @@ public class PaperBoyRoundService {
             return paperBoy.getPapers().get(0);
     }
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 ## Evaluation of the anemic domain model
 ### Rules violated in the anemic domain model
@@ -175,18 +179,23 @@ A lot of the classic code smells can be found in an anemic domain model.
 
 #### I. Feature envy  
 When a method accesses most of another object’s data to do it’s job.
-```java
+{% highlight java%}
+{% raw %}
 customer.getWallet().getMoney()
-```
+{% endraw %}
+{% endhighlight %}
 #### II. Message chains or Train wrecks 
 Long chained methods that make it hard to comprehend what happens. The fun realy starts when you have a nullpointer on that line.
-```java
+{% highlight java%}
+{% raw %}
  customer.getWallet().setMoney(customer.getWallet().getMoney().subtract(unitPriceOfPaper));
  paperBoy.getWallet().setMoney(paperBoy.getWallet().getMoney().add(unitPriceOfPaper));
-```
+{% endraw %}
+{% endhighlight %}
 Of course the above paper boy delivery logic can be written differently by extracting some variables. Reducing the length of the calls but increasing the local variables and number of lines. The real problem still remains, we have just hidden it a bit.
 
-```java
+{% highlight java%}
+{% raw %}
 public class PaperBoyRoundService {
 
 	//...
@@ -211,7 +220,8 @@ public class PaperBoyRoundService {
     	}
 	}
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 #### III. Hybrids 
 In Clean Code uncle Bob discusses train wrecks and hybrids as code smells. He also makes the clear distinction between two types of classes.
@@ -225,7 +235,8 @@ Exposing the mutable data of your 'model' makes code very fragile, It is for exa
 #### V. No invariants 
 By exposing all our data a class can not maintain an invariant over its content. If we look at our example an invariant for a customer would be that he may have lost money without obtaining a paper. For the paperboy it is the opposite. He may have lost a paper without having received money. These two invariants are maintained in the paperboyService.
 
-```java
+{% highlight java%}
+{% raw %}
 public class PaperBoyRoundService {
 
     //...
@@ -242,7 +253,8 @@ public class PaperBoyRoundService {
             paperBoyWallet.setMoney(afterBuyPaperBoyMoney); //part 2 of Invariant 2
     }
 }
-```
+{% endraw %}
+{% endhighlight %}
 ### Appeal to authority against the anemic domain model
 Hopefully I made my case that the anemic domain model has several bad properties. But let's continue the argument *against* the anemic domain model by making an appeal to authority.
 
@@ -311,7 +323,8 @@ Since these invariants/ business rules are now enforced it is easy to now write 
 Below you can find the code of the real domain model that now enforces the invariants
 
 __The customer__
-```java
+{% highlight java%}
+{% raw %}
 public class Customer {
 
     private final Wallet wallet;
@@ -365,10 +378,12 @@ public class Customer {
         return !hasPaper() && hasMoney(price);
     }
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 __The paperboy__
-```java
+{% highlight java%}
+{% raw %}
 public class PaperBoy {
     private final Logger LOGGER = Logger.getLogger(this.toString());
     private final Wallet wallet;
@@ -435,10 +450,12 @@ public class PaperBoy {
     }
 
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 __The wallet__
-```java
+{% highlight java%}
+{% raw %}
 public class Wallet {
     private MonetaryAmount money;
 
@@ -469,13 +486,15 @@ public class Wallet {
         return Money.from(money);
     }
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 ### The domain model unit tests
 Below you can find an simplified version of the unit tests for the real domain model. In the anemic domain model these were simply **not present** since there was no logic to be tested. In the real model there is real behaviour to be tested.
 
 __The Customer unit test__
-```java
+{% highlight java%}
+{% raw %}
 public class CustomerTest {
 
     //...
@@ -501,9 +520,11 @@ public class CustomerTest {
     }
 
 }
-```
+{% endraw %}
+{% endhighlight %}
 __The Paperboy unit test__
-```java
+{% highlight java%}
+{% raw %}
 public class PaperBoyTest {
     //...
 
@@ -522,9 +543,11 @@ public class PaperBoyTest {
          //...
     }
 }
-```
+{% endraw %}
+{% endhighlight %}
 __The Wallet unit test__
-```java
+{% highlight java%}
+{% raw %}
 public class WalletTest {
 
     //...
@@ -554,7 +577,8 @@ public class WalletTest {
       //...
     }
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 
 ## Conclusion

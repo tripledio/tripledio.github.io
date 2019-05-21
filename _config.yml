@@ -1,7 +1,6 @@
 # Site settings available under site.*
 encoding: utf-8
 title: Triple D
-header-img: img/home-bg.jpg
 copyright_name: Triple D
 description: "TripleD blog"
 disqus: "TripleD"
@@ -18,6 +17,7 @@ linkedin:
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 paginate: 5
 paginate_path: "/blog/page:num/"
 plugins: [jekyll-paginate,jekyll-feed,jekyll-seo-tag,jekyll-sitemap]

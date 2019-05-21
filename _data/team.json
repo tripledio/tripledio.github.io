@@ -1,0 +1,38 @@
+[
+  {
+    "photo": "/img/authors/domenique.jpg",
+    "name": "Domenique Tilleuil",
+    "description": "Software craftsman journeyman. Professional java code juggler. Avid fan of DDD and XP practices",
+    "contactLink": "https://twitter.com/domeniquetill"
+  },
+  {
+    "photo": "/img/authors/kris.jpg",
+    "name": "Kris Hofmans",
+    "description": "Finds Software Development interesting, especially the ways people find to mess it up. Gets things deployed.",
+    "contactLink": "https://twitter.com/khofmans"
+  },
+  {
+    "photo": "/img/authors/guido.jpg",
+    "name": "Guido Dechamps",
+    "description": "Old cranky software craftsman. All opinions are my own.",
+    "contactLink": "https://twitter.com/Dechampsgu"
+  },
+  {
+    "photo": "/img/authors/gert.jpg",
+    "name": "Gert Vilain",
+    "description": "Aspiring software craftsman, motto: Automate all the things!",
+    "contactLink": "https://twitter.com/GertVil"
+  },
+  {
+    "photo": "/img/authors/yves.jpg",
+    "name": "Yves Cuyvers",
+    "description": "All-round software craftsman involved in the full software development lifecycle",
+    "contactLink": "https://twitter.com/yvescuyvers"
+  },
+  {
+    "photo": "/img/authors/sander.png",
+    "name": "Sander Verschuren",
+    "description": "Software engineer with a passion for software development. Yes, there is a difference.",
+    "contactLink": "https://twitter.com/SanderVE"
+  }
+]
