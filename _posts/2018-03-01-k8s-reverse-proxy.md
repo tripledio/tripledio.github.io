@@ -82,7 +82,7 @@ minikube start --cpus 2 --memory 4096
 {% endraw %}
 {% endhighlight %}
 
-Run {% ihighlight shell %}minikube dashboard{% endihighlight %} to get to the kubernetes dashboard. It should be empty.
+Run `minikube dashboard` to get to the kubernetes dashboard. It should be empty.
 
 ### 2. Install Ingress implementation
 

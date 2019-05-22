@@ -50,7 +50,7 @@ public class CoffeeMaker {
 {% endraw %}
 {% endhighlight %}
 
-As you can see there are at least 2 levels of abstraction in this code. the {% ihighlight java%}makeCoffee(){% endihighlight %} method exhibits
+As you can see there are at least 2 levels of abstraction in this code. the `makeCoffee()` method exhibits
 a higher level of abstraction then the other methods. It acts as an orchestration layer, enforcing policy on the other methods.
 
 ## Code smells
@@ -94,9 +94,9 @@ public class CarDtoFactory {
 {% endraw %}
 {% endhighlight %}
 
-The example above is a factory responsible to convert our {% ihighlight java%}Car{% endihighlight %} entity to a data transfer object.
-Look carefully at the {% ihighlight java%}create(){% endihighlight %} method. First there is the loop which acts on the whole result set,
-secondly there is the loop body which converts a single {% ihighlight java%}Car{% endihighlight %} Entity to a {% ihighlight java%}CarDto{% endihighlight %}. The body of the
+The example above is a factory responsible to convert our `Car` entity to a data transfer object.
+Look carefully at the `create()` method. First there is the loop which acts on the whole result set,
+secondly there is the loop body which converts a single `Car` Entity to a `CarDto`. The body of the
 loop could easily be extracted, avoiding mixing the level of abstraction.
 
 ### Abstractions and layering
