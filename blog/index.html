@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Blog"
 description: "Triple D - blog posts"
 active: blog
@@ -9,52 +9,57 @@ spotlight:
   imgDir: /img/spotlight/home
   imgAlt: "Triple D : Design, Develop, Deploy"
   logoAnimation: false
+qotd:
+  enabled: false
 ---
-
-{% for post in paginator.posts %}
-<div class="post-preview col-lg-12 {% if forloop.first %}pt-4{% endif %} {% if forloop.last %}pb-4{% endif %}">
-    <a href="{{ post.url | prepend: site.github.url | replace: 'http://', '//'  }}">
-        <h2 class="post-title h4 mt-3 pt-2">
-            {{ post.title }}
-        </h2>
-
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ site.data.authors[post.author].name }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-    {% if post.excerpt %}
-    <p>
-      {{ post.excerpt }}
-    </p>
-    {% else %}
-    <p>
-      {{ post.content | markdownify | strip_html | truncatewords: 50 }}
-    </p>
-    {% endif %}
-</div>
-
-<hr class="slab left mt-1 mb-2 {% if forloop.last %}hidden{% endif %}">
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
 <div class="container">
-    <div class="row pb-4">
-        <div class="col-lg-6 previous text-left">
-            {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path |  replace: 'http://', '//' }}" class="btn btn-primary">&larr; Newer Posts</a>
-            {% endif %}
-        </div>
-        <div class="col-lg-6 next text-right">
-            {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path |  replace: 'http://', '//' }}" class="btn btn-primary">Older Posts &rarr;</a>
-            {% endif %}
-        </div>
-    </div>
+	<div class="row">
+		{% for post in paginator.posts %}
+		<div class="post-preview col-lg-12 {% if forloop.first %}pt-4{% endif %} {% if forloop.last %}pb-4{% endif %}">
+			<a href="{{ post.url | prepend: site.github.url | replace: 'http://', '//'  }}">
+				<h2 class="post-title h4 mt-3 pt-2">
+					{{ post.title }}
+				</h2>
+
+				{% if post.subtitle %}
+				<h3 class="post-subtitle">
+					{{ post.subtitle }}
+				</h3>
+				{% endif %}
+			</a>
+			<p class="post-meta">
+				Posted by {% if post.author %}{{ site.data.authors[post.author].name }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+			</p>
+			{% if post.excerpt %}
+			<p>
+				{{ post.excerpt }}
+			</p>
+			{% else %}
+			<p>
+				{{ post.content | markdownify | strip_html | truncatewords: 50 }}
+			</p>
+			{% endif %}
+		</div>
+
+		<hr class="slab left mt-1 mb-2 {% if forloop.last %}hidden{% endif %}">
+		{% endfor %}
+
+		<!-- Pager -->
+		{% if paginator.total_pages > 1 %}
+		<div class="container">
+			<div class="row pb-4">
+				<div class="col-lg-6 previous text-left">
+					{% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path |  replace: 'http://', '//' }}" class="btn btn-primary">&larr; Newer Posts</a>
+					{% endif %}
+				</div>
+				<div class="col-lg-6 next text-right">
+					{% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path |  replace: 'http://', '//' }}" class="btn btn-primary">Older Posts &rarr;</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		{% endif %}
+	</div>
 </div>
-{% endif %}

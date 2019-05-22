@@ -2,7 +2,6 @@
 layout: post
 title: The effects of TDD
 author: domenique
-header-img: "img/spotlight-home.jpg"
 excerpt: "What are the effects of TDD?"
 ---
 # Effects of TDD

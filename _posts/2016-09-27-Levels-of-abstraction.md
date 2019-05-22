@@ -1,7 +1,7 @@
 ---
 layout: post
 author: domenique
-header-img: "img/levelsofabstraction.jpg"
+header-img: "img/posts/levels-of-abstraction/levelsofabstraction.jpg"
 excerpt: Writing code is all about abstractions, they help us grasp the complexity of the code by hiding low level details from high level concepts. The key to readable code lies in grouping the right level of abstraction in the same unit of code.
 ---
 # Levels of abstraction
@@ -24,9 +24,33 @@ of multiple calls to other private methods, each having a clear name to identify
 This technique results on smaller methods having only one level of abstraction and by consequence only one responsibility.
 The following code sample illustrates what this would look like.
 
-<script src="https://gist.github.com/domenique/a90553e06fc3c1bff41b297f4a37b24c.js"></script>
+{% highlight java%}
+{% raw %}
+public class CoffeeMaker {
+  public void makeCoffee() {
+    grindBeans();
 
-As you can see there are at least 2 levels of abstraction in this code. the `makeCoffee()` method exhibits
+    boilWater();
+
+    pourWater();
+  }
+
+  private void grindBeans() {
+    // ...
+  }
+
+  private void boilWater() {
+    // ...
+  }
+
+  private void pourWater() {
+    // ...
+  }
+}
+{% endraw %}
+{% endhighlight %}
+
+As you can see there are at least 2 levels of abstraction in this code. the {% ihighlight java%}makeCoffee(){% endihighlight %} method exhibits
 a higher level of abstraction then the other methods. It acts as an orchestration layer, enforcing policy on the other methods.
 
 ## Code smells
@@ -36,11 +60,43 @@ Often the body of a loop can be extracted resulting in a separate private method
 a single statement (usually a method call). Sometimes this is not achievable without other drawbacks but certainly
 large loop bodies can be considered a smell.
 
-<script src="https://gist.github.com/domenique/2b5ff037de296cf6f7be6a127360c025.js"></script>
+{% highlight java%}
+{% raw %}
+public class CarDtoFactory {
 
-The example above is a factory responsible to convert our `Car` entity to a data transfer object.
-Look carefully at the `create` method. First there is the loop which acts on the whole result set,
-secondly there is the loop body which converts a single `Car` Entity to a `CarDto`. The body of the
+  public List<CarDto> create(List<Car> cars) {
+    return cars.stream()
+        .map(car -> {
+          CarDto carDto = new CarDto();
+          carDto.setHorsePower(car.calculateHorsePower());
+          return carDto;
+        })
+        .collect(Collectors.toList());
+  }
+
+  private class Car {
+
+    int calculateHorsePower() {
+      return 200;
+    }
+  }
+
+  private class CarDto {
+
+    int horsePower;
+
+    void setHorsePower(int hp) {
+      this.horsePower = hp;
+    }
+
+  }
+}
+{% endraw %}
+{% endhighlight %}
+
+The example above is a factory responsible to convert our {% ihighlight java%}Car{% endihighlight %} entity to a data transfer object.
+Look carefully at the {% ihighlight java%}create(){% endihighlight %} method. First there is the loop which acts on the whole result set,
+secondly there is the loop body which converts a single {% ihighlight java%}Car{% endihighlight %} Entity to a {% ihighlight java%}CarDto{% endihighlight %}. The body of the
 loop could easily be extracted, avoiding mixing the level of abstraction.
 
 ### Abstractions and layering
@@ -49,17 +105,20 @@ application should also adhere to the same level of abstraction across the appli
 In a typically layered application, we are supposed to find specific levels of abstraction
 in each of the layers. Meaning that when you look at the application from the boundaries inwards,
 our code should get more specific when passing through each layer. Failing to do so, results in code which is hard to read.
+
 #### The application layer
 A typically layered application consists of an application layer, or a service layer which acts as a facade
 in front of the domain model, this layer contains use cases or command handlers. It contains high level
 policy which can be understood by a business stakeholder by looking at the name of the class and its content.
 This layer should not contain any business logic, it merely orchestrates the domain layer, as a result,
 the code should be concise and easy to read.
+
 #### The domain layer
 The domain layer is a lower level of abstraction, it contains detailed business logic which is accessed from the application layer.
 The code in this layer will be a lot more complex then the application layer. If you want more details about specific business rules,
 how they relate to domain entities or aggregates then this is the right place to look. The domain layer will typically have different
 levels of abstractions in its own. Aggregate root entities exhibit a higher level of abstraction then entities.
+
 #### The infrastructure layer
 The infrastructure layer consists of the lowest level of abstraction, it deals with the nitty-gritty details
 such as database persistence, networking protocols and other details needed by the domain layer to persist
