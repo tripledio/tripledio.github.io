@@ -32,7 +32,7 @@ qotd:
 			</p>
 			{% if post.excerpt %}
 			<p>
-				{{ post.excerpt }}
+				{{ post.excerpt | truncatewords: 50}}
 			</p>
 			{% else %}
 			<p>
