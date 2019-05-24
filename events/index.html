@@ -1,0 +1,32 @@
+---
+layout: default
+title: "Events"
+weight: 40
+
+spotlight:
+  logoAnimation: true
+  video: true
+  videoFile: /files/electric.mp4
+qotd:
+  enabled: true
+
+---
+<section id="events" class="pt-2 pt-md-8 pb-md-10 pb-2 bg-white text-gray">
+  <div class="container">
+    {%for event in site.events %}
+      {% cycle '<div class="row">','' %}
+      <div class="col-12 col-md-6 px-md-2 px-lg-8 mb-4">
+        <div class="icon last flex-center-hv py-2">
+          <img src="/img/workshop-icon-4.png" style="width: 80px" alt="alt">
+        </div>
+        <h2 class="h3 text-uppercase text-center">
+          <a href="{{event.url}}">{{event.slug}}</a>
+        </h2>
+        <h6 class="h6 text-center" style="text-transform: none !important">{{event.subTitle}}</h6>
+        <hr class="slab center w-10 mt-2 mb-3">
+        <p>{{event.teaser}}</p>
+      </div>
+      {% cycle '','</div>' %} 
+    {% endfor %}
+  </div>	
+</section>
