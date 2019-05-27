@@ -3,7 +3,7 @@ layout: post
 author: domenique
 header-img: "img/posts/dip/spotlight.jpg"
 title: "The importance of the dependency inversion principle"
-excerpt: "The dependency inversion principle (DIP) is a well known principle and one of the SOLID principles. The principle is at the heart of a lot of software design patterns and even complete architectures. This article will try to connect those dots, and hopefully provide some additional insight into this core principle."
+excerpt: "The dependency inversion principle (DIP) is at the heart of a lot of software design patterns, technologies and architectures. This article will try to connect those dots, and hopefully provide some additional insight into this important principle."
 
 ---
 
@@ -45,14 +45,21 @@ Many developers confuse the dependency inversion principle with [dependency inje
 
 Dependency injection in itself is a form of the broader technique of inversion of control (IOC). IOC in itself *can* support DIP. But it is not because we use DI or IOC that we are necessarily applying DIP. No framework can help us determining what is high level and what is low level. Nor with defining the proper abstraction to separate the two.
 
+When trying to apply DIP inside our codebase, we can ask ourselves: "Who instantiates the low level implementation of the abstraction if it’s located in an an other module? Using an IOC container, this is an easy problem. The IOC container could create the instance of the low level module and inject it where necessary. So **an IOC container makes it really easy to inject low level details into our high level modules**. But we still need to provide the proper abstractions ourselves. And we are still responsible for  placing the abstractions in the correct location, next to the high level policy.
+
+So is an IOC container required when one wants to apply DIP? Of course not. We just need some sort of "main" module that wires our application together. The "main" is able to access all the necessary objects and wire them together. This is a purely technical affair that we could handle ourselves but it is a solved problem for which we often prefer the use an IOC.  But using a IOC does not guarantee that DIP is applied. It is up to us to define the proper architectural boundaries and policy separations. So DI does not imply DIP and vice versa. Separate things.
+
+> Using a IOC does not guarantee that DIP is applied 
+
 ## The principle applied
 
-#### How to obtain instances of a low level module
-When trying to apply DIP inside our codebase, we can ask ourselves: "Who instantiates the low level implementation of the abstraction if it’s located in an an other module? If we're using an IOC container, the IOC container could create the instance of the low level module and inject it where necessary. So **an IOC container makes it really easy to inject low level details into our high level modules**. But we still need to provide the proper abstractions ourselves. And place them in their correct location. With the high level policy.
+#### How to obtain different instances of a low level module dynamically
 
-So is an IOC container required when one wants to apply DIP? Of course not. There are many different ways to do this. A classic approach would be the use of the **[Abstract Factory pattern](https://refactoring.guru/design-patterns/abstract-factory)** for injecting low level details into our high level modules. When applied across layers, the abstract factory illustrates nicely how high level modules can obtain references to low level instances.
+There are cases where determining the proper instance of a low level policy is dynamic. Something that depends on some case by case logic. For instance the correct low level policy to use could depend on the request scope input.  A classic approach to tackle this would be the use of the **[Abstract Factory pattern](https://refactoring.guru/design-patterns/abstract-factory)** for injecting low level details into our high level modules. This well known pattern, when applied across layers, illustrates nicely how high level modules can obtain references to low level instances. The Abstract Factory pattern can help us applying DIP.
 
 ![Introduce a factory](/img/posts/dip/withFactory.png){:width="500px"}
+
+The "main" wiring module would wire the low level policies, the concrete abstract factory implementations, into the high level modules that use the abstraction: the abstract factory.
 
 #### The repository pattern
 Looking at the repository pattern, as originally coined by Eric Evans, we can clearly see that it's a fine example of the dependency inversion principle. The pattern states that an *abstraction* should be created which is free of technical details, and should preferably look a lot like a collection interface. The abstraction should be implemented in the infrastructure layer where all the technicalities of dealing with a persistent store should be hidden. From the domain perspective, we are talking with a collection-like interface to store the aggregates.
@@ -63,7 +70,7 @@ Placing this abstraction inside the domain layer, close to its consumers, ensure
 
 As a side note, the idea of the repository pattern is to abstract away the persistency details. We obtain domain concepts from a repository. *Not* low level data where we still need to attach meaning to. If we obtain the aggregate from memory, a relational db, a document db or an event sourced system, those are low level details. A repository is not just a DAO.
 
- >A repository is *not* a data acces object
+ >A repository is *not* a data access object
 
 #### Ports and adapters architecture.
 When applying the dependency inversion principle on the architectural layers of your application, we're bound to end up with a [hexagonal architecture](http://wiki.c2.com/?HexagonalArchitecture) also called [ports and adapters](https://herbertograca.com/2017/09/14/ports-adapters-architecture/ ) or as Uncle bob calls it: [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
@@ -72,5 +79,11 @@ This architectural style applies DIP as an additional restriction on the multipl
 
 ![Hexagonal Architecture example](/img/posts/dip/hexagonal-architecture.png){:width="500px"}
 
+#### DIP in Kubernetes TODO review
+
+In the Container Orchestrator Kubernetes we encounter [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) which is an API object that manages external access to the *services* in a cluster. So an Ingress is an abstraction that provices a functionality to services. In Kubernetes, (services)[https://kubernetes.io/docs/concepts/services-networking/service/] are an abstraction themselves that represents a logical set of pods. So on both sides of the spectrum we have abstractions communication with each other. These abstractions decouple the details of pods and external access. Allowing the high level policies from K8 to work without being hindered by the details.
+
 ## Conclusion
-The Dependency inversion principle is an important principle that helps us to decouple our code and protects us from a ripple effect from changes inside low level modules. By neatly separating different concerns and allowing the important concerns to take centre stage our software can easily be adapted and understood. But it enables the core of the software, the important stuff, to endure and survive the frequent changes in the more volatile lower level modules. It is however not an easy principle to apply. It requires thought and discipline to apply it correctly and consistently. But the benefits far outweighs the effort required.
+The Dependency inversion principle is an important principle that helps us to decouple the importance things from the details. It protects us from a ripple effect from changes inside low level modules. Because it neatly separates different concerns and allows the important concerns to take centre stage, our software can easily be adapted and understood. It enables the core of our software, the important stuff, to endure and survive the frequent changes in the more volatile lower level modules. It is however not an easy principle to apply. It requires thought and **discipline** to apply it correctly and consistently. But the benefits far outweighs the effort required.
+
+>  DIP enables the core of our software to endure and survive the frequent changes of the more volatile lower level parts of the software. 
