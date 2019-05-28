@@ -1,6 +1,6 @@
 ---
 layout: post
-author: domenique
+author: domenique, guido
 header-img: "img/posts/dip/spotlight.jpg"
 title: "The importance of the dependency inversion principle"
 excerpt: "The dependency inversion principle (DIP) is at the heart of a lot of software design patterns, technologies and architectures. This article will try to connect those dots, and hopefully provide some additional insight into this important principle."
@@ -35,7 +35,7 @@ Who owns the abstraction upon which the high level policy depends and why? Where
 
 There is also the cohesive aspect of "reason to change". Why would the abstraction need to change? Because the one that uses it, requires something different from it. It is the high level policy that has the **uses** relation to the abstraction. Therefore they belong together.
 
-![Move interface](/img/posts/dip/moveInterface.png){:width="600px"}
+![Move interface](/img/posts/dip/moveInterface.png){:width="700px"}
 
 The low level policies, the details, are just plugins to our important policies.
 
@@ -81,7 +81,7 @@ This architectural style applies DIP as an additional restriction on the multipl
 
 #### DIP in Kubernetes TODO review
 
-In the Container Orchestrator Kubernetes we encounter [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) which is an API object that manages external access to the *services* in a cluster. So an Ingress is an abstraction that provices a functionality to services. In Kubernetes, (services)[https://kubernetes.io/docs/concepts/services-networking/service/] are an abstraction themselves that represents a logical set of pods. So on both sides of the spectrum we have abstractions communication with each other. These abstractions decouple the details of pods and external access. Allowing the high level policies from K8 to work without being hindered by the details.
+In the Container Orchestrator Kubernetes we encounter [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) which is an API object that manages external access to the *services* in a cluster. So an Ingress is an abstraction that provices a functionality to services. In Kubernetes, [services](https://kubernetes.io/docs/concepts/services-networking/service/) are an abstraction themselves that represents a logical set of pods. So on both sides of the spectrum we have abstractions communication with each other. These abstractions decouple the details of pods and external access. Allowing the high level policies from K8 to work without being hindered by the details.
 
 ## Conclusion
 The Dependency inversion principle is an important principle that helps us to decouple the importance things from the details. It protects us from a ripple effect from changes inside low level modules. Because it neatly separates different concerns and allows the important concerns to take centre stage, our software can easily be adapted and understood. It enables the core of our software, the important stuff, to endure and survive the frequent changes in the more volatile lower level modules. It is however not an easy principle to apply. It requires thought and **discipline** to apply it correctly and consistently. But the benefits far outweighs the effort required.

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign author = site.data.authors[page.author] %}
+{% assign authors = page.author | split: ", " %}
 <!-- Post Content -->
 <article class="blog-post">
 	<div class="container">
@@ -13,13 +13,13 @@ layout: default
 			<footer class="post-footer">
 				<!-- Everything inside the #author tags pulls data from the author -->
 				<!-- #author-->
-
+				{% for a in authors %}
+				{% assign author = site.data.authors[a] %}
 				{% if author.image %}
 				<figure class="author-image">
 					<a class="img" href="/{{ site.github.url | replace: 'http://', '//' }}/team" style="background-image: url({{ site.github.url | replace: 'http://', '//' }}{{ author.image }})"><span class="hidden">{{ author.name }}'s Picture</span></a>
 				</figure>
 				{% endif %}
-
 				<section class="author">
 					<h4><a href="/{{ site.github.url | replace: 'http://', '//' }}/team">{{ author.name }}</a></h4>
 
@@ -31,6 +31,8 @@ layout: default
 						{% if author.url %}<span class="author-link icon-link"><a href="{{ author.url }}"> {{ author.url }}</a></span>{% endif %}
 					</div>
 				</section>
+				<br/>
+				{% endfor %}
 				<!-- /author  -->
 
 				<section class="share">

@@ -28,8 +28,14 @@ qotd:
 				{% endif %}
 			</a>
 			<p class="post-meta">
-				Posted by {% if post.author %}{{ site.data.authors[post.author].name }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-			</p>
+					{% assign authors = post.author | split: ", " %}
+					{% assign appended = "" %}
+					{% for author in authors %}
+						{% assign appended = appended | append: site.data.authors[author].name %}
+						{% unless forloop.last %} {%assign appended = appended | append: " and " %} {% endunless %}
+					{% endfor %}
+				Posted by {% if appended != "" %}{{ appended }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+			</p>	
 			{% if post.excerpt %}
 			<p>
 				{{ post.excerpt | truncatewords: 50}}
