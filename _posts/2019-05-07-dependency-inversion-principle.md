@@ -79,9 +79,9 @@ This architectural style applies DIP as an additional restriction on the multipl
 
 ![Hexagonal Architecture example](/img/posts/dip/hexagonal-architecture.png){:width="500px"}
 
-#### DIP in Kubernetes TODO review
+#### DIP in Kubernetes
 
-In the Container Orchestrator Kubernetes we encounter [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) which is an API object that manages external access to the *services* in a cluster. So an Ingress is an abstraction that provices a functionality to services. In Kubernetes, [services](https://kubernetes.io/docs/concepts/services-networking/service/) are an abstraction themselves that represents a logical set of pods. So on both sides of the spectrum we have abstractions communication with each other. These abstractions decouple the details of pods and external access. Allowing the high level policies from K8 to work without being hindered by the details.
+In the Container Orchestrator Kubernetes we encounter [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) which is an API object that manages external access to the *services* in a cluster. So an Ingress is an abstraction that provides a functionality to services. In Kubernetes, [services](https://kubernetes.io/docs/concepts/services-networking/service/) are an abstraction themselves that represent a logical set of pods. So on both sides of the spectrum we have abstractions communicating with each other. These abstractions decouple the details of pods and external access. Allowing the high level policies from K8 to work without being hindered by the details.
 
 ## Conclusion
 The Dependency inversion principle is an important principle that helps us to decouple the importance things from the details. It protects us from a ripple effect from changes inside low level modules. Because it neatly separates different concerns and allows the important concerns to take centre stage, our software can easily be adapted and understood. It enables the core of our software, the important stuff, to endure and survive the frequent changes in the more volatile lower level modules. It is however not an easy principle to apply. It requires thought and **discipline** to apply it correctly and consistently. But the benefits far outweighs the effort required.
