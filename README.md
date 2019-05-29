@@ -11,7 +11,7 @@ You can run the site locally using docker after which you can browse to http://l
 First run will create and start the container "triple-D-blog"
 
  ```docker
- docker run --name=triple-D-blog -v "$PWD":/usr/src/app -v "$PWD"/_site:/_site -p 4000:4000 starefossen/github-pages
+ docker run --name=triple-D-blog -v "$PWD":/usr/src/app:delegated -v "$PWD"/_site:/_site -p 4000:4000 starefossen/github-pages
  ```
  
 The web site will be generated under the _site folder. That is the folder which is then hosted. 
@@ -42,4 +42,8 @@ Create and start *triple-D-blog-with-drafts* container
 ```docker
 docker run gitlab/gitlab-runner:latest
 ``` 
- 
+## Running with the jekyll image instead of github-pages
+I got the impression this is running a lot smoother (ie no hypervisor process going nuts on your mac.)
+```
+docker run --name jekyll --volume="$PWD:/srv/jekyll" -p 3000:4000 -it jekyll/jekyll:3.8 jekyll serve --watch --drafts --incremental
+```
