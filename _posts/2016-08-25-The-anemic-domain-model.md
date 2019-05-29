@@ -3,8 +3,9 @@ layout: post
 author: guido
 title: The anemic domain model
 header-img: "img/posts/anemic/anemicDomainModel.jpg"
+image: "img/posts/anemic/anemicDomainModel.jpg"
 tags: DDD, Software development
-excerpt: A discussion about the anemic domain model pattern in the context of an object oriented language. 
+excerpt: "In this blog post i will discuss the anemic domain model pattern in the context of an object oriented language. I'll explain what the anemic domain model is, what it isn't, how i view it. I'll make use of a code example written in java and tested with cucumber."
 ---
 
 # The anemic domain model

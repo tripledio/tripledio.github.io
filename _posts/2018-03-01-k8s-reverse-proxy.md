@@ -5,6 +5,7 @@ author: kris
 tags: Kubernetes, DevOps
 hideLogo: true
 header-img: "img/posts/k8s-reverse-proxy/k8sbanner.png"
+image: "img/logo-alt.png"
 excerpt: In this blog post I'll demonstrate how to make applications that are external to a Kubernetes cluster available to the applications that are managed by K8s. This is useful for when we have started using Kubernetes to deploy and manage some your applications but not everything is managed at once.
 ---
 # Connecting external applications with kubernetes

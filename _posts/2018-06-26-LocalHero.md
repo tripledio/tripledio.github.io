@@ -4,13 +4,14 @@ author: guido
 title: "The local hero"
 hideLogo: true
 header-img: "img/posts/heroes/hero.jpg"
-excerpt: A post about the local hero pattern in software development.
+image: "img/logo-alt.png"
+excerpt: "Throughout these posts of mine on heroic behavior, my main metaphor has been the wild west. One of the well-known archetypes there is the famous hero gunslinger. In this post, I'll address the software equivalent of this."
 ---
 # The Local hero
 
 _This post belongs to small series of posts. The main post is [Heroes](/31/05/2018/Heroes/)._
 
-Throughout these posts of mine on heroic behaviour, my main metaphor has been the wild west. One of the well-known archetypes there is the famous hero gunslinger. In this post, I'll address the software equivalent of this.
+Throughout these posts of mine on heroic behavior, my main metaphor has been the wild west. One of the well-known archetypes there is the famous hero gunslinger. In this post, I'll address the software equivalent of this.
 
 ### Wild West heroes
 
