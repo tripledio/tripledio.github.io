@@ -3,6 +3,7 @@ layout: post
 author: guido
 title: What is domain driven design?
 header-img: "img/posts/what-is-ddd/DDD-books.jpg"
+image: "img/logo-alt.png"
 tags: DDD, Software development
 excerpt: Tackling complexity in the heart of software. But what is DDD exactly?
 ---
