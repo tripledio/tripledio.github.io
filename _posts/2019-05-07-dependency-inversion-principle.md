@@ -2,6 +2,7 @@
 layout: post
 author: domenique, guido
 header-img: "img/posts/dip/spotlight.jpg"
+image: "img/logo-alt.png"
 title: "The importance of the dependency inversion principle"
 excerpt: "The dependency inversion principle (DIP) is at the heart of a lot of software design patterns, technologies and architectures. This article will try to connect those dots, and hopefully provide some additional insight into this important principle."
 
