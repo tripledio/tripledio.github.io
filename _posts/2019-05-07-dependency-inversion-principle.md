@@ -53,14 +53,6 @@ So is an IOC container required when one wants to apply DIP? Of course not. We j
 
 ## The principle applied
 
-#### How to obtain different instances of a low level module dynamically
-
-There are cases where determining the proper instance of a low level policy is dynamic. Something that depends on some case by case logic. For instance the correct low level policy to use could depend on the request scope input.  A classic approach to tackle this would be the use of the **[Abstract Factory pattern](https://refactoring.guru/design-patterns/abstract-factory)** for injecting low level details into our high level modules. This well known pattern, when applied across layers, illustrates nicely how high level modules can obtain references to low level instances. The Abstract Factory pattern can help us applying DIP.
-
-![Introduce a factory](/img/posts/dip/withFactory.png){:width="500px"}
-
-The "main" wiring module would wire the low level policies, the concrete abstract factory implementations, into the high level modules that use the abstraction: the abstract factory.
-
 #### The repository pattern
 Looking at the repository pattern, as originally coined by Eric Evans, we can clearly see that it's a fine example of the dependency inversion principle. The pattern states that an *abstraction* should be created which is free of technical details, and should preferably look a lot like a collection interface. The abstraction should be implemented in the infrastructure layer where all the technicalities of dealing with a persistent store should be hidden. From the domain perspective, we are talking with a collection-like interface to store the aggregates.
 
