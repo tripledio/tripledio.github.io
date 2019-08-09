@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "Productive discussions"
+title: "Communication as a Skill"
 author: guido
-header-img: "img/about-bg.jpg"
+header-img: "img/posts/communication/triple-d-mob-1.jpg"
 tags: mob programming, communication
 excerpt: Solving technical issues is hard. But so is communication efficiently and productively. Productive discussions isn’t something that happens automatically. How can we get better at it?
 ---
-# Productive Discussions
+# Communication as a skill
+
+As software engineers we are constantly learning new technologies, new techniques. When I read people resumes it is more often than not a list of hard technical skill that they have mastered. However we rarely take the time, or even think about, communication as a skill. Where it is a very  important skill to have.
+
+## Productive Discussions
 
 Although we try to reduce the boring bureaucratic meetings as much as possible, we still need to sit together with our fellow team members and colleagues from other teams to discuss, refine and agree on how we will build and integrate our software.
 
@@ -87,6 +91,12 @@ Talk to a drawing, post-its. Make it clear what we are discussing and where we a
 ## Conclusion
 
 Solving technical issues is hard. But so is communication efficiently and productively. Do not neglect this skill. Just like with everything, it is something that we can get better at by paying attention to it. Good communication it is important enough to do so...
+
+
+![Mob 1](img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"")
+![Mob 2](img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"")
+![Mob 3](img/posts/communication/mob-group.jpg "Mob programming workshop"")
+![Mob 4](img/posts/communication/mob-group-2.jpg "Mob programming workshop"")
 
 
 ***
