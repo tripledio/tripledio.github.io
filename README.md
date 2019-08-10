@@ -47,3 +47,30 @@ I got the impression this is running a lot smoother (ie no hypervisor process go
 ```
 docker run --name jekyll --volume="$PWD:/srv/jekyll" -p 3000:4000 -it jekyll/jekyll:3.8 jekyll serve --watch --drafts --incremental
 ```
+
+## Creating blog posts
+
+### Spotlights
+
+The spotlight is the main image on top of your post. This image will need to be able to resize depending on the resolution and device of the client requesting the blog post. Logic for this is included, written down in the default.html file. You can just define the header-img variable but this will provide just one image for all the different sizes. For an example you can look at the images provided for the static pages under the directory spotlight.
+
+The javascript in default.html will look for variable imgDir to find the spotlight directory. There it will then expect:
+
+if min-width: 1024px
+
++ spotlight-desktop.jpg    : 1920 - 480px 24bit
++ spotlight-desktop_1x.jpg : 1920 - 480px 24bit
++ spotlight-desktop_2x.jpg : 3840 - 960px 24bit
++ spotlight-desktop_3x.jpg : 5670 - 1440px 24bit
+
+if max-width: 768px
+
++ spotlight-mobile_1x.jpg : 788  - 480px 24 bit
++ spotlight-mobile_2x.jpg : 1576 - 960px 24 bit
++ spotlight-mobile_3x.jpg : 2364 - 1440px 24 bit
+
+if min-width: 768px
+
++ spotlight-tablet_1x.jpg : 984  - 480px 24 bit
++ spotlight-tablet_2x.jpg : 1968 - 960px 24 bit
++ spotlight-tablet_3x.jpg : 2952 - 1444px 24 bit
