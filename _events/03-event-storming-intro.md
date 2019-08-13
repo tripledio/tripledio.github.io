@@ -1,15 +1,16 @@
 ---
 layout: event
 slug: Event storming introduction
-subTitle: By Guido Deschamps
-teaser: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa tincidunt, molestie lectus sed, fringilla enim. Nam imperdiet massa in pulvinar vestibulum. Integer tincidunt varius nunc, id suscipit dolor pulvinar vel. Praesent feugiat, diam a pharetra iaculis, felis lectus laoreet quam, vitae tincidunt nulla nulla non quam. Curabitur elementum ornare ipsum non feugiat. Duis consequat ultrices ipsum, in faucibus ex finibus vitae. Nulla consequat metus vitae lorem elementum, quis auctor arcu cursus."
+subTitle: By Guido Dechamps
+teaser: "This engaging workshop will let you discover how event storming works."
 
 ---
 
 # Event storming introduction.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa tincidunt, molestie lectus sed, fringilla enim. Nam imperdiet massa in pulvinar vestibulum. Integer tincidunt varius nunc, id suscipit dolor pulvinar vel. Praesent feugiat, diam a pharetra iaculis, felis lectus laoreet quam, vitae tincidunt nulla nulla non quam. Curabitur elementum ornare ipsum non feugiat. Duis consequat ultrices ipsum, in faucibus ex finibus vitae. Nulla consequat metus vitae lorem elementum, quis auctor arcu cursus.
+## Contents
+Learn big picture event storming and process modelling based on an an example.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa tincidunt, molestie lectus sed, fringilla enim. Nam imperdiet massa in pulvinar vestibulum. Integer tincidunt varius nunc, id suscipit dolor pulvinar vel. Praesent feugiat, diam a pharetra iaculis, felis lectus laoreet quam, vitae tincidunt nulla nulla non quam. Curabitur elementum ornare ipsum non feugiat. Duis consequat ultrices ipsum, in faucibus ex finibus vitae. Nulla consequat metus vitae lorem elementum, quis auctor arcu cursus.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa tincidunt, molestie lectus sed, fringilla enim. Nam imperdiet massa in pulvinar vestibulum. Integer tincidunt varius nunc, id suscipit dolor pulvinar vel. Praesent feugiat, diam a pharetra iaculis, felis lectus laoreet quam, vitae tincidunt nulla nulla non quam. Curabitur elementum ornare ipsum non feugiat. Duis consequat ultrices ipsum, in faucibus ex finibus vitae. Nulla consequat metus vitae lorem elementum, quis auctor arcu cursus.
++ short introduction into the event storming.
++ hands-on exercise of a big picture event storming session using an example
++ process modelling using event storming.

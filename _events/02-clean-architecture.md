@@ -1,15 +1,18 @@
 ---
 layout: event
-slug: Clean Arch immersion
+slug: Clean Architecture immersion
 subTitle: By Doménique Tilleuil
-teaser: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa tincidunt, molestie lectus sed, fringilla enim. Nam imperdiet massa in pulvinar vestibulum. Integer tincidunt varius nunc, id suscipit dolor pulvinar vel. Praesent feugiat, diam a pharetra iaculis, felis lectus laoreet quam, vitae tincidunt nulla nulla non quam. Curabitur elementum ornare ipsum non feugiat. Duis consequat ultrices ipsum, in faucibus ex finibus vitae. Nulla consequat metus vitae lorem elementum, quis auctor arcu cursus."
+teaser: "In today's world software gets written at an incredible pace. Every day, new software is put in production all over the world. However, as time progresses we realize that maintaining that code becomes harder and harder. Why is that? What makes this software so hard to maintain?"
 
 ---
 
 # Clean Architecture Immersion course.
+In today's world software gets written at an incredible pace. Every day, new software is put in production all over the world. However, as time progresses we realize that maintaining that code becomes harder and harder. Why is that? What makes this software so hard to maintain? 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa tincidunt, molestie lectus sed, fringilla enim. Nam imperdiet massa in pulvinar vestibulum. Integer tincidunt varius nunc, id suscipit dolor pulvinar vel. Praesent feugiat, diam a pharetra iaculis, felis lectus laoreet quam, vitae tincidunt nulla nulla non quam. Curabitur elementum ornare ipsum non feugiat. Duis consequat ultrices ipsum, in faucibus ex finibus vitae. Nulla consequat metus vitae lorem elementum, quis auctor arcu cursus.
+This course will introduce you to the SOLID principles. These principles acts as a guidance while developing and will help you to right better code. As we progress through these principles we will start noticing that these principles apply at different levels of abstraction. SOLID applied at component level becomes the basis for component design. SOLID applied at an architectural level results into a ports and adapters style of architecture.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa tincidunt, molestie lectus sed, fringilla enim. Nam imperdiet massa in pulvinar vestibulum. Integer tincidunt varius nunc, id suscipit dolor pulvinar vel. Praesent feugiat, diam a pharetra iaculis, felis lectus laoreet quam, vitae tincidunt nulla nulla non quam. Curabitur elementum ornare ipsum non feugiat. Duis consequat ultrices ipsum, in faucibus ex finibus vitae. Nulla consequat metus vitae lorem elementum, quis auctor arcu cursus.
+## Contents
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa tincidunt, molestie lectus sed, fringilla enim. Nam imperdiet massa in pulvinar vestibulum. Integer tincidunt varius nunc, id suscipit dolor pulvinar vel. Praesent feugiat, diam a pharetra iaculis, felis lectus laoreet quam, vitae tincidunt nulla nulla non quam. Curabitur elementum ornare ipsum non feugiat. Duis consequat ultrices ipsum, in faucibus ex finibus vitae. Nulla consequat metus vitae lorem elementum, quis auctor arcu cursus.
++ SOLID principles
++ Component design
++ Ports and Adapters 
