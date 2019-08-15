@@ -3,7 +3,7 @@ layout: post
 title: "Communication as a Skill"
 author: guido
 tags: mob programming, communication
-excerpt: Solving technical issues is hard. But so is communication efficiently and productively. Productive discussions isn’t something that happens automatically. How can we get better at it?
+excerpt: Developing software, solving technical issues is hard. But so is communication efficiently and productively. Having productive discussions isn’t something that happens automatically. And they play a big role in the way how the software will be designed. Conway's law taught us the correlation between software design and people interaction. So it is important that we recognize communication as a skill that we need tp master. Turns out there are quit a things to be learned from Mob Programming.
 hideLogo: true
 spotlight:
   imgDir: /img/posts/communication
@@ -15,95 +15,110 @@ spotlight:
 # Communication is a skill
 
 
-As software engineers, we are constantly learning new technologies, new techniques. When I read people resumes it is more often than not a list of hard technical skill that they have mastered. However, we rarely take the time or even think about, communication as a skill. Where it is a very important skill to have.
+As software engineers, we are constantly learning new technologies, new techniques. When I read people resumes it is more often than not a list of hard technical skill that they have mastered. However, we rarely take the time or even think about, communication as a skill. Where it is a very important skill to have. Conway's law taught us the correlation between software design and people interactions. So if we want to develop good software, we need to pay attention to the interactions of the people that are building it. How they communicate with each other is important. .
 
 ## Productive Discussions
 
-Although we try to reduce the boring bureaucratic meetings as much as possible, we still need to sit together with our fellow team members and colleagues from other teams to discuss, refine and agree on how we will build and integrate our software.
+Being able to have productive discussion is an important skill to have. Although we try to reduce the boring bureaucratic meetings as much as possible, we still need to sit together with our fellow team members and colleagues from other teams to discuss, refine and agree on how we will build and integrate our software. In and  outside of meetings we are constantly in communication with each other. Those meetings, discussions aren't always productive, constructive, efficient. No doubt we all have been in some very unproductive discussions where conflicting interests and opinions collide and a lot of time is wasted with little to show for, except some frustration and possible bad feelings towards each other. For me, inefficient discussions are something that I started to pay a lot of attention to the last couple of years. And once you see it, it is hard to unsee. It becomes all the more apparent what a blocker this often is for the quality and speed of our software, how much time and money gets wasted and how much grievances these unproductive discussions lead to. 
 
-But having productive discussions isn’t something that happens automatically. No doubt we all have been in some very unproductive discussions where conflicting interests and opinions collide and a lot of time is wasted with little to show for, except some frustration and possible bad feelings towards each other. 
-
-So how can we have more productive discussions?
+Having productive discussions isn’t something that happens from itself. It is something we need to work at and pay attention to. So what can we do it?
 
 ## Anti Patterns
 
 Let me start by listing some - what I call - anti-patterns of having a productive discussion
 
-+ Interrupting each other
-+ Raising our voice: The best way of silencing the ‘opposition’. However, when no one no longer objects, doesn’t mean you made your point. They just stopped caring.
-+ Getting sidetracked: Jumping from one topic to another makes it hard to follow and nothing gets finished. 
-+ Discussing details before the global picture is clear
-+ Talking next to each other and not really listening
-+ No visualization: People fear the whiteboard.
-+ Not really listening: just waiting until someone else has stopped talking
-+ Only a small percentage of the group is engaged: This is a great tell sign that de discussion has gone off the rails. If a large part of the group is no longer actively listening, this should be a sign that something is going wrong.
-+ Ego! Of course. The always present elephant in the room. You are not your solution. Let it go.
++ **Interrupting each other**
++ **Raising our voice**: The best way of silencing the ‘opposition’. However, when no one no longer objects, doesn’t mean you made your point. They just stopped caring.
++ **Getting sidetracked**: Jumping from one topic to another makes it hard to follow and nothing gets finished. 
++ **Going depth first instead breath first** Discussing details in depth before the bigger global picture is clear
++ **Not listening** Talking next to each other and not really listening. Just waiting until someone else has stopped talking
++ **No visualization** People fear the whiteboard.
++ **Select engagement** Only a small percentage of the group is engaged: This is a great tell sign that de discussion has gone off the rails. If a large part of the group is no longer actively listening, this should be a sign that something is going wrong.
++ **Ego!** Of course. The always present elephant in the room. You are not your solution. Let it go.
 
-I’m sure we all know and recognize those anti-patterns. But knowing them does not mean that we aren’t doing them. Even if we recognize that we shouldn’t.
+I’m sure we all know and recognize those anti-patterns, hopefully realizing that they can be a problem. But knowing them does not mean that we aren’t doing them ourselves. Even if we recognize that we shouldn’t.
 
-## How to improve?
+I think it is a first major important step to recognize the large cost of those anti-patterns. They impact the quality of the software that we create, the speed in which we create it and the quality of the human relations and interactions. Once we become mindful of this, we can start avoiding these anti-patterns. 
 
-For me, inefficient discussions are something I started to pay a lot of attention to the last couple of years. And once you see it, it is hard to unsee. It becomes all the more apparent what a blocker this often is for the quality and speed of our software, how much time and money gets wasted and how much grievances these unproductive discussions lead to. 
+## Mob Programming
 
-### What "Woody" said
-
-Since it is something that I’ve become more mindful of these past years, when I recently took Woody Zuill’s [mob programming](https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/)[^mobbing] course, a lot of what he said resonated with me. Not just on the mob programming part, but on the whole communication aspect. After all, if a team wants to be able to Mob program efficiently they must be also able to communicate productively.
+When I recently took Woody Zuill’s [mob programming](https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/)[^mobbing] course, a lot of what he said resonated with me. Not just on how to do mob programming, but on the whole communication aspect. After all, if a team wants to be able to Mob program efficiently they must be also able to communicate productively. Woody taught us Mob programming through a series of exercises where we needed to interact **disciplined** and pay attention to how we communicate. I found this very revealing. 
 
 ![Mob 3](/img/posts/communication/mob-group.jpg "Mob programming workshop"){:width="500px"}
 
 
-Some of the things that stuck with me from the Mob programming course:
+#### What "Woody" said
 
-+ Learn to shut up: by adding our solutions or suggestions non-stop to the discussion, we think we’re gaining speed, but actually, we’re slowing down. It is very hard to keep quiet when we “know better”. 
+**Learn to shut up**
 
-*“Clarity comes when you pause. Count to 10.” - Woody  Zuil*
+By adding our solutions or suggestions non-stop to the discussion, we think we’re gaining speed, but actually, we’re slowing down. It is very hard to keep quiet when we “know better”. 
 
-+ Keep it to yourselves: Let people realize a possible error themselves. Refrain from prematurely adding noise. You may be right, they may be right. Let it play out.  It will often go faster, with less confusion and better insights for all at the end. We don’t need to have a consensus on every detail. Perhaps it is not even important in the big picture. So, keep it to yourself. This is hard by the way :-) 
+>>“Clarity comes when you pause. Count to 10.” - Woody  Zuil
 
-*“Often, we are just adding noise. Can we keep it to ourselves?” - Woody Zuil*
+**Keep it to yourselves**
 
-+ Learn to Listen: not just waiting until it is our turn to speak.
+Let people realize a possible error themselves. Refrain from prematurely adding noise. You may be right, they may be right. Let it play out.  It will often go faster, with less confusion and better insights for all at the end. We don’t need to have a consensus on every detail. Perhaps it is not even important in the big picture. So, keep it to yourself. This is hard by the way :-) 
 
-*“A good listener makes others better thinkers” - Woody Zuil*
+>>“Often, we are just adding noise. Can we keep it to ourselves?” - Woody Zuil
 
-+ Parking lot: do not interrupt the flow with new ideas or tasks but move them to the parking lot so we don’t get sidetracked, but keep our focus.
+**Learn to Listen**
 
-*“Talking does not expose reality. Doing does.” - Woody Zuil*
+Listening is not just waiting until it is our turn to speak. Are we really listening?
 
-+ How would you like to be treated? Treat others in a way you would like to be treated. Don’t let our enthusiasm for a solution make bullies out of us.
+>>“A good listener makes others better thinkers” - Woody Zuil
 
-*“Treat each other with kindness, consideration, and respect” - Woody Zuil*
+**Have a parking lot**
 
-![Mob 4](/img/posts/communication/mob-group-2.jpg "Mob programming workshop"){:width="500px"}
+Do not continuously interrupt the flow with new ideas, concerns or tasks. Postpone the details, move them to the parking lot so we don’t get sidetracked. We want to keep our focus during a discussion. Discussing one issue at a time. It is also pointless to discuss a lot of could and maybe's.
 
+>>“Talking does not expose reality. Doing does.” - Woody Zuil
 
-## Guidelines
+**Respect each other**
+
+How would you like to be treated? Treat others in a way you would like to be treated. Don’t let our enthusiasm for a solution make [Bullies](/17/07/2018/Bully/)* out of us. Check the ego. Make an environment were people dare to make suggestions, mistakes and say they do not know something.
+
+>>“Treat each other with kindness, consideration, and respect” - Woody Zuil
+
+#### Train communication in Mob
+
+Mob programming is not something that works everywhere. You need to get good at it. The team needs to get good at it. But even when you aren't doing it, there is a lot to be learned from a couple of sessions. Try it out at work, in a meetup, unconference, ... Pay attention to how hard it is to "Not add noise", "Shut up", "Really listen". It is a great technique to practice communication in itself.
+
+![Mob 4](/img/posts/communication/mob-group-2.jpg "Mob programming workshop"){:width="500px" : .center-image}
+
+## Guidelines for productive discussions
+
+After the anti-patterns, I like to offer some guide lines that can help us in becoming better at good communication, productive discussions.
+
 #### The 'soft' ones
 *a.k.a. The hard ones to master*
 
-+ Kindness
+##### Kindness
 Be gentle and polite. Show concern for others, value their opinions.
-+ Consideration
+##### Consideration
 Be humble. Our own idea is just one idea. Really consider other ideas
-+ Respect
-    + We can respectfully disagree. 
-    + Don’t attack other people’s self-esteem.
-    + No bullying other people into silence 
+##### Respect
++ We can respectfully disagree. 
++ Don’t attack other people’s self-esteem.
++ No bullying other people into silence 
+    
+I took the above straight from the Mob programming book. They are short and easy to remember. But very hard to practice..     
 
 > “When we learn how to treat each other well we create a path toward better solutions. So start ‘pretending’ that we are good people”  - Woody Zuil
 
 #### Actionable guidelines
 
-+ Don’t waste time on discussing and deciding conflicting ideas. 
+##### Don’t waste time on discussing and deciding conflicting ideas. 
+
 We should do/ act on different ideas. See what works by doing it. Model multiple solutions out. Discuss on concretes.
-+ Visualize things. 
+
+##### Visualize things. 
+
 Talk to a drawing, post-its. Make it clear what we are discussing and where we are in the discussion. When we are discussing against a visualization 
     + it reduces the cognitive overload
     + It isn’t personal. We are discussing a representation, not each other. This makes it often less offensive to disagree.
     + it brings focus and clarity
     
-Letting go of the keyboard, or being the first one in a meeting t step up seems like to be a big hurdle to take. People seem to think it is not worth the effort, or maybe fear the attention. But visualizing the topic we are discussing  
-can greatly increase the efficiency of the discussion, speed up the process and helps in aiding sure everyone is talking about the same thing.
+Letting go of the keyboard, or being the first one in a meeting to step up is a big hurdle to take. People seem to think it is not worth the effort, or maybe fear the attention. But visualizing the topic we are discussing  can greatly increase the efficiency of the discussion, speed up the process and helps in aiding sure everyone is talking about the same thing.
 
 
 ## Conclusion
@@ -111,11 +126,11 @@ can greatly increase the efficiency of the discussion, speed up the process and 
 Solving technical issues is hard. But so is communication efficiently and productively. Do not neglect this skill. Just like with everything, it is something that we can get better at by paying attention to it. Good communication is important enough to do so...
 
 
-![Mob 1](/img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"){:width="500px"}
+![Mob 1](/img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 
 *Triple D during a learning day*
 
-![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width="500px"}
+![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 
 
 
