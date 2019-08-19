@@ -3,38 +3,43 @@ layout: event
 slug: DDD introduction
 subTitle: By Guido Deschamps
 youtubeUrl: "https://www.youtube.com/embed/yPvef9R3k-M"
-teaser: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa tincidunt, molestie lectus sed, fringilla enim. Nam imperdiet massa in pulvinar vestibulum. Integer tincidunt varius nunc, id suscipit dolor pulvinar vel. Praesent feugiat, diam a pharetra iaculis, felis lectus laoreet quam, vitae tincidunt nulla nulla non quam. Curabitur elementum ornare ipsum non feugiat. Duis consequat ultrices ipsum, in faucibus ex finibus vitae. Nulla consequat metus vitae lorem elementum, quis auctor arcu cursus."
+teaser: "Domain Driven Design is a vast topic. We offer introductional sessions with different flavors depending on the intended audience"
 
 ---
 
 # Domain driven design introduction.
 
-We have two different DDD introduction sessions. Each one is a 4h gentle introduction in some of the core concepts of DDD. No coding although some exercises will be done.
+Domain Driven Design is a vast topic, containing many different techniques. We offer some short introductionary sessions that explain the core conceptys of DDD and why they are important. We offer the sessions in different flavors. Each session is a four hour gentle introduction. These introductionary sessions contain no coding. Although some exercises will be done.
+All of these introductions thoroughly explain the core concepts of DDD
+
+**DDD Core Concepts**
++ Domains and sub-domains (core/sup/gen)
++ Bounded context
++ Ubiquitous language
++ Domain models
 
 ## Strategic design using DDD.
 
 **Intended audience**
-//TODO: Rephrase it a bit
-Aimed at Software architects. Although this is of course also relevant for software developers.
+
+In addition to the core concepts this introduction dives into the strategic concepts from DDD. Which makes it more suited for people in a Software architect role. Although this is of course also relevant for software developers.
 
 ### Contents
-+ Domains and sub-domains (core/sup/gen)
-+ bounded context
-+ ub
-+ domain models
-+ software
+
++ DDD Core Concepts
 + Context mapping
-+ relationships between bounded contexts (OHS/ PL / ACL / etc...)
++ Relationships between bounded contexts (OHS/ PL / ACL / etc...)
++ Enterprise Architecture
 
 
-
-### Tactical design using DDD.
+## Tactical design using DDD.
 
 **Intended audience**
 
-Primarily aimed at Developers. No hands pn coding will be done, there will be plenty of code examples.
+This introduction also handles the core concepts of DDD. But it dives into the tactical desighn patterns. Which makes it more suited for Developers. 
 
 ### Contents
 
++ DDD Core Concepts
 + Tactical design patterns 
-+ hexagonal architecture
++ Hexagonal architecture
