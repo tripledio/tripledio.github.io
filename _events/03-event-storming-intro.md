@@ -8,9 +8,13 @@ teaser: "This engaging workshop will let you discover how event storming works."
 
 # Event storming introduction.
 
-## Contents
-Learn big picture event storming and process modelling based on an an example.
+Event Storming is a deceptibly simple yet powerful technique, originating from the DDD community. It is easy to start with and can be used for different purposes. We offer a short crash course in Event Storming so you can immediately start using and learning this technique for yourselves.
 
-+ short introduction into the event storming.
-+ hands-on exercise of a big picture event storming session using an example
-+ process modelling using event storming.
+## Contents
+
+In this workshop we will learn big picture event storming and process modelling.
+
++ Short introduction into the event storming.
++ Hands-on exercise of a big picture event storming session
++ Hands-on process modelling using event storming.
+
