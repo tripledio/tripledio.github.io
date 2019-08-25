@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Communication as a Skill"
+title: "Communication is a Skill"
 author: guido
 tags: mob programming, communication
 excerpt: Developing software, solving technical issues is hard. But so is communication efficiently and productively. Having productive discussions isn’t something that happens automatically. And they play a big role in the way how the software will be designed. Conway's law taught us the correlation between software design and people interaction. So it is important that we recognize communication as a skill that we need tp master. Turns out there are quit a things to be learned from Mob Programming.
@@ -53,39 +53,39 @@ When I recently took Woody Zuill’s [mob programming](https://www.agilealliance
 ![Mob 3](/img/posts/communication/mob-group.jpg "Mob programming workshop"){:width="500px"}
 
 
-#### What "Woody" said
+### What "Woody"[^Woody] said
 
 **Learn to shut up**
 
 By adding our solutions or suggestions non-stop to the discussion, we think we’re gaining speed, but actually, we’re slowing down. It is very hard to keep quiet when we “know better”. 
 
->>“Clarity comes when you pause. Count to 10.” - Woody  Zuil
+>>“Clarity comes when you pause. Count to 10.” - Woody  Zuill
 
 **Keep it to yourselves**
 
 Let people realize a possible error themselves. Refrain from prematurely adding noise. You may be right, they may be right. Let it play out.  It will often go faster, with less confusion and better insights for all at the end. We don’t need to have a consensus on every detail. Perhaps it is not even important in the big picture. So, keep it to yourself. This is hard by the way :-) 
 
->>“Often, we are just adding noise. Can we keep it to ourselves?” - Woody Zuil
+>>“Often, we are just adding noise. Can we keep it to ourselves?” - Woody Zuill
 
 **Learn to Listen**
 
 Listening is not just waiting until it is our turn to speak. Are we really listening?
 
->>“A good listener makes others better thinkers” - Woody Zuil
+>>“A good listener makes others better thinkers” - Woody Zuill
 
 **Have a parking lot**
 
 Do not continuously interrupt the flow with new ideas, concerns or tasks. Postpone the details, move them to the parking lot so we don’t get sidetracked. We want to keep our focus during a discussion. Discussing one issue at a time. It is also pointless to discuss a lot of could and maybe's.
 
->>“Talking does not expose reality. Doing does.” - Woody Zuil
+>>“Talking does not expose reality. Doing does.” - Woody Zuill
 
 **Respect each other**
 
 How would you like to be treated? Treat others in a way you would like to be treated. Don’t let our enthusiasm for a solution make [Bullies](/17/07/2018/Bully/)* out of us. Check the ego. Make an environment were people dare to make suggestions, mistakes and say they do not know something.
 
->>“Treat each other with kindness, consideration, and respect” - Woody Zuil
+>>“Treat each other with kindness, consideration, and respect” - Woody Zuill
 
-#### Train communication in Mob
+### Train communication in Mob
 
 Mob programming is not something that works everywhere. You need to get good at it. The team needs to get good at it. But even when you aren't doing it, there is a lot to be learned from a couple of sessions. Try it out at work, in a meetup, unconference, ... Pay attention to how hard it is to "Not add noise", "Shut up", "Really listen". It is a great technique to practice communication in itself.
 
@@ -95,7 +95,7 @@ Mob programming is not something that works everywhere. You need to get good at 
 
 After the anti-patterns, I like to offer some guide lines that can help us in becoming better at good communication, productive discussions.
 
-#### The 'soft' ones
+### The 'soft' ones
 *a.k.a. The hard ones to master*
 
 ##### Kindness
@@ -107,17 +107,17 @@ Be humble. Our own idea is just one idea. Really consider other ideas
 + Don’t attack other people’s self-esteem.
 + No bullying other people into silence 
     
-I took the above straight from the Mob programming book. They are short and easy to remember. But very hard to practice..     
+I took the above straight from the Mob programming book. They are short and easy to remember. But very hard to master...     
 
-> “When we learn how to treat each other well we create a path toward better solutions. So start ‘pretending’ that we are good people”  - Woody Zuil
+> “When we learn how to treat each other well we create a path toward better solutions. So start ‘pretending’ that we are good people”  - Woody Zuill
 
-#### Actionable guidelines
+### Actionable guidelines
 
-##### Don’t waste time on discussing and deciding conflicting ideas. 
+#### Don’t waste time on discussing and deciding conflicting ideas. 
 
 We should do/ act on different ideas. See what works by doing it. Model multiple solutions out. Discuss on concretes.
 
-##### Visualize things. 
+#### Visualize things. 
 
 Talk to a drawing, post-its. Make it clear what we are discussing and where we are in the discussion. When we are discussing against a visualization 
     + it reduces the cognitive overload
@@ -132,12 +132,9 @@ Letting go of the keyboard, or being the first one in a meeting to step up is a 
 Solving technical issues is hard. But so is communication efficiently and productively. Do not neglect this skill. Just like with everything, it is something that we can get better at by paying attention to it. Good communication is important enough to do so...
 
 
-![Mob 1](/img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"){:width="500px" : .center-image}
-
-*Triple D during a learning day*
-
 ![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 
+*Triple D during a learning day*
 
 
 ***
@@ -145,3 +142,4 @@ Solving technical issues is hard. But so is communication efficiently and produc
 **References**
 
 [^mobbing]: _[mob programming](https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/)_ 
+[^Woody]: _[Woody Zuill](https://woodyzuill.com)_ 
