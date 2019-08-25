@@ -14,14 +14,20 @@ spotlight:
 ---
 # Communication is a skill
 
+Being able to have productive discussion is an important skill to have. Although everyone (hopefully) tries to reduce the boring bureaucratic meetings as much as possible, we still need to sit together with our fellow team members and colleagues to discuss, refine and agree on how we will build and integrate our software.
 
-As software engineers, we are constantly learning new technologies, new techniques. When I read people resumes it is more often than not a list of hard technical skill that they have mastered. However, we rarely take the time or even think about, communication as a skill. Where it is a very important skill to have. Conway's law taught us the correlation between software design and people interactions. So if we want to develop good software, we need to pay attention to the interactions of the people that are building it. How they communicate with each other is important. .
+As software engineers, we are constantly learning new technologies, new techniques. People resumes are more often than not a list of hard technical skill that they have mastered. However, engineers rarely take the time to improve their communication skills. Conway's law taught us the correlation between software design and people interactions. So if we want to develop good software, the interactions of the people that are building it matter. A lot. How they communicate with each other is important. It is a skill just like any other. So how can we get better at it?
 
-## Productive Discussions
+## Does this matter for a software engineer?
 
-Being able to have productive discussion is an important skill to have. Although we try to reduce the boring bureaucratic meetings as much as possible, we still need to sit together with our fellow team members and colleagues from other teams to discuss, refine and agree on how we will build and integrate our software. In and  outside of meetings we are constantly in communication with each other. Those meetings, discussions aren't always productive, constructive, efficient. No doubt we all have been in some very unproductive discussions where conflicting interests and opinions collide and a lot of time is wasted with little to show for, except some frustration and possible bad feelings towards each other. For me, inefficient discussions are something that I started to pay a lot of attention to the last couple of years. And once you see it, it is hard to unsee. It becomes all the more apparent what a blocker this often is for the quality and speed of our software, how much time and money gets wasted and how much grievances these unproductive discussions lead to. 
+In and outside of meetings we are constantly in communication with each other. So you might think that you have mastered this from daily practice and don't need to spend any time on it. Communication and collaboration is something we all do everyday and we are good at it. But I would beg to differ...
 
-Having productive discussions isn’t something that happens from itself. It is something we need to work at and pay attention to. So what can we do it?
+No doubt we all have been in some very unproductive discussions where conflicting interests and opinions collide, where a lot of time is wasted with little to show for, except some frustration and possible bad feelings towards each other. Meetings and discussions aren't productive or efficient by chance. There is a reason people often try to avoid them. 
+  
+Those inefficient discussions are something that I have started to pay a lot of attention to, in the last couple of years. And once you see the patterns, it is hard to unsee them. It becomes all the more apparent what a blocker they often are for the quality of our software, the speed with which we deliver it , how much time and money gets wasted and how much grievances these unproductive discussions lead to. 
+
+So having productive discussions is important. And experience has shown me that it isn’t something that happens from itself. It is something one needs to work on and pay attention to.  You could of course spend your valuable time on something other than a blog post on communication. This certainly won't gain you the same bragging rights as having read the latest shiny object article. But I would argue it is a skill that will have more impact on your efficiency as a software engineer then that new hip framework.
+
 
 ## Anti Patterns
 
