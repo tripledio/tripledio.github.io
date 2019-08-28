@@ -3,30 +3,28 @@ layout: post
 title: "Communication is a Skill"
 author: guido
 tags: mob programming, communication
-excerpt: Developing software, solving technical issues is hard. But so is communication efficiently and productively. Having productive discussions isn’t something that happens automatically. And they play a big role in the way how the software will be designed. Conway's law taught us the correlation between software design and people interaction. So it is important that we recognize communication as a skill that we need tp master. Turns out there are quit a things to be learned from Mob Programming.
+excerpt: Developing software, solving technical issues is hard. But so is communication efficiently and productively. Having productive discussions isn’t something that happens automatically. And they play a big role in the way how the software will be designed. Conway's law taught us the correlation between software design and people interaction. So we must recognize communication as a skill that we need to master. Turns out there are quite a few things to be learned from Mob Programming.
 hideLogo: true
 spotlight:
   imgDir: /img/posts/communication
   imgAlt: "Triple D : Design, Develop, Deploy"
   logoAnimation: false
-  video: false
-  videoFile: files/electric.mp4
 ---
 # Communication is a skill
 
-Being able to have productive discussion is an important skill to have. Although everyone (hopefully) tries to reduce the boring bureaucratic meetings as much as possible, we still need to sit together with our fellow team members and colleagues to discuss, refine and agree on how we will build and integrate our software.
+Being able to have a productive discussion is an important skill to have. Although everyone (hopefully) tries to reduce the boring bureaucratic meetings as much as possible, we still need to sit together with our fellow team members and colleagues to discuss, refine and agree on how we will build and integrate our software.
 
 As software engineers, we are constantly learning new technologies, new techniques. People resumes are more often than not a list of hard technical skill that they have mastered. However, engineers rarely take the time to improve their communication skills. Conway's law taught us the correlation between software design and people interactions. So if we want to develop good software, the interactions of the people that are building it matter. A lot. How they communicate with each other is important. It is a skill just like any other. So how can we get better at it?
 
 ## Does this matter for a software engineer?
 
-In and outside of meetings we are constantly in communication with each other. So you might think that you have mastered this from daily practice and don't need to spend any time on it. Communication and collaboration is something we all do everyday and we are good at it. But I would beg to differ...
+In and outside of meetings we are constantly in communication with each other. So you might think that you have mastered this from daily practice and don't need to spend any time on it. Communication and collaboration is something we all do every day and we are good at it. But I would beg to differ...
 
 No doubt we all have been in some very unproductive discussions where conflicting interests and opinions collide, where a lot of time is wasted with little to show for, except some frustration and possible bad feelings towards each other. Meetings and discussions aren't productive or efficient by chance. There is a reason people often try to avoid them. 
   
-Those inefficient discussions are something that I have started to pay a lot of attention to, in the last couple of years. And once you see the patterns, it is hard to unsee them. It becomes all the more apparent what a blocker they often are for the quality of our software, the speed with which we deliver it , how much time and money gets wasted and how much grievances these unproductive discussions lead to. 
+Those inefficient discussions are something that I have started to pay a lot of attention to, in the last couple of years. And once you see the patterns, it is hard to unsee them. It becomes all the more apparent what a blocker they often are for the quality of our software, the speed with which we deliver it, how much time and money gets wasted and how much grievances these unproductive discussions lead to. 
 
-So having productive discussions is important. And experience has shown me that it isn’t something that happens from itself. It is something one needs to work on and pay attention to.  You could of course spend your valuable time on something other than a blog post on communication. This certainly won't gain you the same bragging rights as having read the latest shiny object article. But I would argue it is a skill that will have more impact on your efficiency as a software engineer then that new hip framework.
+So having productive discussions is important. And experience has shown me that it isn’t something that happens from itself. It is something one needs to work on and pay attention to.  You could, of course, spend your valuable time on something other than a blog post on communication. This certainly won't gain you the same bragging rights as having read the latest shiny object article. But I would argue it is a skill that will have more impact on your efficiency as a software engineer then that new hip framework.
 
 
 ## Anti Patterns
@@ -36,7 +34,7 @@ Let me start by listing some - what I call - anti-patterns of having a productiv
 + **Interrupting each other**
 + **Raising our voice**: The best way of silencing the ‘opposition’. However, when no one no longer objects, doesn’t mean you made your point. They just stopped caring.
 + **Getting sidetracked**: Jumping from one topic to another makes it hard to follow and nothing gets finished. 
-+ **Going depth first instead breath first** Discussing details in depth before the bigger global picture is clear
++ **Going depth-first instead breath first** Discussing details in depth before the bigger global picture is clear
 + **Not listening** Talking next to each other and not really listening. Just waiting until someone else has stopped talking
 + **No visualization** People fear the whiteboard.
 + **Select engagement** Only a small percentage of the group is engaged: This is a great tell sign that de discussion has gone off the rails. If a large part of the group is no longer actively listening, this should be a sign that something is going wrong.
@@ -44,7 +42,7 @@ Let me start by listing some - what I call - anti-patterns of having a productiv
 
 I’m sure we all know and recognize those anti-patterns, hopefully realizing that they can be a problem. But knowing them does not mean that we aren’t doing them ourselves. Even if we recognize that we shouldn’t.
 
-I think it is a first major important step to recognize the large cost of those anti-patterns. They impact the quality of the software that we create, the speed in which we create it and the quality of the human relations and interactions. Once we become mindful of this, we can start avoiding these anti-patterns. 
+I think it is the first major important step to recognize the large cost of those anti-patterns. These anti-patterns impact the quality of the software that we create, the speed in which we create it and the quality of the human relations and interactions. Once we become mindful of this, we can start avoiding these anti-patterns. 
 
 ## Mob Programming
 
@@ -81,7 +79,7 @@ Do not continuously interrupt the flow with new ideas, concerns or tasks. Postpo
 
 **Respect each other**
 
-How would you like to be treated? Treat others in a way you would like to be treated. Don’t let our enthusiasm for a solution make [Bullies](/17/07/2018/Bully/)* out of us. Check the ego. Make an environment were people dare to make suggestions, mistakes and say they do not know something.
+How would you like to be treated? Treat others in a way you would like to be treated. Don’t let our enthusiasm for a solution make [Bullies](/17/07/2018/Bully/)* out of us. Check the ego. Make an environment where people dare to make suggestions, mistakes and say they do not know something.
 
 >>“Treat each other with kindness, consideration, and respect” - Woody Zuill
 
@@ -93,13 +91,13 @@ Mob programming is not something that works everywhere. You need to get good at 
 
 ## Guidelines for productive discussions
 
-After the anti-patterns, I like to offer some guide lines that can help us in becoming better at good communication, productive discussions.
+After the anti-patterns, I like to offer some guidelines that can help us in becoming better at good communication, productive discussions.
 
 ### The 'soft' ones
 *a.k.a. The hard ones to master*
 
 ##### Kindness
-Be gentle and polite. Show concern for others, value their opinions.
+Be gentle and polite. Show concern for others. Value their opinions.
 ##### Consideration
 Be humble. Our own idea is just one idea. Really consider other ideas
 ##### Respect
@@ -119,23 +117,24 @@ We should do/ act on different ideas. See what works by doing it. Model multiple
 
 #### Visualize things. 
 
+![Visualize](/img/posts/communication/drawing-whiteboard.jpg "Don't fear the whietboard"){:width="500px" : .center-image}
+
 Talk to a drawing, post-its. Make it clear what we are discussing and where we are in the discussion. When we are discussing against a visualization 
     + it reduces the cognitive overload
     + It isn’t personal. We are discussing a representation, not each other. This makes it often less offensive to disagree.
     + it brings focus and clarity
     
-Letting go of the keyboard, or being the first one in a meeting to step up is a big hurdle to take. People seem to think it is not worth the effort, or maybe fear the attention. But visualizing the topic we are discussing  can greatly increase the efficiency of the discussion, speed up the process and helps in aiding sure everyone is talking about the same thing.
+Letting go of the keyboard, or being the first one in a meeting to step up is a big hurdle to take. People seem to think it is not worth the effort, or maybe fear the attention. But visualizing the topic we are discussing can greatly increase the efficiency of the discussion, speed up the process and helps in aiding sure everyone is talking about the same thing.
 
 
 ## Conclusion
 
 Solving technical issues is hard. But so is communication efficiently and productively. Do not neglect this skill. Just like with everything, it is something that we can get better at by paying attention to it. Good communication is important enough to do so...
 
-
+![Mob 1](/img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 ![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 
-*Triple D during a learning day*
-
+*Triple D during a learning day. Practising communication skills as well as engineering skills*
 
 ***
 
