@@ -38,7 +38,7 @@ Let me start by listing some - what I call - anti-patterns of having a productiv
 + **Not listening** Talking next to each other and not really listening. Just waiting until someone else has stopped talking
 + **No visualization** People fear the whiteboard.
 + **Select engagement** Only a small percentage of the group is engaged: This is a great tell sign that de discussion has gone off the rails. If a large part of the group is no longer actively listening, this should be a sign that something is going wrong.
-+ [**Ego**](/26/06/2018/LocalHero##ego)Of course. The always present elephant in the room. You are not your solution. Let it go.
++ [**Ego**](/26/06/2018/LocalHero##ego): Of course. The always present elephant in the room. You are not your solution. Let it go.
 
 I’m sure we all know and recognize those anti-patterns, hopefully realizing that they can be a problem. But knowing them does not mean that we aren’t doing them ourselves. Even if we recognize that we shouldn’t.
 
@@ -46,18 +46,18 @@ I think it is the first major important step to recognize the large cost of thos
 
 ## Mob Programming
 
-When I recently took Woody Zuill’s [mob programming](https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/)[^mobbing] course, a lot of what he said resonated with me. Not just on how to do mob programming, but on the whole communication aspect. After all, if a team wants to be able to Mob program efficiently they must be also able to communicate productively. Woody taught us Mob programming through a series of exercises where we needed to interact **disciplined** and pay attention to how we communicate. I found this very revealing. 
+When I recently took Woody[^Woody] Zuill’s [mob programming](https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/)[^mobbing] course, a lot of what he said resonated with me. Not just on how to do mob programming, but on the whole communication aspect. After all, if a team wants to be able to Mob program efficiently they must be also able to communicate productively. Woody taught us Mob programming through a series of exercises where we needed to interact **disciplined** and pay attention to how we communicate. I found this very revealing. 
 
 ![Mob 3](/img/posts/communication/mob-group.jpg "Mob programming workshop"){:width="500px"}
 
 
-### What "Woody"[^Woody] said
+### What "Woody" said
 
 **Learn to shut up**
 
 By adding our solutions or suggestions non-stop to the discussion, we think we’re gaining speed, but actually, we’re slowing down. It is very hard to keep quiet when we “know better”. 
 
->>“Clarity comes when you pause. Count to 10.” - Woody  Zuill
+>>“Clarity comes when you pause. Count to 10.” - Woody  Zuill[^Woody]
 
 **Keep it to yourselves**
 
@@ -85,13 +85,13 @@ How would you like to be treated? Treat others in a way you would like to be tre
 
 ### Train communication in Mob
 
-Mob programming is not something that works everywhere. You need to get good at it. The team needs to get good at it. But even when you aren't doing it, there is a lot to be learned from a couple of sessions. Try it out at work, in a meetup, unconference, ... Pay attention to how hard it is to "Not add noise", "Shut up", "Really listen". It is a great technique to practice communication in itself.
+Mob programming is not something that works everywhere. You need to get good at it. The team needs to get good at it. But even when you aren't doing it on a daily basis, there is a lot to be learned from a couple of sessions. Try it out at work, in a meetup, unconference, ... Pay attention to how hard it is to "Not add noise", "Shut up", "Really listen". It is a great technique to practice communication in itself.
 
 ![Mob 4](/img/posts/communication/mob-group-2.jpg "Mob programming workshop"){:width="500px" : .center-image}
 
 ## Guidelines 
 
-After the anti-patterns, I like to offer some guidelines that can help us in becoming better at good communication, at the risk of sounding fluffy duffy. Bu these things matter. Once you start paying attention to them you'll be amazed of their impact and how often that neglecting them is the root cause of problems.  
+After the anti-patterns, I like to offer some guidelines that can help us in becoming better at good communication, at the risk of sounding fluffy duffy. But these things matter. Once you start paying attention to them you'll be amazed of their impact and how often that neglecting them is the root cause of problems.  
 
 ### The 'soft' ones
 *a.k.a. The hard ones to master*
