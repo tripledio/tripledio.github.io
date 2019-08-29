@@ -121,13 +121,14 @@ We should do/ act on different ideas. See what works by doing it. Model multiple
 
 ![Visualize](/img/posts/communication/drawing-whiteboard.jpg "Don't fear the whietboard"){:width="500px" : .center-image}
 
-Talk to a drawing, post-its. Make it clear what we are discussing and where we are in the discussion. When we are discussing against a visualization 
-    + it reduces the cognitive overload
-    + It isn’t personal. We are discussing a representation, not each other. This makes it often less offensive to disagree.
-    + it brings focus and clarity
-    
+Make a drawing, use post-its. Make it clear what we are discussing and where we are in the discussion. 
+
 Letting go of the keyboard, or being the first one in a meeting to step up is a big hurdle to take. People seem to think it is not worth the effort, or maybe fear the attention. But visualizing the topic we are discussing can greatly increase the efficiency of the discussion, speed up the process and helps in aiding sure everyone is talking about the same thing.
 
+When we are discussing against a visualization 
++ it reduces the cognitive overload
++ It isn’t personal. We are discussing a representation, not each other. This makes it often less offensive to disagree.
++ it brings focus and clarity
 
 ## Conclusion
 
