@@ -31,14 +31,14 @@ So having productive discussions is important. And experience has shown me that 
 
 Let me start by listing some - what I call - anti-patterns of having a productive discussion
 
-+ **Interrupting each other**
-+ **Raising our voice**: The best way of silencing the ‘opposition’. However, when no one no longer objects, doesn’t mean you made your point. They just stopped caring.
++ **Interrupting each other**: Frustrating for the one who is interrupted and makes it hard to follow the conversation. often also a clear sign you weren't trying to understand.
++ **Raising our voice**: The best way of silencing the ‘opposition’. However, when no one no longer objects, that doesn’t mean you made your point. They just stopped caring.
 + **Getting sidetracked**: Jumping from one topic to another makes it hard to follow and nothing gets finished. 
 + **Going depth-first instead breath first** Discussing details in depth before the bigger global picture is clear
 + **Not listening** Talking next to each other and not really listening. Just waiting until someone else has stopped talking
 + **No visualization** People fear the whiteboard.
 + **Select engagement** Only a small percentage of the group is engaged: This is a great tell sign that de discussion has gone off the rails. If a large part of the group is no longer actively listening, this should be a sign that something is going wrong.
-+ **Ego!** Of course. The always present elephant in the room. You are not your solution. Let it go.
++ [**Ego**](/26/06/2018/LocalHero##ego)Of course. The always present elephant in the room. You are not your solution. Let it go.
 
 I’m sure we all know and recognize those anti-patterns, hopefully realizing that they can be a problem. But knowing them does not mean that we aren’t doing them ourselves. Even if we recognize that we shouldn’t.
 
