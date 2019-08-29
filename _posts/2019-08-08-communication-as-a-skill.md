@@ -69,7 +69,7 @@ Let people realize a possible error themselves. Refrain from prematurely adding 
 
 Listening is not just waiting until it is our turn to speak. Are we really listening?
 
->>“A good listener makes others better thinkers” - Woody Zuill
+>>“A  good listener makes others better thinkers” - Woody Zuill
 
 **Have a parking lot**
 
@@ -89,12 +89,13 @@ Mob programming is not something that works everywhere. You need to get good at 
 
 ![Mob 4](/img/posts/communication/mob-group-2.jpg "Mob programming workshop"){:width="500px" : .center-image}
 
-## Guidelines for productive discussions
+## Guidelines 
 
-After the anti-patterns, I like to offer some guidelines that can help us in becoming better at good communication, productive discussions.
+After the anti-patterns, I like to offer some guidelines that can help us in becoming better at good communication, at the risk of sounding fluffy duffy. Bu these things matter. Once you start paying attention to them you'll be amazed of their impact and how often that neglecting them is the root cause of problems.  
 
 ### The 'soft' ones
 *a.k.a. The hard ones to master*
+
 
 ##### Kindness
 Be gentle and polite. Show concern for others. Value their opinions.
@@ -110,6 +111,7 @@ I took the above straight from the Mob programming book. They are short and easy
 > “When we learn how to treat each other well we create a path toward better solutions. So start ‘pretending’ that we are good people”  - Woody Zuill
 
 ### Actionable guidelines
+*a.k.a. The other hard ones*
 
 #### Don’t waste time on discussing and deciding conflicting ideas. 
 
