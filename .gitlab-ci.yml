@@ -67,16 +67,17 @@ sync-to-github:
 
 build:
   stage: build
-  image: docker:git
-  services:
-  - docker:dind
-  variables:
-    DOCKER_DRIVER: overlay2
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  only:
+    - master
   script:
-    - setup_docker
-    - build
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE
   only:
     - branches
+
 
 review:
   stage: review
@@ -334,15 +335,6 @@ production:
     kubectl version --client
   }
 
-  function setup_docker() {
-    if ! docker info &>/dev/null; then
-      if [ -z "$DOCKER_HOST" -a "$KUBERNETES_PORT" ]; then
-        export DOCKER_HOST='tcp://localhost:2375'
-      fi
-    fi
-  }
-
-
   function setup_test_db() {
     if [ -z ${KUBERNETES_PORT+x} ]; then
       DB_HOST=postgres
@@ -389,35 +381,6 @@ production:
     else
       true
     fi
-  }
-
-  function build() {
-    if [[ -f Dockerfile ]]; then
-      echo "Building Dockerfile-based application..."
-      docker build -t "$CI_APPLICATION_REPOSITORY:$CI_APPLICATION_TAG" .
-    else
-      echo "Building Heroku-based application using gliderlabs/herokuish docker image..."
-      docker run -i --name="$CI_CONTAINER_NAME" -v "$(pwd):/tmp/app:ro" gliderlabs/herokuish /bin/herokuish buildpack build
-      docker commit "$CI_CONTAINER_NAME" "$CI_APPLICATION_REPOSITORY:$CI_APPLICATION_TAG"
-      docker rm "$CI_CONTAINER_NAME" >/dev/null
-      echo ""
-
-      echo "Configuring $CI_APPLICATION_REPOSITORY:$CI_APPLICATION_TAG docker image..."
-      docker create --expose 5000 --env PORT=5000 --name="$CI_CONTAINER_NAME" "$CI_APPLICATION_REPOSITORY:$CI_APPLICATION_TAG" /bin/herokuish procfile start web
-      docker commit "$CI_CONTAINER_NAME" "$CI_APPLICATION_REPOSITORY:$CI_APPLICATION_TAG"
-      docker rm "$CI_CONTAINER_NAME" >/dev/null
-      echo ""
-    fi
-
-    if [[ -n "$CI_REGISTRY_USER" ]]; then
-      echo "Logging to GitLab Container Registry with CI credentials..."
-      docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
-      echo ""
-    fi
-
-    echo "Pushing to GitLab Container Registry..."
-    docker push "$CI_APPLICATION_REPOSITORY:$CI_APPLICATION_TAG"
-    echo ""
   }
 
   function install_tiller() {
