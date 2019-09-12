@@ -1,11 +1,14 @@
 ---
 layout: post
 author: guido
-title: The anemic domain model
-header-img: "img/posts/anemic/anemicDomainModel.jpg"
-image: "img/posts/anemic/anemicDomainModel.jpg"
-tags: DDD, Software development
-excerpt: "In this blog post i will discuss the anemic domain model pattern in the context of an object oriented language. I'll explain what the anemic domain model is, what it isn't, how i view it. I'll make use of a code example written in java and tested with cucumber."
+title: "The anemic domain model"
+tags: DDD, Software development, anemic
+excerpt: The anemic domain model pattern, with OO languages, is one of the most encountered "patterns". Yet it is considered an anti-pattern by many, despite it being so prevalent. What is it exactly? What are the arguments pro and con? How does it look in code? And what is my opinion on it?
+hideLogo: true
+spotlight:
+  imgDir: /img/posts/anemic
+  imgAlt: "Triple D : Design, Develop, Deploy"
+  logoAnimation: false
 ---
 
 # The anemic domain model
