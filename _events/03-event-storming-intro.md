@@ -18,3 +18,8 @@ In this workshop we will learn big picture event storming and process modelling.
 + Hands-on exercise of a big picture event storming session
 + Hands-on process modelling using event storming.
 
+
+## Sounds great
+
+So let's talk! send us your inquiries and we will be in touch 
+[contact Triple D](/contact/)

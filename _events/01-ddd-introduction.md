@@ -36,10 +36,16 @@ In addition to the core concepts this introduction dives into the strategic conc
 
 **Intended audience**
 
-This introduction also handles the core concepts of DDD. But it dives into the tactical desighn patterns. Which makes it more suited for Developers. 
+This introduction also handles the core concepts of DDD. But it dives into the tactical design patterns. Which makes it more suited for Developers. 
 
 ### Contents
 
 + DDD Core Concepts
 + Tactical design patterns 
 + Hexagonal architecture
+
+
+## Sounds great
+
+So let's talk! send us your inquiries and we will be in touch 
+[contact Triple D](/contact/)

@@ -22,7 +22,9 @@ After our introduction into the SOLID principles, we will guide you while buildi
 This course will be hands-on, so coding experience will be needed. We provide you with an initial code base to start from and at the end of the course we hope to have a somewhat working application.
 
 ## Duration
-This course takes at minimum 1 day, 2 days is even better, this allows us to go more in depth during the hands-on sessions. Obviously, we can tailor the contents of this course to better suit your needs. Did we mention we also give workshops on other topics? Maybe a combination would suit your organization better, [contact us](mailto:info@tripled.io), and let's see how we can help you!
+This course takes at minimum 1 day, 2 days is even better, this allows us to go more in depth during the hands-on sessions. Obviously, we can tailor the contents of this course to better suit your needs. Did we mention we also give workshops on other topics? Maybe a combination would suit your organization better, [contact us](/contact/), and let's see how we can help you!
 
-## Pricing
-Let's talk! send your inquiries to [info@tripled.io](mailto:info@tripled.io)
+## Sounds great
+
+So let's talk! send us your inquiries and we will be in touch 
+[contact Triple D](/contact/)
