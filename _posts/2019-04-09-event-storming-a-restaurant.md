@@ -2,10 +2,13 @@
 layout: post
 title: "Event Storming a restaurant"
 author: guido
-header-img: "img/posts/events-restaurant/kenny-luo-640784-unsplash.jpg"
-image: "img/logo-alt.png"
 tags: java, software, DDD
-excerpt: "Most people that use event storming use it for gathering the \"Big Picture\". I see it used much less for modelling out solutions to concrete problems. That's why, in this blog post, I will try to demonstrate the power and usefulness of Event Storming for modelling out solutions. By using some simple building blocks, event storming allows us to model out complex systems rapidly. Without the need for very strict standardization. No BPMN knowledge required."
+excerpt: "Most people that use event storming use it for gathering the \"Big Picture\". But it can also be used for modelling out solutions to concrete problems. This blog post, I will try to demonstrate the power and usefulness of Event Storming for modelling out solutions. By using some simple building blocks, event storming allows us to model out complex systems rapidly. Without the need for very strict standardization."
+spotlight:
+  imgDir: /img/posts/events-restaurant/
+  imgAlt: "Triple D : Design, Develop, Deploy"
+  logoAnimation: false
+
 ---
 # Event Storming a restaurant
 
