@@ -1,7 +1,7 @@
 ---
 layout: event
 slug: DDD introduction
-subTitle: By Guido Deschamps
+subTitle: By Guido Dechamps
 youtubeUrl: "https://www.youtube.com/embed/yPvef9R3k-M"
 teaser: "Domain Driven Design is a vast topic. We offer introductional sessions with different flavors depending on the intended audience"
 
