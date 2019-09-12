@@ -113,11 +113,11 @@ I took the above straight from the Mob programming book. They are short and easy
 ### Actionable guidelines
 *a.k.a. The other hard ones*
 
-#### Don’t waste time on discussing and deciding conflicting ideas. 
+##### Don’t waste time on discussing and deciding conflicting ideas. 
 
 We should do/ act on different ideas. See what works by doing it. Model multiple solutions out. Discuss on concretes.
 
-#### Visualize things. 
+##### Visualize things. 
 
 ![Visualize](/img/posts/communication/drawing-whiteboard.jpg "Don't fear the whietboard"){:width="500px" : .center-image}
 
