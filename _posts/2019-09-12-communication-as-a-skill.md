@@ -118,7 +118,7 @@ I took the above straight from the Mob programming book. They are short and easy
 The best way to resolve conflicting ideas is to **act** upon them. 
 + See what works by doing it. 
 + Model multiple solutions out. 
-+Discuss on concretes.
++ Discuss on concretes.
 
 ![Visualize at the whiteboard](/img/posts/communication/triple-d-mob-yves-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 
