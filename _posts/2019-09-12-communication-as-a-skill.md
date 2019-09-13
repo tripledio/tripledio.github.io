@@ -115,12 +115,13 @@ I took the above straight from the Mob programming book. They are short and easy
 
 ##### Don’t waste time on discussing and deciding conflicting ideas. 
 
+![Visualize at the whiteboard](/img/posts/communication/triple-d-mob-yves-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
+
 The best way to resolve conflicting ideas is to act upon them. See what works by doing it. Model multiple solutions out. Discuss on concretes.
 
 ##### Visualize things. 
 
 ![Visualize](/img/posts/communication/drawing-whiteboard.jpg "Don't fear the whiteboard"){:width="500px" : .center-image}
-
 
 Make a drawing, use post-its. Make it clear what we are discussing and where we are in the discussion. 
 
@@ -131,16 +132,15 @@ When we are discussing against a visualization
 + It isn’t personal. We are discussing a representation, not each other. This makes it often less offensive to disagree.
 + it brings focus and clarity
 
-![Visualize at the whiteboard](/img/posts/communication/triple-d-mob-yves-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 
 ## Conclusion
 
 Solving technical issues is hard. But so is communication efficiently and productively. Do not neglect this skill. Just like with everything, it is something that we can get better at by paying attention to it. Good communication is important enough to do so...
 
 ![Mob 1](/img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"){:width="500px" : .center-image}
-![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 ![Mob 3](/img/posts/communication/triple-d-mob-sander.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 ![Mob 4](/img/posts/communication/triple-d-mob-yves.jpg "Triple D on a learning day"){:width="500px" : .center-image}
+![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 
 *Triple D during a learning day. Practising communication skills as well as engineering skills*
 
