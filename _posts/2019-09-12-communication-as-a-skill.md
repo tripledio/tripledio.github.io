@@ -97,11 +97,11 @@ After the anti-patterns, I like to offer some guidelines that can help us in bec
 *a.k.a. The hard ones to master*
 
 
-##### Kindness
+#### Kindness
 Be gentle and polite. Show concern for others. Value their opinions.
-##### Consideration
+#### Consideration
 Be humble. Our own idea is just one idea. Really consider other ideas
-##### Respect
+#### Respect
 + We can respectfully disagree. 
 + Don’t attack other people’s self-esteem.
 + No bullying other people into silence 
@@ -113,13 +113,13 @@ I took the above straight from the Mob programming book. They are short and easy
 ### Actionable guidelines
 *a.k.a. The other hard ones*
 
-##### Don’t waste time on discussing and deciding conflicting ideas. 
+#### Don’t waste time on discussing and deciding conflicting ideas. 
 
 ![Visualize at the whiteboard](/img/posts/communication/triple-d-mob-yves-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
 
 The best way to resolve conflicting ideas is to act upon them. See what works by doing it. Model multiple solutions out. Discuss on concretes.
 
-##### Visualize things. 
+#### Visualize things. 
 
 ![Visualize](/img/posts/communication/drawing-whiteboard.jpg "Don't fear the whiteboard"){:width="500px" : .center-image}
 
