@@ -12,19 +12,19 @@ spotlight:
 ---
 # Communication is a skill
 
-Being able to have a productive discussion is an important skill to have. Although everyone (hopefully) tries to reduce the boring bureaucratic meetings as much as possible, we still need to sit together with our fellow team members and colleagues to discuss, refine and agree on how we will build and integrate our software.
+Being able to have a productive discussion is an important skill to have. Of course we all try to reduce the boring bureaucratic meetings as much as possible. But we still need to sit together with our fellow team members and colleagues to discuss, refine and agree on how we will build and integrate our software.
 
-As software engineers, we are constantly learning new technologies, new techniques. People resumes are more often than not a list of hard technical skill that they have mastered. However, engineers rarely take the time to improve their communication skills. Conway's law taught us the correlation between software design and people interactions. So if we want to develop good software, the interactions of the people that are building it matter. A lot. How they communicate with each other is important. It is a skill just like any other. So how can we get better at it?
+As software engineers, we are constantly learning new technologies, new techniques. People their resumes are more often than not a list of hard technical skill that they have mastered. However, engineers rarely take the time to improve their communication skills. Conway's law taught us the correlation between software design and people interactions. So if we want to develop good software, the interactions of the people that are building it really does matter. A lot. How they communicate with each other is important. It is a skill just like any other. So how can we get better at it?
 
 ## Does this matter for a software engineer?
 
-In and outside of meetings we are constantly in communication with each other. So you might think that you have mastered this from daily practice and don't need to spend any time on it. Communication and collaboration is something we all do every day and we are good at it. But I would beg to differ...
+In and outside of meetings we are constantly in communication with each other. So you might think that you have mastered this from daily practice and don't need to spend any time on improving those skills. Communication and collaboration is something that we do every day, so we assume that we are good at it. But I fear that we overestimate our level at effective communication.
 
 No doubt we all have been in some very unproductive discussions where conflicting interests and opinions collide, where a lot of time is wasted with little to show for, except some frustration and possible bad feelings towards each other. Meetings and discussions aren't productive or efficient by chance. There is a reason people often try to avoid them. 
   
 Those inefficient discussions are something that I have started to pay a lot of attention to, in the last couple of years. And once you see the patterns, it is hard to unsee them. It becomes all the more apparent what a blocker they often are for the quality of our software, the speed with which we deliver it, how much time and money gets wasted and how much grievances these unproductive discussions lead to. 
 
-So having productive discussions is important. And experience has shown me that it isn’t something that happens from itself. It is something one needs to work on and pay attention to.  You could, of course, spend your valuable time on something other than a blog post on communication. This certainly won't gain you the same bragging rights as having read the latest shiny object article. But I would argue it is a skill that will have more impact on your efficiency as a software engineer then that new hip framework.
+So having productive discussions is important. Experience has shown me that it isn’t something that happens from itself. It is something one needs to work on and pay attention to.  You could, of course, spend your valuable time on something else than a blog post on communication. This certainly won't gain you the same bragging rights as having read the latest shiny object article. But I would argue it is a skill that will have more impact on your efficiency as a software engineer then that new fancy framework.
 
 
 ## Anti Patterns
@@ -36,7 +36,7 @@ Let me start by listing some - what I call - anti-patterns of having a productiv
 + **Getting sidetracked**: Jumping from one topic to another makes it hard to follow and nothing gets finished. 
 + **Going depth-first instead breath first** Discussing details in depth before the bigger global picture is clear
 + **Not listening** Talking next to each other and not really listening. Just waiting until someone else has stopped talking
-+ **No visualization** People fear the whiteboard.
++ **No visualization** People fearing the whiteboard.
 + **Limited engagement** Only a small percentage of the group is engaged: This is a great tell sign that de discussion has gone off the rails. If a large part of the group is no longer actively listening, this should be a sign that something is going wrong.
 + [**Ego**](/26/06/2018/LocalHero##ego): Of course. The always present elephant in the room. You are not your solution. Let it go.
 
@@ -61,7 +61,7 @@ By adding our solutions or suggestions non-stop to the discussion, we think we�
 
 **Keep it to yourselves**
 
-Let people realize a possible error themselves. Refrain from prematurely adding noise. You may be right, they may be right. Let it play out.  It will often go faster, with less confusion and better insights for all at the end. We don’t need to have a consensus on every detail. Perhaps it is not even important in the big picture. So, keep it to yourself. This is hard by the way :-) 
+Let people realize a possible error themselves. Refrain from prematurely adding noise. You may be right, they may be right. Let it play out.  It will often go faster, with less confusion and better understanding for everyone. We don’t need to have a consensus on every detail. Perhaps it is not even important in the big picture. So, keep it to yourself. This is hard by the way :-) 
 
 >>“Often, we are just adding noise. Can we keep it to ourselves?” - Woody Zuill
 
@@ -115,15 +115,15 @@ I took the above straight from the Mob programming book. They are short and easy
 
 ##### Don’t waste time on discussing and deciding conflicting ideas. 
 
-We should do/ act on different ideas. See what works by doing it. Model multiple solutions out. Discuss on concretes.
+The best way to resolve conflicting ideas is to act upon them. See what works by doing it. Model multiple solutions out. Discuss on concretes.
 
 ##### Visualize things. 
 
-![Visualize](/img/posts/communication/drawing-whiteboard.jpg "Don't fear the whietboard"){:width="500px" : .center-image}
+![Visualize](/img/posts/communication/drawing-whiteboard.jpg "Don't fear the whiteboard"){:width="500px" : .center-image}
 
 Make a drawing, use post-its. Make it clear what we are discussing and where we are in the discussion. 
 
-Letting go of the keyboard, or being the first one in a meeting to step up is a big hurdle to take. People seem to think it is not worth the effort, or maybe fear the attention. But visualizing the topic we are discussing can greatly increase the efficiency of the discussion, speed up the process and helps in aiding sure everyone is talking about the same thing.
+Letting go of the keyboard, or being the first one in a meeting to step up is a big hurdle to take. People seem to think it is not worth the effort, or maybe fear the attention. But visualizing the topic we are discussing can greatly increase the efficiency of the discussion, speed up the process and making sure that everyone is talking about the same thing.
 
 When we are discussing against a visualization 
 + it reduces the cognitive overload
