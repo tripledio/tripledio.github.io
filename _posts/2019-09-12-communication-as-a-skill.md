@@ -137,12 +137,12 @@ When we are discussing against a visualization
 
 Solving technical issues is hard. But so is communication efficiently and productively. Do not neglect this skill. Just like with everything, it is something that we can get better at by paying attention to it. Good communication is important enough to do so...
 
-![Mob 1](/img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"){:width=500px : .center-image; margin=10px;}
-![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width=500px : .center-image;  margin=10px;}
-![Mob 3](/img/posts/communication/triple-d-mob-sander.jpg "Triple D on a learning day"){:width=500px : .center-image;  margin=10px;}
-![Mob 4](/img/posts/communication/triple-d-mob-yves.jpg "Triple D on a learning day"){:width=500px : .center-image;  margin=10px;}
+![Mob 1](/img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"){:width="500px" : .center-image; margin=10px;}
+![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width="500px" : .center-image;  margin=10px;}
+![Mob 3](/img/posts/communication/triple-d-mob-sander.jpg "Triple D on a learning day"){:width="500px" : .center-image;  margin=10px;}
+![Mob 4](/img/posts/communication/triple-d-mob-yves.jpg "Triple D on a learning day"){:width="500px" : .center-image;  margin=10px;}
 
-*Triple D during a learning day. Practising communication skills as well as engineering skills* {: style=color:red}
+Triple D during a learning day. Practising communication skills as well as engineering skills{: style=color:red}
 
 ***
 
