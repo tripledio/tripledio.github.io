@@ -142,7 +142,7 @@ Solving technical issues is hard. But so is communication efficiently and produc
 ![Mob 3](/img/posts/communication/triple-d-mob-sander.jpg "Triple D on a learning day"){:width="500px" : .center-image;  margin=10px;}
 ![Mob 4](/img/posts/communication/triple-d-mob-yves.jpg "Triple D on a learning day"){:width="500px" : .center-image;  margin=10px;}
 
-Triple D during a learning day. Practising communication skills as well as engineering skills{: style=color:red}
+<p style="text-align: center;">*Triple D during a learning day. Practising communication skills as well as engineering skills*</p>
 
 ***
 
