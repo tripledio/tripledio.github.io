@@ -108,7 +108,7 @@ Apart from domain events, there are also other DDD building blocks that can take
 | projections | A data transformation that builds a read model from events.|Data Transformation logic| 
 | read models | Information that is presented to a user to make a decision|Data|
 | policies | Global business rules. "When X happens then trigger Y" | Orchestration logic|
-| systems | Something under our control that executes a command. **Can** be an aggregate,actor|Actionable logic|
+| systems | Something under our control that executes a command. **Can** be an aggregate, actor,...|Actionable logic|
 | external system | Something not under our control that executes commands.|Actionable logic|
 | UI | The typical portal from the real world to the software systems. The way by which the user can read models and trigger commands in a software world. |Interface to data and actions|
 
@@ -188,7 +188,7 @@ Policies are something that is often not modelled out explicitly. But notice how
 
 For instance, when we modify the policy rule from
 
-*When the customer is done eating, then the customer must pay* to *When the customer has ordered, then the customer must pay*
+"*When the customer is done eating, then the customer must pay*" to "*When the customer has ordered, then the customer must pay*"
 
 we radically have changed the way our restaurant functions. We went from a restaurant for dining, where one pays at the end. To a fast dining restaurant where you pay up front, allowing for faster change of customers.
 
