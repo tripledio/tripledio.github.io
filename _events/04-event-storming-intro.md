@@ -10,7 +10,7 @@ teaser: "This engaging quick paced workshop will let you discover how event stor
 
 Event Storming is a deceptively simple yet powerful technique, originating from the DDD community. It is easy to start with and can be used for different purposes. We offer a crash course in Event Storming so you can immediately start using and learning this technique for yourselves. 
 
-For additional information see our blog post: [Event storming a restaurant](09/04/2019/event-storming-a-restaurant/).*
+For additional information see our blog post: [Event storming a restaurant](../09/04/2019/event-storming-a-restaurant/).*
 
 ## Contents
 
