@@ -3,14 +3,13 @@ layout: event
 slug: DDD introduction
 subTitle: By Guido Dechamps
 youtubeUrl: "https://www.youtube.com/embed/yPvef9R3k-M"
-teaser: "Domain Driven Design is a vast topic. We offer introductional sessions with different flavors depending on the intended audience"
+teaser: "Domain Driven Design is a vast topic and can sometimes be overwhelming. We offer introductory sessions with different flavors depending on the intended audience to gain a good understanding of the core concepts and their importance"
 
 ---
 
 # Domain driven design introduction.
 
-Domain Driven Design is a vast topic, containing many different techniques. We offer some short introductionary sessions that explain the core conceptys of DDD and why they are important. We offer the sessions in different flavors. Each session is a four hour gentle introduction. These introductionary sessions contain no coding. Although some exercises will be done.
-All of these introductions thoroughly explain the core concepts of DDD
+Domain Driven Design is a vast topic, containing many different techniques. Next to deep workshops, we offer introductionary sessions that explain the core conceptys of DDD and why they are important. These sessions come in different flavors. Each session is a four hour gentle introduction. These introductory sessions contain no coding, although some exercises will be done, but are aimed at gaining a thorough understanding of the core concepts of DDD
 
 **DDD Core Concepts**
 + Domains and sub-domains (core/sup/gen)
