@@ -283,6 +283,7 @@ production:
       --set image.tag="$CI_APPLICATION_TAG" \
       --set image.pullPolicy=IfNotPresent \
       --set ingress.host="$CI_ENVIRONMENT_URL" \
+      --set nameOverride="$name" \
       --namespace="$KUBE_NAMESPACE" \
       --version="$CI_PIPELINE_ID-$CI_JOB_ID" \
       "$name" \
@@ -296,6 +297,7 @@ production:
       --set image.tag="$CI_APPLICATION_TAG" \
       --set image.pullPolicy=IfNotPresent \
       --set ingress.host="$CI_ENVIRONMENT_URL" \
+      --set nameOverride="$name" \
       --namespace="$KUBE_NAMESPACE" \
       --version="$CI_PIPELINE_ID-$CI_JOB_ID" \
       "$name" \
