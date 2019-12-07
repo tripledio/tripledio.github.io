@@ -94,6 +94,7 @@ review:
          -n
          -X POST $SLACK_URL
          --data-urlencode 'payload={"channel": "#blog", "text": "Review branch is availabe on '"$CI_ENVIRONMENT_URL"' for branch '"$CI_COMMIT_REF_NAME"'"}'
+    - echo "$CI_ENVIRONMENT_URL" > env-url
 
   environment:
     name: review/$CI_COMMIT_REF_NAME
@@ -105,6 +106,10 @@ review:
     kubernetes: active
   except:
     - master
+  artifacts:
+    paths:
+      - env-url
+    expire_in: 1 days
 
 linkChecker:
   stage: check
@@ -112,10 +117,8 @@ linkChecker:
       name: linkchecker/linkchecker
       entrypoint: [""]
   script:
-      - loopLinckChecker https://$CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_SLUG.$AUTO_DEVOPS_DOMAIN
-   #This is merely an indicator for gitlab so the necessary variables are passed on to this job
-  environment:
-      name: review/$CI_COMMIT_REF_NAME
+      - export ENV_URL=$(cat env-url)
+      - loopLinckChecker $ENV_URL
   only:
     refs:
       - branches
