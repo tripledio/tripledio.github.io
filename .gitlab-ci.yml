@@ -282,15 +282,7 @@ production:
       --set image.repository="$CI_APPLICATION_REPOSITORY" \
       --set image.tag="$CI_APPLICATION_TAG" \
       --set image.pullPolicy=IfNotPresent \
-      --set application.track="$track" \
-      --set application.database_url="$DATABASE_URL" \
-      --set service.url="$CI_ENVIRONMENT_URL" \
-      --set replicaCount="$replicas" \
-      --set postgresql.enabled="$postgres_enabled" \
-      --set postgresql.nameOverride="postgres" \
-      --set postgresql.postgresUser="$POSTGRES_USER" \
-      --set postgresql.postgresPassword="$POSTGRES_PASSWORD" \
-      --set postgresql.postgresDatabase="$POSTGRES_DB" \
+      --set ingress.host="$CI_ENVIRONMENT_URL" \
       --namespace="$KUBE_NAMESPACE" \
       --version="$CI_PIPELINE_ID-$CI_JOB_ID" \
       "$name" \
@@ -303,15 +295,7 @@ production:
       --set image.repository="$CI_APPLICATION_REPOSITORY" \
       --set image.tag="$CI_APPLICATION_TAG" \
       --set image.pullPolicy=IfNotPresent \
-      --set application.track="$track" \
-      --set application.database_url="$DATABASE_URL" \
-      --set service.url="$CI_ENVIRONMENT_URL" \
-      --set replicaCount="$replicas" \
-      --set postgresql.enabled="$postgres_enabled" \
-      --set postgresql.nameOverride="postgres" \
-      --set postgresql.postgresUser="$POSTGRES_USER" \
-      --set postgresql.postgresPassword="$POSTGRES_PASSWORD" \
-      --set postgresql.postgresDatabase="$POSTGRES_DB" \
+      --set ingress.host="$CI_ENVIRONMENT_URL" \
       --namespace="$KUBE_NAMESPACE" \
       --version="$CI_PIPELINE_ID-$CI_JOB_ID" \
       "$name" \
