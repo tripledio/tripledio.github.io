@@ -213,7 +213,7 @@ production:
     - deploy
     - delete canary
   environment:
-    name: production
+    name: production-blog
     url: https://$CI_PROJECT_PATH_SLUG.$AUTO_DEVOPS_DOMAIN
 #  when: manual
   only:
