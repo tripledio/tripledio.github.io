@@ -85,7 +85,6 @@ review:
     - mkdir -p ~/.kube/
     - check_kube_domain
     - install_dependencies
-    - download_chart
     - ensure_namespace
     - install_tiller
     - create_secret
@@ -295,7 +294,7 @@ production:
       --namespace="$KUBE_NAMESPACE" \
       --version="$CI_PIPELINE_ID-$CI_JOB_ID" \
       "$name" \
-      chart/
+      helm/
 
     helm upgrade --install \
       --wait \
@@ -316,7 +315,7 @@ production:
       --namespace="$KUBE_NAMESPACE" \
       --version="$CI_PIPELINE_ID-$CI_JOB_ID" \
       "$name" \
-      chart/
+      helm/
   }
 
   function install_dependencies() {
@@ -342,29 +341,6 @@ production:
       DB_HOST=localhost
     fi
     export DATABASE_URL="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:5432/${POSTGRES_DB}"
-  }
-
-  function download_chart() {
-    if [[ ! -d chart ]]; then
-      auto_chart=${AUTO_DEVOPS_CHART:-gitlab/auto-deploy-app}
-      auto_chart_name=$(basename $auto_chart)
-      auto_chart_name=${auto_chart_name%.tgz}
-    else
-      auto_chart="chart"
-      auto_chart_name="chart"
-    fi
-
-    helm init --client-only
-    helm repo add gitlab https://charts.gitlab.io
-    if [[ ! -d "$auto_chart" ]]; then
-      helm fetch ${auto_chart} --untar
-    fi
-    if [ "$auto_chart_name" != "chart" ]; then
-      mv ${auto_chart_name} chart
-    fi
-
-    helm dependency update chart/
-    helm dependency build chart/
   }
 
   function ensure_namespace() {
