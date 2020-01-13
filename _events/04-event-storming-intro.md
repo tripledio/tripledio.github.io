@@ -1,7 +1,6 @@
 ---
 layout: event
 slug: Event storming introduction
-subTitle: By Guido Dechamps
 teaser: "This engaging quick paced workshop will let you discover how event storming works."
 
 ---
@@ -12,7 +11,7 @@ Event Storming is a deceptively simple yet powerful technique, originating from 
 
 For additional information see our blog post: [Event storming a restaurant](../09/04/2019/event-storming-a-restaurant/).*
 
-## Contents
+### Contents
 
 In this workshop we will learn big picture event storming and process modelling.
 
@@ -20,12 +19,12 @@ In this workshop we will learn big picture event storming and process modelling.
 + Hands-on exercise of a big picture event storming session
 + Hands-on process modelling using event storming.
 
-**Intended audience**
+#### Intended audience
 
 Everyone who is involved in the software development process. One doesn't need to be technical to apply this technique and gain value from it. 
 
 
-## Sounds great
+### Sounds great
 
 So let's talk! send us your inquiries and we will be in touch 
 [contact Triple D](/contact/)
