@@ -9,7 +9,7 @@ teaser: "DDD is practical. And this workshop aims to demonstrate just that. We w
 
 In this 2-3 day workshop we will start applying a variety of domain driven design techniques in order to develop our software. Starting from a case study we will distill our user stories, design and implement our software in a DDD way. This is a full hands-on development workshop so bring you laptop with your favorite language, IDEA.
 
-![DDD Conf](/img/courses/DDD-conf.jpg)
+![DDD Conf](/img/courses/ddd-presentation.jpg)
 
 ## Agenda
 

@@ -11,7 +11,7 @@ Event Storming is a deceptively simple yet powerful technique, originating from 
 
 For additional information see our blog post: [Event storming a restaurant](../09/04/2019/event-storming-a-restaurant/).*
 
-![Event Storming](/img/courses/Eventstorming-workshop.jpg)
+![Event Storming](/img/courses/event-storming-workshop.jpg)
 
 ### Contents
 

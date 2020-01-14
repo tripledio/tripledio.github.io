@@ -18,7 +18,7 @@ Domain Driven Design is a vast topic, containing many different techniques. Next
 
 ### Strategic design using DDD
 
-![DDD Conf](/img/courses/DDD-ContextMap-Presentation.jpg)
+![DDD Conf](/img/courses/context-map-presentation.jpg)
 
 #### Intended audience
 
@@ -36,7 +36,7 @@ In addition to the core concepts this introduction dives into the strategic conc
 
 ### Tactical design using DDD.
 
-![DDD Aggregates](/img/courses/DDD-Aggregate-Presentation.jpg)
+![DDD Aggregates](/img/courses/aggregate-presentation.jpg)
 
 #### Intended audience
 
