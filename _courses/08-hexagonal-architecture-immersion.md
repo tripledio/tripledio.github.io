@@ -17,6 +17,8 @@ After our introduction into the SOLID principles, we will guide you while buildi
 + Component design
 + Ports and Adapters 
 
+![Hexagonal](/img/courses/hexagonal-presentation.jpg)
+
 ## Intended audience
 This course will be hands-on, so coding experience will be needed. We provide you with an initial code base to start from and at the end of the course we hope to have a somewhat working application.
 

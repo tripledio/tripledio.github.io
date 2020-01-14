@@ -19,7 +19,7 @@ For additional information see our blog post: [Event storming a restaurant](../0
 + Domain modelling using event storming.
 + Use event storming for discovering bounded contexts, ubiquitous language and aggregates
 
-![Event Storming](/img/courses/Eventstorming-workshop.jpg)
+![Event Storming](/img/courses/event-storming-types.jpeg)
 
 #### Intended audience
 
