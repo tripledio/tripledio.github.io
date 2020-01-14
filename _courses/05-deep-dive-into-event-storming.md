@@ -1,21 +1,25 @@
 ---
-layout: event
-slug: Deep dive into Event Storming
+layout: course
+slug: Deep dive into Event Storming workshop
 teaser: "This workshop will teach you how to use event storming for tackling different problems. Including how to design your software."
 
 ---
 
-# Deep dive into event storming.
+# Deep dive into event storming workshop
 
 Event Storming is a deceptively simple yet powerful technique, originating from the DDD community. It is easy to start with and can be used for different purposes. We offer a deep course in Event Storming so you are confident in applying this technique for a variety of problems.. 
 
 For additional information see our blog post: [Event storming a restaurant](../09/04/2019/event-storming-a-restaurant/).*
+
+
 
 ### Contents
 + How to facilitate big picture event storming.
 + How to use process modelling to discover processes and aggregates.
 + Domain modelling using event storming.
 + Use event storming for discovering bounded contexts, ubiquitous language and aggregates
+
+![Event Storming](/img/courses/Eventstorming-workshop.jpg)
 
 #### Intended audience
 

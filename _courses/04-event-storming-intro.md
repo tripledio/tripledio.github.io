@@ -1,15 +1,17 @@
 ---
-layout: event
-slug: Event storming introduction
+layout: course
+slug: Event storming introduction workshop
 teaser: "This engaging quick paced workshop will let you discover how event storming works."
 
 ---
 
-# Event storming introduction.
+# Event storming introduction workshop
 
 Event Storming is a deceptively simple yet powerful technique, originating from the DDD community. It is easy to start with and can be used for different purposes. We offer a crash course in Event Storming so you can immediately start using and learning this technique for yourselves. 
 
 For additional information see our blog post: [Event storming a restaurant](../09/04/2019/event-storming-a-restaurant/).*
+
+![Event Storming](/img/courses/Eventstorming-workshop.jpg)
 
 ### Contents
 

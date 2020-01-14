@@ -1,5 +1,5 @@
 ---
-layout: event
+layout: course
 slug: Practical DDD Workshop
 teaser: "DDD is practical. And this workshop aims to demonstrate just that. We will teach you how to apply Domain Driven Design for everyday software development, creating quality domain models hat are worth their investment"
 
@@ -8,6 +8,8 @@ teaser: "DDD is practical. And this workshop aims to demonstrate just that. We w
 # Practical Domain Driven Design Workshop
 
 In this 2-3 day workshop we will start applying a variety of domain driven design techniques in order to develop our software. Starting from a case study we will distill our user stories, design and implement our software in a DDD way. This is a full hands-on development workshop so bring you laptop with your favorite language, IDEA.
+
+![DDD Conf](/img/courses/DDD-conf.jpg)
 
 ## Agenda
 

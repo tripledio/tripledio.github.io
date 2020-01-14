@@ -1,6 +1,6 @@
 ---
-layout: event
-slug: Hexagonal Architecture immersion
+layout: course
+slug: Hexagonal Architecture immersion course
 teaser: "In today's world software gets written at an incredible pace. Every day, new software is put in production all over the world. However, as time progresses we realize that maintaining that code becomes harder and harder. Why is that? What makes this software so hard to maintain?"
 
 ---

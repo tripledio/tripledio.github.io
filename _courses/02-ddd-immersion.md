@@ -1,13 +1,15 @@
 ---
-layout: event
-slug: Deep immersion into Domain Driven Design 
+layout: course
+slug: DDD Deep immersion course 
 teaser: "For those who mean business, we offer an in depth two day workshop on Domain Driven Design where we cover all the basics in depth."
 ---
 
-# Domain Driven Design immersion  
+# Domain Driven Design Deep Immersion Course  
 
 With the emergence of the micro-services architecture, Domain Driven Design has stepped back into the spotlight. Many of its concepts and techniques proved to be of even more importance in the micro-services, cloud oriented, serverless world. For this we offer an in depth two day immersion course into Domain Driven Design where we will thoroughly explain and practice
 the core concepts and techniques. 
+
+![DDD Building blocks](/img/courses/DDD-BuildingBlocks-Presentation.jpg)
 
 ### Contents
 

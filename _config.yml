@@ -15,7 +15,7 @@ twitter:
 linkedin:
     username: triple-d-io
 collections:
-    events:
+    courses:
         output: true
         permalink: /:collection/:title
 # Build settings
