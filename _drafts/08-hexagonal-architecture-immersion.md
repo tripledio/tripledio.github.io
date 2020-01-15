@@ -1,14 +1,15 @@
 ---
 layout: course
-slug: Hexagonal Architecture immersion course
-teaser: "In today's world software gets written at an incredible pace. Every day, new software is put in production all over the world. However, as time progresses we realize that maintaining that code becomes harder and harder. Why is that? What makes this software so hard to maintain?"
+slug: Hexagonal Architecture Workshop
+teaser: "Design matters, Architecture matters."
 
 ---
 
 # Hexagonal Architecture immersion
-In today's world software gets written at an incredible pace. Every day, new software is put in production all over the world. However, as time progresses we realize that maintaining that code becomes harder and harder. Why is that? What makes this software so hard to maintain? 
+In today's world software gets written at an incredible pace. Every day, new software is put in production all over the world. However, as time progresses we realize that maintaining that code becomes harder and harder. Why is that? What makes this software so hard to maintain? The thing that enables us t go fast and **keep** going fast is good design. 
 
-This course will introduce you to the SOLID principles. These principles acts as a guidance while developing and will help you to write better code. As we progress through these principles we will start noticing that these principles apply at different levels: SOLID applied at component level becomes the basis for component design, SOLID applied at an architectural level results into clean architecture.
+In his workshop we 
+This course will introduce you to the SOLID principles and. These principles acts as a guidance while developing and will help you to write better code. As we progress through these principles we will start noticing that these principles apply at different levels: SOLID applied at component level becomes the basis for component design, SOLID applied at an architectural level results into clean architecture.
 
 After our introduction into the SOLID principles, we will guide you while building an application using the ports and adapters architecture. We will do this in a real codebase, so bring your favorite laptop, as this course will be hands-on.
 
