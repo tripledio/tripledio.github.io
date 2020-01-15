@@ -1,7 +1,7 @@
 ---
 layout: course
 slug: Hexagonal Architecture Workshop
-teaser: "Design matters, Architecture matters."
+teaser: "In this advanced workshop we will bring a lot of things together. Clean Code, SOLID principles, TDD, DDD, hexagonal architecture... Because quality matters."
 
 ---
 
@@ -9,7 +9,7 @@ teaser: "Design matters, Architecture matters."
 
 In today's world software gets written at an incredible pace. Every day, new software is put in production all over the world. However, as time progresses we realize that maintaining that code becomes harder and harder. Why is that? What makes this software so hard to maintain? The thing that enables us t go fast and **keep** going fast is good design. 
 
-In his workshop we will use Clean Code, SOLID principles, TDD, DDD and the hexagonal architecture to developing an application. We will guide you while building an application using and explaining the different techniques. We will do this in a real codebase, so bring your favorite laptop, as this course will be hands-on.
+In this workshop we will use Clean Code, SOLID principles, TDD, DDD and the hexagonal architecture to developing an application. We will guide you while building an application using and explaining the different techniques. We will do this in a real codebase, so bring your favorite laptop, as this course will be hands-on.
 
 ## Contents
 + Clean Code
