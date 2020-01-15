@@ -1,7 +1,7 @@
 ---
 layout: course
 slug: Event storming introduction workshop
-teaser: "This engaging quick paced workshop will let you discover how event storming works."
+teaser: "This engaging fast-paced workshop will let you discover how event storming works."
 
 ---
 

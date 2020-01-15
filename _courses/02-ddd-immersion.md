@@ -27,7 +27,7 @@ the core concepts and techniques.
     + CQRS
 
 
-#### Intended audience**
+#### Intended audience
 
 Anyone that has a role in the software development field.
 

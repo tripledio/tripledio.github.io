@@ -27,7 +27,7 @@ This is a hands-on course aimed at experienced developers. This course will be h
 
 ## Duration
 
-This course takes at minimum 2 days. This allows us to go more in depth during the hands-on sessions. Obviously, we can tailor the contents of this course to better suit your needs. Did we mention we also give workshops on other topics? Maybe a combination would suit your organization better, [contact us](/contact/), and let's see how we can help you!
+This course takes at minimum 2 days. This allows us to go more in-depth during the hands-on sessions. Obviously, we can tailor the contents of this course to better suit your needs. Did we mention we also give workshops on other topics? Maybe a combination would suit your organization better, [contact us](/contact/), and let's see how we can help you!
 
 ## Sounds great
 
