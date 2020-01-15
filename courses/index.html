@@ -13,9 +13,10 @@ qotd:
 
 ---
 <section id="Courses" class="pt-2 pt-md-8 pb-md-10 pb-2 bg-white text-gray">
-  <div class="col-12 col-md-8 offset-md-2 mb-2 mb-md-4">
-    <h3 class="h5 font-family-bold text-black mb-2">Our course offerings</h3>
-    <p>Besides working together with you on the job, we also love teaching. That's why we offer some courses where we teach on a certain topic. These come in the form of presentations, lessons or hands on workshops.</p>
+  <div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-center">
+    <h2 class="h3 mb-2">Our course offerings</h2>
+    <p>{{ 'Besides working together with you on the job, we also love teaching. That's why we offer some courses where we teach on a certain topic. These come in the form of presentations, lessons or hands on workshops.' | markdownify }}</p>
+    <hr class="slab center w-25">
   </div>
   <div class="container">
     {%for course in site.courses %}
