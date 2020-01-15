@@ -14,7 +14,10 @@ twitter:
     card: summary
 linkedin:
     username: triple-d-io
-
+collections:
+    courses:
+        output: true
+        permalink: /:collection/:title
 # Build settings
 markdown: kramdown
 highlighter: rouge

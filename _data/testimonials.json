@@ -4,12 +4,12 @@
     "person": "Abelson and Sussman"
   },
   {
-    "quote": "A document shouldn’t try to do what the code already does well.",
-    "person": "Eric Evans"
+    "quote": "Architecture represents the significant decisions, where significance  is measured by cost of change.",
+    "person": "Grady Booch"
   },
   {
-    "quote": "Well, you either learn or you fail.",
-    "person": "Vaughn Vernon"
+    "quote": "A document shouldn’t try to do what the code already does well.",
+    "person": "Eric Evans"
   },
   {
     "quote": "If you think good architecture is expensive, try bad architecture.",
@@ -18,5 +18,29 @@
   {
     "quote": "The quickest methods aren't always the fastest methods",
     "person": "Gordon Beeming"
+  },
+  {
+    "quote": "The quickest methods aren't always the fastest methods",
+    "person": "Gordon Beeming"
+  },
+  {
+    "quote": "The only way to go fast, is to go well",
+    "person": "Robert C. Martin"
+  },
+  {
+    "quote": "The only thing dumber than big design up front, is no design up front",
+    "person": "Simon Brown"
+  },
+  {
+    "quote": "If you can't deploy services independently, you don't have micro-services. You have a distributed monolith.",
+    "person": "Beth Skurrie"
+  },
+  {
+    "quote": "If you can't see and understand a solution. You can't evaluate it",
+    "person": "Simon brown"
+  },
+  {
+    "quote": "A good architecture rarely happens through architecture-indifferent design",
+    "person": "George Fairbanks"
   }
 ]
