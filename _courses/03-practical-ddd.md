@@ -1,4 +1,5 @@
 ---
+title: Practical DDD Workshop
 layout: course
 slug: Practical DDD Workshop
 teaser: "DDD is practical. And this workshop aims to demonstrate just that. We will teach you how to apply Domain Driven Design for everyday software development, creating quality domain models that are worth their investment"

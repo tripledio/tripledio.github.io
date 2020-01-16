@@ -1,5 +1,6 @@
 ---
 layout: course
+title: Hexagonal Architecture Workshop
 slug: Hexagonal Architecture Workshop
 teaser: "In this advanced workshop we will bring a lot of things together. Clean Code, SOLID principles, TDD, DDD, hexagonal architecture... Because quality matters."
 

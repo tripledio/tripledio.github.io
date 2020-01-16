@@ -1,4 +1,5 @@
 ---
+title: Event Storming deep dive workshop
 layout: course
 slug: Deep dive into Event Storming workshop
 teaser: "This workshop will teach you how to use event storming for tackling different problems. Including how to design your software."

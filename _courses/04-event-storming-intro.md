@@ -1,4 +1,5 @@
 ---
+title: Event storming introduction workshop
 layout: course
 slug: Event storming introduction workshop
 teaser: "This engaging fast-paced workshop will let you discover how event storming works."

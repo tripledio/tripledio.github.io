@@ -1,4 +1,5 @@
 ---
+title: DDD introduction course
 layout: course
 slug: DDD Introduction Course
 teaser: "Domain Driven Design is a vast topic and can sometimes be overwhelming. We offer introductory sessions with different flavors depending on the intended audience to gain a good understanding of the core concepts and their importance"
