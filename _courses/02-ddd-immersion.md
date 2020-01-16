@@ -1,7 +1,7 @@
 ---
 title: DDD deep immersion course
 layout: course
-slug: DDD Deep immersion course 
+slug: DDD in-depth course 
 teaser: "For those who mean business, we offer an in depth two day workshop on Domain Driven Design where we cover all the basics in depth."
 ---
 

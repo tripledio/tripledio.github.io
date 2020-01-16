@@ -1,7 +1,7 @@
 ---
 layout: course
 title: The new Product Owner Workshop
-slug: The new Product Owner Workshop
+slug: new Product Owner Workshop
 teaser: "In this workshop you will test your development skills against those of your fellow developers. Trying to deliver features at a sustainable speed. Because the only way to go fast is to go well."
 
 ---
