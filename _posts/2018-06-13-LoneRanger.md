@@ -5,6 +5,7 @@ title: "The lone ranger"
 hideLogo: true
 header-img: "img/posts/heroes/town.jpeg"
 image: "img/logo-alt.png"
+tags: Hero, software developments, teams, communication, patterns
 excerpt: "In this post I will discuss my Lone Ranger pattern, a type of human behavior of software engineers, and the impact I think it has on its surroundings. Now the lone ranger is obviously someone who mostly operates alone. Lone rangers get the job done by themselves and are counted upon to save the day. Alas, the day needs constant saving."
 ---
 

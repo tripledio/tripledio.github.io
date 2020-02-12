@@ -5,6 +5,7 @@ title: "The local hero"
 hideLogo: true
 header-img: "img/posts/heroes/hero.jpg"
 image: "img/logo-alt.png"
+tags: Hero, software developments, teams, communication, patterns
 excerpt: "Throughout these posts of mine on heroic behavior, my main metaphor has been the wild west. One of the well-known archetypes there is the famous hero gunslinger. In this post, I'll address the software equivalent of this."
 ---
 # The Local hero
