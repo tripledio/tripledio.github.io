@@ -25,7 +25,7 @@ The reason that all of this is possible with K8s is why we at Triple D think tha
 
 People familiar with uncle Bob (Robert C. Martin) will know his mantra: "high level policy, low level details". K8s allows us to define a high level policy through their api that abstracts away the low level implementation details.
 
-It's precisely this K8s service abstraction capability that i will use to integrate our external 'legacy' application. Although in K8s a service usually represents a deployment where containers are managed by k8s. In K8s i will just use an `ExternalName` to reference an existing unorchestrated external component rather than a K8s pod or daemonset.
+It's precisely this K8s service abstraction capability that I will use to integrate our external 'legacy' application. Although in K8s a service usually represents a deployment where containers are managed by k8s. In K8s I will just use an `ExternalName` to reference an existing unorchestrated external component rather than a K8s pod or daemonset.
 
 
 Below is a simple example of how this will look.
@@ -185,6 +185,6 @@ I hope you find this technique interesting and useful in your kubernetes migrati
 
 [^5]: _[helm](https://helm.sh/)_  is a K8s package manager
 
-[^6]: _[xip.io](http://xip.io)_  is a ervice that provides wildcard DNS for any IP address
+[^6]: _[xip.io](http://xip.io)_  is a service that provides wildcard DNS for any IP address
 
 [^7]: [fixer.io](http://fixer.io/) api for currency exchange
