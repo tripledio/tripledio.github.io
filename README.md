@@ -33,7 +33,7 @@ Create and start *triple-D-blog-with-drafts* container
  ```docker
  docker run --name=triple-D-blog-with-drafts -v "$PWD":/usr/src/app -v "$PWD"/_site:/_site -p 4000:4000 starefossen/github-pages jekyll serve -d /_site --watch --force_polling -H 0.0.0.0 -P 4000 --drafts
  ```
- The web site will be generated under the _site folder. That is the folder which is then hosted. 
+ The website will be generated under the _site folder. That is the folder which is then hosted. 
  
  Afterwards you can simply restart the container with the case sensitive container name. 
  
@@ -43,6 +43,7 @@ Create and start *triple-D-blog-with-drafts* container
 docker run gitlab/gitlab-runner:latest
 ``` 
 ## Running with the jekyll image instead of github-pages
+
 I got the impression this is running a lot smoother (ie no hypervisor process going nuts on your mac.)
 ```
 docker run --name jekyll --volume="$PWD:/srv/jekyll" -p 3000:4000 -it jekyll/jekyll:3.8 jekyll serve --watch --drafts --incremental
