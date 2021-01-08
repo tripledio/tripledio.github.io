@@ -347,7 +347,7 @@ production:
 
   function install_tiller() {
     echo "Checking Tiller..."
-    helm init --upgrade --history-max=5
+    helm init --upgrade --history-max=5 --stable-repo-url https://charts.helm.sh/stable
     kubectl rollout status -n "$TILLER_NAMESPACE" -w "deployment/tiller-deploy"
     if ! helm version --debug; then
       echo "Failed to init Tiller."
