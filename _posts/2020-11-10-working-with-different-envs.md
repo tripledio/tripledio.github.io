@@ -12,6 +12,8 @@ spotlight:
 ---
 # Dealing with different environments
 
+https://direnv.net/
+
 These days everyone can imagine a company where they have different environments, development, QA, staging, production, ... One of the hassles and dangers that this brings with itself is that you have to constantally switch between environments to check certain things and even in rare occasions deploy software.
 
 assume zshell
