@@ -267,7 +267,7 @@ production:
       name="$name-$track"
     fi
 
-    helm --purge delete "$name" || true
+    helm delete --purge "$name" || true
   }
 
 
