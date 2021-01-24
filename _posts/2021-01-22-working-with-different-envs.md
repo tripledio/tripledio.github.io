@@ -1,18 +1,16 @@
 ---
 layout: post
-title: "Dealing with different environments"
+title: "Working with different environments"
 author: gert
 tags: environments, devops
-excerpt: Having to deal with different environment configurations on your pc can be a hassle and dangerous.
+excerpt: Having to work with different environment configurations on your pc can be a hassle and dangerous.
 hideLogo: true
 spotlight:
   imgDir: /img/posts/environments
   imgAlt: "Triple D : Design, Develop, Deploy"
   logoAnimation: false
 ---
-# Dealing with different environments
-
-https://direnv.net/
+# Working with different environments
 
 These days everyone has known a company where they have different environments: development, QA, staging, production, ... One of the hassles and dangers that causes is that you have to constantly switch between environments to check certain things and in rare occasions modify the environments. The reason why I'm saying rare for modifications is that these should preferably happen through some sort of pipeline that has been tested on lower environments before it gets run against production.
 Almost every ITer knows of some story of accidental deletes in environments where it should not happen. Let it be deleting secrets on the wrong kubernetes cluster or dropping the incorrect databases. Of course this never happens intentionally, may it be because of a lack of sleep or some sort of distraction.
@@ -20,7 +18,7 @@ In this post I wil describe a method I have discovered recently to help in avoid
 
 ## Dir Env
 
-Dir Env allows you to load and unload environment variables based on what folder you are in. 
+[Direnv](https://direnv.net/) allows you to load and unload environment variables based on what folder you are in. 
 This sounds kind of dull right? But really it can be quite powerful. Since the industry is pushing towards infrastructure as code more and more this is perfect. Because if the infrastructure is code that means that there should also be a git repository for it and thus a folder where we can hook into.
 
 ### Use cases
