@@ -17,7 +17,7 @@ These days everyone has known a company where they have different environments: 
 One of the hassles and dangers this causes is that you have to constantly switch between environments to check certain things and in rare occasions modify the environments. 
 The reason why I'm saying rare for modifications is that these should preferably happen through some sort of pipeline that has been tested on lower environments before it gets to run against production.
 
-Almost every ITer knows of some story of accidental deletes in environments where it should not happen. Let it be deleting secrets on the wrong Kubernetes cluster or dropping the incorrect databases. Of course, this never happens intentionally, may it be because of a lack of sleep or some sort of distraction.
+Almost every ITer knows of some story of accidental deletes in environments where it should not happen. Let it be deleting secrets on the wrong [Kubernetes](https://kubernetes.io/) cluster or [Terraform](https://www.Terraform.io/) destroy. Of course, this never happens intentionally, may it be because of a lack of sleep or some sort of distraction.
 
 So with this in mind, and the incentive for continuous improvements, I set out to find a possible solution for this. In this post, I will describe what I found.
 
@@ -29,14 +29,14 @@ This sounds kind of dull right? But it can be quite powerful. Since the industry
 
 ### Use cases
 
-Let's say you are using [terraform](https://www.terraform.io/) you will probably have a directory for every environment.
-Whenever you run `terraform apply` in one of these folders terraform will take care of applying to the correct environment.
+Let's say you are using Terraform you will probably have a directory for every environment.
+Whenever you run `terraform apply` in one of these folders Terraform will take care of applying to the correct environment.
 However, whenever you want to validate anything if it was correctly created like a deployment on Kubernetes or an S3 bucket on aws you have to make sure you are targeting the correct environment. Well, remember what I said earlier about loading environment variables per folder. This is where we are going to use it when you enter the folder for the environment, direnv will load the env variables.
 Since most CLI tools can be configured with environment variables eg. *KUBECONFIG*, *AWS_PROFILE*, ... we can leverage this to point our tools to the correct environment.
 
-As another example, it can also be used for applications that are build and deployed with heroku. Since you also need to specify certain environment variables there to check or deploy applications. The token is unique per application so you could easily make direnv work with every heroku repository by setting `HEROKU_API_KEY`.
+As another example, it can also be used for applications that are build and deployed with [Heroku](https://www.heroku.com/). Since you also need to specify certain environment variables there to check or deploy applications. The token is unique per application so you could easily make direnv work with every Heroku repository by setting `HEROKU_API_KEY`.
 
-Even when you are not using a tool like terraform or heroku it's still possible you have a git repository that contains some config files or scripts for certain environments.
+Even when you are not using a tool like Terraform or Heroku it's still possible you have a git repository that contains some config files or scripts for certain environments.
 
 ### How
 
@@ -68,6 +68,7 @@ and when leaving it:
 Now, if the file has changed and it is no longer allowed direnv will print the following if you enter the folder:
 
 ![blocked](/img/posts/environments/blocked.png)
+
 ## Conclusion
 
 You can use direnv to easily couple the infrastructure as code folders with their respective environments so fewer mistakes can be made. It can also easily be shared between team members so everyone can benefit from it.
