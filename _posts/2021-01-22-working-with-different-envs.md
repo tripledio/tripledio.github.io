@@ -19,7 +19,7 @@ The reason why I'm saying rare for modifications is that these should preferably
 
 Almost every ITer knows of some story of accidental deletes in environments where it should not happen. Let it be deleting secrets on the wrong Kubernetes cluster or dropping the incorrect databases. Of course, this never happens intentionally, may it be because of a lack of sleep or some sort of distraction.
 
-In this post, I will describe a method I have discovered recently to help in avoiding all this.
+So with this in mind, and the incentive for continuous improvements, I set out to find a possible solution for this. In this post, I will describe what I found.
 
 ## Direnv
 
@@ -59,25 +59,15 @@ Since the direnv will force you to reallow the file if anything has changed this
 
 Now, whenever you enter the folder it will print the following: 
 
-```console
-➜  environments git:(main) ✗ cd development
-direnv: loading ~/Development/tripled/infra/environments/development/.envrc
-direnv: export +AWS_PROFILE ~AWS_DEFAULT_REGION ~KUBECONFIG
-```
+![entering folder](/img/posts/environments/entering.png)
 
 and when leaving it: 
 
-```console
-➜  development git:(main) ✗ cd ..
-direnv: unloading
-```
+![leaving folder](/img/posts/environments/leaving.png)
 
 Now, if the file has changed and it is no longer allowed direnv will print the following if you enter the folder:
 
-```console
-➜  environments git:(INFRAEU-473) ✗ cd eu-development
-direnv: error ~/Development/tripled/infra/environments/development/.envrc is blocked. Run `direnv allow` to approve its content
-```
+![blocked](/img/posts/environments/blocked.png)
 ## Conclusion
 
 You can use direnv to easily couple the infrastructure as code folders with their respective environments so fewer mistakes can be made. It can also easily be shared between team members so everyone can benefit from it.
