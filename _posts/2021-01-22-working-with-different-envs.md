@@ -65,6 +65,8 @@ and when leaving it:
 
 ![leaving folder](/img/posts/environments/leaving.png)
 
+After the `.envrc` file is unloaded any environment variables that were overridden will be restored.
+
 Now, if the file has changed and it is no longer allowed direnv will print the following if you enter the folder:
 
 ![blocked](/img/posts/environments/blocked.png)
