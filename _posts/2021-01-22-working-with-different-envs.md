@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Working with different environments"
+title: "Working with different deployment environments"
 author: gert
 tags: environments, devops
-excerpt: Having to work with different environment configurations on your pc can be a hassle and dangerous.
+excerpt: Having to work with different deployment environments configs on your pc can be a hassle and dangerous. Let's explore an option that will improve your experience with it.
 hideLogo: true
 spotlight:
   imgDir: /img/posts/environments
   imgAlt: "Triple D : Design, Develop, Deploy"
   logoAnimation: false
 ---
-# Working with different environments
+# Working with different deployment environments
 
-These days everyone has known a company where they have different environments: development, QA, staging, production, ... 
+These days everyone has known a company where they have different deployment environments: development, QA, staging, production, ... , however you want to call it. Basically a place where all the code you produced ends up being deployed after it gets built.
 
 One of the hassles and dangers this causes is that you have to constantly switch between environments to check certain things and in rare occasions modify the environments. 
 The reason why I'm saying rare for modifications is that these should preferably happen through some sort of pipeline that has been tested on lower environments before it gets to run against production.
