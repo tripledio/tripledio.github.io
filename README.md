@@ -52,7 +52,10 @@ docker run --name jekyll --volume="$PWD:/srv/jekyll" -p 3000:4000 -it jekyll/jek
 
 ### Spotlights
 
-The spotlight is the main image on top of your post. This image will need to be able to resize depending on the resolution and device of the client requesting the blog post. Logic for this is included, written down in the default.html file. You can just define the header-img variable but this will provide just one image for all the different sizes. For an example you can look at the images provided for the static pages under the directory spotlight.
+The spotlight is the main image on top of your post. This image will need to be able to resize depending on the resolution and device of the client requesting the blog post. 
+Logic for this is included, written down in the default.html file. 
+You can just define the header-img variable but this will provide just one image for all the different sizes. 
+For an example you can look at the images provided for the static pages under the directory spotlight.
 
 The javascript in default.html will look for variable imgDir to find the spotlight directory. There it will then expect:
 

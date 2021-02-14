@@ -7,7 +7,7 @@ excerpt: Having to work with different environments configs on your pc can be a 
 hideLogo: true
 spotlight:
   imgDir: /img/posts/environments
-  imgAlt: "Triple D : Design, Develop, Deploy"
+  imgAlt: "Example of direnv output"
   logoAnimation: false
 ---
 
