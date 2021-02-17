@@ -20,7 +20,7 @@ Let it be deleting secrets on the wrong [Kubernetes](https://kubernetes.io/) clu
 Of course, this never happens deliberately, possibly because of a lack of sleep or some distraction.
 
 So with this in mind, and the incentive for continuous improvements, I set out to find a possible solution.
-This post will describe what I found as a possible solution to make handling multiple environments less error-prone.
+This post will describe what I found to make handling multiple environments easier.
 
 ## Direnv
 
