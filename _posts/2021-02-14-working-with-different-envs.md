@@ -35,8 +35,8 @@ If the infrastructure is code, there should also be a git repository containing 
 Let's say you are using Terraform. Then you will probably have a directory for every environment.
 Whenever you run `terraform apply` in one of these folders, Terraform will apply its state changes to the correct environment.
 However, whenever you want to validate anything, like a deployment on Kubernetes or an S3 bucket on AWS, you still have to target the right environment.
-Well, remember what I said earlier about loading environment variables per folder? Here is where Direnv comes into play. W
-e will use Direnv so when we enter a folder, Direnv automatically loads the env variables bound to that folder. You can configure most CLI tools with environment variables, e.g. `KUBECONFIG, AWS_PROFILE`, ... Now we can leverage this to point our CLI tools to the right environment automatically.
+Well, remember what I said earlier about loading environment variables per folder? Here is where Direnv comes into play. 
+We will use Direnv so when we enter a folder, Direnv automatically loads the env variables bound to that folder. You can configure most CLI tools with environment variables, e.g. `KUBECONFIG, AWS_PROFILE`, ... Now we can leverage this to point our CLI tools to the right environment automatically.
 
 You can also leverage Direnv to build and deploy applications with [Heroku](https://www.heroku.com/). There you also need to specify certain environment variables to check or deploy applications.
 The Heroku token is unique per application, so you could easily make Direnv work with every Heroku repository by setting `HEROKU_API_KEY`.
