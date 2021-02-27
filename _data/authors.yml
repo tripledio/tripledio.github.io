@@ -20,7 +20,7 @@ kris:
     image: "/img/authors/kris.jpg"
 gert:
     username: "gert"
-    name: "Gert Villain"
+    name: "Gert Vilain"
     bio: "Aspiring software craftsman, motto: Automate all the things!"
     location: "Belgium"
     image: "/img/authors/gert.jpg"
