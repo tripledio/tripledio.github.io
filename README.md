@@ -77,3 +77,12 @@ if min-width: 768px
 + spotlight-tablet_1x.jpg : 984  - 480px 24 bit
 + spotlight-tablet_2x.jpg : 1968 - 960px 24 bit
 + spotlight-tablet_3x.jpg : 2952 - 1444px 24 bit
+
+## Sharing public documents
+
+To make a document , accessible from our website. 
+
++ Add the document to our Public Team Google drive. Preferable in an immutable format like pdf.
++ Add a redirect markdown file to the **_docs** folder
+    + The name of the file is the url path on our website
+    + The content redirects to the shared file you want. 
