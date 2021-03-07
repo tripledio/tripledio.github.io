@@ -18,9 +18,16 @@ collections:
     courses:
         output: true
         permalink: /:collection/:title
+    docs:
+        output: true
 # Build settings
 markdown: kramdown
 highlighter: rouge
 paginate: 5
 paginate_path: "/blog/page:num/"
-plugins: [jekyll-paginate,jekyll-feed,jekyll-seo-tag,jekyll-sitemap]
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
