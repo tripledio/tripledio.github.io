@@ -2,7 +2,7 @@
 encoding: utf-8
 title: Triple D
 copyright_name: Triple D
-description: "Triple D is a belgian based software company."
+description: "Triple D is a Belgian based software company."
 disqus: "TripleD"
 google_tracking_id: "UA-115161766-1"
 permalink: /:day/:month/:year/:title/
@@ -18,9 +18,16 @@ collections:
     courses:
         output: true
         permalink: /:collection/:title
+    docs:
+        output: true
 # Build settings
 markdown: kramdown
 highlighter: rouge
 paginate: 5
 paginate_path: "/blog/page:num/"
-plugins: [jekyll-paginate,jekyll-feed,jekyll-seo-tag,jekyll-sitemap]
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from

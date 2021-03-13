@@ -3,9 +3,8 @@ layout: default
 title: "Courses"
 description: "Courses, presentations, workshops"
 weight: 40
-
 spotlight:
-  logoAnimation: true
+  logoAnimation: false
   video: true
   videoFile: /files/electric.mp4
 qotd:
@@ -13,27 +12,69 @@ qotd:
 
 ---
 <section id="Courses" class="pt-2 pt-md-8 pb-md-10 pb-2 bg-white text-gray">
-  <div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-center">
-    <h2 class="h3 mb-2">Our course offerings</h2>
-    <p>Besides working together with you on the job, we also love teaching. That's why we also offer courses where we teach a specific topic. These come in the form of presentations, lessons or hands on workshops. Whatever fits your needs best.</p>
-    <p>Below is a short overview of some of the courses we have given in the past. However if you are looking for something different or more specific don't hesitate to <a href="/contact">Contact us</a></p>
-    <hr class="slab center w-25">
-  </div>
-  <div class="container">
-    {%for course in site.courses %}
-      {% cycle '<div class="row">','' %}
-      <div class="col-12 col-md-6 px-md-2 px-lg-8 mb-4">
-        <div class="icon last flex-center-hv py-2">
-          <img src="/img/workshop-icon-4.png" style="width: 80px" alt="alt">
+    <div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-center">
+        <h2 class="h2 mb-2">Teachings</h2>
+        <p>Besides working together with you on the job, we also love teaching. That's why we also offer courses where
+            we teach a specific topic. These come in the form of presentations, lessons or hands on workshops. Whatever
+            fits your needs best.</p>
+    </div>
+
+    <div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-center">
+        <h2 class="h3 mb-2">Presentations</h2>
+    </div>
+
+    <div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-left">
+        <p>Here are the slides of some of the presentations we have given in the past.</p>
+        <ul>
+            <li>
+                <a href="/docs/ddd-for-everyone">DDD for everyone</a> -
+                Presentation given on 26-11-2018
+            </li>
+            <li>
+                <a href="/docs/eventstorming-presentation-11-06-2019">Event Storming, Why aren't you doing it?</a> -
+                Presentation given on 11-06-2019
+            </li>
+            <li>
+                <a href="/docs/ddd-basic-concepts-11-06-2019">DDD basic concepts</a> - Presentation given on 11-06-2019
+            </li>
+
+            <li>
+                <a href="/docs/wecantwearenotgoogle">We can't, we're not Google!</a> -
+                Presentation given on 24-04-2019
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-center">
+        <h2 class="h3 mb-2">Courses</h2>
+        <p>Below is a short overview of some of the courses we have given in the past. However if you are looking for
+            something different or more specific don't hesitate to <a href="/contact">Contact us</a></p>
+        <hr class="slab center w-25">
+    </div>
+    <div class="container">
+        {%for course in site.courses %}
+        {% cycle '
+        <div class="row">','' %}
+            <div class="col-12 col-md-6 px-md-2 px-lg-8 mb-4">
+                <div class="icon last flex-center-hv py-2">
+                    <img src="/img/workshop-icon-4.png" style="width: 80px" alt="alt">
+                </div>
+                <h2 class="h4 text-uppercase text-center">
+                    <a href="{{course.url}}">{{course.title}}</a>
+                </h2>
+                <h6 class="h6 text-center" style="text-transform: none !important">{{course.subTitle}}</h6>
+                <hr class="slab center w-10 mt-2 mb-3">
+                <p>{{course.teaser}}</p>
+            </div>
+            {% cycle '','
         </div>
-        <h2 class="h4 text-uppercase text-center">
-          <a href="{{course.url}}">{{course.title}}</a>
-        </h2>
-        <h6 class="h6 text-center" style="text-transform: none !important">{{course.subTitle}}</h6>
-        <hr class="slab center w-10 mt-2 mb-3">
-        <p>{{course.teaser}}</p>
-      </div>
-      {% cycle '','</div>' %} 
-    {% endfor %}
-  </div>	
+        ' %}
+        {% endfor %}
+    </div>
+    <div class="container">
+        <blockquote class="py-6 px-md-10 text-center quote-none font-size-5 font-italic">
+            <footer class="mt-2">To teach is to learn. To learn is to teach.</footer>
+        </blockquote>
+    </div>
 </section>
