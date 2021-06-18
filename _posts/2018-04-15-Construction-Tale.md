@@ -3,7 +3,6 @@ layout: post
 title: "A construction tale"
 author: guido
 hideLogo: false
-header-img: "img/posts/constructionTale/buildings.jpg"
 image: "img/logo-alt.png"
 tags: architecture, software
 excerpt: "In the software industry, the metaphor that is probably used the most for explaining things is the construction of buildings. A lot of our terminology relates to it. Building, architect, architecture, design, engineer. Unfortunately it is all too often that this metaphor falls short and doesn't really address the problem sufficiently."

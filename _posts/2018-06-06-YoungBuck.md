@@ -3,7 +3,6 @@ layout: post
 author: guido
 title: "The Young Buck"
 hideLogo: true
-header-img: "img/posts/heroes/young-buck.jpg"
 image: "img/logo-alt.png"
 tags: Hero, software developments, teams, communication, patterns
 excerpt: "In this post, I'll elaborate on what I identify as the Young Buck pattern. With my Wild West metaphor in mind, with the Young Buck I refer to the image of the young gunslingers that are just leaving home, stepping out into the big world. Usually, they are still full of high ideals and have a simplistic sense of justice. Unfortunately, their lack of real-world experience sometimes lets them get played for a fool."
