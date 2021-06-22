@@ -8,6 +8,10 @@
     "person": "Grady Booch"
   },
   {
+    "quote": "How it is done is as important as getting it done",
+    "person": "Sandro Mancuso"
+  },
+  {
     "quote": "A document shouldn’t try to do what the code already does well.",
     "person": "Eric Evans"
   },
@@ -42,5 +46,9 @@
   {
     "quote": "A good architecture rarely happens through architecture-indifferent design",
     "person": "George Fairbanks"
+  },
+  {
+    "quote": "It is easy to say that a piece of code is bad. It is easy to complain or even laugh. But the question is: are you good enough to make it better?",
+    "person": "Sandro Mancuso"
   }
 ]
