@@ -36,3 +36,9 @@ yves:
     bio: "All-round software craftsman involved in the full software development lifecycle"
     location: "Belgium"
     image: "/img/authors/yves.jpg"
+tripled:
+    username: "tripled"
+    name: "Triple D"
+    bio: "Design, Develop, Deploy"
+    location: "Belgium"
+    image: "/img/logo-alt.png"
