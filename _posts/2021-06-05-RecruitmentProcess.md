@@ -1,14 +1,17 @@
 ---
-layout: post title: "Recruitment process"
-description: "Recruitment process"
+layout: post 
+title: " The recruitment process at Triple D"
+author: Triple D
 tags: job, interview spotlight:
-imgDir: /img/posts/recruitment imgAlt: "Triple D : Design, Develop, Deploy"
-logoAnimation: false hideLogo: true qotd:
+description: "Recruitment process"
+excerpt: How does the recruitment process look lik e at triple D? What are we looking for? How are we looking? 
+logoAnimation: false 
+hideLogo: true 
 enabled: true
-
+spotlight:
+    imgDir: /img/posts/recruitment
+    logoAnimation: false
 ---
-
-# The recruitment process at Triple D
 
 At Triple D we value quality above quantity. We do not aim to be a big company, but we strive to be a great one. A company where people are proud to be a part of. So even though the need for IT specialists is bigger than ever before, we’re somewhat picky, despite the omnipresent war on talent. We’re looking for skilled software engineers but far and foremost, we are looking for people who can relate to our mindset, values and work ethic.
 
