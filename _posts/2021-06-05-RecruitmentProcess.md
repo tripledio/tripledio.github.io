@@ -50,7 +50,7 @@ We are looking for people that have the intellectual curiosity to learn, and the
 
 After elaborating a bit on what we are looking for during the recruitment process, let's discuss the recruitment process at Triple D.
 
-![Recruitement Process](/img/posts/recruitment/recruitement-process.jpg){:width="700px"}
+![Recruitement Process](/img/posts/recruitment/recruitement-process.jpg)
 
 Now let’s dive into our screening process and find out if there’s a final match!
 Screening process: a job at De Persgroep IT in 4 steps
@@ -83,6 +83,10 @@ We always give feedback, no matter the outcome of the interview. We inform you o
 #### Go or No go
 
 We will give you our decision after the interview as soon as possible. Often within 15 minutes and no later than the next day in case the interview was late. If it was a Go we move on to the contractual proposal. if it was a no Go, there are definitely no hard feelings. we know we make a subjective call, that could very well be wrong. But we rather risk to missing out on a great hire than running the risk of hiring someone who is not a great fit.
+
+## Motivations
+
+Why do we it this way?
 
 ## Summary
 
