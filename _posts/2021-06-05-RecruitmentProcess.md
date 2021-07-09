@@ -1,9 +1,9 @@
 ---
 layout: post 
-title: "The recruitment process at Triple D"
+title: "Joining Triple D"
 author: tripled
 tags: job, interview
-excerpt: How does the recruitment process look like at Triple D? Who are we looking for? How are we looking? 
+excerpt: Interested in joining Triple D? How does the recruitment process look like at Triple D? Who are we looking for? How are we looking for them? 
 logoAnimation: false 
 hideLogo: true 
 enabled: true
@@ -11,13 +11,13 @@ spotlight:
   imgDir: /img/posts/recruitment
   logoAnimation: false
 ---
-# The Triple-D recruitment process
+# Joining Triple-D
 
-At Triple D we value quality above quantity. We do not aim to be a big company, but we strive to be a great one. A company that people are proud to be a part of. So even though the need for IT specialists is bigger than ever before, we’re somewhat picky, despite the omnipresent war on talent. We’re looking for skilled software engineers but far and foremost, we are looking for people who can relate to our mindset, values and work ethic. So in this post we will elaborate on our recruitment process, wo we are looking for and how we go about finding them.
+At Triple D we value quality above quantity. We do not aim to be a big company, but we strive to be a great one. A company that people are proud to be a part of. So even though the need for IT specialists is bigger than ever before, we’re somewhat picky, despite the omnipresent war on talent. of course we’re looking for skilled software engineers but far and foremost, we are looking for people who can relate to our mindset, values and work ethic. So in this post we will elaborate on our recruitment process, wo we are looking for and how we go about finding them.
 
-## What values are we looking for?
+## The values?
 
-So what are we looking for during the recruitment process? Of course, we want you to be highly skilled in software engineering and passionate about your job. But that’s what every IT company wants. So what else are we looking for?
+So what are we looking for during the recruitment process? Of course, we want you to be highly skilled in software engineering and passionate about your job. But that’s what every IT company wants. So what else are we looking for? What do we value?
             
 #### Ownership
 
@@ -46,7 +46,7 @@ We are looking for people that have the intellectual curiosity to learn, and the
 
 > “We can learn a lot from a company, team, and individuals just by paying attention to how they interview.” ― Sandro Mancuso, The Software Craftsman
 
-## Our recruitment process
+## The recruitment process
 
 After elaborating a bit on what we are looking for during the recruitment process, let's discuss the recruitment process at Triple D.
 
@@ -55,11 +55,11 @@ After elaborating a bit on what we are looking for during the recruitment proces
 Now let’s dive into our screening process and find out if there’s a final match!
 Screening process: a job at De Persgroep IT in 4 steps
 
-#### Quick introduction
+![Quick Introduction](/img/posts/recruitment/intro.jpg){:width="200px"} 
 
 When you contact us because you are curious about working at Triple D, we set up a quick introduction through a phone call or online meeting. So we can have a 15 minute conversation where we introduce ourselves to each other so that we can check if there is a match or not before both of us commit to going further with the recruitment process. Because it does require some effort from both sides.  
 
-#### Upfront coding exercise
+![Exercise](/img/posts/recruitment/making-exercise.jpg){:width="200px"} 
 
 We start with a coding exercise, which you can do at home in your spare time. You don’t want pressure as an
 uninvited guest in your performance. Stress is not part of our screening process and we want you to be proud
@@ -71,18 +71,24 @@ Gain insight in your way of thinking
 Evaluate your coding skills
 Have a meaningful conversation about coding practices
 
-#### The interview
+![Interview](/img/posts/recruitment/interview.jpg){:width="200px"} 
 
 The coding exercise is the perfect starter for your conversation with us. Because an interview is always subjectiev we always interview in pair, so we can have multiple impressions of the interviews. During the interview we’ll go into a variety of topics to discuss. Note that it’s not a buzzword bingo. We will not be asking things you can quickly google. It’s okay not to know. Rather than questioning you on the latest API’s
 or frameworks, we’ll try to assess both your technical skills as your mindset. The interview is a conversation where both parties are trying to sell themselves. So there is plenty of time and opportunity to ask questions yourselve. 
 
-#### Feedback
+![Feedback](/img/posts/recruitment/feedback.jpg){:width="200px"}
 
-We always give feedback, no matter the outcome of the interview. We inform you on how we experienced the interview, our impressions of you as a person and how we assessed your technical skills. This is not a one-way street: we’re also eager to learn how you experienced the interview and how we can improve ourselves.
+We will give you our decision after the interview as soon as possible. Often within 15 minutes and no later than the next day in case the interview was late.
 
-#### Go or No go
+Apart from giving you a quick decision, we will always give feedback, no matter the outcome of the interview. We inform you on how we experienced the interview, our impressions of you as a person and how we assessed your technical skills. This is not a one-way street: we’re also eager to learn how you experienced the interview and how we can improve ourselves.
 
-We will give you our decision after the interview as soon as possible. Often within 15 minutes and no later than the next day in case the interview was late. If it was a Go we move on to the contractual proposal. if it was a no Go, there are definitely no hard feelings. we know we make a subjective call, that could very well be wrong. But we rather risk to missing out on a great hire than running the risk of hiring someone who is not a great fit.
+![Proposal](/img/posts/recruitment/proposal.jpg){:width="200px"}
+
+If it was a Go we move on to the contractual proposal. 
+
+![Later](/img/posts/recruitment/later.jpg){:width="200px"}
+
+If it was a no Go, there are definitely no hard feelings. we know we make a subjective call, that could very well be wrong. But we rather risk to missing out on a great hire than running the risk of hiring someone who is not a great fit. Although we definitely invest a lot in the training of our people, it might be that we are not sure if the drive is there. However, if you prove us wrong we are more than willing to reconsider at a later time when we see that someone has clearly made an investement in themselves. 
 
 ## Motivations
 
