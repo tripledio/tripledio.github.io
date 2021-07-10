@@ -48,33 +48,36 @@ We are looking for people that have the intellectual curiosity to learn, and the
 
 ## The recruitment process
 
-After elaborating a bit on what we are looking for during the recruitment process, let's discuss the recruitment process at Triple D.
+After elaborating a bit on what we are looking for during the recruitment process, let's discuss the recruitment process at Triple D. The recruitment process consist out of several steps as illustrated below. 
 
-![Recruitement Process](/img/posts/recruitment/recruitement-process.jpg)
+![Recruitment Process](/img/posts/recruitment/recruitment-process.jpg)
 
-Now let’s dive into our screening process and find out if there’s a final match!
-Screening process: a job at De Persgroep IT in 4 steps
+Let's discuss the steps one by one.
 
 ![Quick Introduction](/img/posts/recruitment/intro.jpg){:width="200px"} 
 
-When you contact us because you are curious about working at Triple D, we set up a quick introduction through a phone call or online meeting. So we can have a 15 minute conversation where we introduce ourselves to each other so that we can check if there is a match or not before both of us commit to going further with the recruitment process. Because it does require some effort from both sides.  
+When you contact us because you are curious about working at Triple D, we set up a quick introduction through a phone call or online meeting. This way we can have a 15-minute conversation where we introduce ourselves to each other. This allows both parties a quick and easy wat to check if there is a match or not before they commit to going any further with the recruitment process. The process does require some effort from both sides, so we want to make sure all parties are convinced it's worth investing the time in. This is not an "interview" conversation, but a "what are you loonking for" conversation.
 
 ![Exercise](/img/posts/recruitment/making-exercise.jpg){:width="200px"} 
 
-We start with a coding exercise, which you can do at home in your spare time. You don’t want pressure as an
-uninvited guest in your performance. Stress is not part of our screening process and we want you to be proud
-of your submitted solution.
-Of course, the difficulty of the test depends on the profile and related experience we’re looking for. The
+The coding exercise is an important step in the process. We like to use an actual piece of software as a basis for the interview conversation. This assignment serves multiple purposes:
 
-exercise allows us to:
-Gain insight in your way of thinking
-Evaluate your coding skills
-Have a meaningful conversation about coding practices
++ give us an insight in your mindset and way of thinking
++ give us an insight in your technical and coding skills
++ give us a use case we all know so that we quickly can have a deep discussion on software design and architecture
++ allows you to elaborate on your coding disciplines and practices
+
+> “Talk is cheap. Show me the code.” ― Linus Torvalds
+
+We ask you to make the exercise in your own time so that stress isn’t a factor. We don’t want pressure on you. We hope you can find the time to do your best work and are proud of the result. So take all the time you need for the exercise. If you are unable to find the time to make the exercise the way you want it to make, then let us know. We can always reschedule the interview. The most important part is that you are proud of your work before we dive into it.
+
+The exercise has different levels taking into account the different profiles and experience we’re looking for. The goal is not "to get it right" or how you suspect we want it to be done. You should do it the way you want to do it. That way we can have a good, meaningful conversation about it.
 
 ![Interview](/img/posts/recruitment/interview.jpg){:width="200px"} 
 
-The coding exercise is the perfect starter for your conversation with us. Because an interview is always subjectiev we always interview in pair, so we can have multiple impressions of the interviews. During the interview we’ll go into a variety of topics to discuss. Note that it’s not a buzzword bingo. We will not be asking things you can quickly google. It’s okay not to know. Rather than questioning you on the latest API’s
-or frameworks, we’ll try to assess both your technical skills as your mindset. The interview is a conversation where both parties are trying to sell themselves. So there is plenty of time and opportunity to ask questions yourselve. 
+The coding exercise will serve as the kickoff and main theme for the interview. But we can go wherever the conversation takes us that is relevant for both parties. Because an interview is always subjective, we always interview in pair, so we can have multiple impressions of the interviews. During the interview we’ll go into a variety of topics to discuss. Note that it will not be a buzzword bingo. We will not be asking things you can quickly look up. So it’s okay not to know. Rather than questioning you on the latest API’s or frameworks, we’ll try to assess both your technical skills as your mindset. 
+
+The interview is a conversation where both parties are trying to sell themselves. So there is plenty of time and opportunity to ask questions yourselves. We encourage it. That way we can get a better idea of what you find important as well.
 
 ![Feedback](/img/posts/recruitment/feedback.jpg){:width="200px"}
 
@@ -92,7 +95,7 @@ If it was a no Go, there are definitely no hard feelings. we know we make a subj
 
 ## Motivations
 
-Why do we it this way?
+Why do we it this way? It does require some work from both parties.
 
 ## Summary
 
