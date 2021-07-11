@@ -3,7 +3,7 @@ layout: post
 title: "Joining Triple D"
 author: tripled
 tags: job, interview
-excerpt: Interested in joining Triple D? How does the recruitment process look like at Triple D? Who are we looking for? How are we looking for them? 
+excerpt: Interested in joining Triple D? This post decribes who are we looking for and how our recruitment process look like.
 logoAnimation: false 
 hideLogo: true 
 enabled: true
@@ -15,7 +15,7 @@ spotlight:
 
 At Triple D we value quality above quantity. We do not aim to be a big company, but we strive to be a great one. A company that people are proud to be a part of. So even though the need for IT specialists is bigger than ever before, we’re somewhat picky, despite the omnipresent war on talent. of course we’re looking for skilled software engineers but far and foremost, we are looking for people who can relate to our mindset, values and work ethic. So in this post we will elaborate on our recruitment process, wo we are looking for and how we go about finding them.
 
-## The values?
+## What we are looking for
 
 So what are we looking for during the recruitment process? Of course, we want you to be highly skilled in software engineering and passionate about your job. But that’s what every IT company wants. So what else are we looking for? What do we value?
             
@@ -73,9 +73,11 @@ We ask you to make the exercise in your own time so that stress isn’t a factor
 
 The exercise has different levels taking into account the different profiles and experience we’re looking for. The goal is not "to get it right" or how you suspect we want it to be done. You should do it the way you want to do it. That way we can have a good, meaningful conversation about it.
 
+We are aware that the exercise does take some effort to make. We hope this encourages people to step up and take on the "challenge".
+
 ![Interview](/img/posts/recruitment/interview.jpg){:width="200px"} 
 
-The coding exercise will serve as the kickoff and main theme for the interview. But we can go wherever the conversation takes us that is relevant for both parties. Because an interview is always subjective, we always interview in pair, so we can have multiple impressions of the interviews. During the interview we’ll go into a variety of topics to discuss. Note that it will not be a buzzword bingo. We will not be asking things you can quickly look up. So it’s okay not to know. Rather than questioning you on the latest API’s or frameworks, we’ll try to assess both your technical skills as your mindset. 
+The interview is typically a two hour comversation where the coding exercise will serve as the kickoff and main theme. Naturally we can go wherever the conversation takes us that is relevant for both parties. Because an interview is always subjective, we always interview in pair, so we can have multiple impressions of the interviews. During the interview we’ll go into a variety of topics to discuss. Note that it will not be a buzzword bingo. We will not be asking things you can quickly look up. So it’s okay not to know. Rather than questioning you on the latest API’s or frameworks, we’ll try to assess both your technical skills as your mindset. 
 
 The interview is a conversation where both parties are trying to sell themselves. So there is plenty of time and opportunity to ask questions yourselves. We encourage it. That way we can get a better idea of what you find important as well.
 
@@ -83,20 +85,45 @@ The interview is a conversation where both parties are trying to sell themselves
 
 We will give you our decision after the interview as soon as possible. Often within 15 minutes and no later than the next day in case the interview was late.
 
-Apart from giving you a quick decision, we will always give feedback, no matter the outcome of the interview. We inform you on how we experienced the interview, our impressions of you as a person and how we assessed your technical skills. This is not a one-way street: we’re also eager to learn how you experienced the interview and how we can improve ourselves.
+Apart from giving you a quick decision, we will always give feedback, no matter the outcome of the interview. We inform you on how we experienced the interview, our impressions of you as a person and how we assessed your technical skills. This is where our work comes in, because we take this seriously and go in depth. 
+
+Feedback is of course not a one-way street: we’re also eager to learn how you experienced the interview and how we can improve ourselves.
 
 ![Proposal](/img/posts/recruitment/proposal.jpg){:width="200px"}
 
-If it was a Go we move on to the contractual proposal. 
+If both parties are looking forwrd to further collaboration, then we move on to the contractual proposal and hiring! 
 
 ![Later](/img/posts/recruitment/later.jpg){:width="200px"}
 
-If it was a no Go, there are definitely no hard feelings. we know we make a subjective call, that could very well be wrong. But we rather risk to missing out on a great hire than running the risk of hiring someone who is not a great fit. Although we definitely invest a lot in the training of our people, it might be that we are not sure if the drive is there. However, if you prove us wrong we are more than willing to reconsider at a later time when we see that someone has clearly made an investement in themselves. 
+If Triple D decides not to go further with the recruitment process, there are definitely no hard feelings. We know we make a subjective call, that could very well be wrong. As guideline, we rather risk to missing out on a great hire than running the risk of hiring someone who is not a great fit. 
+
+Although we definitely invest a lot in the training of our people, it might be that we are not sure if the drive is there. However, if you prove us wrong we are more than willing to reconsider at a later time when we see that someone has clearly made an investment in themselves.
+
+If you yourself decide not to go further with the recruitment process, again no hard feelings. We would still appreciate any feedback you can give us on how you experienced to process.
 
 ## Motivations
 
-Why do we it this way? It does require some work from both parties.
+Why do we it this way? This process is time-consuming and does require some work from both parties?
+
+#### The importance of a good fit
+
+We want to make sure that there is a great fit, our goal is not to grow for growth's sake. That's why we rather risk of missing out on a great hire than running the risk of hiring someone who is not a great fit. 
+
+#### Exercise
+
+The exercise does take some effort to make, with no guarantee of success. We hope this motivates passionate people and serves as a basic safeguard. At Triple D we are always learning, so this kind of exercises can hopefully be viewed with enthusiasm.  
+
+#### Interview 
+
+An in depth exercise and deep interview with multiple people help us to make an informed decision as much as possible. So we take our time for the interview and the exercise really helps us to go deep.
+
+#### Feedback
+
+We all had those job interviews where they tell you they will let you know something, and you never hear from them again. We don't want to be that kind a company. 
+
+Giving and receiving feedback is of course an important way to grow for both parties involved.   
+
 
 ## Summary
 
-This is the process that we are currently following. Our main goal is to have a proper in depth conversation with each other and have some idea where the candidates are at. The drive to learn and grow, a constructive mindset are the most important properties we look at. Where the software engineering skills someone has obtained mostly serve as proof for those properties.   
+This is the process that we are currently following. Our main goal is to have a proper in depth conversation with each other and have some idea where the candidates are at. The drive to learn and grow, a constructive mindset are the most important properties we look at. Where the software engineering skills that someone has obtained mostly serve as proof for those properties.   
