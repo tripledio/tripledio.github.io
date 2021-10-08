@@ -1,4 +1,4 @@
-image: alpine:3.13.4
+image: alpine:latest
 
 variables:
   HELM_VERSION: 2.16.1
@@ -193,7 +193,8 @@ production:
     apk add glibc-2.28-r0.apk
     rm glibc-2.28-r0.apk
 
-    curl https://kubernetes-helm.storage.googleapis.com/helm-v${HELM_VERSION}-linux-amd64.tar.gz | tar zx
+    curl https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz | tar zx
+    #    curl https://kubernetes-helm.storage.googleapis.com/helm-v${HELM_VERSION}-linux-amd64.tar.gz | tar zx
     mv linux-amd64/helm /usr/bin/
     helm version --client
 
