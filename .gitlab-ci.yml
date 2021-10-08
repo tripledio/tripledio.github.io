@@ -1,4 +1,4 @@
-image: alpine:3.13
+image: alpine:3.13.4
 
 variables:
   HELM_VERSION: 2.16.1
