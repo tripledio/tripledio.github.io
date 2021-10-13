@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "8 Tips for successful ensemble programming"
+title: "6 Tips for successful ensemble programming"
 author: domenique
 tags: mob programming, ensemble programming
 excerpt: Ensemble (or mob) programming is a technique used by XP developers to improve a teams productivity and knowledge by working closely together. This post provides a few tips that we learned after doing ensemble programming for about 6 months.
@@ -10,7 +10,7 @@ spotlight:
   imgAlt: "Triple D : Design, Develop, Deploy"
   logoAnimation: false
 ---
-# 8 Tips for successful ensemble programming
+# 6 Tips for successful ensemble programming
 6 months of ensemble programming... what an experience! There are a few things we found positive, a few things where frustrating, but nevertheless, here's a list of tips we wish we knew from the beginning.
 
 ### Make the handover a non-event
@@ -39,41 +39,16 @@ Ask any developer which IDE is the best, and you will get different answers. Sam
 Using git to do the code handover has the advantage that you can easily switch laptops too. Switching the screen sharing is a bit more cumbersome, at least when not working remote. If your workspace has monitors to which you can cast, that would make it a lot easier, if not, you will have to work with the cable. It's a small price you pay for having relaxed and smooth drivers.
 
 ### always respect the timer, no matter the state of the code
-One of the hardest parts about ensemble programming is letting go of the keyboard. Somehow, you always have the urge to quickly finish that small little thing. The problem with this is that once the timer has passed, nothing stops you from staying on the keyboard for hours. You would think that someone from the team will stepm in and mention it, but in reality everyone is focused on the task and we all loose track of time. 
+One of the hardest parts about ensemble programming is letting go of the keyboard. Somehow, you always have the urge to quickly finish that small little thing. The problem with this is that once the timer has passed, nothing stops you from staying on the keyboard for hours. You would think that someone from the team will step in and mention it, but in reality everyone is focused on the task and we all loose track of time. 
 
 To avoid this, make sure that the timer goes of on all laptops, not just one and force the driver to stop immediately and start the handover proces. Again, make sure the hand-over runs smoothly without interrupts, otherwise this could get painful. 
 
-### Don't change the solution when the navigator changes
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at hendrerit nunc. Etiam placerat venenatis viverra. Fusce cursus turpis at nisl tempus egestas. Morbi posuere semper egestas. In hac habitasse platea dictumst. Nulla at nisi tortor. Nunc molestie rutrum purus, at porttitor felis tristique vitae. Nullam condimentum dapibus tellus eu accumsan.
-
-Ut accumsan mauris at elit pulvinar, in faucibus elit porta. Nunc ut enim enim. Integer porttitor a ante ut egestas. Nam consequat tellus sit amet feugiat sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas rutrum enim nec odio convallis fringilla. In sodales odio sit amet massa molestie lobortis. Morbi vulputate congue tellus, ac facilisis tellus iaculis non. Nullam vel ornare nulla.
-
-Quisque et nunc ut sapien consectetur suscipit. Proin enim ex, viverra id ullamcorper nec, facilisis eget purus. Donec viverra elementum pretium. Vivamus vitae tempor erat. Sed sodales pretium dapibus. Donec in lacus.
-
 ### Less discussions -> show me the code!
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at hendrerit nunc. Etiam placerat venenatis viverra. Fusce cursus turpis at nisl tempus egestas. Morbi posuere semper egestas. In hac habitasse platea dictumst. Nulla at nisi tortor. Nunc molestie rutrum purus, at porttitor felis tristique vitae. Nullam condimentum dapibus tellus eu accumsan.
+When a design choice has to be made, and the team finds itself in disagreement, propose to work out multiple solutions so that they can be compared. It's always easier to reason about something which is right in front of you rather than something hypothetically. Most of the time, it will be pretty obvious wich solution works best.
 
-Ut accumsan mauris at elit pulvinar, in faucibus elit porta. Nunc ut enim enim. Integer porttitor a ante ut egestas. Nam consequat tellus sit amet feugiat sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas rutrum enim nec odio convallis fringilla. In sodales odio sit amet massa molestie lobortis. Morbi vulputate congue tellus, ac facilisis tellus iaculis non. Nullam vel ornare nulla.
-
-Quisque et nunc ut sapien consectetur suscipit. Proin enim ex, viverra id ullamcorper nec, facilisis eget purus. Donec viverra elementum pretium. Vivamus vitae tempor erat. Sed sodales pretium dapibus. Donec in lacus.
+The hard thing about doing this is to make sure you work out the proposals far enough so that you can form a conclusion. On some occasions it was hard when switching navigators during this process especially when the navigator turns out to be a proponent of the current solution. To avoid this, let the person who came up with the proposal drive the implementation, it will avoid a lot of miscommunication. 
 
 ### do retro's every day!
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at hendrerit nunc. Etiam placerat venenatis viverra. Fusce cursus turpis at nisl tempus egestas. Morbi posuere semper egestas. In hac habitasse platea dictumst. Nulla at nisi tortor. Nunc molestie rutrum purus, at porttitor felis tristique vitae. Nullam condimentum dapibus tellus eu accumsan.
+Maybe this one does not have that much to do with ensemble programming, but do retro's often, especially when starting out. This allows every team member to drive the process towards something they feel comfortable with. 
 
-Ut accumsan mauris at elit pulvinar, in faucibus elit porta. Nunc ut enim enim. Integer porttitor a ante ut egestas. Nam consequat tellus sit amet feugiat sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas rutrum enim nec odio convallis fringilla. In sodales odio sit amet massa molestie lobortis. Morbi vulputate congue tellus, ac facilisis tellus iaculis non. Nullam vel ornare nulla.
-
-Quisque et nunc ut sapien consectetur suscipit. Proin enim ex, viverra id ullamcorper nec, facilisis eget purus. Donec viverra elementum pretium. Vivamus vitae tempor erat. Sed sodales pretium dapibus. Donec in lacus.
-
-### document guidelines and big design decisions
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at hendrerit nunc. Etiam placerat venenatis viverra. Fusce cursus turpis at nisl tempus egestas. Morbi posuere semper egestas. In hac habitasse platea dictumst. Nulla at nisi tortor. Nunc molestie rutrum purus, at porttitor felis tristique vitae. Nullam condimentum dapibus tellus eu accumsan.
-
-Ut accumsan mauris at elit pulvinar, in faucibus elit porta. Nunc ut enim enim. Integer porttitor a ante ut egestas. Nam consequat tellus sit amet feugiat sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas rutrum enim nec odio convallis fringilla. In sodales odio sit amet massa molestie lobortis. Morbi vulputate congue tellus, ac facilisis tellus iaculis non. Nullam vel ornare nulla.
-
-Quisque et nunc ut sapien consectetur suscipit. Proin enim ex, viverra id ullamcorper nec, facilisis eget purus. Donec viverra elementum pretium. Vivamus vitae tempor erat. Sed sodales pretium dapibus. Donec in lacus.
-
-### make things visual!
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at hendrerit nunc. Etiam placerat venenatis viverra. Fusce cursus turpis at nisl tempus egestas. Morbi posuere semper egestas. In hac habitasse platea dictumst. Nulla at nisi tortor. Nunc molestie rutrum purus, at porttitor felis tristique vitae. Nullam condimentum dapibus tellus eu accumsan.
-
-Ut accumsan mauris at elit pulvinar, in faucibus elit porta. Nunc ut enim enim. Integer porttitor a ante ut egestas. Nam consequat tellus sit amet feugiat sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas rutrum enim nec odio convallis fringilla. In sodales odio sit amet massa molestie lobortis. Morbi vulputate congue tellus, ac facilisis tellus iaculis non. Nullam vel ornare nulla.
-
-Quisque et nunc ut sapien consectetur suscipit. Proin enim ex, viverra id ullamcorper nec, facilisis eget purus. Donec viverra elementum pretium. Vivamus vitae tempor erat. Sed sodales pretium dapibus. Donec in lacus.
+In the beginning we did short 15 min retrospectives at the end of the day. This allowed us to talk about some of the issues we where facing immediately and try experiments daily to optimise our way of working.
