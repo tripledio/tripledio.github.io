@@ -6,7 +6,7 @@ tags: mob programming, ensemble programming
 excerpt: Ensemble (or mob) programming is a technique used by XP developers to improve a teams productivity and knowledge by working closely together. This post provides a few tips that we learned after doing ensemble programming for about 6 months.
 hideLogo: true
 spotlight:
-  imgDir: /img/posts/communication
+  imgDir: /img/posts/ensemble-programming
   imgAlt: "Triple D : Design, Develop, Deploy"
   logoAnimation: false
 ---
