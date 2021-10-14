@@ -80,6 +80,13 @@ if min-width: 768px
 + spotlight-tablet_2x.jpg : 1968 - 960px 24 bit
 + spotlight-tablet_3x.jpg : 2952 - 1444px 24 bit
 
+### Adding post meta data for SEO and decent links on social media
+You can use this website to check if your tags are picked up correctly: [https://metatags.io](https://metatags.io)
+
+add an **image** and a **description** front matter to your blogpost. For the image take the spotlight-mobile_1x.jpg it will be enough for generating links.
+
+see ensemble programming blogpost as an example.
+
 ## Sharing public documents
 
 To make a document , accessible from our website. 

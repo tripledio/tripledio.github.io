@@ -4,6 +4,8 @@ author: guido
 title: "The anemic domain model"
 tags: DDD, Software development, anemic
 excerpt: The anemic domain model pattern, with OO languages, is one of the most encountered "patterns". Yet it is considered an anti-pattern by many, despite it being so prevalent. What is it exactly? What are the arguments pro and con? How does it look in code? And what is my opinion on it?
+description: The anemic domain model pattern, with OO languages, is one of the most encountered "patterns". Yet it is considered an anti-pattern by many, despite it being so prevalent. What is it exactly? What are the arguments pro and con? How does it look in code? And what is my opinion on it?****
+image: /img/posts/anemic/spotlight-mobile_3x.jpg
 hideLogo: true
 spotlight:
   imgDir: /img/posts/anemic
