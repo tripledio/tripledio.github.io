@@ -33,12 +33,12 @@ All of this happens without saying anything about this routine. If the mob is ha
 It's important to have a procedure that works for you, we settled on the above because it works for us. You should run a few experiments and come up with your own. The important part is that it can be done silently, without interrupting the flow.
 
 ### Experiment with short cycle times
-Focus is an important aspect of ensemble programming. Keeping a group of people focused on one thing is hard, especially for the people who are not driving or navigating. The urge to quickly do something else is high. This is especially true for remote sessions where everyone is behind his pc. The best way for us to avoid this, was to shorten the cycle time. Initially we started with sessions of 30 minutes. for a 4-person team this meant that you would be driving or navigating once every 2 hours, it also means that 1 hour out of 2 you had to fight to not get distracted too much. 
+Focus is an important aspect of ensemble programming. Keeping a group of people focused on one thing is hard, especially for the people who are not driving or navigating. The urge to quickly do something else is high. This is especially true for remote sessions where everyone is behind their pc. The best way for us to avoid this, was to shorten the cycle time. Initially we started with sessions of 30 minutes. for a 4-person team this meant that you would be driving or navigating once every 2 hours, it also means that 1 hour out of 2 you had to fight to not get distracted too much. 
 
 After a while we realised that by shortening the cycle times we increased our focus a lot. We managed to shorten the period to 10 minutes, and even tried 5. Of course, this only works if your handovers are running smooth and without any interruptions, so make sure you fix that before tweaking your timer.
 
-### Everyone uses his own setup
-Ask any developer which IDE is the best, and you will get different answers. Same goes for keyboard shortcuts, operating systems, cli utilities etc. Stop debating about it, embrace it. Let every developer work on his own machine, using his own tools. 
+### Everyone uses their own setup
+Ask any developer which IDE is the best, and you will get different answers. Same goes for keyboard shortcuts, operating systems, cli utilities etc. Stop debating about it, embrace it. Let every developer work on their own machine, using their own tools. 
 
 Using git to do the code handover has the advantage that you can easily switch laptops too, so do that instead of passing along the keyboard.
 
