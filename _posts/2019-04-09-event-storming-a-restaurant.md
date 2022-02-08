@@ -134,7 +134,7 @@ The legend used in the following process illustrations matches:
 Since we will remain technology agnostic, there will be no UI. But the other components can be found in the real world. In our restaurant example, they can be implemented as follows 
 
 + a read model will be data written down on paper
-+ a projection will be the act of written summarized data down
++ a projection will be the act of writing summarized data down
 + the events will be things that happened in the real world
 + the commands are the initiation of an action 
 + policies are the rules that were agreed upon verbally up front 
