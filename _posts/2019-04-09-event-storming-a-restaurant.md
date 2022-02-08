@@ -192,7 +192,7 @@ For instance, when we modify the policy rule from
 
 we radically have changed the way our restaurant functions. We went from a restaurant for dining, where one pays at the end. To a fast dining restaurant where you pay up front, allowing for faster change of customers.
 
-Policies can be simple agreements between people or they can be fully implemented in software. A [process manager](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html)[^proces manager] is a software design pattern that can be used to centralize policies.
+Policies can be simple agreements between people or they can be fully implemented in software. A [process manager](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html)[^process_manager] is a software design pattern that can be used to centralize policies.
 
 ## On Aggregates
 
@@ -209,6 +209,6 @@ I hope to have demonstrated the power of **Event Storming process modelling** to
 
 [^eventstorming]: _[Event Storming](https://www.eventstorming.com)_ 
 [^book]: _[Introducing Event Storming](https://leanpub.com/introducing_eventstorming)_ 
-[^proces manager]: _[Proces Manager](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html)_ 
+[^process_manager]: _[Process Manager](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html)_ 
 [^architectural_kata]: _[Architectural Kata](http://nealford.com/katas/)_ 
 [^alberto]: _[Alberto](https://leanpub.com/u/ziobrando)_ 
