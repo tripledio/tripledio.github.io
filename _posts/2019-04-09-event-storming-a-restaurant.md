@@ -192,7 +192,7 @@ For instance, when we modify the policy rule from
 
 we radically have changed the way our restaurant functions. We went from a restaurant for dining, where one pays at the end. To a fast dining restaurant where you pay up front, allowing for faster change of customers.
 
-Policies can be simple agreements between people or they can be fully implemented in software. A [process manager](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html) [^proces manager] is a software design pattern that can be used to centralize policies.
+Policies can be simple agreements between people or they can be fully implemented in software. A [process manager](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html)[^proces manager] is a software design pattern that can be used to centralize policies.
 
 ## On Aggregates
 
