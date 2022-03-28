@@ -16,18 +16,14 @@ metadata:
     {{- end }}
 spec:
   rules:
-    - host: {{ template "hostname" .Values.ingress.host }}
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            defaultBackend:
-              service:
-                name: {{ $serviceName }}
-                port:
-                  number: {{ $servicePort }}
-  tls:
-  - hosts:
-    - {{ template "hostname" .Values.ingress.host }}
-    secretName: custodix-tls
+  - host: {{ template "hostname" .Values.ingress.host }}
+    http:
+      paths:
+      - backend:
+          service:
+            name: {{ $serviceName }}
+            port:
+              number: {{ $servicePort }}
+        path: /
+        pathType: Prefix
 {{- end -}}
