@@ -1,8 +1,4 @@
-image: alpine:latest
-
-variables:
-  HELM_VERSION: 2.16.1
-  KUBERNETES_VERSION: 1.17.6
+image: dtzar/helm-kubectl:3.8.0
 
 stages:
   - build
@@ -30,9 +26,6 @@ review:
   script:
     - mkdir -p ~/.kube/
     - check_kube_domain
-    - install_dependencies
-    - ensure_namespace
-    - install_tiller
     - create_secret
     - deploy
     - >-
@@ -79,7 +72,6 @@ stop_review:
     GIT_STRATEGY: none
   script:
     - mkdir -p ~/.kube/
-    - install_dependencies
     - delete
   environment:
     name: review/$CI_COMMIT_REF_NAME
@@ -103,9 +95,6 @@ production:
   script:
     - mkdir -p ~/.kube/
     - check_kube_domain
-    - install_dependencies
-    - ensure_namespace
-    - install_tiller
     - create_secret
     - deploy
     - delete canary
@@ -126,7 +115,6 @@ production:
   export CI_APPLICATION_REPOSITORY=$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG
   export CI_APPLICATION_TAG=$CI_COMMIT_SHA
   export CI_CONTAINER_NAME=ci_job_build_${CI_JOB_ID}
-  export TILLER_NAMESPACE=kube-system
 
   function deploy() {
     track="${1-stable}"
@@ -186,28 +174,6 @@ production:
       helm/
   }
 
-  function install_dependencies() {
-    apk add -U openssl curl tar gzip bash ca-certificates git wget
-    wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub
-    wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.28-r0/glibc-2.28-r0.apk
-    apk add glibc-2.28-r0.apk
-    rm glibc-2.28-r0.apk
-
-    curl https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz | tar zx
-    #    curl https://kubernetes-helm.storage.googleapis.com/helm-v${HELM_VERSION}-linux-amd64.tar.gz | tar zx
-    mv linux-amd64/helm /usr/bin/
-    helm version --client
-
-    curl -L -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v${KUBERNETES_VERSION}/bin/linux/amd64/kubectl
-    chmod +x /usr/bin/kubectl
-    kubectl version --client
-  }
-
-  function ensure_namespace() {
-    echo "shizzle ensure namespace $KUBE_NAMESPACE"
-    #kubectl describe namespace "$KUBE_NAMESPACE" || kubectl create namespace "$KUBE_NAMESPACE"
-  }
-
   function check_kube_domain() {
     if [ -z ${AUTO_DEVOPS_DOMAIN+x} ]; then
       echo "In order to deploy or use Review Apps, AUTO_DEVOPS_DOMAIN variable must be set"
@@ -217,17 +183,6 @@ production:
     else
       true
     fi
-  }
-
-  function install_tiller() {
-    echo "Checking Tiller..."
-    helm init --upgrade --history-max=5 --stable-repo-url https://charts.helm.sh/stable
-    kubectl rollout status -n "$TILLER_NAMESPACE" -w "deployment/tiller-deploy"
-    if ! helm version --debug; then
-      echo "Failed to init Tiller."
-      return 1
-    fi
-    echo ""
   }
 
   function create_secret() {
@@ -248,7 +203,7 @@ production:
       name="$name-$track"
     fi
 
-    helm delete --purge "$name" || true
+    helm delete "$name" --namespace="$KUBE_NAMESPACE" || true
   }
 
 

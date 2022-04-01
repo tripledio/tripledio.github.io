@@ -1,7 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $serviceName := include "tripled-blog.name" . -}}
 {{- $servicePort := .Values.service.externalPort -}}
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ template "tripled-blog.name" . }}
@@ -16,15 +16,14 @@ metadata:
     {{- end }}
 spec:
   rules:
-    - host: {{ template "hostname" .Values.ingress.host }}
-      http:
-        paths:
-          - path: /
-            backend:
-              serviceName: {{ $serviceName }}
-              servicePort: {{ $servicePort }}
-  tls:
-  - hosts:
-    - {{ template "hostname" .Values.ingress.host }}
-    secretName: custodix-tls
+  - host: {{ template "hostname" .Values.ingress.host }}
+    http:
+      paths:
+      - backend:
+          service:
+            name: {{ $serviceName }}
+            port:
+              number: {{ $servicePort }}
+        path: /
+        pathType: Prefix
 {{- end -}}
