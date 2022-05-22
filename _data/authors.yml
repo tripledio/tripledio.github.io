@@ -36,3 +36,9 @@ yves:
     bio: "All-round software craftsman involved in the full software development lifecycle"
     location: "Belgium"
     image: "/img/authors/yves.jpg"
+harm:
+    username: "harm"
+    name: "Harm De Weirdt"
+    bio: "Teacher that loves to learn, Student that loves to teach."
+    location: "Belgium"
+    image: "/img/authors/harm.jpg"
