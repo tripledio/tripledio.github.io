@@ -87,7 +87,7 @@ How would you like to be treated? Treat others in a way you would like to be tre
 
 Mob programming is not something that works everywhere. You need to get good at it. The team needs to get good at it. But even when you aren't doing it on a daily basis, there is a lot to be learned from a couple of sessions. Try it out at work, in a meetup, unconference, ... Pay attention to how hard it is to "Not add noise", "Shut up", "Really listen". It is a great technique to practice communication in itself.
 
-![Mob 4](/img/posts/communication/mob-group-2.jpg "Mob programming workshop"){:width="500px" : .center-image}
+![Mob 4](/img/posts/communication/mob-group-2.jpg "Mob programming workshop"){:width="500px"}
 
 ## Guidelines 
 
@@ -120,7 +120,7 @@ The best way to resolve conflicting ideas is to **act** upon them.
 + Model multiple solutions out. 
 + Discuss on concretes.
 
-![Visualize at the whiteboard](/img/posts/communication/triple-d-mob-yves-2.jpg "Triple D on a learning day"){:width="500px" : .center-image}
+![Visualize at the whiteboard](/img/posts/communication/triple-d-mob-yves-2.jpg "Triple D on a learning day"){:width="500px"}
 
 #### Visualize things. 
 
@@ -133,16 +133,16 @@ When we are discussing against a visualization
 + It isn’t personal. We are discussing a representation, not each other. This makes it often less offensive to disagree.
 + it brings focus and clarity
 
-![Visualize](/img/posts/communication/drawing-whiteboard.jpg "Don't fear the whiteboard"){:width="500px" : .center-image}
+![Visualize](/img/posts/communication/drawing-whiteboard.jpg "Don't fear the whiteboard"){:width="500px" }
 
 ## Conclusion
 
 Solving technical issues is hard. But so is communication efficiently and productively. Do not neglect this skill. Just like with everything, it is something that we can get better at by paying attention to it. Good communication is important enough to do so...
 
-![Mob 1](/img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"){:width="500px" : .center-image :margin=10px}
-![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width="500px" : .center-image  :margin=10px}
-![Mob 3](/img/posts/communication/triple-d-mob-sander.jpg "Triple D on a learning day"){:width="500px" : .center-image  :margin=10px}
-![Mob 4](/img/posts/communication/triple-d-mob-yves.jpg "Triple D on a learning day"){:width="500px" : .center-image  :margin="10px"}
+![Mob 1](/img/posts/communication/triple-d-mob-1.jpg "Triple D on a learning day"){:width="500px" .img-table}
+![Mob 2](/img/posts/communication/triple-d-mob-2.jpg "Triple D on a learning day"){:width="500px" .img-table}
+![Mob 3](/img/posts/communication/triple-d-mob-sander.jpg "Triple D on a learning day"){:width="500px" .img-table}
+![Mob 4](/img/posts/communication/triple-d-mob-yves.jpg "Triple D on a learning day"){:width="500px" .img-table}
 
 <p style="text-align: center;  font-style: italic;">Triple D during a learning day. Practising communication skills as well as engineering skills</p>
 
