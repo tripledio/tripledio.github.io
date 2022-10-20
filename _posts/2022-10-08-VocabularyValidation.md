@@ -125,7 +125,7 @@ Let's take as a basis a simple application with a hexagonal architecture. This i
 | Public application API | The API that clients use to communicate with us. This is what is available to the outside world. Typically a REST API that can be called by external parties. |
 | Internal application API | The internal API module that exposes the functionality that our application offers. This is a pure code API so it can not be exposed directly to the outside world. There is no knowledge of HTTP, Rest, or JSON here. Just plain old code. |
 | Use cases | The internal application API is typically implemented by transactional use cases. But those implementation details are hidden by the internal application API.
-| Domain model | Depending on the complexity of your application, there might be a domain model inside that makes it easy to offer the needed functionality. (Note that this has nothing to do with your database model.) But his to is an implementation detail, hidden by the internal application API.
+| Domain model | Depending on the complexity of your application, there might be a domain model inside that makes it easy to offer the needed functionality. (Note that this has nothing to do with your database model.) But this to is an implementation detail, hidden by the internal application API.
 
 
 To expose the internal API via the public API, we need an adapter. An adapter is just a module that performs a technical translation. It adapts, as the name says, from one format to another. In a hexagonal architecture, the inbound adapters handle the translation of the exposed public API to the internal API. Important is that **we don't want any business logic inside those adapters** because we want to be able for them to be easily interchangeable. A Rest adapter translates the JSON that arrives in the rest controller to concrete calls that are done on the internal API. A CLI adapter could translate command line-level instructions to invocations on the internal application API. Each will have a different translation, but they will arrive, through the internal Application API in the same application. We can easily represent those components as a more classic layered architecture. Where a layer is just a group of modules that can be categorized together.
@@ -459,7 +459,7 @@ public class FactoryResult<T> {
     private FactoryResult(T createdInstance, ValidationResult validationResult) {
         if (createdInstance != null && validationResult != null) throw new RuntimeException("A factoryResult may not have a createdInstance and errorMessages");
         if (createdInstance == null && ((validationResult == null) || validationResult.isEmpty()))
-        throw new RuntimeException("A factoryResult must have a createdInstance or and errorMessages");
+        throw new RuntimeException("A factoryResult must have a createdInstance or errorMessages");
         this.createdInstance = createdInstance;
         this.validationResult = (validationResult == null) ? ValidationResult.EMPTY : validationResult;
     }
@@ -539,7 +539,7 @@ public class Name {
         if (value.isBlank()) return failure("Name value may not be blank");
         if (value.length() > MAX_LENGTH) return failure("Name length may not be larger than " + MAX_LENGTH + ". [" + value.substring(0, 20) + "]");
         if (value.length() < MIN_LENGTH) return failure("Name length may not be smaller than " + MIN_LENGTH + ". [" + value + "]");
-        return FactoryResult.success(new Name(value));
+        return success(new Name(value));
     }
 
     //...   
