@@ -19,7 +19,8 @@ I will start by providing some context on where I was professionally before I jo
 
 ## Some context on me
 
-A good year ago I was working at a large service provider.
+I am currently 31 years old, have spent 4 years teaching software development and 3 years actually doing it.
+A bit over a year ago I was working at a large service provider.
 I already had a starting notion of clean code, TDD, architecture,... 
 In the interview for that job, they asked me what I knew about DDD, microservices, and other techniques or technologies that piqued my interest.
 I reasoned that if they want to know how knowledgeable I am about these subjects, they must be using them in practice! 
