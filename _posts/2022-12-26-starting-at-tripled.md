@@ -30,6 +30,10 @@ This became increasingly frustrating and eventually led me to look for a new job
 
 ## Triple D
 
+TripleD was founded by independent contractors who experienced that individually they could not have the desired impact.
+They realised that by joining forces it allowed them to reach the high level of support they want to give their clients.
+By surrounding themselves with like-minded individuals they could also learn from each other and grow more quickly.
+
 I had found Triple D before when looking for people or companies focussed on software craftsmanship, but then it was in the context of finding speakers for a teaching session at the university college I worked for. 
 Now I was looking for a job for myself and immediately thought of Triple D again.
 There were two quotes on their homepage that spoke to me:
@@ -103,9 +107,10 @@ They have met my expectations when it came to helping me reach my full potential
 ## Conclusion
 
 I realise that most of what I have written can be interpreted as propaganda for my employer.
-There's some similarities with what a new consultant would write a couple of months after signing their contract with your typical run-of-the-mill constultancy company: "Everything is great here!", "The people are amazing!", "My company car is so shiny!".
+There's some similarities with what a new consultant would write a couple of months after signing their contract with your typical run-of-the-mill constultancy company: 
+"Everything is great here!", "The people are amazing!", "My company car is so shiny!".
 
-My point is that I'd do Triple D a major disservice by putting them in the same category as those compagnies.
-Those wouldn't provide the level of commitment and support Triple D has given me.
-They wouldn't communicate with the same amount of transparancy.
-They wouldn't allow me to reach my full potential, and for me that is what matters.
+The difference is that Triple D has allowed me to turn my back on all the frustrations I had when working at my previous employer, and start developing at a higher skill level.
+I have learned even more than I expected, and am sure I will continue to do so.
+I now have the skills to have noticeable impact.
+My client is very happy with my work, and so am I.
