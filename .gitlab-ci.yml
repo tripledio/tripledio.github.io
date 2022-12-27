@@ -32,7 +32,7 @@ review:
          curl
          -n
          -X POST $SLACK_URL
-         --data-urlencode 'payload={"channel": "#blog", "text": "Review branch is availabe on '"$CI_ENVIRONMENT_URL"' for branch '"$CI_COMMIT_REF_NAME"'"}'
+         --data-urlencode 'payload={"channel": "#blog", "text": "Review branch is available on '"$CI_ENVIRONMENT_URL"' for branch '"$CI_COMMIT_REF_NAME"'"}'
     - echo "$CI_ENVIRONMENT_URL" > env-url
 
   environment:
