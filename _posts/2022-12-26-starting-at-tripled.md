@@ -7,7 +7,7 @@ description: A rundown of how I got started at Triple D and how the first year h
 excerpt: A report on my first (very successful) year at TripleD. This includes how I got to know Triple D, what I liked so much about them, how I applied, and what we have done together since.
 hideLogo: true
 logoAnimation: false
-header-img: "img/posts/starting-at-triple-d/spotlight-desktop.jpg"
+header-img: "img/posts/starting-at-triple-d/header.jpg"
 image: "img/logo-alt.png"
 ---
 
@@ -60,6 +60,8 @@ The relaxed and down-to-earth attitude Guido and Domenique had throughout this d
 They also invited me to one of their Triple Dojo Days.
 These are day-long gatherings of like-minded people socializing, discussing and learning from each other.
 Getting to know the rest of the team was great, and meeting other people from the community was a pleasant experience.
+
+![](../img/posts/starting-at-triple-d/harm-and-sander.jpg)
 
 A day or two after the interview they provided me with feedback on how they experienced the interview and what they thought of me. 
 They liked my attitude and while there was still much I did not know, they saw how motivated I was to learn.
