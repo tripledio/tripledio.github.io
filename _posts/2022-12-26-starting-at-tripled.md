@@ -70,7 +70,7 @@ Not much later they made an offer I couldn't refuse, and we decided on february 
 ## My first month at Triple D
 
 I spent my entire first month at Triple D learning.
-Together with Guido, Kris and Domenique I deepened my knowledge of TDD, DDD, (clean) architecture, refactoring, and learned new things such as Event Storming and Domain Storytelling.
+Together with Guido, Kris and Doménique I deepened my knowledge of TDD, DDD, (clean) architecture, refactoring, and learned new things such as Event Storming and Domain Storytelling.
 We used the [Agile Technical Practices Distilled](https://leanpub.com/agiletechnicalpracticesdistilled) book as a guide for most of it, but they provided me with other books such as [Domain Driven Design Distilled](https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/) and [Implementing Domain Driven Design](https://www.oreilly.com/library/view/implementing-domain-driven-design/9780133039900/). 
 You don't learn just by reading of course, so all this was supplemented with plenty of time pairing on katas and a larger project.
 
