@@ -8,7 +8,7 @@ excerpt: Triple D has fully met my expectations and supported me and my personal
 hideLogo: true
 logoAnimation: false
 spotlight:
-    imgDir: /img/posts/vocabularyvalidation
+    imgDir: /img/posts/starting-presents.png
     imgAlt: "Triple D : Design, Develop, Deploy"
 ---
 
