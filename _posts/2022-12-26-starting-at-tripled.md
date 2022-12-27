@@ -7,9 +7,8 @@ description: A rundown of how I got started at Triple D and how the first year h
 excerpt: Triple D has fully met my expectations and supported me and my personal development from the start.
 hideLogo: true
 logoAnimation: false
-spotlight:
-    imgDir: img/posts/starting-at-triple-d
-    imgAlt: "Triple D : Design, Develop, Deploy"
+header-img: "img/posts/starting-at-triple-d/spotlight-desktop.jpg"
+image: "img/logo-alt.png"
 ---
 
 # My first year at Triple D
