@@ -59,7 +59,8 @@ The relaxed and down-to-earth attitude Guido and Domenique had throughout this d
 
 They also invited me to one of their Triple Dojo Days.
 These are day-long gatherings of like-minded people socializing, discussing and learning from each other.
-Getting to know the rest of the team was great, and meeting other people from the community was a pleasant experience.
+For me, it was a great opportunity to get to know not only my potential colleagues, but also other people from the community.
+For Triple D, it allowed them to see if I was a good cultural fit.
 
 ![](../img/posts/starting-at-triple-d/harm-and-sander.jpg)
 
@@ -74,8 +75,10 @@ Together with Guido, Kris and Doménique I deepened my knowledge of TDD, DDD, (c
 We used the [Agile Technical Practices Distilled](https://leanpub.com/agiletechnicalpracticesdistilled) book as a guide for most of it, but they provided me with other books such as [Domain Driven Design Distilled](https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/) and [Implementing Domain Driven Design](https://www.oreilly.com/library/view/implementing-domain-driven-design/9780133039900/). 
 You don't learn just by reading of course, so all this was supplemented with plenty of time pairing on katas and a larger project.
 
-Having an entire month dedicated to just learning is an amazing thing in and of itself, but having experts on the subject matter directly available is a great boon on top of that. 
+Having an entire month dedicated to just learning is an amazing thing in and of itself, but having experts on the subject directly available is a great boon on top of that. 
 It allowed me to quickly ask for clarification when something wasn't clear and avoided learning incorrect interpretations of new concepts.
+
+![](../img/posts/starting-at-triple-d/first-day.jpg)
 
 ## My first client
 
