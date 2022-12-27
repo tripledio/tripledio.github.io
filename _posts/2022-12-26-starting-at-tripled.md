@@ -11,6 +11,7 @@ spotlight:
     imgDir: /img/posts/vocabularyvalidation
     imgAlt: "Triple D : Design, Develop, Deploy"
 ---
+
 # My first year at Triple D
 
 In February this year I joined Triple D and as now the year is almost over I will use this as an opportunity to /discuss, explain,.../ what it's like to join and be part of this company.
@@ -56,6 +57,10 @@ And these people knew exactly those things!
 They showed me in a very clear way that they appreciated what I already knew but also pointed me to where the holes in my knowledge were.
 During the time not spent coding, we discussed the state of the industry, shared frustrations, what Triple D aims to do about those frustrations, their vision, what my role could be, and much more. 
 The relaxed and down-to-earth attitude Guido and Domenique had throughout this day put me at ease and allowed me to show the best version of myself.
+
+They also invited me to one of their Triple Dojo Days.
+These are day-long gatherings of like-minded people socializing, discussing and learning from each other.
+Getting to know the rest of the team was great, and meeting other people from the community was a pleasant experience.
 
 A day or two after the interview they provided me with feedback on how they experienced the interview and what they thought of me. 
 They liked my attitude and while there was still much I did not know, they saw how motivated I was to learn.
