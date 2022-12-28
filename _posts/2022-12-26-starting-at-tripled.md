@@ -66,7 +66,7 @@ These are day-long gatherings of like-minded people socializing, discussing and 
 For me, it was a great opportunity to get to know not only my potential colleagues, but also other people from the community.
 For Triple D, it allowed them to see if I was a good cultural fit.
 
-![](../img/posts/starting-at-triple-d/harm-and-sander.jpg)
+![Me and Sander working together at the Triple Dojo Day](/img/posts/starting-at-triple-d/harm-and-sander.jpg)
 
 A day or two after the interview they provided me with feedback on how they experienced the interview and what they thought of me. 
 They liked my attitude and while there was still much I did not know, they saw how motivated I was to learn.
@@ -82,7 +82,7 @@ You don't learn just by reading of course, so all this was supplemented with ple
 Having an entire month dedicated to just learning is an amazing thing in and of itself, but having experts on the subject directly available is a great boon on top of that. 
 It allowed me to quickly ask for clarification when something wasn't clear and avoided learning incorrect interpretations of new concepts.
 
-![](../img/posts/starting-at-triple-d/first-day.jpg)
+![My first day](/img/posts/starting-at-triple-d/first-day.jpg)
 
 ## My first client
 
