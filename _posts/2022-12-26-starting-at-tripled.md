@@ -66,8 +66,8 @@ These are day-long gatherings of like-minded people socializing, discussing and 
 For me, it was a great opportunity to get to know not only my potential colleagues, but also other people from the community.
 For Triple D, it allowed them to see if I was a good cultural fit.
 
-![Sander and me working together at the Triple Dojo Day](/img/posts/starting-at-triple-d/harm-and-sander.jpg){:width="500px"}
-*Sander and me working together during a session at the Triple Dojo Day.*
+![Sander and me during a refactor session at the Triple Dojo Day.](/img/posts/starting-at-triple-d/harm-and-sander.jpg){:width="500px"}
+*Sander and me during a refactor session at the Triple Dojo Day.*
 {: .center-img-text }
 
 A day or two after the interview they provided me with feedback on how they experienced the interview and what they thought of me. 
