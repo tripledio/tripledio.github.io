@@ -4,7 +4,7 @@ title: "My first year at Triple D"
 author: harm
 tags: recruitment
 description: A rundown of how I got started at Triple D and how the first year has been.
-excerpt: A report of my first year at Triple D. How I found Triple D, why I wanted to join them, how I applied for a job and what we have done together since.
+excerpt: A report of my first year at Triple D. How I discovered Triple D, why I wanted to join them, how I applied for a job and what we have done together since.
 hideLogo: true
 logoAnimation: false
 header-img: "img/posts/starting-at-triple-d/header.jpg"
@@ -13,7 +13,7 @@ image: "img/logo-alt.png"
 
 # My first year at Triple D
 
-In February 2022 year I joined Triple D and as my first year as employee is coming to an end I will use this as an opportunity to tell what it's like to join and be part of this company.
+In February 2022 I joined Triple D and as my first year as employee is coming to an end I will use this as an opportunity to tell what it's like to join and be part of this company.
 It has been an amazing first year for me, and I hope everything below will show you why.
 I will start by providing some context on where I was professionally before I joined Triple D, what the recruitment process was like and how it's been so far.
 
@@ -30,7 +30,7 @@ This became increasingly frustrating and eventually led me to look for a new job
 
 ## Triple D
 
-TripleD was founded by independent contractors who experienced that individually they could not have the desired impact.
+Triple D was founded by independent contractors who experienced that individually they could not have the desired impact.
 They realised that by joining forces it allowed them to reach the high level of support they want to give their clients.
 By surrounding themselves with like-minded individuals they could also learn from each other and grow more quickly.
 
@@ -111,7 +111,7 @@ They have met my expectations when it came to helping me reach my full potential
 ## Conclusion
 
 I realise that most of what I have written can be interpreted as propaganda for my employer.
-There's some similarities with what a new consultant would write a couple of months after signing their contract with your typical run-of-the-mill constultancy company: 
+There's some similarities with what a new consultant would write a couple of months after signing their contract with your typical run-of-the-mill consultancy company: 
 "Everything is great here!", "The people are amazing!", "My company car is so shiny!".
 
 The difference is that Triple D has allowed me to turn my back on all the frustrations I had when working at my previous employer, and start developing at a higher skill level.
