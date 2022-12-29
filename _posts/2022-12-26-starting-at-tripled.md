@@ -4,7 +4,7 @@ title: "My first year at Triple D"
 author: harm
 tags: recruitment
 description: A rundown of how I got started at Triple D and how the first year has been.
-excerpt: A report on my first (very successful) year at TripleD. This includes how I got to know Triple D, what I liked so much about them, how I applied, and what we have done together since.
+excerpt: A report of my first year at Triple D. How I found Triple D, why I wanted to join them, how I applied for a job and what we have done together since.
 hideLogo: true
 logoAnimation: false
 header-img: "img/posts/starting-at-triple-d/header.jpg"
