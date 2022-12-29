@@ -85,7 +85,7 @@ Having an entire month dedicated to just learning is an amazing thing in and of 
 It allowed me to quickly ask for clarification when something wasn't clear and avoided learning incorrect interpretations of new concepts.
 
 ![My first day](/img/posts/starting-at-triple-d/first-day.jpg){:width="500px"}
-*My first day at the job, getting everything set up with Guido.*
+*My first day on the job, with some reading material*
 {: .center-img-text }
 
 ## My first client
@@ -117,4 +117,4 @@ There's some similarities with what a new consultant would write a couple of mon
 The difference is that Triple D has allowed me to turn my back on all the frustrations I had when working at my previous employer, and start developing at a higher skill level.
 I have learned even more than I expected, and am sure I will continue to do so.
 I now have the skills to have noticeable impact.
-My client is very happy with my work, and so am I.
+My client seems very happy with my work, and so am I.
