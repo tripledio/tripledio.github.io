@@ -25,7 +25,7 @@ I already had a starting notion of clean code, TDD, architecture,...
 In the interview for that job, they asked me what I knew about DDD, microservices, and other techniques or technologies that piqued my interest.
 I reasoned that if they want to know how knowledgeable I am about these subjects, they must be using them in practice! 
 While there was some truth to that, reality fell short of what I had imagined beforehand.
-There was the notion that things could and should be done better, but there was never time nor budget to actually make the required changes. 
+There was the notion that things could and should be done better, but there was never time nor budget to actually make the required changes.
 This became increasingly frustrating and eventually led me to look for a new job elsewhere.
 
 ## Triple D
@@ -66,8 +66,8 @@ These are day-long gatherings of like-minded people socializing, discussing and 
 For me, it was a great opportunity to get to know not only my potential colleagues, but also other people from the community.
 For Triple D, it allowed them to see if I was a good cultural fit.
 
-![Me and Sander working together at the Triple Dojo Day](/img/posts/starting-at-triple-d/harm-and-sander.jpg){:width="500px"}
-*Me and Sander working together during a session at the Triple Dojo Day.*
+![Sander and me working together at the Triple Dojo Day](/img/posts/starting-at-triple-d/harm-and-sander.jpg){:width="500px"}
+*Sander and me working together during a session at the Triple Dojo Day.*
 {: .center-img-text }
 
 A day or two after the interview they provided me with feedback on how they experienced the interview and what they thought of me. 
