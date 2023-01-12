@@ -1,4 +1,4 @@
-# Tripled Blog
+# Triple D Blog
 
 This is the source of the website from Triple D. Here we write our blog posts.
 
