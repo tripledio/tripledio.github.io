@@ -14,21 +14,27 @@ logoAnimation: false
 
 # The Cost of efficiency
 
-There is a well known phrase in business known as "The Seven Most Expensive Words" with address a classic argument people make when they are pushing back on change. Which can come at a huge cost, because then nothing ever changes, there is no room for improvement. In my opinion, in the software engineering world, we have our own equivalent of this statement.
+In the business world, there's a well-known saying dubbed 'The Seven Most Expensive Words': 'We've always done it this way.' This phrase addresses a common argument against change, highlighting the costly consequences of resisting innovation. Similarly, in the realm of software engineering, we also have a saying, that is also quit expensive:
 
-> The four most dangerous words in software engineering: **"That is not efficient!"**
+> The four most perilous words in software engineering: 'That is not efficient!'
 
-This is an argument I hear from managers and software engineers alike. In our field As engineers, we are always trying to optimize how we, our software and our algorithms work. So those four words can have a lot of weight in a discussion. In this blog post I would like to discuss this argument. Because the argument is not wrong, sometime we do what appears to be inefficient things. That doesn't mean that this is a bad thing. Because efficiency comes at a cost.  
+This phrase is often echoed by both managers and software engineers alike. Managers may express this sentiment out of a desire to streamline processes and maximize productivity. Software engineers frequently use it as a reason why they dislike a solution or way of working. For software engineers, who continually strive to optimize their software, processes and algorithms, this argument carries significant weight in discussions. The argument often seems irrefutable, acting as a conversation-stopper, given the prevailing emphasis on efficiency in software engineering.
+
+I'll admit, I'm not a fan of the "efficiency" argument. Efficiency is often treated as the holy grail, when in reality, there's more to consider. So, in this blog post, I'll dive into this topic and explore why there are times when seemingly inefficient approaches make sense. This is especially relevant in software engineering, where adaptation and learning are crucial. After all, efficiency comes with its own trade-offs.
 
 ## The drive for efficiency
 
-Since the industrial age the drive for efficiency is ever present. I blame Taylor for this. This drive can manifest itself in different goals
+Efficiency, simply put, means doing things right without errors or unnecessary waste of resources like materials, energy, time, or money. It's about performing tasks effectively and successfully. Who could argue against that?
 
-+ The goal for **Maximum resource utilization**: Have all the resources working at maximum capacity
-+ The goal for **Division of labor**: Have the specialized resource with the highest output do the job
-+ The goal to do things **First time right**: To be so precise that we are getting it right and only need to do it once
+Since the industrial age, the pursuit of efficiency has been relentless. This drive manifests itself in various objectives:
 
-Choosing to go against those goals can easily trigger the response **"That is not efficient!"** which may seem like a final argument. But it shouldn't be. So let us take a closer look at those individual goals to make sure we clearly understand the concerns.
++ Maximum Resource Utilization: Ensuring all resources operate at maximum capacity.
++ Division of Labor: Assigning specialized resources with the highest output to specific tasks.
++ First-Time Right: Striving to get it right on the first attempt and avoid rework.
+
+Challenging these goals often prompts the default response: 'That is not efficient!' It seems like a conclusive argument, but it really isn't. Let's delve into each goal to gain a deeper understanding of the underlying concerns. Because, of course, there is some truth to the argument.
+
+HERE
 
 ### Maximum resource utilization
 
@@ -52,9 +58,9 @@ The concept of division of labor in the field Software engineering is a strange 
 
 The division of labor is not something that is necessarily imposed on us by management. Like everyone else, Software Engineers want to be good at their job, they are looking for mastery of their field. This is of course easier to achieve if you specialize to a limited set skills. Most backend developers I know do not want to write code in the Frontend. And vice versa. If your proficient using framework X, it could become your default solution and you're could become hesitant to use framework Y or no framework at all. A developer in Java, Kotlin, C#, Scala, F#, PHP,... often doesn't want to start programming in another language ecosystem. Someone whose main interest is in databases, UX doesn't want to write backend code. It is out of their field of interest. And of course no self-respecting backend developer wants to develop a frontend.
 
-This makes perfect sense. We want to do what we are best, most efficient at. Wich often correlates with what we most enjoy. To each their job. 
+This makes perfect sense. We want to do what we are best, most efficient at. Which often correlates with what we most enjoy. To each their job. 
 
-[Divsion of labor]
+[Division of labor]
 
 ### First time right
 
@@ -62,12 +68,12 @@ The term "First time right" is best known in quality management. Because needing
 
 Given that working iteratively should be a well known practice in the software field, it amazes me how big the aversion of doing something more than once can be with software engineers. There is a strong desire to "get it right", making sure we got everything covered, trying to foresee all possible use-cases and possible changes in the future. Because we have to do it right.
 
-The mindset of trying to do things just once also occurs with knowledge transfers. With onboarding new people on the project, explaning new features, the architecture etc... All too often the desire is there to do any the knowledge transfer just once, a resistance to explaining things multiple times.  
+The mindset of trying to do things just once also occurs with knowledge transfers. With onboarding new people on the project, explaining new features, the architecture etc... All too often the desire is there to do any the knowledge transfer just once, a resistance to explaining things multiple times.  
 
 ---
 ## Efficiency trade-offs 
 
-While I think efficiency is definitely a good thing, it does have its trade-offs. Trade-offs we need to be aware of so that we don't just end a conversation because something makes the argument that something isn't efficient. Because there is more to life then achieving maximum efficiency.
+While I think efficiency is definitely a good thing, it does have its trade-offs. Trade-offs we need to be aware of so that we don't just end a conversation because something makes the argument that something isn't efficient. Because there is more to life then achieving maximum efficiency. If fact, there probably wouldn't be any life is everything was efficient...
 
 ### Mother Nature
 
@@ -121,7 +127,7 @@ If the goal is maximum resource utilization, we aim to be always busy, always go
 
 While this may be more efficient when everything is clear, well-thought-out and when nothing ever changes, I am however still waiting for the first software project where this is the case. In software development, change is key. If everyone is busy, and something unexpected happens we have a problem. When a feature changes, an estimate was wrong, someone changed their minds, a colleague falls ill, ... There is no space available to cope with this, because everyone is busy. Our well taught out plan goes down the drain and the poor PM needs to frantically try to come up with a credible plan again and fix all those Gantt charts. Added on top of this, invisible in all those pretty graphs, is that there is most likely a knowledge problem. We can not simply let Brent's task be done by Max. There are so many specialized tasks, for which certain expertise is needed. As well as built up knowledge of the current system, business. The division of labor isn't always as clear as by role title. On paper, you could replace one python developer with 5 years experience by another python developer with 5 years experience. But in reality, you've lost a big part of knowledge which will take time to rebuild. Since knowledge wasn't shared on a continuous basis with others, we simply aren't resilient. And no, writing lots of confluence pages before you leave doesn't count. Confluence is where documentation information goes to die. 
 
-The drive for max resource utilization, for being efficient, is held by management as well as by software engineers themselves. Management thinks if Software Engineers aren't typing, they are not being productive. After all their job is to translate business requirements into code. So the engineer who writes the least code must be the [worst engineer](https://dannorth.net/the-worst-programmer/)?  
+The drive for max resource utilization, for being efficient, is held by management as well as by software engineers themselves. Management thinks that if Software Engineers aren't typing, they are not being productive. After all their job is to translate business requirements into code. So the engineer who writes the least code must be the [worst engineer](https://dannorth.net/the-worst-programmer/)?  
 
 A corresponding view often held by Software Engineers themselves is
 
@@ -145,7 +151,7 @@ Given the nature of software engineering, the drive to produce, to be busy is es
 
 ### Division of labor
 
-The division of labor in Software engineering is only partly by dividing the job in several specialization. Like I mentioned earlier, different types of work don't just simply map on different role. But let's stick with division by roles for know. Typical roles we have in software negineering are:
+The division of labor in Software engineering is only partly by dividing the job in several specialization. Like I mentioned earlier, different types of work don't just simply map on different role. But let's stick with division by roles for know. Typical roles we have in software engineering are:
  >> here
 Frontend Developer
 Backend Developer
@@ -194,7 +200,7 @@ Not doing it more than once
 How many "prototypes" make it into production and are then adopted as the real version? Surely if it works, we aren't just going to throw it away to do it again? To be fair, this is a scenario that I mostly have seen imposed by management.
 
 >It's only a prototype until it works
-
+  
 Striving for perfection, getting it right from the start, often holds us back from working iteratively. Even though we really need more of that adaptable, iterative mindset.
 
 Variability in Product development is not a bad thing if it comes with a high enough economic pay-off. We should prefer "responding to change over following a plan" if this is more valuable. But this is a hard thing todo
@@ -204,6 +210,14 @@ Variability in Product development is not a bad thing if it comes with a high en
 
 We've seen that Efficiency is often achieved in a well controlled environment, where the one constant thing in the field of Software Engineering is change. Therefore, it is often  better to prioritize for resiliency, to sacrifice short term local efficiency for a more durable resilient solution in the long term. In the software that is written as well in the way that the engineers write the software.
 
+
+Project modus
+
+A possible case where efficiency is more important than resiliency could be when delivering a short term software project as an external consultancy. Because there is no need to be resilient, share knowledge in short term project mode. Commit to the deadline, deliver within the promissed time and budget and onwards to the next project! 
+
+When the environment is well controlled, the time span short enough to hopefully avoid unexpected changes, the requirements small and limited enough so that the estimates are in the realm of reality then this can work. You can work efficiently, getting the most revenue from your consultant work by maximizing your consultant utilization, using the best expert for the job and doing it right immediately. 
+
+However, that are a lot of ifs. And then we haven't taken into account what happens to the software once the project is done. Who will maintain it? What is the quality of the software delivery under the pressure of being efficient and doing it withing the fixed time and budget?
 
 
 
