@@ -95,6 +95,7 @@ ul,
 ol {
   margin-bottom: 3rem;
   font-family: $font-raleway;
+  @extend .font-size-5;
   b,
   strong {
     font-family: $font-bold;

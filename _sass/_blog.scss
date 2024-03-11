@@ -80,10 +80,6 @@ $author-img-size: 7.5rem;
     }
   }
 
-  .author-location {
-    padding-left: 2rem;
-  }
-
   .author {
     display: inline-block;
     margin: 3rem 0;
@@ -95,15 +91,25 @@ $author-img-size: 7.5rem;
 
   .share {
     margin: 3rem 1.6rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: left;
+    align-items: center;
 
     h4 {
       display: inline-block;
-      margin-right: 2.5rem;
       width: inherit;
+      margin-right: 2.5rem;
+      margin-bottom: 0;
     }
   }
 
-  .socicon {
+  #location-dot-svg {
+    height: 1.7rem;
+    display: inline-block;
+  }
+
+  .socialicon {
     background: $color-primary;
     color: $color-white;
 
@@ -118,6 +124,13 @@ $author-img-size: 7.5rem;
     &.gplus {
       background: $color-gplus;
     }
+  }
+
+  .share-socialicons {
+    display: block;
+    height: 2rem;
+    shape-rendering: optimizeSpeed;
+    filter: invert(100%);
   }
 
   #disqus_thread {
