@@ -5,7 +5,7 @@
     "imgAlt": "Team",
     "color": "red",
     "url": "contact",
-    "description": "Triple D is a professional software engineering team that keeps its coherence over multiple software assignments. We belief that this is how we can have the greatest impact.<br /><br />This is comparable to the roman imperial standing army, which was a professional army instead of an ad hoc formed army. This enabled the romans to keep the hard fought lessons learned and experience gained."
+    "description": "<b>Triple D</b> can function as a fully-fledged professional software engineering team, maintaining coherence across various software assignments through established practices. This approach mirrors the professionalism of the Roman imperial standing army, known for its organization and effectiveness. By embracing this model, we aim to preserve valuable lessons and experience. That's why we emphasize continuous training and practice, ensuring that our skills and teamwork operate seamlessly. This makes us an ideal choice if you have a specific project or product idea and want to hit the ground running."
   },
   {
     "name": "Reinforcement",
@@ -13,7 +13,7 @@
     "imgAlt": "Reinforcement",
     "color": "green",
     "url": "contact",
-    "description": "Triple D can be brought in as a reinforcement. Working closely together with existing teams allows us to introduce industry best practices. This will not only help in delivering in the short term but it will allow the existing teams to learn, to evolve and to grow. So even after Triple D has left, your teams should deliver faster, quality software. At a sustainable pace."
+    "description": "<b>Triple D</b> can serve as a reinforcement to your organization, bringing about transformative changes in the way you work. We don't simply commit to a predefined deadline and then disappear. Instead, by closely collaborating with you and your teams, we aim to not only assist in software development but also enhance development practices, architecture, processes, and deployment strategies. Our ultimate goal is to make ourselves expendable. We aspire not only to achieve short-term goals but also to enable your existing teams to learn, evolve, and grow. So even after our engagement concludes, your organization will continue to deliver faster, high-quality software at a sustainable pace."
   },
   {
     "name": "Trainings and workshops",
@@ -21,6 +21,6 @@
     "imgAlt": "Training",
     "color": "blue",
     "url": "courses",
-    "description": "We can help you to elevate your software delivery process by facilitating training and workshops on request. Assisting you in taking your team to the next level and making sure that the software keeps delivering long after the initial phase or deadline has passed."
+    "description": "<b>Triple D</b> offers tailored training and workshops to help elevate your software delivery process. Our sessions are not purely academic but grounded in real-world practices, delivered by instructors who have firsthand experience. Whether you're aiming to improve team performance or ensure long-term software delivery, we're here to guide you every step of the way."
   }
 ]

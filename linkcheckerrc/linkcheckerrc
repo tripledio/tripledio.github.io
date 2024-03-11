@@ -106,8 +106,8 @@ filename=linkchecker-out.txt
 #colorok=#3ba557
 #parts=all
 
-# blacklist logger
-[blacklist]
+# failures logger
+[failures]
 #filename=~/.linkchecker/blacklist
 
 # custom xml logger
