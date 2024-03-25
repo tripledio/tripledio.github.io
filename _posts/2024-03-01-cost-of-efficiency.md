@@ -164,7 +164,7 @@ Given the nature of software engineering, the drive to produce, to be busy is es
 
 > Software Engineering is a learning process, working code a side effect
 
-### The queues of division of labor
+### The pain of division of labor
 
 A good software team should be cross-functional. Meaning they should have all the necessary skills inside the team so that they can work as an autonomous unit and do not require outside help. They should have as few outside dependencies as possible. Because as software engineers we know, dependencies come at a cost.
 
@@ -188,7 +188,7 @@ In short, the efficiency of the whole team is negatively impacted by optimizing 
 
 The approach also goes against real autonomous teams that can determine how they do their work. It demotes team members to code monkeys that have to perform certain tasks according to their predefined roles. 
 
-Like in Craig Larman's analogy to a soccer team where each player has a specific role and expertise, in which they are most efficient, you also want them to be able to take up other roles when needed. We hope that the striker will stop the ball going in their own goal as well as the goalkeeper should score if the opportunity presents itself. 
+Like in Craig Larman's analogy to a soccer team where each player has a specific role and expertise, in which they are most efficient, you also want them to be able to take up other roles when needed. We hope that the striker will stop the ball going in their own goal as well as the [goalkeeper should score]{https://www.youtube.com/watch?v=XeZ5zNv9_40&t=58s} if the opportunity presents itself.
 
 
 ### The pain of First time right
@@ -213,21 +213,19 @@ Striving for perfection, getting it right from the start, often holds us back fr
 
 Variability in Product development is not a bad thing if it comes with a high enough economic pay-off. We should prefer "responding to change over following a plan" if this is more valuable. But this is a hard thing todo
 
+## Delivering Projects
 
-## Conclusion
+A possible case where efficiency is more important than resiliency could be when delivering a short term software project as an external party. Because there is no need to be resilient, share knowledge in short term project mode. Commit to the deadline, deliver within the promissed time and budget and onwards to the next project!
 
-We've seen that Efficiency is often achieved in a well controlled environment, where the one constant thing in the field of Software Engineering is change. Therefore, it is often  better to prioritize for resiliency, to sacrifice short term local efficiency for a more durable resilient solution in the long term. In the software that is written as well in the way that the engineers write the software.
-
-
-Project modus
-
-A possible case where efficiency is more important than resiliency could be when delivering a short term software project as an external consultancy. Because there is no need to be resilient, share knowledge in short term project mode. Commit to the deadline, deliver within the promissed time and budget and onwards to the next project! 
-
-When the environment is well controlled, the time span short enough to hopefully avoid unexpected changes, the requirements small and limited enough so that the estimates are in the realm of reality then this can work. You can work efficiently, getting the most revenue from your consultant work by maximizing your consultant utilization, using the best expert for the job and doing it right immediately. 
+When the environment is well controlled, the time span short enough to hopefully avoid unexpected changes, the requirements small and limited enough so that the estimates are in the realm of reality then this can work. You can work efficiently, getting the most revenue from your consultant work by maximizing your consultant utilization, using the best expert for the job and doing it right immediately.
 
 However, that are a lot of ifs. And then we haven't taken into account what happens to the software once the project is done. Who will maintain it? What is the quality of the software delivery under the pressure of being efficient and doing it withing the fixed time and budget?
 
 
+
+## Conclusion
+
+We've seen that Efficiency is often achieved in a well controlled environment, where the one constant thing in the field of Software Engineering is change. Therefore, it is often  better to prioritize for resiliency, to sacrifice short term local efficiency for a more durable resilient solution in the long term. In the software that is written as well in the way that the engineers write the software.
 
 ## Links
 
