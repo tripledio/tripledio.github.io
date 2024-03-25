@@ -4,66 +4,96 @@ title: "Home"
 weight: 0
 
 spotlight:
-  imgDir: /img/spotlight/home
-  imgAlt: "Triple D : Design, Develop, Deploy"
-  logoAnimation: true
-  video: false
-  videoFile: files/electric.mp4
+    imgDir: /img/spotlight/home
+    imgAlt: "Triple D : Design, Develop, Deploy"
+    logoAnimation: true
+    video: false
+    videoFile: files/electric.mp4
 qotd:
-  enabled: true
+    enabled: true
 ---
 
 <section id="intro" class="py-4 py-md-10 bg-white text-gray">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-center">
-				<p>{{ 'Triple D is a Belgian software development company founded by and consisting entirely out of veteran software engineers. It is a small, completely independent company with very highly skilled, experienced and opinionated software engineers with a clear vision how to develop software successfully.' | markdownify }}</p>
-				<hr class="slab center w-25">
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 text-center">
+                <p>{{ '**Triple D** is a Belgian software development company founded and composed entirely of seasoned software engineers. Intentionally
+                    remaining a small, independent firm, **Triple D** leverages its extensive collective experience to cultivate a clear vision for successful
+                    software development.' | markdownify }}</p>
+                <hr class="slab center w-25">
+            </div>
+        </div>
+    </div>
 </section>
-<section id="aboutus" class="pt-2 pt-md-8 pb-md-10 pb-2 bg-white text-gray">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-6 px-md-2 px-lg-8 mb-4">
-				<h2 class="h3 text-uppercase text-center">Who are we</h2>
-				<hr class="slab center w-10 mt-2 mb-3">
-				<p>{{ 'We founded Triple D from our passion for software development. "We" are a group of veteran software engineers with the aim of having a *larger, positive impact* on the Belgian software industry.' | markdownify }}</p>
-			</div>
-			<div class="col-12 col-md-6 px-md-2 px-lg-8">
-				<h2 class="h3 text-uppercase text-center">What drives us</h2>
-				<hr class="slab center w-10 mt-2 mb-3">
-				<p>{{ 'Our main motivation is delivering high quality, rock SOLID and well designed software. We want to create products that will fit your needs and that will pay off your investments for years to come. *A challenging job well done, that is what we aim for.*' | markdownify }}</p>
-			</div>
-		</div>
-	</div>
+<section id="aboutus"
+         class="pt-2 pt-md-8 pb-md-10 pb-2 bg-white text-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 px-md-2 px-lg-8 mb-4">
+                <h2 class="h3 text-uppercase text-center">Who are we</h2>
+                <hr class="slab center w-10 mt-2 mb-3">
+                <p>{{'We are a team of passionate software engineers who felt unsatisfied with the dominant approach to software delivery. As seasoned veterans,
+                    we founded **Triple D** as a haven for like-minded individuals who share our desire to elevate the standards. We&rsquo;re proud to be more
+                    than your typical consultancy firm—you&rsquo;ll notice the difference' | markdownify }}</p>
+            </div>
+            <div class="col-12 col-md-6 px-md-2 px-lg-8">
+                <h2 class="h3 text-uppercase text-center">What drives us</h2>
+                <hr class="slab center w-10 mt-2 mb-3">
+                <p>{{ 'Our main drive is to deliver software that meets your needs and stands the test of time. We aim to create products that provide long-term
+                    returns on your investment. Since design, development and deployment are all interconnected parts in the iterative software development
+                    process we&rsquo;re dedicated to owning it all. So we can deliver quality software that&rsquo;s truly worth the investment.' | markdownify
+                    }}</p>
+            </div>
+        </div>
+    </div>
 </section>
+<section id="ourname"
+         class="pt-2 pt-md-8 pb-md-10 pb-2 bg-white text-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 px-md-2 px-lg-8 mb-4">
+                <h2 class="h3 text-uppercase text-center">Our name</h2>
+                <hr class="slab center w-10 mt-2 mb-3">
+                <p>{{ 'Our name, **Triple D**, encapsulates multiple facets of our identity. It signifies the comprehensive process of *D*esign, *D*evelop, *D*eploy, underscoring our expertise and commitment to excellence across all these stages. Additionally, it serves as a homage to essential development practices: *Test Driven Development*, *Behaviour Driven Development*, and *Domain Driven Design*—methodologies we vigorously embrace and implement.'| markdownify }}</p>
+            </div>
+            <div class="col-12 col-md-6 px-md-2 px-lg-8">
+                <h2 class="h3 text-uppercase text-center">Our Logo</h2>
+                <hr class="slab center w-10 mt-2 mb-3">
+                <p>{{'Both our name and logo are designed to reflect our iterative approach to software development. The interlocking D&rsquo;s in our logo symbolize the seamless transition and continuous cycle between each phase of our work. The colors of our logo represent the three stages of *Test Driven Development*: <span class="text-red">Red</span> for writing a failing test, <span class="text-green">Green</span> for making the test pass, and <span class="text-blue">Blue</span> for the phase of refactoring and enhancing the      code. This, like everything we do, underscores our dedication to a <u>disciplined, quality-driven, iterative development process</u>.' | markdownify
+                }}</p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
 <section id="services" class="pb-0 pb-md-6">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 text-center">
-				<h2 class="h3 mb-2 text-uppercase">Our services</h2>
-			</div>
-		</div>
-	</div>
-	<div class="partial-bg primary {% if page.servicesWithoutDescription %}alt{% endif %} pb-md-0">
-		<div class="container">
-			<div class="row">
-				{% for service in site.data.services %}
-				<div class="col-12 col-md-4 text-center">
-					<div class="icon {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %} flex-center-hv py-5">
-						<img src="{{ service.imgPath }}" alt="{{ service.imgAlt }}">
-					</div>
-					<h3 class="mb-4"><a class="bg-{{ service.color }}" href="{{ service.url }}">{{ service.name }}</a></h3>
-					{% if service.description %}
-					<div class="px-0 px-md-0 px-lg-4">
-						<p>{{ service.description }}</p>
-					</div>
-					{% endif %}
-				</div>
-				{% endfor %}
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="h3 mb-2 text-uppercase">Our services</h2>
+            </div>
+        </div>
+    </div>
+    <div class="partial-bg primary {% if page.servicesWithoutDescription %}alt{% endif %} pb-md-0">
+        <div class="container">
+            <div class="row">
+                {% for service in site.data.services %}
+                <div class="col-12 col-md-4 text-center">
+                    <div class="icon {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %} flex-center-hv py-5">
+                        <img src="{{ service.imgPath }}" alt="{{ service.imgAlt }}">
+                    </div>
+                    <h3 class="mb-4"><a class="bg-{{ service.color }}" href="{{ service.url }}">{{ service.name }}</a></h3>
+                    {% if service.description %}
+                    <div class="px-0 px-md-0 px-lg-4">
+                        <p>{{ service.description }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 </section>

@@ -14,13 +14,13 @@
   {
     "photo": "/img/authors/guido.jpg",
     "name": "Guido Dechamps",
-    "description": "Old cranky software craftsman. All opinions are my own.",
+    "description": "Old cranky software craftsman with a lot of opinions. Passionate about XP, DDD, the software development process and how it is impacted by leadership.",
     "contactLink": "https://twitter.com/Dechampsgu"
   },
   {
     "photo": "/img/authors/gert.jpg",
     "name": "Gert Vilain",
-    "description": "Aspiring software craftsman, motto: Automate all the things!",
+    "description": "Software craftsman that lives in the cloud. Wants to automate all the things!",
     "contactLink": "https://twitter.com/GertVil"
   },
   {
@@ -40,5 +40,11 @@
     "name": "Harm De Weirdt",
     "description": "Teacher that loves to learn, Student that loves to teach.",
     "contactLink": "https://www.linkedin.com/in/harmdeweirdt/"
+  },
+  {
+    "photo": "/img/authors/franky.png",
+    "name": "Franky Blondeel",
+    "description": "Passionate Software Engineer with a flair for graphic design.",
+    "contactLink": "https://www.linkedin.com/in/frankyjr/"
   }
 ]

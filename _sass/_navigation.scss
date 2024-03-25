@@ -2,8 +2,8 @@
 
 #main-nav {
   background: $color-white;
-  height: 13rem;
-  padding-top: 3rem;
+  height: 10rem;
+  //padding-top: 3rem;
 
   @media screen and (max-width: $breakpoint-md) {
     padding-top: 0;
@@ -50,7 +50,7 @@
       cursor: pointer;
       color: $color-black;
 
-      @media screen and (min-width: $breakpoint-md) {
+      @media screen and (min-width: $breakpoint-lg) {
         display: none;
       }
 
@@ -62,7 +62,7 @@
     }
 
     .nav-list {
-      @media screen and (min-width: $breakpoint-md) {
+      @media screen and (min-width: $breakpoint-lg) {
         ul {
           margin: 0;
           padding: 0;
@@ -130,7 +130,17 @@
         }
       }
 
-      @media screen and (max-width: $breakpoint-md) {
+      @media screen and (max-width: $breakpoint-xl) {
+        ul {
+          li {
+            a {
+              padding: 1rem 0 0.2rem;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: $breakpoint-lg) {
         position: fixed;
         z-index: 999999;
         top: 0;
@@ -163,6 +173,7 @@
         }
 
         &.open {
+          overflow-y: scroll;
           & ~ .nav-btn {
             z-index: 999999;
 

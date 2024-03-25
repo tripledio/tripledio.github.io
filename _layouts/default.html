@@ -26,7 +26,7 @@
     <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
     <meta name="DC.title" content="Triple D">
     <meta name="DC.identifier" content="https://www.tripled.io">
-    <meta name="DC.description" content="Triple D">
+    <meta name="DC.description" content="Triple D is a Belgian based software company.">
     <meta name="DC.subject" content="Triple D">
     <meta name="DC.language" scheme="ISO639-1" content="en">
     <meta name="DC.creator" content="https://www.tripled.io">
@@ -37,8 +37,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css ' | prepend: site.github.url | replace: 'http://', '//'  }}">
     <link rel="stylesheet" href="{{ '/css/syntax.css ' | prepend: site.github.url | replace: 'http://', '//'  }}">
-    <link rel="stylesheet" type="text/css"
-          href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -56,8 +55,8 @@
 {% assign pages = site.pages | sort: 'weight' %}
 <section id="main-nav">
     <div class="container">
-        <div class="row">
-            <div class="col-2">
+        <div class="row align-items-center">
+            <div class="col-3">
                 <div class="logo">
                     <a href="{{ site.github.url | replace: 'http://', '//' }}/">
                         <img src="/img/logo.svg" alt="{{ site.title }}" height="66">
@@ -65,7 +64,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-10">
+            <div class="col-9">
                 <nav>
                     <div class="nav-list">
                         <ul>
@@ -280,24 +279,21 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 text-lg-right text-md-right text-center">
                 <h2 class="h6 text-white font-weight-normal mb-2 text-uppercase">Contact us</h2>
-                <div class="pb-2">
-                    <a href="{{ "/feed.xml" | prepend: site.github.url | replace: 'http://', '//' }}" class="socicon
-                    rss">
-                    <i class="socicon-rss"></i>
+                <div class="socialicons pb-2">
+                    <a href="{{ "/feed.xml" | prepend: site.github.url | replace: 'http://', '//' }}" class="socialicon rss">
+                        <img src="/fonts/rss-solid.svg" alt="rss icon" class="socialicon-svg">
                     </a>
                     {% if site.twitter.username %}
-                    <a href="https://twitter.com/{{ site.twitter.username }}" class="socicon tw">
-                        <i class="socicon-twitter"></i>
-                    </a>
+                    <a href="https://twitter.com/{{ site.twitter.username }}" class="socialicon tw">
+                        <img src="/fonts/x-twitter.svg" alt="twitter-x icon" class="socialicon-svg">
                     {% endif %}
                     {% if site.linkedin.username %}
-                    <a href="https://linkedin.com/company/{{ site.linkedin.username }}" class="socicon ln">
-                        <i class="socicon-linkedin"></i>
-                    </a>
+                    <a href="https://linkedin.com/company/{{ site.linkedin.username }}" class="socialicon ln">
+                        <img src="/fonts/linkedin-in.svg" alt="linkedin icon" class="socialicon-svg">
                     {% endif %}
                     {% if site.email %}
-                    <a href="mailto:{{ site.email }}" class="socicon ml">
-                        <i class="socicon-mail"></i>
+                    <a href="mailto:{{ site.email }}" class="socialicon ml">
+                        <img src="/fonts/envelope-solid.svg" alt="mail icon" class="socialicon-svg">
                     </a>
                     {% endif %}
                 </div>
@@ -320,6 +316,7 @@
 <script src="{{ '/js/app.js ' | prepend: site.github.url | replace: 'http://', '//'  }}"></script>
 {% if site.google_tracking_id %}
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+
 <script>
     window.cookieconsent.initialise({
         onInitialise: function (status) {
