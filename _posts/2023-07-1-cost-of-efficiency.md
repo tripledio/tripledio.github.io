@@ -20,7 +20,7 @@ In the business world, there's a well-known saying dubbed 'The Seven Most Expens
 
 This phrase is often echoed by both managers and software engineers alike. Managers may express this sentiment out of a desire to streamline processes and maximize productivity. Software engineers frequently use it as a reason why they dislike a solution or way of working. For software engineers, who continually strive to optimize their software, processes and algorithms, this argument carries significant weight in discussions. The argument often seems irrefutable, acting as a conversation-stopper, given the prevailing emphasis on efficiency in software engineering.
 
-I'll admit, I'm not a fan of the "efficiency" argument. Efficiency is often treated as the holy grail, when in reality, there's more to consider. So, in this blog post, I'll dive into this topic and explore why there are times when seemingly inefficient approaches make sense. This is especially relevant in software engineering, where adaptation and learning are crucial. After all, efficiency comes with its own trade-offs.
+I'll admit, I'm very wary of the "efficiency" argument. Efficiency is often treated as the holy grail, when in reality, there's more to consider. So, in this blog post, I'll dive into this topic and explore why there are times when seemingly inefficient approaches make sense. This is especially relevant in software engineering, where adaptation and learning are crucial. We must be aware that efficiency comes with trade-offs and occurs in a context for a given scope.
 
 ## The drive for efficiency
 
@@ -33,8 +33,6 @@ Since the industrial age, the pursuit of efficiency has been relentless. This dr
 + First-Time Right: Striving to get it right on the first attempt and avoid rework.
 
 Challenging these goals often prompts the default response: 'That is not efficient!' It seems like a conclusive argument, but it really isn't. Let's delve into each goal to gain a deeper understanding of the underlying concerns. Because, of course, there is some truth to the argument.
-
-HERE
 
 ### Maximum resource utilization
 
@@ -70,7 +68,22 @@ Given that working iteratively should be a well known practice in the software f
 
 The mindset of trying to do things just once also occurs with knowledge transfers. With onboarding new people on the project, explaining new features, the architecture etc... All too often the desire is there to do any the knowledge transfer just once, a resistance to explaining things multiple times.  
 
----
+## The scope off efficiency
+
+One also must take into account that efficiency occurs within a specific context or scope. Individual components, processes or "resources" may be efficient on their own, but if they do not work together well, there will be waste on the whole. In other words, efficiency is not just about optimizing individual tasks or elements; it's about ensuring that **all** parts of a system function harmoniously together.
+
+Luckily for us there is quit a lot of study done on the efficiency within systems in relation to their individual components and their interactions with the larger system. The domain of systems thinking focus on understanding complex systems as a whole, including how their various components interact and influence overall performance.  Systems thinking emphasizes the interconnectedness of components within a system and examines how changes to one part can affect the system as a whole. 
+
+Below a couple of quotes that are relevant for our discussion 
+
++ "Local optimization creates global suboptimization." - John Seddon
++ "Optimizing a part of the system will not necessarily optimize the whole." - W. Edwards Deming
++ "The performance of a system is not the sum of the performances of its parts taken separately, but the product of their interactions." - Russell Ackoff
++ "Any improvements made anywhere besides the bottleneck are an illusion." - Gene Kim
+
+So when someone complains about an efficiency, make sure that they clarify the scope of the (in)efficiency. It is very easy to lose sight of the system as a whole. Something that is often at the root of those four costly words. We will come back to this when focussing on software engineering practices.
+
+
 ## Efficiency trade-offs 
 
 While I think efficiency is definitely a good thing, it does have its trade-offs. Trade-offs we need to be aware of so that we don't just end a conversation because something makes the argument that something isn't efficient. Because there is more to life then achieving maximum efficiency. If fact, there probably wouldn't be any life is everything was efficient...
@@ -81,7 +94,7 @@ Let's leave the world of IT for a minute and take a look at mother nature.
 
 ![celss]
 
-In nature not everything is efficient. If we take a look at how cells evolve, in plants as well in animals, this happens in a non-deterministic way. It is not set from the beginning what a cell will become. Cells are capable to of evolving on a wide spectrum. Though it would be more efficient in the short term if each cell is ascribed a function from the start, in the long term this comes at a cost. It would hinder the organisms ability to adapt at to external changes. By being suboptimal, inefficient on the small scale (cells), nature has become resilient at the larger scale (organisms). 
+In nature not everything is efficient. If we take a look at how cells evolve, in plants as well in animals, this happens in a non-deterministic way. It is not set from the beginning what a cell will become. Cells are capable to of evolving on a wide spectrum. Though it would be more efficient in the short term if each cell is ascribed a function from the start, in the long term this comes at a cost. It would hinder the organisms ability to **adapt** at to external changes. By being suboptimal, inefficient on the small scale (cells), nature has become resilient at the larger scale (organisms). 
 
 An ant colony is also an example of this. There is build in redundancy by tasks and roles of course. But even we observe the route an individual ant takes, this isn't efficient. However, for the colony as a whole this gives resiliency by having multiple routes and options for food. 
 
@@ -93,7 +106,7 @@ So an important takeaway:
 
 Another more visual example are plants. Green is the color that reigns over the plant kingdom. But why green, and not black? It is because plants photoelectric cells, those that regulate the energy flow during photosynthesis, absorb all the photons in the red and blue regions of the light spectrum. But they absorb only about 90% of the green photons. If they absorbed more, they would look black. So plants are green because they are not super efficient and still reflect a small amount of green light. So what is the trade-off?
 
-Not capturing all the green light has a purpose. Since the external input of light constantly changes, this would also make the electrical energy input flow in the photoelectric cell constantly shift if the cells would absorb all light. But for the cells a stable energy flow is best, better tha the most efficient energy absorption. Because not enough electrons can cause an energy failure, while too many electrons can cause overcharging effects. That is why the photoelectric cells regulate their light absorption and "spit out" green light. So evolution cares less about making being efficient than about being stable. 
+Not capturing all the green light has a purpose. Since the external input of light constantly changes, this would also make the electrical energy input flow in the photoelectric cell constantly shift if the cells would absorb all light. But for the cells a stable energy flow is best, better than the most efficient energy absorption. Because not enough electrons can cause an energy failure, while too many electrons can cause overcharging effects. That is why the photoelectric cells regulate their light absorption and "spit out" green light. So evolution cares less about making being efficient than about being stable. 
 
 > "To be resilient against external changes, prioritize stability and adaptability over efficiency"
 
@@ -111,7 +124,7 @@ From the examples above we can make the following conclusions:
 
 + Optimizing for local efficiency can negatively impact resiliency on the larger scale.
 + Choosing the most efficient solution may not be worth the effort. Having a faster good enough solution may prove to be more valuable. 
-+ Efficiency is often achieved in a well controlled environment. Depending on the type of environment, resiliency may be more important.
++ Efficiency is often achieved in a well controlled environment. Depending on the type of environment, resiliency may be more important. If the environment (requirements) frequently changes, the effort done to be efficient can be waste in itself.
 
 
 
@@ -119,7 +132,9 @@ From the examples above we can make the following conclusions:
 
 ## The cost of efficiency in Software Engineering
 
-As shown above being efficient is not always the most important thing. It would state that the drive to always "be efficient" can often hurt us. Let's revisit the efficiency goals stated earlier and discuss where they have a negative impact.
+As shown above being efficient is not always the most important thing. An over simplistic drive to "be efficient" without taking into account the scope, environment, cost of achieving efficiency can be more costly. 
+
+Let's bring it back to the field of software engineering. Let us revisit the three classic efficiency goals stated earlier and discuss where they can have a negative impact.
 
 ### The pain of Maximum resource utilization
 
@@ -149,38 +164,31 @@ Given the nature of software engineering, the drive to produce, to be busy is es
 
 > Software Engineering is a learning process, working code a side effect
 
-### Division of labor
+### The queues of division of labor
 
-The division of labor in Software engineering is only partly by dividing the job in several specialization. Like I mentioned earlier, different types of work don't just simply map on different role. But let's stick with division by roles for know. Typical roles we have in software engineering are:
- >> here
-Frontend Developer
-Backend Developer
-UI/UX Designer
-Quality Assurance (QA) Engineer
-DevOps Engineer
-System Administrator
-Database Administrator (DBA)
-Technical Writer
+A good software team should be cross-functional. Meaning they should have all the necessary skills inside the team so that they can work as an autonomous unit and do not require outside help. They should have as few outside dependencies as possible. Because as software engineers we know, dependencies come at a cost.
 
+In software engineering we have all types of different roles
 
++ Frontend Developer
++ Backend Developer
++ UI/UX Designer
++ Quality Assurance (QA) Engineer
++ DevOps Engineer
++ System Administrator
++ Database Administrator (DBA)
++ Technical Writer
++ ....
 
-A good software team should be cross-functional. Meaning they should have all the necessary skills inside the team so that they can work as an autonomous unit and do not require outside help. They should have as few outside dependencies as possible. Because as software engineers we know, dependencies come at a cost. 
+Suppose that we have team who have minimum one member for each necessary roles. When the team takes up work, the most efficient thing would be to divide the work and assign to each task the expert with the required role and expertise. Since they are the most suited to perform a certain type of task. 
 
-The most efficient thing to do would be to assign work to the expert that is most suited to do so.
+The problem with this efficient approach is that it is hard to lean new things. Each persons knowledge remains limited to their own role. This negatively impacts resiliency. Since no knowledge is shared, the same roles always perform the same task, so if a critical role is not present, the team is blocked. Making certain roles, persons  bottlenecks for the team. If they aren't present or simply don't have time, the work must remain wait until they have time. In other words, *queues* of work are created. Something that is especially dangerous in the field of software engineering because this is not easily visible. Except perhaps somewhere in Jira tickets.
 
+In short, the efficiency of the whole team is negatively impacted by optimizing for individual tasks.
 
+The approach also goes against real autonomous teams that can determine how they do their work. It demotes team members to code monkeys that have to perform certain tasks according to their predefined roles. 
 
-
-- no learning
-- no resiliency
-- bottlenecks 
-- queues
-- thinking vs do
-
-
-
-
-
+Like in Craig Larman's analogy to a soccer team where each player has a specific role and expertise, in which they are most efficient, you also want them to be able to take up other roles when needed. We hope that the striker will stop the ball going in their own goal as well as the goalkeeper should score if the opportunity presents itself. 
 
 
 ### The pain of First time right
