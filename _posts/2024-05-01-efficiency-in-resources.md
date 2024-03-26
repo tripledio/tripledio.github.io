@@ -52,9 +52,6 @@ Correlated with the above, the aim for maximum resource utilization can also hin
 
 Given the nature of software engineering, the drive to produce, to be busy is especially harmful. Because it is not about producing code, but about solving problems. And it is hard to do this "efficient". Just like it is hard to be creative on command. 
 
-> Software Engineering is a learning process, working code a side effect
-
-## Conclusion
 
 
 ## Links
