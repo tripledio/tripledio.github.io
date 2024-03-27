@@ -42,23 +42,25 @@ While I think efficiency is on its own a good thing, even a goal worth pursuing,
 
 Let's leave the world of IT for a minute and take a look at mother nature. 
 
-![Cells](/img/posts/efficiency/cells.jpg){:width="800px"}
-
 In nature not everything is efficient. If we take a look at how cells evolve, in plants as well in animals, this happens in a non-deterministic way. It is not set from the beginning what a cell will become. Cells are capable to of evolving on a wide spectrum. Though it would be more efficient in the short term if each cell is ascribed a function from the start, in the long term this comes at a cost. It would hinder the organisms ability to **adapt** at to external changes. By being suboptimal, inefficient on the small scale (cells), nature has become resilient at the larger scale (organisms). 
 
-![Ants](/img/posts/efficiency/ants.jpg){:width="800px"}
+![Cells](/img/posts/efficiency/cells.jpg){:width="800px"}
 
 An ant colony is also an example of this. There is build in redundancy by tasks and roles of course. But even when we simply observe the route an individual ant takes, this isn't efficient. However, for the colony as a whole this inefficiency gives resiliency by having multiple routes and options for food. 
+
+![Ants](/img/posts/efficiency/ants.jpg){:width="800px"}
 
 So an important takeaway:
 
 > "Inefficiency in the small yields resilience in the large."
 
-![Leafs](/img/posts/efficiency/leafs.jpg){:width="800px"}
 
-Another more visual example are plants. Green is the color that reigns over the plant kingdom. But why green, and not black? It is because plants photoelectric cells, those that regulate the energy flow during photosynthesis, absorb all the photons in the red and blue regions of the light spectrum. But they absorb only about 90% of the green photons. If they absorbed more, they would look black. So plants are green because they are not super efficient and still reflect a small amount of green light. So what is the trade-off?
+
+Another more visual example are plants[^leafs]. Green is the color that reigns over the plant kingdom. But why green, and not black? It is because plants photoelectric cells, those that regulate the energy flow during photosynthesis, absorb all the photons in the red and blue regions of the light spectrum. But they absorb only about 90% of the green photons. If they absorbed more, they would look black. So plants are green because they are not super efficient and still reflect a small amount of green light. So what is the trade-off?
 
 Not capturing all the green light has a purpose. Since the external input of light constantly changes, this would also make the electrical energy input flow in the photoelectric cell constantly shift if the cells would absorb all light. But for the cells a stable energy flow is best, better than the most efficient energy absorption. Because not enough electrons can cause an energy failure, while too many electrons can cause overcharging effects. That is why the photoelectric cells regulate their light absorption and "spit out" green light. So evolution cares less about making being efficient than about being stable. 
+
+![Leafs](/img/posts/efficiency/leafs.jpg){:width="800px"}
 
 > "To be resilient against external changes, prioritize stability and adaptability over efficiency"
 
@@ -66,15 +68,16 @@ Not capturing all the green light has a purpose. Since the external input of lig
 
 There are also plenty of examples in Computer Science where **efficiency was sacrificed** in order to gain resiliency. 
 
-![tcpip](/img/posts/efficiency/tcpip.jpg){:width="800px"}
 
 For instance the simple protocol suite, TCP/IP, which regulates how packets travel through the network from one machine to another, is definitely not efficient. But it is resilient! It needs to be given that significant errors are possible: data can be corrupted, packets can be lost, the network is continuously changing with constant failures of nodes. It was designed this way, efficiency in the small was sacrificed for resiliency in the large. Stability and adaptability was prioritized over efficiency.
 
-![heuristic](/img/posts/efficiency/heuristic.jpg){:width="800px"}
+![tcpip](/img/posts/efficiency/tcpip.jpg){:width="800px"}
 
 Even when designing algorithms, people sometimes choose suboptimal heuristic solutions over optimal exact algorithms. Because many real-world problems are so complex that pursuing the ideal, most efficient solution is too costly. Instead, people sacrifice efficiency by introducing randomness and settling for 'good enough' solutions. Sometimes the cost of optimal algorithms is too high computational and time wise. There can be a point where going for the most efficient solution has diminishing returns. Making it more efficient to go for the less efficient solution.
 
 > It can be more efficient to go for the less efficient option
+
+![heuristic](/img/posts/efficiency/heuristic.jpg){:width="800px"}
 
 ### The choice
 
@@ -97,4 +100,4 @@ Given that the one constant thing in the field of Software Engineering is change
 
 ## Links
 
-+ [Plants are green]{https://www.quantamagazine.org/why-are-plants-green-to-reduce-the-noise-in-photosynthesis-20200730}
+[^leafs]: _[Plants are green(https://www.quantamagazine.org/why-are-plants-green-to-reduce-the-noise-in-photosynthesis-20200730)_
