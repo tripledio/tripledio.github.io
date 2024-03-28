@@ -16,7 +16,7 @@ logoAnimation: false
 
 In the business world, there's a well-known saying dubbed 'The Seven Most Expensive Words' which is: 'We've always done it this way.' In my opinion we have something similar in the realm of software engineering. An argument that I encounter all to frequent.
 
-> The four most perilous words in software engineering: 'That is not efficient!'
+<pre><code>The four most perilous words in software engineering: <b>That is not efficient!</b></code></pre>
 
 This is a phrase that is often echoed by both managers and software engineers alike. Managers may express this sentiment out of a desire to streamline processes and maximize productivity. Software engineers frequently use it as a reason why they dislike a certain solution or way of working. For software engineers, who continually strive to optimize their software, processes and algorithms, this argument carries significant weight in discussions. The argument often seems irrefutable, acting as a conversation-stopper, given the prevailing emphasis on efficiency in software engineering.
 
@@ -54,8 +54,6 @@ So an important takeaway:
 
 > "Inefficiency in the small yields resilience in the large."
 
-
-
 Another more visual example are plants[^leafs]. Green is the color that reigns over the plant kingdom. But why green, and not black? It is because plants photoelectric cells, those that regulate the energy flow during photosynthesis, absorb all the photons in the red and blue regions of the light spectrum. But they absorb only about 90% of the green photons. If they absorbed more, they would look black. So plants are green because they are not super efficient and still reflect a small amount of green light. So what is the trade-off?
 
 Not capturing all the green light has a purpose. Since the external input of light constantly changes, this would also make the electrical energy input flow in the photoelectric cell constantly shift if the cells would absorb all light. But for the cells a stable energy flow is best, better than the most efficient energy absorption. Because not enough electrons can cause an energy failure, while too many electrons can cause overcharging effects. That is why the photoelectric cells regulate their light absorption and "spit out" green light. So evolution cares less about making being efficient than about being stable. 
@@ -92,12 +90,12 @@ From the examples above we can already draw the following conclusions:
 
 The main thing I hope to pass on here with this post can be summarized as follows:
 
-> "The cost of efficiency is resiliency"
+<pre><code>The cost of efficiency is <b>resiliency</b></code></pre>
 
-Given that efficiency is often achieved in a well controlled environment for a given scope, make sure that efficiency is what we really need and in what scope. Efficiency in the short term can cost us resiliency in the longer term, on a larger scope. Which can prove to be more costly and thus result in more waste. So don't give in too quickly to the "That's not efficient" argument.
+Given that efficiency is often achieved in a well controlled environment for a given scope, make sure that efficiency is what we really need and in what scope we need it. Efficiency in the short term can cost us resiliency in the longer term, for a larger scope. Which can prove to be more costly and thus result in more waste. So don't give in too quickly to the "That's not efficient" argument.
 
 Given that the one constant thing in the field of Software Engineering is change, the efficiency argument holds real danger here. It is often better to prioritize for resiliency, to sacrifice short term local efficiencies for a more durable resilient solution in the long term. In effect, a lot of good software practices do exactly that. Making them look inefficient at first glance, but very valuable when taking into account the whole context. I'll get into more details on this in another post.
 
 ## Links
 
-[^leafs]: _[Plants are green(https://www.quantamagazine.org/why-are-plants-green-to-reduce-the-noise-in-photosynthesis-20200730)_
+[^leafs]: _[Plants are green](https://www.quantamagazine.org/why-are-plants-green-to-reduce-the-noise-in-photosynthesis-20200730)_
