@@ -3,8 +3,8 @@ layout: post
 title: "The scope of efficiency"
 author: guido
 tags: efficiency
-description: The hidden cost of the ghost efficiency in software development
-excerpt: Efficiency is something people tend to strive for. But this goal often does more harm than good.
+description: The hidden cost of the neglecting the scope of efficiency in software development
+excerpt: Efficiency does not occur in a vacuum. Make sure you are optimizing for the right scope.
 hideLogo: true
 spotlight:
   imgDir: /img/posts/efficiency
@@ -54,6 +54,8 @@ Both Systems thinking and Lean aim to improve efficiency within organizations by
 
 If we don't take the scope of efficiency into account, we run the risk of optimizing individual components or processes without considering the impact on the whole system. This can inadvertently lead to the formation of queues and inefficiencies within the system. 
 
+> "Queues are the silent killers of efficiency, draining resources and stifling progress."
+
 In the example of our restaurant, there could be queues for each department:
 
 + If the kitchen or bar is not able to complete the orders fast enough, this will result in a queue of pending orders. Increasing the completion time of an order.
@@ -78,6 +80,10 @@ Perhaps this can work
 
 However, those are a lot of ifs. We haven't even taken into account what happens to the software once the project is done. Who will maintain it? What is the quality of the software delivered under pressure? The pressure of being efficient and doing everything within the fixed time and budget?
 
+![deadline](/img/posts/efficiency/program-night.jpg){:width="800px"}
+
+> "There is never enough time to do it right, but there is always enough time to do it over" -- Murphy's law
+
 I would stick my neck out and say that delivering software in project scope postpones the cost of "being efficient" to later. Once the project is delivered, the software still needs to be maintained. The knowledge of the software will not easily be obtained by some written documentation, the design decisions that were taken to efficiently deliver the project will impact the cost of using, maintaining and extending the software. 
 
 Personally, I'm very wary of software projects, like the software can be finished. I have spent too many years trying to fix "successful" software projects, years after the delivered deadline. When one looks beyond the scope of the projects, those successful projects were perhaps not so successful. More often than not, the cost of having delivered the software *"efficiently"* within the project scope at the cost of resiliency outweighed the gains made delivering the project on time and on budget.
@@ -86,7 +92,13 @@ Personally, I'm very wary of software projects, like the software can be finishe
 
 ## Conclusion
 
-The main point I wish to make is that you should be sure you are aware of the scope of what you are optimizing, and its impact on the larger system. So when someone complains about efficiency, make sure that they clarify the scope of the (in)efficiency. It is easy to lose sight of the system as a whole. 
+The main point I wish to make is that you should take the scope into account of what you are optimizing. If we made something more efficient, what is the impact on the larger system? The cost of local optimization can be larger than the gain. 
+
+And remember
+
+> "In the quest for productivity, queues are the dragons to be slayed, the obstacles to overcome."
+
+![traffic](/img/posts/efficiency/trafic.jpg){:width="800px"}
 
 
 

@@ -98,4 +98,4 @@ Given that the one constant thing in the field of Software Engineering is change
 
 ## Links
 
-[^leafs]: _[Plants are green](https://www.quantamagazine.org/why-are-plants-green-to-reduce-the-noise-in-photosynthesis-20200730)_
+[^leafs]: _[Why plants are green](https://www.quantamagazine.org/why-are-plants-green-to-reduce-the-noise-in-photosynthesis-20200730)_
