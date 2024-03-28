@@ -16,9 +16,10 @@ logoAnimation: false
 
 In the business world, there's a well-known saying dubbed 'The Seven Most Expensive Words' which is: 'We've always done it this way.' In my opinion we have something similar in the realm of software engineering. An argument that I encounter all to frequent.
 
-<pre><code>The four most perilous words in software engineering: <b>That is not efficient!</b></code></pre>
+*The four most perilous words in software engineering:* 
+**That is not efficient!**
 
-This is a phrase that is often echoed by both managers and software engineers alike. Managers may express this sentiment out of a desire to streamline processes and maximize productivity. Software engineers frequently use it as a reason why they dislike a certain solution or way of working. For software engineers, who continually strive to optimize their software, processes and algorithms, this argument carries significant weight in discussions. The argument often seems irrefutable, acting as a conversation-stopper, given the prevailing emphasis on efficiency in software engineering.
+This is a phrase often echoed by both managers and software engineers alike. Managers may express this sentiment out of a desire to streamline processes and maximize productivity. Software engineers frequently use it as a reason why they dislike a certain solution or way of working. For software engineers, who continually strive to optimize their software, processes and algorithms, this argument carries significant weight in discussions. The argument often seems irrefutable, acting as a conversation-stopper, given the prevailing emphasis on efficiency in software engineering.
 
 Personally I have become very wary of the "efficiency" argument. Efficiency is often treated as the holy grail, when in reality, there's more to consider. So, in this blog post series, I'll dive into this topic and explore why there are times when seemingly inefficient approaches make sense. We must be aware that efficiency comes with **trade-offs** and occurs in a **context** for a given **scope**.
 
@@ -50,9 +51,8 @@ An ant colony is also an example of this. There is build in redundancy by tasks 
 
 ![Ants](/img/posts/efficiency/ants.jpg){:width="800px"}
 
-So an important takeaway:
-
-> "Inefficiency in the small yields resilience in the large."
+"Inefficiency in the small yields resilience in the large." 
+{: .center-img-text }
 
 Another more visual example are plants[^leafs]. Green is the color that reigns over the plant kingdom. But why green, and not black? It is because plants photoelectric cells, those that regulate the energy flow during photosynthesis, absorb all the photons in the red and blue regions of the light spectrum. But they absorb only about 90% of the green photons. If they absorbed more, they would look black. So plants are green because they are not super efficient and still reflect a small amount of green light. So what is the trade-off?
 
@@ -61,6 +61,7 @@ Not capturing all the green light has a purpose. Since the external input of lig
 ![Leafs](/img/posts/efficiency/leafs.jpg){:width="800px"}
 
 > "To be resilient against external changes, prioritize stability and adaptability over efficiency"
+
 
 ### Computer science
 
@@ -73,9 +74,11 @@ For instance the simple protocol suite, TCP/IP, which regulates how packets trav
 
 Even when designing algorithms, people sometimes choose suboptimal heuristic solutions over optimal exact algorithms. Because many real-world problems are so complex that pursuing the ideal, most efficient solution is too costly. Instead, people sacrifice efficiency by introducing randomness and settling for 'good enough' solutions. Sometimes the cost of optimal algorithms is too high computational and time wise. There can be a point where going for the most efficient solution has diminishing returns. Making it more efficient to go for the less efficient solution.
 
-> It can be more efficient to go for the less efficient option
 
 ![heuristic](/img/posts/efficiency/heuristic.jpg){:width="800px"}
+
+It can be more efficient to go for the less efficient option
+{: .center-img-text }
 
 ### The choice
 
@@ -90,7 +93,7 @@ From the examples above we can already draw the following conclusions:
 
 The main thing I hope to pass on here with this post can be summarized as follows:
 
-<pre><code>The cost of efficiency is <b>resiliency</b></code></pre>
+**The cost of efficiency is resiliency**
 
 Given that efficiency is often achieved in a well controlled environment for a given scope, make sure that efficiency is what we really need and in what scope we need it. Efficiency in the short term can cost us resiliency in the longer term, for a larger scope. Which can prove to be more costly and thus result in more waste. So don't give in too quickly to the "That's not efficient" argument.
 
