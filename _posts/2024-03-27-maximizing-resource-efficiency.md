@@ -1,18 +1,23 @@
 ---
 layout: post
-title: "Busy busy"
+title: "Maximizing resource efficiency"
 author: guido
 tags: efficiency
-description: The be efficient, resources should be in use 100%
-excerpt: If we aren't busy, we're not efficient.
+description: To be efficient, resources should be in use 100%
+excerpt: Tackling the prevalent idea that in order to be efficient, resources should be in use 100%
 hideLogo: true
 spotlight:
   imgDir: /img/posts/efficiency
   imgAlt: "Triple D : Design, Develop, Deploy"
 logoAnimation: false
+date: 2024-03-27 21:00:00
 ---
 
-# Maximum resource utilization
+# Maximizing resource efficiency
+
+*This post belongs to small series of posts on efficiency. The main post is [The cost of efficiency](/27/03/2024/cost-of-efficiency/).*
+
+TODO clean this up 
 
 Since resources are scares and expensive we want to utilize them as much as possible. A machine on the factory floor that is not working is waste. So this must mean that people not being occupied 100% of the time is also waste. Conversations at the coffee machine, working with multiple people on the same problem... all necessary evil. If people were machines, we could get really efficient. Unfortunately they are not, but it is still seen as a goal to aim for, to be busy as much as possible. To aim for that max % of resource utilization.
 
@@ -50,11 +55,15 @@ Correlated with the above, the aim for maximum resource utilization can also hin
 
 > We prefer building the wrong thing fast, then the solving the right thing well
 
-Given the nature of software engineering, the drive to produce, to be busy is especially harmful. Because it is not about producing code, but about solving problems. And it is hard to do this "efficient". Just like it is hard to be creative on command. 
+Given the nature of software engineering, the drive to produce, to be busy is especially harmful. Because it is not about producing code, but about solving problems. And it is hard to do this "efficient." Just like it is hard to be creative on command. 
 
 
 
 ## Links
 
+The blog posts on efficiency:
++ [The cost of efficiency](/27/03/2024/cost-of-efficiency/):
++ [The scope of efficiency](/27/03/2024/scope-of-efficiency/):
++ [Maximum Resource Utilization](/27/03/2024/maximizing-resource-efficiency/):
 
 + https://dannorth.net/the-worst-programmer/

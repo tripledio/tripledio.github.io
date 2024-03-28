@@ -6,6 +6,7 @@ tags: efficiency
 description: The hidden cost of the neglecting the scope of efficiency in software development
 excerpt: Efficiency does not occur in a vacuum. Make sure you are optimizing for the right scope.
 hideLogo: true
+date: 2024-03-27 22:00:00
 spotlight:
   imgDir: /img/posts/efficiency
   imgAlt: "Triple D : Design, Develop, Deploy"
@@ -18,7 +19,7 @@ logoAnimation: false
 
 Whenever we are searching for more efficiency, we need to make sure that we know the scope for which we are optimizing. We need to take into account that efficiency occurs within a specific context for a given scope. Individual components, processes or "resources" may be efficient on their own, but if they do not work together well, there will be waste on the whole system. In other words, efficiency is not just about optimizing individual tasks or elements; it's about ensuring that **all** the parts of a system function harmoniously together.
 
-> "Local optimization creates global suboptimization." - John Seddon
+> "Local optimization creates global suboptimization."
 
 ## Revisit our restaurant
 
@@ -26,7 +27,9 @@ As a simple example, let us revisit our [three-star restaurant “Triple D”](/
 
 Our restaurants consist of several "departments" that contribute to the whole customer experience. The kitchen is responsible for preparing and cooking food where the bar is responsible for drinks and making exclusive cocktails. The waiters are responsible for taking the orders, serving food and drinks to the customers, and ensuring overall customer satisfaction. The restaurant management team oversees operations, including staffing and inventory management.
 
-![restaurant](/img/posts/efficiency/restaurant-flow.jpg){:width="800px"}
+![restaurant](/img/posts/efficiency/restaurant-flow.jpg)
+The flow of our restaurant
+{: .center-img-text }
 
 Each department strives to be as efficient as possible. But they should be wary that their optimizations do not negatively impact the whole.
 
@@ -38,17 +41,17 @@ Management could try to reduce cost by limiting the cost of staff and waste of f
 
 It's easy to come up with more examples where local efficiency optimization of one department can negatively impact the whole.
 
-> "Optimizing a part of the system will not necessarily optimize the whole." - W. Edwards Deming
+> "Optimizing a part of the system will not necessarily optimize the whole."
 
 ## System thinking
 
-Luckily for us, there is quit a lot of study done on the efficiency within systems in relation to their individual components and their interactions with the larger system. The domain of *system thinking* focus on understanding complex systems as a whole, including how their various components interact and influence overall performance.  Systems thinking emphasizes the interconnectedness of components within a system and examines how changes to one part can affect the system as a whole.
+Luckily for us, there is quit a lot of study done on the efficiency within systems in relation to their individual components and their interactions with the larger system. The domain of *system thinking* [^system] focuses on understanding complex systems as a whole, including how their various components interact and influence overall performance.  Systems thinking emphasizes the interconnectedness of components within a system and examines how changes to one part can affect the system as a whole.
 
 Closely related to system thinking is *Lean*. Where system thinking provides the conceptual framework for understanding complex systems and their behavior, Lean offers a practical set of tools and methodologies for those principles.
 
 Both Systems thinking and Lean aim to improve efficiency within organizations by identifying and removing waste. One of the main sources of waste in a complex system that they try to remove are *queues*. 
 
-> "Any improvements made anywhere besides the bottleneck are an illusion." - Gene Kim
+> "Any improvements made anywhere besides the bottleneck are an illusion."
 
 ## Queueing theory 
 
@@ -62,12 +65,14 @@ In the example of our restaurant, there could be queues for each department:
 + If the waiters are not able to deliver the prepared food and drinks fast enough, this will result in a queue of orders to be served. Increasing the completion time of an order but also the quality since the food can become cold, the orders can arrive out of order, all at the same time.
 
 ![queues](/img/posts/efficiency/queues.jpg){:width="800px"}
+Queues, the invisible killers
+{: .center-img-text }
 
-The study of queues [queueing theory]{https://less.works/less/principles/queueing_theory} can teach us a lot on how to reduce queues and obtain a good flow in the overall system. Queues come at great cost. The biggest danger for queues, especially in product development is that they are invisible. (Except perhaps in JIRA tickets.) 
+The study of queues [queueing theory]{https://less.works/less/principles/queueing_theory} [^queue] can teach us a lot on how to reduce queues and obtain a good flow in the overall system. Queues come at great cost. The biggest danger for queues, especially in product development is that they are invisible. (Except perhaps in JIRA tickets.) 
 
-The restaurant example can easily be transposed to software engineering and how teams work. Michel Grootjans has made a good [explanation](https://youtu.be/bhpQKA9XYcE) of queues and WIP o the impact of team flow.
+The restaurant example can easily be transposed to software engineering and how teams work. Michel Grootjans has made a good [explanation](https://youtu.be/bhpQKA9XYcE) [^team-flow] of queues and WIP o the impact of team flow.
 
-> "The performance of a system is not the sum of the performances of its individual parts. But the product of their interactions." - Russell Ackoff
+> "In the quest for productivity, queues are the dragons to be slayed, the obstacles to overcome."
 
 ## Project Scope
 
@@ -80,28 +85,38 @@ Perhaps this can work
 
 However, those are a lot of ifs. We haven't even taken into account what happens to the software once the project is done. Who will maintain it? What is the quality of the software delivered under pressure? The pressure of being efficient and doing everything within the fixed time and budget?
 
-![deadline](/img/posts/efficiency/program-night.jpg){:width="800px"}
-
-> "There is never enough time to do it right, but there is always enough time to do it over" -- Murphy's law
+![deadline](/img/posts/efficiency/program-night.jpg){:width="400px"}
+Efficiently making the deadline
+{: .center-img-text }
 
 I would stick my neck out and say that delivering software in project scope postpones the cost of "being efficient" to later. Once the project is delivered, the software still needs to be maintained. The knowledge of the software will not easily be obtained by some written documentation, the design decisions that were taken to efficiently deliver the project will impact the cost of using, maintaining and extending the software. 
 
+> "There is never enough time to do it right, but there is always enough time to do it over" -- Murphy's law
+
 Personally, I'm very wary of software projects, like the software can be finished. I have spent too many years trying to fix "successful" software projects, years after the delivered deadline. When one looks beyond the scope of the projects, those successful projects were perhaps not so successful. More often than not, the cost of having delivered the software *"efficiently"* within the project scope at the cost of resiliency outweighed the gains made delivering the project on time and on budget.
 
-> "Software is never finished, it's only abandoned"
+> "Software is never finished, it's only abandoned."
 
 ## Conclusion
 
-The main point I wish to make is that you should take the scope into account of what you are optimizing. If we made something more efficient, what is the impact on the larger system? The cost of local optimization can be larger than the gain. 
+The main point I wish to make is that you should take the scope into account of what you are optimizing. If you are aiming to be "more efficient", what is the impact on the larger system? Are you optimizing the right thing?  Because the cost of local optimization can be much larger than the gain. 
 
-> "In the quest for productivity, queues are the dragons to be slayed, the obstacles to overcome."
+> "The performance of a system is not the sum of the performances of its individual parts. But the product of their interactions."
 
 ![traffic](/img/posts/efficiency/trafic.jpg){:width="800px"}
-Queues are bad
+*Queues are bad*
 {: .center-img-text }
 
+## Links
 
+The blog posts on efficiency:
++ [The cost of efficiency](/27/03/2024/cost-of-efficiency/):
++ [The scope of efficiency](/27/03/2024/scope-of-efficiency/):
++ [Maximum Resource Utilization](/27/03/2024/maximizing-resource-efficiency/):
 
+[^system]: _[System thinking](https://thesystemsthinker.com/systems-thinking-what-why-when-where-and-how/)_
+[^queue]: _[Queue theory](https://less.works/less/principles/queueing_theory)_
+[^team-flow]: _[Team flow](https://youtu.be/bhpQKA9XYcE)_
 
 
 
