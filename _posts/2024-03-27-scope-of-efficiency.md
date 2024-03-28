@@ -94,11 +94,12 @@ Personally, I'm very wary of software projects, like the software can be finishe
 
 The main point I wish to make is that you should take the scope into account of what you are optimizing. If we made something more efficient, what is the impact on the larger system? The cost of local optimization can be larger than the gain. 
 
-And remember
+And remember: **Queues are bad**.
+
+![traffic](/img/posts/efficiency/trafic.jpg){:width="800px"}
 
 > "In the quest for productivity, queues are the dragons to be slayed, the obstacles to overcome."
 
-![traffic](/img/posts/efficiency/trafic.jpg){:width="800px"}
 
 
 
