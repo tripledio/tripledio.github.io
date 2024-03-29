@@ -29,7 +29,7 @@ Efficiency, simply put, means doing things right without errors or unnecessary w
 
 Ever since the industrial age, the pursuit of efficiency has been relentless. That pursuit manifests itself in various objectives:
 
-+ Maximum Resource Utilization]: Ensuring all resources operate at maximum capacity.
++ Maximum Resource Utilization: Ensuring all resources operate at maximum capacity.
 + Division of Labor: Assigning specialized resources with the highest output to specific tasks.
 + First-Time Right: Striving to get it right on the first attempt and avoid rework.
 

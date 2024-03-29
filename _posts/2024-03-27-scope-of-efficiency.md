@@ -103,7 +103,7 @@ The main point I wish to make is that you should take the scope into account of 
 
 > "The performance of a system is not the sum of the performances of its individual parts. But the product of their interactions."
 
-![traffic](/img/posts/efficiency/trafic.jpg){:width="800px"}
+![traffic](/img/posts/efficiency/trafic.jpg){:width="400px"}
 *Queues are bad*
 {: .center-img-text }
 
