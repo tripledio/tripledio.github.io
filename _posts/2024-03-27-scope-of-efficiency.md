@@ -47,7 +47,7 @@ It's easy to come up with more examples where local efficiency optimization of o
 
 Luckily for us, there is quit a lot of study done on the efficiency within systems in relation to their individual components and their interactions with the larger system. The domain of *system thinking* [^system] focuses on understanding complex systems as a whole, including how their various components interact and influence overall performance.  Systems thinking emphasizes the interconnectedness of components within a system and examines how changes to one part can affect the system as a whole.
 
-Closely related to system thinking is *Lean*. Where system thinking provides the conceptual framework for understanding complex systems and their behavior, Lean offers a practical set of tools and methodologies for those principles.
+Closely related to system thinking is *Lean* [^Lean]. Where system thinking provides the conceptual framework for understanding complex systems and their behavior, Lean offers a practical set of tools and methodologies for those principles.
 
 Both Systems thinking and Lean aim to improve efficiency within organizations by identifying and removing waste. One of the main sources of waste in a complex system that they try to remove are *queues*. 
 
@@ -115,6 +115,7 @@ The blog posts on efficiency:
 + [Maximum Resource Utilization](/27/03/2024/maximizing-resource-efficiency/):
 
 [^system]: _[System thinking](https://thesystemsthinker.com/systems-thinking-what-why-when-where-and-how/)_
+[^lean]: _[Lean](https://www.lean.org/explore-lean/what-is-lean/)_
 [^queue]: _[Queue theory](https://less.works/less/principles/queueing_theory)_
 [^team-flow]: _[Team flow](https://youtu.be/bhpQKA9XYcE)_
 

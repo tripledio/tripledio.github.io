@@ -50,6 +50,9 @@ The approach also goes against real autonomous teams that can determine how they
 
 Like in Craig Larman's analogy to a soccer team where each player has a specific role and expertise, in which they are most efficient, you also want them to be able to take up other roles when needed. We hope that the striker will stop the ball going in their own goal as well as the [goalkeeper should score]{https://www.youtube.com/watch?v=XeZ5zNv9_40&t=58s} if the opportunity presents itself.
 
+
+The division of labor isn't always as clear as by role title. On paper, you could replace one python developer with 5-year experience by another python developer with 5-year experience. But in reality, you've lost a big part of knowledge which will take time to rebuild. When knowledge isn't shared on a continuous basis with others, we simply aren't resilient. And no, writing lots of confluence pages before you leave doesn't count. Confluence is where documentation information goes to die.
+
 ## Conclusion
 
 ## Links

@@ -21,7 +21,7 @@ In the business world, there's a well-known saying dubbed 'The Seven Most Expens
 
 This is a phrase often echoed by both managers and software engineers alike. Managers may express this sentiment out of a desire to streamline processes and maximize productivity. Software engineers frequently use it as a reason why they dislike a certain solution or way of working. For software engineers, who continually strive to optimize their software, processes and algorithms, this argument carries significant weight in discussions. The argument often seems irrefutable, acting as a conversation-stopper, given the prevailing emphasis on efficiency in software engineering.
 
-Personally I have become very wary of the "efficiency" argument. Efficiency is often treated as the holy grail, when in reality, there's more to consider. So, in this blog post series, I'll dive into this topic and explore why there are times when seemingly inefficient approaches make sense. We must be aware that efficiency comes with **trade-offs** and occurs in a **context** for a given **scope**.
+Personally, I have become very wary of the "efficiency" argument. Efficiency is often treated as the holy grail, when in reality, there's more to consider. So, in this blog post series, I'll dive into this topic and explore why there are times when seemingly inefficient approaches make sense. We must be aware that efficiency comes with **trade-offs** and occurs in a **context** for a given **scope**.
 
 ## The drive for efficiency
 
