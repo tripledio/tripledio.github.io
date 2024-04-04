@@ -110,9 +110,9 @@ The main point I wish to make is that you should take the scope into account of 
 ## Links
 
 The blog posts on efficiency:
-+ [The cost of efficiency](/27/03/2024/cost-of-efficiency/):
-+ [The scope of efficiency](/27/03/2024/scope-of-efficiency/):
-+ [Maximum Resource Utilization](/27/03/2024/maximizing-resource-efficiency/):
++ [The cost of efficiency](/27/03/2024/cost-of-efficiency/)
++ [The scope of efficiency](/27/03/2024/scope-of-efficiency/)
++ [Maximum Resource Utilization](/27/03/2024/maximizing-resource-efficiency/)
 
 [^system]: _[System thinking](https://thesystemsthinker.com/systems-thinking-what-why-when-where-and-how/)_
 [^lean]: _[Lean](https://www.lean.org/explore-lean/what-is-lean/)_

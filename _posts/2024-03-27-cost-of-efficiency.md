@@ -106,8 +106,8 @@ Given that the one constant thing in the field of Software Engineering is change
 ## Links
 
 The blog posts on efficiency:
-+ [The cost of efficiency](/27/03/2024/cost-of-efficiency/):
-+ [The scope of efficiency](/27/03/2024/scope-of-efficiency/):
-+ [Maximum Resource Utilization](/27/03/2024/maximizing-resource-efficiency/):
++ [The cost of efficiency](/27/03/2024/cost-of-efficiency/)
++ [The scope of efficiency](/27/03/2024/scope-of-efficiency/)
++ [Maximum Resource Utilization](/27/03/2024/maximizing-resource-efficiency/)
 
 [^leafs]: _[Why plants are green](https://www.quantamagazine.org/why-are-plants-green-to-reduce-the-noise-in-photosynthesis-20200730)_

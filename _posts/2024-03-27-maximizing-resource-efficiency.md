@@ -22,7 +22,7 @@ Given the definition of efficiency: Doing things right without errors or unneces
 Since resources are scares and expensive, we want to use them as much as possible.
 A machine on the factory floor that is not working is waste.
 So this must mean that people not being occupied 100% of the time is also waste?
-Conversations at the coffee machine, working with multiple people on the same problem... all a waste of time. <code>[Start sarcasm]If only people were like machines, we could get really efficient. We call them resources for a reason, right? The more output they generate, the better.[End sarcasm]</code>
+Conversations at the coffee machine, working with multiple people on the same problem... all a waste of time. \[Start sarcasm\]If only people were like machines, we could get really efficient. We call them resources for a reason, right? The more output they generate, the better.\[End sarcasm\]
 
 (Un)fortunately, people are not resources. But most people still consider it a worthwhile goal: to be busy, to aim for that max % of resource utilization. Working hard and earning your pay means being busy. The drive for max resource utilization, for being efficient, is held by management as well as by software engineers themselves. We all want to be productive, to feel like we are adding value. Getting "in the zone" with our headsets on seems like the best way to achieve this. Crank out that code!
 
@@ -30,25 +30,27 @@ Conversations at the coffee machine, working with multiple people on the same pr
 
 Regarding maximum resource utilization, a lot of research has been done by the manufacturing industry. The classic paper from Engineer Ford Harris in 1913 already explained the relation of maximum resource utilization and cost. People typically only see the cost of excess capacity, of unused resources as waste. The cost of delay, of queues, is frequently overlooked. Even in his paper in 1913 Harris Ford already mentioned this. So we should not have an overly simplistic look at cost. There are more factors in play than just the resource costs.
 
-![cost-of-max-utilization](/img/posts/efficiency/cost-of-max-utilization.jpg){:width="400px"}
+![cost-of-max-utilization](/img/posts/efficiency/cost-of-max-utilization.jpg){:width="800px"}
 "There are not many men who understand the theory underlying the economic size of lots" -- Ford Harris 1913
 {: .center-img-text }
 
-In his 1961 paper John Kingman published his equation, also known as Kingmans Law, that established the relation between capacity utilization and wait time. Depending on the variance of the arrival frequency and process duration, there is always a point when approaching maximum capacity, where all the resources are working, that the queue size and thus the wait time increases exponentially. 
+In his 1961 paper John Kingman published his equation, also known as Kingmans Law, that established the relation between capacity utilization and wait time. Depending on the variance of the arrival frequency and process duration, there is always a point when approaching maximum capacity, where all the resources are working, that the queue size and thus the wait time increases exponentially. ( Variance: tasks varying in size and/or complexity; tasks varying at arriving times. )
 
-![wait-time-capacity](/img/posts/efficiency/waittime-max-capacityutilization.jpg){:width="400px"}
+![wait-time-capacity](/img/posts/efficiency/waittime-max-capacityutilization.jpg){:width="800px"}
 "The Single Server Queue in Heavy Traffic" (1961)
 {: .center-img-text }
 
-The position of the line on the Kingmans Formula graph depends on the **variance**. Variance: not having all tasks of the same size or complexity and/or tasks arrive at unpredictable intervals. The line moves down, keeping its shape, when variation goes down. This means that the lower the variation, the greater the predictability, the higher capacity utilisation we can achieve for the same queue time.
+The position of the line on the Kingmans Formula graph depends on the **variance**.  The line moves down, keeping its shape, when variation goes down. This means that the lower the variation, the greater the predictability, the higher capacity utilisation we can achieve for the same queue time.
 
 ![kingmans law](/img/posts/efficiency/kingmanslaw.jpg){:width="400px"}
 "Variation is the enemy of efficiency, and max capacity usage is its ally."
 {: .center-img-text }
 
-This is also where we want to be careful not to get to hang-up on the manufacturing examples. Where in manufacturing it is often possible and desired to reduce the variability. In product development and especially Software development variance is typically high. It is extremely hard to have all tasks clear anf of a predictable size. In product development we often even don't want predictability. Because predictability hinders innovation. Where innovation requires the freedom to explore and experiment, limiting variance will stifle the creativity and innovation.[^flow]
+A nice example on the impact of variance on queues can be seen in this [video](https://www.youtube.com/watch?v=7wm-pZp_mi0&t=1s) from an experiment at Japan’s Nagoya University on the nature of traffic jams. All cars driving at the same speed in a simple circle shouldn't be a problem. But the moment one car brakes you can see the queues forming. Notice how quickly they spread and how much longer it takes for them to dissolve.
 
-The cost of queues is often not known are seen, even in manufacturing. On top of that, the fact that Software development is highly variable and requires innovation is unfortunately not a common view. It is seen by many as "just translating requirements into code".
+This is also why we want to be careful not to get to hang-up on the manufacturing examples. Where in manufacturing it is often possible and desired to reduce the variability. In product development and especially Software development variance is typically high. It is extremely hard to have all tasks clear anf of a predictable size. In product development we often even don't want predictability. Because predictability hinders innovation. Where innovation requires the freedom to explore and experiment, limiting variance will stifle the creativity and innovation.[^flow]
+
+The cost of queues is often not known or seen, even in manufacturing. On top of that, the fact that Software development is highly variable and requires innovation is unfortunately not a common view. It is seen by many as "just translating requirements into code".
 
 ## Writing code as the measurement for productiveness
 
@@ -170,4 +172,4 @@ The blog posts on efficiency:
 [^visualize]: _[visualize](https://cutlefish.substack.com/p/tbm-3452-12-traps-when-visualizing)_
 [^wip]:_[WIP is bad](https://cutlefish.substack.com/p/wip-multi-tasking-context-switching)_
 [^busy]: _[Your calendar == your priorities](https://cutlefish.substack.com/p/tbm-4952-your-calendar-your-priorities?utm_source=profile&utm_medium=reader2)_
-[^flow]: _[The logic of flow]{https://www.youtube.com/watch?v=rc1MqHsiiKo&t=1216s}_
+[^flow]: _[The logic of flow](https://www.youtube.com/watch?v=rc1MqHsiiKo&t=1216s)_
