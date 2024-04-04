@@ -22,14 +22,35 @@ Given the definition of efficiency: Doing things right without errors or unneces
 Since resources are scares and expensive, we want to use them as much as possible.
 A machine on the factory floor that is not working is waste.
 So this must mean that people not being occupied 100% of the time is also waste?
-Conversations at the coffee machine, working with multiple people on the same problem... all a waste of time. [Start sarcasm]If only people were like machines, we could get really efficient. We call them resources for a reason, right? The more output they generate, the better.[End sarcasm]
+Conversations at the coffee machine, working with multiple people on the same problem... all a waste of time. <code>[Start sarcasm]If only people were like machines, we could get really efficient. We call them resources for a reason, right? The more output they generate, the better.[End sarcasm]</code>
 
-(Un)fortunately, people are not resources.
-But most people still consider it a worthwhile goal: to be busy, to aim for that max % of resource utilization. Working hard and earning your pay means being busy.
+(Un)fortunately, people are not resources. But most people still consider it a worthwhile goal: to be busy, to aim for that max % of resource utilization. Working hard and earning your pay means being busy. The drive for max resource utilization, for being efficient, is held by management as well as by software engineers themselves. We all want to be productive, to feel like we are adding value. Getting "in the zone" with our headsets on seems like the best way to achieve this. Crank out that code!
+
+## Resource utilization in manufacturing
+
+Regarding maximum resource utilization, a lot of research has been done by the manufacturing industry. The classic paper from Engineer Ford Harris in 1913 already explained the relation of maximum resource utilization and cost. People typically only see the cost of excess capacity, of unused resources as waste. The cost of delay, of queues, is frequently overlooked. Even in his paper in 1913 Harris Ford already mentioned this. So we should not have an overly simplistic look at cost. There are more factors in play than just the resource costs.
+
+![cost-of-max-utilization](/img/posts/efficiency/cost-of-max-utilization.jpg){:width="400px"}
+"There are not many men who understand the theory underlying the economic size of lots" -- Ford Harris 1913
+{: .center-img-text }
+
+In his 1961 paper John Kingman published his equation, also known as Kingmans Law, that established the relation between capacity utilization and wait time. Depending on the variance of the arrival frequency and process duration, there is always a point when approaching maximum capacity, where all the resources are working, that the queue size and thus the wait time increases exponentially. 
+
+![wait-time-capacity](/img/posts/efficiency/waittime-max-capacityutilization.jpg){:width="400px"}
+"The Single Server Queue in Heavy Traffic" (1961)
+{: .center-img-text }
+
+The position of the line on the Kingmans Formula graph depends on the **variance**. Variance: not having all tasks of the same size or complexity and/or tasks arrive at unpredictable intervals. The line moves down, keeping its shape, when variation goes down. This means that the lower the variation, the greater the predictability, the higher capacity utilisation we can achieve for the same queue time.
+
+![kingmans law](/img/posts/efficiency/kingmanslaw.jpg){:width="400px"}
+"Variation is the enemy of efficiency, and max capacity usage is its ally."
+{: .center-img-text }
+
+This is also where we want to be careful not to get to hang-up on the manufacturing examples. Where in manufacturing it is often possible and desired to reduce the variability. In product development and especially Software development variance is typically high. It is extremely hard to have all tasks clear anf of a predictable size. In product development we often even don't want predictability. Because predictability hinders innovation. Where innovation requires the freedom to explore and experiment, limiting variance will stifle the creativity and innovation.[^flow]
+
+The cost of queues is often not known are seen, even in manufacturing. On top of that, the fact that Software development is highly variable and requires innovation is unfortunately not a common view. It is seen by many as "just translating requirements into code".
 
 ## Writing code as the measurement for productiveness
-
-The drive for max resource utilization, for being efficient, is held by management as well as by software engineers themselves. This is understandable. We all want to be productive, to feel like we are adding value. Getting "in the zone" with our headsets on seems like the best way to achieve this. It helps that it is the most enjoyable as well. 
 
 People who have no real experience with software development themselves often think that if Software Engineers aren't typing, they are not being productive. After all their job is to translate business requirements into code. So the engineer who writes the least code must be the [worst engineer](https://dannorth.net/the-worst-programmer/) [^worst]?
 
@@ -58,15 +79,6 @@ The aim for maximum resource utilization frequently hinders communication and co
 
 > We prefer building the wrong thing fast, over solving the right thing well
  
-
-## Being inefficient is valuable 
- 
-In his post [Your calendar == your priorities](https://cutlefish.substack.com/p/tbm-4952-your-calendar-your-priorities?utm_source=profile&utm_medium=reader2) John Cutler illustrates that **valuable does not always mean efficient**. Chasing resource efficiency and micro managing people comes at a cost. We need time for all the unplannable work, maintenance, experimenting... This may be inefficient in the sort time, but very valuable in the long time.
-
-![dothis-slack](/img/posts/efficiency/cutlefish-do-this.jpeg){:width="800px"}
-*Sometimes the most valuable thing you could be doing is nothing. [^busy]*
-{: .center-img-text }
-
 ## Too busy for resiliency
 
 If the goal is maximum resource utilization, we aim to be busy. We strive to be "productive", making sure that no one is idle. We want to spend the minimum of time possible on knowledge sharing, communication and redundancy since this doesn't deliver output in itself. We focus on producing concrete output, preferably with everyone having their own clear task where they can work on undisturbed.
@@ -130,6 +142,14 @@ When everything slows down because of a high WIP, please remember **Brooks law**
 When new members are added to a project, the existing team members must invest time in training and integrating the newcomers. New team members require time to familiarize themselves with the project, its codebase, and its processes. All things that take extra time but are often forgotten when Software development is regarded as mainly "typing code".
 
 
+## No room for unplanned work
+
+In his post [Your calendar == your priorities](https://cutlefish.substack.com/p/tbm-4952-your-calendar-your-priorities?utm_source=profile&utm_medium=reader2) John Cutler illustrates that **valuable does not always mean efficient**. Chasing resource efficiency and micro-managing people comes at a cost. We need time for all the unplannable work, maintenance, experimenting... There is so much going on in a software product. So much to learn, maintain,... As stated earlier, predictability is not always a good thing in product development. There typically is high variance in product development and we also should leave room for that variance. This may be seem inefficient in the sort time, but very valuable in the long time.
+
+![dothis-slack](/img/posts/efficiency/cutlefish-do-this.jpeg){:width="800px"}
+*Sometimes the most valuable thing you could be doing is nothing. [^busy]*
+{: .center-img-text }
+
 ## Conclusion
 
 Given the nature of software engineering, the drive for maximum resource efficiency is especially harmful. People are not machines that produce code. Software development is about learning and solving problems. Something that is hard to do "efficiently". The same way it is hard to be creative efficiently. 
@@ -150,3 +170,4 @@ The blog posts on efficiency:
 [^visualize]: _[visualize](https://cutlefish.substack.com/p/tbm-3452-12-traps-when-visualizing)_
 [^wip]:_[WIP is bad](https://cutlefish.substack.com/p/wip-multi-tasking-context-switching)_
 [^busy]: _[Your calendar == your priorities](https://cutlefish.substack.com/p/tbm-4952-your-calendar-your-priorities?utm_source=profile&utm_medium=reader2)_
+[^flow]: _[The logic of flow]{https://www.youtube.com/watch?v=rc1MqHsiiKo&t=1216s}_

@@ -45,7 +45,7 @@ It's easy to come up with more examples where local efficiency optimization of o
 
 ## System thinking
 
-Luckily for us, there is quit a lot of study done on the efficiency within systems in relation to their individual components and their interactions with the larger system. The domain of *system thinking* [^system] focuses on understanding complex systems as a whole, including how their various components interact and influence overall performance.  Systems thinking emphasizes the interconnectedness of components within a system and examines how changes to one part can affect the system as a whole.
+Luckily for us, there is quit a lot of study done on the efficiency within systems in relation to their individual components and their interactions with the larger system. The domain of *system thinking* [^system] focuses on understanding complex systems as a whole, including how their various components interact and influence overall performance. Systems thinking emphasizes the interconnectedness of components within a system and examines how changes to one part can affect the system as a whole.
 
 Closely related to system thinking is *Lean* [^Lean]. Where system thinking provides the conceptual framework for understanding complex systems and their behavior, Lean offers a practical set of tools and methodologies for those principles.
 
@@ -68,7 +68,7 @@ In the example of our restaurant, there could be queues for each department:
 Queues, the invisible killers
 {: .center-img-text }
 
-The study of queues [queueing theory]{https://less.works/less/principles/queueing_theory} [^queue] can teach us a lot on how to reduce queues and obtain a good flow in the overall system. Queues come at great cost. The biggest danger for queues, especially in product development is that they are invisible. (Except perhaps in JIRA tickets.) 
+The study of queues [queueing theory]{https://less.works/less/principles/queueing_theory} [^queue] can teach us a lot on how to reduce queues and obtain a good flow in the overall system. Queues come at great cost and **queues grow faster than they shrink** The biggest danger for queues in product development is that they are **invisible**. Queues in software development are not visible like inventory stock is on a factory flow. 
 
 The restaurant example can easily be transposed to software engineering and how teams work. Michel Grootjans has made a good [explanation](https://youtu.be/bhpQKA9XYcE) [^team-flow] of queues and WIP o the impact of team flow.
 
