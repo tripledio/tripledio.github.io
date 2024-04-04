@@ -15,6 +15,8 @@ logoAnimation: false
 
 # The Cost of efficiency
 
+*This post belongs to small series of posts on efficiency. This is main post. Links to the other related post can be found below.*
+
 In the business world, there's a well-known saying dubbed 'The Seven Most Expensive Words' which is: 'We've always done it this way.' In my opinion, we have something similar in the realm of software engineering. An argument that I encounter all too frequent.
 
 > *The four most perilous words in software engineering:* **"That is not efficient!"**
