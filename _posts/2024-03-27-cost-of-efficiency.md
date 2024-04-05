@@ -39,19 +39,19 @@ Challenging these goals often prompts the default response: 'That is not efficie
 
 ## Efficiency trade-offs 
 
-While I think efficiency is on its own a good thing, even a goal worth pursuing, it does have its trade-offs. Trade-offs we need to be aware of so that we don't just end a conversation because something makes the efficiency argument. Because there is more to life then achieving maximum efficiency. If fact, there probably wouldn't be any life is everything was efficient...
+While I think efficiency is on its own a good thing, even a goal worth pursuing, it does have its trade-offs. Trade-offs we need to be aware of so that we don't just end a conversation because someone makes the efficiency argument. Because there is more to life than achieving maximum efficiency. In fact, there probably wouldn't be any life is everything was efficient...
 
 ### Mother Nature
 
 Let's leave the world of IT for a minute and take a look at mother nature. 
 
-In nature not everything is efficient. If we take a look at how cells evolve, in plants as well in animals, this happens in a non-deterministic way. It is not set from the beginning what a cell will become. Cells are capable to of evolving on a wide spectrum. Though it would be more efficient in the short term if each cell is ascribed a function from the start, in the long term this comes at a cost. It would hinder the organisms ability to **adapt** at to external changes. By being suboptimal, inefficient on the small scale (cells), nature has become resilient at the larger scale (organisms). 
+In nature, not everything is efficient. If we take a look at how cells evolve, in plants as well in animals, this happens in a non-deterministic way. It is not set from the beginning what a cell will become. Cells are capable of evolving on a wide spectrum. Though it would be more efficient in the short term if each cell is ascribed to a function from the start, in the long term this comes at a cost. It would hinder the organism ability to **adapt** to external changes. By being suboptimal, inefficient on the small scale (cells), nature has become resilient at the larger scale (organisms). 
 
 ![Cells](/img/posts/efficiency/cells.jpg){:width="800px"}
 Cells are optimized for adaptableness, not efficiency
 {: .center-img-text }
 
-An ant colony is also an example of this. There is build in redundancy by tasks and roles of course. But even when we simply observe the route an individual ant takes, this isn't efficient. However, for the colony as a whole this inefficiency gives resiliency by having multiple routes and options for food. 
+An ant colony is also an example of this. There is built-in redundancy by tasks and roles of course. But even when we simply observe the route an individual ant takes, this isn't efficient. However, for the colony as a whole this inefficiency gives resiliency by having multiple routes and options for food. 
 
 ![Ants](/img/posts/efficiency/ants.jpg){:width="800px"}
 Inefficiency in the small yields resilience in the large. 
