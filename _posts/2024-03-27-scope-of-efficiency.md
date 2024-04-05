@@ -15,7 +15,7 @@ logoAnimation: false
 
 # The scope off efficiency
 
-*This post belongs to small series of posts on efficiency. The main post is [The cost of efficiency](/27/03/2024/cost-of-efficiency/).*
+*This post belongs to a small series of posts on the dangers of blindly pursuing efficiency in software development. The main post is [The cost of efficiency](/27/03/2024/cost-of-efficiency/). This post discusses the scope aspect of efficiency.*
 
 Whenever we are searching for more efficiency, we need to make sure that we know the scope for which we are optimizing. We need to take into account that efficiency occurs within a specific context for a given scope. Individual components, processes or "resources" may be efficient on their own, but if they do not work together well, there will be waste on the whole system. In other words, efficiency is not just about optimizing individual tasks or elements; it's about ensuring that **all** the parts of a system function harmoniously together.
 

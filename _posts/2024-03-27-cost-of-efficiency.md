@@ -15,7 +15,7 @@ logoAnimation: false
 
 # The Cost of efficiency
 
-*This post belongs to small series of posts on efficiency. This is main post. Links to the other related post can be found below.*
+*This post belongs to a small series of posts on the dangers of blindly pursuing efficiency in software development. This is the first, main post. Links to the other related post can be found below.*
 
 In the business world, there's a well-known saying dubbed 'The Seven Most Expensive Words' which is: 'We've always done it this way.' In my opinion, we have something similar in the realm of software engineering. An argument that I encounter all too frequent.
 
@@ -31,7 +31,7 @@ Efficiency, simply put, means doing things right without errors or unnecessary w
 
 Ever since the industrial age, the pursuit of efficiency has been relentless. That pursuit manifests itself in various objectives:
 
-+ Maximum Resource Utilization: Ensuring all resources operate at maximum capacity.
++ [Maximum Resource Utilization](/27/03/2024/maximizing-resource-efficiency/): Ensuring all resources operate at maximum capacity.
 + Division of Labor: Assigning specialized resources with the highest output to specific tasks.
 + First-Time Right: Striving to get it right on the first attempt and avoid rework.
 
@@ -51,7 +51,6 @@ In nature not everything is efficient. If we take a look at how cells evolve, in
 Cells are optimized for adaptableness, not efficiency
 {: .center-img-text }
 
-
 An ant colony is also an example of this. There is build in redundancy by tasks and roles of course. But even when we simply observe the route an individual ant takes, this isn't efficient. However, for the colony as a whole this inefficiency gives resiliency by having multiple routes and options for food. 
 
 ![Ants](/img/posts/efficiency/ants.jpg){:width="800px"}
@@ -68,13 +67,11 @@ Not capturing all the green light has a purpose. Since the external input of lig
 
 > "To be resilient against external changes, prioritize stability and adaptability over efficiency"
 
-
 ### Computer science
 
-There are also plenty of examples in Computer Science where **efficiency was sacrificed** in order to gain resiliency. 
+There are also plenty of examples in Computer Science where **efficiency was sacrificed** to gain resiliency. 
 
-
-For instance the simple protocol suite, TCP/IP, which regulates how packets travel through the network from one machine to another, is definitely not efficient. But it is resilient! It needs to be given that significant errors are possible: data can be corrupted, packets can be lost, the network is continuously changing with constant failures of nodes. It was designed this way, efficiency in the small was sacrificed for resiliency in the large. Stability and adaptability was prioritized over efficiency.
+For instance, the protocol suite, TCP/IP, which regulates how packets travel through the network from one machine to another, is definitely not efficient. But it is resilient! It needs to be given that significant errors are possible: data can be corrupted, packets can be lost, the network is continuously changing with constant failures of nodes. It was designed this way, efficiency in the small was sacrificed for resiliency in the large. Stability and adaptability was prioritized over efficiency.
 
 ![tcpip](/img/posts/efficiency/tcpip.jpg){:width="800px"}
 TCP/IP designed for resiliency
@@ -103,7 +100,7 @@ The main thing I hope to pass on here with this post can be summarized as follow
 
 Given that efficiency is often achieved in a well controlled environment for a given scope, make sure that efficiency is what we really need and in what scope we need it. Efficiency in the short term can cost us resiliency in the longer term, for a larger scope. Which can prove to be more costly and thus result in more waste. So don't give in too quickly to the "That's not efficient" argument.
 
-Given that the one constant thing in the field of Software Engineering is change, the efficiency argument holds real danger here. It is often better to prioritize for resiliency, to sacrifice short term local efficiencies for a more durable resilient solution in the long term. In effect, a lot of good software practices do exactly that. Making them look inefficient at first glance, but very valuable when taking into account the whole context. I'll get into more details on this in another post.
+Given that the one constant thing in the field of Software Engineering is change, the efficiency argument holds real danger here. It is often better to prioritize for resiliency, to sacrifice short-term local efficiencies for a more durable resilient solution in the long term. In effect, a lot of good software practices do exactly that. Making them look inefficient at first glance, but very valuable when taking into account the whole context. I'll get into more details on this in another post.
 
 ## Links
 

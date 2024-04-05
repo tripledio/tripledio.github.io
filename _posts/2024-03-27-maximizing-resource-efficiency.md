@@ -15,7 +15,7 @@ date: 2024-03-27 21:00:00
 
 # Maximizing resource efficiency
 
-*This post belongs to small series of posts on efficiency. The main post is [The cost of efficiency](/27/03/2024/cost-of-efficiency/).*
+*This post belongs to a small series of posts on the dangers of blindly pursuing efficiency in software development. The main post is [The cost of efficiency](/27/03/2024/cost-of-efficiency/).This post discusses the downside of maximizing resource usage to be efficient.*
 
 The most common scenario in which I hear the dreaded words *"That is not efficient!"* is when people are not "working" at 100% capacity.
 Given the definition of efficiency: Doing things right without errors or unnecessary waste of resources, this is a very logical argument.
