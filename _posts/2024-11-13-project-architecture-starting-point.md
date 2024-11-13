@@ -10,12 +10,15 @@ logoAnimation: false
 header-img: "img/posts/starting-at-triple-d/header.jpg"
 image: "img/logo-alt.png"
 ---
-
-# Overview
-> The real demands for specific software qualities should drive the use of architectural styles and patterns. The ones chosen must be proven to meet or exceed required qualities.
+In this blog post we'll give an overview of what we at Triple D consider a decent 'default' architecture for domain-heavy projects.
+For this we combine several best practices.
+It is in no way a one-size-fits-all solution, as that just does not exist.
+Vaugh Vernon puts it nicely in his book "Implementing Domain Driven Design":
+> The real demands for specific software qualities should drive the use of architectural styles and patterns.
+> The ones chosen must be proven to meet or exceed required qualities.
 > We must be able to justify every architectural influence in use, or we eliminate it from our system.
 
-Voor hierboven verwijzen naar het boek fundamentals of software architecture.
+# Overview
 
 Aanpak: gaandeweg opbouwen
 
@@ -60,8 +63,6 @@ graph LR;
 
 ```
 
-
-
 ## Pros and cons
 
 The advantage of encoding the architecture into Gradle modules is that there is no way a developer could write compileable code that creates dependencies which are not allowed by the dependency graph above.
@@ -84,7 +85,6 @@ The goal of Domain Driven Design (DDD) is to find a language that works both for
 With it, Tactical DDD brings concepts such as aggregates, entities, value objects,,... which will be the building blocks of hexagon.
 
 ## Uitwerking
-
 
 ## Pros and cons
 
