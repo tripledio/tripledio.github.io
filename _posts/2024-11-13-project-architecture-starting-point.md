@@ -107,21 +107,36 @@ DDD describes the use of domain events as a way to decouple different parts of t
 When we want to guarantees of an event being processed, or we want to process large amount of events, we'll need a more thorough approach. This is what Event Driven Architecture brings to the table.
 
 # Event-Driven Architecture
-Event-Driven Architecture (EDA) is an architectural paradigm in which events are both consumed and produced throughout regular application flow.  
-It is inherently asynchronous and allows for loosely coupled components.  
-EDA offers a thorough approach to implementing both the domain (internal) and external events that are part of your domain-driven design.
+Having an Event-Driven Architecture (EDA) means that a large part of the application is driven by the processing of events. This ties neatly in to the events prevalent in DDD. A policy matches events with commands that trigger use cases in the application.
+
+Whilst event processing could be done simply be having domain events get published synchronously to a series of event listeners, you'd quickly run into issues when the number of events rises, or when handling an event fails.
+Synchronous handling puts a hard limit on the rate at which your application can process events, so an asynchronous approach is quickly required.
+When handling an event fails halfway, you need a mechanism to ensure that they can be retried. And when an event fails to get its processing acknowledged, you need a way to handle events being processed twice.
 
 ## Execution
-The events and commands originating from our application have to reach all those who want to listen to them. This can be the application itself, applications in other bounded contexts, or event entirely other systems.  
-As we are working in a hexagonal architecture, how these events flow through the application is important as well.
+We want scalable and reliable processing of our events.
+Scalable implies asynchronous, which means that multiple business processes are handled at the same time, events might interweave, they might arrive out-of-order,... There is plenty that can go wrong.
+Firstly, we need some guarantees on the delivery of the events. There are three options: at-most-once, at-least-once and exactly-once. The first isn't an option in an application context, and is more suited for things like real-time analytics.
+Exactly-once is quite complex, and should only be used when it's a strict requirement.
+At-least-once will cover most use-cases, especially when we built the event handling in such a way that processing events is an idempotent operation.
 
-delivery mechanisms (at least once, exactly,...). Outbox pattern, intermediate models (Domain Event, Cloud Event,...), Command bus  
-Application policy transactional and using queries to fetch what is needed
+To ensure at-least-once delivery we recall that in DDD an aggregate defines a transactional boundary. If we include pushing new events into an outbox into that transaction than we can ensure that either an operation succeeds and an event is saved, or it fails and no event was saved. This is the basis for at-least-once.
 
-Diagram met de mapping tussen de ports/adapters.  
-Diagram met flow van events  + rol van application policies (link naar blogpost event storming a restaurant)
+Outbox messages are put on a queue and get picked up by the consuming side. An application policy decides which use cases have to be called and a new transaction starts.
+In this part of the flow three things can go wrong: the publishing on the queue, the consuming of the event or the processing and acknowledging of the event. In the first case an event will only be taken out of the outbox when it was published successfully. In the latter cases the event will not get acknowledged and its processing will be retried, possibly resulting in it being processed multiple times.
 
+If a message fails to be processed enough times, it gets sent to a dead-letter-queue (DLQ) where it can be inspected by the developers. If the failure to process was due to a bug, they can fix the bug and sent the message back to the original queue.
 
+## Pros and cons
+
++ Scalable processing of events
++ Ensured delivery of events
+
+There is some technological complexity in implementing an event-driven architecture, but once the 'plumbing' is done we can mostly ignore it and focus on solving application problems. This again shows the power of a ports and adapters architecture, where the messaging is a concern strictly outside of the application.
+
+## What's missing
+
+By having an optimized way of handling events, we can start listening to our own application events in order to build easy-to-query models. By separating command and query handling we can improve front-end complexity and scale back-end and front-end separatly. This is called CQRS.
 ## Pros and cons
 Consideration: event module or just part of :application:domain?
 
