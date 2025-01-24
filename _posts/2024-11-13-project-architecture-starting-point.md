@@ -58,14 +58,14 @@ The ports are split up into ingoing and outgoing ports.
 
 It makes sense that we reflect this hierarchy in our project structure. An example directory structure looks like this:
 
-![Folder structure](/img/posts/project-architecture/module-folder-structure.png){:width="500px" :margin=10px}
+![Folder structure](/img/posts/project-architecture/module-folder-structure.png){:margin=10px}
 
 The folder structure is however only half the story. If we implement this folder structure using packages, it becomes very easy for code in one of the adapters to call code in the application, effectively leaking domain logic to the outside and denying any of the possible advantages this architecture provides.
 
 Instead, we propose to use Gradle modules instead of packages, and set dependencies between them to capture the restrictions on what can be called from where.
 The image below shows these dependencies: an arrow from one module to another means "i can call you".
 
-![Module dependencies](/img/posts/project-architecture/module-dependencies.png){:width="500px" :margin=10px}
+![Module dependencies](/img/posts/project-architecture/module-dependencies.png){:margin=10px}
 
 ## Pros and cons
 
