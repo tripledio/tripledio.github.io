@@ -58,12 +58,14 @@ The ports are split up into ingoing and outgoing ports.
 
 It makes sense that we reflect this hierarchy in our project structure. An example directory structure looks like this:
 
-// afbeelding folder structure
+![Folder structure](/img/posts/project-architecture/module-folder-structure.png){:width="500px" :margin=10px}
 
 The folder structure is however only half the story. If we implement this folder structure using packages, it becomes very easy for code in one of the adapters to call code in the application, effectively leaking domain logic to the outside and denying any of the possible advantages this architecture provides.
 
 Instead, we propose to use Gradle modules instead of packages, and set dependencies between them to capture the restrictions on what can be called from where.
 The image below shows these dependencies: an arrow from one module to another means "i can call you".
+
+![Module dependencies](/img/posts/project-architecture/module-dependencies.png){:width="500px" :margin=10px}
 
 ## Pros and cons
 
@@ -113,13 +115,7 @@ EDA offers a thorough approach to implementing both the domain (internal) and ex
 The events and commands originating from our application have to reach all those who want to listen to them. This can be the application itself, applications in other bounded contexts, or event entirely other systems.  
 As we are working in a hexagonal architecture, how these events flow through the application is important as well.
 
-![[Pasted image 20241113162944.png]]
-
-![[Screenshot 2024-11-13 at 16.30.10.png]]
-
-![[Screenshot 2024-11-13 at 16.30.37.png]]
-
-, delivery mechanisms (at least once, exactly,...). Outbox pattern, intermediate models (Domain Event, Cloud Event,...), Command bus  
+delivery mechanisms (at least once, exactly,...). Outbox pattern, intermediate models (Domain Event, Cloud Event,...), Command bus  
 Application policy transactional and using queries to fetch what is needed
 
 Diagram met de mapping tussen de ports/adapters.  
