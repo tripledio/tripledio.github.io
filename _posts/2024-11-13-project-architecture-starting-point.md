@@ -35,10 +35,11 @@ Aanpak: gaandeweg opbouwen
 
 Voor elk hoofdstuk:
 * Uitleg concept
-* Uitwerking
+* Execution
 * + en -
 * What's missing = introductie naar een volgende sectie
 
+# Hexagonal Architecture aka Ports and Adapters
 
 Let's say we have a typical application with a REST api at the 'front' and a database at the 'back'.
 A big risk when developing this application without using any underlying architecture (or even a 'classical' 3-layered architecture) is that application logic will mix with REST or database logic. This would then require testing to happen through the UI and/or require a running database, making the testing a slow and cumbersome process.
@@ -50,7 +51,7 @@ https://herbertograca.com/wp-content/uploads/2018/11/080-explicit-architecture-s
 
 By defining 'ports' we can configure how we interact with the application. During regular operation, we configure it to use REST and database adapters so that users can interact with it. Batch scripts could use command-line based adapters. Automated tests can call the ports directly, ensuring the fastest possible run time.
 
-## Uitwerking
+## Execution
 
 The architecture defines the major elements: the application, and the ports. The application itself consists of the API it provides, the usecases that implement that API, and the domain which is manipulated by the usecases.
 The ports are split up into ingoing and outgoing ports.
@@ -85,7 +86,7 @@ DDD encourages developers to focus on building a **shared understanding** of the
 
 Tactical DDD brings concepts such as aggregates, entities, value objects,,... to the table, which will be the building blocks of our application.
 
-## Uitwerking
+## Execution
 Through creative collaboration with the domain experts, we get a clear view of what problem he application will solve. We then implement our solution for that problem using the building blocks that strategical DDD provides us: entities, aggregates, domain services,...
 
 Domain events are also an import part of DDD, and it is one we heavily rely on. These events enable communication and decoupling between different parts of the system.
@@ -108,7 +109,7 @@ Event-Driven Architecture (EDA) is an architectural paradigm in which events are
 It is inherently asynchronous and allows for loosely coupled components.  
 EDA offers a thorough approach to implementing both the domain (internal) and external events that are part of your domain-driven design.
 
-## Uitwerking
+## Execution
 The events and commands originating from our application have to reach all those who want to listen to them. This can be the application itself, applications in other bounded contexts, or event entirely other systems.  
 As we are working in a hexagonal architecture, how these events flow through the application is important as well.
 
@@ -142,7 +143,7 @@ We decouple this projection from our regular flow -> CQRS.
 # CQRS / BFF
 Command Query Responsibility Segregation (CQRS in short) is a pattern that separates the handling of commands (which modify data) from queries (which read data).
 
-## Uitwerking
+## Execution
 By listening to domain events that indicate an aggregate was created or updated, we can populate the system that will be serving the queries with data.
 
 // toevoegen afbeelding met sequence diagram
