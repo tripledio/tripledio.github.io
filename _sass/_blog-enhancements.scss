@@ -81,8 +81,8 @@
       0 1px 4px rgba(0, 0, 0, 0.04),
       0 0 1px rgba(0, 0, 0, 0.1);
     border: none;
-    padding: 2.5rem 3rem;
-    margin-bottom: 3rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
     position: relative;
     transition: all 0.3s ease;
 
@@ -125,8 +125,8 @@
       width: 60px;
       height: 3px;
       background: linear-gradient(to right, $color-primary, $color-blue, transparent);
-      margin-top: 0.5rem;
-      margin-bottom: 1.5rem;
+      margin-top: 0.3rem;
+      margin-bottom: 1rem;
       border-radius: 3px;
       transition: width 0.3s ease;
     }
@@ -156,8 +156,8 @@
       background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,4 C20,2 40,6 60,4 C80,2 100,6 120,4 C140,2 160,6 180,4 C200,2 220,6 240,4 C260,2 280,6 300,4 C320,2 340,6 360,4 C380,2 400,6 420,4 C440,2 460,6 480,4 C500,2 520,6 540,4 C560,2 580,6 600,4 C620,2 640,6 660,4 C680,2 700,6 720,4 C740,2 760,6 780,4 C800,2 820,6 840,4' stroke='%2321314c' stroke-width='1' fill='none' stroke-opacity='0.08' stroke-dasharray='1,7'/%3E%3C/svg%3E");
       background-repeat: repeat-x;
       background-position: center;
-      margin-top: 2.5rem;
-      margin-bottom: 2.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
       position: relative;
     }
 
@@ -168,8 +168,8 @@
   blockquote {
     position: relative;
     border-left: 3px solid $color-blue;
-    padding: 1.5rem 2rem;
-    margin: 3rem 0;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
     font-style: italic;
     background: none;
     box-shadow: none;
