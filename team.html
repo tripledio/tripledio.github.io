@@ -81,7 +81,10 @@ qotd:
                 {% for member in site.data.team %}
                 <div class="team-member-item" id="member-{{ forloop.index }}" data-index="{{ forloop.index }}">
                     <img src="{{ member.photo }}" alt="{{ member.name }}" class="team-member-photo">
-                    <div class="team-member-name">{{ member.name }}</div>
+                    <div class="team-member-content">
+                        <div class="team-member-name">{{ member.name }}</div>
+                        <div class="team-member-description">{{ member.description }}</div>
+                    </div>
                 </div>
                 {% endfor %}
             </div>
@@ -91,67 +94,118 @@ qotd:
     <!-- JavaScript for interactive functionality -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Position team members in a circle
             const teamCircle = document.getElementById('team-circle');
             const teamMembers = document.querySelectorAll('.team-member-item');
             const totalMembers = teamMembers.length;
+            const isMobile = window.innerWidth <= 767; // Match the $breakpoint-md value
 
-            // Calculate positions in a circle
-            teamMembers.forEach((member, index) => {
-                // Calculate angle for this member (in radians)
-                const angle = (index / totalMembers) * 2 * Math.PI;
+            // Only position in a circle for desktop
+            if (!isMobile) {
+                // Calculate positions in a circle for desktop
+                teamMembers.forEach((member, index) => {
+                    // Calculate angle for this member (in radians)
+                    const angle = (index / totalMembers) * 2 * Math.PI;
 
-                // Calculate position (center is 50%, radius is 42% of container)
-                const radius = 42;
-                const centerX = 50;
-                const centerY = 50;
+                    // Calculate position (center is 50%, radius is 42% of container)
+                    const radius = 42;
+                    const centerX = 50;
+                    const centerY = 50;
 
-                const x = centerX + radius * Math.sin(angle);
-                const y = centerY + radius * Math.cos(angle);
+                    const x = centerX + radius * Math.sin(angle);
+                    const y = centerY + radius * Math.cos(angle);
 
-                // Set position
-                member.style.top = y + '%';
-                member.style.left = x + '%';
+                    // Set position
+                    member.style.top = y + '%';
+                    member.style.left = x + '%';
+                });
+            }
 
-                // Add click event
+            // Add click event for both mobile and desktop
+            teamMembers.forEach((member) => {
                 member.addEventListener('click', function() {
                     // Get the index of the clicked member
                     const memberIndex = this.getAttribute('data-index');
+                    const bio = document.getElementById('bio-' + memberIndex);
 
-                    // Remove active class from all members
-                    teamMembers.forEach(m => m.classList.remove('active'));
+                    if (isMobile) {
+                        // Mobile behavior: toggle active state
+                        if (this.classList.contains('active')) {
+                            // If already active, deactivate
+                            this.classList.remove('active');
+                            bio.classList.remove('active');
 
-                    // Add active class to clicked member
-                    this.classList.add('active');
+                            // Move bio back to center if it was moved
+                            if (this.contains(bio)) {
+                                document.querySelector('.team-circle-center').appendChild(bio);
+                            }
+                        } else {
+                            // Remove active class from all members
+                            teamMembers.forEach(m => {
+                                m.classList.remove('active');
+                                // Move any bios back to center
+                                document.querySelectorAll('.team-member-bio').forEach(b => {
+                                    if (m.contains(b)) {
+                                        document.querySelector('.team-circle-center').appendChild(b);
+                                    }
+                                });
+                            });
 
-                    // Hide default content
-                    document.querySelector('.team-circle-default').style.opacity = '0';
+                            // Activate this member
+                            this.classList.add('active');
 
-                    // Hide all bios
-                    document.querySelectorAll('.team-member-bio').forEach(bio => {
-                        bio.classList.remove('active');
-                    });
+                            // Move bio inside this member for mobile
+                            this.appendChild(bio);
+                            bio.classList.add('active');
+                        }
+                    } else {
+                        // Desktop behavior
+                        // Remove active class from all members
+                        teamMembers.forEach(m => m.classList.remove('active'));
 
-                    // Show the selected bio
-                    document.getElementById('bio-' + memberIndex).classList.add('active');
+                        // Add active class to clicked member
+                        this.classList.add('active');
+
+                        // Hide default content
+                        document.querySelector('.team-circle-default').style.opacity = '0';
+
+                        // Hide all bios
+                        document.querySelectorAll('.team-member-bio').forEach(bio => {
+                            bio.classList.remove('active');
+                        });
+
+                        // Show the selected bio
+                        bio.classList.add('active');
+                    }
                 });
             });
 
-            // Add click event to center area to reset
-            document.querySelector('.team-circle-center').addEventListener('click', function(e) {
-                // Only reset if clicking directly on the center area (not on a bio or button)
-                if (e.target === this || e.target === document.querySelector('.team-circle-default') || 
-                    e.target.closest('.team-circle-default')) {
-                    // Remove active class from all members
-                    teamMembers.forEach(m => m.classList.remove('active'));
+            // Add click event to center area to reset (desktop only)
+            if (!isMobile) {
+                document.querySelector('.team-circle-center').addEventListener('click', function(e) {
+                    // Only reset if clicking directly on the center area (not on a bio or button)
+                    if (e.target === this || e.target === document.querySelector('.team-circle-default') || 
+                        e.target.closest('.team-circle-default')) {
+                        // Remove active class from all members
+                        teamMembers.forEach(m => m.classList.remove('active'));
 
-                    // Hide all bios
-                    document.querySelectorAll('.team-member-bio').forEach(bio => {
-                        bio.classList.remove('active');
-                    });
+                        // Hide all bios
+                        document.querySelectorAll('.team-member-bio').forEach(bio => {
+                            bio.classList.remove('active');
+                        });
 
-                    // Show default content
-                    document.querySelector('.team-circle-default').style.opacity = '1';
+                        // Show default content
+                        document.querySelector('.team-circle-default').style.opacity = '1';
+                    }
+                });
+            }
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                const newIsMobile = window.innerWidth <= 767;
+
+                // Only reposition if switching between mobile and desktop
+                if (newIsMobile !== isMobile) {
+                    location.reload(); // Simple solution: reload the page on breakpoint change
                 }
             });
         });
