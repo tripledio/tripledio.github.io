@@ -99,7 +99,8 @@
     .spot {
       .content {
         img {
-          min-width: 100vw;
+          width: 100%;
+          max-width: 100%;
         }
       }
     }
