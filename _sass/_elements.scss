@@ -134,10 +134,7 @@
   }
 
   &.tw {
-    &:hover {
-      background-color: $color-twitter;
-      color: $color-white;
-    }
+    display: none;
   }
 
   &.gplus {
