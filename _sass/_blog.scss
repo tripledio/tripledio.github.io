@@ -140,8 +140,10 @@ $author-img-size: 7.5rem;
 
   .gist {
     width: 100%; 
-    padding-left:50px !important; 
-    padding-right:50px !important;
+    box-sizing: border-box;
+    padding-left: 0 !important; 
+    padding-right: 0 !important;
+    overflow-x: auto;
   }
 
 }
