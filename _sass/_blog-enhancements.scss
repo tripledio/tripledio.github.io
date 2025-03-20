@@ -140,6 +140,7 @@
   p {
     position: relative;
     line-height: 1.7;
+    margin-bottom: 1.5rem; /* Reduced from 3rem in _typography.scss */
 
     /* Add a subtle highlight to the first paragraph */
     &:first-of-type {
@@ -162,6 +163,12 @@
     }
 
     /* Removed notebook doodle in the margin for cleaner design */
+  }
+
+  /* Reduce space between paragraph ending with colon and list */
+  p:last-of-type:not(:only-child) + ul,
+  p:last-of-type:not(:only-child) + ol {
+    margin-top: 0.5rem;
   }
 
   /* Elegant blockquote styling */
