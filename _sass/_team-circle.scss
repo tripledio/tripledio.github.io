@@ -70,7 +70,7 @@
   margin-left: -60px;
   margin-top: -60px;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: visible; /* Changed from hidden to visible */
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -92,6 +92,8 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  border-radius: 50%; /* Ensure photo stays circular */
+  overflow: hidden; /* Keep photo within bounds */
 }
 
 .team-member-item:hover .team-member-photo {
@@ -102,19 +104,24 @@
 .team-member-name {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba($color-primary, 0.8);
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  min-width: 100%;
+  width: auto;
+  white-space: nowrap;
+  background-color: rgba($color-primary, 0.9);
   color: $color-white;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 10px;
   font-size: 12px;
-  transform: translateY(100%);
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  z-index: 10;
 }
 
 .team-member-item:hover .team-member-name {
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(110%);
 }
 
 /* Contact button in bio */
@@ -135,12 +142,12 @@
     border-radius: 10px;
     padding: 20px;
   }
-  
+
   .team-circle {
     height: auto;
     padding-bottom: 0;
   }
-  
+
   .team-member-item {
     position: relative;
     display: inline-block;
