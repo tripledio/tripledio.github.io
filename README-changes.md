@@ -45,3 +45,18 @@ This document outlines the changes made to modernize the Triple D website layout
 - Improved readability and content hierarchy
 - More cohesive design language throughout the site
 - Enhanced mobile experience
+
+## Additional UI Enhancements
+
+### Table Animations and Highlights
+- Added subtle row hover effects with background color change and slight movement
+- Enhanced table headers with primary color background and shimmer animation
+- Added cell highlight effects with color change and animated underline on hover
+- Implemented alternating row colors for better readability
+
+### Other UI Component Animations
+- Added shimmer effect to buttons on hover for more interactive feel
+- Enhanced card components with subtle lift and shadow effects on hover
+- Added scale and rotate animations to service icons for more engaging interactions
+
+All animations use the existing color scheme to maintain brand consistency while adding a more dynamic and modern feel to the interface.
