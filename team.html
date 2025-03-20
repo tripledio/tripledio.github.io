@@ -34,28 +34,106 @@ qotd:
 </section>
 <section id="team" class="pt-6 pt-md-2 pb-1 pb-md-4 text-gray">
     <div class="container">
-        <div class="row">
-            {% for member in site.data.team %}
-            <div class="col-12 col-md-6 col-lg-4 mb-4 px-md-4">
-                <div class="h-100 d-flex flex-column">
-                    <div class="mb-3 ml-auto mr-auto rounded w-70 effects-img-scale o-hidden">
-                        <img src="{{ member.photo }}" alt="p4" width="238" class="img-fluid rounded">
-                    </div>
-                    <div class="text-left">
-                        <h3 class="h5 text-black font-family-bold">{{ member.name }}</h3>
-                        <p class="m-0 text-black font-italic">{{ member.title }}</p>
-                        <hr class="slab left mt-1 mb-2 w-25">
-                    </div>
-                    <div>
-                        <p class="font-size-4">{{ member.description }}</p>
-                    </div>
-                    <div class="pb-2 mt-auto">
+        <div class="team-circle-container">
+            <!-- Center content area -->
+            <div class="team-circle-center">
+                <!-- Default content shown when no team member is selected -->
+                <div class="team-circle-default">
+                    <h3 class="h4 text-primary font-family-bold">Our Team</h3>
+                    <p class="font-size-4">Click on a team member to learn more about them.</p>
+                </div>
+
+                <!-- Individual team member bios (hidden by default) -->
+                {% for member in site.data.team %}
+                <div id="bio-{{ forloop.index }}" class="team-member-bio">
+                    <h3 class="h4 text-primary font-family-bold">{{ member.name }}</h3>
+                    <hr class="slab center w-25 mb-3">
+                    <p class="font-size-4">{{ member.description }}</p>
+                    <div class="team-member-contact">
                         <a href="{{ member.contactLink }}" class="btn btn-primary">Contact me</a>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
 
+            <!-- Circle of team members -->
+            <div class="team-circle" id="team-circle">
+                {% for member in site.data.team %}
+                <div class="team-member-item" id="member-{{ forloop.index }}" data-index="{{ forloop.index }}">
+                    <img src="{{ member.photo }}" alt="{{ member.name }}" class="team-member-photo">
+                    <div class="team-member-name">{{ member.name }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
+
+    <!-- JavaScript for interactive functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Position team members in a circle
+            const teamCircle = document.getElementById('team-circle');
+            const teamMembers = document.querySelectorAll('.team-member-item');
+            const totalMembers = teamMembers.length;
+
+            // Calculate positions in a circle
+            teamMembers.forEach((member, index) => {
+                // Calculate angle for this member (in radians)
+                const angle = (index / totalMembers) * 2 * Math.PI;
+
+                // Calculate position (center is 50%, radius is 42% of container)
+                const radius = 42;
+                const centerX = 50;
+                const centerY = 50;
+
+                const x = centerX + radius * Math.sin(angle);
+                const y = centerY + radius * Math.cos(angle);
+
+                // Set position
+                member.style.top = y + '%';
+                member.style.left = x + '%';
+
+                // Add click event
+                member.addEventListener('click', function() {
+                    // Get the index of the clicked member
+                    const memberIndex = this.getAttribute('data-index');
+
+                    // Remove active class from all members
+                    teamMembers.forEach(m => m.classList.remove('active'));
+
+                    // Add active class to clicked member
+                    this.classList.add('active');
+
+                    // Hide default content
+                    document.querySelector('.team-circle-default').style.opacity = '0';
+
+                    // Hide all bios
+                    document.querySelectorAll('.team-member-bio').forEach(bio => {
+                        bio.classList.remove('active');
+                    });
+
+                    // Show the selected bio
+                    document.getElementById('bio-' + memberIndex).classList.add('active');
+                });
+            });
+
+            // Add click event to center area to reset
+            document.querySelector('.team-circle-center').addEventListener('click', function(e) {
+                // Only reset if clicking directly on the center area (not on a bio or button)
+                if (e.target === this || e.target === document.querySelector('.team-circle-default') || 
+                    e.target.closest('.team-circle-default')) {
+                    // Remove active class from all members
+                    teamMembers.forEach(m => m.classList.remove('active'));
+
+                    // Hide all bios
+                    document.querySelectorAll('.team-member-bio').forEach(bio => {
+                        bio.classList.remove('active');
+                    });
+
+                    // Show default content
+                    document.querySelector('.team-circle-default').style.opacity = '1';
+                }
+            });
+        });
+    </script>
 </section>
