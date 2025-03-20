@@ -202,6 +202,11 @@
   z-index: 10;
 }
 
+/* Hide description on desktop view */
+.team-member-description {
+  display: none;
+}
+
 .team-member-item:hover .team-member-name {
   transform: translateX(-50%) translateY(110%);
 }
@@ -333,6 +338,7 @@
 
   /* Description styling for mobile */
   .team-member-description {
+    display: block; /* Show description on mobile */
     margin-top: 5px;
     color: $color-gray;
     font-size: 14px;
