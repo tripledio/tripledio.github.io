@@ -12,10 +12,10 @@ spotlight:
 qotd:
   enabled: false
 ---
-<div class="container">
+<div class="container blog-index">
 	<div class="row">
 		{% for post in paginator.posts %}
-		<div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 {% if forloop.first %}pt-4{% endif %} {% if forloop.last %}pb-4{% endif %}">
+		<div class="col-12 col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 px-md-4 post-preview {% if forloop.first %}pt-4{% endif %} {% if forloop.last %}pb-4{% endif %}">
 			<a href="{{ post.url | prepend: site.github.url | replace: 'http://', '//'  }}">
 				<h2 class="post-title h4 mt-3 pt-2">
 					{{ post.title }}
