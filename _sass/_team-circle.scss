@@ -338,10 +338,15 @@
 
   /* Description styling for mobile */
   .team-member-description {
-    display: block; /* Show description on mobile */
+    display: none; /* Hide description by default on mobile too */
     margin-top: 5px;
     color: $color-gray;
     font-size: 14px;
+  }
+
+  /* Show description when team member is active */
+  .team-member-item.active .team-member-description {
+    display: block;
   }
 
   /* Contact button styling for mobile */
