@@ -111,7 +111,6 @@
   /* Decorative elements for headings */
   h1, h2, h3, h4, h5, h6 {
     position: relative;
-    padding-left: 0.5rem;
     transition: transform 0.2s ease, color 0.2s ease;
 
     &:hover {
@@ -119,25 +118,7 @@
       transform: translateX(3px);
     }
 
-    /* Left accent bar */
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.2em;
-      height: 0.8em;
-      width: 3px;
-      background: linear-gradient(to bottom, $color-primary, $color-blue);
-      border-radius: 3px;
-      transition: height 0.2s ease, top 0.2s ease;
-    }
-
-    &:hover::before {
-      height: 1.2em;
-      top: 0.1em;
-    }
-
-    /* Bottom gradient line */
+    /* Bottom gradient line - kept this highlight as it's more aesthetically pleasing */
     &::after {
       content: "";
       display: block;
