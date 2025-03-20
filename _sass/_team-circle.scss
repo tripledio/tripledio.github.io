@@ -344,9 +344,10 @@
     font-size: 14px;
   }
 
-  /* Show description when team member is active */
-  .team-member-item.active .team-member-description {
-    display: block;
+  /* In mobile view, when a team member is active, hide the name and description in the team member content
+     to avoid duplication with the bio that's moved inside the team member */
+  .team-member-item.active .team-member-content {
+    display: none;
   }
 
   /* Contact button styling for mobile */
