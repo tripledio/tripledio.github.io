@@ -180,36 +180,7 @@
       position: relative;
     }
 
-    /* Add a small notebook doodle in the margin */
-    &:not(:last-child):nth-child(3n+1)::before {
-      content: "✓";
-      position: absolute;
-      left: -2rem;
-      bottom: -1.5rem;
-      font-size: 1rem;
-      color: rgba($color-primary, 0.15);
-      transform: rotate(-5deg);
-    }
-
-    &:not(:last-child):nth-child(3n+2)::before {
-      content: "★";
-      position: absolute;
-      left: -2rem;
-      bottom: -1.5rem;
-      font-size: 1rem;
-      color: rgba($color-blue, 0.15);
-      transform: rotate(5deg);
-    }
-
-    &:not(:last-child):nth-child(3n)::before {
-      content: "→";
-      position: absolute;
-      left: -2rem;
-      bottom: -1.5rem;
-      font-size: 1rem;
-      color: rgba($color-primary, 0.15);
-      transform: rotate(-3deg);
-    }
+    /* Removed notebook doodle in the margin for cleaner design */
   }
 
   /* Elegant blockquote styling */
