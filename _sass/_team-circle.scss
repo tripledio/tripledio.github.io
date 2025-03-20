@@ -16,10 +16,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+  width: 120%; /* Increased size to ensure it covers the entire container */
+  height: 120%; /* Increased size to ensure it covers the entire container */
   z-index: 1;
-  opacity: 0.15; /* Subtle opacity to not be too obtrusive */
+  opacity: 0.3; /* Increased opacity to make it more visible */
   pointer-events: none; /* Allow clicks to pass through */
 }
 
@@ -30,27 +30,27 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+  background: radial-gradient(circle at center, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
   animation: rotate 60s linear infinite; /* Slow rotation */
 }
 
 /* Red ray */
 .sunburst-ray-red {
-  background: radial-gradient(circle at center, rgba($color-red, 0.4) 0%, rgba($color-red, 0) 70%);
+  background: radial-gradient(circle at center, rgba($color-red, 0.7) 0%, rgba($color-red, 0) 70%);
   transform-origin: center;
   animation-delay: 0s;
 }
 
 /* Green ray */
 .sunburst-ray-green {
-  background: radial-gradient(circle at center, rgba($color-green, 0.4) 0%, rgba($color-green, 0) 70%);
+  background: radial-gradient(circle at center, rgba($color-green, 0.7) 0%, rgba($color-green, 0) 70%);
   transform-origin: center;
   animation-delay: -20s; /* Offset animation */
 }
 
 /* Blue ray */
 .sunburst-ray-blue {
-  background: radial-gradient(circle at center, rgba($color-blue, 0.4) 0%, rgba($color-blue, 0) 70%);
+  background: radial-gradient(circle at center, rgba($color-blue, 0.7) 0%, rgba($color-blue, 0) 70%);
   transform-origin: center;
   animation-delay: -40s; /* Offset animation */
 }
@@ -187,6 +187,26 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: $breakpoint-md) {
+  /* Adjust sunburst for responsive layout */
+  .sunburst-effect {
+    position: fixed; /* Fixed position to ensure it's always visible */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    z-index: 0; /* Behind everything */
+    opacity: 0.2; /* Slightly reduced opacity for mobile */
+  }
+
+  /* Make rays larger for better visibility on mobile */
+  .sunburst-ray {
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+  }
+
   .team-circle-center {
     width: 60%;
     height: auto;
@@ -197,11 +217,15 @@
     margin: 20px auto;
     border-radius: 10px;
     padding: 20px;
+    background-color: rgba($color-primary, 0.05);
+    z-index: 2; /* Ensure it's above the sunburst */
   }
 
   .team-circle {
     height: auto;
     padding-bottom: 0;
+    position: relative;
+    z-index: 2; /* Ensure it's above the sunburst */
   }
 
   .team-member-item {
@@ -210,6 +234,7 @@
     margin: 10px;
     top: auto !important;
     left: auto !important;
+    z-index: 3; /* Ensure it's above the sunburst */
   }
 }
 
