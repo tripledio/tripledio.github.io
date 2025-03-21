@@ -34,28 +34,180 @@ qotd:
 </section>
 <section id="team" class="pt-6 pt-md-2 pb-1 pb-md-4 text-gray">
     <div class="container">
-        <div class="row">
-            {% for member in site.data.team %}
-            <div class="col-12 col-md-6 col-lg-4 mb-4 px-md-4">
-                <div class="h-100 d-flex flex-column">
-                    <div class="mb-3 ml-auto mr-auto rounded w-70 effects-img-scale o-hidden">
-                        <img src="{{ member.photo }}" alt="p4" width="238" class="img-fluid rounded">
-                    </div>
-                    <div class="text-left">
-                        <h3 class="h5 text-black font-family-bold">{{ member.name }}</h3>
-                        <p class="m-0 text-black font-italic">{{ member.title }}</p>
-                        <hr class="slab left mt-1 mb-2 w-25">
-                    </div>
-                    <div>
-                        <p class="font-size-4">{{ member.description }}</p>
-                    </div>
-                    <div class="pb-2 mt-auto">
+        <div class="team-circle-container">
+            <!-- Sunburst effect -->
+            <div class="sunburst-effect">
+                <div class="sunburst-circle"></div>
+                <div class="sunburst-rays">
+                    <!-- 12 rays with alternating colors -->
+                    <div class="sunburst-ray ray-red"></div>
+                    <div class="sunburst-ray ray-green"></div>
+                    <div class="sunburst-ray ray-blue"></div>
+                    <div class="sunburst-ray ray-red"></div>
+                    <div class="sunburst-ray ray-green"></div>
+                    <div class="sunburst-ray ray-blue"></div>
+                    <div class="sunburst-ray ray-red"></div>
+                    <div class="sunburst-ray ray-green"></div>
+                    <div class="sunburst-ray ray-blue"></div>
+                    <div class="sunburst-ray ray-red"></div>
+                    <div class="sunburst-ray ray-green"></div>
+                    <div class="sunburst-ray ray-blue"></div>
+                </div>
+            </div>
+
+            <!-- Center content area -->
+            <div class="team-circle-center">
+                <!-- Default content shown when no team member is selected -->
+                <div class="team-circle-default">
+                    <h3 class="h4 text-primary font-family-bold">Our Team</h3>
+                    <p class="font-size-4">Click on a team member to learn more about them.</p>
+                </div>
+
+                <!-- Individual team member bios (hidden by default) -->
+                {% for member in site.data.team %}
+                <div id="bio-{{ forloop.index }}" class="team-member-bio">
+                    <h3 class="h4 text-primary font-family-bold">{{ member.name }}</h3>
+                    <hr class="slab center w-25 mb-3">
+                    <p class="font-size-4">{{ member.description }}</p>
+                    <div class="team-member-contact">
                         <a href="{{ member.contactLink }}" class="btn btn-primary">Contact me</a>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
 
+            <!-- Circle of team members -->
+            <div class="team-circle" id="team-circle">
+                {% for member in site.data.team %}
+                <div class="team-member-item" id="member-{{ forloop.index }}" data-index="{{ forloop.index }}">
+                    <img src="{{ member.photo }}" alt="{{ member.name }}" class="team-member-photo">
+                    <div class="team-member-content">
+                        <div class="team-member-name">{{ member.name }}</div>
+                        <div class="team-member-description">{{ member.description }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
+
+    <!-- JavaScript for interactive functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const teamCircle = document.getElementById('team-circle');
+            const teamMembers = document.querySelectorAll('.team-member-item');
+            const totalMembers = teamMembers.length;
+            const isMobile = window.innerWidth <= 767; // Match the $breakpoint-md value
+
+            // Only position in a circle for desktop
+            if (!isMobile) {
+                // Calculate positions in a circle for desktop
+                teamMembers.forEach((member, index) => {
+                    // Calculate angle for this member (in radians)
+                    const angle = (index / totalMembers) * 2 * Math.PI;
+
+                    // Calculate position (center is 50%, radius is 42% of container)
+                    const radius = 42;
+                    const centerX = 50;
+                    const centerY = 50;
+
+                    const x = centerX + radius * Math.sin(angle);
+                    const y = centerY + radius * Math.cos(angle);
+
+                    // Set position
+                    member.style.top = y + '%';
+                    member.style.left = x + '%';
+                });
+            }
+
+            // Add click event for both mobile and desktop
+            teamMembers.forEach((member) => {
+                member.addEventListener('click', function() {
+                    // Get the index of the clicked member
+                    const memberIndex = this.getAttribute('data-index');
+                    const bio = document.getElementById('bio-' + memberIndex);
+
+                    if (isMobile) {
+                        // Mobile behavior: toggle active state
+                        if (this.classList.contains('active')) {
+                            // If already active, deactivate
+                            this.classList.remove('active');
+                            bio.classList.remove('active');
+
+                            // Move bio back to center if it was moved
+                            if (this.contains(bio)) {
+                                document.querySelector('.team-circle-center').appendChild(bio);
+                            }
+                        } else {
+                            // Remove active class from all members
+                            teamMembers.forEach(m => {
+                                m.classList.remove('active');
+                                // Move any bios back to center
+                                document.querySelectorAll('.team-member-bio').forEach(b => {
+                                    if (m.contains(b)) {
+                                        document.querySelector('.team-circle-center').appendChild(b);
+                                    }
+                                });
+                            });
+
+                            // Activate this member
+                            this.classList.add('active');
+
+                            // Move bio inside this member for mobile
+                            this.appendChild(bio);
+                            bio.classList.add('active');
+                        }
+                    } else {
+                        // Desktop behavior
+                        // Remove active class from all members
+                        teamMembers.forEach(m => m.classList.remove('active'));
+
+                        // Add active class to clicked member
+                        this.classList.add('active');
+
+                        // Hide default content
+                        document.querySelector('.team-circle-default').style.opacity = '0';
+
+                        // Hide all bios
+                        document.querySelectorAll('.team-member-bio').forEach(bio => {
+                            bio.classList.remove('active');
+                        });
+
+                        // Show the selected bio
+                        bio.classList.add('active');
+                    }
+                });
+            });
+
+            // Add click event to center area to reset (desktop only)
+            if (!isMobile) {
+                document.querySelector('.team-circle-center').addEventListener('click', function(e) {
+                    // Only reset if clicking directly on the center area (not on a bio or button)
+                    if (e.target === this || e.target === document.querySelector('.team-circle-default') || 
+                        e.target.closest('.team-circle-default')) {
+                        // Remove active class from all members
+                        teamMembers.forEach(m => m.classList.remove('active'));
+
+                        // Hide all bios
+                        document.querySelectorAll('.team-member-bio').forEach(bio => {
+                            bio.classList.remove('active');
+                        });
+
+                        // Show default content
+                        document.querySelector('.team-circle-default').style.opacity = '1';
+                    }
+                });
+            }
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                const newIsMobile = window.innerWidth <= 767;
+
+                // Only reposition if switching between mobile and desktop
+                if (newIsMobile !== isMobile) {
+                    location.reload(); // Simple solution: reload the page on breakpoint change
+                }
+            });
+        });
+    </script>
 </section>

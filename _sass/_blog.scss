@@ -114,7 +114,7 @@ $author-img-size: 7.5rem;
     color: $color-white;
 
     &.tw {
-      background: $color-twitter;
+      display: none;
     }
 
     &.fb {
@@ -136,12 +136,16 @@ $author-img-size: 7.5rem;
   #disqus_thread {
     min-height: .01px;
     width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .gist {
     width: 100%; 
-    padding-left:50px !important; 
-    padding-right:50px !important;
+    box-sizing: border-box;
+    padding-left: 0 !important; 
+    padding-right: 0 !important;
+    overflow-x: auto;
   }
-  
+
 }
