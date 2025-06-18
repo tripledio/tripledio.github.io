@@ -1,8 +1,8 @@
 ---
 layout: post
 title: The Evolution of Programming
-author: Kris
-image: "img/ai-evoluation-jpg"
+author: kris
+image: "img/ai-evolution-jpg"
 excerpt: From Assembly to AI-Driven Development"
 ---
 # The Evolution of Programming: From Assembly to AI-Driven Development
