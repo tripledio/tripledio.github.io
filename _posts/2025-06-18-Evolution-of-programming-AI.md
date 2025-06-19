@@ -2,8 +2,8 @@
 layout: post
 title: The Evolution of Programming
 author: kris
-image: "img/ai-evolution-jpg"
-excerpt: From Assembly to AI-Driven Development"
+image: "img/ai-evolution.jpg"
+excerpt: From Assembly to AI-Driven Development
 ---
 # The Evolution of Programming: From Assembly to AI-Driven Development
 
@@ -36,6 +36,8 @@ Interestingly, traditional development practices can actually enhance AI's effec
 Your tests become even more valuable in an AI-driven workflow. They provide crystal-clear specifications of what the system should do, giving the AI concrete examples of expected behavior. When prompting an AI to implement new features, start by describing the use case and the tests that should pass. Have the implementation written after establishing these requirements.
 
 This approach might seem like taking the long road, but shortcuts in AI-driven development are just as detrimental as they are in traditional TDD. The temptation to skip the specification phase and jump straight to implementation is strong when AI can generate code so quickly, but this shortcut often leads to solutions that work for the immediate case but fail to consider edge cases, maintainability, or integration with existing systems.
+
+Architectural patterns like Clean Architecture prove their worth even more in the AI era. When your system is properly layered with clear boundaries between business logic, application services, and infrastructure concerns, integrating new AI capabilities becomes remarkably straightforward. Take Model Context Protocol (MCP) connectivity, for example—it's just another piece of incoming infrastructure that can be quickly implemented at the adapter layer without impacting your core business logic or existing system components. The risk of integration becomes minimal because your architecture naturally isolates changes to specific layers, allowing you to experiment with AI integrations safely and incrementally.
 
 ## The Path Forward
 
