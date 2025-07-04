@@ -1,0 +1,104 @@
+/* TEAM CARDS LAYOUT */
+
+/* Container for the team cards */
+.team-cards-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Grid layout for cards */
+.team-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Individual team card */
+.team-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Team member photo container */
+.team-card-photo-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* 1:1 aspect ratio */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Team member photo */
+.team-card-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-card-photo {
+  transform: scale(1.05);
+}
+
+/* Team card content */
+.team-card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Team member name */
+.team-card-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: $color-primary;
+  margin-bottom: 10px;
+}
+
+/* Team member description */
+.team-card-description {
+  font-size: 0.9rem;
+  color: $color-gray;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+/* Contact button */
+.team-card-contact {
+  margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: $breakpoint-md) {
+  .team-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .team-card-content {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .team-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
