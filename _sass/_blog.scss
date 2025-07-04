@@ -48,14 +48,25 @@ $author-img-size: 7.5rem;
 
   table {
     min-height: .01%;
-    overflow-x: auto;
     width: 100%;
     max-width: 100%;
     margin-bottom: 2rem;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Ensure table scrolling doesn't affect the entire page */
+    max-width: 100%;
+    border-collapse: collapse;
   }
 
   div[class*=" highlighter-"] {
     width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: block;
+    /* Ensure code highlighting doesn't affect the entire page */
+    box-sizing: border-box;
   }
 
   tbody>tr>td, tbody>tr>th, tfoot>tr>td, tfoot>tr>th, thead>tr>td, thead>tr>th {
@@ -145,6 +156,10 @@ $author-img-size: 7.5rem;
     padding-left: 0 !important; 
     padding-right: 0 !important;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Ensure gist scrolling doesn't affect the entire page */
+    max-width: 100%;
+    display: block;
   }
 
 }
