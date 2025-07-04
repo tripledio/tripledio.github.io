@@ -20,8 +20,7 @@ $author-img-size: 7.5rem;
   }
 
   .row {
-    margin-left: inherit;
-    margin-right: inherit;
+    /* Removed custom margins that were causing horizontal scrollbar */
   }
 
   img {
