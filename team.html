@@ -70,7 +70,7 @@ qotd:
                     <hr class="slab center w-25 mb-3">
                     <p class="font-size-4">{{ member.description }}</p>
                     <div class="team-member-contact">
-                        <a href="{{ member.contactLink }}" class="btn btn-primary">Contact me</a>
+                        <a href="{{ member.contactLink }}" class="btn btn-primary" data-contact-link="{{ member.contactLink }}">Contact me</a>
                     </div>
                 </div>
                 {% endfor %}
@@ -98,6 +98,17 @@ qotd:
             const teamMembers = document.querySelectorAll('.team-member-item');
             const totalMembers = teamMembers.length;
             const isMobile = window.innerWidth <= 767; // Match the $breakpoint-md value
+
+            // Ensure all contact links have the correct href on page load
+            document.querySelectorAll('.team-member-bio').forEach(bio => {
+                const contactLink = bio.querySelector('.team-member-contact a');
+                if (contactLink) {
+                    const dataContactLink = contactLink.getAttribute('data-contact-link');
+                    if (dataContactLink) {
+                        contactLink.href = dataContactLink;
+                    }
+                }
+            });
 
             // Only position in a circle for desktop
             if (!isMobile) {
@@ -137,6 +148,15 @@ qotd:
                             // Move bio back to center if it was moved
                             if (this.contains(bio)) {
                                 document.querySelector('.team-circle-center').appendChild(bio);
+
+                                // Ensure the contact link has the correct href
+                                const contactLink = bio.querySelector('.team-member-contact a');
+                                if (contactLink) {
+                                    const dataContactLink = contactLink.getAttribute('data-contact-link');
+                                    if (dataContactLink) {
+                                        contactLink.href = dataContactLink;
+                                    }
+                                }
                             }
                         } else {
                             // Remove active class from all members
@@ -146,6 +166,15 @@ qotd:
                                 document.querySelectorAll('.team-member-bio').forEach(b => {
                                     if (m.contains(b)) {
                                         document.querySelector('.team-circle-center').appendChild(b);
+
+                                        // Ensure the contact link has the correct href
+                                        const contactLink = b.querySelector('.team-member-contact a');
+                                        if (contactLink) {
+                                            const dataContactLink = contactLink.getAttribute('data-contact-link');
+                                            if (dataContactLink) {
+                                                contactLink.href = dataContactLink;
+                                            }
+                                        }
                                     }
                                 });
                             });
@@ -156,6 +185,15 @@ qotd:
                             // Move bio inside this member for mobile
                             this.appendChild(bio);
                             bio.classList.add('active');
+
+                            // Ensure the contact link has the correct href
+                            const contactLink = bio.querySelector('.team-member-contact a');
+                            if (contactLink) {
+                                const dataContactLink = contactLink.getAttribute('data-contact-link');
+                                if (dataContactLink) {
+                                    contactLink.href = dataContactLink;
+                                }
+                            }
                         }
                     } else {
                         // Desktop behavior
@@ -175,6 +213,15 @@ qotd:
 
                         // Show the selected bio
                         bio.classList.add('active');
+
+                        // Ensure the contact link has the correct href
+                        const contactLink = bio.querySelector('.team-member-contact a');
+                        if (contactLink) {
+                            const dataContactLink = contactLink.getAttribute('data-contact-link');
+                            if (dataContactLink) {
+                                contactLink.href = dataContactLink;
+                            }
+                        }
                     }
                 });
             });
