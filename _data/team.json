@@ -34,17 +34,5 @@
     "name": "Sander Verschuren",
     "description": "Software engineer with a passion for software development. Yes, there is a difference.",
     "contactLink": "https://twitter.com/SanderVE"
-  },
-  {
-    "photo": "/img/authors/harm.jpg",
-    "name": "Harm De Weirdt",
-    "description": "Teacher that loves to learn, Student that loves to teach.",
-    "contactLink": "https://www.linkedin.com/in/harmdeweirdt/"
-  },
-  {
-    "photo": "/img/authors/franky.png",
-    "name": "Franky Blondeel",
-    "description": "Passionate Software Engineer with a flair for graphic design.",
-    "contactLink": "https://www.linkedin.com/in/frankyjr/"
   }
 ]
